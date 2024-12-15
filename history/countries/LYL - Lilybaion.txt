@@ -1,0 +1,24 @@
+government = theocracy
+add_government_reform = phoenician_oligarchy_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = punic
+primary_culture = punic
+religion = punic_religion
+capital = 1
+fixed_capital = 1
+
+add_historical_friend = LYL
+add_historical_friend = KPR
+add_historical_friend = ZIZ
+
+294.1.1 = {
+	monarch = {
+		name = "Himilco I"
+		dynasty = "Magonid"
+		dip = 3
+		adm = 3
+		mil = 5
+		death_date = 330.1.1
+	}
+}

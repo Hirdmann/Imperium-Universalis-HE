@@ -1,0 +1,42 @@
+government = native
+add_government_reform = pastoral_tribe_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = celtic
+primary_culture = preceltic_gaul
+religion = celtic_religion
+capital = 424
+#religious_school = north_pagan_type
+add_army_professionalism = 0.05
+
+142.8.10 = {
+	government = tribal
+	add_government_reform = tribal_kingdom_reform
+}
+323.1.1 = {
+	primary_culture = gaul
+}
+454.1.1 = {
+	add_accepted_culture = southern_gaul
+	add_accepted_culture = aquitani
+	monarch = {
+		name = "Luernius"
+		dynasty = "Arvernoi"
+		birth_date = 440.1.1
+		death_date = 530.1.1
+		dip = 4
+		adm = 3
+		mil = 5
+	}
+}
+530.1.1 = {
+	monarch = {
+		name = "Bituitus"
+		dynasty = "Arvernoi"
+		birth_date = 529.1.1
+		death_date = 633.1.1
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}

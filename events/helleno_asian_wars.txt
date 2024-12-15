@@ -1,0 +1,1842 @@
+namespace = hellenoasian
+########################################################################################
+# picking asian power for greco-asian wars
+########################################################################################
+country_event = {
+	id = hellenoasian.1
+	title = "hellenoasian.1.t"
+	desc = "hellenoasian.1.d"
+	picture = elamite_soldiers
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 235
+		NOT = { is_year = 250 }
+		OR = {
+			AND = {
+				tag = PSE
+				has_global_flag = allowed_rise_media_persia_flag
+			}
+			capital_scope = {
+				OR = {
+					superregion = armenia_superregion
+					superregion = asia_superregion
+					superregion = iran_superregion
+				}
+			}
+		}
+		OR = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				region = ionia_region
+			}
+			capital_scope = {
+				OR = {
+					superregion = armenia_superregion
+					superregion = asia_superregion
+					superregion = iran_superregion
+				}
+			}
+		}
+		total_development = 800
+		NOT = {
+			has_country_flag = no_asian_power
+		}
+		NOT = {
+			has_country_flag = asian_power
+		}
+		adm_tech = 8
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				save_event_target_as = asian_event_overlord
+			}
+		}
+	}
+	option = {
+		name = "hellenoasian.1.a"		#I am asian power, I will expand into Thrace and attack greeks
+		ai_chance = {
+			factor = 100
+		}
+		add_yearly_manpower = 1
+		set_country_flag = asian_power
+	}
+	option = {
+		name = "hellenoasian.1.b"		#I am not interested in west
+		ai_chance = {
+			factor = 0
+		}
+		set_country_flag = no_asian_power
+		add_prestige = -1
+	}
+}
+#Asian power takes everything in Ionia
+country_event = {
+	id = hellenoasian.2
+	title = "hellenoasian.2.t"
+	desc = "hellenoasian.2.d"
+	picture = senat_conflict
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 236
+		has_country_flag = asian_power
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "hellenoasian.2.a"		#all will bow to great asian power
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				exists = ION
+				exists = PS3
+			}
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					region = ionia_region
+				}
+				cede_province = ION
+				add_core = ION
+			}
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = bosporos_area
+						area = propontis_area
+						area = asian_hellospont_area
+						area = troad_area
+						area = heraclea_pontica
+					}
+				}
+				cede_province = PS3
+				add_core = PS3
+			}
+		}
+		else = {
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					region = ionia_region
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = bosporos_area
+						area = propontis_area
+						area = asian_hellospont_area
+						area = troad_area
+						area = heraclea_pontica
+					}
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+		}
+		if = {
+			limit = {
+				tag = PSE
+				has_country_flag = asian_power
+				exists = LYD
+			}
+			PSE = {
+				inherit = LYD
+			}
+		}
+	}
+}
+#Asian power invades Thrace
+country_event = {
+	id = hellenoasian.3
+	title = "hellenoasian.3.t"
+	desc = "hellenoasian.3.d"
+	picture = senat_conflict
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 240
+		has_country_flag = asian_power
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "hellenoasian.3.a"		#Start the Thracian campaign
+		ai_chance = {
+			factor = 100
+		}
+		every_province = {
+			limit = {
+				OR = {
+					area = europa_area
+					area = hellespont_area
+					area = odryssia_area
+				}
+				NOT = {	owned_by = BYS }
+				}
+				cede_province = THR
+				add_core = THR
+		}
+		every_province = {
+			limit = {
+				region = thracia_region
+			}
+			add_core = THR
+		}
+		5828 = {
+			cede_province = THR
+		}
+		event_target:asian_event_overlord = {
+			create_subject = {
+				subject_type = satrapy_vassal
+				subject = THR
+			}
+		}
+		THR = {
+			add_country_modifier = {
+				name = thracian_campaign
+				duration = 5475
+			}
+			add_manpower = 40
+			add_treasury = 1000
+			add_prestige = 30
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			infantry = 5828
+			cavalry = 5828
+			cavalry = 5828
+			cavalry = 5828
+			cavalry = 5828
+			cavalry = 5828
+			cavalry = 5828
+			cavalry = 5828
+			cavalry = 5828
+			cavalry = 5828
+			cavalry = 5828
+			artillery = 5828
+			artillery = 5828
+			artillery = 5828
+			artillery = 5828
+			artillery = 5828
+			artillery = 5828
+			artillery = 5828
+			artillery = 5828
+			artillery = 5828
+			artillery = 5828
+			cavalry = 5828
+			cavalry = 5828
+			cavalry = 5828
+			artillery = 5828
+			artillery = 5828
+			artillery = 5828
+			define_ruler = {
+				name = "Bagabukhsha" #Megabazus
+				dynasty = "Haxamanishiya"
+				culture = persian
+				religion = iranian_religion
+				age = 45
+				dip = 3
+				adm = 3
+				mil = 3
+			}
+			define_ruler_to_general = {
+				fire = 4
+				shock = 3
+				manuever = 2
+				siege = 1
+			}
+		}
+		random_country = {
+			limit = {
+				capital_scope = {
+					region = thracia_region
+				}
+			}
+			country_event = {
+				id = hellenoasian.4
+			}
+		}
+	}
+}
+#attack the Thracians
+country_event = {
+	id = hellenoasian.4
+	title = "hellenoasian.4.t"
+	desc = "hellenoasian.4.d"
+	picture = senat_conflict
+	is_triggered_only = yes
+
+	trigger = {
+		is_year = 238
+		THR = {
+			has_country_modifier = thracian_campaign
+		}
+	}
+	option = {
+		name = "hellenoasian.4.a"		#WAR!
+		ai_chance = {
+			factor = 100
+		}
+		THR = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_core
+			}
+		}
+	}
+}
+#Asian power empowers Macedon and makes it tributary - can just trigger macedon event for that, and not mess this file
+#Ionian rebellion
+
+country_event = {
+	id = hellenoasian.5 # ionian revolt
+	title = "hellenoasian.5.t"
+	desc = "hellenoasian.5.d"
+	picture = cavalry
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 255
+		NOT = {
+			is_year = 275
+		}
+		NOT = { started_in = 258.1.1 }
+		has_country_flag = asian_power
+		NOT = {
+			has_global_flag = ionian_revolt_start
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = ionian_revolt_start
+			2129 = { #miletos
+				cede_province = MLT
+				infantry = MLT
+				infantry = MLT
+				cavalry = MLT
+				heavy_ship = MLT
+				heavy_ship = MLT
+				heavy_ship = MLT
+				heavy_ship = MLT
+				heavy_ship = MLT
+				galley = MLT
+				galley = MLT
+				galley = MLT
+				galley = MLT
+				galley = MLT
+				galley = MLT
+				galley = MLT
+				galley = MLT
+				transport = MLT
+				transport = MLT
+				transport = MLT
+				transport = MLT
+				transport = MLT
+				transport = MLT
+				transport = MLT
+				transport = MLT
+			}
+			5605 = {
+				add_core = MLT
+				cede_province = MLT
+			}
+			5606 = {
+				add_core = MLT
+				cede_province = MLT
+			}
+			5607 = {
+				add_core = MLT
+				cede_province = MLT
+			}
+			2130 = {# halycarnassos
+				cede_province = HAL
+				infantry = HAL
+				heavy_ship = HAL
+				heavy_ship = HAL
+				heavy_ship = HAL
+				heavy_ship = HAL
+				heavy_ship = HAL
+				galley = HAL
+				galley = HAL
+				galley = HAL
+				galley = HAL
+				galley = HAL
+				galley = HAL
+				galley = HAL
+				galley = HAL
+				transport = HAL
+				transport = HAL
+				transport = HAL
+				transport = HAL
+				transport = HAL
+				transport = HAL
+				transport = HAL
+				transport = HAL
+			}
+			994 = {# kos
+				cede_province = KSS
+				infantry = KSS
+				heavy_ship = KSS
+				heavy_ship = KSS
+				heavy_ship = KSS
+				heavy_ship = KSS
+				heavy_ship = KSS
+				galley = KSS
+				galley = KSS
+				galley = KSS
+				galley = KSS
+				galley = KSS
+				galley = KSS
+				galley = KSS
+				galley = KSS
+				transport = KSS
+				transport = KSS
+				transport = KSS
+				transport = KSS
+				transport = KSS
+				transport = KSS
+				transport = KSS
+				transport = KSS
+			}
+			5609 = {# knidos
+				cede_province = KNI
+				infantry = KNI
+				heavy_ship = KNI
+				heavy_ship = KNI
+				heavy_ship = KNI
+				heavy_ship = KNI
+				heavy_ship = KNI
+				galley = KNI
+				galley = KNI
+				galley = KNI
+				galley = KNI
+				galley = KNI
+				galley = KNI
+				galley = KNI
+				galley = KNI
+				transport = KNI
+				transport = KNI
+				transport = KNI
+				transport = KNI
+				transport = KNI
+				transport = KNI
+				transport = KNI
+				transport = KNI
+			}
+			2132 = {
+				cede_province = KNI
+			}
+			995 = {# ialysos
+				cede_province = IAL
+				infantry = IAL
+				heavy_ship = IAL
+				heavy_ship = IAL
+				heavy_ship = IAL
+				heavy_ship = IAL
+				heavy_ship = IAL
+				galley = IAL
+				galley = IAL
+				galley = IAL
+				galley = IAL
+				galley = IAL
+				galley = IAL
+				galley = IAL
+				galley = IAL
+				transport = IAL
+				transport = IAL
+				transport = IAL
+				transport = IAL
+				transport = IAL
+				transport = IAL
+				transport = IAL
+				transport = IAL
+			}
+			996 = {# kameiros
+				cede_province = KME
+				infantry = KME
+				heavy_ship = KME
+				heavy_ship = KME
+				heavy_ship = KME
+				heavy_ship = KME
+				heavy_ship = KME
+				galley = KME
+				galley = KME
+				galley = KME
+				galley = KME
+				galley = KME
+				galley = KME
+				galley = KME
+				galley = KME
+				transport = KME
+				transport = KME
+				transport = KME
+				transport = KME
+				transport = KME
+				transport = KME
+				transport = KME
+				transport = KME
+			}
+			997 = {# lindos
+				cede_province = LIN
+				infantry = LIN
+				heavy_ship = LIN
+				heavy_ship = LIN
+				heavy_ship = LIN
+				heavy_ship = LIN
+				heavy_ship = LIN
+				galley = LIN
+				galley = LIN
+				galley = LIN
+				galley = LIN
+				galley = LIN
+				galley = LIN
+				galley = LIN
+				galley = LIN
+				transport = LIN
+				transport = LIN
+				transport = LIN
+				transport = LIN
+				transport = LIN
+				transport = LIN
+				transport = LIN
+				transport = LIN
+			}
+			5504 = {# monolithos
+				cede_province = MOO
+				infantry = MOO
+				heavy_ship = MOO
+				heavy_ship = MOO
+				heavy_ship = MOO
+				heavy_ship = MOO
+				heavy_ship = MOO
+				galley = MOO
+				galley = MOO
+				galley = MOO
+				galley = MOO
+				galley = MOO
+				galley = MOO
+				galley = MOO
+				galley = MOO
+				transport = MOO
+				transport = MOO
+				transport = MOO
+				transport = MOO
+				transport = MOO
+				transport = MOO
+				transport = MOO
+				transport = MOO
+			}
+			993 = {# Samos
+				cede_province = SAM
+				infantry = SAM
+				heavy_ship = SAM
+				heavy_ship = SAM
+				heavy_ship = SAM
+				heavy_ship = SAM
+				heavy_ship = SAM
+				galley = SAM
+				galley = SAM
+				galley = SAM
+				galley = SAM
+				galley = SAM
+				galley = SAM
+				galley = SAM
+				galley = SAM
+				transport = SAM
+				transport = SAM
+				transport = SAM
+				transport = SAM
+				transport = SAM
+				transport = SAM
+				transport = SAM
+				transport = SAM
+			}
+			992 = {# Samos
+				cede_province = SAM
+			}
+			5508 = {# Samos
+				cede_province = SAM
+			}
+			2128 = {# Priene
+				cede_province = PR2
+				infantry = PR2
+				heavy_ship = PR2
+				heavy_ship = PR2
+				heavy_ship = PR2
+				heavy_ship = PR2
+				heavy_ship = PR2
+				galley = PR2
+				galley = PR2
+				galley = PR2
+				galley = PR2
+				galley = PR2
+				galley = PR2
+				galley = PR2
+				galley = PR2
+				transport = PR2
+				transport = PR2
+				transport = PR2
+				transport = PR2
+				transport = PR2
+				transport = PR2
+				transport = PR2
+				transport = PR2
+			}
+			2127 = {# Ephesus
+				cede_province = EPH
+				infantry = EPH
+				heavy_ship = EPH
+				heavy_ship = EPH
+				heavy_ship = EPH
+				heavy_ship = EPH
+				heavy_ship = EPH
+				galley = EPH
+				galley = EPH
+				galley = EPH
+				galley = EPH
+				galley = EPH
+				galley = EPH
+				galley = EPH
+				galley = EPH
+				transport = EPH
+				transport = EPH
+				transport = EPH
+				transport = EPH
+				transport = EPH
+				transport = EPH
+				transport = EPH
+				transport = EPH
+			}
+			5604 = {# Ephesus
+				cede_province = EPH
+			}
+			2126 = {#Theos
+				cede_province = TEO
+				infantry = TEO
+				heavy_ship = TEO
+				heavy_ship = TEO
+				heavy_ship = TEO
+				heavy_ship = TEO
+				heavy_ship = TEO
+				galley = TEO
+				galley = TEO
+				galley = TEO
+				galley = TEO
+				galley = TEO
+				galley = TEO
+				galley = TEO
+				galley = TEO
+				transport = TEO
+				transport = TEO
+				transport = TEO
+				transport = TEO
+				transport = TEO
+				transport = TEO
+				transport = TEO
+				transport = TEO
+			}
+			2125 = {#Erythrai
+				cede_province = ERR
+				infantry = ERR
+				heavy_ship = ERR
+				heavy_ship = ERR
+				heavy_ship = ERR
+				heavy_ship = ERR
+				heavy_ship = ERR
+				galley = ERR
+				galley = ERR
+				galley = ERR
+				galley = ERR
+				galley = ERR
+				galley = ERR
+				galley = ERR
+				galley = ERR
+				transport = ERR
+				transport = ERR
+				transport = ERR
+				transport = ERR
+				transport = ERR
+				transport = ERR
+				transport = ERR
+				transport = ERR
+			}
+			2124 = {#Klazomenai
+				cede_province = KLA
+				infantry = KLA
+				heavy_ship = KLA
+				heavy_ship = KLA
+				heavy_ship = KLA
+				heavy_ship = KLA
+				heavy_ship = KLA
+				galley = KLA
+				galley = KLA
+				galley = KLA
+				galley = KLA
+				galley = KLA
+				galley = KLA
+				galley = KLA
+				galley = KLA
+				transport = KLA
+				transport = KLA
+				transport = KLA
+				transport = KLA
+				transport = KLA
+				transport = KLA
+				transport = KLA
+				transport = KLA
+			}
+			5601 = {#Smyrna
+				cede_province = SMY
+				infantry = SMY
+				heavy_ship = SMY
+				heavy_ship = SMY
+				heavy_ship = SMY
+				heavy_ship = SMY
+				heavy_ship = SMY
+				galley = SMY
+				galley = SMY
+				galley = SMY
+				galley = SMY
+				galley = SMY
+				galley = SMY
+				galley = SMY
+				galley = SMY
+				transport = SMY
+				transport = SMY
+				transport = SMY
+				transport = SMY
+				transport = SMY
+				transport = SMY
+				transport = SMY
+				transport = SMY
+			}
+			5598 = {#Kyme
+				cede_province = KYM
+				infantry = KYM
+				heavy_ship = KYM
+				heavy_ship = KYM
+				heavy_ship = KYM
+				heavy_ship = KYM
+				heavy_ship = KYM
+				galley = KYM
+				galley = KYM
+				galley = KYM
+				galley = KYM
+				galley = KYM
+				galley = KYM
+				galley = KYM
+				galley = KYM
+				transport = KYM
+				transport = KYM
+				transport = KYM
+				transport = KYM
+				transport = KYM
+				transport = KYM
+				transport = KYM
+				transport = KYM
+			}
+			2123 = {#Kyme
+				cede_province = KYM
+			}
+			2121 = {#Kyme
+				cede_province = KYM
+			}
+			987= {#lesbos
+				cede_province = LB1
+				infantry = LB1
+				heavy_ship = LB1
+				heavy_ship = LB1
+				heavy_ship = LB1
+				heavy_ship = LB1
+				heavy_ship = LB1
+				galley = LB1
+				galley = LB1
+				galley = LB1
+				galley = LB1
+				galley = LB1
+				galley = LB1
+				galley = LB1
+				galley = LB1
+				transport = LB1
+				transport = LB1
+				transport = LB1
+				transport = LB1
+				transport = LB1
+				transport = LB1
+				transport = LB1
+				transport = LB1
+			}
+			5597 = {#lesbos
+				cede_province = LB1
+			}
+			988 = {#lesbos
+				cede_province = LB4
+			}
+			2120 = {#lesbos
+				cede_province = LB1
+			}
+			5596 = {#lesbos
+				cede_province = LB1
+			}
+			2119 = {#assos
+				cede_province = ANT
+				infantry = ANT
+				heavy_ship = ANT
+				heavy_ship = ANT
+				heavy_ship = ANT
+				heavy_ship = ANT
+				heavy_ship = ANT
+				galley = ANT
+				galley = ANT
+				galley = ANT
+				galley = ANT
+				galley = ANT
+				galley = ANT
+				galley = ANT
+				galley = ANT
+				transport = ANT
+				transport = ANT
+				transport = ANT
+				transport = ANT
+				transport = ANT
+				transport = ANT
+				transport = ANT
+				transport = ANT
+			}
+			2118 = {#sigeion
+				cede_province = SIE
+				infantry = SIE
+				heavy_ship = SIE
+				heavy_ship = SIE
+				heavy_ship = SIE
+				heavy_ship = SIE
+				heavy_ship = SIE
+				galley = SIE
+				galley = SIE
+				galley = SIE
+				galley = SIE
+				galley = SIE
+				galley = SIE
+				galley = SIE
+				galley = SIE
+				transport = SIE
+				transport = SIE
+				transport = SIE
+				transport = SIE
+				transport = SIE
+				transport = SIE
+				transport = SIE
+				transport = SIE
+			}
+			5594 = {#abydos
+				cede_province = ABY
+				infantry = ABY
+				heavy_ship = ABY
+				heavy_ship = ABY
+				heavy_ship = ABY
+				heavy_ship = ABY
+				heavy_ship = ABY
+				galley = ABY
+				galley = ABY
+				galley = ABY
+				galley = ABY
+				galley = ABY
+				galley = ABY
+				galley = ABY
+				galley = ABY
+				transport = ABY
+				transport = ABY
+				transport = ABY
+				transport = ABY
+				transport = ABY
+				transport = ABY
+				transport = ABY
+				transport = ABY
+			}
+
+			5705 = {#abydos
+				cede_province = ABY
+			}
+			986 = {#chios
+				cede_province = CHS
+				infantry = CHS
+				infantry = CHS
+				heavy_ship = CHS
+				heavy_ship = CHS
+				heavy_ship = CHS
+				heavy_ship = CHS
+				heavy_ship = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				infantry = CHS
+				heavy_ship = CHS
+				heavy_ship = CHS
+				heavy_ship = CHS
+				heavy_ship = CHS
+				heavy_ship = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				galley = CHS
+				transport = CHS
+				transport = CHS
+				transport = CHS
+				transport = CHS
+				transport = CHS
+				transport = CHS
+				transport = CHS
+				transport = CHS
+			}
+			985 = {#chios
+				cede_province = CHS
+			}
+			999 = {#thasos
+				cede_province = THS
+				infantry = THS
+				heavy_ship = THS
+				heavy_ship = THS
+				heavy_ship = THS
+				heavy_ship = THS
+				heavy_ship = THS
+				galley = THS
+				galley = THS
+				galley = THS
+				galley = THS
+				galley = THS
+				galley = THS
+				galley = THS
+				galley = THS
+				transport = THS
+				transport = THS
+				transport = THS
+				transport = THS
+				transport = THS
+				transport = THS
+				transport = THS
+				transport = THS
+			}
+			2117 = {#lampsakos
+				cede_province = LAM
+				infantry = LAM
+				heavy_ship = LAM
+				heavy_ship = LAM
+				heavy_ship = LAM
+				heavy_ship = LAM
+				heavy_ship = LAM
+				galley = LAM
+				galley = LAM
+				galley = LAM
+				galley = LAM
+				galley = LAM
+				galley = LAM
+				galley = LAM
+				galley = LAM
+				transport = LAM
+				transport = LAM
+				transport = LAM
+				transport = LAM
+				transport = LAM
+				transport = LAM
+				transport = LAM
+				transport = LAM
+			}
+			5593 = {#lampsakos
+				cede_province = LAM
+			}
+			5589 = {#kios
+				cede_province = KIO
+				infantry = KIO
+				heavy_ship = KIO
+				heavy_ship = KIO
+				heavy_ship = KIO
+				heavy_ship = KIO
+				heavy_ship = KIO
+				galley = KIO
+				galley = KIO
+				galley = KIO
+				galley = KIO
+				galley = KIO
+				galley = KIO
+				galley = KIO
+				galley = KIO
+				transport = KIO
+				transport = KIO
+				transport = KIO
+				transport = KIO
+				transport = KIO
+				transport = KIO
+				transport = KIO
+				transport = KIO
+			}
+			5708 = {#kios
+				cede_province = KIO
+			}
+			2145 = {#kios
+				cede_province = KIO
+			}
+			5590 = {#kios
+				cede_province = KIO
+			}
+			2151 = {#chalcedon
+				cede_province = KHA
+				infantry = KHA
+				heavy_ship = KHA
+				heavy_ship = KHA
+				heavy_ship = KHA
+				heavy_ship = KHA
+				heavy_ship = KHA
+				galley = KHA
+				galley = KHA
+				galley = KHA
+				galley = KHA
+				galley = KHA
+				galley = KHA
+				galley = KHA
+				galley = KHA
+				transport = KHA
+				transport = KHA
+				transport = KHA
+				transport = KHA
+				transport = KHA
+				transport = KHA
+				transport = KHA
+				transport = KHA
+			}
+			5866 = {#chalcedon
+				cede_province = KHA
+			}
+			1086 = {#byzantium
+				cede_province = BYS
+				infantry = BYS
+				heavy_ship = BYS
+				heavy_ship = BYS
+				heavy_ship = BYS
+				heavy_ship = BYS
+				heavy_ship = BYS
+				galley = BYS
+				galley = BYS
+				galley = BYS
+				galley = BYS
+				galley = BYS
+				galley = BYS
+				galley = BYS
+				galley = BYS
+				transport = BYS
+				transport = BYS
+				transport = BYS
+				transport = BYS
+				transport = BYS
+				transport = BYS
+				transport = BYS
+				transport = BYS
+			}
+			5587 = {#byzantium
+				cede_province = BYS
+			}
+			5586 = {#byzantium
+				cede_province = BYS
+			}
+			1085 = {#perinthos
+				cede_province = PRI
+				infantry = PRI
+				heavy_ship = PRI
+				heavy_ship = PRI
+				heavy_ship = PRI
+				heavy_ship = PRI
+				heavy_ship = PRI
+				galley = PRI
+				galley = PRI
+				galley = PRI
+				galley = PRI
+				galley = PRI
+				galley = PRI
+				galley = PRI
+				galley = PRI
+				transport = PRI
+				transport = PRI
+				transport = PRI
+				transport = PRI
+				transport = PRI
+				transport = PRI
+				transport = PRI
+				transport = PRI
+			}
+			5585 = {#perinthos
+				cede_province = PRI
+			}
+			1084 = {#perinthos
+				cede_province = KRD
+			}
+			1082 = {#sestos
+				cede_province = SES
+				infantry = SES
+				heavy_ship = SES
+				heavy_ship = SES
+				heavy_ship = SES
+				heavy_ship = SES
+				heavy_ship = SES
+				galley = SES
+				galley = SES
+				galley = SES
+				galley = SES
+				galley = SES
+				galley = SES
+				galley = SES
+				galley = SES
+				transport = SES
+				transport = SES
+				transport = SES
+				transport = SES
+				transport = SES
+				transport = SES
+				transport = SES
+				transport = SES
+			}
+			5584 = {#sestos
+				cede_province = SES
+			}
+			989 = {#sestos
+				cede_province = SES
+			}
+			991 = {#sestos
+				cede_province = SES
+			}
+			1081 = {#sestos
+				cede_province = KRD
+			}
+			MLT = {
+				add_country_modifier = {
+					name = mlt_ionian_revolt
+					duration = 3650
+				}
+				create_alliance = ATH
+				add_trust = { who = ATH value = 20 mutual = yes }
+				create_alliance = ETH
+				add_trust = { who = ETH value = 20 mutual = yes }
+				create_alliance = EPH
+				add_trust = { who = EPH value = 20 mutual = yes }
+				create_alliance = SAM
+				add_trust = { who = SAM value = 20 mutual = yes }
+				create_alliance = KNI
+				add_trust = { who = KNI value = 20 mutual = yes }
+				create_alliance = KSS
+				add_trust = { who = KSS value = 20 mutual = yes }
+				create_alliance = IAL
+				add_trust = { who = IAL value = 20 mutual = yes }
+				create_alliance = KME
+				add_trust = { who = KME value = 20 mutual = yes }
+				create_alliance = LIN
+				add_trust = { who = LIN value = 20 mutual = yes }
+				create_alliance = MOO
+				add_trust = { who = MOO value = 20 mutual = yes }
+				create_alliance = TEO
+				add_trust = { who = TEO value = 20 mutual = yes }
+				create_alliance = CHS
+				add_trust = { who = CHS value = 20 mutual = yes }
+				create_alliance = ERR
+				add_trust = { who = ERR value = 20 mutual = yes }
+				create_alliance = KLA
+				add_trust = { who = KLA value = 20 mutual = yes }
+				create_alliance = SMY
+				add_trust = { who = SMY value = 20 mutual = yes }
+				create_alliance = KYM
+				add_trust = { who = KYM value = 20 mutual = yes }
+				create_alliance = LB1
+				add_trust = { who = LB1 value = 20 mutual = yes }
+				create_alliance = LB4
+				add_trust = { who = LB4 value = 20 mutual = yes }
+				create_alliance = THS
+				add_trust = { who = THS value = 20 mutual = yes }
+				create_alliance = ANT
+				add_trust = { who = ANT value = 20 mutual = yes }
+				create_alliance = SIE
+				add_trust = { who = SIE value = 20 mutual = yes }
+				create_alliance = ABY
+				add_trust = { who = ABY value = 20 mutual = yes }
+				create_alliance = LAM
+				add_trust = { who = LAM value = 20 mutual = yes }
+				create_alliance = KIO
+				add_trust = { who = KIO value = 20 mutual = yes }
+				create_alliance = KHA
+				add_trust = { who = KHA value = 20 mutual = yes }
+				create_alliance = BYS
+				add_trust = { who = BYS value = 20 mutual = yes }
+				create_alliance = PRI
+				add_trust = { who = PRI value = 20 mutual = yes }
+				create_alliance = SES
+				add_trust = { who = SES value = 20 mutual = yes }
+				create_alliance = KRD
+				add_trust = { who = KRD value = 20 mutual = yes }
+				add_casus_belli = {
+					target = event_target:asian_event_overlor
+					type = cb_independence_war
+					months = 120
+				}
+			}
+			CRI = {
+				add_casus_belli = {
+					target = event_target:asian_event_overlor
+					type = cb_independence_war
+					months = 120
+				}
+			}
+			5501 = {
+				cede_province = ZY5
+			}
+			3215 = {
+				cede_province = ZY5
+			}
+			3214 = {
+				cede_province = ZY2
+			}
+			5502 = {
+				cede_province = ZY2
+			}
+			5503 = {
+				cede_province = ZY9
+			}
+			3216 = {
+				cede_province = ZY9
+			}
+			3213= {
+				cede_province = ZY3
+			}
+			3212 = {
+				cede_province = ZY7
+			}
+			3211= {
+				cede_province = ZY1
+			}
+			3209 = {
+				cede_province = ZY4
+			}
+			3210 = {
+				cede_province = ZY6
+			}
+			3208 = {
+				cede_province = ZY6
+			}
+			ZY2 = {
+				add_casus_belli = {
+					target = event_target:asian_event_overlor
+					type = cb_independence_war
+					months = 120
+				}
+				create_alliance = ZY1
+				add_trust = { who = ZY1 value = 20 mutual = yes }
+				create_alliance = ZY3
+				add_trust = { who = ZY3 value = 20 mutual = yes }
+				create_alliance = ZY4
+				add_trust = { who = ZY4 value = 20 mutual = yes }
+				create_alliance = ZY5
+				add_trust = { who = ZY5 value = 20 mutual = yes }
+				create_alliance = ZY6
+				add_trust = { who = ZY6 value = 20 mutual = yes }
+				create_alliance = ZY7
+				add_trust = { who = ZY7 value = 20 mutual = yes }
+				create_alliance = ZY9
+				add_trust = { who = ZY9 value = 20 mutual = yes }
+			}
+		}
+	}
+	after = {
+		every_ally = {
+			join_all_offensive_wars_of = MLT
+		}
+		every_ally = {
+			join_all_offensive_wars_of = ZY2
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option =  {
+		name = "hellenoasian.5.a"
+			MLT = {
+				declare_war_with_cb = {
+					casus_belli = cb_independence_war
+					who = ROOT
+				}
+			}
+			CRI = {
+				declare_war_with_cb = {
+					casus_belli = cb_independence_war
+					who = ROOT
+				}
+			}
+			ZY2 = {
+				declare_war_with_cb = {
+					casus_belli = cb_independence_war
+					who = ROOT
+				}
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						war_with = PSE
+					}
+					add_country_modifier = {
+						name = ionian_revolt_greek_buff
+						duration = 3650
+					}
+				}
+				THR = {
+					white_peace = MLT
+					white_peace = ZY2
+					white_peace = CRI
+				}
+			}
+	}
+}
+
+country_event = {
+	id = hellenoasian.6 # ionian revolt - persia victory (historical)
+	title = "hellenoasian.6.t"
+	desc = "hellenoasian.6.d"
+	picture = cavalry
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = asian_power
+		has_global_flag = ionian_revolt_start
+		war_with = MLT
+		war_score_against = {
+			who = MLT
+			value = 60
+		}
+		2129 = {
+			NOT = {
+				controlled_by = MLT
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.6.a"
+		add_prestige = 25
+		white_peace = MLT
+		white_peace = CRI
+		hidden_effect = {
+			set_global_flag = ionian_revolt_asian_victory
+			2129 = {
+				cede_province = ION
+			}
+			event_target:asian_event_overlord = {
+				create_subject = {
+					subject_type = satrapy_vassal
+					subject = ION
+				}
+			}
+			event_target:asian_event_overlord = {
+				create_subject = {
+					subject_type = satrapy_vassal
+					subject = CRI
+				}
+			}
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						region = ionia_region
+						area = kos_area
+						area = rhodiorum_area
+						area = kos_area
+						area = lesbos_et_chios
+						area = lesbos_area
+						area = thasus_et_lemnus
+					}
+				}
+				cede_province = ION
+				add_core = ION
+			}
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = bosporos_area
+						area = propontis_area
+						area = asian_hellospont_area
+						area = troad_area
+						area = heraclea_pontica
+					}
+				}
+				cede_province = PS3
+				add_core = PS3
+			}
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						area = hellespont_area
+						area = europa_area
+					}
+				}
+				cede_province = THR
+				add_core = THR
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hellenoasian.601 # ionian revolt - cypriote pacification
+	title = "hellenoasian.601.t"
+	desc = "hellenoasian.601.d"
+	picture = cavalry
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = asian_power
+		has_global_flag = ionian_revolt_start
+		war_with = ZY2
+		war_score_against = {
+			who = ZY2
+			value = 50
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.601.a"
+		add_prestige = 10
+		white_peace = ZY2
+		hidden_effect = {
+			every_province = {
+				limit = {
+					region = cyprus_region
+					NOT = { owned_by = ROOT }
+				}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hellenoasian.7 # ionian revolt - greek victory
+	title = "hellenoasian.7.t"
+	desc = "hellenoasian.7.d"
+	picture = cavalry
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = MLT
+		has_global_flag = ionian_revolt_start
+		war_with = PSE
+		war_score_against = {
+			who = PSE
+			value = 60
+		}
+		2158 = {
+			NOT = {
+				controlled_by = PHR
+			}
+		}
+		2146 = {
+			NOT = {
+				controlled_by = PS3
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.7.a"
+		add_prestige = 25
+		white_peace = PSE
+		set_global_flag = ionian_revolt_greek_victory
+		event_target:asian_event_overlord = {
+			macedonia_superregion = {
+				remove_core = ROOT
+				remove_claim = ROOT
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = hellenoasian.8 # persian attack on athens and eretria
+	title = "hellenoasian.8.t"
+	desc = "hellenoasian.8.d"
+	picture = battle
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = asian_power
+		has_global_flag = ionian_revolt_asian_victory
+		NOT = {
+			has_global_flag = helleno_asian_war_1_start
+		}
+		is_year = 255
+		NOT = {
+			is_year = 270
+		}
+		NOT = { started_in = 258.1.1 }
+		OR = {
+			exists = ATH
+			exists = HEL
+			exists = SP1
+		}
+		961 = {
+			OR = {
+				owned_by = ATH
+				owned_by = HEL
+				owned_by = SP1
+			}
+		}
+		959 = {
+			OR = {
+				owned_by = ATH
+				owned_by = HEL
+				owned_by = SP1
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			set_global_flag = helleno_asian_war_1_start
+			if = {
+				limit = {
+					NOT = {
+						exists = ATH
+					}
+				}
+				add_casus_belli = {
+					target = SP1
+					type = cb_insult
+					months = 120
+				}
+			}
+			add_casus_belli = {
+				target = ATH
+				type = cb_insult
+				months = 120
+			}
+			add_casus_belli = {
+				target = HEL
+				type = cb_insult
+				months = 120
+			}
+			add_casus_belli = {
+				target = ERT
+				type = cb_insult
+				months = 120
+			}
+			add_casus_belli = {
+				target = HEL
+				type = cb_insult
+				months = 120
+			}
+			add_casus_belli = {
+				target = CST
+				type = cb_insult
+				months = 120
+			}
+			add_casus_belli = {
+				target = NXS
+				type = cb_insult
+				months = 120
+			}
+		}
+		if = {
+			limit = {
+				exists = MAC
+				MAC = {
+					ai = yes
+				}
+			}
+			vassalize = MAC
+		}
+	}
+	mean_time_to_happen = {
+		months = 5
+	}
+	option =  {
+		name = "hellenoasian.8.a"
+		ATH = {
+			country_event = {
+				id = hellenoasian.800
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = ATH
+				}
+			}
+			HEL = {
+				country_event = {
+					id = hellenoasian.800
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					exists = HEL
+				}
+			}
+			SP1 = {
+				country_event = {
+					id = hellenoasian.800
+				}
+			}
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_insult
+			who = ATH
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_insult
+			who = HEL
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_insult
+			who = ERT
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_insult
+			who = CST
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_insult
+			who = NXS
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_insult
+			who = TNG
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = ATH
+				}
+			}
+			declare_war_with_cb = {
+				casus_belli = cb_insult
+				who = SP1
+			}
+		}
+	}
+}
+country_event = {
+	id = hellenoasian.800 # athens warned that greko persian wars start
+	title = "hellenoasian.800.t"
+	desc = "hellenoasian.800.d"
+	picture = hoplites
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = "hellenoasian.800.a"
+		add_manpower = 5
+		add_prestige = -3
+		add_country_modifier = {
+			name = greek_greko_persian_buff
+			duration = 7300
+		}
+		country_event = {
+			id = hellenoasian.801
+			days = 200
+		}
+	}
+}
+
+
+country_event = {
+	id = hellenoasian.801 # Miltiades Advise
+	title = "hellenoasian.801.t"
+	desc = "hellenoasian.801.d"
+	picture = hoplites
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = "hellenoasian.801.a"
+		define_general = {
+			name = "Miltiades"
+			fire = 3
+			shock = 7
+			manuever = 6
+			siege = 2
+		}
+		959 = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = TNG
+		}
+		add_country_modifier = {
+			name = greek_greko_persian_miltiades_charge_buff
+			duration = 7300
+		}
+		every_country = {
+			limit = {
+				has_country_flag = asian_power
+			}
+			country_event = {
+				id = hellenoasian.802
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hellenoasian.802 # Persians spawn at Marathon
+	title = "hellenoasian.802.t"
+	desc = "hellenoasian.802.d"
+	picture = battle
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = "hellenoasian.802.a"
+		hidden_effect = {
+			set_global_flag = helleno_asian_war_1_marathon_start
+			961 = {
+				change_controller = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				cavalry = ROOT
+				add_province_modifier = {
+					name = marathon_persians_dont_move
+					duration = -1
+				}
+			}
+		}
+		add_country_modifier = {
+			name = asian_marathon_debuff
+			duration = -1
+		}
+	}
+}
+
+
+country_event = {
+	id = hellenoasian.803 # Battle at Marathon and first Persian invasion end
+	title = "hellenoasian.803.t"
+	desc = "hellenoasian.803.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = helleno_asian_war_1_start
+		has_global_flag = helleno_asian_war_1_marathon_start
+		is_at_war = yes
+		961 = {
+			owned_by = ROOT
+		}
+		controls = 961
+	}
+	option =  {
+		name = "hellenoasian.803.a"
+		add_army_tradition = 20
+		add_prestige = 20
+		961 = {
+			remove_province_modifier = marathon_persians_dont_move
+		}
+		every_country = {
+			limit = {
+				has_country_modifier = asian_marathon_debuff
+			}
+			remove_country_modifier = asian_marathon_debuff
+			white_peace = ATH
+			white_peace = HEL
+			white_peace = SP1
+			white_peace = ERT
+			white_peace = CST
+			white_peace = NXS
+			white_peace = TNG
+		}
+	}
+}

@@ -1,0 +1,16 @@
+#Galley
+type = galley
+
+trigger = {
+	unit_type = balkan
+}
+
+
+hull_size = 25
+base_cannons = 42
+sail_speed = 11
+
+sprite_level = 1
+
+blockade = 15
+sailors = 180

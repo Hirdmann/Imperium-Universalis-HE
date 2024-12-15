@@ -1,0 +1,102 @@
+add_core = GET
+owner = GET
+controller = GET
+culture = getean
+religion = getic_religion
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 5
+trade_goods = meat_animals
+capital = ""
+is_city = yes
+
+241.1.1 = {
+	add_core = TRL
+	owner = TRL
+	controller = TRL
+
+	base_tax = 1
+	base_production = 2
+	base_manpower = 2
+}
+
+275.1.1 = {
+	add_core = NIP
+	owner = NIP
+	controller = NIP
+	culture = odrysian
+	religion = thracian
+}
+
+395.1.1 = {
+	add_core = TRL
+	owner = TRL
+	controller = TRL
+}
+441.1.1 = {
+	add_core = FD9
+	owner = FD9
+	controller = FD9
+}
+462.1.1 = {
+	add_core = GET
+	owner = GET
+	controller = GET
+	remove_core = FD9
+}
+474.1.1 = {
+	add_core = TRL
+	owner = TRL
+	controller = TRL
+	remove_core = GET
+}
+477.1.1 = {
+	add_core = TYL
+	owner = TYL
+	controller = TYL
+}
+542.1.1 = {
+	add_core = TRL
+	owner = TRL
+	controller = TRL
+	culture = odrysian
+	religion = thracian
+}
+690.1.1 = {
+	add_core = DAC
+	owner = DAC
+	controller = DAC
+}
+710.1.1 = {
+	add_core = GET
+	owner = GET
+	controller = GET
+}
+739.1.1 = {
+	add_core = ROI
+	owner = ROI
+	controller = ROI
+}
+
+#discovered_by = roman
+discovered_by = greek_techgroup
+#discovered_by = punic
+#discovered_by = diadochi
+#discovered_by = iranian
+discovered_by = balkan
+#discovered_by = celtic
+#discovered_by = germanic
+#discovered_by = north_african
+discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+#discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+#discovered_by = caucaso_anatolian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african

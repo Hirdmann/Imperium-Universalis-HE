@@ -1,0 +1,159 @@
+government = monarchy
+add_government_reform = aristocratic_monarchy_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = greco_semitic
+religion = greek_religion
+capital = 2170
+#religious_school = hellenic_type
+
+historical_rival = EUM
+
+431.1.1 = {
+	#add_ruler_personality = diadochi_leader_personality
+	add_army_professionalism = 0.5
+	add_government_reform = satrap_diadochi_reform
+	add_government_reform = syncretism_reform
+	add_government_reform = aristocratic_land_reform
+	add_government_reform = standing_army_reform
+	add_government_reform = limited_conscription_reform
+	add_accepted_culture = macedon
+	add_accepted_culture = greek
+	override_country_name = "NON_REGNAL_ANTIGONUS"
+	monarch = {
+		name = "Antigonos I Monophthalmos"
+		dynasty = "Antigonidai"
+		birth_date = 375.1.1
+		death_date = 453.9.1
+		dip = 5
+		adm = 4
+		mil = 6
+		leader = {
+			name = "Antigonos Monophthalmos"
+			type = general
+			fire = 8
+			shock = 8
+			manuever = 4
+			siege = 3
+			death_date = 453.1.1
+		}
+	}
+	heir = {
+		name = "Demetrios Poliorketes"
+		monarch_name = "Demetrios I Poliorketes"
+		dynasty = "Antigonidai"
+		birth_date = 417.1.1
+		death_date = 471.1.1
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 5
+		leader = {
+			name = "Demetrios Poliorketes"
+			type = general
+			fire = 6
+			shock = 8
+			manuever = 7
+			siege = 6
+		}
+	}
+	leader = {
+		name = "Ptolemaeus Antigonid" #nephew of Antigonus
+		type = general
+		fire = 4
+		shock = 5
+		manuever = 5
+		siege = 5
+		death_date = 444.1.1 #rebelled and went to Ptolemaic Egypt where he was executed for being overly anbitious
+	}
+	leader = {
+		name = "Nearchus of Lato" #great navarch of Alexander the Great
+		type = explorer
+		fire = 7
+		shock = 7
+		manuever = 8
+		siege = 3
+		death_date = 433.1.1 #died in 453, but probably soon after Antigonus become strategos he was just an advisor
+	}
+}
+
+438.1.1 = {
+	capital = 7155
+}
+
+439.1.1 = {
+	remove_historical_rival = EUM
+	historical_rival = PTO
+	historical_rival = SEL
+}
+
+448.1.1 = {
+	add_government_reform = diadochi_kingdom_reform
+	government_rank = 4
+	add_stability = 2
+	add_army_tradition = 50
+	add_prestige = 25
+	add_absolutism = 10
+	restore_country_name = yes
+}
+
+453.1.1 = {
+	government_rank = 3
+	add_accepted_culture = greek
+	monarch = {
+		name = "Demetrios Poliorketes"
+		dynasty = "Antigonidai"
+		birth_date = 417.1.1
+		death_date = 471.1.1
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 5
+		leader = {
+			name = "Demetrios Poliorketes"
+			type = general
+			fire = 6
+			shock = 8
+			manuever = 7
+			siege = 6
+		}
+	}
+	heir = {
+		name = "Antigonus II Gonatas"
+		dynasty = "Antigonidai"
+		birth_date = 434.1.1
+		death_date = 515.1.1
+		dip = 5
+		adm = 4
+		mil = 4
+		leader = {
+			name = "Antigonus II"
+			type = general
+			fire = 6
+			shock = 6
+			manuever = 8
+			siege = 4
+		}
+	}
+	primary_culture = macedon
+}
+471.1.1 = {
+	monarch = {
+		name = "Antigonus II Gonatas"
+		dynasty = "Antigonidai"
+		birth_date = 434.1.1
+		death_date = 515.1.1
+		dip = 5
+		adm = 4
+		mil = 4
+		leader = {
+			name = "Antigonus II Gonotas"
+			type = general
+			fire = 6
+			shock = 6
+			manuever = 8
+			siege = 4
+		}
+	}
+}

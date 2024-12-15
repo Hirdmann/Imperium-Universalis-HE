@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = liuqiuan
+religion = liuqiuan_religion
+capital = 7513
+technology_group = korean
+
+141.1.1 = {
+	monarch = {
+		name = "Ama"
+		dynasty = "Tenson"
+		birth_date = 122.1.1
+		dip = 5
+		adm = 4
+		mil = 6
+	}
+}
+

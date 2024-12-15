@@ -1,0 +1,23 @@
+government = native
+add_government_reform = pastoral_tribe_reform
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = qahtanite
+religion = arab_religion
+capital = 2628
+technology_group = afro_arabian
+
+
+142.1.1 = {
+	add_country_modifier = {
+		name = no_trib_vasssalisation_for_now
+		duration = 10950
+	}
+}
+554.1.1 = {
+	primary_culture = qahtanite
+	capital = 2577
+	government_rank = 3
+	government = monarchy
+	add_government_reform = despotism_reform
+}

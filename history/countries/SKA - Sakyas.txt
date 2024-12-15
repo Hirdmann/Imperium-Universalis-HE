@@ -1,0 +1,80 @@
+government = tribal
+add_government_reform = mleccha_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = kosalanite
+religion = sramana
+religious_school = agnosticism_school
+capital = 3643
+historical_friend = KOL
+
+20.1.1 = {
+	monarch = {
+		name = "Okkamukha"
+		dynasty = "Ikshvaku"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+50.1.1 = {
+	monarch = {
+		name = "Sivisamjaya"
+		dynasty = "Ikshvaku"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+80.1.1 = {
+	monarch = {
+		name = "Sihassara"
+		dynasty = "Ikshvaku"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+110.1.1 = {
+	monarch = {
+		name = "Jayasena"
+		dynasty = "Ikshvaku"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+140.1.1 = {
+	monarch = {
+		name = "Sihahanu"
+		dynasty = "Ikshvaku"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+170.1.1 = {
+	monarch = {
+		name = "Suddhodana"
+		dynasty = "Ikshvaku"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+227.1.1 = {
+	religion = buddhism
+	religious_school = mahasamghika_school
+}
+
+300.1.1 = {
+	government = republic
+	add_government_reform = indian_republic_reform
+}

@@ -1,0 +1,214 @@
+country_decisions = {
+	build_colloss_of_rhodos = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			owns_core_province = 995
+			has_dlc = "Leviathan"
+			NOT = { has_global_flag = built_colossus_monument_flag }
+			NOT = {
+				995 = {
+					has_great_project = {
+						type = wonder_rhodos
+					}
+				}
+			}
+			OR = {
+				tag = HEL
+				tag = APG
+				tag = UNI
+				tag = RHO
+				tag = CYC
+				tag = IAL
+				tag = KME
+				tag = LIN
+			}
+		}
+		allow = {
+			adm_tech = 12
+			is_at_war =  no
+			treasury = 600
+		}
+		effect = {
+			add_treasury = -600
+			add_prestige = 50
+			add_splendor = 100
+			set_global_flag = built_colossus_monument_flag
+			995 = {
+				add_great_project = {
+					type = wonder_rhodos
+					instant = no
+				}
+			}
+			show_ambient_object = rhodos
+		}
+		ai_importance = 150
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	build_mausoleum = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			owns_core_province = 2130
+			has_dlc = "Leviathan"
+			NOT = { has_global_flag = built_mausoleum_monument_flag }
+			OR = {
+				tag = HAL
+				tag = CRI
+			}
+			NOT = {
+				2130 = {
+					has_great_project = {
+						type = wonder_mausoleum
+					}
+				}
+			}
+		}
+		allow = {
+			adm_tech = 6
+			is_at_war = no
+			treasury = 400
+		}
+		effect = {
+			set_global_flag = built_mausoleum_monument_flag
+			add_treasury = -400
+			add_prestige = 50
+			add_splendor = 100
+			2130 = {
+				add_great_project = {
+					type = wonder_mausoleum
+					instant = no
+				}
+			}
+			show_ambient_object = mausoleum
+		}
+		ai_importance = 250
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	build_pharos = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			owns_core_province = 728
+			has_dlc = "Leviathan"
+			NOT = { has_global_flag = built_pharos_monument_flag }
+			OR = {
+				tag = EGY
+				tag = MEM
+				tag = PTO
+				tag = MSW
+			}
+			NOT = {
+				728 = {
+					has_great_project = {
+						type = wonder_pharos
+					}
+				}
+			}
+		}
+		allow = {
+			adm_tech = 20
+			is_at_war =  no
+			treasury = 750
+		}
+		effect = {
+			set_global_flag = built_pharos_monument_flag
+			add_treasury = -750
+			add_prestige = 50
+			add_splendor = 100
+			728 = {
+				add_great_project = {
+					type = wonder_pharos
+					instant = no
+				}
+			}
+			show_ambient_object = pharos
+		}
+		ai_importance = 250
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	build_artemis_temple = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			owns_core_province = 2127
+			has_dlc = "Leviathan"
+			NOT = { has_global_flag = built_artemis_monument_flag }
+			OR = {
+				tag = EPH
+				tag = MLT
+				tag = LYD
+			}
+			NOT = {
+				2127 = {
+					has_great_project = {
+						type = wonder_artemis_temple
+					}
+				}
+			}
+		}
+		allow = {
+			adm_tech = 6
+			is_at_war =  no
+			treasury = 250
+		}
+		effect = {
+			set_global_flag = built_artemis_monument_flag
+			add_treasury = -250
+			add_prestige = 50
+			add_splendor = 100
+			2127 = {
+				add_great_project = {
+					type = wonder_artemis_temple
+					instant = no
+				}
+			}
+			show_ambient_object = artemis_temple
+		}
+		ai_importance = 250
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	build_the_zeus = {
+        color = { 245 160 60 }
+		potential = {
+			owns_core_province = 941
+			has_dlc = "Leviathan"
+			NOT = { has_global_flag = built_zeus_monument_flag }
+			NOT = {
+				941 = {
+					has_great_project = {
+						type = zeus_statue
+					}
+				}
+			}
+			religion = greek_religion
+		}
+		allow = {
+			treasury = 500
+			adm_tech = 5
+		}
+		effect = {
+			set_global_flag = built_zeus_monument_flag
+			add_treasury = -500
+			532 = {
+				add_great_project = {
+					type = zeus_statue
+					instant = no
+				}
+			}
+			show_ambient_object = zeus
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

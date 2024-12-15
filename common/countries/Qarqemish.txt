@@ -1,0 +1,143 @@
+#Country Name: Please see filename.
+
+graphical_culture = punicgfx
+
+color = { 36 4 124 }
+
+historical_idea_groups = {
+	caravan_trade_ideas
+	infantry_ideas
+	agraculture_ideas
+	diplomatic_ideas
+	leadership_ideas
+	financial_ideas
+	cerimonial_ideas
+	propaganda_ideas
+}
+
+historical_units = {
+	asian_base_inf_0
+	asian_base_inf_1
+	asian_base_inf_2
+	asian_base_inf_3
+	asian_base_inf_4
+	asian_base_inf_5
+	asian_base_inf_6
+	asian_base_inf_7
+	asian_base_inf_8
+	asian_base_inf_9
+	asian_base_inf_10
+	asian_base_inf_11
+	asian_base_inf_12
+	asian_base_inf_13
+	asian_base_inf_14
+	asian_base_inf_15
+	asian_base_inf_16
+
+	asian_base_cav_0
+	asian_base_cav_1
+	asian_base_cav_2
+	asian_base_cav_3
+	asian_base_cav_4
+	asian_base_cav_5
+	asian_base_cav_6
+	asian_base_cav_7
+	asian_base_cav_8
+	asian_base_cav_9
+	asian_base_cav_10
+	asian_base_cav_11
+	asian_base_cav_12
+	asian_base_cav_13
+	asian_base_cav_14
+
+	asian_base_art_0
+	asian_base_art_1
+	asian_base_art_2
+	asian_base_art_3
+	asian_base_art_4
+	asian_base_art_5
+	asian_base_art_6
+	asian_base_art_7
+	asian_base_art_8
+	asian_base_art_9
+	asian_base_art_10
+	asian_base_art_11
+	asian_base_art_12
+	asian_base_art_13
+	asian_base_art_14
+	asian_base_art_15
+	asian_base_art_16
+	asian_base_art_17
+}
+monarch_names = {
+	"Sarri-Kusuh #1" = 20
+	"Sahurunuwa #1" = 20
+	"Ini-Tessub #2" = 20
+	"Talmi-Tessub #1" = 20
+	"Kuzi-Tessub #1" = 20
+	"Mazakarhuha #1" = 20
+	"Ir-Tessub #1" = 20
+	"Thudaliya #1" = 20
+	"Tessub-Paziti #1" = 20
+	"Uratarhunza #1" = 20
+	"Suhi #2" = 20
+	"Astuwalamanza #1" = 20
+	"Katuwa #1" = 20
+	"Sangara #1" = 20
+	"Astiruwa #1" = 30
+	"Yariri #1" = 30
+	"Kamani #1" = 30
+	"Sastura #1" = 30
+	"Astiru #1" = 30
+	"Pisiri #1" = 30
+
+	"Udaynath" = 10
+	"Hairan" = 10
+	"Maeonius" = 10
+	"Vaballathus" = 10
+	"Abdalonymus" = 10
+	"Achololim" = 10
+	"Baalhaan" = 10
+	"Carthalo" = 10
+	"Fuabal" = 10
+	"Hamiscora" = 10
+	"Luli" = 10
+	"Mathos" = 10
+	"Merbal" = 10
+	"Tendao" = 10
+	"Salicar" = 10
+	"Zaracas" = 10
+	"Shipitbaal" = 10
+
+	"Zenobia" = -1
+	"Adonia" = -1
+	"Ashtoreth" = -1
+	"Coryander" = -1
+	"Jesibel" = -1
+	"Tanith" = -1
+	"Tanni" = -1
+	"Tanythe" = -1
+}
+
+leader_names = {
+	Udaynathid Hairanid Maeonid Vaballathuid "of Palmyra" "of Hamath" "of Aram" "of Syria" "the Syrian" "the Aramean" "the Hittite" "the Arab" "the Amorite"
+	"of Damascus" "of Ituraea" "of Aleppo" "the Strong" "the Blessed" "the Big" "the Brave" "the Lionhearted" "the Purifier" "the Humble" "the Red" "of Amurru"
+	"the Loyal" "of Luhuti" "of Pattani" "the Lord" "the God's Servant" "the Benefactor" "the Blind" "the One-Eyed" "the Black" "the White" "of Canaan" "the Canaanite"
+	"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+ship_names = {
+	Aglibol Anat Arsay Arsu "Ashtar-Chemosh" Asherah Ashima Atargatis Attar Athirat Azizos Baalah "Ba'alat Gebal" "Ba'al Hadad" "Ba'al Hermon" "Baal Hammon" Baalshamin
+	"Baal-Zephon" Bel Bol Chemosh Dagon Dagon El Elohim Elyon Eshmun Baal Malakbel Yagribol Elkunirsa Amurru Anu "'Amm" Belili Gad Horon Bethoron Melqart Ishara
+	Ishat Kotharat "Kothar-wa-Khasis" Yagrush Aymur Liluri Lotan Yam Manuzi Milcom Misor Moloch Sydyk Mot Mawat "Nikkal-wa-Ib" Pidray Qadesthu Resheph Shadrafa Shachar
+	Shalim Salam Salem Shamamyim Eretz Shapash Shapsh Shemesh Shapshu Shamash Tallai Nahar Iarhibol Yarikh Napash Mot Malik "Yam-Qart" Ilhm Targhizizi Tharumagi
+	"El Shaddai" Shadu Amurru Luhuti Pattani Aram Hammath "Bit Adini" Gurgum Syria Canaan Phoenicia Tyre Sidon Beirot Byblos Alepo Arpad Hadad Shad Nimrod
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

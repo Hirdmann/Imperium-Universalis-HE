@@ -1,0 +1,12 @@
+government = tribal
+add_government_reform = korean_samhan_confederation_reform
+government_rank = 3
+#mercantilism = 0.25
+primary_culture = byeonhan
+religion = shinto
+capital = 1712
+technology_group = korean
+
+443.1.1 = {
+	primary_culture = jinhan
+}

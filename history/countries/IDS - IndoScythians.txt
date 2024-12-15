@@ -1,0 +1,26 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 3
+technology_group = indian
+primary_culture = saka
+religion = scythian_religion
+capital = 2930
+
+500.1.1 = {
+	government = monarchy
+	add_government_reform = indian_common_monarchy
+}
+
+634.1.1 = {
+	capital = 2912
+	religion = buddhism
+}
+656.1.1 = {
+	monarch = {
+		name = "Mauka"
+		dynasty = "of Sakastan"
+		dip = 4
+		adm = 4
+		mil = 5
+	}
+}

@@ -1,0 +1,55 @@
+native_size = 45
+native_ferocity = 7
+native_hostileness = 6
+culture = western_hallstat
+religion = celtic_religion
+hre = no
+base_tax = 0
+base_production = 1
+trade_goods = unknown
+base_manpower = 3
+capital = ""
+
+142.8.10 = {
+	owner = VGI
+	controller = VGI
+	add_core = VGI	
+	trade_goods = horses
+	is_city = yes
+}
+323.1.1 = {
+	culture = vindelici
+}
+524.1.1 = {
+	culture = irminonic
+	religion = germanic_religion
+}
+555.1.1 = { tribal_owner = HEM }
+748.1.1 = {
+	owner = HEM
+	controller = HEM
+	add_core = HEM
+	is_city = yes
+}
+
+#discovered_by = roman
+#discovered_by = greek_techgroup
+#discovered_by = punic
+#discovered_by = diadochi
+#discovered_by = iranian
+#discovered_by = balkan
+discovered_by = celtic
+discovered_by = germanic
+#discovered_by = north_african
+#discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+#discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+#discovered_by = caucaso_anatolian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african

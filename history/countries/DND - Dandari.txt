@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = celtic
+primary_culture = illyrian
+religion = illyrian_religion
+#religious_school = balkan_type
+historical_friend = SC1
+historical_friend = CLG
+capital = 1187
+390.1.1 = {
+	primary_culture = boiian
+	religion = celtic_religion
+}
+

@@ -1,0 +1,8 @@
+bookmark = {
+	name = "GAOZU_OF_HAN_XIONGNU_RISE_TITLE"
+	desc = "GAOZU_OF_HAN_XIONGNU_RISE_DESC"
+	date = 550.1.1
+
+	country = HNW
+	country = XIO
+}

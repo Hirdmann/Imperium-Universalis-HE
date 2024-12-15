@@ -1,0 +1,151 @@
+government = tribal
+add_government_reform = tribal_federation_reform #Represent thynians
+government_rank = 2
+#mercantilism = 0.25
+technology_group = balkan
+primary_culture = odrysian
+religion = thracian
+#religious_school = hellenic_type
+capital = 2154
+historical_friend = THY
+422.1.1 = {
+	religion = greek_religion
+}
+
+425.1.1 = {
+	add_accepted_culture = pontic_greek
+}
+
+428.1.1 = {
+	government = tribal
+	add_government_reform = tribal_kingdom_reform
+	monarch = {
+		name = "Zipoetes I"
+		dynasty = "Doedalsid"
+		birth_date = 400.1.1
+		death_date = 476.1.1
+		dip = 3
+		adm = 3
+		mil = 5
+		leader = {
+			name = "Zipoetes I"
+			type = general	fire = 5
+			shock = 5
+			manuever = 2
+			siege = 1
+		}
+	}
+}
+470.1.1 = {
+	government_rank = 3
+}
+476.1.1 = {
+	monarch = {
+		name = "Zipoetes II"
+		dynasty = "Doedalsid"
+		dip = 3
+		adm = 4
+		mil = 3
+
+	}
+}
+478.1.1 = {
+	government = monarchy
+	add_government_reform = aristocratic_monarchy_reform
+	change_graphical_culture = hellenicgfx
+	change_technology_group = greek_techgroup
+	change_unit_type = greek_techgroup
+	override_country_name = "BITHYNIA"
+	monarch = {
+		name = "Nicomedes I"
+		dynasty = "Doedalsid"
+		dip = 4
+		adm = 6
+		mil = 2
+
+	}
+}
+493.1.1 = {
+	capital = 2150
+}
+498.1.1 = {
+	monarch = {
+		name = "Etazeta"
+		dynasty = "Doedalsid"
+		dip = 3
+		adm = 4
+		mil = 3
+		regent = yes
+	}
+	heir = {
+		name = "Ziaelas"
+		monarch_name = "Ziaelas"
+		dynasty = "Doedalsid"
+		birth_date = 484.1.1
+		death_date = 499.1.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+499.1.1 = {
+	monarch = {
+		name = "Ziaelas"
+		dynasty = "Doedalsid"
+		dip = 4
+		adm = 3
+		mil = 3
+
+	}
+}
+525.1.1 = {
+	monarch = {
+		name = "Prusias I Cholus"
+		dynasty = "Doedalsid"
+		dip = 3
+		adm = 3
+		mil = 3
+
+	}
+}
+571.1.1 = {
+	monarch = {
+		name = "Prusias II Cynegus"
+		dynasty = "Doedalsid"
+		dip = 3
+		adm = 3
+		mil = 3
+
+	}
+}
+604.1.1 = {
+	monarch = {
+		name = "Nicomedes II Epiphanes"
+		dynasty = "Doedalsid"
+		dip = 3
+		adm = 2
+		mil = 2
+
+	}
+}
+626.1.1 = {
+	monarch = {
+		name = "Nicomedes III Euergetes"
+		dynasty = "Doedalsid"
+		dip = 3
+		adm = 4
+		mil = 3
+
+	}
+}
+659.1.1 = {
+	monarch = {
+		name = "Nicomedes IV Philopator"
+		dynasty = "Doedalsid"
+		death_date = 679.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}

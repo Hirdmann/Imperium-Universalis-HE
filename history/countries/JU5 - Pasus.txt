@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = mleccha_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = sindhupulindas
+religion = mleccha_religion
+capital = 4842
+
+354.1.1 = {
+	religion = buddhism
+	religious_school = sthavira_school
+}
+
+400.1.1 = {
+	government = republic
+	add_government_reform = indian_republic_reform
+}

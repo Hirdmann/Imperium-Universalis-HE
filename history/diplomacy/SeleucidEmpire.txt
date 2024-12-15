@@ -1,0 +1,237 @@
+###############################################
+#Seleucid Vassals
+###############################################
+
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = SEL
+	second = GBK
+	start_date = 443.1.1
+	end_date = 504.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = GBK
+	start_date = 549.1.1
+	end_date = 567.1.1
+}
+
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = SEL
+	second = PRT
+	start_date = 509.1.1
+	end_date = 513.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = PRT
+	start_date = 544.1.1
+	end_date = 567.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = ATR
+	start_date = 443.1.1
+	end_date = 473.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = ATR
+	start_date = 443.1.1
+	end_date = 473.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = ATR
+	start_date = 534.1.1
+	end_date = 567.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = KPP
+	start_date = 453.1.1
+	end_date = 473.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = KPP
+	start_date = 543.1.1
+	end_date = 567.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = ARM
+	start_date = 453.1.1
+	end_date = 473.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = ARM
+	start_date = 543.1.1
+	end_date = 567.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = SPH
+	start_date = 543.1.1
+	end_date = 567.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = CMM
+	start_date = 553.1.1
+	end_date = 567.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = ARM
+	start_date = 549.1.1
+	end_date = 567.1.1
+}
+
+
+dependency = { #Seleucid satraps in Media
+	subject_type = "vassal"
+	first = SEL
+	second = ND9
+	start_date = 459.1.1
+	end_date = 535.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = ND9
+	start_date = 578.1.1
+	end_date = 606.1.1
+}
+dependency = { #Seleucid persian fratarakas in Persis
+	subject_type = "vassal"
+	first = SEL
+	second = PRS
+	start_date = 459.1.1
+	end_date = 535.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = PRS
+	start_date = 578.1.1
+	end_date = 606.1.1
+}
+dependency = { #Parthian vassals in persis
+	subject_type = "vassal"
+	first = PRT
+	second = PRS
+	start_date = 606.1.1
+	end_date = 963.1.1
+}
+dependency = { #Seleucid satraps in Karmana
+	subject_type = "vassal"
+	first = SEL
+	second = KRM
+	start_date = 459.1.1
+	end_date = 534.1.1
+}
+dependency = { #Parthian vassals in karmana
+	subject_type = "vassal"
+	first = PRT
+	second = KRM
+	start_date = 578.1.1
+	end_date = 963.1.1
+}
+dependency = { #Seleucid satraps in Ariana
+	subject_type = "vassal"
+	first = SEL
+	second = ARI
+	start_date = 459.1.1
+	end_date = 509.1.1
+}
+dependency = { #Seleucid satraps in Drangiana
+	subject_type = "vassal"
+	first = SEL
+	second = DRN
+	start_date = 459.1.1
+	end_date = 509.1.1
+}
+dependency = { #Seleucid satraps in Parthia
+	subject_type = "vassal"
+	first = SEL
+	second = PRT
+	start_date = 459.1.1
+	end_date = 508.1.1
+}
+
+dependency = { #Parthian vassals in Elymais
+	subject_type = "vassal"
+	first = PRT
+	second = EIM
+	start_date = 606.1.1
+	end_date = 963.1.1
+}
+dependency = { #Parthian vassals in Characene
+	subject_type = "vassal"
+	first = PRT
+	second = CAL
+	start_date = 606.1.1
+	end_date = 963.1.1
+}
+dependency = { #Parthian vassals in Adiabene
+	subject_type = "vassal"
+	first = PRT
+	second = AD1
+	start_date = 590.1.1
+	end_date = 963.1.1
+}
+dependency = { #Parthian vassals in Hatra
+	subject_type = "vassal"
+	first = PRT
+	second = SY4
+	start_date = 613.1.1
+	end_date = 963.1.1
+}
+dependency = { #Parthian vassals in Osroene
+	subject_type = "vassal"
+	first = PRT
+	second = OSR
+	start_date = 622.1.1
+	end_date = 963.1.1
+}
+dependency = { #Parthian vassals in Atropatene
+	subject_type = "vassal"
+	first = PRT
+	second = ATR
+	start_date = 608.1.1
+	end_date = 963.1.1
+}
+dependency = { #assur as free city inside Parthia
+	subject_type = "vassal"
+	first = PRT
+	second = ASY
+	start_date = 613.1.1
+	end_date = 963.1.1
+}

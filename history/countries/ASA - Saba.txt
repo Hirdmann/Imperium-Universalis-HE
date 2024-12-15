@@ -1,0 +1,107 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 4
+#mercantilism = 0.25
+technology_group = afro_arabian
+primary_culture = sabaean
+religion = arab_religion
+#religious_school = sun_type
+capital = 2611
+historical_rival = QAT
+historical_rival = HIM
+add_treasury = 100
+140.1.1 = {
+	monarch = {
+		name = "Zamir Ali Yanuf"
+		dynasty = "of Saba"
+		birth_date = 110.1.1
+		death_date = 142.1.1
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+
+142.1.1 = {
+	monarch = {
+		name = "Karabil Watar II"
+		dynasty = "of Saba"
+		birth_date = 120.1.1
+		death_date = 160.1.1
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+
+160.1.1 = {
+	monarch = {
+		name = "Samah'ali Zarih"
+		dynasty = "of Saba"
+		birth_date = 146.1.1
+		death_date = 180.1.1
+		dip = 32
+		adm = 3
+		mil = 3
+	}
+}
+
+180.1.1 = {
+	monarch = {
+		name = "Karabil Watar III"
+		dynasty = "of Saba"
+		birth_date = 164.1.1
+		death_date = 190.1.1
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+}
+
+190.1.1 = {
+	monarch = {
+		name = "Ilsharih I"
+		dynasty = "of Saba"
+		birth_date = 168.1.1
+		death_date = 200.1.1
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+}
+
+194.1.1 = {
+	monarch = {
+		name = "Karib'il Bayyin I"
+		dynasty = "of Saba"
+		birth_date = 155.1.1
+		death_date = 210.1.1
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+	heir = {
+		name = "Dhamar'ali Watar"
+		monarch_name = "Dhamar'ali Watar"
+		dynasty = "of Saba"
+		birth_date = 185.1.1
+		death_date = 240.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+210.1.1 = {
+	monarch = {
+		name = "Dhamar'ali Watar"
+		dynasty = "of Saba"
+		birth_date = 185.1.1
+		death_date = 240.1.1
+		dip = 4
+		adm = 4
+		mil = 2
+	}
+}
+

@@ -1,0 +1,9 @@
+bookmark = {
+	name = "YUGURTHINE_WAR_TITLE"
+	desc = "YUGURTHINE_WAR_DESC"
+	date = 642.1.1
+
+	country = ROM
+	country = NUM
+	country = MRT
+}

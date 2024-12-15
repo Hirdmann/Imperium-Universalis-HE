@@ -1,0 +1,10 @@
+government = tribal
+add_government_reform = italic_tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = roman
+primary_culture = sicels
+religion = roman_religion
+capital = 5566
+
+add_historical_rival = SII

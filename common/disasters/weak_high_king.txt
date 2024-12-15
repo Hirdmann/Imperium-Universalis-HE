@@ -1,0 +1,103 @@
+weak_high_king = {
+	potential = {
+		has_reform = elamite_kingdom
+		sukkal_vassal = 2
+		is_subject = no
+		NOT = { has_global_flag = possible_collapse_of_elam_flag }
+	}
+
+	can_start = {
+		has_any_disaster = no
+		any_neighbor_country = {
+			total_development = 400
+			OR = {
+				culture_group = eastern_iranian_group
+				culture_group = western_iranian
+			}
+			army_size = ROOT
+			is_subject = no
+			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+
+	can_stop = {
+		OR = {
+			any_ally = { total_development = 400 }
+			is_great_power = yes
+			total_development = 400
+		}
+	}
+
+	can_end = {
+		OR = {
+			NOT = {
+				OR = {
+					has_reform = elamite_kingdom
+					sukkal_vassal = 2
+				}
+			}
+			NOT = {
+				any_neighbor_country = {
+					total_development = 400
+					OR = {
+						culture_group = eastern_iranian_group
+						culture_group = western_iranian
+					}
+					army_size = ROOT
+					is_subject = no
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}
+	}
+
+	progress = {
+		modifier = {
+			factor = 1.5
+			NOT = { dip = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { years_of_income	 = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { army_size_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { army_tradition = 40 }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = 0.1
+		land_morale = -0.1
+		discipline = -0.05
+	}
+
+	on_start = sukkal.19
+	on_end = sukkal.20
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+		}
+	}
+
+	on_start_effect = {
+		hidden_effect = {
+			set_global_flag = possible_collapse_of_elam_flag
+		}
+	}
+}

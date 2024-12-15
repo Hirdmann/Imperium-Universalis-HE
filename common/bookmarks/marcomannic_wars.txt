@@ -1,0 +1,9 @@
+bookmark = {
+	name = "MARCOMANNIC_WARS_TITLE"
+	desc = "MARCOMANNIC_WARS_DESC"
+	date = 919.1.1
+
+	country = ROI
+	country = MAR
+	country = QUA
+}

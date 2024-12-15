@@ -1,0 +1,9 @@
+bookmark = {
+	name = "INDO_SKYTHIA_TITLE"
+	desc = "INDO_SKYTHIA_DESC"
+	date = 634.1.1
+
+	country = IDS
+	country = IGK
+	country = SAK
+}

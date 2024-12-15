@@ -1,0 +1,11 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = northwest_doric
+religion = greek_religion
+capital = 1020
+add_army_professionalism = 0.1
+
+425.1.1 = { primary_culture = greek }

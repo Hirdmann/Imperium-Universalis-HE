@@ -1,0 +1,116 @@
+government = monarchy
+add_government_reform = lydian_monarchy_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = caucaso_anatolian
+primary_culture = lydian
+religion = cybele
+#religious_school = hellenic_type
+capital = 2158
+historical_rival = CYM
+historical_rival = SMY
+
+historical_friend = CRI
+historical_friend = EPH
+
+add_army_professionalism = 0.1
+add_absolutism = 10
+add_army_tradition = 10
+add_stability = 1
+add_yearly_manpower = 2
+74.1.1 = {
+	monarch = {
+		name = "Gugisha" #Giges
+		dynasty = "Mermnadid"
+		death_date = 110.1.1
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+110.1.1 = {
+	monarch = {
+		name = "Ardus" #Ardys
+		dynasty = "Mermnadid"
+		death_date = 117.1.1
+		dip = 3
+		adm = 3
+		mil = 2
+	}
+}
+117.1.1 = {
+	monarch = {
+		name = "Saduatta" #Sadyattes
+		dynasty = "Mermnadid"
+		death_date = 119.1.1
+		dip = 5
+		adm = 3
+		mil = 3
+	}
+	add_accepted_culture = phrygian
+}
+119.1.1 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = charismatic_negotiator_personality
+	add_ruler_personality = scenario_immortal_personality	#for test, if he ll live longer
+	monarch = {
+		name = "Walvetesh" #Alyattes
+		dynasty = "Mermnadid"
+		birth_date = 99.1.1
+		dip = 3
+		adm = 3
+		mil = 5
+		leader = {
+			name = "Walvetesh Mermnadid"
+			type = general
+			fire = 4
+			shock = 4
+			manuever = 3
+			siege = 2
+		}
+	}
+	add_manpower = 15
+	add_accepted_culture = ionic
+	add_accepted_culture = mysian
+}
+134.1.1 = {
+	heir = {
+		name = "Krowishash" #Croesus
+		dynasty = "Mermnadid"
+		birth_date = 134.1.1
+		death_date = 208.1.1
+		dip = 4
+		adm = 5
+		mil = 4
+	}
+}
+
+169.1.1 = {
+	clear_scripted_personalities = yes
+	monarch = {
+		name = "Krowishash" #Croesus
+		dynasty = "Mermnadid"
+		birth_date = 134.1.1
+		death_date = 208.1.1
+		dip = 4
+		adm = 5
+		mil = 3
+	}
+}
+
+424.1.1 = {
+	add_government_reform = lydian_monarchy_reform
+	override_country_name = "MENANDER_LYDIA"
+	monarch = {
+		name = "Menandros"
+		dynasty = "of Lydia"
+		death_date = 450.1.1
+		culture = macedon
+		religion = greek_religion
+		dip = 2
+		adm = 2
+		mil = 5
+	}
+}

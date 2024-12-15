@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = moabite
+religion = punic_religion
+#religious_school = semitic_type
+capital = 2280
+
+historical_friend = AMM
+
+140.1.1 = {
+	monarch = {
+		name = "Kamashalta"
+		dynasty = "Mutzurid"
+		birth_date = 92.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+	heir = {
+		name = "Chemosh-Haleth"
+		birth_date = 132.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

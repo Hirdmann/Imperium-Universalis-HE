@@ -1,0 +1,86 @@
+nothingness_modifier = {
+	hidden = yes
+	army_professionalism = 0.0
+
+	marker_sprite = GFX_pa_rank_0
+	unit_sprite_start = "GFX_ap1_"
+
+	trigger = {
+		always = yes
+	}
+
+	may_return_manpower_on_disband = yes
+}
+
+tribal_army_modifier = {
+	army_professionalism = 0.1
+
+	marker_sprite = GFX_pa_rank_1
+	unit_sprite_start = "GFX_ap2_"
+
+	trigger = {
+		always = yes
+	}
+
+	may_refill_garrison = yes
+	land_morale = 0.1
+}
+
+noblemen_army_modifier = {
+	army_professionalism = 0.25
+
+	marker_sprite = GFX_pa_rank_2
+	unit_sprite_start = "GFX_ap3_"
+
+
+	trigger = {
+		always = yes
+	}
+
+	leader_cost = 0.1
+	free_leader_pool = 1
+}
+
+organized_army_modifier = {
+	army_professionalism = 0.4
+
+	marker_sprite = GFX_pa_rank_3
+	unit_sprite_start = "GFX_ap4_"
+
+	trigger = {
+		always = yes
+	}
+
+	may_build_supply_depot = yes
+	movement_speed = 0.2
+}
+
+reformed_army_modifier = {
+	army_professionalism = 0.6
+
+	marker_sprite = GFX_pa_rank_4
+	unit_sprite_start = "GFX_ap5_"
+
+
+	trigger = {
+		always = yes
+	}
+
+	reserves_organisation = 0.25
+}
+
+standing_army_modifier = {
+	army_professionalism = 0.8
+
+	marker_sprite = GFX_pa_rank_5
+	unit_sprite_start = "GFX_ap6_"
+
+
+	trigger = {
+		always = yes
+	}
+
+	drill_gain_modifier = 0.5
+	drill_decay_modifier = -0.25
+	force_march_free = yes
+}

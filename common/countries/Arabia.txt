@@ -1,0 +1,195 @@
+#Country Name: Please see filename.
+
+graphical_culture = berbergfx
+
+color = { 142 114 87 }
+
+
+historical_idea_groups = {
+	cavalry_ideas
+	agraculture_ideas
+	caravan_trade_ideas
+	administrative_ideas
+	mercenary_ideas
+	imperial_ideas
+	diplomatic_ideas
+	logistic_ideas
+}
+
+historical_units = {
+	1_sabean_tribesmen
+	1_sabean_horsemen
+	1_sabean_skirmishers
+
+	0_beduin_tribesmen
+	0_tribal_arab_cavalry
+	0_beduin_slingers
+
+	5_early_nubian_warriors
+	5_nubian_cavalry
+	5_axumite_skirmishers
+
+	10_late_arab_desert_warriors
+	10_late_desert_cavalry
+	10_early_axumite_archers
+
+	15_adv_nubian_spearmen
+	15_beduin_horsearchers
+	15_adv_beduin_slingers
+
+	20_arab_warrior
+	20_arab_cavalry
+	20_arab_skirmishers
+
+	25_arab_swordsmen
+	25_arab_noble_cavalry
+	25_veteran_african_bowmen
+}
+
+monarch_names = {
+	# Hadramaut
+	"Yada'il" = 2
+	"'Alhan" = 2
+	"Bayyin" = 2
+	"Dhubyan" = 2
+	"Yitha'il" = 2
+	"Yada'ib" = 2
+	"Il'azz" = 2
+	"Yashhur'il" = 2
+	"Yadi'ab Ghailan" = 2
+	"Yada'il Bayyin" = 2
+	"Il'azz Yalit" = 2
+	"Ilrayum Yadum" = 2
+	"Rabbshams" = 2
+
+	# Minaean
+	"'Ammyitha Nabat" = 2
+	"Abyada" = 2
+	"Hufn Sadiq" = 2
+	"Ilyafa Yafush" = 2
+	"Waqah'il Riyam" = 2
+	"Abkarib Sadiq" = 2
+	"Yitha'il Riyam" = 2
+	"Tubba'karib" = 2
+	"Hayu" = 2
+	"Ilyafa Yitha" = 2
+	"Halkarib Sadiq" = 2
+	"Hufn Yitha" = 2
+	"Ilyafa Riyam" = 2
+	"Ilyafa Waqah" = 2
+	"Waqah'il Sadiq" = 2
+	"Ilyafa Yashur" = 2
+	"Hufn Riyam" = 2
+	"Yitha'il Sadiq" = 2
+	"Waqah'il Yitha" = 2
+
+	# Awsan
+	"'Amkarib" = 2
+	"Muratta'" = 2
+	"Ma'ad'il" = 2
+	"Yasuduq'il Far'a" = 2
+	"Ma'ad'il Salhan" = 2
+	"Yasuduq'il Far'a Scharah'at" = 2
+	"'Ammyitha' Ghailan Gashmu" = 2
+
+	# Qataban
+	"Waraw'il" = 2
+	"Haufi'amm Yuhan'im" = 2
+	"Yada'ib Yigal" = 2
+	"Yada'ib Yanuf Yuhan'im" = 2
+	"Haufi'amm Yuhan'im" = 2
+	"Yigal Yuhargib" = 2
+	"Yada'ib Dhubyan Yuhan'im" = 2
+	"Ghailan" = 2
+	"Hilal" = 2
+	"Yada'ib Dhubyan Yuhargib" = 2
+	"Waraw'il Ghailan Yuhan'im" = 2
+	"Fara'karib" = 2
+	"Hilal Yuhaqbid" = 2
+
+	# Sheba, Saba and Himyar
+	"Yatha' Amr Bayin" = 2
+	"Yada'il Bayin" = 2
+	"Samah'ali Yanuf" = 2
+	"Yatha' Amar Watar" = 2
+	"Yakrib Malek Zarih" = 2
+	"Yakrib Malek Watar" = 2
+	"Yada'il Bayin" = 2
+	"Yada' Ab" = 2
+	"Yada'il Bayin" = 2
+	"Karibil Watar" = 2
+	"Akh Karab" = 2
+	"Samah'ali Watar" = 2
+	"Yada'il Watar" = 2
+	"Zamir Ali Zarih" = 2
+	"Karabil Bayin" = 2
+	"Zamir Ali Watar" = 2
+	"Zamir Ali Yanuf" = 2
+	"Karabil Watar" = 2
+	"Samah'ali Zarih" = 2
+	"Ilsharih" = 2
+	"Zamir Ali Bayin" = 2
+	"Karab Yuhan'em" = 2
+	"Anmar Yuha'man" = 2
+	"Nasir Yuhan'em" = 2
+	"Yarim Aymin" = 2
+	"Alhan Nahfan" = 2
+	"Far'am Yanhab" = 2
+	"Sha'ram Awtar" = 2
+	"Yazil Bayin" = 2
+	"Hayu Athtar Yazi'" = 2
+	"Watar Yuha'min" = 2
+	"Nasha Karab Yuha'min Yuharhib" = 2
+	"Yasir Yuhasdiq" = 2
+	"Sa'd Shams ʽAsri'" = 2
+	"Murthid Yuhahmid" = 2
+	"Zamir Ali Yahbir" = 2
+	"Tharin Ya'ib Yuhan'im" = 2
+	"Amdan Bayin Yuhaqbiz" = 2
+	"Hutar Athat Yafish" = 2
+	"Karab Athat Yuhaqbiz" = 2
+	"Shahar Aymin" = 2
+	"Sa'd Um Namran" = 2
+	"Yasir Yuhan'em" = 2
+
+	# Qedar and Dedan
+	"Hazael" = 2
+	"Gindibu" = 2
+	"Yauta" = 2
+	"Abiyate" = 2
+	"Teri" = 2
+	"Mati-il" = 2
+	"Kabaril" = 2
+	"Mahlay" = 2
+	"Gashmu" = 2
+	"Qainu" = 2
+
+	"Uzza" = -1
+	"Abazu" = -1
+	"Rabuzzat" = -1
+}
+
+leader_names = {
+	Haritat Abadat Rabbil Maliku Natnu Nuhuru Nebajot Harthah Obodas
+	Abdharetat Abdmaliku Afsa "An'am" Ayshu Fara Haddanu Hagay Haniu
+	Huru Kaddu Karibu Malikat Obeyshat Quasijju Rabbu Ruma Shudu Taymu Udaino
+	Wahballahi Wahbu Zaidelos Zaybu
+}
+
+ship_names = {
+	"Al-Uzza" "Al-'Ula" Dhu Dhat Amm Ammianas Athtar Aim Ara Abgal Abirillu Almaqah Anbay Aranyada Arsu Ashar Asira Atarquruma Atarsamain Athirat "Athtar Shariqan"
+	Bajir Balaw Basamun Dai Datin "Dhat-Anwat" "Dhat-Badan" "Dhat-Sanat" "Dhat-Zahran" "Dhu-Ghabat" "Dhu al-Kaffayn" "Dhul Khalasa" "Dhu-Samawi" Dushara Fils Gad
+	Ghayyan "Al-Harish" Haubas Haukim Hawl Hilal Hubal Isaf "Na-'ila" "Al-Jalsad" Jihar Kahl "Al-Kutbay" "Al-Lat" "Ma'n" Malik Manaf Manat Manawat "Al-Muharriq"
+	"Mun'im" "Nab'al" Nasr Nikrah Nuha Nuhm "Al-Qayn" Qaynan Qaysha Quzah Ruda Sad "Al-Sa'ida" Sakhr Salm Shams Shamsum Shamash Shapash "Shay al-Qawm" Shingala
+	"Su'ayr" "Suwa'" Syn Sin "Ta'lab" Theandrios "Al-Uqaysir" "Al-'Uzza" Wadd Kalb "Al-Ya'bub" "Ya'uq" Yaguth Yatha Tayma Yathrib Saba Qataban Hadramaut Himjar Thamud
+	Qedar Lihyan Dedan Nabataea Mikan Gerrha Hegra "Mada'in Salih" Kindah Tayy Aglibol Astarte Atargatis Baalshamin Allat Alilat Bel Bes El Ilah Ishtar Malakbel Nabu
+	Nergal Yarhibol Nsb Masgida Duwar Sanam Wathan Hima Mahram Afkal Kahin Shaykh Kumra Rsw Fkl Qyn Mrtd Arafat Msl Hryhw Wadi Inzak Meskilak
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

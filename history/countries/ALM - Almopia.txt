@@ -1,0 +1,37 @@
+government = tribal
+add_government_reform = tribal_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = balkan
+primary_culture = paeonian
+religion = thracian
+capital = 1060
+#religious_school = hellenic_type
+
+280.1.1 = {
+	technology_group = greek_techgroup
+	primary_culture = macedon
+	religion = greek_religion
+}
+364.1.1 = {
+	monarch = {
+		name = "Antiochus"
+		dynasty = "of Europos"
+		birth_date = 344.1.1
+		death_date = 398.1.1
+		dip = 2
+		adm = 2
+		mil = 4
+	}
+}
+395.1.1 = {
+	heir = {
+		name = "Seleucus I"
+		dynasty = "Seleucidai"
+		birth_date = 395.1.1
+		death_date = 373.9.1
+		dip = 4
+		adm = 4
+		mil = 5
+	}
+}

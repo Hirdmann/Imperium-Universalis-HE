@@ -1,0 +1,27 @@
+culture = dian
+religion = white_tiger_religion
+capital = ""
+trade_goods = copper
+hre = no
+base_tax = 0
+base_production = 1
+base_manpower = 3
+
+discovered_by = xinan1
+discovered_by = south_east_asian
+
+664.1.1 = { discovered_by = far_eastern } #???��??????|????����???��
+645.1.1 = {
+	owner = ICH
+	controller = ICH
+	add_core = ICH
+	is_city = yes
+	trade_goods = rice
+}
+#??????����???��?�衤
+974.10.1 = {
+	owner = SUH
+	controller = SUH
+	add_core = SUH
+	remove_core = ICH
+}

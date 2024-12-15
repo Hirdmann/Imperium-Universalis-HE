@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = bureaucratic_monarchy
+government_rank = 4
+technology_group = far_eastern
+religion = legalism
+primary_culture = guanzhong
+capital = 4197
+unit_type = qinguo
+1.1.1 = {
+	set_country_flag = zhuxiatouxian_wang
+}
+548.2.1 = {
+	monarch = {
+		name = "Xin"  # 欣
+		dynasty = "SiMa"  # 司马
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}

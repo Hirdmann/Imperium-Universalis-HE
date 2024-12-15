@@ -1,0 +1,13 @@
+government = native
+add_government_reform = pastoral_tribe_reform
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = altaic
+religion = tengri
+capital = 7012
+technology_group = central_asian
+
+historical_friend = LNN
+historical_friend = QIU
+historical_friend = SUB
+historical_friend = LUA

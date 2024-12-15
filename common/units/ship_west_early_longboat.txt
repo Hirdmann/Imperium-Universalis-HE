@@ -1,0 +1,22 @@
+#Galley
+type = heavy_ship
+
+trigger = {
+	OR = {
+		unit_type = hispano_celtic
+		unit_type = celtic
+		unit_type = germanic
+		unit_type = britannic
+		unit_type = scythian_tech
+		unit_type = caucasian
+	}
+}
+
+hull_size = 55
+base_cannons = 110
+sail_speed = 11
+
+sprite_level = 1
+
+blockade = 12
+sailors = 360

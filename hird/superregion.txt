@@ -1,0 +1,245 @@
+# A region can only belong to one super region.
+
+#India
+
+uttarapatha_superregion = {
+	northern_india_region
+	sindhu_region
+	gandhara
+	kuru_panchala
+	kamarupa_region
+	saurashtra_region
+	vanga_region
+}
+
+dakshinapatha_superregion = {
+	lanka_region
+	southern_india_region
+	chola_region
+	eastern_india_region
+	aparantabhumi_region
+	western_india_region
+}
+
+tibet_superregion = {
+	zhangzhung_region
+	sumpa_region
+}
+
+suvarnabhumi_superregion = {
+	burma_region
+	upper_burma_region
+	airavati_region
+	champa_region
+	funan_region
+	dronakarattha_region
+	malayadvipa_region
+	naggadipa_region
+	dvaravati_region
+	suvarnadvipa_region
+}
+
+#Europe
+
+italia_superregion = {
+	gallia_cisalpina
+	italian_region
+	sardinia_corsica_region
+	magna_graecia
+	raetia_et_noricum
+}
+
+hispania_superregion = {
+	hispania_baetica
+	lusitania
+	cartaginensis_region
+	gallaecia
+	hispania_tarraconensis
+}
+
+celtica_superregion = {
+	belgica_region
+	celtica_area
+	aquitania_region
+	gallia_narbonensis
+}
+
+germania_superregion = {
+	germania_region
+	germani_cisrhenani
+	suebia_region
+	germania_scandza_region
+	hercynia_region
+	aestia_region
+	lugia_region
+}
+
+britannia_superregion = {
+	britannia_inferior
+	britannia_superior
+	caledonia
+	hibernia
+}
+
+haemusia_superregion = {
+	thracia_region
+	pannonia_region
+	dacia_region
+	illyria_region
+}
+
+macedonia_superregion = {
+	macedonia_region
+	greek_region
+	mare_aegaeum_islands_region
+}
+
+scythia_superregion = {
+	asian_sarmatia
+	sarmatia_region
+	caucasia_region
+	maeotis_region
+	extra_sarmatia_region
+	tanaica_region
+	borysthenia_region
+	cimmeria_region
+}
+
+#East Asia
+
+china_superregion = {
+	sili_china
+	binzhou_china
+	yanzhou_china
+	yuzhou_china
+	jingzhou_china
+	yangzhou_china
+	jizhou_china
+	qingzhou_china
+	youzhou_china
+	xuzhou_china
+	yizhou_china
+	liangzhou_china
+	shuofang_china
+	jiaozhou_china
+	lacviet_region
+	taizhou_region
+}
+
+turan_superregion = {
+	tarim_basin_region
+	northern_steppe_region
+	altai_region
+	jetisu_region
+}
+
+korea_superregion = {
+	yemaek_region
+	dangun_gojoseon_region
+	lelang_zhenfan_region
+	dongye_region
+	mahan_region
+	jinhan_region
+	byeonhan_region
+	buyeo_region
+	sushen_region
+}
+
+japan_superregion = {
+	saikaido_region
+	okinawa_region
+	western_japan_region
+}
+
+chryse_insula_superregion = {
+	maguindanao_region
+	lusong_region
+	visayas_region
+}
+
+#Africa
+
+western_africa_superregion = {
+	africa_region
+	lybia_region
+	mauretania_region
+	libya_deserta_region
+}
+
+eastern_africa_superregion = {
+	lower_egypt_region
+	upper_egypt_region
+	nubia_region
+}
+
+aethiopia_superregion = {
+	aethiops
+	aethiopia_interior_region
+	erythrae_region
+	hesperia_aethiopia_region
+	nigritae_regio_region
+}
+
+#West Asia
+
+iran_superregion = {
+	media_region
+	persis_region
+	arachosia_region
+	gedrosia_region
+}
+
+asia_superregion = {
+	ionia_region
+	bithynia_et_pontus
+	asia_minor
+	lycia_pamphylia_region
+	cilicia_region
+	galatia_region
+	cappadocia_region
+	bithynia_region
+	propontis_region
+}
+
+armenia_superregion = {
+	colchis_region
+	armenia_region
+	iberia_caucasus_region
+	albania_region
+	sophene_region
+}
+
+arabia_superregion = {
+	arabia_petrea_region
+	arabia_felix_region
+	arabia_deserta_region
+}
+
+sakastan_superregion = {
+	transoxiana_region
+	dayuan_region
+	baktria_region
+	fergana_region
+	jaxartia_region
+}
+
+parthia_superregion = {
+	parthia_region
+	ariana_region
+	dahaestan_region
+	chorasmia_region
+}
+
+mesopotamia_superregion = {
+	mesopotamia_region
+	assyria_region
+	haltamti_region
+	ciseuphratia_region
+}
+
+syria_superregion = {
+	canaan_region
+	syria_region
+	cyprus_region
+	phoenicia_region
+}

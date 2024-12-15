@@ -1,0 +1,11 @@
+bookmark = {
+	name = "SOCIAL_WAR_TITLE"
+	desc = "SOCIAL_WAR_DESC"
+	date = 663.1.1
+
+	country = ROM
+	country = PRT
+	country = BRV
+	country = LCA
+	country = IMS
+}

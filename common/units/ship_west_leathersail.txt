@@ -1,0 +1,20 @@
+#Galley
+type = heavy_ship
+
+trigger = {
+	OR = {
+		unit_type = hispano_celtic
+		unit_type = celtic
+		unit_type = germanic
+		unit_type = britannic
+	}
+}
+
+hull_size = 70
+base_cannons = 50
+sail_speed = 7
+
+sprite_level = 1
+
+blockade = 8
+sailors = 200

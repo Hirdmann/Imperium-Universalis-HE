@@ -1,0 +1,48 @@
+owner = CHU
+controller = CHU
+#add_core = CHU
+trade_goods = rice
+is_city = yes
+culture = jingman
+religion = wuism
+base_tax = 0
+base_production = 1
+base_manpower = 3
+discovered_by = far_eastern
+discovered_by = wuyue1
+discovered_by = dongyi1
+add_core = BII
+
+150.1.1 = { 
+	add_core = CHU
+}
+206.1.1 = { 
+	religion = liyuebadao
+	culture = nanchu
+	remove_core = BII
+}
+278.1.1 = { 
+	small_city_walls = yes
+}
+302.1.1 = { 
+	controller = MIO
+	add_core = MIO
+}
+303.1.1 = { 
+	controller = CHU
+}
+492.1.1 = { 
+	controller = QIN
+}
+522.1.1 = { 
+	add_core = QIN
+}
+548.2.1 = { 
+	controller = LJW
+	add_core = LJW
+}
+974.10.1 = { 
+	controller = SUW
+	add_core = SUW
+}
+discovered_by = xinan1

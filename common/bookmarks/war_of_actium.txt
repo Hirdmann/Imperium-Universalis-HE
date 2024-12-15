@@ -1,0 +1,23 @@
+bookmark = {
+
+	# Title and Description of Bookmark
+
+	name = "WAR_OF_ACTIUM_TITLE"
+	desc = "WAR_OF_ACTIUM_DESC"
+
+	# Date of Bookmark
+
+	date = 724.1.1
+
+	# Camera Center of Focus (Province ID)
+
+	center = 6474
+
+	# List of Countries (NO MORE THAN 8)
+
+	country = R1O
+	country = R1A
+
+	# Optional Effects
+
+}

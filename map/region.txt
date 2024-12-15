@@ -1,0 +1,2528 @@
+# A province can belong to several regions.
+
+magna_graecia = {
+	areas = {
+		apulia_area
+		sicilia_west
+		sicilia_est
+		syracuse_area
+		bruttium_area
+		lucania_area
+		calabria_area
+		salento_area
+		sicelia_area
+		sicani_area
+	}
+}
+
+italian_region = {
+	areas = {
+		latium_area
+		latium_novum_area
+		etruria_east
+		etruria_west
+		etruria_centralis_area
+		etruria_maritima_area
+		samnium_area
+		campania_area
+		marsium_area
+		picenum_area
+		umbria_area
+		daunia_area
+		sabinia_area
+		frentania_area
+	}
+}
+
+gallia_cisalpina = {
+	areas = {
+		gallia_cispadana
+		aemilia_area
+		alpes_cottiae
+		transpadana_area
+		cenomania_area
+		venetia_area
+		liguria_area
+		liguria_septentrionalis_area
+		istria_area
+	}
+}
+
+sardinia_corsica_region = {
+	areas = {
+		west_corsica_area
+		east_corsica_area
+		sardinia_caralitana_area
+		sardinia_noritana_area
+		sardinia_turritana_area
+		sardinia_falisca_area
+	}
+}
+
+gallia_narbonensis = {
+	areas = {
+		alpes_maritimae
+		massalia_area
+		arecomicia_area
+		tectosagia_area
+		rhodanus_area
+		alpes_graiae
+		vocontiorum_area
+		arelate_area
+	}
+}
+
+aquitania_region = {
+	areas = {
+		aquitania_tertia
+		burdigala_area
+		aquitania_prima
+	}
+}
+
+celtica_area = {
+	areas = {
+		cebenna_mons
+		arvernica_area
+		avaricum_area
+		santonica_area
+		pictonica_area
+		armorica_area
+		liger_area
+		venellica_area
+		lutetia_area
+		haeduica_area
+		senonia_area
+	}
+}
+
+belgica_region = {
+	areas = {
+		belgica_prima
+		belgica_secunda
+		belgica_maritimae
+		remorum_area
+		lingonum_area
+		treverorum_area
+	}
+}
+
+hispania_baetica = {
+	areas = {
+		baetis_area
+		corduba_area
+		solorius_mons
+		gades_area
+		malaca_area
+		turdetani_area
+		hispalensis_area
+		tugiensis_saltus_area
+		astigitanus_area
+		regina_turdulorum_area
+	}
+}
+
+lusitania = {
+	areas = {
+		oestriminis_inferior
+		lusitania_west
+		lusitania_east
+		lassira_area
+		lusitania_south_area
+		pacensis_area
+		emeritanus_area
+		scallabitanus_area
+	}
+}
+
+cartaginensis_region = {
+	areas = {
+		carthaginensis_area
+		toletum_area
+		edetania_area
+		hispania_citerior_area
+		hispania_ulterior_area
+		deitania_area
+		olcadia_area
+	}
+}
+
+hispania_tarraconensis = {
+	areas = {
+		baleares_area
+		numantia_area
+		etobesa_area
+		iberus_area
+		pyrenaei_mons
+		rhoda_area
+		ilercavonesis_area
+		vasconensis_area
+		cluniensis_area
+		caesaraugustanus_area
+		lacetania_area
+		vasconensis_sea_area
+	}
+}
+
+gallaecia = {
+	areas = {
+		gallaecia_east_area
+		gallaecia_west_area
+		limicensis_area
+		asturica_area
+		caesarobriga_area
+		segovia_area
+		cantabria_area
+		bracarensis_area
+		lucensis_area
+		transduriana_area
+		asturum_area
+		avia_area
+		cantabria_sea_area
+	}
+}
+
+
+raetia_et_noricum = {
+	areas = {
+		raetia_prima
+		raetia_secunda
+		alpes_carnae
+		alpes_noricae
+		alpes_tridentinus
+		alpes_raetae
+		noricum_area
+	}
+}
+
+germania_region = {
+	areas = {
+		frisia_area
+		moenus_area
+		rhenus_area
+		caucia_minor
+		caucia_major
+		albis_area
+		cheruscia_area
+		cattica_area
+		nertereansis_area
+		treva_area
+		cimbricus_chersonesus
+		teutonica_area
+	}
+}
+
+germania_scandza_region = {
+	areas = {
+		scandiae_insulae_area
+		scandza_area
+		ostrogothica_area
+		visigothica_area
+		raumaricia_area
+		gothica_insulae_area
+		suehonia_area
+		aetelrugia_area
+	}
+}
+
+germani_cisrhenani = {
+	areas = {
+		batavorum_area
+		germania_inferior
+		mogontiacum_area
+		helvetica_area
+		sequania_area
+		germania_superior
+		agri_decumates
+	}
+}
+
+suebia_region = {
+	areas = {
+		suebia_west
+		rugia_area
+		viadrus_area
+		suebia_east
+		gothiscandza
+		burgundica_area
+		dandutica_area
+		semnonia_area
+	}
+}
+
+hercynia_region = {
+	areas = {
+		asciburgius_mons
+		medoslanum_area
+		suebia_transdanuvia
+		deserta_boiorum
+		nariscia_area
+		gabreta_hyle
+		boiohemum_area
+		sudeti_montes
+	}
+}
+aestia_region = {
+	areas = {
+		glaesum_area
+		transvistuliana_area
+		hyperborea_area
+	}
+}
+lugia_region = {
+	areas = {
+		vistula_area
+		carrodumum_area
+		sarmatici_mons
+		biessia_area
+		lugia_area
+	}
+}
+britannia_inferior = {
+	areas = {
+		brigantum_area
+		britannia_maxima_area
+		cornoviorum_area
+		corieltauvorum_area
+	}
+}
+
+britannia_superior = {
+	areas = {
+		dubunnorum_area
+		ordovicum_area
+		dummoniorum_area
+		durotrigum_area
+		icenorum_area
+		londinium_area
+		cantiacorum_area
+		silurum_area
+		reginorum_area
+	}
+}
+
+caledonia = {
+	areas = {
+		caledonia_inferior
+		graupius_mons
+		caledonia_ulterior
+		britannae_insulae
+		caledonia_superior
+		valentia_area
+	}
+}
+
+hibernia = {
+	areas = {
+		hibernia_east
+		hibernia_west
+		hibernia_citerior
+		hibernia_borealis
+		hibernia_inferior
+	}
+}
+
+illyria_region = {
+	areas = {
+		liburnia_area
+		alpes_dalmatia
+		dalmatia_area
+		dalmatia_interior
+		praevalitana_area
+		alpes_dinaricae
+		praevalitana_interior
+		sarmates_area
+		daesitiatia_area
+	}
+}
+
+pannonia_region = {
+	areas = {
+		pannonia_savia
+		pannonia_superior
+		pannonia_prima
+		pannonia_transdanubia
+		pannonia_inferior
+		pannonia_secunda
+		scordiscia_area
+	}
+}
+
+thracia_region = {
+	areas = {
+		odryssia_area
+		rhodope_area
+		thracia_area
+		thracia_east_area
+		haemus_mons
+		pontus_sinistrus_area
+		scythia_minor
+		peucinitis_area
+		moesia_inferior
+		dacia_ripensis
+		moesia_superior
+		dacia_mediterranea
+		dardania_area
+		ister_area
+		paeonia_area
+		rhodope_mons_area
+		oldenoi_area
+	}
+}
+
+propontis_region = {
+	areas = {
+		europa_area
+		propontis_area
+		hellespont_area
+		asian_hellospont_area
+		bosporos_area
+	}
+}
+
+dacia_region = {
+	areas = {
+		dacia_inferior
+		dacia_maluensis
+		carpatae_area
+		montes_serrorum
+		dacia_apulensis
+		dacia_alutensis_area
+		dacia_superior
+		tisia_area
+		dacia_porolissensis
+		alpes_bastarnicae
+	}
+}
+
+macedonia_region = {
+	areas = {
+		epirus_nova
+		chaonia_area
+		mollosia_area
+		thesprotia_area
+		pelagonia_area
+		macedonia_secunda
+		macedonia_prima
+		chalcidice_area
+		macedonia_interior_area
+		mygdonia_macedonia_area
+	}
+}
+
+greek_region = {
+	areas = {
+		thessalia_area
+		perrhaebia_area
+		magnesia_area
+		phocis_area
+		acarnania_area
+		aetolia_area
+		ionian_islands
+		boeotia_area
+		attica_area
+		corinthia_area
+		argolis_area
+		laconica_area
+		messenia_area
+		arcadia_area
+		achaea_area
+		euboea_inferior
+		euboea_superior
+		doris_greece_area
+		elis_area
+	}
+}
+
+
+mare_aegaeum_islands_region = {
+	areas = {
+		thasus_et_lemnus
+		lesbos_et_chios
+		lesbos_area
+		cyclades_area
+		archipelagos_area
+		kos_area
+		rhodiorum_area
+		knossos_area
+		hierapytna_area
+		gortyn_area
+		polyrrenia_area
+	}
+}
+
+ionia_region = {
+	areas = {
+		troad_area
+		aeolia_area
+		ionia_area
+		doris_area
+		rodion_peraia
+	}
+}
+
+
+cyprus_region = {
+	areas = {
+		cyprus_west
+		cyprus_east
+		cyprus_center_area
+	}
+}
+
+asia_minor = {
+	areas = {
+		mysia_area
+		lydia_area
+		caria_chrysaoron_area
+		abrettene_area #New
+		caria_area
+		pergamos_area
+		katakekaumene_area
+		salbakene_area
+		phrygia_ripensis_area
+	}
+}
+
+lycia_pamphylia_region = {
+	areas = {
+		lycia_area
+		pisidia_area
+		pamphylia_area
+		pisidia_west_area #New
+		patara_area
+	}
+}
+
+cilicia_region = {
+	areas = {
+		cilicia_pedias
+		cilicia_trachea
+		isauria_area
+		cilicia_area #New
+		lycaonia_area
+		tyanitys_area
+		mallotis_area
+		issotis_area
+	}
+}
+
+galatia_region = {
+	areas = {
+		phrygia_area
+		galatia_area
+		obizene_area
+		garsauritis_area
+		galatia_west_area#New
+		phrygia_minor_area
+		phrygia_pargrea_area
+		parorea_area
+	}
+}
+
+cappadocia_region = {
+	areas = {
+		colopene_area
+		chammanene_area #New
+		sacoene_area
+		sargarausene_area
+		cataonia_area
+	}
+}
+
+bithynia_et_pontus = {
+	areas = {
+		paryadres_area
+		pontus_maritimae
+		pontus_area
+		sinope_area
+		gazacene_area #New
+		pontus_cappadocicus_area
+		tibarenia_area
+		lyeus_area
+		pontus_galaticus_area
+	}
+}
+
+bithynia_region = {
+	areas = {
+		bithynia_area
+		heraclea_pontica
+		paphlagonia_area
+		maryandinia_area
+		paphlagonia_maritima_area
+		bithynia_superior_area
+	}
+}
+
+canaan_region = {
+	areas = {
+		philistaeia_area
+		judaea_area
+		samaria_area
+		idumaea_area
+		ituraea_area
+		qadesh_area
+		judaea_west_area
+		galilea_area
+		auranitis_area
+		batanea_area
+		ammon_area
+	}
+}
+
+phoenicia_region = {
+	areas = {
+		phoenicia_area
+		north_phoenicia
+		akko_area
+		aradus_area
+	}
+}
+
+syria_region = {
+	areas = {
+		palmyrene_area
+		apamene_area
+		cyrrhestica_area
+		chalybonitis_area
+		casiotis_area
+		chalcidene_area
+		anti_lebanon
+		cava_syria
+		trachonitis_area
+		commagene_area
+		abilene_area
+		amanus_mons_area
+		euphratensis_area
+		bambicene_area
+		pieria_area
+		emesaitis_area
+	}
+}
+
+ciseuphratia_region = {
+	areas = {
+		mygdonia_area
+		gauzanitis_area
+		chaboraitis_area
+		tingene_area
+		sophanene_area
+		barbarene_area
+		masius_mons_area
+		ciseuphratia_area
+		anthemusia_area
+		osroene_area
+		corrnea_area
+	}
+}
+
+assyria_region = {
+	areas = {
+		assyria_area
+		assyria_north_area
+		singaras_area
+		adiabene_area
+		adiabene_superior
+		acabene_area
+		gordyene_area
+		arbelitis_area
+		sagartia_area
+		chalonitis_area
+	}
+}
+
+mesopotamia_region = {
+	areas = {
+		euphrates_area
+		ancobaritis_area
+		sittacene_area
+		babylonia_area
+		upper_chaldea
+		lower_chaldea
+		arabia_scenitae
+		chaldea_exterior
+		akkad_area
+		sealand_mesopotamia
+		satrapene_area
+		syro_media
+		gyndene_area
+		parapotamia_area
+		mesene_area
+	}
+}
+
+haltamti_region = {
+	areas = {
+		elymais_area
+		susiane_area
+		susiane_south_area
+		cabandene_area
+		aiapir_area
+		taocene_area
+		taorene_area
+		characene_area
+		cissiane_area
+		mardiene_area
+		samati_area
+		sakrone_area
+	}
+}
+
+lower_egypt_region = {
+	areas = {
+		khent_abt
+		per_bast
+		heq_at
+		khaset
+		sap_meh
+		ament_area
+		saracena_area
+		aneb_hetch
+		atef_pehu
+		sep_area
+	}
+}
+
+upper_egypt_region = {
+	areas = {
+		iqer
+		wadjet_area
+		ma_hedj
+		waset_area
+		ta_seti
+		oasis_magna_prima
+		oasis_magna_secunda
+		berenike_area
+		desertum_aegypticum
+		porphyrites_mons
+	}
+}
+
+nubia_region = {
+	areas = {
+		nubia_citerior
+		cataracta_secunda
+		cataracta_tertia
+		napata_area
+		nubian_desert
+		cataracta_quarta
+		blemmyorum_area
+		troglodytica_area
+		meroe_area
+		nubia_ulterior
+		#New
+		meroe_insula_area
+		alodia_area
+		attiroia_area
+		memnones_area
+	}
+}
+
+aethiops = {
+	areas = {
+		axum_area
+		cinnamomifera_regio
+		aethiopii_mons
+		aethiopia_inferior
+		#New
+		tziamo_area
+		tiami_area
+		sembobitis_area
+		atalmo_area
+		calaa_area
+		sesca_area
+		ubi_area
+		gambala_area
+		ssasu_area
+		semene_area
+		bega_area
+		aroteria_area
+		sannar_area
+		bangenia_area
+		astasobas_area
+		astapus_area
+		athagai_area
+		melanorum_area
+		golaissae_area
+		cadupi_area
+	}
+}
+
+erythrae_region = {
+	areas = {
+		barbaria_area
+		azania_area
+		elephas_area
+		avalites_sinus
+		punt_area
+		adoulis_area
+		daamat
+		deserta_aethiopia
+		#New
+		annine_area
+		metine_area
+		rhausae_area
+		asayta_area
+		akridophagia_area
+		aethiopia_maritima_area
+		agame_area
+		tangiatae_area
+	}
+}
+
+aethiopia_interior_region = {
+	areas = {
+		melano_gaetulia
+		agisymba_citerior
+		agisymba_ulterior
+		cyeneum_area
+		aethiopia_superior
+		zankor_area
+		thala_mons_area
+		odrangidi_area
+		xylinces_area
+		orphes_area
+		chuaritae_area
+		solventii_area
+		pyrrhaei_area
+		alitampi_area
+		tagama_area
+		rhypaei_area
+		syrbotae_area
+		tralitae_area
+		artabatitia_area
+		afsaracae_area
+		astacuri_area
+		armiae_area
+		agriophagium_area
+		panagra_area
+	}
+}
+
+nigritae_regio_region = {
+	areas = {
+		gobir_area
+		acha_area
+		tegazza_area
+		adamawa_area
+		nok_area
+		casena_area
+		dogo_area
+		kainji_area
+		hausa_area
+		dendebre_area
+		memea_area
+		zanfara_area
+		aukar_area
+		gurma_area
+		biram_area
+		stachirae_area
+	}
+}
+
+hesperia_aethiopia_region = {
+	areas = {
+		nigir_area
+		hesperia_aethiopia
+
+		sinus_hespericus_area
+		daradae_area
+		#New
+		owo_area
+		edo_area
+		mima_area
+		kwahu_area
+		gyaaman_area
+		akan_area
+		accra_area
+		manneh_area
+		massitholus_area
+		dangra_area
+		mandori_area
+	}
+}
+
+arabia_petrea_region = {
+	areas = {
+		te_mefkat
+		nabatene_west
+		nabatene_east
+		arabia_petraea_area
+		nabatene_maritimae
+		lihyan_area
+		sidenica_area
+		iathrippa_area
+		hegra_area
+		galaaditis_area
+		moab_area
+		old_edom_area
+	}
+}
+
+arabia_felix_region = {
+	areas = {
+		omanitis_area
+		makan_area
+		libanotophoros_regio
+		myrrhifera_exterior
+		hadramaut_area
+		qataban_area
+		awsan_area
+		saba_area
+		mapharitis_area
+		himyar_area
+		myrrhifera_interior
+	}
+}
+
+arabia_deserta_region = {
+	areas = {
+		dumatha_area
+		deserta_arabia
+		arabia_east
+		gerrah_area
+		ichtyophagorum_sinus
+		arabia_magna
+		arabia_felix_area
+		macoraba_area
+		cinaedocolpitis
+		main_area
+
+	}
+}
+
+africa_region = {
+	areas = {
+		carthago_area
+		zeugitana_area
+		byzacium_area
+		emporia_area
+		mediterranea_insulae
+		numidia_maritimae
+		cirta_area
+		thevestis_area
+		militiana_area
+		gaetulia
+		mauretania_sitifensis
+		bagrada_area #New
+	}
+}
+
+lybia_region = {
+	areas = {
+		ammonium_area
+		augila_area
+		marmarica_east
+		marmarica_west
+		cyrenaica_east
+		cyrenaica_west
+		syrtica_area
+		nasamonia_area
+		tripolitania_east
+		tripolitania_west
+		deserta_syrtica
+		deserta_tripolitania
+		deserta_numidia
+	}
+}
+
+libya_deserta_region = {
+	areas = {
+		gaetulia_darae
+		lixiane_area
+		libya_west
+		cerne_area
+		garamantum_ulterior
+		desertum_africanum
+		garamantum_area
+		libya_interior
+	}
+}
+
+mauretania_region = {
+	areas = {
+		caesariensis_east
+		caesariensis_west
+		madethubadus_area
+		cartenna_area
+		siga_area
+		diur_mons
+		deserta_mauretania
+		tingitana_west
+		tingitana_east
+		atlas_mons
+		fortunatae_insulae
+		mauretania_ulterior
+		mauretania_superior
+	}
+}
+
+extra_sarmatia_region = {
+	areas = {
+		nesietis_regio
+		scythia_magna_area
+		deserta_scythia
+		#New
+		atara_area
+		araxes_area
+		aorsia
+		upper_aorsia
+		riphaean_mons_area
+	}
+}
+
+caucasia_region = {
+	areas = {
+		pityous_area
+		caucasus_mons
+		scythia_caspica
+		#New
+		achaeia_area
+		ceraunian_mons_area
+		zychia_area
+		sarmatia_hyrcania_area
+		gerrus_area
+		olondaeica_area
+		abazgia_area
+	}
+}
+
+maeotis_region = {
+	areas = {
+		sarmatia_maeotica
+		sarmatia_jaxamatica
+		cimmerian_bosporus
+		siracia_area
+		#New
+		coretus_area
+		buges_area
+		sindica_area
+		hypanis_area
+		rimphacia_area
+		tyrambica_area
+	}
+}
+
+asian_sarmatia = {
+	areas = {
+		mithridatis_regio
+		hippicia_area
+		sarmatia_asiatica_area
+		#New
+		valica_area
+		scythia_confluentia_area
+		sattara_area
+		scythia_amazonica_area
+		ptestianica_area
+	}
+}
+
+armenia_region = {
+	areas = {
+		armenia_maior
+		syracene_area
+		moxoene_area
+		soducene_area
+		syspiritis_area
+		colthene_area #New
+		catarzene_area
+		astianene_area
+		corduene_area
+		tospites_area #New
+		basoropeda_area
+		arrhene_area
+		araxene_area
+		lynitis_area
+	}
+}
+
+sophene_region = {
+	areas = {
+		sophene_area
+		hanzitene_area #New
+		basilisene_area
+		acilisene_area
+		orbalisene_area
+		west_sacasene_area
+		chorzene_area
+		bolbene_area
+		melitene_area
+		armenia_minor
+	}
+}
+
+colchis_region = {
+	areas = {
+		phasis_area
+		colchis_inferior
+		colchis_superior
+		heniochi_area #New
+		moschi_area
+		ecrecticene_area
+	}
+}
+
+iberia_caucasus_region = {
+	areas = {
+		gogarene_area
+		iberia_west
+		iberia_east
+		tushcia_area # New
+	}
+}
+
+albania_region = {
+	areas = {
+		albania_west
+		albania_east
+		caucasus_east
+		media_caspica
+		utia_armenia_area #New
+		gargarene_area #New
+		phaitakarene_area
+		sheki_area
+		ardabilitis_area
+		obarene_area
+		sacasene_area
+		lbinia_area
+		cambysene_area
+	}
+}
+
+sarmatia_region = {
+	areas = {
+		germano_sarmatia
+		tyras_area
+		pyretus_area
+		scythia_harpitis_area
+		scythia_thissamatica
+		daco_sarmatia
+		#New
+		macroremnus_area
+		rhodes_area
+		getarum_solitudo_area
+		axiaces_area
+		neuri_area
+		stavanica_area
+		hypania_area
+		bodenica_area
+		scythia_aroteria_area
+		tiarantus_area
+		sarmatia_deserta_area
+	}
+}
+
+cimmeria_region = {
+	areas = {
+		chersonesus_heracle
+		chersonesus_taurica
+		chersonesus_zenonis
+		tauroscythia_area
+		cimmero_scythia
+		#New
+		carcinites_area
+		taurica_area
+		hylaea_area
+		sangarius_area
+		taphrae_area
+		sarmatia_maritima_area
+	}
+}
+
+tanaica_region = {
+	areas = {
+		sarmatia_east
+		lower_tanais
+		upper_tanais
+		sarmatia_ulterior
+		#New
+		ophlonica_area
+		osilica_area
+		sargatica_area
+		stumica_area
+		aspamithareia_area
+		thyssagetae_area
+		carionica_area
+		idraeium_area
+	}
+}
+
+borysthenia_region = {
+	areas = {
+		borysthenes_inferior
+		borysthenes_superior
+		sarmatia_west
+		gelonia_area
+		#New
+		gerrhae_area
+		panticapes_area
+		pasyris_area
+		transborysthenia_area
+		melanchlenia_area
+		budinia_area
+		exobygica_area
+		acesinus_area
+		amadocia_area
+		hypacaris_area
+		scythia_therion_area
+	}
+}
+
+media_region = {
+	areas = {
+		lower_atropatene
+		upper_atropatene
+		caspius_mons
+		media_magna
+		choarene_area
+		artacene_area
+		siggrane_area
+		gabiene_area
+		kossiane_area
+		choromithrene_area
+		parskahayk_area
+		otene_area
+		massabatene_area
+		charbanus_mons
+		amardiene_area
+	}
+}
+
+persis_region = {
+	areas = {
+		paraetacene_area
+		temisdia_area
+		rudiane_area
+		agdinitis_area
+		paraepaphitis_area
+		carmania_deserta
+		sagartia_east
+		utia_area
+		persepolis_area
+	}
+}
+parthia_region = {
+	areas = {
+		tabiene_area
+		desertum_salinum_area
+		parthyene_area
+		hyrcania_area
+		comisene_area
+		traxiene_area
+		arcticene_area
+		sipharene_area
+		astauene_area
+
+	}
+}
+
+baktria_region = {
+	areas = {
+		bactria_area
+		vandabanda_area
+		candara_area
+		bactria_upper
+		tambyzia_area
+		zaviaspa_area
+		astakana_area
+		drapsaka_area
+		zariaspa_area
+		charracarta_area
+		cabolitana_area
+		cholbisina_area
+		oskobara_area
+		oxiane_superior
+		choriana_area
+		tarmita_area
+	}
+}
+
+ariana_region = {
+	areas = {
+		aria_area
+		paracanacene_area
+		cotacene_area
+		tapuriana_area
+		sarmagana_area
+		guriana_area
+		chomaria_inferior_area
+		chomaria_superior_area
+		sirakene_area
+		margiana_inferior
+		margiana_superior
+		haomana_area
+		maxerane_area
+		aratha_area
+		comiana_area
+		asiani_area
+	}
+}
+
+arachosia_region = {
+	areas = {
+		parsiene_area
+		tatacene_area
+		pactyene_area
+		arachosia_area
+		india_alba
+		sakastan_arachosia_area
+		orbetane_area
+		paropamisus_area
+		cophene_area
+		opiane_area
+		sattagydia_area
+		anabonitis_area
+		drangiana_area
+	}
+}
+
+gedrosia_region = {
+	areas = {
+		gedrosia_area
+		makarene_area
+		saranga_area
+		ichtyophagitis_area
+		parifene_area
+		pardene_area
+		cabadene_area
+		chantonicene_area
+		carmania_area
+		paricania_area
+	}
+}
+
+
+transoxiana_region = {
+	areas = {
+		oxiane_inferior
+		sogdia_area
+		marakanda_area
+		nautaca_area
+		tigraxauda_area
+		sisimithrena_area
+		nautaca_inferior_area
+		trybactae_area
+		bazistris_area
+		sogdia_deserta_area
+	}
+}
+
+chorasmia_region = {
+	areas = {
+		chorasamia_area
+		chorasamia_ostia_area
+		chorasamia_inferior_area
+		chorasamia_media_area
+	}
+}
+
+gandhara = {
+	areas = {
+		upper_sindhu
+		kamboja_area
+		takshasila_area
+		sivi_area
+		madra_area
+		trigarta_area
+		hydaspes_area
+		kekaya_area
+		amvastha_area
+		bahlika_area
+		vatadhana_area
+		shorkot_area
+		gandhara_area
+		parusni_area
+		kekaya_lower
+		malloi_area
+		apritas_area
+		purushapura_area
+		katocha_area
+		sagala_area
+	}
+}
+sindhu_region = {
+	areas = {
+		sindhu_area
+		sauvira_area
+		prasiane_area
+		aporapa_area
+		patalene_area
+		west_patalene
+	}
+}
+northern_india_region = {
+	areas = {
+		kotsala_area
+		kosala_west
+		malla_south
+		magadha_area
+		magadha_east
+		suparsa_area
+		pasubhumi_area
+		kikata_area
+		kashi_area
+		bhargz_area
+		upper_kashi
+		malla_area
+		vatsa_south
+		vatsa_area
+		dasarna_area
+		jalachandram_area
+		south_kikata_area
+		kosambana_area
+		south_suparsa_area
+		kapilavastu_area
+		gopala_area
+	}
+}
+kuru_panchala = {
+	areas = {
+		panchala_area
+		panchala_central
+		panchala_south
+		kuru_north
+		kuru_east
+		kuru_west
+		kurukshetra_area
+		matsya_area
+		virata_area
+		surasena_area
+		nishadha_area
+		chedi_area
+		karusha_north
+		kanyakubja_area
+		krivi_area
+		kamyaka_area
+		hastinapura_area
+		srinjaya_area
+		keshin_area
+		south_nishadha_area
+		somakas_area
+	}
+}
+kamarupa_region = {
+	areas = {
+		vardhamana_area
+		pundra_area
+		pundra_east
+		kamarupa_area
+		kamarupa_proper
+		prakjyotisha_area
+		upper_lauhitya
+		lauhitya_area
+		vajji_area
+		vrji_area
+		north_vrji_area
+		videha_area
+		kamata_area
+		saharsa_area
+	}
+}
+western_india_region = {
+	areas = {
+		karusha_area
+		avanti_area
+		dandaka_area
+		asmaka_south
+		sahyadri_area
+		asmaka_west
+		asmaka_east
+		vakataka_area
+		vakataka_north
+		vidarbha_north
+		pulinda_area
+		pulinda_north
+		anupa_area
+		heyaya_area
+		heyaya_east
+		avanti_east
+		janasthana_area
+		gurala_area
+		mulaka_area
+		besnagara_area
+		erakinadesa_area
+		uparichara_area
+		vindhya_area
+		kutas_area
+		orugallu_area
+	}
+}
+aparantabhumi_region = {
+	areas = {
+		anupa_west
+		barukaccha_area
+		aparanta_area
+		surparaka_area
+		konkana_area
+		gomanta_area
+	}
+}
+saurashtra_region = {
+	areas = {
+		kachcha_area
+		gurjara_area
+		anarta_area
+		saraswata_area
+		upper_saraswata
+		abhira_area
+		malava_area
+		saurashtra_area
+		upper_saurashtra
+		nishada_area
+		kunti_area
+		kathiawar_area
+		anarta_east
+		abhiradesa_area
+		deserta_indica_area
+		aberia_area
+		south_kunti_area
+		sarmista_area
+	}
+}
+southern_india_region = {
+	areas = {
+		kolhapuri_area
+		kuntala_area
+		karavira_area
+		dravida_east
+		dravida_west
+		asika_area
+		kishkindha_area
+		karanataka_area
+		mahismandala_area
+		andhraka_north
+		upper_krishnaveni_area
+		mukaaval_nadu_area
+		vaengada_nadu_area
+		pulli_nadu_area
+		pungi_nadu_area
+		kanchi_area
+		oaymaan_nadu_area
+		payalanadu_area
+		athigan_nadu_area
+		moargur_area
+		vellmalai_area
+		araiya_nadu_area
+		kuttuva_nadu_area
+		kadamba_nadu_area
+		idaichehura_nadu_area
+	}
+}
+chola_region = {
+	areas = {
+		kakkanadu_area
+		pandya_area
+		chola_area
+		mahishaka_south
+		kongu_nadu_area
+		mushika_area
+		coleyas_area
+		chera_nadu_area
+		ay_area
+		needur_mizhalai_area
+		kaankezhu_nadu_area
+		thondai_nadu_area
+		punnaadu_area
+		koli_malai_nadu_area
+		mullur_nadu_area
+		parampu_malai_area
+		venadu_area
+		kaandhal_kura_nadu_area
+		pothigai_nadu_area
+		karuvoor_nadu_area
+		cera_payaal_malai_area
+		mali_nadu_area
+		thoatti_malai_area
+		kuda_nadu_area
+		aruva_nadu_area
+	}
+}
+lanka_region = {
+	areas = {
+		rajarata_area
+		dakkina_area
+		ruhunu_area
+		tamraparni_area
+		malaya_ceylon_area
+		pihiti_area
+		polonnaruwa_area
+		pacina_desa_area
+		uttaradesa_ceylon_area
+		dakshinadesa_ceylon_area
+	}
+}
+eastern_india_region = {
+	areas = {
+		vidarbha_area
+		vanga_area
+		south_kosala
+		kalinga_area
+		telinga_area
+		taitilaka_area
+		sabara_area
+		sabara_north
+		mahendragiri_area
+		kalinga_interior
+		odra_area
+		south_odra
+		kalinga_south
+		utkala_area
+		amarakandaka_area
+		musika_area
+		utkala_south_area
+		rajapuram_area
+		krishnaveni_area
+		korounkala_area
+		mahendra_proper_area
+		mahanadi_area
+	}
+}
+
+vanga_region = {
+	areas = {
+		gangaridia_area
+		harikela_area
+		south_samatata
+		samatata_area
+		lower_suhma
+		suhma_area
+		tamralipi_area
+		shabara_area
+		anga_area
+		anga_south
+		kalajangla_area
+		prasuhma_area
+		south_kalajangla_area
+		east_vanga_area
+		wari_bateshwar_area
+		tripuri_vanga_area
+		agartala_vanga_area
+	}
+}
+
+zhangzhung_region = {
+	areas = {
+		himalaya_area
+		sthanisvara_area
+		puli_area
+		darada_area
+		chomolangma_area
+		chomolangma_north
+		zhanzhung_area
+		savarna_gotra
+		jangtang_area
+		pamir_area
+		north_pamir_area
+		ladakh_area
+		kasmira_area
+	}
+}
+sumpa_region = {
+	areas = {
+		kirata_area
+		sumpa_area
+		yarlung_area
+		lhasa_area
+		tsang_area
+		tsang_north
+		kham_area
+		nangqen_area
+		qiang_area
+	}
+}
+
+tarim_basin_region = {
+	areas = {
+		imaus_mons_area
+		yarkand_area
+		tarim_area
+		eastern_tarim_area
+		qiuci_area
+		iron_gate_area
+		arsi_area
+		loulan_area
+		khotan_area
+		cadota_area
+		shanshan_area
+		turfan_area
+	}
+}
+
+northern_steppe_region = {
+	areas = {
+		sha_mo_area
+		xianbei_steppe_area
+		north_wuhuan_area
+		southern_wuhuan_area
+		western_xiongnu
+		eastern_xiongnu
+		khovsgol_area
+		hanhai_area
+		khangai_area
+		zavkhan_area
+		orkhon_area
+		hentey_area
+		onon_area
+		kerulen_area
+		tuul_area
+		tarvagatai_area
+	}
+}
+
+altai_region = {
+	areas = {
+		central_dzungaria_area
+		western_dzungaria_area
+		lower_irtysh_area
+		irtysh_area
+		sayan_area
+		north_dzungaria_area
+		south_dzungaria_area
+		danhuan_area
+		altai_area
+		tangdy_ula_area
+		yenisei_area
+		khovd_area
+		altai_gobi_area
+	}
+}
+
+jetisu_region = {
+	areas = {
+		southern_jetisu_area
+		northern_jetisu_area
+		eastern_jetisu_area
+		balkhash_area
+		issyk_kul_area
+		sacasene_eschate_area
+		hujie_area
+		ugria_area
+		alanliao_area
+		argippaeia_area
+		issedonia_area
+	}
+}
+
+######Seas and Oceans########
+
+mare_suebicum_region = {
+	areas = {
+		east_mare_suebicum
+		scandiae_insulae_sea
+	}
+}
+
+oceanus_germanicus_region = {
+	areas = {
+		mare_germanicum
+		oceanus_germanicum
+
+	}
+}
+
+oceanus_britannicus_region = {
+	areas = {
+		oceanus_britannicum
+		hibernicus_oceanus
+		oceanus_verginius
+		mare_britannicum
+	}
+}
+mare_gallaecum_region = {
+	areas = {
+		aquitanus_sinus
+		mare_gallaecum
+
+	}
+}
+oceanus_atlanticus_region = {
+	areas = {
+		mare_lusitanicum
+		oceanus_atlanticus
+		fortunatae_insulae_sea
+		fortunatae_insulae_sea
+		mare_mauretanicum
+		oceanus_libycus
+		sinus_hespericus
+		niger_river_area
+	}
+}
+mare_ibericum_region = {
+	areas = {
+		mare_ibericum
+		fretum_gaditanum
+		balearicum_mare
+		mare_numidicum
+
+	}
+}
+mare_tyrrhenum_region = {
+	areas = {
+		mare_sardoum
+		mare_ligusticum
+		sinus_napetinus
+		mare_africanum
+		mare_tyrrhenum
+	}
+}
+mare_internum_region = {
+	areas = {
+		mare_internum
+		mare_libycum
+	}
+}
+mare_ionium_region = {
+
+	areas = {
+		mare_ionium
+		mare_siculum
+		ambracius_sinus
+	}
+}
+mare_adriaticum_region = {
+	areas = {
+		mare_adriaticum
+	}
+}
+mare_aegaeum_region = {
+	areas = {
+		mare_creticum
+		mare_graecum
+		mare_icarium
+		mare_carpathium
+	}
+}
+mare_magnum = {
+
+	areas = {
+		mare_aegyptium
+		mare_mediterraneum
+		mare_syriacum
+		nile_area
+	}
+}
+pontos_euxeinos_region = {
+	areas = {
+		propontis_sea
+		palus_maeotis
+		pontos_euxeinos
+		mare_sarmatium
+		mare_pontium
+	}
+}
+danuvius_river_region = {
+	areas = {
+		danuvius_river_area
+	}
+}
+mare_rubrum_region = {
+	areas = {
+		mare_rubrum
+		sinus_arabicus
+	}
+}
+mare_erythraeum_region = {
+	areas = {
+		mare_erythraeum_sea
+		mare_aethiopicum
+	}
+}
+indian_ocean_region = {
+	areas = {
+		mare_india_west
+		mare_india_east
+		indus_river
+		ganges_river
+	}
+}
+mare_persicus_region = {
+	areas = {
+		pargon_sinus
+		sinus_persicus
+		mesopotamian_rivers
+	}
+}
+
+china_rivers = {
+	areas = {
+		yangtze_river_area
+		yellow_river_area
+	}
+}
+
+chinese_seas_region = {
+	areas = {
+		china_sea_area
+		south_china_sea_area
+		east_china_sea_area
+	}
+}
+
+far_eastern_seas_region = {
+	areas = {
+		joseon_sea_area
+		jing_sea_area
+		japanese_sea_area
+		liuqiu_sea_area
+		estern_interior_sea_area
+	}
+}
+
+filipinas_seas_region = {
+	areas = {
+		southeastern_seas_area
+		sulu_sea_area
+		mindanao_sea_area
+		sibuyan_sea_area
+		luzon_sea_area
+		jiamayan_sea_area
+	}
+}
+
+mare_orientalis_region = {
+	areas = {
+		sinae_sinus_area
+		magnus_sinus_area
+		manam_kom_area
+		magnus_sinus_meridionalis_area
+		magnus_sinus_centralis_area
+		boni_sea_area
+		extra_sinae_sinus_area
+	}
+}
+
+oceanum_lactis_region = {
+	areas = {
+		perimulicus_sinus_area
+		jabadii_sinus_area
+		basacata_sinus_area
+		prasodis_maris_area
+		sabaracus_sinus_area
+		airavati_area
+	}
+}
+
+#Wending China
+
+sili_china = {
+	areas = {
+		fufeng_area
+		fufeng_area_eastern
+		east_pingyi_area
+		east_pingyi_area_northern
+		west_pingyi_area
+		west_pingyi_area_western
+		jingzhao_area
+		jingzhao_area_eastern
+		henan_area
+		henan_area_west
+		north_henei_area
+		hongnong_area
+		hongnong_area_east
+		hongnong_area_south
+		henei_area
+		henei_area_east
+	}
+}
+
+binzhou_china = {
+	areas = {
+		taiyuan_area
+		taiyuan_area_eastern
+		north_taiyuan_area
+		hedong_area
+		hedong_area_western
+		pingyang_area
+		pingyang_area_northern
+		shangdang_area
+		shangdang_area_eastern
+		south_shangdang_area
+		yanmen_area
+		yanmen_area_northern
+		dai_area
+		dai_area_northern
+	}
+}
+
+yanzhou_china = {
+	areas = {
+		dong_area
+		dang_area
+		dang_area_north
+		taishan_area
+		chenliu_area
+		jiyin_area
+		jiyin_area_south
+		xue_area_north
+	}
+}
+
+yuzhou_china = {
+	areas = {
+		yingchuan_area
+		yingchuan_area_north
+		runan_area
+		runan_area_south
+		huaiyang_area
+		huaiyang_area_south
+		sishui_area
+		sishui_area_north
+	}
+}
+
+jingzhou_china = {
+	areas = {
+		nanyang_area
+		south_nanyang_area
+		west_nanyang_area
+		nan_area
+		nan_area_south
+		nan_area_east
+		north_nan_area
+		north_nan_area_west
+		jiangxia_area
+		jiangxia_area_south
+		wuling_area
+		wuling_area_south
+		changsha_area
+		changsha_area_south
+		guiyang_area
+		guiyang_area_west
+	}
+}
+
+yangzhou_china = {
+	areas = {
+		jiujiang_area
+		jiujiang_area_west
+		hengshan_area
+		hengshan_area_north
+		yuzhang_area
+		yuzhang_area_south
+		lujiang_area
+		kuaiji_area
+		kuaiji_area_west
+		piling_area
+		piling_area_south
+		wu_area
+		danyang_area
+		danyang_area_south
+		linhai_area
+		minzhong_area
+		minzhong_area_north
+	}
+}
+
+taizhou_region = {
+	areas = {
+		taizhou_taiwan_area
+		yizhou_taiwan_area
+	}
+}
+
+jizhou_china = {
+	areas = {
+		changshan_area
+		changshan_area_southern
+		julu_area
+		qinghe_area
+		handan_area
+		handan_area_northern
+		wei_area
+	}
+}
+
+qingzhou_china = {
+	areas = {
+		jibei_area
+		jibei_area_south
+		jinan_area
+		linzi_area
+		linzi_area_north
+		beihai_area
+		jiaodong_area
+		jimo_area
+	}
+}
+
+xuzhou_china = {
+	areas = {
+		langya_area
+		chengyang_area
+		donghai_area
+		donghai_area_south
+		donghai_area_north
+		linhuai_area
+		linhuai_area_south
+		xue_area
+	}
+}
+
+yizhou_china = {
+	areas = {
+		hanzhong_area
+		hanzhong_area_north
+		wudu_area
+		shu_area
+		shu_area_south
+		guanghan_area
+		guanghan_area_west
+		ba_area
+		baxi_area
+		badong_area
+		yizhou_area
+		yuesui_area
+		zangke_area
+		south_zangke_area
+		ailao_area
+	}
+}
+
+liangzhou_china = {
+	areas = {
+		anding_area
+		anding_area_western
+		tianshui_area
+		tianshui_area_eastern
+		longxi_area
+		east_hexi_area
+		central_hexi_area
+		west_hexi_area
+	}
+}
+
+shuofang_china = {
+	areas = {
+		jiuyuan_area
+		jiuyuan_area_northern
+		yunzhong_area
+		yunzhong_area_southern
+		shang_area
+		shang_area_northern
+		beidi_area
+		beidi_area_northern
+		xihe_area
+		xihe_area_eastern
+	}
+}
+
+youzhou_china = {
+	areas = {
+		shanggu_area
+		shanggu_area_northern
+		guangyang_area
+		guangyang_area_western
+		yuyang_area
+		yuyang_area_southern
+		hejian_area
+		hejian_area_eastern
+		youbeiping_area
+		liaoxi_area
+		liaoxi_area_western
+	}
+}
+
+yemaek_region = {
+	areas = {
+		xuantu_area
+		cholbon_area
+		okjeo_area
+		biryu_area
+		ye_area
+		upper_yalu_area
+		puri_area
+		bukokjeo_area
+		kugwonson_area
+		maek_area
+	}
+}
+
+buyeo_region = {
+	areas = {
+		buyeo_area
+		miylson_area
+		seobuyeo_area
+		bukbuyeo_area
+		toge_area
+		dongbuyeo_area
+	}
+}
+
+sushen_region = {
+	areas = {
+		sushen_area
+		western_sushen_area
+		yilou_area
+		chha_hol_area
+		inbollo_area
+	}
+}
+
+dangun_gojoseon_region = {
+	areas = {
+		liaodong_area
+		liaodong_area_northern
+		ului_area
+		syuantu_area
+		yiju_area
+	}
+}
+
+lelang_zhenfan_region = {
+	areas = {
+		lelang_area
+		zhenfan_area
+		jeungji_area
+		daifang_chan_area
+		yangeun_area
+		hansan_area
+		sulchhon_area
+	}
+}
+
+dongye_region = {
+	areas = {
+		lintun_area
+		kugwonseong_area
+		ingunne_area
+		ki_area
+		gwangju_area
+	}
+}
+
+mahan_region = {
+	areas = {
+		mahan_area
+		poryumji_area
+		baekje_area
+		hubaekje_area
+		temogak_paek_area
+		guso_area
+		geonma_area
+		chonyi_area
+		ungjin_area
+	}
+}
+
+jinhan_region = {
+	areas = {
+		jinhan_area
+		kamme_baeki_area
+		nannan_area
+		saro_area
+		soyabol_area
+		silla_area
+		sinwolson_area
+	}
+}
+
+byeonhan_region = {
+	areas = {
+		byeonhan_area
+		yecheon_area
+		wonji_area
+		sollim_paek_area
+		hyesong_area
+		buan_area
+		tai_area
+		jeju_area
+	}
+}
+
+okinawa_region = {
+	areas = {
+		south_okinawa_area
+		central_okinawa_area
+		north_okinawa_area
+		tsushima_area
+	}
+}
+
+saikaido_region = {
+	areas = {
+		north_saikaido_area
+		south_saikaido_area
+		hyuga_area
+		higo_area
+		bungo_area
+	}
+}
+
+western_japan_region = {
+	areas = {
+		far_west_chugoku_area
+		west_chugoku_area
+		west_shikoku_area
+	}
+}
+
+jiaozhou_china = {
+	areas = {
+		hepu_area
+		guilin_area
+		guilin_area_west
+		nanhai_area
+		nanhai_area_north
+	}
+}
+
+dayuan_region = {
+	areas = {
+		chach_area
+		tachkent_area
+		lower_kangju_area
+		kangju_area
+		isbijab_area
+		talas_area
+		chui_area
+		upper_chui_area
+	}
+}
+
+jaxartia_region = {
+	areas = {
+		vashdasaka_area
+		oxia_deserta
+		dzankath_area
+		sakadahyu_zranka_area
+		jaxartes_superior_area
+		jaxartes_inferior_area
+		sakastan_proper_area
+		massagetica_area
+	}
+}
+
+fergana_region = {
+	areas = {
+		fergana_area
+		fergana_lower_area
+		fergana_media_area
+		dayuan_area
+		south_sakastan_proper_area
+		west_dayuan_area
+	}
+}
+
+dahaestan_region = {
+	areas = {
+		dahaestan_area
+		oxiana_caspica_area
+		scythia_pontica_area
+		scythia_ultima_area
+		mardastan_proper_area
+		chorasmia_deserta_area
+		apavortene_area
+		apauartikene_area
+		paraukitene_area
+		parnia_area
+	}
+}
+
+#Filipinas
+
+lusong_region = {  #9
+	areas = {
+		north_luzon_area
+		east_luzon_area
+		pangasinan_area
+		durorui_area
+		maynila_area
+		east_bikol_area
+		west_bikol_area
+		mindoro_area
+		south_luzon_area
+	}
+}
+
+visayas_region = {  #9
+	areas = {
+		cebu_area
+		bohol_area
+		buglas_area
+		simsiman_area
+		pisheye_area
+		tandaya_area
+		samar_area
+		bisayas_area
+		palawan_area
+	}
+}
+
+maguindanao_region = {  #9
+	areas = {
+		sulu_area
+		zamboanga_area
+		lanao_area
+		maguindanao_area
+		butuan_area
+		amihanan_area
+		davao_area
+		lower_lanao_area
+		unayan_area
+	}
+}
+
+#South East Asia
+
+burma_region = {
+	areas = {
+		sri_ksetra_area
+		bassein_area
+		zhanli_area
+		dagon_area
+		dala_area
+		yilumo_area
+		arakan_area
+		dhannavati_area
+	}
+}
+
+upper_burma_region = {
+	areas = {
+		maingmaw_area
+		tagaung_area
+		fudandulu_area
+		halin_area
+		nyaungyan_area
+		binnaka_area
+		pagan_area
+		beikthano_area
+	}
+}
+
+airavati_region = {
+	areas = {
+		thaungdut_area
+		putao_area
+		mogaung_area
+		kalay_area
+		myedu_area
+		tamote_area
+		middle_irrawady_area
+	}
+}
+
+champa_region = {
+	areas = {
+		champa_area
+		champa_south_area
+		champa_central_area
+		ou_kaev_area
+		mekong_delta_area
+		kambojadesa_area
+	}
+}
+
+funan_region = {
+	areas = {
+		funan_area
+		bayang_area
+		chenla_area
+		indrapura_area
+		kracheh_area
+		angkor_area
+		sresthapura_area
+		phimai_area
+		kratie_area
+		ratanagiri_area
+		lingapura_area
+		water_chenla_area
+		prasatvihara_area
+		chonlapura_area
+	}
+}
+
+dvaravati_region = {
+	areas = {
+		thaton_area
+		tak_area
+		tanintharyi_area
+		rajapura_area
+		suvarnapura_area
+		nakhon_sawan_area
+		lavapura_area
+		jalapura_area
+		sabarapura_area
+		vishnuloka_area
+		sukhothai_area
+		haripunjaya_area
+	}
+}
+
+dronakarattha_region = {
+	areas = {
+		candanagara_area
+		srigotapura_area
+		savaka_area
+		khanthapura_area
+		malapradesa_area
+		chamotchieng_area
+		chiangrai_area
+		kengtung_area
+		mongnawn_area
+		manglon_area
+		karenni_area
+		muangsua_area
+		namha_area
+		upper_mekong_area
+		singhanavati_area
+		umongasela_area
+	}
+}
+
+lacviet_region = {
+	areas = {
+		giao_chi_area
+		au_lac_area
+		cuu_chan_area
+		cuu_duc_area
+		nhat_nam_area
+		namxam_area
+		lac_viet_area
+		lixian_area
+	}
+}
+
+malayadvipa_region = {
+	areas = {
+		cahaya_area
+		tambralinga_area
+		panpan_area
+		langkasuka_area
+		oranglaut_area
+		gelanggi_area
+		gangganagara_area
+		aksajapura_area
+		myeik_area
+		jakun_area
+		temuan_area
+		semai_area
+		jahai_area
+		semaq_area
+	}
+}
+
+naggadipa_region = {
+	areas = {
+		rakshasadesa_area
+		naggavara_area
+	}
+}
+
+suvarnadvipa_region = {
+	areas = {
+		aceh_area
+		barus_area
+		batak_area
+		panai_area
+		suvarnagiri_area
+		melayu_area
+	}
+}
+
+atlantis_region = {
+	areas = {
+		atlantis_area
+	}
+}

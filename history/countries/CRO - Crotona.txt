@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = greek_polis_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = achaean
+religion = greek_religion
+historical_friend = ACH
+historical_friend = POS
+historical_friend = MET
+capital = 17
+fixed_capital = 17
+
+add_army_professionalism = 0.1
+
+234.1.1 = {
+	government = republic
+	add_government_reform = citizens_republic_reform
+}
+425.1.1 = { primary_culture = italiote }

@@ -1,0 +1,100 @@
+
+dependency = {
+	subject_type = "vassal"
+	first = TYL
+	second = ODR
+	start_date = 485.1.1
+	end_date = 542.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = MAC
+	second = ODR
+	start_date = 414.1.1
+	end_date = 431.6.11
+}
+dependency = {
+	subject_type = "vassal"
+	first = ATH
+	second = SES
+	start_date = 199.1.1
+	end_date = 237.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = AGF
+	second = RCT
+	start_date = 142.1.1
+	end_date = 349.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = AGF
+	second = ANR
+	start_date = 142.1.1
+	end_date = 349.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = THR
+	second = BSS
+	start_date = 237.1.1
+	end_date = 275.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = THR
+	second = ODR
+	start_date = 237.1.1
+	end_date = 275.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = THR
+	second = HT9
+	start_date = 237.1.1
+	end_date = 275.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = THR
+	second = DOB
+	start_date = 237.1.1
+	end_date = 275.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = THR
+	second = DT5
+	start_date = 237.1.1
+	end_date = 275.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = THR
+	second = DRR
+	start_date = 237.1.1
+	end_date = 275.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = THR
+	second = POE
+	start_date = 237.1.1
+	end_date = 275.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = THR
+	second = AGR
+	start_date = 237.1.1
+	end_date = 275.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = THR
+	second = PT2
+	start_date = 237.1.1
+	end_date = 275.1.1
+}

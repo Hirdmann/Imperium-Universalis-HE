@@ -1,0 +1,458 @@
+country_decisions = {
+
+	greek_and_carian_mercs = {
+		color = { 245 160 60 }
+		#major = yes
+		potential = {
+			tag = EGY
+			NOT = { started_in = 157.1.1 }
+			NOT = { has_country_flag = greek_and_carian_mercs_flag }
+			num_of_cities = 8
+		}
+		allow = {
+			tag = EGY
+			dip_power = 40
+			years_of_income = 0.15
+			num_of_owned_provinces_with = {
+				value = 16
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			set_country_flag = greek_and_carian_mercs_flag
+			add_dip_power = -40
+			add_years_of_income = -0.15
+			add_yearly_manpower = 0.5
+			add_country_modifier = {
+				name = greek_carian_mercs
+				duration = -1
+			}
+			if = {
+				limit = {
+					owns = 6245
+					controls = 6245
+					owns = 730
+					controls = 730
+				}
+				6245 = {
+					change_culture = ionic
+					change_religion = greek_religion
+					add_core = NAU
+					add_base_production = 1
+					center_of_trade = 3
+				}
+				730 = {
+					change_culture = ionic
+					change_religion = greek_religion
+					add_core = NAU
+					add_base_production = 1
+					add_province_modifier = {
+						name = kanopous_modifier
+						duration = 130000
+					}
+ 				}
+			}
+		}
+		ai_importance = 100
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2.0
+				manpower_percentage = 0.4
+			}
+			modifier = {
+				factor = 0.0
+				manpower_percentage = 0.9
+			}
+		}
+	}
+
+	###Moved from new_religious_decisions###
+
+	remove_tjaty = {
+		color = { 245 160 60 }
+
+		potential = {
+			ai = no
+			OR = {
+				has_country_modifier = treasurer_vizier
+				has_country_modifier = agriculture_vizier
+				has_country_modifier = administrator_vizier
+				has_country_modifier = law_vizier
+				has_country_modifier = martial_vizier
+				has_country_modifier = architecture_vizier
+			}
+		}
+		allow = {
+			ai = no
+			absolutism = 10
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = treasurer_vizier
+				}
+				remove_country_modifier = treasurer_vizier
+			}
+			if = {
+				limit = {
+					has_country_modifier = agriculture_vizier
+				}
+				remove_country_modifier = agriculture_vizier
+			}
+			if = {
+				limit = {
+					has_country_modifier = administrator_vizier
+				}
+				remove_country_modifier = administrator_vizier
+			}
+			if = {
+				limit = {
+					has_country_modifier = law_vizier
+				}
+				remove_country_modifier = law_vizier
+			}
+			if = {
+				limit = {
+					has_country_modifier = martial_vizier
+				}
+				remove_country_modifier = martial_vizier
+			}
+			if = {
+				limit = {
+					has_country_modifier = architecture_vizier
+				}
+				remove_country_modifier = architecture_vizier
+			}
+			add_absolutism = -10
+		}
+	}
+
+	###Moved from new_egypt###
+
+	expulse_lybians_alexandria = {
+		color = { 245 160 60 }
+		potential = {
+			ament_area = {
+				type = all
+				owned_by = ROOT
+			}
+			aneb_hetch = {
+				type = all
+				owned_by = ROOT
+			}
+			728 = {
+				has_province_modifier = lybia_present
+			}
+			NOT = { primary_culture = lybian }
+			NOT = { accepted_culture = lybian }
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = ament_area
+				area = aneb_hetch
+			}
+			owned_by = ROOT
+			has_province_modifier = lybia_present
+		}
+
+		allow = {
+			is_at_war =  no
+			absolutism = 25
+			stability = 2
+		}
+		effect = {
+			ament_area = {
+				if = {
+					limit = {
+						has_province_modifier = lybia_present
+					}
+					remove_province_modifier = lybia_present
+					add_permanent_province_modifier = {
+						name = expel_lybians
+						duration = 7300
+					}
+				}
+			}
+			aneb_hetch = {
+				if = {
+					limit = {
+						has_province_modifier = lybia_present
+					}
+					remove_province_modifier = lybia_present
+					add_permanent_province_modifier = {
+						name = expel_lybians
+						duration = 7300
+					}
+				}
+			}
+			add_absolutism = -10
+			if = {
+				limit = { ai = no }
+				add_stability = -2
+			}
+		}
+		ai_importance = 100
+		ai_will_do = {
+			factor = 1
+			modifier = {
+	 			factor = 0
+	 			NOT = { manpower_percentage = 0.6 }
+	 			NOT = { army_size_percentage = 0.6 }
+	 			NOT = { stability = 1 }
+			}
+		}
+	}
+
+	expulse_lybians_sapmeh = {
+		color = { 245 160 60 }
+		potential = {
+			khaset = {
+				type = all
+				owned_by = ROOT
+			}
+			sap_meh = {
+				type = all
+				owned_by = ROOT
+			}
+			729 = {
+				has_province_modifier = lybia_present
+			}
+			NOT = { primary_culture = lybian }
+			NOT = { accepted_culture = lybian }
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = khaset
+				area = sap_meh
+			}
+			owned_by = ROOT
+			has_province_modifier = lybia_present
+		}
+
+		allow = {
+			is_at_war =  no
+			absolutism = 25
+			stability = 2
+		}
+		effect = {
+			khaset = {
+				if = {
+					limit = {
+						has_province_modifier = lybia_present
+					}
+					remove_province_modifier = lybia_present
+					add_permanent_province_modifier = {
+						name = expel_lybians
+						duration = 7300
+					}
+				}
+			}
+			sap_meh = {
+				if = {
+					limit = {
+						has_province_modifier = lybia_present
+					}
+					remove_province_modifier = lybia_present
+					add_permanent_province_modifier = {
+						name = expel_lybians
+						duration = 7300
+					}
+				}
+			}
+			add_absolutism = -10
+			if = {
+				limit = { ai = no }
+				add_stability = -2
+			}
+		}
+		ai_importance = 100
+		ai_will_do = {
+			factor = 1
+			modifier = {
+	 			factor = 0
+	 			NOT = { manpower_percentage = 0.6 }
+	 			NOT = { army_size_percentage = 0.6 }
+	 			NOT = { stability = 1 }
+			}
+		}
+	}
+	expulse_lybians_eastdelta = {
+		color = { 245 160 60 }
+		potential = {
+			heq_at = {
+				type = all
+				owned_by = ROOT
+			}
+			khent_abt = {
+				type = all
+				owned_by = ROOT
+			}
+			742 = {
+				has_province_modifier = lybia_present
+			}
+			NOT = { primary_culture = lybian }
+			NOT = { accepted_culture = lybian }
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = heq_at
+				area = khent_abt
+				area = saracena_area
+			}
+			owned_by = ROOT
+			has_province_modifier = lybia_present
+		}
+
+		allow = {
+			is_at_war =  no
+			absolutism = 25
+			stability = 2
+		}
+		effect = {
+			heq_at = {
+				if = {
+					limit = {
+						has_province_modifier = lybia_present
+					}
+					remove_province_modifier = lybia_present
+					add_permanent_province_modifier = {
+						name = expel_lybians
+						duration = 7300
+					}
+				}
+			}
+			khent_abt = {
+				if = {
+					limit = {
+						has_province_modifier = lybia_present
+					}
+					remove_province_modifier = lybia_present
+					add_permanent_province_modifier = {
+						name = expel_lybians
+						duration = 7300
+					}
+				}
+			}
+			saracena_area = {
+				if = {
+					limit = {
+						has_province_modifier = lybia_present
+					}
+					remove_province_modifier = lybia_present
+					add_permanent_province_modifier = {
+						name = expel_lybians
+						duration = 7300
+					}
+				}
+			}
+			add_absolutism = -10
+			if = {
+				limit = { ai = no }
+				add_stability = -2
+			}
+		}
+		ai_importance = 100
+		ai_will_do = {
+			factor = 1
+			modifier = {
+	 			factor = 0
+	 			NOT = { manpower_percentage = 0.6 }
+	 			NOT = { army_size_percentage = 0.6 }
+	 			NOT = { stability = 1 }
+			}
+		}
+	}
+
+	#Atenism Branch
+
+	find_new_capital = {
+		color = { 245 160 60 }
+		potential = {
+			ai = no
+			religion = egyptian_religion
+			owns = 6254
+			NOT = { has_country_flag = egy_new_capital }
+		}
+
+		allow = {
+			ai = no
+			6254 = {
+				NOT = { has_province_modifier = land_reclamation_1 }
+				NOT = { has_province_modifier = land_reclamation_2 }
+				NOT = { has_province_modifier = land_reclamation_3 }
+				NOT = { has_province_modifier = land_reclamation_4 }
+				NOT = { has_province_modifier = land_reclamation_5 }
+			}
+			treasury = 300
+			stability = 2
+		}
+
+		effect = {
+			set_country_flag = egy_new_capital
+			6254 = {
+				add_building_construction = {
+					building = land_reclamation
+					speed = 1
+					cost = 0.5
+				}
+			}
+		}
+		ai_importance = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					estate_loyalty = {
+						estate = estate_priesthood
+						loyalty = 10
+					}
+				}
+				NOT = { stability = 2 }
+			}
+		}
+	}
+
+	rebuild_aten_temple = {
+   		potential = {
+	   		religion = egyptian_religion
+	   		owns = 6254
+	   		has_country_flag = aten_temple
+		}
+
+		allow = {
+	 		6254 = {
+				has_province_modifier = land_reclamation_1
+				OR = {
+					has_building = shrine
+					has_building = small_temple
+					has_building = great_temple
+				}
+	  		}
+	  		treasury = 400
+		}
+
+		effect = {
+			6254 = {
+				add_building_construction = {
+					building = land_reclamation
+					speed = 1
+					cost = 0.5
+			   	}
+			    if = {
+					limit = {
+						NOT = { has_building = small_temple }
+						NOT = { has_building = great_temple }
+					}
+					add_building = small_temple
+				}
+			}
+		    clr_country_flag = aten_temple
+			set_country_flag = aten_cult
+   		}
+	}
+}

@@ -1,0 +1,18 @@
+#Galley
+type = galley
+
+trigger = {
+	OR = {
+		unit_type = scythian_tech
+		unit_type = caucasian
+	}
+}
+
+hull_size = 10
+base_cannons = 15
+sail_speed = 9
+
+sprite_level = 1
+
+blockade = 8
+sailors = 50

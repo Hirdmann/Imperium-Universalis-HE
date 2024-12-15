@@ -1,0 +1,67 @@
+add_core = SAS
+add_core = ARM
+add_core = URT
+add_core = SX2
+owner = SX2
+controller = SX2
+is_city = yes
+hre = no
+base_tax = 0
+base_production = 1
+base_manpower = 4
+trade_goods = iron
+capital = ""
+culture = udi
+religion = skneli
+
+add_permanent_province_modifier = {
+		name = lake_side_modifier
+		duration = -1
+}
+
+discovered_by = caucaso_anatolian
+discovered_by = caucasian
+discovered_by = iranian
+discovered_by = scythian_tech
+discovered_by = diadochi
+#discovered_by = balkan
+discovered_by = punic
+#discovered_by = central_asian
+159.1.1 = {
+	owner = SAS
+	controller = SAS
+}
+165.1.1 = {
+	add_core = MDI
+	owner = MDI
+	controller = MDI
+}
+
+204.1.1 = {
+	owner = SAS
+	controller = SAS
+	remove_core = MDI
+}
+
+242.1.1 = {
+	add_core = PSE
+	owner = PSE
+	controller = PSE
+}
+
+271.1.1 = {
+	base_tax = 1
+	base_production = 3
+	base_manpower = 2
+	culture = armenian
+	religion = armenian_religion
+}
+
+350.1.1 = { religion = zurvanism }
+
+424.1.1 = {
+	add_core = ARM
+	owner = ARM
+	controller = ARM
+	remove_core = PSE
+}

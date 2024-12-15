@@ -1,0 +1,196 @@
+#Country Name: Please see filename.
+
+graphical_culture = celticgfx
+
+color = { 93 130 113 }
+
+historical_idea_groups = {
+	agraculture_ideas
+	caravan_trade_ideas
+	fortress_ideas
+	financial_ideas
+	diplomatic_ideas
+	infantry_ideas
+	syncretism_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	celt_base_inf_0
+	celt_base_inf_1
+	celt_base_inf_2
+	celt_base_inf_3
+	celt_base_inf_4
+	celt_base_inf_5
+	celt_base_inf_6
+	celt_base_inf_7
+	celt_base_inf_8
+	celt_base_inf_9
+	celt_base_inf_10
+	celt_base_inf_11
+	celt_base_inf_12
+	celt_base_inf_13
+	celt_base_inf_14
+	celt_base_inf_15
+
+	celt_base_cav_0
+	celt_base_cav_1
+	celt_base_cav_2
+	celt_base_cav_3
+	celt_base_cav_4
+	celt_base_cav_5
+	celt_base_cav_6
+	celt_base_cav_7
+	celt_base_cav_8
+	celt_base_cav_9
+	celt_base_cav_10
+	celt_base_cav_11
+	celt_base_cav_12
+	celt_base_cav_13
+	celt_base_cav_14
+	celt_base_cav_15
+
+
+	celt_base_art_0
+	celt_base_art_1
+	celt_base_art_2
+	celt_base_art_3
+	celt_base_art_4
+	celt_base_art_5
+	celt_base_art_6
+	celt_base_art_7
+	celt_base_art_8
+	celt_base_art_9
+	celt_base_art_10
+	celt_base_art_11
+	celt_base_art_12
+}
+
+monarch_names = {
+	"Aeso" = 1
+	"Akiui" = 1
+	"Akur" = 1
+	"Alios" = 1
+	"Amashilu" = 1
+	"Ariuonepos" = 1
+	"Atekua" = 1
+	"Atios" = 1
+	"Asheshios" = 1
+	"Auos" = 1
+	"Ashounos" = 1
+	"Ciposhis" = 1
+	"Ekr" = 1
+	"Enu" = 1
+	"Derios" = 1
+	"Deromos" = 1
+	"Ieikr" = 1
+	"Ishos" = 1
+	"Kalatos" = 1
+	"Keleshu" = 1
+	"Kepios" = 1
+	"Kipisos" = 1
+	"Klanos" = 1
+	"Koshio" = 1
+	"Krasanos" = 1
+	"Kuashoni" = 1
+	"Kuimitros" = 1
+	"Latumaros" = 1
+	"Lutou" = 1
+	"Lutu" = 1
+	"Maeshilos" = 1
+	"Metelos" = 1
+	"Namu" = 1
+	"Oletu" = 1
+	"Otios" = 1
+	"Oshorix" = 1
+	"Pelkui" = 1
+	"Pianu" = 1
+	"Piuotios" = 1
+	"Plialethu" = 1
+	"Plioiso" = 1
+	"Plios" = 1
+	"Remu" = 1
+	"Retos" = 1
+	"Uerkomui" = 1
+	"Sasamos" = 1
+	"Sexethu" = 1
+	"Suloikei" = 1
+	"Sunis" = 1
+	"Tekios" = 1
+	"Telios" = 1
+	"Teu" = 1
+	"Tiris" = 1
+	"Tisios" = 1
+	"Tonos" = 1
+	"Tunos" = 1
+	"Uerkos" = 1
+	"Uesa" = 1
+	"Uikos" = 1
+	"Ulkos" = 1
+	"Uvamokozis" = 1
+	"Vemetuvis" = 1
+	"Vixu" = 1
+	"Xosioio" = 1
+
+	"Aai" = -1
+	"Aesia" = -1
+	"Atepa" = -1
+	"Auia" = -1
+	"Atai" = -1
+	"Autesai" = -1
+	"Ashmina" = -1
+	"Ashuesa" = -1
+	"Dugiaua" = -1
+	"Exobna" = -1
+	"Katua" = -1
+	"Koimila" = -1
+	"Koisha" = -1
+	"Krasanika" = -1
+	"Mauila" = -1
+	"Mita" = -1
+	"Mokku" = -1
+	"Penilas" = -1
+	"Pisa" = -1
+	"Peuesa" = -1
+	"Piuonta" = -1
+	"Pritua" = -1
+	"Pruiam" = -1
+	"Rikanas" = -1
+	"Riashana" = -1
+	"Skarpia" = -1
+	"Sapsutai" = -1
+	"Slaniai" = -1
+	"Sola" = -1
+	"Surika" = -1
+	"Taka" = -1
+	"Tokra" = -1
+	"Tokua" = -1
+	"Toutas" = -1
+	"Uasekia" = -1
+	"Ueca" = -1
+	"Uenia" = -1
+	"Uisa" = -1
+	"Vesia" = -1
+}
+
+leader_names = {
+	Aniui Aui Ciposhis Kepi Kiphisi Klanalui Kuimitrui Krasanikna Kualui Maeshilalui Metelikna Meshiolano Natom Natosh Nashom Nialui Pelkui Penini Piuotialu
+	Telialui Tekialui Terialui Teromui Tiasui Tisiui Tunal Xosioiso
+}
+
+ship_names = {
+	Cincibilus Voccio Helico Nammeius Orgetorix Verucloetius Viridomarus Caturix Divico Raetus
+	Cingetorix Duratius Helico Indutiomarus Mogetissa Ortiagon Viridovix Bodvoc Adiatunnus Aelianus Amandus
+	Bellovesus Boduognatus Brennos Casticus Cativolcus Deiotaros Tibatto Vercingetorix Viridomarus
+	Andastra Arawn Ardan Arianrhod Badb Balor "Casnar Wledig" Cathbad Grendel "Gronw Pebr"
+	Medb Melusine Oger Orlam Rosmerta Uisneach Sul Ethlinn Ethnea Hafgan "Hefaidd Hen"
+}
+
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Fleet of $PROVINCE$"
+}

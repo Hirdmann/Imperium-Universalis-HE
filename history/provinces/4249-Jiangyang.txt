@@ -1,0 +1,52 @@
+native_size = 50
+native_ferocity = 10
+native_hostileness = 10
+trade_goods = unknown
+culture = ba
+religion = white_tiger_religion
+capital = ""
+hre = no
+
+base_tax = 1
+base_production = 2
+base_manpower = 6
+
+discovered_by = xinan1
+discovered_by = bashu1
+
+142.8.10 = {
+	owner = BAA
+	controller = BAA
+	add_core = BAA
+	trade_goods = tea_good
+	is_city = yes
+}
+246.1.1 = {
+	discovered_by = QIN
+}
+438.1.1 = {
+	owner = QIN
+	controller = QIN
+	trade_goods = salt
+	is_city = yes
+}
+468.1.1 = {
+	add_core = QIN
+}
+548.2.1 = {
+	owner = BOO
+	controller = BOO
+	add_core = BOO
+}
+645.1.1 = {
+	owner = ICH
+	controller = ICH
+	add_core = ICH
+}
+#??????����???��?�衤
+974.10.1 = {
+	owner = SUH
+	controller = SUH
+	add_core = SUH
+	remove_core = ICH
+}

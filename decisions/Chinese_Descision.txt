@@ -1,0 +1,382 @@
+country_decisions = {
+
+	# 称王
+	ChengWang1 = {
+		potential = {
+			culture_group = chinese_group
+			has_global_flag = zhanguokaishi
+			NOT = { has_country_flag = zhuxiatouxian_wang }
+			NOT = { has_country_flag = zhuxiatouxian_di }
+		}
+		allow = {
+			num_of_cities = 20
+			total_development = 250
+			army_size = 40
+		}
+		effect = {
+			custom_tooltip = chengwang_tt
+			set_country_flag = zhuxiatouxian_wang
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# 称帝
+	ChengDi1 = {
+		potential = {
+			OR = {
+				has_country_flag = zhuxiatouxian_wang
+				has_reform = heaven_republic_reform
+			}
+			is_subject = no
+			has_global_flag = zhanguokaishi
+			#NOT = { hre_size = 1 }
+			NOT = { has_country_flag = zhuxiatouxian_di }
+		}
+		provinces_to_highlight = {
+			AND = {
+				NOT = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				superregion = china_superregion
+				religion_group = chinese_religions
+			}
+		}
+		allow = {
+			OR = {
+				has_reform = ZhanGuo_WeiGuo_7
+				has_reform = ZhanGuo_QinGuo_7
+				has_reform = ZhanGuo_QiGuo_7
+				has_reform = ZhanGuo_HanGuo_7
+				has_reform = ZhanGuo_JingChu_7
+				has_reform = ZhanGuo_YanGuo_7
+				has_reform = ZhanGuo_ZhaoGuo_7
+			}
+			custom_trigger_tooltip = {
+				tooltip = subject_all_chinese_religions
+				has_country_flag = can_bazhu
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					tag = HNW
+				}
+				change_tag = ICH
+				swap_free_idea_group = yes
+			}
+			set_country_flag = zhuxiatouxian_di
+			set_emperor_of_china = ROOT
+			trigger_switch = {
+				on_trigger = TAG
+				XXX = {
+					override_country_name = GREAT_XXX
+				}
+				YAN = {
+					override_country_name = GREAT_YAN
+				}
+			}
+			if = {
+				limit = {
+					government = republic
+				}
+				add_government_reform = heaven_republic_reform
+			}
+			else = { add_government_reform = celestial_empire }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	call_help_for_wang = {
+		color = { 245 40 40 }
+		potential = {
+			tag = ZHO
+			NOT = { has_ruler_flag = call_help_for_wang_flag }
+		}
+		allow = {
+			is_in_war = {
+				defender_leader = root
+			}
+			religion = chinese_religion
+			curia_treasury_size = 100
+		}
+		effect = {
+			every_known_country = {
+				limit = {
+					religion = chinese_religion
+					NOT = { war_with = ZHO }
+					is_subject = NO
+					NOT = { tag = ZHO }
+				}
+				country_event = { id = ShiJian.22 }
+			}
+			add_curia_treasury = -100
+			set_ruler_flag = call_help_for_wang_flag
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	call_help_for_zhuhou = {
+		color = { 245 40 40 }
+		potential = {
+			is_part_of_hre = yes
+			NOT = { tag = ZHO }
+			NOT = { has_ruler_flag = call_help_for_zhuhou_flag }
+		}
+		allow = {
+			is_in_war = {
+				defender_leader = root
+			}
+			OR = {
+				hre_reform_passed = emperor_expand_gemeiner_pfennig
+				AND = {
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					is_emperor = no
+					NOT = { war_with = emperor }
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { hre_reform_passed = emperor_expand_gemeiner_pfennig }
+				every_known_country = {
+					limit = {
+						is_part_of_hre = yes
+						is_subject = NO
+						NOT = { tag = ROOT }
+						NOT = { war_with = ROOT }
+					}
+					country_event = { id = ShiJian.23 }
+				}
+			}
+			if = {
+				limit = { hre_reform_passed = emperor_expand_gemeiner_pfennig }
+				emperor = {
+					country_event = { id = ShiJian.23 }
+				}
+			}
+			set_ruler_flag = call_help_for_zhuhou_flag
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	force_to_tribute = {
+		potential = {
+			is_part_of_hre = yes
+			OR = {
+				is_emperor = yes
+				is_elector = yes
+			}
+			NOT = { hre_reform_passed = emperor_gemeinerpfennig }
+		}
+		allow = {
+			OR = {
+				AND = {
+					imperial_influence = 30
+					is_emperor = yes
+				}
+				AND = {
+					prestige = 25
+					is_emperor = no #emperors are also electors
+					is_elector = yes
+				}
+			}
+			hre_reform_passed = emperor_reichsregiment
+			NOT = { hre_reform_passed = emperor_gemeinerpfennig }
+		}
+		effect = {
+			if = {
+				limit = {
+					is_emperor = yes
+				}
+				add_imperial_influence = -10
+				add_prestige = -15 #for ai factor
+				every_known_country = {
+					limit = {
+						is_part_of_hre = yes
+						NOT = { tag = ROOT }
+						NOT = { tag = ZHO }
+						NOT = { is_subject_of = ROOT }
+					}
+					country_event = { id = ShiJian.24 }
+				}
+			}
+			else = {
+				add_prestige = -15
+				every_neighbor_country = {
+					limit = {
+						is_part_of_hre = yes
+						NOT = { is_elector = yes }
+						NOT = { is_emperor = yes }
+						NOT = { tag = ZHO }
+						NOT = { is_subject_of = ROOT }
+					}
+					country_event = { id = ShiJian.24 }
+				}
+			}
+		}
+		ai_importance = 150
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = {
+					prestige = 50
+				}
+				factor = 0
+			}
+		}
+	}
+
+	back_to_liyue = {
+		potential = {
+			culture_group = chinese_group
+			government = monarchy
+			NOT = { religion_group = chinese_religions }
+			NOT = { tag = QIN }
+			capital_scope = {
+				continent = china
+			}
+		}
+		allow = {
+			absolutism = 10
+			is_at_war = no
+			stability = 1
+			prestige = 20
+			legitimacy = 100
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			calc_true_if = {
+				all_country = {
+					religion_group = chinese_religions
+					has_opinion = { who = ROOT value = 100 }
+				}
+				amount = 1
+			}
+		}
+		effect = {
+			add_absolutism = -10
+			add_stability = -1
+			add_prestige = -20
+			country_event = { id = chinese_school_events.3 }
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	appeal_to_zhuxia = {
+		color = { 245 160 60 }
+		potential = {
+			capital_scope = {
+				continent = china
+			}
+			hre_size = 1
+			is_part_of_hre = no
+			any_neighbor_country = {
+				is_part_of_hre = yes
+			}
+		}
+		allow = {
+			is_at_war = no
+			dip_power = 150
+			NOT = { is_crusade_target = yes }
+			NOT = { active_imperial_incident = any }
+			OR = {
+				AND = {
+					has_reform = sinofication_government_2
+					has_reform = sinofication_culture_1
+				}
+				AND = {
+					any_neighbor_country = {
+						is_part_of_hre = yes
+					}
+					calc_true_if = {
+						all_country = {
+							is_part_of_hre = yes
+							has_opinion = { who = ROOT value = 150 }
+						}
+						amount = 5
+					}
+				}
+			}
+		}
+		effect = {
+			ROOT = {
+				save_global_event_target_as = appeal_to_zhuxia_s
+			}
+			emperor = {
+				set_imperial_incident = incident_barbrian_wants_to_join
+			}
+			random_list = {
+				10 = { add_imperial_influence = 5 }
+				20 = { add_imperial_influence = 3 }
+				30 = { add_imperial_influence = 2 }
+				40 = { add_imperial_influence = 1 }
+			}
+			if = {
+				limit = {
+					exists = ZHO
+				}
+				add_years_of_income = 0.1
+			}
+			set_country_flag = appeal_to_liyue
+			add_dip_power = -50
+			if = {
+				limit = {
+					ai = no
+				}
+				country_event = { id = incidents_bur_join_empire.1 }
+			}
+		}
+
+		ai_importance = 100
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				dynasty = ZHO
+			}
+			modifier = {
+				factor = 1
+				dynasty = emperor
+			}
+			modifier = {
+				factor = 1
+				culture_group = chinese_group
+			}
+			modifier = {
+				factor = 1
+				religion_group = chinese_religions
+			}
+		}
+	}
+	holding_zhuxia_assemble = {
+		potential = {
+			is_emperor = yes
+			NOT = { has_ruler_flag = china_assemble_bazhu }
+		}
+		allow = {
+			is_at_war = no
+			hre_leagues_enabled = no
+			NOT = { active_imperial_incident = any }
+			dip_power = 100
+		}
+		effect = {
+			set_ruler_flag = china_assemble_bazhu
+			set_imperial_incident = incident_china_assemble_bazhu
+			add_dip_power = -100
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

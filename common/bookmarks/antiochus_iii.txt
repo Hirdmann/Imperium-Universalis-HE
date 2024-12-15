@@ -1,0 +1,7 @@
+bookmark = {
+	name = "ANTIOCHUS_III_TITLE"
+	desc = "ANTIOCHUS_III_DESC"
+	date = 534.1.1
+
+	country = SEL
+}

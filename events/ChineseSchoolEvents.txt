@@ -1,0 +1,539 @@
+######################################################
+# Chinese events								     #
+# Relates to Piety, Religious Schools, Scholars		 #
+# and the Islamic world in the Early modern era		 #
+#                         							 #
+# Written by 诸葛孔博						         #
+######################################################
+
+namespace = chinese_school_events
+namespace = chinese_school_opinion_events
+
+#Change opinion between schools
+
+#Choosing XuePai - New Country
+country_event = {
+	id = chinese_school_events.1
+	title = chinese_school_events.1.t
+	desc = chinese_school_events.1.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_dlc = "Cradle of Civilization"
+		religion_group = chinese_religions
+		NOT = { has_country_flag = school_choose }
+		#has_religious_school = no
+	}
+
+	immediate = {
+		set_country_flag = school_choose
+	}
+
+	option = {
+		name = chinese_school_events.1.bbb #Dao de
+		trigger = {
+			OR = {
+				religion = chinese_religion
+				religion = liyuebadao
+			}
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = daode_school
+		}
+		ai_chance = { 
+			factor = 1
+		}
+	}
+	option = {
+		name = chinese_school_events.1.a #Li Yue
+		trigger = {
+			religion = chinese_religion
+			NOT = {
+				tag = ZHO
+			}
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = liyue_school
+		}
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 1.3
+				NOT = {
+					total_development = 20
+				}
+			}
+			modifier = {
+				factor = 1.3
+				is_emperor = yes
+			}
+		}
+	}
+	option = {
+		name = chinese_school_events.1.c #Fa Li
+		trigger = {
+			OR = {
+				religion = chinese_religion
+				religion = liyuebadao
+			}
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = fali_school
+		}
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 1.3
+				tag = QIN
+			}
+			modifier = {
+				factor = 1.2
+				ruler_has_personality = strict_personality
+			}
+		}
+	}
+	option = {
+		name = chinese_school_events.1.dd #Yin Yang
+		trigger = {
+			OR = {
+				religion = chinese_religion
+				religion = liyuebadao
+			}
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = yinyang_school
+		}
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 1.2
+				ruler_has_personality = pious_personality
+			}
+			modifier = {
+				factor = 1.3
+				tag = CHU
+			}
+		}
+	}
+	option = {
+		name = chinese_school_events.1.e #Kao Gong
+		trigger = {
+			OR = {
+				religion = chinese_religion
+				religion = liyuebadao
+			}
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = kaogong_school
+		}
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 1.2
+				ruler_has_personality = industrious_personality
+			}
+		}
+	}
+	option = {
+		name = chinese_school_events.1.f #Qing Miao
+		trigger = {
+			OR = {
+				religion = chinese_religion
+				religion = liyuebadao
+			}
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = qingmiao_school
+		}
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 1.2
+				ruler_has_personality = incorruptible_personality
+			}
+		}
+	}
+	option = {
+		name = chinese_school_events.1.g #Jin Legalism
+		trigger = {
+			religion = legalism
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = jinlegalism_school
+		}
+	}
+	option = {
+		name = chinese_school_events.1.h #Qi Legalism
+		trigger = {
+			religion = legalism
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = qilegalism_school
+		}
+	}
+	option = {
+		name = chinese_school_events.1.i #Si Meng
+		trigger = {
+			religion = confucianism
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = simeng_school
+		}
+	}
+	option = {
+		name = chinese_school_events.1.j #Xi He
+		trigger = {
+			religion = confucianism
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = xihe_school
+		}
+	}
+	option = {
+		name = chinese_school_events.1.k #Bing Fa
+		trigger = {
+			NOT = { religion = chinese_religion }
+			NOT = { religion = liyuebadao }
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = bingfa_school
+		}
+	}
+	option = {
+		name = chinese_school_events.1.l #Zong Heng
+		trigger = {
+			NOT = { religion = chinese_religion }
+			NOT = { religion = liyuebadao }
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = zongheng_school
+		}
+	}
+	option = {
+		name = chinese_school_events.1.m #Ji Qiao
+		trigger = {
+			religion = mohism
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = jiqiao_school
+		}
+	}
+	option = {
+		name = chinese_school_events.1.n #You Xia
+		trigger = {
+			religion = mohism
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = youxia_school
+		}
+	}
+	option = {
+		name = chinese_school_events.1.o #Yangism
+		trigger = {
+			religion = taoism
+		}
+		set_religious_school = {
+			group = chinese_religions
+			school = yangism_school
+		}
+	}
+}
+
+#Inviting XuePai - No Country Have
+country_event = {
+	id = chinese_school_events.2
+	title = chinese_school_events.2.t
+	desc = chinese_school_events.2.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_dlc = "Cradle of Civilization"
+		religion_group = chinese_religions
+	}
+
+	option = {
+		name = chinese_school_events.1.b #Hanbali
+		trigger = {
+			ROOT = {
+				NOT = {
+					religious_school = {
+						group = chinese_religions
+						school = daode_school
+					}
+				}
+			}
+		}
+		add_country_modifier = { name = daode_scholar_modifier duration = 7300 }
+	}
+	option = {
+		name = chinese_school_events.1.a #Hanafi
+		trigger = {
+			#religion = chinese_religion
+			ROOT = {
+				NOT = {
+					religious_school = {
+						group = chinese_religions
+						school = liyue_school
+					}
+				}
+			}
+		}
+		add_country_modifier = { name = liyue_scholar_modifier duration = 7300 }
+	}
+	option = {
+		name = chinese_school_events.1.c #Jafari
+		trigger = {
+			ROOT = {
+				NOT = {
+					religious_school = {
+						group = chinese_religions
+						school = fali_school
+					}
+				}
+			}
+		}
+		add_country_modifier = { name = fali_scholar_modifier duration = 7300 }
+	}
+	option = {
+		name = chinese_school_events.1.dd #Maliki
+		trigger = {
+			ROOT = {
+				NOT = {
+					religious_school = {
+						group = chinese_religions
+						school = yinyang_school
+					}
+				}
+			}
+		}
+		add_country_modifier = { name = yinyang_scholar_modifier duration = 7300 }
+	}
+	option = {
+		name = chinese_school_events.1.e #Shafi'i
+		trigger = {
+			ROOT = {
+				NOT = {
+					religious_school = {
+						group = chinese_religions
+						school = kaogong_school
+					}
+				}
+			}
+		}
+		add_country_modifier = { name = kaogong_scholar_modifier duration = 7300 }
+	}
+	option = {
+		name = chinese_school_events.1.f #Gives areas historical school of region
+		trigger = {
+			ROOT = {
+				NOT = {
+					religious_school = {
+						group = chinese_religions
+						school = qingmiao_school
+					}
+				}
+			}
+		}
+		add_country_modifier = { name = qingmiao_scholar_modifier duration = 7300 }
+	}
+}
+
+#Barbaian to be Civilization
+country_event = {
+	id = chinese_school_events.3
+	title = chinese_school_events.3.t
+	desc = chinese_school_events.3.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = chinese_school_events.1.a
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					religion = owner
+				}
+				change_religion = chinese_religion
+			}
+		}
+		change_religion = chinese_religion
+		country_event = { id = chinese_school_events.1 }
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 10
+				has_opinion = {
+					who = ZHO
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 5
+				emperor = {
+					religion = chinese_religion
+					reverse_has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				emperor = {
+					alliance_with = ROOT
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					army_size = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = chinese_school_events.1.b
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					religion = owner
+				}
+				change_religion = liyuebadao
+			}
+		}
+		change_religion = liyuebadao
+		country_event = { id = chinese_school_events.1 }
+		if = {
+			limit = {
+				NOT = { has_country_flag = wendingzhongyuan }
+				NOT = { has_global_flag = wendingzhongyuan_union_happened }
+				hre_religion = chinese_religion
+				hre_religion_treaty = no
+				OR = {
+					ai = no
+					AND = {
+						ai = yes
+						total_development = 120
+					}
+				}
+			}
+			set_country_flag = zhuxiatouxian_wang
+			country_event = { id = chinese_school_events.4 }
+		}
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 5
+				emperor = {
+					religion = chinese_religion
+					NOT = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = -100
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					tag = WUU
+					tag = YUE
+				}
+			}
+			modifier = {
+				factor = 2.5
+				total_development = 150
+			}
+		}
+	}
+	option = {
+		name = reject_chinese_faith_option
+		ai_chance = { 
+			factor = 0
+		}
+	}
+}
+
+#Become hegemony of China
+country_event = {
+	id = chinese_school_events.4
+	title = chinese_school_events.4.t
+	desc = chinese_school_events.4.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = chinese_school_events.4.a #It's time!
+		set_country_flag = wendingzhongyuan
+		enable_hre_leagues = yes
+		join_league = liyuebadao
+		set_global_flag = wendingzhongyuan_union_happened
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 2
+				total_development = 225
+			}
+			modifier = {
+				factor = 2
+				total_development = 375
+			}
+			modifier = {
+				factor = 2
+				army_size_percentage = 0.9
+			}
+			modifier = {
+				factor = 2
+				manpower_percentage = 0.9
+			}
+		}
+	}
+	option = {
+		name = chinese_school_events.4.b #wait
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 5
+				NOT = {
+					total_development = 150
+				}
+			}
+			modifier = {
+				factor = 5
+				NOT = {
+					army_size_percentage = 0.1
+				}
+			}
+			modifier = {
+				NOT = {
+					modifier = {
+						factor = 2
+						manpower_percentage = 0.1
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,10440 @@
+#############################
+#  Special                  #
+#############################
+
+#Sacred band of thebes
+sacred_band_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0
+	artillery_weight = 0
+	home_province = 963
+
+	trigger = {
+		owns = 963
+		has_country_flag = thebes_missions_unlocked_sacred_band_flag
+	}
+
+	modifier = {
+		infantry_power = 0.15
+		discipline = 0.05
+		reinforce_cost_modifier = 0.2
+	}
+}
+
+#Invasion Scythian merc company
+ishkuzan_elite_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1
+	artillery_weight = 0
+	home_province = 2407
+
+	trigger = {
+		has_global_flag = ishkuzan_mercenary_company_flag
+		NOT = { war_with = SX2 }
+	}
+
+	modifier = {
+		cavalry_flanking = 0.5
+		cavalry_power = 0.2
+		movement_speed = 0.2
+	}
+
+	cost_modifier = 0.75
+}
+
+#Invasion Scythian siege merc company
+ishkuzan_siege_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 0
+	artillery_weight = 0
+
+	trigger = {
+		tag = SK2
+		has_country_flag = ishkuzan_siege_mercenary_company_flag
+	}
+
+	modifier = {
+		siege_ability = 1
+		land_morale = -0.25
+	}
+
+	cost_modifier = 0.5
+}
+
+#############################
+#  Generic                  #
+#############################
+#Hispania
+
+bastetanian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	home_province = 151
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			151 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+oretanian_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	home_province = 170
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			170 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+edetanian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	home_province = 159
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			159 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+ilercavonian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 250
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			250 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+celtici_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.2
+	artillery_weight = 0.3
+	home_province = 190
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			190 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+celtiberian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.3
+	artillery_weight = 0.3
+	home_province = 217
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			217 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+vetones_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 187
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			187 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+lusitanian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 201
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			201 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+gallaeci_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	home_province = 231
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			231 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+cantabri_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	home_province = 231
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			231 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+vascones_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	home_province = 240
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			240 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+		discipline = 0.025
+	}
+}
+
+aquitani_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 413
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			413 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+balearic_slingers_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 1
+	home_province = 162
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+				}
+			}
+			162 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.2
+		land_attrition = -0.25
+	}
+}
+
+#Gaul
+
+gaulish_skirmishers_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 460
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+				}
+			}
+			460 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		artillery_power = 0.05
+		land_attrition = -0.25
+	}
+}
+
+gaulish_small_raiding_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 460
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+				}
+			}
+			460 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		movement_speed = 0.2
+		land_attrition = -0.25
+	}
+}
+
+gaulish_small_host_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	home_province = 460
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+				}
+			}
+			460 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+gaulish_large_host_mercenary_company = {
+	regiments_per_development = 0.06
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	home_province = 460
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+				}
+			}
+			460 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+gaulish_light_cavalry_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.75
+	artillery_weight = 0.0
+	home_province = 460
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+				}
+			}
+			460 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		movement_speed = 0.05
+		land_attrition = -0.25
+	}
+}
+
+gaulish_heavy_cavalry_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 460
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+				}
+			}
+			460 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		cavalry_power = 0.2
+		movement_speed = -0.05
+		land_attrition = -0.25
+	}
+}
+
+gaulish_arverni_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.3
+	artillery_weight = 0.2
+	home_province = 424
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+				}
+			}
+			424 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.15
+		land_attrition = -0.25
+	}
+}
+
+gaulish_aedui_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.3
+	artillery_weight = 0.3
+	home_province = 465
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+				}
+			}
+			465 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+gaulish_sequani_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.3
+	artillery_weight = 0.3
+	home_province = 384
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+				}
+			}
+			384 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+belgian_small_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 499
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+					superregion = britannia_superregion
+				}
+			}
+			499 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		recover_army_morale_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+belgian_large_mercenary_company = {
+	regiments_per_development = 0.06
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 499
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+					superregion = britannia_superregion
+				}
+			}
+			499 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		recover_army_morale_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+armorican_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	home_province = 442
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = hispania_superregion
+					superregion = italia_superregion
+					superregion = celtica_superregion
+					superregion = germania_superregion
+					superregion = britannia_superregion
+				}
+			}
+			442 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		recover_army_morale_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+#Britain
+
+briton_small_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	home_province = 293
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = britannia_superregion }
+			293 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+briton_large_mercenary_company = {
+	regiments_per_development = 0.06
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	home_province = 293
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = britannia_superregion }
+			293 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+caledonian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.2
+	artillery_weight = 0.3
+	home_province = 327
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = britannia_superregion }
+			327 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+caledonian_raiders_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 327
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = britannia_superregion }
+			327 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		movement_speed = 0.2
+		land_attrition = -0.25
+	}
+}
+
+gaelic_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 360
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = britannia_superregion }
+			360 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+gaelic_raiders_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 360
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = britannia_superregion }
+			360 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		movement_speed = 0.2
+		land_attrition = -0.25
+	}
+}
+
+celtic_chariots_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 295
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = britannia_superregion }
+			295 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.15
+
+	modifier = {
+		shock_damage = 0.15
+		land_attrition = -0.25
+	}
+}
+
+#Germania
+
+germanic_light_cavalry_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.75
+	artillery_weight = 0.0
+	home_province = 1793
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+					superregion = celtica_superregion
+				}
+			}
+			1793 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		cavalry_power = 0.1
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+germanic_heavy_cavalry_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 1793
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+					superregion = celtica_superregion
+				}
+			}
+			1793 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.25
+
+	modifier = {
+		cavalry_power = 0.2
+		land_attrition = -0.25
+	}
+}
+
+istvaeonic_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 1759
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+					superregion = celtica_superregion
+				}
+			}
+			1759 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+ingaevones_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 1811
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+				}
+			}
+			1811 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+irminonic_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 1791
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = germania_superregion
+			}
+			1791 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+lugian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 1878
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+				}
+			}
+			1878 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+gothic_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 1874
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+				}
+			}
+			1874 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+nordic_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 1820
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = germania_superregion
+			}
+			1820 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+helvetian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	home_province = 1775
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+					superregion = celtica_superregion
+				}
+			}
+			1775 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+vindelici_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	home_province = 1208
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+					superregion = celtica_superregion
+					region = raetia_et_noricum
+				}
+			}
+			1208 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+noric_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	home_province = 1203
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+					superregion = celtica_superregion
+					region = raetia_et_noricum
+				}
+			}
+			1203 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+volci_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	home_province = 1849
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+					superregion = celtica_superregion
+					region = raetia_et_noricum
+				}
+			}
+			1849 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+boii_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	home_province = 1857
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = germania_superregion
+					superregion = celtica_superregion
+					region = raetia_et_noricum
+				}
+			}
+			1857 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+#Italia
+# latin_hoplites
+
+# etruscan_mercs
+
+# etruscan_mercenary_hoplites
+
+# etruscan_mercenary_cavalry
+
+# cisalpine celtic archers
+
+# ligurian_light_cavalry
+
+# ferentanian_mercs
+
+# italic_mercs
+
+# campanian_hoplites
+
+# campanian_cavalry
+
+# bruttian_spearmen
+
+# lucanian_light_infantry
+
+# messapic_cavalry
+
+# sicels_mercs
+
+# sicani_mercs
+
+# mamertine_mercs
+
+# sardinian_archers
+
+# corsi_slingers
+
+# italiote_slingers
+
+lepontic_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 103
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = italia_superregion
+			}
+			103 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		reinforce_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+gaulish_gaesatae_naked_company = {
+	regiments_per_development = 0.02
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 105
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				region = gallia_cisalpina
+			}
+			105 = { country_or_subject_holds = ROOT }
+		}
+		culture_group = gaulish_group
+	}
+
+	modifier = {
+		morale_damage = 0.25
+		fire_damage_received = 0.25
+		reinforce_cost_modifier = -0.5
+	}
+}
+cisalpine_gaul_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.25
+	artillery_weight = 0.0
+	home_province = 103
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			103 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		recover_army_morale_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+ligurian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 92
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = italia_superregion
+					superregion = celtica_superregion
+				}
+			}
+			92 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+veneti_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.35
+	artillery_weight = 0.15
+	home_province = 109
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = italia_superregion
+					region = illyria_region
+				}
+			}
+			109 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+piceni_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.2
+	home_province = 59
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = italia_superregion
+			}
+			59 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+umbrian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+	home_province = 61
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = italia_superregion
+			}
+			61 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+oscan_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.2
+	home_province = 45
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = italia_superregion
+			}
+			45 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+samnite_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.15
+	artillery_weight = 0.15
+	home_province = 45
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = italia_superregion
+			}
+			45 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+lucanian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 28
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = italia_superregion
+			}
+			28 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+sicilian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.2
+	home_province = 11
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = italia_superregion
+			}
+			11 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+italiote_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.2
+	home_province = 10
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = italia_superregion
+			}
+			10 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.15
+		land_attrition = -0.25
+	}
+}
+
+tarantine_cavalry_mercenary_company = {
+	regiments_per_development = 0.02
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 10
+
+	trigger = {
+		OR = {
+			culture_group = hellenic_group
+			capital_scope = {
+				superregion = italia_superregion
+			}
+			10 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		cavalry_power = 0.2
+		land_attrition = -0.25
+	}
+}
+
+#Balkans
+
+liburnian_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.4
+	home_province = 1158
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = haemusia_superregion
+					superregion = italia_superregion
+				}
+			}
+			1158 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+dalmatian_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.0
+	artillery_weight = 0.4
+	home_province = 1152
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = haemusia_superregion
+					superregion = italia_superregion
+				}
+			}
+			1152 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+illyrian_marines_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.4
+	home_province = 1152
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = haemusia_superregion
+					superregion = italia_superregion
+				}
+			}
+			1152 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage_received = -0.2
+		land_attrition = -0.25
+		regiment_disembark_speed = 0.25
+	}
+}
+
+ardiaei_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.2
+	home_province = 1139
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = haemusia_superregion
+					superregion = italia_superregion
+					superregion = macedonia_superregion
+				}
+			}
+			1139 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+pannonian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 1240
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = haemusia_superregion
+			}
+			1240 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+dacian_heavy_infantry_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 1949
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = haemusia_superregion
+			}
+			1949 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.2
+		land_attrition = -0.25
+	}
+}
+
+dacian_light_infantry_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 1949
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = haemusia_superregion
+			}
+			1949 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+getae_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 1943
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = haemusia_superregion
+			}
+			1943 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+thracian_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 1117
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = haemusia_superregion
+					superregion = macedonia_superregion
+				}
+			}
+			1117 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+thracian_peltasts_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 1117
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = haemusia_superregion
+					superregion = macedonia_superregion
+				}
+			}
+			1117 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.1
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+odrysian_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.25
+	artillery_weight = 0.15
+	home_province = 1088
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = haemusia_superregion
+					superregion = macedonia_superregion
+				}
+			}
+			1088 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+dardanian_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 5833
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = haemusia_superregion
+					superregion = macedonia_superregion
+				}
+			}
+			5833 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+paeonian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.25
+	home_province = 1132
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = haemusia_superregion
+					superregion = macedonia_superregion
+				}
+			}
+			1132 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+#Greece
+
+macedonian_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.25
+	artillery_weight = 0.0
+	home_province = 1061
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			1061 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+thessalian_cavalry_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 1030
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			1030 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.2
+		land_attrition = -0.25
+	}
+}
+
+rhodian_slingers_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 0.0
+	artillery_weight = 1.0
+	home_province = 995
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			995 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.2
+		land_attrition = -0.25
+	}
+}
+
+cretan_archers_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 0.0
+	artillery_weight = 0.75
+	home_province = 1002
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			1002 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.15
+		land_attrition = -0.25
+	}
+}
+free_peltasts_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 959
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			959 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.1
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+free_hoplites_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 938
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			938 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.15
+		land_attrition = -0.25
+	}
+}
+
+free_thureophoroi_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 959
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			959 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		infantry_power = 0.05
+		land_attrition = -0.25
+	}
+}
+
+aegean_marines_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 978
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			978 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+		regiment_disembark_speed = 0.25
+	}
+}
+
+greek_scythian_archers_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 1992
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			1992 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		fire_damage = 0.1
+		cavalry_power = 0.2
+		land_attrition = -0.25
+	}
+}
+
+greek_scythian_cavalry_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 1992
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			1992 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		shock_damage = 0.1
+		cavalry_power = 0.2
+		land_attrition = -0.25
+	}
+}
+
+greek_scythian_raid_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 1992
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			1992 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		movement_speed = 0.1
+		cavalry_power = 0.2
+		land_attrition = -0.25
+	}
+}
+
+greek_scythian_elite_mercenary_company = {
+	regiments_per_development = 0.02
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 1992
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			1992 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		land_morale = 0.2
+		cavalry_power = 0.2
+		land_attrition = -0.25
+	}
+}
+
+epirot_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 1039
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			1039 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+greek_carian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2162
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = macedonia_superregion
+					region = ionia_region
+				}
+			}
+			2162 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.15
+		land_attrition = -0.25
+	}
+}
+
+#Anatolia and Armenia
+
+carian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2162
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2162 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+lydian_cavalry_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2158
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2158 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+mysian_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2144
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2144 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+kappadokian_cavalry_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.75
+	artillery_weight = 0.0
+	home_province = 2218
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2218 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+lycaonian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2210
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2210 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+kilikian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 2335
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2335 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.1
+		land_attrition = -0.25
+	}
+}
+
+kilikian_cavalry_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.75
+	artillery_weight = 0.0
+	home_province = 2335
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2335 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+greek_colonists_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 2225
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2225 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+pontic_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2237
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2237 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+paphlagonian_light_cavalry_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2193
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2193 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = 0.1
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+phrygian_heavy_cavalry_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2190
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+				}
+			}
+			2190 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.10
+		reinforce_cost_modifier = 0.10
+	}
+}
+pisidian_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 2176
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+				}
+			}
+			2176 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.5
+	}
+}
+ionian_spearmen_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.0
+	artillery_weight = 0.2
+	home_province = 5601
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = macedonia_superregion
+				}
+			}
+			5601 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+	}
+}
+armenian_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2413
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2413 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+armenian_scythian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2407
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2407 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.15
+		land_attrition = -0.25
+	}
+}
+
+colchis_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.2
+	home_province = 2438
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2438 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		land_attrition = -0.25
+		infantry_power = 0.05
+	}
+}
+
+kartli_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.0
+	home_province = 2438
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2438 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		land_attrition = -0.25
+		land_morale = 0.1
+	}
+}
+caucasiones_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 2082
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = caucasia_region
+					superregion = armenia_superregion
+				}
+			}
+			2082 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.5
+		reinforce_cost_modifier = -0.15
+	}
+}
+leki_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 7389
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = caucasia_region
+					superregion = armenia_superregion
+				}
+			}
+			7389 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.5
+		reinforce_cost_modifier = -0.15
+	}
+}
+albanian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 2463
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = caucasia_region
+					superregion = armenia_superregion
+				}
+			}
+			3489 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.25
+		reserves_organisation = 0.1
+	}
+}
+iberian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.0
+	home_province = 2438
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = asia_superregion
+					superregion = armenia_superregion
+				}
+			}
+			2438 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+#Syria & Mesopotamia
+
+palmyrene_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 2313
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			2313 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.25
+		fire_damage = 0.1
+	}
+}
+
+syrian_archers_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.75
+	home_province = 4899
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			4899 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.1
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+syrian_camel_archers_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.75
+	artillery_weight = 0.25
+	home_province = 2313
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			2313 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.1
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+aramean_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2302
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			2302 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		siege_ability = 0.1
+		land_attrition = -0.25
+	}
+}
+
+chaldean_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.1
+	artillery_weight = 0.1
+	home_province = 2507
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			2507 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+syrian_arab_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2520
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			2520 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+hebrew_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2277
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			2277 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		recover_army_morale_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+cissian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 1
+	home_province = 3467
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			3467 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.15
+		land_attrition = -0.25
+	}
+}
+
+zagros_raider_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 2665
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			2665 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		fire_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+syrian_elephants_mercenary_company = {
+	regiments_per_development = 0.005
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 2368
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			2368 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.5
+
+	modifier = {
+		shock_damage = 0.1
+		land_morale = 0.1
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+mesopotamian_iranian_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.75
+	artillery_weight = 0.0
+	home_province = 2688
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			2688 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+edomite_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2265
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = mesopotamia_superregion
+					superregion = syria_superregion
+				}
+			}
+			2265 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+#Arabia
+
+gerrha_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2583
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2583 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+tylos_pirates_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 2585
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2585 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+nabatean_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2534
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = arabia_superregion }
+			2534 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+lihyan_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2550
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2550 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+qedarite_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2520
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2520 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+bedouin_raiders_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 2544
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2544 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+bedouin_camel_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 2544
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2544 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+bedouin_camel_archers_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 2544
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2544 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+minaean_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2567
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2567 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+sabaean_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2611
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2611 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+himjarite_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2597
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2597 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+arabian_heavy_cavalry_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 2611
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = arabia_superregion
+			}
+			2611 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		cavalry_power = 0.15
+		land_attrition = -0.25
+	}
+}
+
+#Iran
+
+medes_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2688
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = iran_superregion
+			}
+			2688 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+caspian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2405
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = iran_superregion
+			}
+			2405 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hyrcanian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 2720
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = iran_superregion
+			}
+			2720 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+
+	}
+}
+
+zagros_archers_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.75
+	home_province = 2660
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = iran_superregion
+			}
+			2660 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+predatory_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 2665
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = iran_superregion
+			}
+			2665 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+sagartian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2712
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = iran_superregion
+			}
+			2712 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+karmanian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2717
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = iran_superregion
+			}
+			2717 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+persian_cavalry_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2682
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = iran_superregion
+			}
+			2682 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		cavalry_power = 0.2
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+gedrosian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2778
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				superregion = iran_superregion
+			}
+			2778 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+drangiana_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2767
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = iran_superregion }
+			2767 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+paropamisida_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 2819
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = iran_superregion }
+			2819 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		land_attrition = -0.5
+
+	}
+}
+
+sattagydia_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2803
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = iran_superregion }
+			2803 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1
+
+	modifier = {
+		cavalry_power = 0.05
+		land_attrition = -0.5
+	}
+}
+
+arachosian_elephants_mercenary_company = {
+	regiments_per_development = 0.005
+	cavalry_weight = 1
+	artillery_weight = 0.0
+	home_province = 2767
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = iran_superregion }
+			2767 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		shock_damage = 0.1
+		land_morale = 0.1
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+#Dihistan & Transoxiana
+
+arian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2765
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2765 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+margianan_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2835
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2835 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+bactrian_infantry_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 2828
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2828 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+bactrian_cavalry_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2828
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2828 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		cavalry_power = 0.1
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+sogdian_infantry_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 4738
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			4738 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+sogdian_cavalry_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2892
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2892 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		cavalry_power = 0.1
+		fire_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+sogdian_guard_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2893
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2893 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		cavalry_power = 0.2
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+bactrian_camel_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2824
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2824 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+bactrian_elephants_mercenary_company = {
+	regiments_per_development = 0.005
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2857
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2857 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		shock_damage = 0.1
+		land_morale = 0.1
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+dahae_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2883
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2883 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		fire_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+parni_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2774
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2774 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		fire_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+massagetae_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2882
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2882 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.15
+		land_attrition = -0.25
+	}
+}
+
+saka_archer_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 5169
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			5169 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		fire_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+saka_cavalry_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 5260
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			5260 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+saka_cataphract_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 5263
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			5263 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		cavalry_power = 0.2
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+parthian_cataphract_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2706
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = sakastan_superregion
+					superregion = parthia_superregion
+				}
+			}
+			2706 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		cavalry_power = 0.2
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+#Scythia
+
+scythian_hunters_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.5
+	artillery_weight = 0.5
+	home_province = 1972
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			1972 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+scythian_light_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 1976
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			1976 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+cimmeria_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2009
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			2009 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+scythia_greek_colonists_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 2004
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			2004 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		discipline = 0.025
+		land_attrition = -0.25
+	}
+}
+scythia_sindi_maeoti_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2069
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			2069 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		cavalry_power = 0.1
+	}
+}
+scythia_abasgi_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 7101
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			7101 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		recover_army_morale_speed = 0.1
+	}
+}
+scythia_gelonian_budini_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 1971
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			1971 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.1
+		land_attrition = -0.5
+	}
+}
+scythia_protoslav_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 1975
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			1975 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		morale_damage_received = -0.1
+		land_attrition = -0.5
+	}
+}
+scythian_chariots_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 1993
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			1993 = { country_or_subject_holds = ROOT }
+		}
+		NOT = {
+			mil_tech = 6
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.05
+		shock_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+scythogetian_horsearchers_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 1964
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					region = dacia_region
+					region = sarmatia_region
+					region = thracia_region
+				}
+			}
+			1964 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_flanking = 0.25
+		fire_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+bastarnae_falxmen_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 8111
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					region = dacia_region
+					region = sarmatia_region
+					region = thracia_region
+				}
+			}
+			8111 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		morale_damage = 0.15
+		shock_damage = 0.15
+		fire_damage_received = 0.15
+		shock_damage_received = 0.15
+	}
+}
+baltic_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.2
+	home_province = 1899
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			1899 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+slavic_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.1
+	artillery_weight = 0.3
+	cost_modifier = 0.75
+	home_province = 2025
+
+	trigger = {
+		OR = {
+			capital_scope = {
+				OR = {
+					superregion = scythia_superregion
+					superregion = germania_superregion
+					region = macedonia_region
+				}
+			}
+			2025 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		thraciangfx_sprite_pack
+	}
+
+	modifier = {
+		land_morale = 0.10
+		artillery_power = 0.10
+		land_attrition = -0.25
+	}
+}
+
+scythian_archers_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2098
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			2098 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.1
+		cavalry_flanking = 0.25
+		land_attrition = -0.25
+	}
+}
+
+scythian_heavy_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2037
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			2037 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		cavalry_power = 0.15
+		shock_damage = 0.15
+		land_attrition = -0.25
+	}
+}
+
+sarmatian_heavy_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2905
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			2905 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.15
+
+	modifier = {
+		cavalry_power = 0.15
+		shock_damage = 0.15
+		land_attrition = -0.25
+	}
+}
+
+sarmatian_archers_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2064
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			2064 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.1
+		cavalry_flanking = 0.25
+		land_attrition = -0.25
+	}
+}
+
+sarmatian_light_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2111
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			2111 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+amazons_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2050
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = scythia_superregion }
+			2050 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		cavalry_power = 0.2
+		land_morale = 0.2
+		land_attrition = -0.25
+	}
+}
+
+#Tibet
+
+kirata_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 2987
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = tibet_superregion }
+			2987 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+kirata_hunters_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.5
+	home_province = 2987
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = tibet_superregion }
+			2987 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+tibetan_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 4670
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = tibet_superregion }
+			4670 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+sumpa_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 4667
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = tibet_superregion }
+			4667 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+zhangzhung_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 4689
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = tibet_superregion }
+			4689 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+qiang_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 4709
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = tibet_superregion }
+			4709 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+tibetan_cavalry_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 4689
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = tibet_superregion }
+			4689 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+#North India
+
+kamboja_cavalry_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 2931
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			2931 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.2
+		land_attrition = -0.25
+	}
+}
+
+kamboja_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 2931
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			2931 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+trigarta_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 3571
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			3571 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+sauvira_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 3486
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			3486 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+sindhu_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 2949
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			2949 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+kasmira_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 2940
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			2940 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+panchala_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2976
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			2976 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		shock_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+kuru_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 2976
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			2976 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		shock_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+malla_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 2991
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			2991 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+anga_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 3026
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			3026 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+vanga_hunter_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 3019
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			3019 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.05
+		land_attrition = -0.5
+	}
+}
+
+vanga_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 3019
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			3019 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+madra_elephants_mercenary_company = {
+	regiments_per_development = 0.01
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3558
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			3558 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		shock_damage = 0.1
+		land_morale = 0.1
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+kosala_elephants_mercenary_company = {
+	regiments_per_development = 0.01
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3642
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			3642 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		shock_damage = 0.1
+		land_morale = 0.1
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+pundra_elephants_mercenary_company = {
+	regiments_per_development = 0.01
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3499
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = uttarapatha_superregion }
+			3499 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		shock_damage = 0.1
+		land_morale = 0.1
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+#South India
+
+pulinda_hunters_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 3104
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3104 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+heheya_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 3100
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3100 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+dandaka_hunters_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 3583
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3583 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+ashmaka_cavalry_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 3117
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3117 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+kannada_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 3177
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3177 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+telugu_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 3660
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3660 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+tamil_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 3158
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3158 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+dravidian_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 3134
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3134 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+kalinga_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 3044
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3044 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+utkala_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 3681
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3681 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.05
+		land_attrition = -0.5
+	}
+}
+
+bhrigus_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 3180
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3180 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		discipline = 0.025
+		land_attrition = -0.25
+	}
+}
+
+avanti_elephants_mercenary_company = {
+	regiments_per_development = 0.01
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3933
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3933 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		shock_damage = 0.1
+		land_morale = 0.1
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+kalinga_elephants_mercenary_company = {
+	regiments_per_development = 0.01
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3045
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3045 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		shock_damage = 0.1
+		land_morale = 0.1
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+andhra_elephants_mercenary_company = {
+	regiments_per_development = 0.01
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3121
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = dakshinapatha_superregion }
+			3121 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		shock_damage = 0.1
+		land_morale = 0.1
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+#Eastern Steppe
+
+xianbei_heavy_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3378
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			3378 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		cavalry_power = 0.15
+		land_attrition = -0.25
+	}
+}
+
+xianbei_archer_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3378
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			3378 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_flanking = 0.25
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+xianbei_light_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3378
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			3378 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+xiongnu_heavy_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 4141
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			4141 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		cavalry_power = 0.15
+		land_attrition = -0.25
+	}
+}
+
+xiongnu_archer_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 4141
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			4141 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_flanking = 0.25
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+xiongnu_light_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 4141
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			4141 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+wusun_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.5
+	home_province = 3316
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			3316 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+altaic_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.5
+	home_province = 3373
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			3373 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+ashina_cavalry_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3373
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			3373 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		cavalry_power = 0.2
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+tochari_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3308
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			3308 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+tochari_elite_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 3308
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = turan_superregion }
+			3308 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		cavalry_power = 0.2
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+#China
+
+steppe_archer_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 4167
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4167 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_flanking = 0.25
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+steppe_light_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 4167
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4167 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+beidi_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.5
+	home_province = 4054
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4054 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+guanzhong_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+	home_province = 4177
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4177 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		reinforce_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+zhongyuan_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+	home_province = 4349
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4349 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		reinforce_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+dongxia_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+	home_province = 4291
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4291 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		reinforce_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+haidai_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+	home_province = 4263
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4263 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		reinforce_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+jianghan_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+	home_province = 4386
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4386 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		reinforce_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+jinchu_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+	home_province = 4464
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4464 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		reinforce_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+wu_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+	home_province = 4445
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4445 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+yue_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+	home_province = 4436
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4436 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+bashu_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 4246
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4246 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+dian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 4563
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4563 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+nanyue_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 4539
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4539 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+minyue_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 4539
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4539 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+yangyue_mercenary_company = {
+	regiments_per_development = 0.045
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 4527
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4527 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+dragon_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 4349
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4349 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+tiger_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 4349
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4349 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		discipline = 0.05
+		land_morale = 0.05
+		land_attrition = -0.25
+	}
+}
+
+rhinoceros_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 4349
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = china_superregion }
+			4349 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		discipline = 0.05
+		land_morale = 0.05
+		land_attrition = -0.25
+	}
+}
+
+#Egypt
+
+saracen_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 742
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			742 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.05
+		land_attrition = -0.5
+	}
+}
+
+shutu_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+	home_province = 2258
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			2258 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.05
+		land_attrition = -0.5
+	}
+}
+
+meshwesh_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 729
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			729 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		siege_ability = 0.1
+		land_attrition = -0.25
+	}
+}
+
+egypt_camel_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.75
+	artillery_weight = 0.0
+	home_province = 784
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			784 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.5
+	}
+}
+
+egypt_chariot_mercenary_company = {
+	regiments_per_development = 0.025
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 762
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			762 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		cavalry_power = 0.1
+		shock_damage = 0.1
+		discipline = 0.025
+		land_attrition = -0.25
+	}
+}
+
+egypt_elephant_mercenary_company = {
+	regiments_per_development = 0.005
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 783
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			783 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.2
+
+	modifier = {
+		shock_damage = 0.05
+		land_morale = 0.05
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+taseyti_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 1.0
+	home_province = 801
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			801 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.2
+		fire_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+nubian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 807
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			807 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+meroe_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.25
+	artillery_weight = 0.5
+	home_province = 827
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			827 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+egypt_greek_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 6245
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			6245 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		discipline = 0.025
+		land_morale = 0.05
+		land_attrition = -0.25
+	}
+}
+egypt_carian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 6245
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			6245 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		shock_damage = 0.05
+		land_morale = 0.05
+		land_attrition = -0.25
+	}
+}
+egypt_anatolian_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+	home_province = 6245
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = eastern_africa_superregion }
+			6245 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		shock_damage_received = -0.05
+		land_morale = 0.05
+		land_attrition = -0.25
+	}
+}
+
+#Sub-saharan africa
+
+african_camel_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 678
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			678 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.05
+		land_attrition = -0.5
+	}
+}
+
+african_camel_archer_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 678
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			678 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.05
+		land_attrition = -0.5
+	}
+}
+
+somali_marines_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 898
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			898 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+		regiment_disembark_speed = 0.25
+	}
+}
+
+somali_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 881
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			881 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+aksumite_infantry_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 868
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			868 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+aksumite_archer_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 868
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			868 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+pygmy_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 912
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			912 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.6
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+agysimban_mercenary_company = {
+	regiments_per_development = 0.06
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 3287
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			3287 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+nigerian_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 3284
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			3284 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.05
+		land_attrition = -0.5
+	}
+}
+
+habeshan_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 857
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			857 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+cushitic_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+	home_province = 827
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			827 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+east_african_camel_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 835
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			835 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.05
+		land_attrition = -0.5
+	}
+}
+
+western_african_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 3277
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = aethiopia_superregion }
+			3277 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+#North Africa
+
+mauri_infantry_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 516
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			516 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+mauri_raid_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 534
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			534 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+mauri_cavalry_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+	home_province = 526
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			526 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+garamantes_camel_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 661
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			661 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		shock_damage_received = -0.05
+		land_attrition = -0.5
+	}
+}
+
+garamantes_camel_archer_mercenary_company = {
+	regiments_per_development = 0.03
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 661
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			661 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.05
+		land_attrition = -0.5
+	}
+}
+
+lybian_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.5
+	artillery_weight = 0.5
+	home_province = 716
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			716 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		land_morale = 0.05
+		land_attrition = -0.5
+	}
+}
+
+kyrene_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+	home_province = 707
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			707 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		infantry_power = 0.1
+		discipline = 0.025
+		land_attrition = -0.25
+	}
+}
+
+nasamones_camel_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 641
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			641 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		shock_damage_received = -0.05
+		land_attrition = -0.5
+	}
+}
+
+nasamones_camel_archer_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 641
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			641 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		fire_damage = 0.05
+		land_attrition = -0.5
+	}
+}
+
+nasamones_cavalry_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 694
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			694 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.5
+	}
+}
+
+gaetuli_cavalry_mercenary_company = {
+	regiments_per_development = 0.035
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 591
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			591 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.5
+	}
+}
+
+numidian_light_cavalry_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 589
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			589 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		cavalry_flanking = 0.25
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+numidian_shock_cavalry_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 589
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			589 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		cavalry_power = 0.05
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+numidian_elite_cavalry_mercenary_company = {
+	regiments_per_development = 0.04
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 589
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			589 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+numidian_mercenary_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+	home_province = 563
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			563 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+north_african_elephants_mercenary_company = {
+	regiments_per_development = 0.005
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+	home_province = 613
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = western_africa_superregion }
+			613 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		shock_damage = 0.05
+		land_morale = 0.05
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+#Hellenistic
+
+hellenistic_odrysian_company = {
+	regiments_per_development = 0.04
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = haemusia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		thraciangfx_sprite_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_thracian_company_1 = {
+	regiments_per_development = 0.06
+
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+
+	cavalry_cap = 5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = haemusia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		thraciangfx_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_thracian_company_2 = {
+	regiments_per_development = 0.06
+
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+
+	cavalry_cap = 5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = haemusia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		thraciangfx_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_thracian_guard_company = {
+	regiments_per_development = 0.03
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = haemusia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		thraciangfx_sprite_pack
+	}
+
+	modifier = {
+		land_morale = 0.1
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_dardanian_company = {
+	regiments_per_development = 0.06
+
+	cavalry_weight = 0.2
+	artillery_weight = 0.2
+
+	cavalry_cap = 5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = haemusia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		thraciangfx_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_scythian_company_1 = {
+	regiments_per_development = 0.05
+
+	cavalry_weight = 1.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = haemusia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		scythian_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		movement_speed = 0.1
+		fire_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_scythian_company_2 = {
+	regiments_per_development = 0.06
+
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = haemusia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		scythian_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		movement_speed = 0.05
+		fire_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_sarmatian_company_1 = {
+	regiments_per_development = 0.05
+
+	cavalry_weight = 1.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = haemusia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		scythian_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		movement_speed = 0.1
+		fire_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_sarmatian_company_2 = {
+	regiments_per_development = 0.06
+
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = haemusia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		scythian_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		movement_speed = 0.05
+		fire_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_dahae_company_1 = {
+	regiments_per_development = 0.05
+
+	cavalry_weight = 1.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		scythian_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		movement_speed = 0.1
+		fire_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_dahae_company_2 = {
+	regiments_per_development = 0.06
+
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		scythian_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		movement_speed = 0.05
+		fire_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_saka_company_1 = {
+	regiments_per_development = 0.05
+
+	cavalry_weight = 1.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		scythian_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		movement_speed = 0.1
+		fire_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_saka_company_2 = {
+	regiments_per_development = 0.06
+
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		scythian_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		movement_speed = 0.05
+		fire_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_bactrian_company = {
+	regiments_per_development = 0.04
+
+	cavalry_weight = 0.5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		iranian_units_model_pack
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		movement_speed = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_sogdian_company = {
+	regiments_per_development = 0.04
+
+	cavalry_weight = 0.5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		iranian_units_model_pack
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		movement_speed = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_margianan_company = {
+	regiments_per_development = 0.04
+
+	cavalry_weight = 0.5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		iranian_units_model_pack
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		movement_speed = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_ionian_company = {
+	regiments_per_development = 0.065
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		hellenicgfx_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_aeolian_company = {
+	regiments_per_development = 0.065
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		hellenicgfx_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_doris_company = {
+	regiments_per_development = 0.065
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		hellenicgfx_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_arcadian_company = {
+	regiments_per_development = 0.065
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		arcadia_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_achaean_company = {
+	regiments_per_development = 0.065
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		achaia_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_aetolian_company = {
+	regiments_per_development = 0.065
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		aetolian_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_attic_company = {
+	regiments_per_development = 0.065
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		athenian_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_cretan_company = {
+	regiments_per_development = 0.05
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		hellenicgfx_sprite_pack
+	}
+
+	cost_modifier = 0.85
+
+	modifier = {
+		discipline = 0.025
+		fire_damage = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_macedonian_company = {
+	regiments_per_development = 0.065
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		old_macedonian_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_thureophoroi_company_1 = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		old_macedonian_sprite_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_thureophoroi_company_2 = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		old_macedonian_sprite_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_thorakitai_company_1 = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		old_macedonian_sprite_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_thorakitai_company_2 = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		old_macedonian_sprite_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_peltast_company_1 = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.75
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		old_macedonian_sprite_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_peltast_company_2 = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.75
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		old_macedonian_sprite_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_sicilian_company = {
+	regiments_per_development = 0.06
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = italia_superregion
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		hellenicgfx_sprite_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_italiote_company = {
+	regiments_per_development = 0.06
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = italia_superregion
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		hellenicgfx_sprite_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_tarantine_company = {
+	regiments_per_development = 0.04
+
+	cavalry_weight = 0.75
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = italia_superregion
+				superregion = macedonia_superregion
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		hellenicgfx_sprite_pack
+	}
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_kassite_company = {
+	regiments_per_development = 0.05
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		mesopotamian_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		recover_army_morale_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_cyrtian_company = {
+	regiments_per_development = 0.06
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		iranian_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		fire_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_persian_company = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		iranian_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_parthian_company = {
+	regiments_per_development = 0.06
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		iranian_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_saracenean_company = {
+	regiments_per_development = 0.06
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		berber_units_model_pack
+	}
+
+	cost_modifier = 0.6
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+hellenistic_syrian_company = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		levantine_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		recover_army_morale_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_syrian_company_1 = {
+	regiments_per_development = 0.05
+
+	cavalry_weight = 0.0
+	artillery_weight = 1.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+				superregion = iran_superregion
+				superregion = sakastan_superregion
+				superregion = parthia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		levantine_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_cappadocian_company = {
+	regiments_per_development = 0.065
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.2
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		anatolian_culture_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_armenian_company = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.2
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		armenian_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_moschian_company = {
+	regiments_per_development = 0.055
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = mesopotamia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		anatolian_culture_sprite_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_celtic_company_1 = {
+	regiments_per_development = 0.065
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = haemusia_superregion
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		celticgfx_sprite_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_morale = 0.05
+		infantry_power = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_celtic_company_2 = {
+	regiments_per_development = 0.06
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.75
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = haemusia_superregion
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		celticgfx_sprite_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_morale = 0.05
+		artillery_power = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_celtic_company_3 = {
+	regiments_per_development = 0.05
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = haemusia_superregion
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		celticgfx_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		land_morale = 0.05
+		cavalry_power = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_celtic_company_4 = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = haemusia_superregion
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		celticgfx_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		land_morale = 0.1
+		infantry_power = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_celtic_company_5 = {
+	regiments_per_development = 0.04
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = haemusia_superregion
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = syria_superregion
+			}
+		}
+	}
+
+	sprites = {
+		celticgfx_sprite_pack
+	}
+
+	modifier = {
+		land_morale = 0.2
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_galatian_company_1 = {
+	regiments_per_development = 0.06
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = haemusia_superregion
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = mesopotamia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		celticgfx_sprite_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_morale = 0.05
+		infantry_power = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_galatian_company_2 = {
+	regiments_per_development = 0.07
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = haemusia_superregion
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = mesopotamia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		celticgfx_sprite_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		land_morale = 0.1
+		infantry_power = 0.05
+		land_attrition = -0.25
+	}
+}
+
+hellenistic_galatian_company_3 = {
+	regiments_per_development = 0.045
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			current_age = hellenistic_age
+			current_age = late_hellenistic_age
+		}
+		OR = {
+			technology_group = iranian
+			technology_group = diadochi
+			technology_group = greek_techgroup
+			has_reform = satrap_diadochi_reform
+			has_reform = diadochi_kingdom_reform
+			culture_group = hellenic_group
+		}
+		capital_scope = {
+			OR = {
+				superregion = macedonia_superregion
+				superregion = haemusia_superregion
+				superregion = eastern_africa_superregion
+				superregion = macedonia_superregion
+				superregion = asia_superregion
+				superregion = armenia_superregion
+				superregion = syria_superregion
+				superregion = scythia_superregion
+				superregion = mesopotamia_superregion
+			}
+		}
+	}
+
+	sprites = {
+		celticgfx_sprite_pack
+	}
+
+	modifier = {
+		land_morale = 0.2
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+#Korea
+
+okjeo_mountaineers_company = {
+	regiments_per_development = 0.045
+	home_province = 1686
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			1686 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+yemaek_company = {
+	regiments_per_development = 0.05
+	home_province = 1681
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			1681 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		recover_army_morale_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+gojoseon_cavalry_company = {
+	regiments_per_development = 0.03
+	home_province = 1720
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			1720 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+gojoseon_banner_company = {
+	regiments_per_development = 0.045
+	home_province = 1720
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			1720 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+buyeo_cavalry_company = {
+	regiments_per_development = 0.03
+	home_province = 6068
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			6068 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+shushen_cavalry_company = {
+	regiments_per_development = 0.045
+	home_province = 6092
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			6092 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.85
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+shushen_elite_cavalry_company = {
+	regiments_per_development = 0.025
+	home_province = 6092
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			6092 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		shock_damage = 0.1
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+tamna_marines_company = {
+	regiments_per_development = 0.04
+	home_province = 1733
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			1733 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+		regiment_disembark_speed = 0.25
+	}
+}
+
+japonic_archers_company = {
+	regiments_per_development = 0.04
+	home_province = 1712
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			1712 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.75
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+byeonhan_company = {
+	regiments_per_development = 0.05
+	home_province = 1712
+
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			1712 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+jinhan_company = {
+	regiments_per_development = 0.05
+	home_province = 6027
+
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			6027 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+jinhan_cavalry_company = {
+	regiments_per_development = 0.025
+	home_province = 6027
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			6027 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+mahan_company = {
+	regiments_per_development = 0.05
+	home_province = 5934
+
+	cavalry_weight = 0.1
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			5934 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+mahan_elite_company = {
+	regiments_per_development = 0.03
+	home_province = 5934
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			5934 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		land_morale = 0.1
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+dongye_company = {
+	regiments_per_development = 0.05
+	home_province = 5913
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			5913 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+korea_ye_company = {
+	regiments_per_development = 0.05
+	home_province = 5913
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			5913 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		artillery_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+nangnang_company = {
+	regiments_per_development = 0.045
+	home_province = 5889
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			5889 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+jinbeon_company = {
+	regiments_per_development = 0.045
+	home_province = 5986
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			5986 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+imdun_company = {
+	regiments_per_development = 0.045
+	home_province = 5909
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			5909 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+chaoxian_company = {
+	regiments_per_development = 0.055
+	home_province = 5909
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = korea_superregion }
+			5909 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		fire_damage = 0.05
+		artillery_power = 0.05
+		land_attrition = -0.25
+	}
+}
+
+#Filipinas
+
+tagalog_company = {
+	regiments_per_development = 0.045
+	home_province = 6629
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = chryse_insula_superregion }
+			6629 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+lokano_company = {
+	regiments_per_development = 0.045
+	home_province = 6620
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = chryse_insula_superregion }
+			6620 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+waray_company = {
+	regiments_per_development = 0.045
+	home_province = 6679
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = chryse_insula_superregion }
+			6679 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+palawan_company = {
+	regiments_per_development = 0.045
+	home_province = 6647
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = chryse_insula_superregion }
+			6647 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+sugbu_company = {
+	regiments_per_development = 0.045
+	home_province = 6654
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = chryse_insula_superregion }
+			6654 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+tausug_company = {
+	regiments_per_development = 0.045
+	home_province = 6709
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = chryse_insula_superregion }
+			6709 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+hiligaynon_company = {
+	regiments_per_development = 0.045
+	home_province = 6672
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = chryse_insula_superregion }
+			6672 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+sulu_company = {
+	regiments_per_development = 0.045
+	home_province = 6694
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = chryse_insula_superregion }
+			6694 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+lanao_lake_company = {
+	regiments_per_development = 0.035
+	home_province = 6747
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = chryse_insula_superregion }
+			6747 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+bay_lake_company = {
+	regiments_per_development = 0.035
+	home_province = 6629
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = chryse_insula_superregion }
+			6629 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+#SEA
+
+orang_asli_company = {
+	regiments_per_development = 0.05
+	home_province = 7994
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.5
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7994 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+kra_company = {
+	regiments_per_development = 0.05
+	home_province = 7754
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7754 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+thai_company = {
+	regiments_per_development = 0.05
+	home_province = 7777
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7777 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+malay_company = {
+	regiments_per_development = 0.05
+	home_province = 3418
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			3418 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+suvarnadvipa_company = {
+	regiments_per_development = 0.035
+	home_province = 7962
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.2
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7962 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		discipline = 0.05
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+malay_marines_company = {
+	regiments_per_development = 0.045
+	home_province = 7962
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7962 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+		regiment_disembark_speed = 0.25
+	}
+}
+
+cham_company = {
+	regiments_per_development = 0.05
+	home_province = 7561
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7561 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+funan_company = {
+	regiments_per_development = 0.045
+	home_province = 7581
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7581 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+chenla_company = {
+	regiments_per_development = 0.045
+	home_province = 7596
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7596 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+moken_company = {
+	regiments_per_development = 0.05
+	home_province = 7835
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7835 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+mon_company = {
+	regiments_per_development = 0.05
+	home_province = 6826
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			6826 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+mon_elite_company = {
+	regiments_per_development = 0.04
+	home_province = 6826
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			6826 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		discipline = 0.05
+		land_attrition = -0.25
+	}
+}
+
+wa_company = {
+	regiments_per_development = 0.05
+	home_province = 7765
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7765 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+wa_raiders_company = {
+	regiments_per_development = 0.06
+	home_province = 7765
+
+	cavalry_weight = 0.1
+	artillery_weight = 0.2
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7765 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+pearic_company = {
+	regiments_per_development = 0.05
+	home_province = 7606
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7606 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+bahnaric_company = {
+	regiments_per_development = 0.05
+	home_province = 7601
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7601 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+katuic_company = {
+	regiments_per_development = 0.05
+	home_province = 7701
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7701 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+aslian_company = {
+	regiments_per_development = 0.05
+	home_province = 7843
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7843 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		land_attrition = -0.5
+	}
+}
+
+lac_viet_company = {
+	regiments_per_development = 0.05
+	home_province = 1673
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			1673 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+lac_viet_guerrilla_company = {
+	regiments_per_development = 0.04
+	home_province = 1673
+
+	cavalry_weight = 0.0
+	artillery_weight = 1.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			1673 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 0.9
+
+	modifier = {
+		artillery_power = 0.05
+		movement_speed = 0.15
+		land_attrition = -0.25
+	}
+}
+
+lac_viet_elephants_company = {
+	regiments_per_development = 0.01
+	home_province = 1673
+
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			1673 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		shock_damage = 0.05
+		land_morale = 0.05
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+funan_elephants_company = {
+	regiments_per_development = 0.01
+	home_province = 1673
+
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			1673 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		shock_damage = 0.05
+		land_morale = 0.05
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+pyu_elephants_company = {
+	regiments_per_development = 0.01
+	home_province = 6756
+
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			6756 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		shock_damage = 0.05
+		land_morale = 0.05
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+mangic_hill_company = {
+	regiments_per_development = 0.045
+	home_province = 7771
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7771 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		movement_speed = 0.1
+		land_attrition = -0.25
+	}
+}
+
+mangic_mountain_company = {
+	regiments_per_development = 0.05
+	home_province = 7771
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7771 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		shock_damage_received = -0.1
+		land_attrition = -0.25
+	}
+}
+
+burmese_company = {
+	regiments_per_development = 0.05
+	home_province = 7535
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7535 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		siege_ability = 0.1
+		land_attrition = -0.25
+	}
+}
+
+burmese_cavalry_company = {
+	regiments_per_development = 0.035
+	home_province = 7535
+
+	cavalry_weight = 0.5
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7535 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.8
+
+	modifier = {
+		cavalry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+pyu_company = {
+	regiments_per_development = 0.05
+	home_province = 6756
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			6756 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.7
+
+	modifier = {
+		land_morale = 0.1
+		land_attrition = -0.25
+	}
+}
+
+pyu_cavalry_company = {
+	regiments_per_development = 0.035
+	home_province = 6756
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			6756 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	modifier = {
+		discipline = 0.05
+		shock_damage = 0.1
+		land_attrition = -0.25
+	}
+}
+
+tagaung_guard_company = {
+	regiments_per_development = 0.04
+	home_province = 6786
+
+	cavalry_weight = 0.25
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			6786 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	modifier = {
+		discipline = 0.05
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+}
+
+karen_company = {
+	regiments_per_development = 0.05
+	home_province = 6778
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			6778 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		siege_ability = 0.1
+		land_attrition = -0.25
+	}
+}
+
+kachin_company = {
+	regiments_per_development = 0.05
+	home_province = 7527
+
+	cavalry_weight = 0.0
+	artillery_weight = 0.25
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7527 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		chinese_units_model_pack
+	}
+
+	cost_modifier = 0.65
+
+	modifier = {
+		siege_ability = 0.1
+		land_attrition = -0.25
+	}
+}
+
+champa_elephants_company = {
+	regiments_per_development = 0.01
+	home_province = 7561
+
+	cavalry_weight = 1.0
+	artillery_weight = 0.0
+
+	trigger = {
+		OR = {
+			capital_scope = { superregion = suvarnabhumi_superregion }
+			7561 = { country_or_subject_holds = ROOT }
+		}
+	}
+
+	sprites = {
+		indian_units_model_pack
+	}
+
+	cost_modifier = 1.1
+
+	modifier = {
+		shock_damage = 0.05
+		land_morale = 0.05
+		cavalry_power = 0.1
+		reinforce_speed = -0.15
+		land_attrition = -0.25
+	}
+}
+
+slavic_druzhina_company = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0.2
+	artillery_weight = 0.4
+	cost_modifier = 0.75
+	home_province = 2025
+
+	trigger = {
+		AND = {
+			OR = {
+				tag = V4N
+				primary_culture = slavic
+			}
+			OR = {
+				has_reform = slavic_state_reform
+				has_reform = slavic_kingdom_reform
+			}
+		}
+	}
+
+	sprites = {
+		thraciangfx_sprite_pack
+	}
+
+	modifier = {
+		land_morale = 0.10
+		cavalry_power = 0.10
+		artillery_power = 0.10
+		discipline = 0.05
+	}
+}

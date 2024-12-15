@@ -1,0 +1,7 @@
+bookmark = {
+	name = "SEVEN_KINGDOMS_REBELLION_TITLE"
+	desc = "SEVEN_KINGDOMS_REBELLION_DESC"
+	date = 599.1.1
+
+	country = ICH
+}

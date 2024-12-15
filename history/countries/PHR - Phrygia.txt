@@ -1,0 +1,95 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = caucaso_anatolian
+primary_culture = phrygian
+religion = cybele
+#religious_school = hellenic_type
+capital = 2195
+
+142.1.1 = {
+	add_stability = -2
+	add_inflation = 10
+	monarch = {
+		name = "Midas IV"
+		dynasty = "of Phrygia"
+		birth_date = 114.1.1
+		death_date = 184.1.1
+		culture = phrygian
+		religion = cybele
+		dip = 1
+		adm = 2
+		mil = 1
+	}
+	heir = {
+		claim = 25
+		name = "Gordias"
+		dynasty = "of Phrygia"
+		birth_date = 134.1.1
+		death_date = 204.1.1
+		culture = phrygian
+		religion = cybele
+		adm = 1
+		dip = 2
+		mil = 1
+		monarch_name = "Gordias III"
+	}
+	add_country_modifier = {
+		name = last_years_of_phrygia
+		duration = 3650
+	}
+}
+237.1.1 = {
+	government = monarchy
+	add_government_reform = satrapy_reform
+	add_accepted_culture = lydian
+	add_accepted_culture = lycaonian
+	capital = 2192
+}
+
+346.1.1 = {
+	monarch = {
+		name = "Koroush the Younger"
+		dynasty = "Haxamanishiya"
+		death_date = 354.1.1
+		culture = persian
+		religion = zoroastrianism
+		dip = 4
+		adm = 2
+		mil = 5
+	}
+}
+
+#Satrap of Lydia
+354.1.1 = {
+	monarch = {
+		name = "Cithravahishta"
+		dynasty = "of Persia"
+		death_date = 374.1.1
+		culture = persian
+		religion = zoroastrianism
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+417.1.1 = {
+	monarch = {
+		name = "Atyzes"
+		dynasty = "of Persia"
+		death_date = 427.1.1
+		culture = persian
+		religion = zoroastrianism
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+424.1.1 = {
+	add_government_reform = despotism_reform
+	remove_accepted_culture = lydian
+	remove_accepted_culture = lycaonian
+}

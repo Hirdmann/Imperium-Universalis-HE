@@ -1,0 +1,11 @@
+bookmark = {
+	name = "SAKA_INVASION_TITLE"
+	desc = "SAKA_INVASION_DESC"
+	date = 624.1.1
+
+	country = SAK
+	country = YUZ
+	country = PRT
+	country = IGK
+	country = FD4
+}

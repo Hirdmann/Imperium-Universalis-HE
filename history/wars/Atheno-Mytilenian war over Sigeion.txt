@@ -1,0 +1,19 @@
+name = "Atheno-Mytilenian War over Sigeion"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 2118
+}
+
+142.8.10 = {
+	add_attacker = ATH
+	add_attacker = SIE
+	add_defender = LB1
+}
+
+152.1.1 = {
+	rem_attacker = ATH
+	rem_attacker = SIE
+	rem_defender = LB1
+}
+

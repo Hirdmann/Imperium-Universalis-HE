@@ -1,0 +1,14 @@
+country_decisions = {
+
+	restore_missions = {
+		potential = {
+			always = no
+		}
+		allow = {
+
+		}
+		effect = {
+			swap_non_generic_missions = yes
+		}
+	}
+}

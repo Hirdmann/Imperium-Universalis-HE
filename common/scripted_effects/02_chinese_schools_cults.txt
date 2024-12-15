@@ -1,0 +1,502 @@
+initialize_chinese_schools_effect = { #Used in on_startup on_action
+	if = {
+		limit = { always = yes }
+		random_country = { #kaogongs are disliked by all Sunnis at start.
+			limit = {
+				religious_school = {
+					group = chinese_religions
+					school = kaogong_school
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = daode_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = liyue_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = yinyang_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = fali_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+		}
+		random_country = { #qingmiaos are disliked by all Sunnis at start.
+			limit = {
+				religious_school = {
+					group = chinese_religions
+					school = qingmiao_school
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = daode_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = liyue_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = yinyang_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = fali_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+		}
+		random_country = { #jinlegalisms are disliked by all Sunnis at start.
+			limit = {
+				religious_school = {
+					group = chinese_religions
+					school = jinlegalism_school
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = daode_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = liyue_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = yinyang_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = fali_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+			random_country = {
+				limit = {
+					religious_school = {
+						group = chinese_religions
+						school = yangism_school
+					}
+				}
+				set_school_opinion = {
+					who = PREV
+					opinion = -1
+				}
+			}
+
+		}
+	}
+}
+
+#Religious Schools:
+#Country Scope
+clear_chinese_religious_scholar_modifiers_effect = {
+	remove_country_modifier = daode_scholar_modifier
+	remove_country_modifier = liyue_scholar_modifier
+	remove_country_modifier = fali_scholar_modifier
+	remove_country_modifier = yinyang_scholar_modifier
+	remove_country_modifier = kaogong_scholar_modifier
+	remove_country_modifier = qingmiao_scholar_modifier
+	remove_country_modifier = jinlegalism_scholar_modifier
+	remove_country_modifier = qilegalism_scholar_modifier
+	remove_country_modifier = simeng_scholar_modifier
+	remove_country_modifier = xihe_scholar_modifier
+	remove_country_modifier = bingfa_scholar_modifier
+	remove_country_modifier = zongheng_scholar_modifier
+	remove_country_modifier = jiqiao_scholar_modifier
+	remove_country_modifier = youxia_scholar_modifier
+	remove_country_modifier = yangism_scholar_modifier
+}
+
+battle_chinese_cult_spreading_effect = {
+	#青龙 QingLong
+	if = {
+		limit = {
+			ROOT = {
+				religion = liyuebadao
+				NOT = { has_unlocked_cult = qinglong_worship }
+			}
+			FROM = {
+				OR = {
+					technology_group = south_east_asian
+					religion = southern_mythology
+					AND = {
+						OR = {
+							primary_culture = wuyue
+							primary_culture = ouyue
+							primary_culture = shanyue
+							primary_culture = yangyue
+							primary_culture = minyue
+							primary_culture = ganyue
+						}
+						NOT = { primary_culture = gouwu }
+					}
+					has_unlocked_cult = qinglong_worship
+				}
+			}
+		}
+		ROOT = { country_event = { id = fetishist_flavor.1 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = liyuebadao
+				NOT = { has_unlocked_cult = qinglong_worship }
+			}
+			ROOT = {
+				OR = {
+					technology_group = south_east_asian
+					religion = southern_mythology
+					AND = {
+						OR = {
+							primary_culture = wuyue
+							primary_culture = ouyue
+							primary_culture = shanyue
+							primary_culture = yangyue
+							primary_culture = minyue
+							primary_culture = ganyue
+						}
+						NOT = { primary_culture = gouwu }
+					}
+					has_unlocked_cult = qinglong_worship
+				}
+			}
+		}
+		FROM = { country_event = { id = fetishist_flavor.1 } }
+	}
+	#朱雀 ZhuQue
+	if = {
+		limit = {
+			ROOT = {
+				religion = liyuebadao
+				NOT = { has_unlocked_cult = zhuque_worship }
+			}
+			FROM = {
+				OR = {
+					technology_group = dongyi1
+					primary_culture = dongyi
+					has_unlocked_cult = zhuque_worship
+				}
+			}
+		}
+		ROOT = { country_event = { id = fetishist_flavor.2 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = liyuebadao
+				NOT = { has_unlocked_cult = zhuque_worship }
+			}
+			ROOT = {
+				OR = {
+					technology_group = dongyi1
+					primary_culture = dongyi
+					has_unlocked_cult = zhuque_worship
+				}
+			}
+		}
+		FROM = { country_event = { id = fetishist_flavor.2 } }
+	}
+	#玄武 XuanWu
+	if = {
+		limit = {
+			ROOT = {
+				religion = liyuebadao
+				NOT = { has_unlocked_cult = xuanwu_worship }
+			}
+			FROM = {
+				OR = {
+					technology_group = wuyue1
+					primary_culture = gouwu
+					has_unlocked_cult = xuanwu_worship
+				}
+			}
+		}
+		ROOT = { country_event = { id = fetishist_flavor.3 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = liyuebadao
+				NOT = { has_unlocked_cult = xuanwu_worship }
+			}
+			ROOT = {
+				OR = {
+					technology_group = wuyue1
+					primary_culture = gouwu
+					has_unlocked_cult = xuanwu_worship
+				}
+			}
+		}
+		FROM = { country_event = { id = fetishist_flavor.3 } }
+	}
+
+	#白虎 BaiHu
+	if = {
+		limit = {
+			ROOT = {
+				religion = liyuebadao
+				NOT = { has_unlocked_cult = baihu_worship }
+			}
+			FROM = {
+				OR = {
+					technology_group = bashu1
+					religion = white_tiger_religion
+					culture_group = baipu_group
+					has_unlocked_cult = baihu_worship
+				}
+			}
+		}
+		ROOT = { country_event = { id = fetishist_flavor.4 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = liyuebadao
+				NOT = { has_unlocked_cult = baihu_worship }
+			}
+			ROOT = {
+				OR = {
+					technology_group = bashu1
+					religion = white_tiger_religion
+					culture_group = baipu_group
+					has_unlocked_cult = baihu_worship
+				}
+			}
+		}
+		FROM = { country_event = { id = fetishist_flavor.4 } }
+	}
+
+	#麒麟 QiLin
+	if = {
+		limit = {
+			ROOT = {
+				religion = liyuebadao
+				NOT = { has_unlocked_cult = qilin_worship }
+			}
+			FROM = {
+				OR = {
+					religion = chinese_religion
+					has_unlocked_cult = qilin_worship
+				}
+			}
+		}
+		ROOT = { country_event = { id = fetishist_flavor.5 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = liyuebadao
+				NOT = { has_unlocked_cult = qilin_worship }
+			}
+			ROOT = {
+				OR = {
+					religion = chinese_religion
+					has_unlocked_cult = qilin_worship
+				}
+			}
+		}
+		FROM = { country_event = { id = fetishist_flavor.5 } }
+	}
+}
+battle_chinese_religion_spreading_effect = {
+	if = {
+		limit = {
+			ROOT = {
+				religion = chinese_religion
+			}
+			FROM = {
+				religion = chinese_religion
+			}
+			NOT = { is_religion_enabled = legalism }
+			NOT = { is_religion_enabled = mohism }
+		}
+		add_reform_desire = 0.002
+	}
+	if = {
+		limit = {
+			ROOT = {
+				religion = chinese_religion
+			}
+			FROM = {
+				NOT = { religion = chinese_religion }
+			}
+			NOT = { is_religion_enabled = legalism }
+			NOT = { is_religion_enabled = mohism }
+		}
+		add_reform_desire = -0.001
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = chinese_religion
+			}
+			ROOT = {
+				NOT = { religion = chinese_religion }
+			}
+			NOT = { is_religion_enabled = legalism }
+			NOT = { is_religion_enabled = mohism }
+		}
+		add_reform_desire = 0.005
+	}
+}
+
+add_curia_treasur_small_effect = {
+	if = {
+		limit = {
+			has_dlc = "Emperor"
+		}
+		add_curia_treasury = 25
+	}
+}
+
+add_curia_treasury_medium_effect = {
+	if = {
+		limit = {
+			has_dlc = "Emperor"
+		}
+		add_curia_treasury = 50
+	}
+}
+
+add_curia_treasury_big_effect = {
+	if = {
+		limit = {
+			has_dlc = "Emperor"
+		}
+		add_curia_treasury = 100
+	}
+}
+
+add_curia_treasury_huge_effect = {
+	if = {
+		limit = {
+			has_dlc = "Emperor"
+		}
+		add_curia_treasury = 1000
+	}
+}
+
+reduce_curia_treasury_medium_effect = {
+	if = {
+		limit = {
+			has_dlc = "Emperor"
+		}
+		add_curia_treasury = -50
+	}
+}
+
+reduce_curia_treasury_big_effect = {
+	if = {
+		limit = {
+			has_dlc = "Emperor"
+		}
+		add_curia_treasury = -100
+	}
+}
+
+reduce_curia_treasury_huge_effect = {
+	if = {
+		limit = {
+			has_dlc = "Emperor"
+		}
+		add_curia_treasury = -1000
+	}
+}

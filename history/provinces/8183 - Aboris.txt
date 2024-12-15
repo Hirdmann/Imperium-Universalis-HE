@@ -1,0 +1,78 @@
+native_size = 50
+native_ferocity = 10
+native_hostileness = 10
+trade_goods = unknown
+culture = getoscythian
+religion = scythian_religion
+base_tax = 0
+base_production = 0
+base_manpower = 3
+capital = ""
+
+142.8.10 = {
+	owner = RCT
+	controller = RCT
+	add_core = RCT
+	trade_goods = meat_animals
+}
+352.1.1 = {
+	add_core = COT
+	owner = COT
+	controller = COT
+	culture = noric
+	religion = celtic_religion
+	trade_goods = meat_animals
+	is_city = yes
+}
+390.1.1 = {
+	add_core = CS2
+	owner = CS2
+	controller = CS2
+	culture = galatian
+	religion = celtic_religion
+}
+448.1.1 = {
+	add_core = TE1
+	owner = TE1
+	controller = TE1
+	culture = galatian
+	religion = celtic_religion
+}
+679.1.1 = { #Burebista rise to throne of Getae and unites few neighbouring tribes
+	add_core = DAC
+	owner = DAC
+	controller = DAC
+}
+680.1.1 = { #Burebista unites getae and dacians into 1 nation
+	culture = getodacian
+	religion = dacian_religion
+}
+710.1.1 = { #Death of Burebista, region shattered on 4 noble ruled kingdoms
+	add_core = ANR
+	owner = ANR
+	controller = ANR
+	culture = galatian
+	religion = celtic_religion
+}
+
+#discovered_by = roman
+#discovered_by = greek_techgroup
+#discovered_by = punic
+#discovered_by = diadochi
+#discovered_by = iranian
+discovered_by = balkan
+#discovered_by = celtic
+discovered_by = germanic
+#discovered_by = north_african
+discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+#discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+#discovered_by = caucaso_anatolian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african

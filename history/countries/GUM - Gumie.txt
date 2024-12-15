@@ -1,0 +1,17 @@
+government = native
+add_government_reform = pastoral_tribe_reform
+government_rank = 1
+primary_culture = huaiyi
+religion = wuism
+capital = 4439
+technology_group = dongyi1
+add_accepted_culture = wuyue
+140.1.1 = {
+	monarch = {
+		name = "WuYu"
+		dynasty = "Ying"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

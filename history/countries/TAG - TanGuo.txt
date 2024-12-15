@@ -1,0 +1,28 @@
+government = monarchy
+add_government_reform = chinese_feudalism_reform
+government_rank = 1
+technology_group = dongyi1
+religion = wuism
+primary_culture = dongyi
+capital = 4299
+1.1.1 = {
+	set_country_flag = zhuxiatouxian_Zi
+}
+140.1.1 = {
+	monarch = {
+		name = "Jiu"  # 鸠
+		dynasty = "Jih"  # 己
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+320.1.1 = {
+	monarch = {
+		name = "Gu"  # 鸪
+		dynasty = "Jih"  # 己
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}

@@ -1,0 +1,14 @@
+trigger = {
+	tag = MAC
+}
+
+type = cavalry
+unit_type = greek_techgroup
+
+maneuver = 2
+offensive_morale = 5
+defensive_morale = 4
+offensive_fire = 0
+defensive_fire = 2
+offensive_shock = 4
+defensive_shock = 3

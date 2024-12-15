@@ -1,0 +1,14 @@
+#Cog
+type = transport
+trigger = {
+	always = no
+}
+
+hull_size = 12
+base_cannons = 4
+sail_speed = 5
+
+sprite_level = 1
+
+blockade = 10
+sailors = 130

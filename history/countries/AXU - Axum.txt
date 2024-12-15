@@ -1,0 +1,19 @@
+government = native
+add_government_reform = pastoral_tribe_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = african
+primary_culture = axumite
+religion = awsan_religion
+#religious_school = semitic_type
+capital = 868
+add_treasury = 100
+
+554.1.1 = {
+	government_rank = 3
+	government = monarchy
+	add_government_reform = despotism_reform
+}
+654.1.1 = {
+	government_rank = 5
+}

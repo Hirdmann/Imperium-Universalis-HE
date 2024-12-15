@@ -1,0 +1,112 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 36 85 173 }
+
+
+historical_idea_groups = {
+	domestic_government_ideas
+	imperial_ideas
+	fortress_ideas
+	administrative_ideas
+	diplomatic_ideas
+	skirmisher_ideas
+	engineering_ideas
+	mercenary_ideas
+}
+
+historical_units = {
+	asian_base_inf_0
+	asian_base_inf_1
+	asian_base_inf_2
+	asian_base_inf_3
+	asian_base_inf_4
+	asian_base_inf_5
+	asian_base_inf_6
+	asian_base_inf_7
+	asian_base_inf_8
+	asian_base_inf_9
+	asian_base_inf_10
+	asian_base_inf_11
+	asian_base_inf_12
+	asian_base_inf_13
+	asian_base_inf_14
+	asian_base_inf_15
+	asian_base_inf_16
+
+	asian_base_cav_0
+	asian_base_cav_1
+	asian_base_cav_2
+	asian_base_cav_3
+	asian_base_cav_4
+	asian_base_cav_5
+	asian_base_cav_6
+	asian_base_cav_7
+	asian_base_cav_8
+	asian_base_cav_9
+	asian_base_cav_10
+	asian_base_cav_11
+	asian_base_cav_12
+	asian_base_cav_13
+	asian_base_cav_14
+
+	asian_base_art_0
+	asian_base_art_1
+	asian_base_art_2
+	asian_base_art_3
+	asian_base_art_4
+	asian_base_art_5
+	asian_base_art_6
+	asian_base_art_7
+	asian_base_art_8
+	asian_base_art_9
+	asian_base_art_10
+	asian_base_art_11
+	asian_base_art_12
+	asian_base_art_13
+	asian_base_art_14
+	asian_base_art_15
+	asian_base_art_16
+	asian_base_art_17
+}
+monarch_names = {
+	"Hyspaosines #0" = 40
+	"Apodakos #0" = 40
+	"Tiraios #0" = 40
+	"Artabazos #0" = 40
+	"Attambelos #0" = 40
+	"Theonesios #0" = 40
+	"Abinergaos #0" = 40
+	"Orabazes #0" = 40
+	"Pakoros #0" = 20
+	"Maga #0" = 20
+
+	"Thalassia #0" = -1
+	"Cleopatra #0" = -1
+	"Thea #0" = -1
+
+}
+
+leader_names = {
+	Hormuzd Ashuri Asmar Aziz Amir Asur Behnam Issavi Albazi Shahbaz Mourad
+	Mirza Shahen Tamraz Yadgar Nabo Esho Bailshar Paseena Hale Arseen Awiqam
+	Abdu Aryu Bakru Abgar "Ma'nu" Sanatruk Yalur
+}
+
+ship_names = {
+	Sogdyana Kambujiya Tsishpish Athurpat Bagabukhsha Marduniya Ariyobarzan Vindapana Utana
+	Vishtaspa Vakauka Ardumanish Gaubaruva Vidarna Ariyaramna Arshama Bardiya Mehrdad Ardavan
+	Farrukh Shahrwaraz Vistahm Spandiyadh Vistahm Spandiyadh Sokhrab Rodstahm Jamasp Kawad Balash
+	Yazdekert Narse Hormizd Khosrau "Baga-data" Mani
+	Shirin Azarmigdukht Boran Shahendukht Denag Amastri Apama Artastuna Atossa Jamaspi Raoxshna Sisygambis
+	"Amesha Spenta" Yazata Ahura Daeva Ahriman Ohrmazd Parsa
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

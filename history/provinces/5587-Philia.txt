@@ -1,0 +1,87 @@
+add_core = THY
+owner = THY
+controller = THY
+culture = odrysian
+religion = thracian
+hre = no
+base_tax = 0
+base_production = 2
+base_manpower = 2
+trade_goods = grain
+capital = ""
+is_city = yes
+
+discovered_by = roman
+discovered_by = greek_techgroup
+discovered_by = punic
+discovered_by = diadochi
+#discovered_by = iranian
+discovered_by = balkan
+#discovered_by = celtic
+#discovered_by = germanic
+#discovered_by = north_african
+discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+#discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+discovered_by = caucaso_anatolian
+discovered_by = caucasian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african
+
+176.1.1 = {
+	add_core = BYS
+	owner = BYS
+	controller = BYS
+	base_production = 2
+	base_manpower = 2
+	culture = doric
+	religion = greek_religion
+	border_garrison = yes
+	small_water_irrigation = yes
+}
+
+237.1.1 = {
+	add_core = THR
+	discovered_by = iranian
+	owner = THR
+	controller = THR
+	discovered_by = iranian
+}
+
+258.1.1 = {
+	owner = BYS
+	controller = BYS
+}
+
+264.1.1 = {
+	owner = THR
+	controller = THR
+}
+276.1.1 = {
+	owner = BYS
+	controller = BYS
+}
+
+425.1.1 = {
+	culture = greek
+}
+
+
+477.1.1 = { #outskirts by Bithynia with Celt mercenaries
+	controller = BIT
+}
+478.1.1 = { #outskirts by Bithynia with Celt mercenaries
+	controller = BYS
+}
+823.1.1 = {
+	add_core = ROI
+	owner = ROI
+	controller = ROI
+	remove_core = BYS
+}

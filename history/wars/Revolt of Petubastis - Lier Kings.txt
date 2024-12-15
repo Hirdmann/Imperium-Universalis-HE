@@ -1,0 +1,16 @@
+name = "Revolt of Petubastis"
+war_goal = {
+	type = take_capital_mission_invasion
+	casus_belli = cb_mission_invasion
+	tag = MEM
+	province = 745
+}
+
+232.7.1 = {
+	add_attacker = PSE
+	add_defender = MEM
+}
+234.1.1 = {
+	rem_attacker = PSE
+	rem_defender = MEM
+}

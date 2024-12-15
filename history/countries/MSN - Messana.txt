@@ -1,0 +1,21 @@
+government = republic
+add_government_reform = greek_polis_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = euboeo_cycladic
+religion = greek_religion
+capital = 7
+fixed_capital = 7
+
+historical_rival = RHE
+historical_friend = CLK
+
+1.1.1 = {
+	override_country_name = "ZANCLE"
+}
+264.1.1 = {
+	restore_country_name = yes
+}
+425.1.1 = { primary_culture = italiote }
+

@@ -1,0 +1,2055 @@
+country_decisions = {
+
+	ashoka_pillar_edict = {
+        color = { 245 160 60 }
+		potential = {
+			tag = MAU
+			NOT = { has_country_modifier = pillar_edict }
+		}
+		allow = {
+			is_at_war =  no
+			ADM = 5
+			religion = buddhism
+		}
+		effect = {
+			add_country_modifier = {
+				name = pillar_edict
+				duration = -1
+			}
+		}
+
+		ai_importance = 50
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	form_tamilakam = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			primary_culture = tamil
+			NOT = { exists = TAM }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = pandya_area
+				area = chola_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_at_war =  no
+			pandya_area = { type = all owned_by = ROOT }
+			chola_area = { type = all owned_by = ROOT }
+		}
+		effect = {
+			change_tag = TAM
+			add_prestige = 50
+		}
+
+		ai_importance = 50
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	ashvamedha_ritual = {
+		potential = {
+			culture_group = indian_group
+			NOT = { has_country_flag = vedic_succession_flag }
+		}
+		allow = {
+			religion = brahmin
+			government = monarchy
+			NOT = { has_ruler_modifier = ashvamedha_ritual_modifier }
+			NOT = { has_ruler_modifier = ashvamedha_ritual_success }
+			NOT = { has_ruler_modifier = ashvamedha_ritual_failed }
+			is_at_war =  no
+			num_of_cities = 8
+		}
+		effect = {
+			custom_tooltip = ashvamedha_ritual_tt
+			add_mil_power = 50
+			add_ruler_modifier = {
+				name = ashvamedha_ritual_modifier
+			}
+			set_ruler_flag = ashvamedha_ruler_flag
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.2
+				NOT = {
+					has_reform = vedic_kingdom_reform
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					MIL = 4
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					manpower_percentage = 0.5
+				}
+			}
+			modifier = {
+				factor = 0.0
+				NOT = {
+					manpower_percentage = 0.25
+				}
+			}
+			modifier = {
+				factor = 0.0
+				NOT = {
+					army_size_percentage = 0.33
+				}
+			}
+		}
+	}
+
+	proclaim_chakravartin = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			OR = {
+				culture_group = indian_group
+				culture_group = dravidian_group
+			}
+			OR = {
+				religion = brahmin
+				religion = hinduism
+				religion = sramana
+				religion = ajivika
+				religion = jain
+				religion = buddhism
+			}
+			NOT = { has_ruler_modifier = chakravartin_modifier }
+			government = monarchy
+		}
+		allow = {
+			num_of_cities = 250
+			government_rank = 4
+			stability = 3
+			legitimacy = 100
+			adm = 6
+			mil = 6
+			prestige = 80
+		}
+		effect = {
+			add_ruler_modifier = {
+				name = chakravartin_modifier
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = danda_niti_disaster_target }
+					subtract_variable = {
+						which = danda_niti_disaster_progress
+						value = 150
+					}
+				}
+			}
+		}
+		ai_importance = 1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	unite_jambudvipa = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			ai = no
+			culture_group = indian_group
+			NOT = { exists = BHA }
+			capital_scope = {
+				OR = {
+					superregion = uttarapatha_superregion
+					superregion = dakshinapatha_superregion
+				}
+			}
+		}
+
+		provinces_to_highlight = {
+			NOT = {
+				owned_by = ROOT
+			}
+			OR = {
+				superregion = uttarapatha_superregion
+				superregion = dakshinapatha_superregion
+			}
+		}
+
+		allow = {
+			ai = no
+			prestige = 100
+			stability = 3
+			neither_tribal_nor_native_trigger = yes
+			uttarapatha_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+			dakshinapatha_superregion = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 5 } }
+				set_government_rank = 5
+			}
+			change_tag = BHA
+			country_event = {
+				id = new_ideas.1
+			}
+		}
+		ai_importance = 0
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	###Moved from new_religious_decisions###
+
+	institute_varnashramadharma = {
+		potential = {
+			religion = brahmin
+			NOT = { has_country_flag = varnashramadharma_established }
+			NOT = { is_religion_enabled = hinduism }
+		}
+		allow = {
+			absolutism = 10
+			adm_tech = 2
+		}
+		effect = {
+			set_country_flag = varnashramadharma_established
+			add_legitimacy = 10
+		}
+		ai_importance = 100
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	write_down_brhadaranyaka = {
+		major = yes
+		potential = {
+			religion = brahmin
+			has_country_flag = varnashramadharma_established
+			NOT = { has_global_flag = brhadaranyaka_written }
+			NOT = { is_religion_enabled = hinduism }
+		}
+		allow = {
+			priest_adv = 2
+			treasury = 200
+			has_institution = writing_system
+		}
+		effect = {
+			set_global_flag = brhadaranyaka_written
+			add_treasury = -200
+			add_prestige = 15
+			add_adm_tech = 1
+		}
+		ai_importance = 100
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	accept_samsara = {
+		major = yes
+		potential = {
+			religion = brahmin
+			NOT = { has_country_flag = samsara_accepted }
+			has_global_flag = brhadaranyaka_written
+			NOT = { is_religion_enabled = hinduism }
+		}
+		allow = {
+			religion = brahmin
+			any_neighbor_country = {
+				OR = {
+					religion = sramana
+					religion = buddhism
+					religion = ajivika
+					religion = jain
+					religion = hinduism
+				}
+			}
+		}
+		effect = {
+			set_country_flag = samsara_accepted
+			add_dip_power = 40
+			add_legitimacy = -10
+		}
+		ai_importance = 100
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	abandon_srauta = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			religion = brahmin
+			has_country_flag = samsara_accepted
+			is_religion_enabled = hinduism
+		}
+		allow = {
+			adm_tech = 12
+			is_religion_enabled = hinduism
+			government = monarchy
+		}
+		effect = {
+			change_religion = hinduism
+			capital_scope  = { change_religion = hinduism }
+			add_country_modifier = {
+				name = brahmanic_fervor
+				duration = 1825
+			}
+		}
+		ai_importance = 100
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	move_capital_pataliputra = {
+        color = { 245 160 60 }
+		potential = {
+			tag = MAU
+			NOT = { capital = 3027 }
+			NOT = { has_country_flag = pataliputra_capital }
+			owns_core_province = 3027
+		}
+		allow = {
+			adm_tech = 4
+			adm = 4
+		}
+		effect = {
+			set_country_flag = pataliputra_capital
+			set_capital = 3027
+			3027 = {
+				add_base_production = 2
+				add_base_tax = 1
+
+				change_province_name = "Pataliputra"
+				rename_capital = "Pataliputra"
+			}
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	unite_the_sindhus = {
+        color = { 245 160 60 }
+		potential = {
+			tag = SAU
+			NOT = { has_global_flag = united_the_sindhus }
+		}
+		allow = {
+			NOT = { exists = SIN }
+			sindhu_area = {
+				type = all
+				owned_by = ROOT
+			}
+			prasiane_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = jayadrathas_legacy_modifier
+				duration = 9125
+			}
+			add_prestige = 15
+			set_global_flag = united_the_sindhus
+		}
+		ai_importance = 20
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	unite_the_sauvirans = {
+        color = { 245 160 60 }
+		potential = {
+			tag = SIN
+			NOT = { has_global_flag = united_the_sauvirans }
+		}
+		allow = {
+			NOT = { exists = SAU }
+			sauvira_area = {
+				type = all
+				owned_by = ROOT
+			}
+			aporapa_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = jayadrathas_legacy_modifier
+				duration = 9125
+			}
+			add_prestige = 15
+			set_global_flag = united_the_sauvirans
+		}
+		ai_importance = 20
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	accept_superiority_of_sanskrit = {
+		potential = {
+			has_reform = mleccha_kingdom_reform
+			culture_group = indian_group
+			OR = {
+				religion = hinduism
+				religion = brahmin
+			}
+		}
+
+		allow = {
+			stability = 1
+			absolutism = 5
+			prestige = 20
+		}
+
+		effect = {
+			add_government_reform = vedic_kingdom_reform
+			add_mil_power = 50
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	organized_third_buddhist_council = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			religion = buddhism
+			had_global_flag = {
+				flag = second_buddhist_council
+				days = 18250
+			}
+			NOT = { has_global_flag = third_buddhist_council_flag }
+			NOT = { started_in = 507.1.1 }
+		}
+
+		allow = {
+			OR = {
+				is_great_power = yes
+				total_development = 200
+			}
+			years_of_income = 0.6
+			neither_tribal_nor_native_trigger = yes
+		}
+
+		effect = {
+			add_years_of_income = -0.6
+			add_prestige = 25
+			define_advisor = {
+				name = "Moggaliputta-Tissa"
+				type = priest_adv
+				skill = 5
+				culture = magadhi
+				religion = buddhism
+				cost_multiplier = 0.25
+			}
+			country_event = { id = buddhism.9 }
+		}
+
+		ai_importance = 100
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	choose_vedic_school = {
+		potential = {
+			ai = no
+			is_orthodox_trigger = yes
+		}
+
+		allow = {
+			ai = no
+			prestige = 25
+			adm_power = 100
+		}
+
+		effect = {
+			add_adm_power = -100
+			add_prestige = -10
+			country_event = {
+				id = indian.4405
+			}
+		}
+	}
+
+	choose_sramana_school = {
+		potential = {
+			ai = no
+			is_heterodox_trigger = yes
+		}
+
+		allow = {
+			ai = no
+			adm_power = 100
+			OR = {
+				religion = sramana
+				stability = 1
+			}
+		}
+
+		effect = {
+			add_adm_power = -100
+			if = {
+				limit = {
+					OR = {
+						religion = ajivika
+						religion = buddhism
+						religion = jain
+					}
+				}
+				add_stability = -1
+			}
+			country_event = {
+				id = indian.4404
+			}
+		}
+	}
+
+	choose_new_indian_religious_school = {
+		potential = {
+			ai = no
+			OR = {
+				religion = hinduism
+				religion = ajivika
+				religion = buddhism
+				religion = jain
+			}
+			if = {
+				limit = { religion = buddhism }
+				OR = {
+					started_in = 371.1.1
+					has_global_flag = second_buddhist_council
+				}
+			}
+		}
+
+		allow = {
+			ai = no
+			adm_power = 100
+			stability = 1
+		}
+
+		effect = {
+			add_adm_power = -100
+			add_stability = -1
+			trigger_switch = {
+				on_trigger = religion
+				hinduism = { country_event = { id = indian.4403 } }
+				ajivika = { country_event = { id = indian.4402 } }
+				buddhism = { country_event = { id = indian.4401 } }
+				jain = { country_event = { id = indian.44 } }
+			}
+		}
+	}
+
+	disregard_ahimsa_decision = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			religion_group = brahmin_group
+			NOT = { has_ruler_modifier = disregarding_ahimsa_modifier }
+			NOT = { has_country_flag = supremacy_dharma_policy_flag }
+		}
+
+		allow = {
+			mil = 4
+			if = {
+				limit = { ai = yes }
+				personality = ai_militarist
+			}
+			mil_power = 250
+			army_tradition = 20
+		}
+
+		effect = {
+			add_mil_power = -200
+			add_army_tradition = -5
+			add_ruler_modifier = {
+				name = disregarding_ahimsa_modifier
+			}
+			if = {
+				limit = { uses_karma = yes }
+				add_karma = -100
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = danda_niti_disaster_target }
+					change_variable = {
+						which = danda_niti_disaster_progress
+						value = 50
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				mil = 6
+			}
+			modifier = {
+				factor = 2
+				mil = 5
+				NOT = { mil = 6 }
+			}
+			modifier = {
+				factor = 0
+				religion = jain
+			}
+			modifier = {
+				factor = 2
+				is_orthodox_trigger = yes
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					culture_group = indian_group
+					culture_group = dravidian_group
+				}
+			}
+		}
+	}
+
+	brand_heteredox_heretics = {
+		potential = {
+			is_orthodox_trigger = yes
+			NOT = { has_ruler_modifier = heterodox_branded_heretics_modifier }
+			neither_tribal_nor_native_trigger = yes
+		}
+
+		allow = {
+			adm_power = 100
+			absolutism = 10
+		}
+
+		effect = {
+			add_adm_power = -50
+			add_absolutism = -5
+			add_ruler_modifier = {
+				name = heterodox_branded_heretics_modifier
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				ruler_has_personality = tolerant_personality
+			}
+			modifier = {
+				factor = 2
+				religious_unity = 0.75
+			}
+			modifier = {
+				factor = 2
+				absolutism = 30
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = zealot_personality
+			}
+		}
+	}
+
+	tolerate_heterodox_religions = {
+		potential = {
+			is_orthodox_trigger = yes
+			NOT = { has_ruler_modifier = heterodox_tolerated_modifier }
+			neither_tribal_nor_native_trigger = yes
+		}
+
+		allow = {
+			dip_power = 100
+		}
+
+		effect = {
+			add_dip_power = -75
+			add_stability = 1
+			add_ruler_modifier = {
+				name = heterodox_tolerated_modifier
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				ruler_has_personality = zealot_personality
+			}
+			modifier = {
+				factor = 2
+				NOT = { religious_unity = 0.6 }
+			}
+			modifier = {
+				factor = 2
+				personality = ai_diplomat
+			}
+			modifier = {
+				factor = 3
+				ruler_has_personality = tolerant_personality
+			}
+		}
+	}
+
+	organize_monastic_orders = {
+		potential = {
+			OR = {
+				religion = jain
+				religion = buddhism
+			}
+			neither_tribal_nor_native_trigger = yes
+			NOT = { has_country_modifier = organized_monastic_communities_modifier }
+		}
+
+		allow = {
+			adm = 3
+			adm_tech = 10
+			absolutism = 10
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = organized_monastic_communities_modifier
+				duration = -1
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	one_dharma_policy = {
+		potential = {
+			OR = {
+				is_heterodox_trigger = yes
+				is_orthodox_trigger = yes
+			}
+			neither_tribal_nor_native_trigger = yes
+			NOT = { has_ruler_modifier = uniting_dharma_modifier }
+		}
+
+		allow = {
+			adm = 5
+			adm_tech = 10
+			absolutism = 20
+		}
+
+		effect = {
+			add_prestige = 5
+			add_absolutism = -5
+			add_ruler_modifier = {
+				name = uniting_dharma_modifier
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = danda_niti_disaster_target }
+					change_variable = {
+						which = danda_niti_disaster_progress
+						value = 20
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	establish_missionary_work = {
+		potential = {
+			religion = buddhism
+			neither_tribal_nor_native_trigger = yes
+			has_global_flag = third_buddhist_council_flag
+			NOT = { has_country_modifier = buddhist_missionary_work_modifier }
+			NOT = { has_country_flag = buddhist_country_missionary_work_one_time_decision_flag }
+		}
+
+		allow = {
+			adm_tech = 20
+			advisor = priest_adv
+			adm = 3
+			adm_power = 250
+		}
+
+		effect = {
+			add_adm_power = -250
+			add_country_modifier = {
+				name = buddhist_missionary_work_modifier
+				duration = 9125
+			}
+			hidden_effect = { set_country_flag = buddhist_country_missionary_work_one_time_decision_flag }
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	ajivikas_government_decision = {
+		potential = {
+			OR = {
+				religion = hinduism
+				religion = brahmin
+				religion = buddhism
+				religion = jain
+				religion = mleccha_religion
+				religion = dravidian
+			}
+			neither_tribal_nor_native_trigger = yes
+			NOT = { has_country_modifier = ajivika_government_modifier }
+			NOT = { has_country_modifier = purged_ajivikas_modifier }
+		}
+
+		allow = {
+			any_owned_province = {
+				religion = ajivika
+			}
+		}
+
+		effect = {
+			add_absolutism = 10
+			add_country_modifier = {
+				name = ajivika_government_modifier
+				duration = -1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				ruler_has_personality = zealot_personality
+			}
+			modifier = {
+				factor = 0
+				has_reform = puritanism_reform
+			}
+			modifier = {
+				factor = 2
+				has_reform = cosmopolitanism_reform
+			}
+			modifier = {
+				factor = 3
+				personality = ai_capitalist
+			}
+			modifier = {
+				factor = 2
+				NOT = { absolutism = 10 }
+			}
+		}
+	}
+
+	remove_ajivika_government = {
+		potential = {
+			has_country_modifier = ajivika_government_modifier
+			NOT = { has_country_modifier = purged_ajivikas_modifier }
+			OR = {
+				religion = hinduism
+				religion = brahmin
+				religion = buddhism
+				religion = jain
+				religion = mleccha_religion
+				religion = dravidian
+			}
+			neither_tribal_nor_native_trigger = yes
+		}
+
+		allow = {
+			stability = 1
+			absolutism = 15
+		}
+
+		effect = {
+			add_stability = -1
+			add_absolutism = -5
+			remove_country_modifier = ajivika_government_modifier
+			add_country_modifier = {
+				name = purged_ajivikas_modifier
+				duration = 3650
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				ruler_has_personality = administrator_personality
+			}
+			modifier = {
+				factor = 2
+				ruler_has_personality = zealot_personality
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						estate = estate_priesthood
+						loyalty = 30
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				personality = ai_militarist
+			}
+			modifier = {
+				factor = 3
+				NOT = { any_owned_province = { religion = ajivika } }
+			}
+		}
+	}
+
+	choose_vedanga_discipline = {
+		potential = {
+			is_orthodox_trigger = yes
+			neither_tribal_nor_native_trigger = yes
+			NOT = { has_ruler_modifier = shiksha_modifier }
+			NOT = { has_ruler_modifier = chandas_modifier }
+			NOT = { has_ruler_modifier = vyakarana_modifier }
+			NOT = { has_ruler_modifier = nirukta_modifier }
+			NOT = { has_ruler_modifier = kalpa_modifier }
+			NOT = { has_ruler_modifier = jyotisha_modifier }
+		}
+
+		allow = {
+			stability = 0
+			absolutism = 5
+		}
+
+		effect = {
+			add_absolutism = -5
+			country_event = {
+				id = hinduism.5
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	choose_sangha_specialization = {
+		potential = {
+			is_heterodox_trigger = yes
+			neither_tribal_nor_native_trigger = yes
+			NOT = { has_ruler_modifier = trading_sangha_modifier }
+			NOT = { has_ruler_modifier = administrative_sangha_modifier }
+			NOT = { has_ruler_modifier = heresy_sangha_modifier }
+		}
+
+		allow = {
+			stability = 0
+			absolutism = 5
+		}
+
+		effect = {
+			add_absolutism = -5
+			country_event = {
+				id = indian.69
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Anuradhapura Kingdom
+	move_capital_anuradhapura = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			tag = SMV
+			NOT = { exists = ANJ }
+			owns_core_province = 3194
+		}
+
+		provinces_to_highlight = {
+			region = lanka_region
+		}
+
+		allow = {
+			owns_core_province = 3194
+			num_of_owned_provinces_with = {
+				region = lanka_region
+				is_core = ROOT
+				value = 15
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			change_tag = ANJ
+			add_absolutism = 5
+			add_prestige = 10
+			lanka_region = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ANJ
+			}
+			set_capital = 3194
+			3194 = {
+				add_base_tax = 1
+				add_base_production = 2
+				add_base_manpower = 1
+			}
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Bhrigus
+	unite_bhrigus_countries = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			primary_culture = konkani
+			NOT = { exists = BHR }
+		}
+
+		provinces_to_highlight = {
+			region = aparantabhumi_region
+		}
+
+		allow = {
+			aparantabhumi_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			change_tag = BHR
+			aparantabhumi_region = {
+				limit = { NOT = { is_core = BHR } }
+				add_core = BHR
+			}
+			set_capital = 2920
+			every_owned_province = {
+				limit = { region = aparantabhumi_region }
+				add_base_tax = 1
+			}
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Kamarupa
+	kamarupa_transition = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			tag = PJY
+			NOT = { exists = KMP }
+			neither_tribal_nor_native_trigger = yes
+		}
+		provinces_to_highlight = {
+			province_id = 3542
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			owns_core_province = 3542
+			adm_tech = 25
+			OR = {
+				religion = ajivika
+				religion = buddhism
+				religion = jain
+				religion = hinduism
+			}
+			any_known_country = {
+				alliance_with = PJY
+				culture_group = indian_group
+				neither_tribal_nor_native_trigger = yes
+			}
+			any_owned_province = { culture_group = indian_group }
+		}
+
+		effect = {
+			change_tag = KMP
+			change_primary_culture = assamese
+			set_capital = 3542
+			add_dip_tech = 1
+			add_absolutism = 10
+			add_prestige = 10
+			every_owned_province = {
+				limit = { culture = asura }
+				add_base_production = 1
+				change_culture = assamese
+				change_religion = ROOT
+			}
+			country_event = { id = new_ideas.1 }
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	#Munda
+	unite_mundas = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			primary_culture = munda
+			NOT = { exists = MND }
+		}
+		provinces_to_highlight = {
+			culture = munda
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			primary_culture = munda
+			num_of_owned_provinces_with = {
+				value = 18
+				culture = munda
+				is_core = ROOT
+			}
+			OR = {
+				calc_true_if = {
+					all_country = {
+						primary_culture = munda
+						is_subject_of = ROOT
+					}
+					amount = 2
+				}
+				calc_true_if = {
+					all_country = {
+						primary_culture = munda
+						alliance_with = ROOT
+					}
+					amount = 4
+				}
+			}
+		}
+
+		effect = {
+			every_subject_country = {
+				limit = {
+					primary_culture = munda
+				}
+				ROOT = { inherit = PREV }
+			}
+			change_tag = MND
+			add_prestige = 10
+			every_owned_province = {
+				limit = { culture = munda }
+				add_base_manpower = 1
+			}
+			every_known_country = {
+				limit = {
+					primary_culture = munda
+					ai = yes
+				}
+				country_event = {
+					id = indian.72
+				}
+			}
+			every_province = {
+				limit = {
+					culture = munda
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MND
+			}
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					government = monarchy
+					NOT = { has_reform = indian_common_monarchy }
+				}
+				add_government_reform = indian_common_monarchy
+			}
+			else_if = {
+				limit = {
+					government = republic
+					NOT = { has_reform = indian_republic_reform }
+				}
+				add_government_reform = indian_republic_reform
+			}
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	ajurveda_physician = {
+		potential = {
+			capital_scope = { continent = india }
+			NOT = { has_ruler_modifier = ajurveda_physician_modifier }
+			OR = {
+				is_orthodox_trigger = yes
+				is_heterodox_trigger = yes
+			}
+		}
+
+		allow = {
+			capital_scope = {
+				OR = {
+					has_building = herbalist
+					has_building = medicus
+					has_building = hospital
+				}
+			}
+			years_of_income = 0.5
+		}
+
+		effect = {
+			add_ruler_modifier = {
+				name = ajurveda_physician_modifier
+			}
+			add_years_of_income = -0.5
+			change_adm = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { mil = 4 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { adm = 4 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { dip = 4 }
+			}
+			modifier = {
+				factor = 0
+				NOT = {	years_of_income = 0.8 }
+			}
+		}
+	}
+
+	set_mleccha_policy = {
+		potential = {
+			culture_group = indian_group
+			capital_scope = { continent = india }
+			neither_tribal_nor_native_trigger = yes
+			NOT = { has_reform = mleccha_kingdom_reform }
+		}
+
+		allow = {
+			absolutism = 10
+		}
+
+		effect = {
+			add_absolutism = -5
+			hidden_effect = {
+				remove_country_modifier = segregate_mlecchas_modifier
+				remove_country_modifier = assimilate_mlecchas_modifier
+			}
+			country_event = {
+				id = indian.71
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	adopt_danda_niti = {
+        color = { 245 160 60 }
+		potential = {
+			neither_tribal_nor_native_trigger = yes
+			has_indian_government = no
+			capital_scope = {
+				continent = india
+			}
+			NOT = { government = theocracy }
+			NOT = { has_country_flag = yudhishthiras_nightmare_country_flag }
+			OR = {
+				religion_group = brahmin_group
+				religion_group = eastern_religions
+				religion_group = persian_group
+				AND = {
+					religion_group = pagan_group
+					OR = {
+						has_reform = syncretism_reform
+						has_reform = cosmopolitanism_reform
+					}
+				}
+			}
+			any_owned_province = {
+				continent = india
+				OR = {
+					culture_group = dravidian_group
+					culture_group = indian_group
+					culture_group = mleccha_group
+				}
+			}
+		}
+
+		allow = {
+			stability = 2
+			absolutism = 20
+			adm_power = 100
+		}
+
+		effect = {
+			add_stability = -1
+			add_absolutism = -10
+			add_adm_power = -100
+			if = {
+				limit = { government = monarchy }
+				add_government_reform = indian_common_monarchy
+			}
+			else_if = {
+				limit = { government = republic }
+				add_government_reform = indian_republic_reform
+			}
+			hidden_effect = {
+				country_event = { id = danda_niti.13 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 3
+				OR = {
+					dominant_religion = hinduism
+					dominant_religion = brahmin
+					dominant_religion = sramana
+					dominant_religion = ajivika
+					dominant_religion = buddhism
+					dominant_religion = jain
+				}
+			}
+			modifier = {
+				factor = 2
+				capital_scope = {
+					continent = india
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					culture_group = dravidian_group
+					culture_group = mleccha_group
+					culture_group = indian_group
+				}
+			}
+			modifier = {
+				factor = 4
+				OR = {
+					culture_group = malay_group
+					culture_group = tibetan_group
+					culture_group = viet_group
+				}
+			}
+			modifier = {
+				factor = 0
+				culture_group = hellenic_group
+			}
+		}
+	}
+
+	yudhistiras_nightmare = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			religion = mleccha_religion
+			culture_group = mleccha_group
+			NOT = { has_country_flag = yudhishthiras_nightmare_country_flag }
+		}
+
+		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
+			OR = {
+				superregion = dakshinapatha_superregion
+				superregion = uttarapatha_superregion
+			}
+		}
+
+		allow = {
+			OR = {
+				is_great_power = yes
+				government_rank = 4
+			}
+			total_development = 800
+			prestige = 100
+			legitimacy_equivalent = 100
+			num_of_owned_provinces_with = {
+				culture_group = mleccha_group
+				religion = mleccha_religion
+				value = 100
+			}
+			num_of_owned_provinces_with = {
+				value = 250
+				OR = {
+					superregion = dakshinapatha_superregion
+					superregion = uttarapatha_superregion
+				}
+				is_core = ROOT
+			}
+			NOT = {
+				any_country = {
+					culture_group = indian_group
+					OR = {
+						religion = buddhism
+						religion = jain
+						religion = ajivika
+						religion = sramana
+						religion = brahmin
+						religion = hinduism
+					}
+					total_development = ROOT
+					army_size = ROOT
+					prestige = ROOT
+				}
+			}
+		}
+
+		effect = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			add_splendor = 200
+			add_army_tradition = 25
+			add_stability = 1
+			override_country_name = mleccha_desa_country
+			if = {
+				limit = { government = tribal }
+				add_government_reform = mleccha_desa_tribal_reform
+			}
+			else_if = {
+				limit = { government = monarchy }
+				add_government_reform = mleccha_desa_monarchy_reform
+			}
+			else_if = {
+				limit = { government = republic }
+				add_government_reform = mleccha_desa_republic_reform
+			}
+			else = { add_government_reform = mleccha_desa_oligarchy_reform }
+			hidden_effect = {
+				uttarapatha_superregion = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				dakshinapatha_superregion = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				set_country_flag = yudhishthiras_nightmare_country_flag
+				every_country = {
+					if = {
+						limit = {
+							OR = {
+								culture_group = indian_group
+								culture_group = dravidian_group
+							}
+							OR = {
+								religion = buddhism
+								religion = jain
+								religion = ajivika
+								religion = sramana
+								religion = brahmin
+								religion = hinduism
+							}
+							capital_scope = {
+								OR = {
+									superregion = uttarapatha_superregion
+									superregion = dakshinapatha_superregion
+								}
+							}
+							NOT = { is_subject_of = ROOT }
+						}
+						reverse_add_casus_belli = {
+							type = cb_mission_invasion
+							target = ROOT
+						}
+						add_opinion = {
+							who = ROOT
+							modifier = mlecchas_rise_up_opinion
+						}
+						add_opinion = {
+							who = ROOT
+							modifier = mleccha_nation_opinion
+						}
+						add_prestige = -25
+						add_stability = -1
+					}
+					else_if = {
+						limit = {
+							culture_group = mleccha_group
+							religion = mleccha_religion
+							NOT = { is_subject_of = ROOT }
+						}
+						reverse_add_casus_belli = {
+							type = cb_vassalize_mission
+							target = ROOT
+						}
+						add_opinion = {
+							who = ROOT
+							modifier = declared_mleccha_desa
+						}
+					}
+				}
+			}
+		}
+
+		ai_importance = 20
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	supremacy_dharma_policy = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			OR = {
+				religion = ajivika
+				religion = buddhism
+				religion = jain
+				religion = hinduism
+			}
+			neither_tribal_nor_native_trigger = yes
+			has_indian_government = yes
+			NOT = { has_country_flag = supremacy_dharma_policy_flag }
+			NOT = { has_ruler_flag = supremacy_dharma_policy_ruler_flag }
+			NOT = { has_ruler_flag = abolish_supremacy_dharma_policy_ruler_flag }
+		}
+
+		allow = {
+			adm = 6
+			adm_power = 250
+			absolutism = 30
+			adm_tech = 24
+			prestige = 60
+			stability = 0
+			tolerance_to_this = 4
+			OR = {
+				num_of_cities = 120
+				total_development = 400
+			}
+			NOT = { has_reform = inherent_divinity_reform }
+		}
+
+		effect = {
+			add_adm_power = -250
+			add_absolutism = -10
+			add_corruption = -10
+			add_war_exhaustion = -20
+			add_stability = 1
+			add_country_modifier = {
+				name = supremacy_dharma_policy
+				duration = -1
+			}
+			hidden_effect = {
+				set_country_flag = supremacy_dharma_policy_flag
+				set_ruler_flag = supremacy_dharma_policy_ruler_flag
+				capital_scope = { area = { change_religion = ROOT } }
+				every_known_country = {
+					limit = {
+						capital_scope = { continent = india }
+						OR = {
+							religion = ajivika
+							religion = buddhism
+							religion = jain
+							religion = hinduism
+						}
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = dharmaraja_opinion
+					}
+				}
+				set_variable = {
+					which = danda_niti_disaster_progress
+					value = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				personality = ai_diplomat
+			}
+			modifier = {
+				factor = 0
+				ruler_has_personality = conqueror_personality
+			}
+			modifier = {
+				factor = 2
+				ruler_has_personality = pious_personality
+			}
+			modifier = {
+				factor = 3
+				average_unrest = 1
+			}
+			modifier = {
+				factor = 2
+				tolerance_to_this = 5
+			}
+		}
+	}
+
+	abolish_supremacy_dharma_policy = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			has_country_flag = supremacy_dharma_policy_flag
+			NOT = { has_ruler_flag = supremacy_dharma_policy_ruler_flag }
+			NOT = { has_ruler_flag = abolish_supremacy_dharma_policy_ruler_flag }
+		}
+
+		allow = {
+			absolutism = 30
+			mil = 3
+			stability = 1
+			mil_power = 250
+		}
+
+		effect = {
+			change_mil = 1
+			add_stability = -2
+			add_mil_power = -250
+			add_absolutism = -10
+			remove_country_modifier = supremacy_dharma_policy
+			hidden_effect = {
+				clr_country_flag = supremacy_dharma_policy_flag
+				set_ruler_flag = abolish_supremacy_dharma_policy_ruler_flag
+				every_known_country = {
+					limit = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = dharmaraja_opinion
+						}
+					}
+					remove_opinion = {
+						who = ROOT
+						modifier = dharmaraja_opinion
+					}
+				}
+				change_variable = {
+					which = danda_niti_disaster_progress
+					value = 100
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 2
+				personality = ai_militarist
+			}
+			modifier = {
+				factor = 2
+				ruler_has_personality = conqueror_personality
+			}
+			modifier = {
+				factor = 0
+				ruler_has_personality = pious_personality
+			}
+			modifier = {
+				factor = 2
+				NOT = { tolerance_to_this = 5 }
+			}
+		}
+	}
+
+	supreme_paramount_ruler = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			government = monarchy
+			has_indian_government = yes
+			NOT = { has_country_flag = maharajadhiraja_country_flag }
+		}
+
+		allow = {
+			prestige = 70
+			legitimacy_equivalent = 100
+			is_subject = no
+			absolutism = 40
+			adm = 4
+			dip = 4
+			mil = 4
+			num_of_subjects = 4
+			OR = {
+				is_great_power = yes
+				total_development = 1000
+			}
+		}
+
+		effect = {
+			add_splendor = 200
+			add_absolutism = -15
+			add_prestige = -10
+			if = {
+				limit = { NOT = { government_rank = 5 } }
+				set_government_rank = 5
+			}
+			add_country_modifier = {
+				name = supreme_paramount_ruler_modifier
+				duration = -1
+			}
+			hidden_effect = {
+				set_country_flag = maharajadhiraja_country_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	check_danda_niti_disaster_progress = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			ai = no
+			OR = {
+				has_reform = indian_common_monarchy
+				has_reform = indian_republic_reform
+				has_reform = martial_republic_reform
+			}
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	perform_charity = {
+		potential = {
+			has_country_flag = danda_niti_disaster_target
+			NOT = { has_ruler_flag = performed_charity_ruler_flag }
+		}
+
+		allow = {
+			years_of_income = 0.5
+		}
+
+		effect = {
+			hidden_effect = {
+				set_ruler_flag = performed_charity_ruler_flag
+				subtract_variable = {
+					which = danda_niti_disaster_progress
+					value = 50
+				}
+			}
+			add_years_of_income = -0.75
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					is_in_large_debt = yes
+					is_bankrupt = yes
+					is_in_deficit = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				ruler_has_personality = greedy_personality
+			}
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 1 }
+			}
+			modifier = {
+				factor = 2
+				years_of_income = 2
+			}
+			modifier = {
+				factor = 2
+				ruler_has_personality = pious_personality
+			}
+			modifier = {
+				factor = 2
+				is_heterodox_trigger = yes
+			}
+			modifier = {
+				factor = 10
+				check_variable = {
+					which = danda_niti_disaster_progress
+					value = 150
+				}
+			}
+		}
+	}
+
+	expand_tamil_confederation = {
+		potential = {
+			OR = {
+				has_reform = tamil_crowned_king_tribal_reform
+				has_reform = tamil_crowned_king_reform
+			}
+			NOT = { has_country_flag = can_diplomatically_establish_velir_flag }
+		}
+
+		allow = {
+			dip_tech = 10
+			dip_power = 200
+			prestige = 0
+		}
+
+		effect = {
+			add_dip_power = -200
+			hidden_effect = {
+				set_country_flag = can_diplomatically_establish_velir_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	seek_independence_velir = {
+		potential = {
+			is_subject_of_type = velir_subject
+		}
+
+		allow = {
+			prestige = 0
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			stability = 1
+		}
+
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			add_stability = -2
+			hidden_effect = { overlord = { save_event_target_as = former_muventar_overlord } }
+			grant_independence = yes
+			event_target:former_muventar_overlord = {
+				add_opinion = {
+					who = ROOT
+					modifier = broke_velir_status_opinion
+				}
+				add_casus_belli = {
+					type = cb_restablish_velir
+					target = ROOT
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				overlord = { prestige = 75 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { liberty_desire = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				liberty_desire = 60
+			}
+			modifier = {
+				factor = 2
+				liberty_desire = 70
+			}
+			modifier = {
+				factor = 3
+				liberty_desire = 80
+			}
+			modifier = {
+				factor = 4
+				liberty_desire = 90
+			}
+			modifier = {
+				factor = 5
+				liberty_desire = 100
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					overlord = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				overlord = { NOT = { total_development = ROOT } }
+			}
+			modifier = {
+				factor = 2
+				overlord = { NOT = { prestige = -10 } }
+			}
+		}
+	}
+
+	centralize_tamil_confederation = {
+        color = { 245 160 60 }
+		potential = {
+			has_country_flag = can_diplomatically_establish_velir_flag
+			has_reform = tamil_crowned_king_reform
+		}
+
+		allow = {
+			dip_tech = 21
+			dip_power = 400
+			prestige = 10
+			absolutism = 30
+			stability = 2
+		}
+
+		effect = {
+			add_dip_power = -400
+			add_stability = -1
+			add_absolutism = -20
+			hidden_effect = {
+				set_country_flag = can_integrate_velir_flag
+				every_subject_country = {
+					if = {
+						limit = { is_subject_of_type = velir_subject }
+						add_liberty_desire = 10
+						add_opinion = {
+							who = ROOT
+							modifier = decreased_autonomy_opinion
+						}
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	build_sanchi_stupa = {
+        color = { 245 160 60 }
+		potential = {
+			religion = buddhism
+			owns = 3101
+			adm_tech = 26
+			NOT = { culture_group = mleccha_group }
+			government_rank = 5
+			3101 = { NOT = { has_great_project = { type = sanchi_stupa } } }
+			NOT = { has_global_flag = built_sanchi_stupa_flag }
+			neither_tribal_nor_native_trigger = yes
+		}
+
+		allow = {
+			treasury = 500
+			owns = 3101
+			owns = 3644
+			owns = 3000
+			owns = 3028
+			owns = 2989
+			owns = 5494
+			owns = 3006
+			owns = 2985
+			owns = 3643
+			owns = 3642
+			has_any_disaster = no
+		}
+
+		provinces_to_highlight = {
+			province_id = 3101
+			province_id = 3644
+			province_id = 3000
+			province_id = 3028
+			province_id = 2989
+			province_id = 5494
+			province_id = 3006
+			province_id = 2985
+			province_id = 3643
+			province_id = 3642
+		}
+
+		effect = {
+			add_treasury = -500
+			3101 = {
+				add_great_project = {
+					type = sanchi_stupa
+					instant = no
+				}
+				change_religion = buddhism
+			}
+			add_prestige = 15
+			hidden_effect = { set_global_flag = built_sanchi_stupa_flag }
+		}
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 0
+				is_in_large_debt = yes
+			}
+			modifier = {
+				factor = 0
+				is_in_deficit = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+government = tribal
+add_government_reform = tribal_kingdom_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = balkan
+primary_culture = ardiaei
+religion = illyrian_religion
+#religious_school = balkan_type
+capital = 1133
+
+historical_rival = DT4
+historical_rival = DT1

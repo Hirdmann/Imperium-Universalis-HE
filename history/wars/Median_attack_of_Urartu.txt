@@ -1,0 +1,15 @@
+name = "Median attack on Urartu"
+war_goal = {
+	type = take_capital_vassalize
+	casus_belli = cb_vassalize_mission
+	tag = URT
+}
+
+164.1.1 = {
+	add_attacker = MDI
+	add_defender = URT
+}
+165.1.1 = {
+	rem_attacker = MDI
+	rem_defender = URT
+}

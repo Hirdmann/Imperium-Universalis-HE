@@ -1,0 +1,90 @@
+government = monarchy
+government_rank = 3
+#mercantilism = 0.25
+technology_group = roman
+primary_culture = latin
+religion = roman_religion
+#religious_school = hellenic_type
+capital = 178
+add_treasury = 550
+historical_rival = RRO
+
+666.1.1 = { #Marius is exiled to Africa
+	capital = 608
+	add_army_professionalism = 0.5
+	monarch = {
+		name = "Gaius"
+		dynasty = "Marius"
+		birth_date = 597.1.1
+		death_date = 668.1.13
+		dip = 3
+		adm = 3
+		mil = 6
+		leader = {
+			name = "Gaius Marius"
+			type = general
+			fire = 7
+			shock = 7
+			manuever = 5
+			siege = 1
+		}
+	}
+}
+
+667.1.1 = { #Under Cinna
+	capital = 5659
+	monarch = {
+		name = "Lucius"
+		dynasty = "Cornelius Cinna"
+		death_date = 670.1.1
+		dip = 5
+		adm = 2
+		mil = 2
+	}
+	leader = {
+		name = "Gaius Marius"
+		type = general
+		fire = 7
+		shock = 7
+		manuever = 5
+		siege = 1
+		death_date = 668.1.13
+	}
+}
+
+675.1.1 = {
+	add_army_professionalism = 0.25
+}
+705.1.1 = {
+	override_country_name = "CAESAR"
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = inspiring_leader_personality
+	add_ruler_personality = legendary_leader_personality
+
+	monarch = {
+		name = "Gaius"
+		dynasty = "Julius Caesar"
+		birth_date = 654.7.12
+		death_date = 710.3.15
+		dip = 5
+		adm = 5
+		mil = 6
+		leader = { name = "Julius Caesar"	type = general	fire = 8	shock = 8	manuever = 4	siege = 2 }
+	}
+
+	leader = { name = "Marcus Antonius"	type = general		fire = 4	shock = 5	manuever = 3	siege = 2 death_date = 709.3.17 }
+	leader = { name = "Marcus Aemilius Lepidus"	type = general		fire = 3	shock = 3	manuever = 2	siege = 2 death_date = 709.3.17 }
+	leader = { name = "Gaius Asinius Pollio"	type = general		fire = 4	shock = 3	manuever = 3	siege = 1 death_date = 709.3.17 }
+	leader = { name = "Publius Cornelius Sulla"	type = general		fire = 3	shock = 3	manuever = 3	siege = 1 death_date = 709.3.17 }
+	leader = { name = "Gaius Sallustius Crispus"	type = general		fire = 3	shock = 2	manuever = 2	siege = 2 death_date = 709.3.17 }
+	leader = { name = "Decimus Iunius Brutus Albinus"	type = admiral		fire = 4	shock = 3	manuever = 5	siege = 1 death_date = 709.3.17 }
+	leader = { name = "Publius Cornelius Dolabella"	type = admiral		fire = 2	shock = 2	manuever = 3	siege = 0 death_date = 709.3.17 }
+
+	### Legions ###
+
+}
+710.3.15 = {
+	restore_country_name = yes
+}

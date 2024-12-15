@@ -1,0 +1,11 @@
+culture = burmese
+religion = burmese_religion
+trade_goods = amber
+base_tax = 0
+base_production = 0
+base_manpower = 2
+discovered_by = south_east_asian
+owner = BNN
+controller = BNN
+add_core = BNN
+is_city = yes

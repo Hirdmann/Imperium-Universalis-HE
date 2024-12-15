@@ -1,0 +1,14 @@
+government = native
+add_government_reform = korean_tribal_statelet_reform
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = dongye
+religion = muism
+capital = 5909
+technology_group = korean
+
+254.1.1 = {
+	capital = 1693
+}
+
+646.1.1 = { religion = legalism }

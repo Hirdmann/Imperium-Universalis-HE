@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = caucasian
+primary_culture = kartvelian
+religion = skneli
+#religious_school = semitic_type
+capital = 2414
+
+142.1.1 = {
+	add_country_modifier = {
+		name = no_trib_vasssalisation_for_now
+		duration = 3650
+	}
+}

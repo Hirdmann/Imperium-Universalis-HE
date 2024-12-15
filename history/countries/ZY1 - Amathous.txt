@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = eteocypriot
+religion = greek_religion
+capital = 3211
+fixed_capital = 3211
+
+425.1.1 = { primary_culture = greek }

@@ -1,0 +1,1510 @@
+
+#Tribus
+
+vedic_kingdom_reform = {
+	icon = "vedic_king"
+	allow_normal_conversion = yes
+	potential = {
+		capital_scope = {
+			continent = india
+		}
+		NOT = { has_country_flag = yudhishthiras_nightmare_country_flag }
+	}
+	trigger = {
+		OR = {
+			has_reform = vedic_kingdom_reform
+			have_had_reform = vedic_kingdom_reform
+		}
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	lock_level_when_selected = yes
+	legacy_equivalent = vedic_kingdom
+	maintain_dynasty = yes
+	nation_designer_trigger = {
+		culture_group = indian_group
+	}
+
+	monarchy = yes
+	royal_marriage = yes
+	heir = yes
+	queen = yes
+
+	modifiers = {
+		max_absolutism = 5
+		tolerance_own = 0.5
+		reform_progress_growth = 0.2
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	factions_frame = 9
+	factions = {
+		fac_janapadins
+		fac_sabha
+		fac_samiti
+	}
+}
+
+mleccha_kingdom_reform = {
+	icon = "mleccha_kingdom_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			capital_scope = { continent = india }
+			culture_group = mleccha_group
+		}
+		NOT = { has_country_flag = yudhishthiras_nightmare_country_flag }
+	}
+
+	trigger = {
+		OR = {
+			has_reform = mleccha_kingdom_reform
+			have_had_reform = mleccha_kingdom_reform
+		}
+	}
+
+	monarchy = yes
+	royal_marriage = yes
+	heir = yes
+	queen = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	legacy_equivalent = vedic_kingdom
+	lock_level_when_selected = yes
+	maintain_dynasty = yes
+	nation_designer_trigger = {
+		capital_scope = {
+			continent = india
+		}
+	}
+
+	modifiers = {
+		diplomatic_reputation = -1
+		defensiveness = 0.1
+		num_accepted_cultures = 1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+kirata_kingdom_reform_tribal = {
+	icon = "kirata_monarchy_reform"
+	allow_normal_conversion = no
+	potential = {
+		primary_culture = kiratan
+	}
+	trigger = {
+		dynasty = "Sri Kirata"
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	legacy_equivalent = vedic_kingdom
+	maintain_dynasty = yes
+	lock_level_when_selected = yes
+
+	monarchy = yes
+	royal_marriage = yes
+	heir = yes
+	queen = yes
+
+	nation_designer_trigger = {
+		primary_culture = kiratan
+	}
+
+	modifiers = {
+		monarch_lifespan = 0.5
+		reform_progress_growth = 0.2
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	factions_frame = 9
+	factions = {
+		fac_janapadins
+		fac_sabha
+		fac_samiti
+	}
+}
+
+manu_tradition_reform = {
+	icon = "manu_tradition"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	modifiers = {
+		infantry_cost = -0.15
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { absolutism = 10 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { num_of_cities = 15 }
+		}
+		modifier = {
+			factor = 4
+			capital_scope = {
+				region = gandhara
+			}
+		}
+		modifier = {
+			factor = 0
+			tag = GAN
+		}
+		modifier = {
+			factor = 7
+			OR = {
+				tag = PLI
+				tag = VJJ
+				tag = PNC
+				tag = TRG
+				tag = SUR
+			}
+		}
+		modifier = {
+			factor = 0
+			capital = 2912
+		}
+	}
+}
+
+virajas_tradition_reform = {
+	icon = "virajas_tradition"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	modifiers = {
+		global_tax_modifier = 0.1
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			absolutism = 10
+		}
+		modifier = {
+			factor = 3
+			num_of_cities = 15
+		}
+		modifier = {
+			factor = 1
+			legitimacy = 50
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				tag = SAU
+				tag = SIN
+				tag = MAU
+			}
+		}
+		modifier = {
+			factor = 10
+			culture_group = dravidian_group
+		}
+	}
+}
+
+danda_sanction_reform = {
+	icon = "loyal_ministers_reform"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	trigger = {
+		has_reform = virajas_tradition_reform
+	}
+
+	modifiers = {
+		stability_cost_modifier = 0.05
+		clans_loyalty_modifier = -0.05
+		harsh_treatment_cost = -0.33
+		prestige = 0.25
+	}
+}
+
+virtue_rajya_reform = {
+	icon = "empower_kshatriya_reform"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	modifiers = {
+		land_morale = 0.1
+		yearly_absolutism = 0.25
+		clans_loyalty_modifier = 0.05
+		administrative_efficiency = -0.05
+	}
+}
+
+law_of_god_reform = {
+	icon = "manusmriti_law_reform"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	modifiers = {
+		global_missionary_strength = 0.01
+		tolerance_own = 0.5
+		tolerance_heathen = -0.5
+		tolerance_heretic = -0.25
+	}
+}
+
+virtue_people_reform = {
+	icon = "proselytism_reform"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	trigger = {
+		has_reform = manu_tradition_reform
+	}
+
+	modifiers = {
+		global_unrest = -2
+		min_autonomy = 10
+	}
+}
+
+closed_ministries_reform = {
+	icon = "empower_brahmins_reform"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	trigger = {
+		has_reform = manu_tradition_reform
+	}
+
+	modifiers = {
+		army_tradition_decay = -0.01
+		diplomatic_reputation = 1
+		advisor_cost = 0.1
+	}
+}
+
+open_ministries_reform = {
+	icon = "indian_reform"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	trigger = {
+		has_reform = manu_tradition_reform
+	}
+
+	modifiers = {
+		advisor_pool = 1
+		idea_cost = -0.05
+		global_spy_defence = -0.1
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				tag = PNC
+				tag = TRG
+			}
+		}
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 4
+			OR = {
+				tag = PLI
+				tag = VJJ
+				tag = SUR
+			}
+		}
+	}
+}
+
+empowerment_sabha_reform = {
+	icon = "vedic_republic"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	trigger = {
+		NOT = { has_reform = virtue_people_reform }
+		NOT = { has_reform = danda_sanction_reform }
+	}
+
+	modifiers = {
+		diplomatic_upkeep = 1
+		global_institution_spread = 0.1
+		clans_loyalty_modifier = -0.05
+		clans_influence_modifier = 0.05
+	}
+}
+
+mantain_status_quo = {
+	icon = "merit_ministers_reform"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	modifiers = {
+		legitimacy = 1
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 10
+			culture_group = dravidian_group
+		}
+	}
+}
+
+empowerment_rajya_reform = {
+	icon = "inherent_divinity_reform"
+	potential = {
+		has_indian_tribe_reform = yes
+	}
+
+	trigger = {
+		has_reform = virajas_tradition_reform
+	}
+
+	modifiers = {
+		global_unrest = 1
+		clans_loyalty_modifier = -0.05
+		yearly_corruption = -0.1
+		core_creation = -0.15
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 10
+			culture_group = dravidian_group
+		}
+	}
+}
+
+#Com�n a los tipos de gobierno; rep�blica y monarqu�a
+
+###Segundo nivel###
+
+orthodoxy_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	trigger = {
+		is_orthodox_trigger = yes
+	}
+
+	icon = "astika_school"
+
+	modifiers = {
+		missionaries = 1
+		trade_efficiency = -0.1
+		diplomatic_reputation = 1
+	}
+}
+
+heterodoxy_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	trigger = {
+		NOT = { religion = brahmin }
+		NOT = { religion = hinduism }
+	}
+
+	icon = "nastika_school"
+
+	modifiers = {
+		global_manpower_modifier = -0.1
+		improve_relation_modifier = 0.2
+		global_missionary_strength = 0.01
+	}
+}
+
+###Tercer nivel###
+
+empower_brahmins_reform = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	trigger = {
+		has_reform = orthodoxy_reform
+	}
+
+	icon = "empower_brahmins_reform"
+
+	modifiers = {
+		same_religion_advisor_cost = -0.1
+		warscore_cost_vs_other_religion = -0.2
+		priesthood_influence_modifier = 0.1
+	}
+}
+
+empower_kshatriya_reform = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	icon = "empower_kshatriya_reform"
+
+	modifiers = {
+		legitimacy = -1
+		devotion = -1
+		republican_tradition = -0.5
+		global_regiment_cost = -0.15
+		mil_tech_cost_modifier = -0.1
+		nobility_influence_modifier = 0.1
+	}
+}
+
+empower_vaishya_reform = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	trigger = {
+		has_reform = heterodoxy_reform
+	}
+
+	icon = "empower_vaishya_reform"
+
+	modifiers = {
+		administrative_efficiency = 0.05
+		merchants_influence_modifier = 0.05
+		merchants_loyalty_modifier = 0.05
+		nobility_loyalty_modifier = -0.05
+	}
+}
+
+allow_intercaste_marriage = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	trigger = {
+		has_reform = heterodoxy_reform
+	}
+
+	icon = "allow_intercaste_marriage"
+
+	modifiers = {
+		global_unrest = -1
+		production_efficiency = 0.1
+
+		nobility_loyalty_modifier = -0.05
+		nobility_influence_modifier = -0.05
+		priesthood_influence_modifier = -0.05
+		priesthood_loyalty_modifier = -0.05
+	}
+}
+
+elected_executive_reform = {
+	potential = {
+		OR = {
+			has_reform = martial_republic_reform
+			has_reform = indian_republic_reform
+		}
+	}
+
+	icon = "elected_executive_reform"
+
+	modifiers = {
+		republican_tradition = 0.5
+		advisor_cost = -0.1
+		yearly_corruption = 0.02
+	}
+}
+
+independent_executive_reform = {
+	potential = {
+		OR = {
+			has_reform = martial_republic_reform
+			has_reform = indian_republic_reform
+		}
+	}
+
+	icon = "independent_executive_reform"
+
+	modifiers = {
+		yearly_corruption = -0.1
+		global_unrest = -1
+		state_maintenance_modifier = 0.15
+	}
+}
+
+hereditary_executive_reform = {
+	potential = {
+		OR = {
+			has_reform = martial_republic_reform
+			has_reform = indian_republic_reform
+		}
+	}
+
+	icon = "hereditary_executive_reform"
+
+	modifiers = {
+		diplomats = 1
+		free_leader_pool = 1
+		republican_tradition = -0.5
+		nobility_influence_modifier = 0.05
+	}
+}
+
+###Cuarto Nivel###
+
+dharmasastra_law_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "dharmasastra_law_reform"
+
+	modifiers = {
+		prestige_decay = -0.01
+		institution_spread_from_true_faith = 0.2
+		idea_cost = 0.1
+	}
+}
+
+manusmriti_law_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "manusmriti_law_reform"
+
+	modifiers = {
+		adm_tech_cost_modifier  = -0.05
+		yearly_corruption = -0.05
+		harsh_treatment_cost = 0.25
+	}
+}
+
+extensive_rajasama_reform = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	icon = "extensive_rajasama_reform"
+
+	modifiers = {
+		yearly_absolutism = 0.1
+		global_autonomy = -0.1
+		autonomy_change_time = -0.1
+		all_power_cost = 0.025
+	}
+}
+
+
+###Quinto Nivel###
+
+dharmic_divinity_reform = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	icon = "dharmic_divinity_reform"
+
+	modifiers = {
+		tolerance_own = 2
+		stability_cost_modifier = 0.2
+	}
+}
+
+inherent_divinity_reform = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	icon = "inherent_divinity_reform"
+
+	trigger = {
+		has_reform = extensive_rajasama_reform
+	}
+
+	modifiers = {
+		global_unrest = 1
+		priesthood_loyalty_modifier = -0.1
+	}
+
+	custom_attributes = {
+		no_danda_niti_disaster = yes
+	}
+}
+
+###Sexto Nivel###
+
+kshatriya_officers_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "kshatriya_officers_reform"
+
+	modifiers = {
+		army_tradition_decay = -0.01
+		discipline = 0.05
+		manpower_recovery_speed = -0.1
+		nobility_influence_modifier = 0.05
+	}
+}
+
+open_military_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "open_military_reform"
+
+	modifiers = {
+		army_tradition_decay = 0.005
+		reinforce_cost_modifier = -0.1
+		general_cost = -0.2
+		infantry_cost = -0.1
+
+		nobility_influence_modifier = -0.05
+	}
+}
+
+senapati_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "senapati_reform"
+
+	modifiers = {
+		global_supply_limit_modifier = 0.2
+		reserves_organisation = 0.1
+		fort_maintenance_modifier = -0.1
+		land_maintenance_modifier = 0.2
+	}
+}
+
+
+###S�ptimo Nivel###
+
+merit_ministers_reform = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	icon = "merit_ministers_reform"
+
+	modifiers = {
+		technology_cost = -0.025
+		innovativeness_gain = 0.2
+		expand_administration_cost = 0.25
+
+		merchants_influence_modifier = 0.05
+	}
+}
+
+noble_ministers_reform = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	icon = "noble_ministers_reform"
+
+	modifiers = {
+		prestige_decay = -0.01
+		cavalry_power = 0.1
+		technology_cost = 0.025
+
+		nobility_influence_modifier = 0.05
+	}
+}
+
+loyal_ministers_reform = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	icon = "loyal_ministers_reform"
+
+	modifiers = {
+		global_spy_defence = 0.2
+		stability_cost_modifier = -0.1
+		advisor_cost = -0.1
+		prestige = -1
+	}
+}
+
+expanded_ministeris_reform = {
+	potential = {
+		OR = {
+			has_reform = indian_common_monarchy
+			has_reform = kirata_monarchy_reform
+			has_reform = tamil_crowned_king_reform
+		}
+	}
+
+	trigger = {
+		government_rank = 4
+	}
+
+	icon = "expanded_ministeris_reform"
+
+	modifiers = {
+		advisor_pool = 1
+		administrative_efficiency = 0.05
+		max_absolutism = 10
+		state_maintenance_modifier = 0.25
+	}
+}
+
+###Octavo nivel###
+
+feudal_federalism_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "feudal_federalism_reform"
+
+	modifiers = {
+		num_accepted_cultures = 2
+		min_autonomy = 10
+		governing_capacity_modifier = 0.35
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 100
+			num_of_cities = 40
+		}
+	}
+}
+
+empower_ministries_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "merit_ministers_reform"
+
+	modifiers = {
+		max_absolutism = 15
+		global_tax_modifier = 0.1
+		production_efficiency = 0.1
+		all_power_cost = 0.05
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+indian_absolutism_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "indian_absolutism_reform"
+
+	modifiers = {
+		min_autonomy = -10
+		all_power_cost = -0.05
+		expand_administration_cost = 0.5
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 100
+			NOT = { num_of_cities = 40 }
+		}
+	}
+}
+
+#Noveno nivel
+
+focus_dharma_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "focus_dharma_reform"
+
+	modifiers = {
+		tolerance_own = 1
+		missionaries = 1
+	}
+}
+
+focus_artha_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "focus_artha_reform"
+
+	modifiers = {
+		production_efficiency = 0.1
+		global_tax_modifier = 0.1
+	}
+}
+
+focus_kama_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "focus_kama_reform"
+
+	modifiers = {
+		prestige_decay = -0.01
+		diplomatic_reputation = 1
+	}
+}
+
+#Monarqu�as
+
+indian_common_monarchy = {
+	potential = {
+		OR = {
+			have_had_reform = indianized_dravidian_tribe_reform
+			have_had_reform = tamil_tribe_reform
+			have_had_reform = vedic_kingdom_reform
+			have_had_reform = kirata_kingdom_reform_tribal
+			have_had_reform = mleccha_kingdom_reform
+			have_had_reform = indian_common_monarchy
+			have_had_reform = kirata_monarchy_reform
+			have_had_reform = tamil_crowned_king_tribal_reform
+			has_reform = indian_common_monarchy
+		}
+		NOT = { has_country_flag = yudhishthiras_nightmare_country_flag }
+	}
+
+	trigger = {
+		NOT = { has_reform = tamil_crowned_king_reform }
+	}
+
+	icon = "indian_common_monarchy"
+	allow_normal_conversion = no
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	lock_level_when_selected = yes
+	maintain_dynasty = yes
+
+	nation_designer_trigger = {
+		culture_group = indian_group
+	}
+
+	modifiers = {
+		min_autonomy = 10
+		land_morale = 0.1
+		prestige_from_land = 0.2
+	}
+
+	effect = {
+		hidden_effect = {
+			country_event = { id = danda_niti.13 }
+		}
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		has_danda_niti = yes
+	}
+}
+
+kirata_monarchy_reform = {
+	potential = {
+		OR = {
+			have_had_reform = kirata_kingdom_reform_tribal
+			has_reform = kirata_monarchy_reform
+		}
+		primary_culture = kiratan
+	}
+
+	trigger = {
+		dynasty = "Sri Kirata"
+	}
+
+	icon = "kirata_monarchy_reform"
+	allow_normal_conversion = no
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	lock_level_when_selected = yes
+	maintain_dynasty = yes
+
+	nation_designer_trigger = {
+		primary_culture = kiratan
+	}
+
+	modifiers = {
+		monarch_lifespan = 0.5
+		land_morale = 0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	ai = {
+		factor = 4
+		modifier = {
+			factor = 10
+			primary_culture = kiratan
+		}
+		modifier = {
+			factor = 10
+			tag = KIT
+		}
+	}
+}
+
+###Rep�blicas###
+
+martial_republic_reform = {
+	potential = {
+		tag = TRG
+	}
+
+	icon = "kshatriya_officers_reform"
+	allow_normal_conversion = no
+	legacy_equivalent = league
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	has_term_election = yes
+	republican_name = yes
+
+	modifiers = {
+		min_autonomy = 15
+		war_exhaustion = -0.02
+		discipline = 0.05
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { id = danda_niti.13 }
+		}
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		has_danda_niti = yes
+	}
+
+	duration = 12
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 10
+			tag = TRG
+		}
+	}
+}
+
+indian_republic_reform = {
+	potential = {
+		OR = {
+			have_had_reform = indianized_dravidian_tribe_reform
+			have_had_reform = tamil_tribe_reform
+			have_had_reform = vedic_kingdom_reform
+			have_had_reform = kirata_kingdom_reform_tribal
+			have_had_reform = mleccha_kingdom_reform
+			has_reform = indian_republic_reform
+		}
+		NOT = { has_country_flag = yudhishthiras_nightmare_country_flag }
+	}
+
+	icon = "vedic_republic"
+	allow_normal_conversion = no
+	legacy_equivalent = league
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	has_term_election = yes
+	republican_name = yes
+
+	modifiers = {
+		min_autonomy = 10
+		years_of_nationalism = -2
+		promote_culture_cost = -0.25
+	}
+	effect = {
+		hidden_effect = {
+			country_event = { id = danda_niti.13 }
+		}
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		has_danda_niti = yes
+	}
+
+	duration = 12
+}
+
+#Oligarquias
+
+dual_monarchy_reform = {
+	potential = {
+		OR = {
+			have_had_reform = indianized_dravidian_tribe_reform
+			have_had_reform = tamil_tribe_reform
+			have_had_reform = vedic_kingdom_reform
+			have_had_reform = kirata_kingdom_reform_tribal
+			have_had_reform = mleccha_kingdom_reform
+			has_reform = dual_monarchy_reform
+			have_had_reform = dual_monarchy_reform
+			have_had_reform = indian_common_monarchy
+			have_had_reform = kirata_monarchy_reform
+		}
+		NOT = { has_country_flag = yudhishthiras_nightmare_country_flag }
+	}
+
+	trigger = {
+		capital = 2912
+	}
+
+	icon = "indian_reform"
+	allow_normal_conversion = no
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	lock_level_when_selected = yes
+	queen = no
+
+	nation_designer_trigger = {
+		culture_group = indian_group
+	}
+
+	modifiers = {
+		all_power_cost = -0.02
+		state_maintenance_modifier = -0.1
+		governing_capacity_modifier = 0.15
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 10
+			capital = 2912
+		}
+	}
+}
+
+##Reformas para deindianizar el gobierno o reforzar las ciencias pol�ticas
+
+
+#Usar si se desea tener el resto de reformas gen�ricas
+deindianized_government_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	trigger = {
+		OR = {
+			NOT = { religion_group = brahmin_group }
+			has_reform = independent_executive_reform
+			has_reform = inherent_divinity_reform
+		}
+	}
+
+	icon = "indian_reform"
+
+	effect = {
+		lose_reforms = 6
+		add_stability = -3
+		if = {
+			limit = { government = monarchy }
+			add_government_reform = despotism_reform
+		}
+		else = { add_government_reform = citizens_republic_reform }
+		hidden_effect = {
+			clr_country_flag = danda_niti_disaster_target
+			set_variable = {
+				which = danda_niti_disaster_progress
+				value = 0
+			}
+		}
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				culture_group = indian_group
+				culture_group = dravidian_group
+				culture_group = malay_group
+				culture_group = viet_group
+			}
+
+		}
+		modifier = {
+			factor = 100
+			NOT = { culture_group = indian_group }
+			NOT = { culture_group = dravidian_group }
+			capital_scope = {
+				NOT = { superregion = dakshinapatha_superregion }
+				NOT = { superregion = uttarapatha_superregion }
+			}
+		}
+	}
+}
+
+reinforce_danda_niti_reform = {
+	potential = {
+		has_indian_government = yes
+	}
+
+	icon = "reinforce_danda_niti_reform"
+
+	modifiers = {
+		adm_tech_cost_modifier = -0.025
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { culture_group = indian_group }
+			NOT = { culture_group = dravidian_group }
+			capital_scope = {
+				NOT = { superregion = dakshinapatha_superregion }
+				NOT = { superregion = uttarapatha_superregion }
+			}
+		}
+	}
+}
+
+#Reformas drav�dicas
+
+dravidian_tribe_reform = {
+	potential = {
+		OR = {
+			primary_culture = gondi
+			primary_culture = tuluva
+			primary_culture = kui
+			primary_culture = duruwa
+			primary_culture = brahui
+			primary_culture = chenchu
+			primary_culture = naiki
+			primary_culture = kolami
+			primary_culture = kurukh
+			primary_culture = malto
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = dravidian_tribe_reform
+			have_had_reform = dravidian_tribe_reform
+		}
+	}
+
+	monarchy = yes
+	royal_marriage = no
+	heir = no
+	queen = no
+
+	icon = "mleccha_kingdom_reform"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	lock_level_when_selected = yes
+	legacy_equivalent = tribal_federation
+
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = gondi
+			primary_culture = tuluva
+			primary_culture = kui
+			primary_culture = duruwa
+			primary_culture = brahui
+			primary_culture = chenchu
+			primary_culture = naiki
+			primary_culture = kolami
+			primary_culture = kurukh
+			primary_culture = malto
+		}
+	}
+
+	modifiers = {
+		min_autonomy = 10
+		land_maintenance_modifier = -0.1
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 20
+			OR = {
+				primary_culture = gondi
+				primary_culture = tuluva
+				primary_culture = kui
+				primary_culture = duruwa
+				primary_culture = brahui
+				primary_culture = chenchu
+				primary_culture = naiki
+				primary_culture = kolami
+				primary_culture = kurukh
+				primary_culture = malto
+			}
+		}
+	}
+}
+
+indianized_dravidian_tribe_reform = {
+	potential = {
+		OR = {
+			primary_culture = telugu
+			primary_culture = kannada
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = indianized_dravidian_tribe_reform
+			have_had_reform = indianized_dravidian_tribe_reform
+		}
+	}
+
+	icon = "vedic_king"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	lock_level_when_selected = yes
+	legacy_equivalent = vedic_kingdom
+	maintain_dynasty = yes
+
+	monarchy = yes
+	royal_marriage = yes
+	heir = yes
+	queen = yes
+
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = telugu
+			primary_culture = kannada
+		}
+	}
+
+	modifiers = {
+		reform_progress_growth = 0.1
+		global_institution_spread = 0.1
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 20
+			OR = {
+				primary_culture = telugu
+				primary_culture = kannada
+			}
+		}
+	}
+}
+
+tamil_tribe_reform = {
+	potential = {
+		primary_culture = tamil
+	}
+	trigger = {
+		OR = {
+			has_reform = tamil_tribe_reform
+			have_had_reform = tamil_tribe_reform
+		}
+	}
+
+	icon = "vedic_king"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	lock_level_when_selected = yes
+	legacy_equivalent = vedic_kingdom
+	maintain_dynasty = yes
+
+	monarchy = yes
+	royal_marriage = yes
+	heir = yes
+	queen = yes
+
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = tamil
+		}
+	}
+
+	modifiers = {
+		reform_progress_growth = 0.1
+		diplomatic_upkeep = 1
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 20
+			OR = {
+				primary_culture = tamil
+			}
+		}
+	}
+}
+
+tamil_crowned_king_tribal_reform = {
+	potential = {
+		primary_culture = tamil
+	}
+	trigger = {
+		has_reform = tamil_crowned_king_tribal_reform
+	}
+
+	icon = "tamil_kingdom"
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 10
+	lock_level_when_selected = yes
+	legacy_equivalent = vedic_kingdom
+	maintain_dynasty = yes
+
+	monarchy = yes
+	royal_marriage = yes
+	heir = yes
+	queen = yes
+
+	modifiers = {
+		vassal_income = 0.15
+		vassal_forcelimit_bonus = 0.15
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		has_velir_vassals = yes
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+tamil_crowned_king_reform = {
+	potential = {
+		primary_culture = tamil
+	}
+	trigger = {
+		OR = {
+			has_reform = tamil_crowned_king_reform
+			have_had_reform = tamil_crowned_king_tribal_reform
+		}
+	}
+
+	icon = "tamil_kingdom"
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	nation_designer_cost = 10
+	lock_level_when_selected = yes
+	legacy_equivalent = despotic_monarchy
+	maintain_dynasty = yes
+
+	modifiers = {
+		vassal_income = 0.2
+		vassal_forcelimit_bonus = 0.2
+		diplomatic_upkeep = 1
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		has_velir_vassals = yes
+	}
+
+	ai = {
+		factor = 10
+		modifier = {
+			factor = 20
+			have_had_reform = tamil_crowned_king_tribal_reform
+		}
+	}
+}

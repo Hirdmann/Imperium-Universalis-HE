@@ -1,0 +1,10 @@
+bookmark = {
+	name = "DELIAN_LEAGUE_TITLE"
+	desc = "DELIAN_LEAGUE_DESC"
+	date = 277.1.11
+
+	center = 959
+
+	country = ATH
+	country = SP1
+}

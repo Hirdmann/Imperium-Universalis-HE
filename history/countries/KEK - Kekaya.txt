@@ -1,0 +1,63 @@
+government = tribal
+add_government_reform = vedic_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = gandharan
+religion = brahmin
+religious_school = shakala_school
+capital = 4838
+
+140.1.1 = {
+	monarch = {
+		name = "Asvapati"
+		dynasty = "Chandravamsha"
+		birth_date = 120.1.1
+		death_date = 170.1.1
+		dip = 4
+		adm = 6
+		mil = 6
+		leader = {
+			name = "Asvapati Chandravamsha"
+			type = general
+			fire = 10
+			shock = 2
+			manuever = 6
+			siege = 0
+		}
+	}
+}
+
+#Fictional
+170.1.1 = {
+	monarch = {
+		name = "Kekaya II"
+		dynasty = "Chandravamsha"
+		death_date = 210.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+210.1.1 = {
+	monarch = {
+		name = "Kekaya III"
+		dynasty = "Chandravamsha"
+		death_date = 234.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+300.1.1 = {
+	government = monarchy
+	add_government_reform = indian_common_monarchy
+}
+
+494.1.1 = {
+	religion = buddhism
+	religious_school = sthavira_school
+}

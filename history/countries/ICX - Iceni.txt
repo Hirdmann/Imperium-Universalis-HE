@@ -1,0 +1,26 @@
+government = native
+add_government_reform = pastoral_tribe_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = britannic
+primary_culture = britannic
+religion = celtic_religion
+#religious_school = north_pagan_type
+capital = 295
+
+142.1.1 = {
+	add_government_reform = start_sedentarization_reform
+}
+142.8.10 = { override_country_name = "CENIMAGNI" }
+200.1.1 = { primary_culture = western_hallstat }
+300.1.1 = { primary_culture = britannic }
+474.1.1 = {
+	government = tribal
+	add_government_reform = tribal_federation_reform
+}
+654.1.1 = {
+	primary_culture = belgae
+	government = tribal
+	add_government_reform = tribal_federation_reform
+}
+705.1.1 = { restore_country_name = yes }

@@ -1,0 +1,195 @@
+government = monarchy
+add_government_reform = aristocratic_monarchy_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = ptolemaic
+religion = greek_religion
+#secondary_religion = egyptian_religion
+capital = 728
+
+historical_rival = ANE
+
+#religious_school = hellenic_type
+
+
+431.1.1 = {
+	add_army_professionalism = 0.5
+	#add_ruler_personality = diadochi_leader_personality
+	government_rank = 3
+	add_government_reform = satrap_diadochi_reform
+	add_government_reform = syncretism_reform
+	add_government_reform = aristocratic_land_reform
+	add_government_reform = standing_army_reform
+	add_government_reform = limited_conscription_reform
+	add_accepted_culture = greek
+	add_accepted_culture = odrysian
+	override_country_name = "NON_REGNAL_PTOLEMY"
+	monarch = {
+		name = "Ptolemaios I Soter"
+		dynasty = "Lagidai"
+		birth_date = 390.1.1
+		death_date = 474.1.1
+		dip = 5
+		adm = 5
+		mil = 5
+		leader = {
+			name = "Ptolemaios Soter"
+			type = general
+			fire = 7
+			shock = 8
+			manuever = 7
+			siege = 3
+			death_date = 472.1.1
+		}		
+	}
+	leader = {
+			name = "Nikanor"
+			type = general
+			fire = 5
+			shock = 6
+			manuever = 5
+			siege = 3
+			death_date = 472.1.1
+		}
+	queen = {
+		country_of_origin = MAC
+		name = "Euridice"
+		dynasty = "Antipatridai"
+		birth_date = 415.1.1
+		death_date = 474.1.1
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+432.1.1 = {
+	heir = {
+		name = "Ptolemaios"
+		dynasty = "Lagidai"
+		monarch_name = "Ptolemaios Keraunos"
+		birth_date = 432.1.1
+		death_date = 476.1.1
+		claim = 50
+		dip = 2
+		adm = 1
+		mil = 4
+	}
+}
+
+445.1.1 = {
+	heir = {
+		name = "Ptolemaios"
+		monarch_name = "Ptolemaios II Philadelphous"
+		dynasty = "Lagidai"
+		birth_date = 445.1.1
+		death_date = 508.1.1
+		claim = 90
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+448.1.1 = {
+	add_government_reform = diadochi_kingdom_reform
+
+	government_rank = 4
+	add_prestige = 25
+	add_army_tradition = 50
+	add_stability = 2
+	add_absolutism = 10
+	restore_country_name = yes
+}
+
+454.1.1 = {
+	remove_historical_rival = ANE
+	historical_rival = SEL
+}
+
+472.1.1 = {
+	monarch = {
+		name = "Ptolemaios II Philadelphoi"
+		dynasty = "Lagidai"
+		birth_date = 448.1.1
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+}
+508.1.1 = {
+	monarch = {
+		name = "Ptolemaios III Euergetes"
+		dynasty = "Lagidai"
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+533.1.1 = {
+	monarch = {
+		name = "Ptolemaios IV Philopator"
+		dynasty = "Lagidai"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+551.1.1 = {
+	monarch = {
+		name = "Ptolemaios V Epiphanes"
+		dynasty = "Lagidai"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+573.1.1 = {
+	monarch = {
+		name = "Ptolemaios VI Philometor"
+		dynasty = "Lagidai"
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+583.1.1 = {
+	monarch = {
+		name = "Ptolemaios VIII Physkon"
+		dynasty = "Lagidai"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+637.1.1 = {
+	monarch = {
+		name = "Ptolemaios IX Lathyros"
+		dynasty = "Lagidai"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+672.1.1 = {
+	add_army_professionalism = 0.6
+	monarch = {
+		name = "Ptolemaios XII"
+		dynasty = "Lagidai"
+		dip = 2
+		adm = 3
+		mil = 3
+	}
+}
+702.1.1 = {
+	monarch = {
+		name = "Cleopatra VII Philopator"
+		dynasty = "Lagidai"
+		dip = 5
+		adm = 3
+		mil = 3
+		female = yes
+	}
+}

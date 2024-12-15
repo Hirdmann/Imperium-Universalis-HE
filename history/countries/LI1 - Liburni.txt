@@ -1,0 +1,17 @@
+government = republic
+add_government_reform = league_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = balkan
+primary_culture = liburni
+religion = veneti_religion
+#religious_school = balkan_type
+capital = 1158
+
+historical_friend = PIC
+historical_friend = NI3
+
+historical_rival = ZRI
+historical_rival = TL1
+historical_rival = EPM
+historical_rival = COC

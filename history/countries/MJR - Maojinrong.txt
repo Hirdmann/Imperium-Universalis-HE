@@ -1,0 +1,8 @@
+government = tribal
+add_government_reform = steppe_horde_reform
+government_rank = 1
+technology_group = nomad_group #nomad
+religion = tengri #animism
+primary_culture = xirong
+capital = 4216
+

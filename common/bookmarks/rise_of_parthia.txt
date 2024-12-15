@@ -1,0 +1,9 @@
+bookmark = {
+	name = "RISE_OF_PARTHIA_TITLE"
+	desc = "RISE_OF_PARTHIA_DESC"
+	date = 606.1.1
+
+	country = PRT
+	country = CAL
+	country = SAK
+}

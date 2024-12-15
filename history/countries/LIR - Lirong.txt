@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = steppe_horde_reform
+government_rank = 2
+technology_group = nomad_group
+religion = tengri
+primary_culture = xirong
+capital = 4086
+80.1.1 = {
+	monarch = {
+		name = "Yi"  # 戎
+		dynasty = "Ji"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

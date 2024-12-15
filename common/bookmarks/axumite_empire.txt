@@ -1,0 +1,7 @@
+bookmark = {
+	name = "AXUMITE_EMPIRE_TITLE"
+	desc = "AXUMITE_EMPIRE_DESC"
+	date = 654.1.1
+
+	country = AXU
+}

@@ -1,0 +1,8 @@
+bookmark = {
+	name = "RISE_OF_MAURYA_TITLE"
+	desc = "RISE_OF_MAURYA_DESC"
+	date = 432.1.1
+
+
+	country = MAU
+}

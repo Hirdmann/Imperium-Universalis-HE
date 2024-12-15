@@ -1,0 +1,23 @@
+government = republic
+add_government_reform = greek_polis_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = northwest_doric
+religion = greek_religion
+historical_rival = PHC
+historical_friend = THH
+historical_friend = SP1
+capital = 968
+fixed_capital = 968
+add_army_professionalism = 0.1
+
+141.1.1 = {
+	override_country_name = "KIRRHA"
+}
+169.1.1 = {
+	restore_country_name = yes
+}
+425.1.1 = {
+	primary_culture = greek
+}

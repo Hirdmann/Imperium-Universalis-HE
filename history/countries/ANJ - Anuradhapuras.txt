@@ -1,0 +1,491 @@
+government = monarchy
+add_government_reform = indian_common_monarchy
+government_rank = 3
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = sinhala
+religion = brahmin
+religious_school = jaiminiya_school
+capital = 3194
+
+317.1.1 = {
+	monarch = {
+		name = "Pandukabhaya"
+		dynasty = "Mahavijaya"
+		birth_date = 280.1.1
+		death_date = 387.1.1
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+	add_stability = 1
+	add_absolutism = 10
+}
+
+387.1.1 = {
+	monarch = {
+		name = "Mutasiva"
+		dynasty = "Mahavijaya"
+		death_date = 447.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+447.1.1 = {
+	monarch = {
+		name = "Devanampiya Tissa"
+		dynasty = "Mahavijaya"
+		death_date = 487.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+487.1.1 = {
+	monarch = {
+		name = "Uttiya"
+		dynasty = "Mahavijaya"
+		death_date = 497.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+497.1.1 = {
+	monarch = {
+		name = "Mahavisa"
+		dynasty = "Mahavijaya"
+		death_date = 507.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+507.1.1 = {
+	monarch = {
+		name = "Suratissa"
+		dynasty = "Mahavijaya"
+		death_date = 517.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+514.1.1 = {
+	religion = buddhism
+	religious_school = vibhajyavada_school
+}
+
+517.1.1 = {
+	monarch = {
+		name = "Sena"
+		dynasty = "of Tamilakam"
+		death_date = 528.1.1
+		culture = tamil
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+	add_stability = -1
+}
+
+528.1.1 = {
+	monarch = {
+		name = "Guttika"
+		dynasty = "of Tamilakam"
+		death_date = 539.1.1
+		culture = tamil
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+
+539.1.1 = {
+	monarch = {
+		name = "Asela"
+		dynasty = "Mahavijaya"
+		death_date = 549.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+549.1.1 = {
+	monarch = {
+		name = "Ellalan"
+		dynasty = "Chola"
+		birth_date = 519.1.1
+		death_date = 593.1.1
+		culture = tamil
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+	add_stability = 1
+}
+
+593.1.1 = {
+	monarch = {
+		name = "Dutugamunu"
+		dynasty = "Mahavijaya"
+		death_date = 617.1.1
+		dip = 6
+		adm = 6
+		mil = 6
+	}
+	add_stability = 1
+}
+
+617.1.1 = {
+	monarch = {
+		name = "Saddha Tissa"
+		dynasty = "Mahavijaya"
+		death_date = 635.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_stability = -1
+}
+
+635.1.1 = {
+	monarch = {
+		name = "Thulatthana"
+		dynasty = "Mahavijaya"
+		death_date = 636.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+	add_stability = -1
+}
+
+636.1.1 = {
+	monarch = {
+		name = "Lanja Tissa"
+		dynasty = "Mahavijaya"
+		death_date = 646.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+646.1.1 = {
+	monarch = {
+		name = "Khallata Naga"
+		dynasty = "Mahavijaya"
+		death_date = 651.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+651.1.1 = {
+	monarch = {
+		name = "Vattagamani Abhaya"
+		dynasty = "Mahavijaya"
+		death_date = 677.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+652.1.1 = {
+	monarch = {
+		name = "Pulahatta"
+		dynasty = "Pandya"
+		death_date = 655.1.1
+		culture = tamil
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+655.1.1 = {
+	monarch = {
+		name = "Bahiya"
+		dynasty = "Pandya"
+		death_date = 656.1.1
+		culture = tamil
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+656.1.1 = {
+	monarch = {
+		name = "Panya Mara"
+		dynasty = "Pandya"
+		death_date = 663.1.1
+		culture = tamil
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+663.1.1 = {
+	monarch = {
+		name = "Pilaya Mara"
+		dynasty = "Pandya"
+		death_date = 664.1.1
+		culture = tamil
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+664.1.1 = {
+	monarch = {
+		name = "Dathika"
+		dynasty = "Pandya"
+		death_date = 665.1.1
+		culture = tamil
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+665.1.1 = {
+	monarch = {
+		name = "Vattagamani Abhaya"
+		dynasty = "Mahavijaya"
+		death_date = 677.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+677.1.1 = {
+	monarch = {
+		name = "Mahakuli Mahatissa"
+		dynasty = "Mahavijaya"
+		death_date = 691.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+691.1.1 = {
+	monarch = {
+		name = "Chora Naga"
+		dynasty = "Mahavijaya"
+		death_date = 703.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+703.1.1 = {
+	monarch = {
+		name = "Kuda Tissa"
+		dynasty = "Mahavijaya"
+		death_date = 706.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+	add_stability = -1
+}
+
+706.1.1 = {
+	monarch = {
+		name = "Siva I"
+		dynasty = "Mahavijaya"
+		death_date = 707.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+	add_stability = -1
+}
+
+707.1.1 = {
+	monarch = {
+		name = "Vatuka"
+		dynasty = "Mahavijaya"
+		death_date = 708.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+	add_stability = -1
+}
+
+709.1.1 = {
+	monarch = {
+		name = "Darubhatika Tissa"
+		dynasty = "Mahavijaya"
+		death_date = 710.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+710.1.1 = {
+	monarch = {
+		name = "Niliya"
+		dynasty = "Mahavijaya"
+		death_date = 711.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+711.1.1 = {
+	monarch = {
+		name = "Anula"
+		dynasty = "Mahavijaya"
+		death_date = 712.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+	add_stability = 1
+}
+
+712.1.1 = {
+	monarch = {
+		name = "Kutakanna Tissa"
+		dynasty = "Mahavijaya"
+		death_date = 732.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_stability = 2
+}
+
+732.1.1 = {
+	monarch = {
+		name = "Bhatikabhaya Abhaya"
+		dynasty = "Mahavijaya"
+		death_date = 760.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_stability = 1
+}
+
+760.1.1 = {
+	monarch = {
+		name = "Mahadathika Mahanaga"
+		dynasty = "Mahavijaya"
+		death_date = 772.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+772.1.1 = {
+	monarch = {
+		name = "Amandagamani Abhaya"
+		dynasty = "Mahavijaya"
+		death_date = 782.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+782.1.1 = {
+	monarch = {
+		name = "Amandagamani Abhaya"
+		dynasty = "Mahavijaya"
+		death_date = 785.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+	add_stability = -1
+}
+
+785.1.1 = {
+	monarch = {
+		name = "Kanirajanu Tissa"
+		dynasty = "Mahavijaya"
+		death_date = 786.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+	add_stability = -1
+}
+
+786.1.1 = {
+	monarch = {
+		name = "Kanirajanu Tissa"
+		dynasty = "Mahavijaya"
+		death_date = 787.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+		female = yes
+	}
+}
+
+787.1.1 = {
+	monarch = {
+		name = "Ilanaga"
+		dynasty = "Mahavijaya"
+		death_date = 796.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+796.1.1 = {
+	monarch = {
+		name = "Chandamukha"
+		dynasty = "Mahavijaya"
+		death_date = 805.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+805.1.1 = {
+	monarch = {
+		name = "Yassalalaka Tissa"
+		dynasty = "Mahavijaya"
+		death_date = 812.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+812.1.1 = {
+	monarch = {
+		name = "Subha"
+		dynasty = "Mahavijaya"
+		death_date = 820.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}

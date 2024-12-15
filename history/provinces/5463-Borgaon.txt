@@ -1,0 +1,85 @@
+add_core = VID
+owner = VID
+controller = VID
+culture = kolami
+religion = dravidian
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 4
+trade_goods = sugar
+capital = ""
+is_city = yes
+
+142.8.10 = {
+	add_core = KUT
+	owner = KUT
+	controller = KUT
+	remove_core = VID
+}
+
+#discovered_by = roman
+#discovered_by = greek_techgroup
+#discovered_by = punic
+#discovered_by = diadochi
+#discovered_by = iranian
+#discovered_by = balkan
+#discovered_by = celtic
+#discovered_by = germanic
+#discovered_by = north_african
+#discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+#discovered_by = caucaso_anatolian
+discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african
+
+229.1.1 = {
+	add_core = AVA
+	owner = AVA
+	controller = AVA
+}
+
+254.1.1 = {
+	base_tax = 0
+	base_production = 2
+	base_manpower = 2
+	culture = ashmakan
+	religion = brahmin
+}
+
+417.1.1 = { religion = hinduism }
+
+449.1.1 = {
+	add_core = MAU
+	owner = MAU
+	controller = MAU
+	remove_core = AVA
+}
+
+495.1.1 = { religion = buddhism }
+
+522.1.1 = { #secede after death of Ashoka
+	add_core = SAT
+	owner = SAT
+	controller = SAT
+	remove_core = MAU
+}
+535.1.1 = { #Samprati reconquest
+	add_core = MAU
+	owner = MAU
+	controller = MAU
+}
+540.1.1 = { #lost by next rulers
+	add_core = SAT
+	owner = SAT
+	controller = SAT
+	remove_core = MAU
+}
+600.1.1 = { religion = hinduism }

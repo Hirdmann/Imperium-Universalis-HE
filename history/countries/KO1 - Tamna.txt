@@ -1,0 +1,41 @@
+government = tribal
+add_government_reform = tribal_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = tamna
+religion = shinto
+capital = 1733
+technology_group = korean
+
+140.1.1 = { #Actually 144, just to have them in place
+	monarch = {
+		name = "Bomyeong"
+		dynasty = "Tammura"
+		death_date = 234.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+234.1.1 = {
+	monarch = {
+		name = "Haengcheon"
+		dynasty = "Tammura"
+		death_date = 328.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+328.1.1 = {
+	monarch = {
+		name = "Hwan"
+		dynasty = "Tammura"
+		death_date = 439.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}

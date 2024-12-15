@@ -1,0 +1,37 @@
+government = monarchy
+add_government_reform = aristocratic_monarchy_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = macedon
+religion = greek_religion
+capital = 1025
+#religious_school = hellenic_type
+
+historical_rival = ATH
+historical_rival = EUM
+historical_rival = ALI
+
+431.1.1 = {
+	#add_ruler_personality = diadochi_leader_personality
+	add_army_professionalism = 0.8
+	add_stability = 1
+	add_army_tradition = 80
+	add_accepted_culture = greek
+	add_government_reform = satrap_diadochi_reform
+	add_government_reform = aristocratic_land_reform
+	add_government_reform = standing_army_reform
+	add_government_reform = limited_conscription_reform
+	monarch = {
+		name = "Krateros"
+		dynasty = "of Orestis"
+		birth_date = 380.1.1
+		death_date = 434.1.1
+		culture = macedon
+		religion = greek_religion
+		dip = 3
+		adm = 3
+		mil = 5
+		leader = {	name = "Krateros"	type = general	fire = 6	shock = 6	manuever = 5	siege = 3 }
+	}
+}

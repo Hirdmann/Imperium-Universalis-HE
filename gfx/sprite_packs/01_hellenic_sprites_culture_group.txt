@@ -1,0 +1,128 @@
+
+
+hellenicgfx_sprite_pack = {
+
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			culture_group = hellenic_group
+			culture_group = minoan_group
+			primary_culture = lemnian
+			primary_culture = pelasgian
+			primary_culture = eteocypriot
+		}
+		NOT = {
+			primary_culture = epirot
+			primary_culture = macedon
+			primary_culture = seleucid
+			tag = MAC
+			tag = PTO
+			tag = SP1
+			tag = ATH
+			tag = COR
+			tag = SYR
+			tag = EPH
+			tag = ACH
+			tag = ELI
+			tag = RHO
+			tag = TAR
+			tag = ARG
+			tag = ARC
+			tag = MSZ
+			tag = PHC
+			tag = AET
+			tag = BOE
+			tag = THH
+			tag = ACR
+			tag = SN1
+			tag = BYS
+			tag = KYR
+			tag = LES
+			tag = CHS
+			tag = CLK
+			tag = PNK
+			tag = SCI
+			tag = HME
+			tag = KMR
+			tag = MSN
+			tag = AKR
+			tag = SLN
+			tag = MGH
+			tag = LTI
+			tag = KTN
+			tag = GLC
+			tag = LRR
+			tag = THL
+			tag = PHE
+			tag = PLG
+			tag = HES
+			tag = TES
+			tag = MGN
+			tag = PHT
+			tag = DLP
+			tag = ZY1
+			tag = ZY3
+			tag = ZY4
+			tag = ZY5
+			tag = ZY6
+			tag = ZY7
+			tag = TEO
+			tag = PSO
+		}
+	}
+
+	sprite_infantry = {
+		0 = hellenicgfx_INFANTRY_1
+		1 = hellenicgfx_INFANTRY_2
+		2 = hellenicgfx_INFANTRY_3
+		3 = hellenicgfx_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = hellenicgfx_CAVALRY_1
+		1 = hellenicgfx_CAVALRY_2
+		2 = hellenicgfx_CAVALRY_3
+		3 = hellenicgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = hellenicgfx_ARTILLERY_1
+		1 = hellenicgfx_ARTILLERY_2
+		2 = hellenicgfx_ARTILLERY_3
+		3 = hellenicgfx_ARTILLERY_4
+	}
+}
+
+old_macedonian_sprite_pack = {
+
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			culture_group = macedon_group
+		}
+		NOT = {
+			tag = MAC
+		}
+	}
+
+	sprite_infantry = {
+		0 = macedon_special_INFANTRY_1
+		1 = macedon_special_INFANTRY_2
+		2 = macedon_special_INFANTRY_3
+		3 = hellenicgfx_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = hellenicgfx_CAVALRY_1
+		1 = hellenicgfx_CAVALRY_2
+		2 = hellenicgfx_CAVALRY_3
+		3 = hellenicgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = hellenicgfx_ARTILLERY_1
+		1 = hellenicgfx_ARTILLERY_2
+		2 = hellenicgfx_ARTILLERY_3
+		3 = hellenicgfx_ARTILLERY_4
+	}
+}

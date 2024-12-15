@@ -1,0 +1,8 @@
+bookmark = {
+	name = "SERTORIAN_WAR_TITLE"
+	desc = "SERTORIAN_WAR_DESC"
+	date = 674.1.1
+
+	country = ROM
+	country = R1C
+}

@@ -1,0 +1,888 @@
+namespace = diadochiwars
+
+########################################################################################
+# Patrition of Babylon
+########################################################################################
+country_event = {
+	id = diadochiwars.1
+	title = diadochiwars.1.t
+	desc = diadochiwars.1.d
+	picture = philip2
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no
+		started_in = 432.1.1
+		NOT = { started_in = 448.1.1 }
+		NOT = {	has_global_flag = diadochi_wars_start }
+	}
+
+
+	immediate = {
+		hidden_effect = { set_global_flag = diadochi_wars_start  }
+		hidden_effect = {
+			PTO = {
+				disband_all_regiments = yes
+				add_treasury = 4000
+				capital_scope = {
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					artillery = owner
+					artillery = owner
+					artillery = owner
+					artillery = owner
+					artillery = owner
+					artillery = owner
+				}
+				add_ruler_modifier = { name = ptolemy_rebel_visioneer }
+			}
+			MAC = {
+				disband_all_regiments = yes
+				add_treasury = 3000
+				1022 = {
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					artillery = owner
+					artillery = owner
+				}
+				capital_scope = {
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+				}
+				add_ruler_modifier = { name = antipater_patriarch_regent }
+			}
+			ANE = {
+				add_ruler_modifier = { name = antigonus_shauvinistic_imperialist }
+			}
+			BAB = {
+				disband_all_regiments = yes
+				add_treasury = 2000
+				add_ruler_modifier = { name = archont_of_pella }
+				capital_scope = {
+					infantry = owner
+					infantry = owner
+				}
+			}
+			ALI = {
+				disband_all_regiments = yes
+				add_treasury = 3000
+				capital_scope = {
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					artillery = owner
+					artillery = owner
+					artillery = owner
+					artillery = owner
+					artillery = owner
+					artillery = owner
+				}
+				add_ruler_modifier = { name = perdicca_scheming_regent }
+			}
+			ND1 = {
+				add_ruler_modifier = { name = leonnatus_unloyal_royalty }
+				disband_all_regiments = yes
+				cavalry = 5534
+				cavalry = 5534
+				cavalry = 5534
+				cavalry = 5534
+				artillery = 5534
+				artillery = 5534
+				infantry = 5534
+				infantry = 5534
+				infantry = 5534
+				infantry = 5534
+				infantry = 5534
+				infantry = 5534
+				infantry = 5534
+				infantry = 5534
+			}
+			ND2 = {
+				add_ruler_modifier = { name = craterus_respected_hero }
+				capital_scope = {
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+				}
+			}
+			ND3 = {
+				add_ruler_modifier = { name = asander_mighty_pawn }
+			}
+			ND4 = {
+				disband_all_regiments = yes
+				capital_scope = {
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+					artillery = owner
+				}
+				add_ruler_modifier = { name = laomedon_unlucky_loser }
+			}
+			ND5 = {
+				disband_all_regiments = yes
+				capital_scope = {
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+					artillery = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+					artillery = owner
+				}
+				add_ruler_modifier = { name = arcesilaus_content_governor }
+			}
+			ND6 = {
+				disband_all_regiments = yes
+				capital_scope = {
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+					artillery = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+					artillery = owner
+				}
+				add_ruler_modifier = { name = philoxenus_barely_known }
+			}
+			ND7 = {
+				add_ruler_modifier = { name = menander_loyal_antigonus_supporter }
+				capital_scope = {
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+				}
+			}
+			ND8 = {
+				disband_all_regiments = yes
+				add_treasury = 400
+				capital_scope = {
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					artillery = owner
+				}
+				add_ruler_modifier = { name = antigenes_decadent_silvershield_commander }
+			}
+			ND9 = {
+				add_ruler_modifier = { name = peithon_rash_agressor }
+			}
+			ATH = {
+				add_treasury = 2000
+				capital_scope = {
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+				}
+				add_country_modifier = { name = ath_temp_lamian_buff duration = 365 }
+			}
+			RHO = {
+				capital_scope = {
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					heavy_ship = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+					transport = owner
+				}
+			}
+			EUM = {
+				add_ruler_modifier = { name = eumenes_dynasty_guardian }
+				add_stability = 1
+				add_mil_power = 50
+				samurai_infantry = 2192
+				samurai_infantry = 2192
+			}
+			FD1 = {
+				add_ruler_modifier = { name = peucestas_vain_proudful_follower }
+			}
+			FD2 = {
+				add_ruler_modifier = { name = stasanor_neutral_force }
+			}
+			FD3 = {
+				add_ruler_modifier = { name = tlepolemus_unsignificant_hetairoi }
+			}
+			FD4 = {
+				add_ruler_modifier = { name = sibyrtius_greek_borderguard }
+			}
+			FD5 = {
+				add_ruler_modifier = { name = peithon_indian_overseer }
+			}
+			FD6 = {
+				add_ruler_modifier = { name = eudemus_elephantarch }
+			}
+			FD9 = {
+				add_ruler_modifier = { name = lysimachos_barbarians_subjugator }
+			}
+			GAN = {
+				add_ruler_modifier = { name = taxiles_supportive_indian }
+			}
+			KSH = {
+				add_ruler_modifier = { name = oxyartes_father_of_roxana }
+			}
+			GBK = {
+				disband_all_regiments = yes
+				add_ruler_modifier = { name = philipos_temporary_satrap }
+				capital_scope = {
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					infantry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					cavalry = owner
+					artillery = owner
+					artillery = owner
+					artillery = owner
+				}
+			}
+			PRT = {
+				add_ruler_modifier = { name = phrataphernes_native_double_satrap }
+			}
+		}
+	}
+
+	option = {
+		name = "diadochiwars.1.a"
+		ai_chance = { factor = 100 }
+		add_legitimacy = -50
+		add_stability = 1
+		add_mil_power = 100
+	}
+}
+
+#######################################################################################
+# Death of Perdiccas
+########################################################################################
+country_event = {
+	id = diadochiwars.2
+	title = diadochiwars.2.t
+	desc = diadochiwars.2.d
+	picture = philip2
+	fire_only_once = yes
+
+	trigger = {
+		tag = ALI
+		started_in = 432.1.1
+		NOT = { started_in = 448.1.1 }
+		OR = {
+			NOT = {
+				has_ruler = "Perdikkas (Regent)"
+			}
+			is_year = 433.1.1
+		}
+		has_global_flag = diadochi_wars_start
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_stability = -1
+			set_global_flag = perdicca_dead
+			ALI = {
+				define_ruler = {
+					name = "Arrhidaious (Regent)"
+					dynasty = "Argead"
+					culture = macedon
+					age = 43
+					dip = 3
+					adm = 2
+					mil = 2
+					regent = yes
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	option = {
+		name = "diadochiwars.2.a" #Euridice forces Arrhidaios to surrender regency to already winning Antipater or any other general of their side
+		ai_chance = { factor = 90 }
+		add_legitimacy = -40
+		if = {
+			limit = {
+				MAC = {
+					has_ruler = "Antipater"
+				}
+			}
+			ALI = {
+				define_ruler = {
+					name = "Antipater (Regent)"
+					dynasty = "Antipatridai"
+					culture = macedon
+					age = 79
+					adm = 4
+					mil = 3
+					dip = 4
+					regent = yes
+				}
+				define_ruler_to_general = {
+					name = "Antipater Antipatridai"
+					type = general
+					fire = 4
+					shock = 5
+					manuever = 5
+					siege = 4
+				}
+				add_ruler_modifier = { name = antipater_patriarch_regent }
+			}
+			MAC  = {
+				kill_leader = "Antipater Antipatridai"
+				kill_leader = "Polyperchon"
+				define_ruler = {
+					name = "Polyperchon (Regent)"
+					dynasty = "of Tymphaia"
+					culture = macedon
+					age = 79
+					adm = 4
+					mil = 3
+					dip = 4
+					regent = yes
+				}
+				define_ruler_to_general = {
+					name = "Polyperchon"
+					type = general
+					fire = 5
+					shock = 6
+					manuever = 4
+					siege = 3
+				}
+				add_ruler_modifier = { name = polyperchon_old_survivor }
+			}
+			white_peace = MAC
+			white_peace = PTO
+			white_peace = ND1
+			white_peace = ND2
+			white_peace = ND3
+			white_peace = ND7
+			white_peace = ANE
+			white_peace = BAB
+			release = EUM
+			vassalize = MAC
+			vassalize = ND1
+			vassalize = ND2
+			vassalize = ND3
+			vassalize = ND7
+			vassalize = ANE
+			vassalize = BAB
+			vassalize = PTO
+		}
+		else_if = {
+			limit = {
+				MAC = {
+					has_ruler = "Polyperchon"
+				}
+			}
+			MAC  = {
+				kill_leader = "Polyperchon"
+				define_ruler = {
+					name = "Kassandros Antipatrid"
+					dynasty = "Antipatridai"
+					culture = macedon
+					age = 25
+					dip = 4
+					adm = 4
+					mil = 5
+				}
+				define_ruler_to_general = {
+					name = "Kassandros Antipatridai"
+					type = general
+					fire = 5
+					shock = 6
+					manuever = 5
+					siege = 3
+				}
+				add_ruler_modifier = { name = cassander_evil_reclaimer }
+			}
+			ALI = {
+				define_ruler = {
+					name = "Polyperchon (Regent)"
+					dynasty = "of Tymphaia"
+					culture = macedon
+					age = 79
+					adm = 4
+					mil = 3
+					dip = 4
+					regent = yes
+				}
+				define_ruler_to_general = {
+					name = "Polyperchon"
+					type = general
+					fire = 5
+					shock = 6
+					manuever = 4
+					siege = 3
+				}
+			}
+			white_peace = MAC
+			white_peace = PTO
+			white_peace = ND1
+			white_peace = ND2
+			white_peace = ND3
+			white_peace = ND7
+			white_peace = ANE
+			white_peace = BAB
+			release = EUM
+			vassalize = MAC
+			vassalize = ND1
+			vassalize = ND2
+			vassalize = ND3
+			vassalize = ND7
+			vassalize = ANE
+			vassalize = BAB
+			vassalize = PTO
+		}
+		else = {
+			limit = {
+				exists = ND2
+			}
+			ALI = {
+				define_ruler = {
+					name = "Krateros"
+					dynasty = "of Orestis"
+					age = 53
+					culture = macedon
+					religion = greek_religion
+					dip = 3
+					adm = 3
+					mil = 5
+					define_ruler_to_general = {
+						name = "Krateros"
+						type = general
+						fire = 6
+						shock = 6
+						manuever = 5
+						siege = 3
+					}
+				}
+				add_ruler_modifier = { name = craterus_respected_hero }
+			}
+			MAC = {
+				inherit = ND2
+			}
+			MAC  = {
+				define_ruler = {
+					name = "Polyperchon (Regent)"
+					dynasty = "of Tymphaia"
+					culture = macedon
+					age = 79
+					adm = 4
+					mil = 3
+					dip = 4
+					regent = yes
+				}
+				define_ruler_to_general = {
+					name = "Polyperchon"
+					type = general
+					fire = 5
+					shock = 6
+					manuever = 4
+					siege = 3
+				}
+			}
+			white_peace = MAC
+			white_peace = PTO
+			white_peace = ND1
+			white_peace = ND2
+			white_peace = ND3
+			white_peace = ND7
+			white_peace = ANE
+			white_peace = BAB
+			release = EUM
+			vassalize = MAC
+			vassalize = ND1
+			vassalize = ND2
+			vassalize = ND3
+			vassalize = ND7
+			vassalize = ANE
+			vassalize = BAB
+			vassalize = PTO
+		}
+	}
+
+	option = {
+		name = "diadochiwars.2.b" #Arrhidaous refuse Euridice, and continue war for power against all odds
+		ai_chance = { factor = 9 }
+		add_legitimacy = -25
+		add_prestige = 10
+	}
+	option = {
+		name = "diadochiwars.2.c" #I want to continue as Perdiccas dynasty
+		ai_chance = { factor = 1 }
+		pisidia_area = {
+			add_core = PSD
+			cede_province = PDS
+		}
+		PDS = {
+			change_primary_culture = macedon
+			change_religion = greek_religion
+			add_government_reform = satrap_diadochi_reform
+			define_ruler = {
+				name = "Alcetas"
+				dynasty = "Orestid"
+				culture = macedon
+				religion = greek_religion
+				age = 44
+				dip = 2
+				adm = 3
+				mil = 3
+				define_ruler_to_general = {
+					name = "Alcetas Orestid"
+					type = general
+					fire = 4
+					shock = 5
+					manuever = 3
+					siege = 2
+				}
+			}
+			declare_war_with_cb = {
+				who = ANE
+				casus_belli = cb_invasion_diadochi
+				war_goal_province = 2170
+			}
+		}
+		switch_tag = PDS
+	}
+}
+
+
+#######################################################################################
+# Death of Crateros
+########################################################################################
+country_event = {
+	id = diadochiwars.3
+	title = diadochiwars.3.t
+	desc = diadochiwars.3.d
+	picture = philip2
+	fire_only_once = yes
+
+	trigger = {
+		tag = ND2
+		started_in = 432.1.1
+		NOT = { started_in = 448.1.1 }
+		OR = {
+			NOT = {
+				has_ruler = "Krateros"
+			}
+			is_year = 433.1.1
+		}
+		has_global_flag = diadochi_wars_start
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	option = {
+		name = "diadochiwars.3.a" #Crateros died in battle, continue as macedon
+		ai_chance = { factor = 100 }
+		every_owned_province = {
+			limit = {
+				region = cilicia_region
+			}
+			add_core = ND6
+			cede_province = ND6
+		}
+		if = {
+			limit = {
+				ai = no
+			}
+			switch_tag = MAC
+		}
+		MAC = {
+			inherit = ND2
+		}
+	}
+}
+
+
+#######################################################################################
+# Partition of Triparadisus
+########################################################################################
+country_event = {
+	id = diadochiwars.4
+	title = diadochiwars.4.t
+	desc = diadochiwars.4.d
+	picture = philip2
+	fire_only_once = yes
+
+	trigger = {
+		OR =  {
+			tag = ANE
+			tag = MAC
+		}
+		started_in = 432.1.1
+		NOT = { started_in = 448.1.1 }
+		is_year = 433.1.1
+		has_global_flag = perdicca_dead
+	}
+
+	option = {
+		name = "diadochiwars.3.a" #
+		ai_chance = { factor = 100 }
+		# menander goes to antigonus, kleitos rules media, antigonus declares war in a year
+		#Leonatus (dead in previous events) country goes to Arrhidaios.
+		#stasanor gets Bactria and Sogdia, Stasander Mergiana-Ariana
+		#Seleucos gets Babylonia (former Archont lands). in next events on Antipater death Seleucos gets all babylonai including former ALI lands
+		ANE = { #second war of diadochi - Eumenes declared a rebel
+			declare_war_with_cb = {
+				who = EUM
+				casus_belli = cb_invasion_diadochi
+				war_goal_province = 2340
+			}
+		}
+	}
+}

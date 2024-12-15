@@ -1,0 +1,1380 @@
+
+
+# Tribal Reforms
+
+tribe_mechanic = {
+	tribal = yes
+	monarchy = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	heir = yes
+	queen = yes
+
+	modifiers = {
+		culture_conversion_cost = 0.33
+		min_autonomy = 25
+		state_maintenance_modifier = -0.25
+		interest = 4
+		inflation_reduction = 0.1
+		expand_administration_cost = 0.25
+		global_manpower_modifier = 0.2
+		army_tradition = 1  #constant small warfare and harsh life conditions
+		diplomatic_upkeep = 1 #balancing op civilized
+		mil_tech_cost_modifier = -0.1 #tribes might be undeveloped socially, but not martially, and a lot of inventions here came from tribes
+	}
+}
+
+tribal_republic_reform = {
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+		OR = {
+			has_reform = tribal_republic_reform
+			has_reform = permanent_senate
+			have_had_reform = tribal_republic_reform
+			have_had_reform = permanent_senate
+		}
+	}
+	icon = "tribal_republic_reform"
+	legacy_equivalent = tribal_federation
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+
+	republic = yes
+	republican_name = yes
+	royal_marriage = no
+	queen = no
+	heir = no
+	duration = 10
+	has_term_election = yes
+
+	modifiers = {
+		no_stability_loss_on_monarch_death = yes
+		embracement_cost = -0.1
+		leader_cost = -0.1
+		clans_influence_modifier = -0.05
+	}
+}
+
+tribal_federation_reform = {
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+
+	icon = "tribal_federation_icon"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	legacy_equivalent = tribal_federation
+
+	royal_marriage = no
+	queen = no
+
+	modifiers = {
+		no_stability_loss_on_monarch_death = yes
+		global_manpower_modifier = 0.1
+		global_regiment_cost = -0.1
+		clans_influence_modifier = 0.1
+		heir_chance = -100
+	}
+}
+
+
+tribal_kingdom_reform = {
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+	icon = "tribal_king"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	modifiers = {
+		land_morale = 0.1
+	}
+	legacy_equivalent = tribal_kingdom
+}
+
+client_state_tribe_reform = {
+	potential = {
+		is_client_nation = yes
+	}
+
+	trigger = {
+		is_client_nation = yes
+	}
+
+	icon = "satrapies_reform"
+	allow_normal_conversion = no
+	legacy_equivalent = tribal_kingdom
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+
+	queen = no
+
+	modifiers = {
+		num_accepted_cultures = 3
+		land_forcelimit_modifier = -0.33
+		can_not_build_colonies = yes
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+}
+
+iberian_society_reform = {
+	icon = "iberian_kingdom"
+	potential = {
+		culture_group = iberian_group
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	lock_level_when_selected = yes
+	legacy_equivalent = iberian_monarchy
+
+	royal_marriage = no
+	queen = no
+
+	nation_designer_trigger = {
+		culture_group = iberian_group
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	modifiers = {
+		no_stability_loss_on_monarch_death = yes
+		discipline = 0.05
+		legitimacy = 0.5
+		heir_chance = -100
+	}
+}
+
+slavic_tribe_reform = {
+	icon = "germanic_king"
+	potential = {
+		primary_culture = slavic
+		has_country_flag = slavic_state
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = tribal_kingdom
+
+	nation_designer_trigger = {
+		primary_culture = slavic
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	modifiers = {
+		legitimacy = 0.25
+		global_unrest = -1
+		clans_loyalty_modifier = 0.1
+		clans_influence_modifier = 0.2
+	}
+}
+
+iranian_tribal_coalition_reform = {
+	icon = "parthian_monarchy"
+	potential = {
+		OR = {
+			culture_group = western_iranian
+			culture_group = eastern_iranian_group
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	lock_level_when_selected = yes
+	legacy_equivalent = tribal_federation
+
+	nation_designer_trigger = {
+		OR = {
+			culture_group = western_iranian
+			culture_group = eastern_iranian_group
+		}
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	modifiers = {
+		province_warscore_cost = -0.2
+		ae_impact = -0.2
+		clans_loyalty_modifier = -0.1
+	}
+}
+
+anatolian_tribal_federation_reform = {
+	icon = "anatolian_tribal_federation"
+	potential = {
+		culture_group = anatolian_group
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	lock_level_when_selected = yes
+	legacy_equivalent = tribal_federation
+
+	royal_marriage = no
+	republican_name = yes
+	queen = no
+
+	nation_designer_trigger = {
+		culture_group = anatolian_group
+	}
+
+	modifiers = {
+		no_stability_loss_on_monarch_death = yes
+		discipline = 0.05
+		land_morale = 0.1
+		heir_chance = -100
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 10
+			culture_group = anatolian_group
+		}
+	}
+}
+italic_tribal_federation_reform = {
+	icon = "tribal_republic_reform"
+	potential = {
+		culture_group = italic_group
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	lock_level_when_selected = yes
+	legacy_equivalent = tribal_federation
+
+	royal_marriage = no
+	republican_name = yes
+	queen = no
+
+	nation_designer_trigger = {
+		OR = {
+			culture_group = italic_group
+			primary_culture = iapyges
+		}
+	}
+
+	modifiers = {
+		no_stability_loss_on_monarch_death = yes
+		global_regiment_cost = -0.10
+		land_morale = 0.1
+		heir_chance = -100
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 10
+			OR = {
+				culture_group = italic_group
+				primary_culture = iapyges
+			}
+
+		}
+	}
+}
+veneti_tribal_federation_reform = {
+	icon = "tribal_republic_reform"
+	potential = {
+		primary_culture = veneti
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	lock_level_when_selected = yes
+	legacy_equivalent = tribal_federation
+
+	royal_marriage = no
+	republican_name = yes
+	queen = no
+
+	nation_designer_trigger = {
+		primary_culture = veneti
+	}
+
+	modifiers = {
+		no_stability_loss_on_monarch_death = yes
+		land_morale = 0.05
+		defensiveness = 0.10
+		global_prov_trade_power_modifier = 0.10
+		heir_chance = -100
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 10
+			primary_culture = veneti
+		}
+	}
+}
+steppe_horde_reform = {
+	icon = "steppe_horde_reform"
+	allow_normal_conversion = no
+
+	nomad = yes
+	raze_province = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = tribal_horde
+	lock_level_when_selected = yes
+	royal_marriage = yes
+
+	potential = {
+		OR = {
+			have_had_reform = steppe_horde_reform
+			has_reform = steppe_horde_reform
+		}
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		wars_give_horde_unity = yes
+	}
+
+	removed_effect = {
+		if = {
+			limit = {
+				tag = SCY
+				any_subject_country = { is_subject_of_type = scythian_clan_subject }
+			}
+			every_subject_country = {
+				limit = { is_subject_of_type = scythian_clan_subject }
+				SCY = { inherit = PREV }
+			}
+		}
+	}
+
+	modifiers = {
+		cav_to_inf_ratio = 0.35
+		cavalry_cost = -0.35
+		cavalry_power = 0.15
+		movement_speed = 0.05
+		naval_forcelimit_modifier = -1
+	}
+}
+
+korean_samhan_confederation_reform = {
+	icon = "quantity_china_reform"
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+		OR = {
+			culture_group = korean_group
+			culture_group = japonic_group
+		}
+	}
+	trigger = {
+		OR = {
+			has_reform = korean_samhan_confederation_reform
+			have_had_reform = korean_samhan_confederation_reform
+		}
+	}
+
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+
+	modifiers = {
+		min_autonomy = 20
+		diplomatic_upkeep = 1
+		liberty_desire_from_subject_development = -0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	legacy_equivalent = tribal_kingdom
+}
+
+mleccha_desa_tribal_reform = {
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+		has_country_flag = yudhishthiras_nightmare_country_flag
+	}
+	trigger = {
+		culture_group = mleccha_group
+		religion = mleccha_religion
+	}
+	icon = "mleccha_kingdom_reform"
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+
+	custom_attributes = {
+		locked_government_type = yes
+		mleccha_special_religion = yes
+	}
+	modifiers = {
+		reform_progress_growth = 0.2
+		culture_conversion_cost = -0.33
+		tolerance_own = 3
+		global_missionary_strength = 0.01
+	}
+	legacy_equivalent = tribal_kingdom
+}
+
+scythian_clan_reform = {
+	icon = "village_tribunals"
+	allow_normal_conversion = no
+
+	valid_for_nation_designer = no
+	legacy_equivalent = tribal_horde
+	lock_level_when_selected = yes
+	royal_marriage = no
+
+	potential = {
+		is_subject_of_type = scythian_clan_subject
+		has_reform = scythian_clan_reform
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	modifiers = {
+		global_tax_modifier = 0.2
+		global_trade_goods_size_modifier = 0.2
+		land_forcelimit_modifier = -0.25
+		global_manpower_modifier = -0.25
+		naval_forcelimit_modifier = -1
+	}
+}
+
+###########
+
+early_urban_tribe_reform = {
+	icon = "self_governing_cities"
+
+	allow_normal_conversion = yes
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				base_tax = 1
+				base_production = 3
+			}
+		}
+		NOT = { has_reform = steppe_horde_reform }
+	}
+
+	modifiers = {
+		global_prov_trade_power_modifier = 0.1
+		reform_progress_growth = 0.1
+		state_maintenance_modifier = 0.1
+	}
+}
+
+agriculturalist_tribe_reform = {
+	icon = "field_worker"
+
+	allow_normal_conversion = yes
+
+	trigger = {
+		NOT = { has_reform = steppe_horde_reform }
+	}
+
+	modifiers = {
+		production_efficiency = 0.1
+		global_trade_goods_size_modifier = 0.1
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 4
+			capital_scope = {
+				OR = {
+					is_farmland_terrain = yes
+					has_terrain = wetlands
+					has_terrain = grasslands
+					has_terrain = mediterranean
+					has_terrain = woods
+					has_terrain = forest
+				}
+			}
+		}
+	}
+}
+
+pastoralist_tribe_reform = {
+	icon = "cavalry_focus_reform"
+
+	allow_normal_conversion = no
+
+	potential = {
+		ai = no
+	}
+
+	modifiers = {
+		global_manpower_modifier = 0.1
+		global_unrest = -1
+	}
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_reform = pastoral_tribe_reform }
+				NOT = { has_reform = steppe_horde_reform }
+			}
+			change_government = native
+			add_government_reform = pastoral_tribe_reform
+		}
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+transhumancy_tribe_reform = {
+	icon = "transhumancy_tribe_reform"
+
+	allow_normal_conversion = yes
+
+	modifiers = {
+		land_attrition = -0.1
+		movement_speed = 0.1
+		cavalry_cost = -0.1
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			capital_scope = {
+				OR = {
+					has_winter = mild_winter
+					has_winter = normal_winter
+					has_winter = severe_winter
+					has_monsoon = mild_monsoon
+					has_monsoon = normal_monsoon
+					has_monsoon = severe_monsoon
+					has_climate = arctic
+					has_climate = arid
+				}
+			}
+		}
+	}
+}
+
+nomadism_tribe_reform = {
+	icon = "regional_armies"
+
+	allow_normal_conversion = yes
+
+	potential = {
+		capital_scope = {
+			OR = {
+				superregion = iran_superregion
+				superregion = turan_superregion
+				superregion = scythia_superregion
+				superregion = parthia_superregion
+				region = dacia_region
+				region = suebia_region
+				region = aestia_region
+				region = lugia_region
+			}
+			OR = {
+				has_terrain = steppe
+				has_terrain = forest_steppe
+				has_terrain = grasslands
+				has_terrain = desert
+				has_terrain = desert_river
+				has_terrain = salt_desert
+				has_terrain = desert_mountain
+				has_terrain = oasis
+			}
+		}
+		OR = {
+			has_reform = pastoral_tribe_reform
+			has_reform = steppe_horde_reform
+		}
+	}
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				superregion = iran_superregion
+				superregion = turan_superregion
+				superregion = scythia_superregion
+				superregion = parthia_superregion
+				region = dacia_region
+				region = suebia_region
+				region = aestia_region
+				region = lugia_region
+			}
+			OR = {
+				has_terrain = steppe
+				has_terrain = forest_steppe
+				has_terrain = grasslands
+				has_terrain = desert
+				has_terrain = desert_river
+				has_terrain = oasis
+			}
+		}
+		OR = {
+			has_reform = pastoral_tribe_reform
+			has_reform = steppe_horde_reform
+		}
+	}
+
+	modifiers = {
+		movement_speed = 0.05
+		reinforce_cost_modifier = -0.1
+	}
+	effect = {
+		if = {
+			limit = { NOT = { has_reform = steppe_horde_reform } }
+			add_government_reform = steppe_horde_reform
+		}
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = {
+				NOT = { superregion = scythia_superregion }
+				NOT = { superregion = turan_superregion }
+				NOT = { superregion = iran_superregion }
+				NOT = { superregion = parthia_superregion }
+			}
+		}
+		modifier = {
+			factor = 4
+			capital_scope = {
+				OR = {
+					has_terrain = steppe
+					has_terrain = forest_steppe
+					has_terrain = grasslands
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			has_reform = steppe_horde_reform
+		}
+	}
+}
+
+###########
+
+patriarchal_tribe_reform = {
+	icon = "germanic_king"
+
+	allow_normal_conversion = yes
+
+	modifiers = {
+		prestige_decay = -0.01
+		diplomatic_reputation = 1
+		yearly_absolutism = 0.12
+	}
+}
+
+matriarchal_tribe_reform = {
+	icon = "matriarchal_tribe_reform"
+
+	allow_normal_conversion = yes
+
+	modifiers = {
+		advisor_cost = -0.1
+		may_recruit_female_generals = yes
+		female_advisor_chance = 0.5
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { culture_group = steppe_people }
+			NOT = { culture_group = tibetan_group }
+			NOT = { culture_group = central_african_group }
+		}
+	}
+}
+
+egalitarian_tribe_reform = {
+	icon = "no_extra_obligations"
+
+	allow_normal_conversion = yes
+
+	modifiers = {
+		advisor_cost = -0.1
+		advisor_pool = 1
+		female_advisor_chance = 0.2
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { culture_group = turdetani_group }
+			NOT = { culture_group = iberian_group }
+			NOT = { culture_group = britannic_group }
+			NOT = { culture_group = etruscan_culture_group }
+			NOT = { culture_group = cushitic_group }
+		}
+		modifier = {
+			factor = 5
+			primary_culture = xiongnu
+		}
+	}
+}
+
+###########
+
+multicultural_coalition_reform = {
+	icon = "multicultural_coalition_reform"
+
+	allow_normal_conversion = yes
+
+	modifiers = {
+		manpower_in_accepted_culture_provinces = 0.35
+		num_accepted_cultures = 1
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 4
+			num_accepted_cultures = 2
+		}
+		modifier = {
+			factor = 10
+			has_reform = jin_confederation_reform
+		}
+	}
+}
+
+extended_clans_reform = {
+	icon = "noble_council_advisors"
+
+	allow_normal_conversion = yes
+
+	modifiers = {
+		advisor_cost = -0.1
+		leader_cost = -0.1
+		max_absolutism = 5
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+legendary_clans_reform = {
+	icon = "feudal_divisions_reform"
+
+	allow_normal_conversion = yes
+
+	modifiers = {
+		prestige = 0.5
+		army_tradition = 0.25
+		monarch_military_power = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+common_ethnic_origin_reform = {
+	icon = "common_ethnic_origin_reform"
+
+	allow_normal_conversion = yes
+
+	modifiers = {
+		discipline = 0.05
+		recover_army_morale_speed = 0.05
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+###########
+
+religious_origin_of_power_reform = {
+	icon = "theocratic_tribe"
+
+	allow_normal_conversion = yes
+	modifiers = {
+		tolerance_own = 0.5
+		global_autonomy = -0.05
+		yearly_patriarch_authority = 0.003
+	}
+}
+
+popular_origin_of_power_reform = {
+	icon = "tribal_republic_reform"
+
+	allow_normal_conversion = yes
+	modifiers = {
+		legitimacy = 0.5
+		republican_tradition = 0.25
+		devotion = 0.5
+		horde_unity = 0.25
+		meritocracy = 0.25
+		idea_cost = -0.05
+		all_power_cost = -0.02
+	}
+}
+
+martial_origin_of_power_reform = {
+	icon = "citizens_army"
+
+	allow_normal_conversion = yes
+	modifiers = {
+		loot_amount = 0.25
+		prestige_from_land = 0.25
+		land_morale = 0.1
+	}
+}
+
+wealth_origin_of_power_reform = {
+	icon = "noble_monarchy"
+
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_absolutism = 0.12
+		trade_efficiency = 0.1
+		allowed_samurai_fraction = 0.1
+	}
+}
+
+###########
+
+copy_foreign_custom_reform = {
+	icon = "bureaucracy_reform"
+
+	trigger = {
+		any_known_country = {
+			is_tribal = no
+			OR = {
+				alliance_with = ROOT
+				marriage_with = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+	}
+
+	allow_normal_conversion = yes
+	modifiers = {
+		global_institution_spread = 0.15
+		embracement_cost = -0.1
+		global_spy_defence = -0.25
+	}
+}
+
+limit_foreign_influences_reform = {
+	icon = "multicultural_armies_reform"
+
+	allow_normal_conversion = yes
+	modifiers = {
+		improve_relation_modifier = 0.2
+		yearly_corruption = -0.05
+		global_prov_trade_power_modifier = 0.1
+	}
+}
+
+traditionalist_tribe_reform = {
+	icon = "religious_law"
+
+	allow_normal_conversion = yes
+	modifiers = {
+		land_morale = 0.05
+		global_spy_defence = 0.25
+		yearly_patriarch_authority = 0.003
+	}
+}
+
+isolationist_tribe_reform = {
+	icon = "transhumancy_tribe_reform"
+
+	trigger = {
+		NOT = {
+			any_known_country = {
+				neither_tribal_nor_native_trigger = yes
+				OR = {
+					alliance_with = ROOT
+					marriage_with = ROOT
+					is_subject_of = ROOT
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+	}
+
+	allow_normal_conversion = yes
+	modifiers = {
+		idea_cost = -0.1
+		inflation_reduction = 0.1
+		global_spy_defence = 0.33
+	}
+}
+
+###########
+
+priesthood_reform = {
+	icon = "priesthood_reform"
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		tolerance_own = 0.5
+		legitimacy = 0.5
+		yearly_patriarch_authority = 0.004
+	}
+}
+yearly_clan_assembly = {
+	icon = "yearly_clan_assembly"
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		free_mil_policy = 1
+		yearly_absolutism = 0.1
+		stability_cost_modifier = -0.1
+	}
+}
+tribal_heralds = {
+	icon = "tribal_heralds"
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		max_absolutism = 5
+		global_autonomy = -0.05
+		free_mil_policy = 1
+	}
+}
+permanent_senate = {
+	icon = "tribal_senate_reform"
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+	trigger = {
+		OR = {
+			has_reform = tribal_federation_reform
+			has_reform = iberian_society_reform
+			has_reform = tribal_republic_reform
+		}
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		years_of_nationalism = -2
+		advisor_cost = -0.1
+		legitimacy = 0.25
+		republican_tradition = 0.25
+		devotion = 0.5
+		horde_unity = 0.25
+		meritocracy = 0.25
+	}
+	effect = {
+		add_government_reform = tribal_republic_reform
+		add_republican_tradition = 80
+	}
+}
+
+proto_feudalism_reform = {
+	icon = "tribal_federation_icon"
+	allow_normal_conversion = yes
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+
+	modifiers = {
+		land_maintenance_modifier = -0.15
+		state_maintenance_modifier = -0.15
+		min_autonomy = 15
+	}
+}
+
+######
+
+
+tribal_taxes = {
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+
+	icon = "tribal_taxes"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.15
+		war_taxes_cost_modifier = -0.5
+	}
+}
+extra_military_service = {
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+
+	icon = "extra_military_service"
+	allow_normal_conversion = yes
+	modifiers = {
+		land_forcelimit_modifier = 0.15
+		global_manpower_modifier = 0.15
+	}
+}
+no_extra_obligations = {
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+
+	icon = "no_extra_obligations"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -1
+		stability_cost_modifier = -0.1
+	}
+}
+building_service = {
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+
+	icon = "building_service"
+	allow_normal_conversion = yes
+	modifiers = {
+		build_cost = -0.1
+		build_time = -0.15
+	}
+}
+
+######
+
+promote_urbanization = {
+	icon = "promote_urbanization"
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		embracement_cost = -0.1
+		innovativeness_gain = 0.15
+	}
+}
+fortify_the_villages = {
+	icon = "fortify_the_villages"
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+	allow_normal_conversion = yes
+	modifiers = {
+		defensiveness = 0.2
+		garrison_size = 0.25
+	}
+}
+markets_and_trade_reform = {
+	icon = "markets_and_trade_reform"
+	allow_normal_conversion = yes
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+
+	modifiers = {
+		global_prov_trade_power_modifier = 0.1
+		trade_efficiency = 0.1
+	}
+}
+promote_religious_festivals = {
+	icon = "promote_religious_festivals"
+	allow_normal_conversion = yes
+	potential = {
+		must_not_have_any_indian_reform_tribal = yes
+	}
+
+	modifiers = {
+		global_missionary_strength = 0.005
+		culture_conversion_cost = -0.2
+		yearly_patriarch_authority = 0.005
+	}
+}
+
+######Reformation
+
+reform_to_republic = {
+	icon = "citizens_republic"
+	trigger = {
+		NOT = { has_reform = closed_ministries_reform }
+		NOT = { has_reform = mantain_status_quo }
+		NOT = { has_reform = empowerment_rajya_reform }
+		NOT = { has_reform = empowerment_sabha_reform }
+		NOT = { has_country_flag = reform_block_flag }
+		OR = {
+			has_reform = tribal_federation_reform
+			has_reform = iberian_society_reform
+			has_reform = tribal_republic_reform
+			has_reform = pastoral_tribe_reform
+			has_reform = tamil_tribe_reform
+			has_reform = indianized_dravidian_tribe_reform
+			has_reform = vedic_kingdom_reform
+			has_reform = mleccha_kingdom_reform
+			has_reform = anatolian_tribal_federation_reform
+			has_reform = italic_tribal_federation_reform
+		}
+	}
+	allow_normal_conversion = yes
+	effect = {
+		hidden_effect = {
+			lose_reforms = 4
+			change_government = republic
+			add_government_reform = citizens_republic_reform
+		}
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0.2
+			capital_scope = {
+				OR = {
+					superregion = scythia_superregion
+					superregion = turan_superregion
+					superregion = iran_superregion
+					superregion = parthia_superregion
+				}
+			}
+			has_reform = steppe_horde_reform
+		}
+	}
+}
+reform_to_league = {
+	icon = "league_icon"
+	trigger = {
+		OR = {
+			has_reform = tribal_federation_reform
+			has_reform = pastoral_tribe_reform
+			has_reform = anatolian_tribal_federation_reform
+			has_reform = italic_tribal_federation_reform
+			has_reform = veneti_tribal_federation_reform
+			has_reform = dravidian_tribe_reform
+			has_reform = tibetan_tribe_reform
+			has_reform = steppe_horde_reform
+		}
+		NOT = { has_country_flag = reform_block_flag }
+	}
+	allow_normal_conversion = yes
+	effect = {
+		hidden_effect = {
+			lose_reforms = 4
+			change_government = republic
+			add_government_reform = league_reform
+		}
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0.2
+			capital_scope = {
+				OR = {
+					superregion = scythia_superregion
+					superregion = turan_superregion
+					superregion = iran_superregion
+					superregion = parthia_superregion
+				}
+			}
+			has_reform = steppe_horde_reform
+		}
+	}
+}
+reform_to_oligarchy = {
+	icon = "oligarchy"
+	potential = {
+		OR = {
+			has_reform = indianized_dravidian_tribe_reform
+			has_reform = tamil_tribe_reform
+			has_reform = vedic_kingdom_reform
+			has_reform = kirata_kingdom_reform_tribal
+			has_reform = mleccha_kingdom_reform
+		}
+	}
+
+	trigger = {
+		NOT = { has_reform = open_ministries_reform }
+		NOT = { has_reform = empowerment_rajya_reform }
+		NOT = { has_reform = mantain_status_quo }
+		NOT = { has_country_flag = reform_block_flag }
+	}
+	allow_normal_conversion = yes
+	effect = {
+		hidden_effect = {
+			lose_reforms = 4
+			change_government = theocracy
+			add_government_reform = oligarchy_reform
+		}
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0.2
+			capital_scope = {
+				OR = {
+					superregion = scythia_superregion
+					superregion = turan_superregion
+					superregion = iran_superregion
+					superregion = parthia_superregion
+				}
+			}
+			has_reform = steppe_horde_reform
+		}
+	}
+}
+
+reform_to_monarchy = {
+	icon = "noble_monarchy"
+	trigger = {
+		NOT = { has_reform = open_ministries_reform }
+		NOT = { has_reform = closed_ministries_reform }
+		NOT = { has_reform = empowerment_sabha_reform }
+		NOT = { has_country_flag = reform_block_flag }
+		OR = {
+			has_reform = iberian_society_reform
+			has_reform = tribal_kingdom_reform
+			has_reform = germanic_tribal_kingdom_reform
+			has_reform = tamil_tribe_reform
+			has_reform = indianized_dravidian_tribe_reform
+			has_reform = vedic_kingdom_reform
+			has_reform = kirata_kingdom_reform_tribal
+			has_reform = mleccha_kingdom_reform
+			has_reform = tamil_crowned_king_tribal_reform
+			has_reform = tribal_republic_reform
+			has_reform = iranian_tribal_coalition_reform
+			has_reform = anatolian_tribal_federation_reform
+			has_reform = italic_tribal_federation_reform
+			has_reform = veneti_tribal_federation_reform
+			has_reform = pastoral_tribe_reform
+			has_reform = tibetan_tribe_reform
+			has_reform = steppe_horde_reform
+		}
+	}
+	allow_normal_conversion = yes
+	effect = {
+		hidden_effect = {
+			lose_reforms = 4
+			change_government = monarchy
+			add_government_reform = aristocratic_monarchy_reform
+		}
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0.2
+			capital_scope = {
+				OR = {
+					superregion = scythia_superregion
+					superregion = turan_superregion
+					superregion = iran_superregion
+					superregion = parthia_superregion
+				}
+			}
+			has_reform = steppe_horde_reform
+		}
+	}
+}
+
+mantain_tribal_structures_reform = {
+	icon = "multicultural_armies_reform"
+	potential = {
+		NOT = { has_reform = indianized_dravidian_tribe_reform }
+		NOT = { has_reform = tamil_tribe_reform }
+		NOT = { has_reform = vedic_kingdom_reform }
+		NOT = { has_reform = tamil_crowned_king_tribal_reform }
+	}
+	trigger = {
+		NOT = { has_reform = promote_urbanization }
+		NOT = { has_reform = copy_foreign_custom_reform }
+		NOT = { has_reform = early_urban_tribe_reform }
+	}
+	allow_normal_conversion = yes
+
+	modifiers = {
+		min_autonomy = -5
+		state_maintenance_modifier = 0.1
+		possible_policy = 1
+		free_policy = 1
+		embracement_cost = -0.1
+	}
+
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				primary_culture = galatian
+				primary_culture = nabataean
+				primary_culture = meroitic
+				culture_group = hellenic_group
+				culture_group = macedon_group
+				AND = {
+					culture_group = arabic_group
+					NOT = { primary_culture = qedarite }
+					NOT = { primary_culture = mykians }
+					NOT = { primary_culture = qatabanian }
+					NOT = { primary_culture = saracenean }
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				culture_group = germanic_group
+				culture_group = balto_slavic_group
+				culture_group = tibetan_group
+				culture_group = cushitic_group
+				culture_group = nubian_group
+				culture_group = central_african_group
+				culture_group = ibero_celtic_group
+				culture_group = gaulish_group
+				culture_group = eastern_celtic
+				culture_group = britannic_group
+				culture_group = nuragic_group
+				culture_group = illyrian_group
+				culture_group = dacothracian_group
+				primary_culture = raeti
+				primary_culture = isaurian
+				primary_culture = lycaonian
+				primary_culture = scythian
+				primary_culture = saka
+				primary_culture = parni
+				primary_culture = sarmatian
+				primary_culture = qedarite
+			}
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				has_reform = dravidian_tribe_reform
+			}
+		}
+		modifier = {
+			factor = 10
+			capital_scope = {
+				OR = {
+					superregion = scythia_superregion
+					superregion = turan_superregion
+					superregion = iran_superregion
+					superregion = parthia_superregion
+				}
+			}
+			has_reform = steppe_horde_reform
+		}
+	}
+}

@@ -1,0 +1,7 @@
+bookmark = {
+	name = "RISE_OF_NUMIDIA_TITLE"
+	desc = "RISE_OF_NUMIDIA_DESC"
+	date = 552.1.1
+
+	country = NUM
+}

@@ -1,0 +1,128 @@
+government = tribal
+add_government_reform = tribal_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = epirot
+religion = greek_religion
+capital = 1056
+
+142.1.1 = {
+	monarch = { #fictional name, meaning "chief", as we have no info about their names up to 5th century
+		name = "Koiranos I"
+		dynasty = "Bacchiadae"
+		death_date = 172.1.1
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+}
+
+#Fictional
+172.1.1 = {
+	monarch = {
+		name = "Menelaos"
+		dynasty = "Bacchiadae"
+		death_date = 202.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+202.1.1 = {
+	monarch = {
+		name = "Antiochos"
+		dynasty = "Bacchiadae"
+		death_date = 232.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+232.1.1 = {
+	monarch = {
+		name = "Perdikkas"
+		dynasty = "Bacchiadae"
+		death_date = 262.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+262.1.1 = {
+	monarch = {
+		name = "Damasippos"
+		dynasty = "Bacchiadae"
+		death_date = 292.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+292.1.1 = {
+	monarch = {
+		name = "Heromenes"
+		dynasty = "Bacchiadae"
+		death_date = 322.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+322.1.1 = {
+	monarch = {
+		name = "Alexandros"
+		dynasty = "Bacchiadae"
+		death_date = 330.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+330.1.1 = {
+	monarch = {
+		name = "Arrabaios"
+		dynasty = "Bacchiadae"
+		death_date = 360.1.1
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+
+#Fictional
+360.1.1 = {
+	monarch = {
+		name = "Aeropos"
+		dynasty = "Bacchiadae"
+		death_date = 390.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+#Fictional
+390.1.1 = {
+	monarch = {
+		name = "Amyntas"
+		dynasty = "Bacchiadae"
+		death_date = 398.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+355.1.1 = { primary_culture = old_macedon }

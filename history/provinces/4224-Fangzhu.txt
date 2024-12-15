@@ -1,0 +1,41 @@
+add_core = YON
+owner = YON
+controller = YON
+culture = yong
+religion = wuism
+capital = ""
+trade_goods = silver
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 3
+is_city = yes
+
+discovered_by = far_eastern
+discovered_by = bashu1
+discovered_by = wuyue1
+
+143.1.1 = {
+	owner = CHU
+	controller = CHU
+	trade_goods = tea_good
+	is_city = yes
+
+}
+173.1.1 = { add_core = CHU }
+183.1.1 = { religion = liyuebadao }
+475.1.1 = {
+	owner = QIN
+	controller = QIN
+}
+505.1.1 = { add_core = QIN }
+548.2.1 = {
+	owner = LJW
+	controller = LJW
+	add_core = LJW
+}
+974.10.1 = {
+	owner = SUW
+	controller = SUW
+	add_core = SUW
+}

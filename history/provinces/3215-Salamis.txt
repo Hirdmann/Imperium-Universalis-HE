@@ -1,0 +1,146 @@
+add_core = ZY5
+owner = ZY5
+controller = ZY5
+culture = cypriot
+religion = greek_religion
+hre = no
+base_tax = 1
+base_production = 3
+base_manpower = 2
+trade_goods = metalware
+capital = ""
+is_city = yes
+
+small_harbor = yes
+gravel_road = yes
+
+#discovered_by = roman
+discovered_by = greek_techgroup
+discovered_by = punic
+discovered_by = diadochi
+discovered_by = iranian
+#discovered_by = balkan
+#discovered_by = celtic
+#discovered_by = germanic
+#discovered_by = north_african
+#discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+#discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+discovered_by = caucaso_anatolian
+discovered_by = caucasian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african
+
+187.1.1 = {
+	add_core = EGY
+	owner = EGY
+	controller = EGY
+}
+209.1.1 = {
+	add_core = PSE
+	owner = PSE
+	controller = PSE
+}
+258.1.1 = {
+	add_core = ZY5
+	owner = ZY5
+	controller = ZY5
+}
+264.1.1 = {
+	add_core = PSE
+	owner = PSE
+	controller = PSE
+}
+343.1.1 = {
+	add_core = ZY5
+	owner = ZY5
+	controller = ZY5
+	remove_core = PSE
+}
+354.1.1 = {
+	add_core = ZYP
+	owner = ZYP
+	controller = ZYP
+	remove_core = ZY5
+}
+374.1.1 = {
+	add_core = PSE
+	owner = PSE
+	controller = PSE
+}
+404.1.1 = {
+	add_core = ZYP
+	owner = ZYP
+	controller = ZYP
+	remove_core = PSE
+}
+410.1.1 = {
+	add_core = PSE
+	owner = PSE
+	controller = PSE
+}
+423.1.1 = {
+	add_core = MAC
+	owner = MAC
+	controller = MAC
+	remove_core = PSE
+	small_city_walls = yes
+	culture = greek
+}
+
+431.1.1 = {
+	add_core = PTO
+	owner = PTO
+	controller = PTO
+	remove_core = MAC
+}
+
+448.1.1 = {
+	add_core = ANE
+	owner = ANE
+	controller = ANE
+}
+
+459.1.1 = {
+	add_core = PTO
+	owner = PTO
+	controller = PTO
+	remove_core = ANE
+}
+666.1.1 = {
+	add_core = ZYP
+	owner = ZYP
+	controller = ZYP
+	remove_core = PTO
+}
+696.1.1 = {
+	add_core = ROM
+	owner = ROM
+	controller = ROM
+}
+711.3.15 = {
+	add_territorial_core = R1R
+	owner = R1R
+	controller = R1R
+}
+712.10.1 = {
+	owner = ROM
+	controller = ROM
+}
+714.9.1 = {
+	add_territorial_core = R1A
+	owner = R1A
+	controller = R1A
+}
+724.8.1 = {
+	add_core = ROI
+	owner = ROI
+	controller = ROI
+	remove_core = ROM
+}

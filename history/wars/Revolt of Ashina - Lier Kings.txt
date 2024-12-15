@@ -1,0 +1,16 @@
+name = "Revolt of Ashina"
+war_goal = {
+	type = take_capital_mission_invasion
+	casus_belli = cb_mission_invasion
+	tag = SU6
+	province = 2666
+}
+
+232.7.1 = {
+	add_attacker = PSE
+	add_defender = SU6
+}
+234.8.10 = {
+	rem_attacker = PSE
+	rem_defender = SU6
+}

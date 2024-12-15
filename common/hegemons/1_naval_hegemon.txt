@@ -1,0 +1,36 @@
+naval_hegemon = {
+	allow = {
+		#is_great_power = yes
+		OR = {
+			num_of_allies = 7
+			num_of_non_tributary_subjects = 8
+		}
+		diplomatic_reputation = 3
+		NOT = {	has_country_modifier = 	IU_annexed_subjects_modifier	}
+		NOT = { has_country_modifier = lost_hegemony }
+		NOT = {
+			any_country = {
+				coalition_target = ROOT
+			}
+		}
+	}
+
+	base = {
+		diplomatic_annexation_cost = 2
+		diplomats = 1
+	}
+
+	# At max 100% tickup.
+	scale = {
+		diplomatic_reputation = 2
+		improve_relation_modifier = 0.25
+		monthly_favor_modifier = 0.15
+		vassal_forcelimit_bonus = 0.25
+	}
+
+	max = {
+		vassal_income = 0.15
+		diplomatic_upkeep = 1
+		liberty_desire_from_subject_development = -0.1
+	}
+}

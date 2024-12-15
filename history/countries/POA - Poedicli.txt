@@ -1,0 +1,9 @@
+government = tribal
+add_government_reform = italic_tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = roman
+primary_culture = iapyges
+religion = illyrian_religion
+#religious_school = balkan_type
+capital = 25

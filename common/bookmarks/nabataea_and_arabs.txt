@@ -1,0 +1,13 @@
+bookmark = {
+	name = "NABATAEA_AND_ARABS_TITLE"
+	desc = "NABATAEA_AND_ARABS_DESC"
+	date = 730.1.1
+
+	country = NAB
+	country = KND
+	country = BNL
+	country = ABC
+	country = AZD
+	country = TYY
+	country = HIM
+}

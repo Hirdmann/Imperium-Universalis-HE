@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = scythian_tech
+primary_culture = neuri
+religion = scythian_religion
+#religious_school = nomad_type
+capital = 8185
+
+142.8.10 = {
+	add_accepted_culture = scolotae
+}
+474.1.1 = {
+	capital = 1979
+}

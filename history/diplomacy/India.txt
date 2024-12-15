@@ -1,0 +1,354 @@
+#Hegemony of Pravahana Jaivali
+
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = PNC
+	second = DN5
+	start_date = 110.1.1
+	end_date = 160.1.1
+}
+
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = PNC
+	second = JA2
+	start_date = 110.1.1
+	end_date = 160.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = BT4
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = BH8
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = BA1
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = JD4
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = NU2
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = YAU
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = KUR
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = SAL
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = MAT
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = SRA
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = KCK
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = VAT
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = DSR
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = KAH
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PNC
+	second = KSU
+	start_date = 110.1.1
+	end_date = 170.1.1
+}
+
+#King Mahakosala's Conquest
+
+dependency = {
+	subject_type = "vassal"
+	first = KOS
+	second = DV6
+	start_date = 140.1.1
+	end_date = 239.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = KOS
+	second = SKA
+	start_date = 140.1.1
+	end_date = 275.1.1
+}
+
+#Magadha's subjects
+
+dependency = {
+	subject_type = "vassal"
+	first = MAU
+	second = CHD
+	start_date = 300.1.1
+	end_date = 420.1.1
+}
+
+#Ashmaka's subjects
+
+dependency = {
+	subject_type = "vassal"
+	first = ASH
+	second = II2
+	start_date = 140.1.1
+	end_date = 452.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = ASH
+	second = MUL
+	start_date = 140.1.1
+	end_date = 452.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = ASH
+	second = BT1
+	start_date = 140.1.1
+	end_date = 452.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = ASH
+	second = ANX
+	start_date = 300.1.1
+	end_date = 452.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = ASH
+	second = VID
+	start_date = 300.1.1
+	end_date = 452.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = ASH
+	second = KAN
+	start_date = 300.1.1
+	end_date = 452.1.1
+}
+
+#Avanti's subjects
+
+dependency = {
+	subject_type = "vassal"
+	first = AVA
+	second = ANU
+	start_date = 140.1.1
+	end_date = 232.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = AVA
+	second = HD1
+	start_date = 140.1.1
+	end_date = 232.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = AVA
+	second = SUR
+	start_date = 300.1.1
+	end_date = 449.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = AVA
+	second = SRP
+	start_date = 300.1.1
+	end_date = 449.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = AVA
+	second = NIS
+	start_date = 300.1.1
+	end_date = 449.1.1
+}
+
+#Kuru-Panchala Alliance
+
+alliance = {
+	first = PNC
+	second = KUR
+	start_date = 140.1.1
+	end_date = 345.1.1
+}
+
+#Integration of the Videha in Vajji
+
+alliance = {
+	first = VJJ
+	second = VDH
+	start_date = 140.1.1
+	end_date = 257.1.1
+}
+
+guarantee = {
+	first = VJJ
+	second = VDH
+	start_date = 140.1.1
+	end_date = 257.1.1
+}
+
+
+#Bhrigus Countries
+
+alliance = {
+	first = SRP
+	second = APA
+	start_date = 140.1.1
+	end_date = 453.1.1
+}
+
+alliance = {
+	first = SRP
+	second = KON
+	start_date = 140.1.1
+	end_date = 453.1.1
+}
+
+alliance = {
+	first = APA
+	second = KON
+	start_date = 140.1.1
+	end_date = 454.1.1
+}
+
+#Panchala's protection of Yaudheyas
+
+guarantee = {
+	first = PNC
+	second = YAU
+	start_date = 140.1.1
+	end_date = 415.1.1
+}
+
+#Avanti's protection of Heheya
+
+guarantee = {
+	first = AVA
+	second = HEH
+	start_date = 140.1.1
+	end_date = 232.1.1
+}
+
+#Vatsa SoI
+
+alliance = {
+	first = VAT
+	second = KCK
+	start_date = 140.1.1
+	end_date = 300.1.1
+}
+
+alliance = {
+	first = VAT
+	second = DSR
+	start_date = 140.1.1
+	end_date = 300.1.1
+}
+
+guarantee = {
+	first = VAT
+	second = KCK
+	start_date = 140.1.1
+	end_date = 300.1.1
+}
+
+guarantee = {
+	first = VAT
+	second = DSR
+	start_date = 140.1.1
+	end_date = 300.1.1
+}

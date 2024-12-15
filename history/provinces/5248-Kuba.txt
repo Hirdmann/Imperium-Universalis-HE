@@ -1,0 +1,95 @@
+add_core = SOG
+owner = SOG
+controller = SOG
+culture = sogdian
+religion = iranian_religion
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 3
+capital = ""
+trade_goods = fruits
+is_city = yes
+
+#discovered_by = roman
+#discovered_by = greek_techgroup
+#discovered_by = punic
+#discovered_by = diadochi
+discovered_by = iranian
+#discovered_by = balkan
+#discovered_by = celtic
+#discovered_by = germanic
+#discovered_by = north_african
+discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+#discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+#discovered_by = caucaso_anatolian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african
+
+234.1.1 = {
+	add_core = SOG
+	owner = SOG
+	controller = SOG
+}
+
+245.1.1 = {
+	religion = zoroastrianism
+	culture = sogdian
+}
+
+271.1.1 = {
+	base_tax = 0
+	base_production = 1
+	base_manpower = 2
+}
+
+424.1.1 = {
+	add_core = MAC
+	owner = MAC
+	controller = MAC
+	remove_core = PSE
+}
+
+431.1.1 = {
+	owner = FER
+	controller = FER
+	add_core = FER
+	remove_core = MAC
+	remove_core = ND2
+}
+433.1.1 = {
+	add_core = ND2
+	owner = ND2
+	controller = ND2
+	remove_core = MAC
+}
+434.1.1 = {
+	owner = FER
+	controller = FER
+	add_core = FER
+	remove_core = MAC
+	remove_core = ND2
+}
+502.1.1 = {
+	add_core = GBK
+	owner = GBK
+	controller = GBK
+}
+574.1.1 = {
+	add_core = FER
+	owner = FER
+	controller = FER
+	remove_core = GBK
+}
+
+592.1.1 = {
+	culture = sogdian
+	religion = zoroastrianism
+}

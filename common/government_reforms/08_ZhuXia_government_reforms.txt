@@ -1,0 +1,125 @@
+
+
+
+chinese_feudalism = {
+	icon = "chinese_feudalism_reform"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	is_eligible_for_hre_emperor = yes
+	monarchy = yes
+	modifiers = {
+		global_manpower_modifier = 0.1
+		max_absolutism = 5
+		governing_capacity = 100
+	}
+	ai = {
+		factor = 100 #im hoping this will always make released chinese nations choose this and not despotism or something
+	}
+
+}
+
+ShiQing_feudalism = {
+	icon = "ShiQing_feudalism_reform"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	is_eligible_for_hre_emperor = yes
+	monarchy = yes
+	modifiers = {
+		global_manpower_modifier = 0.2
+		max_absolutism = 10
+		governing_capacity = 150
+	}
+
+	ai = {
+		factor = 2
+		modifier = {
+			factor = 0
+
+		}
+	}
+
+}
+
+chinese_reform_monarchy = {
+	icon = "chinese_reform_monarchy_reform"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	is_eligible_for_hre_emperor = yes
+	nation_designer_cost = 0
+	monarchy = yes
+	modifiers = {
+		global_manpower_modifier = 0.3
+		land_forcelimit_modifier = 1.0
+		governing_capacity = 200
+	}
+	ai = {
+		factor = 2
+		modifier = {
+			factor = 0
+
+		}
+	}
+}
+
+bureaucratic_monarchy = {
+	icon = "bureaucratic_monarchy_reform"
+	allow_normal_conversion = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	is_eligible_for_hre_emperor = yes
+	monarchy = yes
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+	modifiers = {
+		administrative_efficiency = 0.05
+		yearly_absolutism = 0.25 #年专制度
+		governing_capacity_modifier = 0.5
+		governing_capacity = 250
+	}
+	ai = {
+		factor = 2
+		modifier = {
+			factor = 0
+
+		}
+	}
+}
+
+
+#Special for HRE free cities
+imperial_city = {
+	# government mechanics flags go here
+	icon = "judge"
+	allow_normal_conversion = no
+	legacy_government = yes
+
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+
+	#papacy = yes
+	monarchy = yes
+
+	modifiers = {
+		imperial_mandate = 0.1
+	}
+	ai = {
+		factor = 5
+	}
+}

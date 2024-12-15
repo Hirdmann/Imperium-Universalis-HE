@@ -1,0 +1,147 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_siberian_mechanic_button"
+		texturefile = "gfx//interface//siberian_mechanic_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_none"
+		texturefile = "gfx/interface/none.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_vassal_1"
+		texturefile = "gfx/interface/icon_vassal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvassal_1"
+		texturefile = "gfx/interface/icon_leadvassal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvassal_1"
+		texturefile = "gfx/interface/icon_amvassal_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_vassal_2"
+		texturefile = "gfx/interface/icon_vassal_2.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvassal_2"
+		texturefile = "gfx/interface/icon_leadvassal_2.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvassal_2"
+		texturefile = "gfx/interface/icon_amvassal_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_vassal_3"
+		texturefile = "gfx/interface/icon_vassal_3.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvassal_3"
+		texturefile = "gfx/interface/icon_leadvassal_3.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvassal_3"
+		texturefile = "gfx/interface/icon_amvassal_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_vassal_triumvir"
+		texturefile = "gfx/interface/icon_vassal_triumvir.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvassal_triumvir"
+		texturefile = "gfx/interface/icon_leadvassal_triumvir.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvassal_triumvir"
+		texturefile = "gfx/interface/icon_amvassal_triumvir.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_vassal_socii"
+		texturefile = "gfx/interface/icon_vassal_socii.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvassal_socii"
+		texturefile = "gfx/interface/icon_leadvassal_socii.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvassal_socii"
+		texturefile = "gfx/interface/icon_amvassal_socii.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_vassal_leaguemember"
+		texturefile = "gfx/interface/icon_vassal_leaguemember.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvassal_leaguemember"
+		texturefile = "gfx/interface/icon_leadvassal_leaguemember.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvassal_leaguemember"
+		texturefile = "gfx/interface/icon_amvassal_leaguemember.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_vassal_ministerial_clan"
+		texturefile = "gfx/interface/icon_vassal_ministerial_clan.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvassal_ministerial_clan"
+		texturefile = "gfx/interface/icon_leadvassal_ministerial_clan.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvassal_ministerial_clan"
+		texturefile = "gfx/interface/icon_amvassal_ministerial_clan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_vassal_celtconfederationmember"
+		texturefile = "gfx/interface/icon_vassal_celtconfederationmember.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvassal_celtconfederationmember"
+		texturefile = "gfx/interface/icon_leadvassal_celtconfederationmember.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvassal_celtconfederationmember"
+		texturefile = "gfx/interface/icon_amvassal_celtconfederationmember.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_vassal_sukkalvassal"
+		texturefile = "gfx/interface/icon_vassal_sukkalvassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvassal_sukkalvassal"
+		texturefile = "gfx/interface/icon_leadvassal_sukkalvassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvassal_sukkalvassal"
+		texturefile = "gfx/interface/icon_amvassal_sukkalvassal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_vassal_satrapy"
+		texturefile = "gfx/interface/icon_vassal_satrapy.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvassal_satrapy"
+		texturefile = "gfx/interface/icon_leadvassal_satrapy.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvassal_satrapy"
+		texturefile = "gfx/interface/icon_amvassal_satrapy.dds"
+	}
+}
+
+
+

@@ -1,0 +1,9 @@
+#Urartu vassals
+
+dependency = {
+	subject_type = "half_autonomous_vassal"
+	first = URT
+	second = ARM
+	start_date = 140.1.1
+	end_date = 165.1.1
+}

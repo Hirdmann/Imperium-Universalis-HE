@@ -1,0 +1,223 @@
+# ������ǰ�⽻��ϵ
+alliance = {
+	first = CHU
+	second = ZHA
+	start_date = 545.10.1
+	end_date = 548.2.1
+}
+# ����ʮ�������������ϵ
+alliance = {
+	first = XCW
+	second = YOW
+	start_date = 548.2.1
+	end_date = 549.6.1
+	# �����Ʒ���Ӻ����
+}
+alliance = {
+	first = XCW
+	second = SAI
+	start_date = 548.2.1
+	end_date = 548.8.1
+	# ������أ����Ը���
+}
+alliance = {
+	first = XCW
+	second = DIW
+	start_date = 548.2.1
+	end_date = 548.8.1
+	# ������أ����Ը���
+}
+alliance = {
+	first = XCW
+	second = HNW
+	start_date = 548.2.1
+	end_date = 548.7.1
+	# �������
+}
+alliance = {
+	first = XCW
+	second = CSW
+	start_date = 548.2.1
+	end_date = 548.11.1
+	# ����ȡ��
+}
+alliance = {
+	first = XCW
+	second = YNW
+	start_date = 548.2.1
+	end_date = 549.1.1
+	# �������
+}
+alliance = {
+	first = XCW
+	second = JDW
+	start_date = 548.2.1
+	end_date = 548.7.1
+	# ���ٹ������룬�������ñ���
+}
+alliance = {
+	first = XCW
+	second = JBW
+	start_date = 548.2.1
+	end_date = 548.7.1
+	# ���ٹ������룬�������ñ���
+}
+alliance = {
+	first = XCW
+	second = JJW
+	start_date = 548.2.1
+	end_date = 549.6.1
+	# ���˵Ӣ�����Ž�������
+}
+alliance = {
+	first = XCW
+	second = LJW
+	start_date = 548.2.1
+	end_date = 548.7.1
+	# ���ٹ������룬�������ñ���
+}
+alliance = {
+	first = XCW
+	second = YAN
+	start_date = 548.2.1
+	end_date = 549.11.1
+	# �����Ŷ�ƽ�ԣ������ݱ����
+}
+alliance = {
+	first = XCW
+	second = LJW
+	start_date = 548.2.1
+	end_date = 551.12.1
+	# ����֮ս���������������ٽ�����
+}
+
+#����������ϵ
+alliance = {
+	first = HNW
+	second = HAN
+	start_date = 548.10.1
+	# �������أ������Ŷ�Ϊ����
+	end_date = 552.1.1
+}
+alliance = {
+	first = ZHA
+	second = DAI
+	start_date = 548.11.1
+	# �������Ŷ�����������Ъ
+	end_date = 549.9.1
+	# �����
+}
+dependency = {
+	subject_type = "vassal"
+
+	first = ZHA
+	second = DAI
+	start_date = 548.11.1
+	# �������Ŷ�����������Ъ
+	end_date = 549.9.1
+	# �����
+}
+alliance = {
+	first = HNW
+	second = WEI
+	start_date = 549.1.1
+	# κ������
+	end_date = 549.5.1
+	# ����֮�ܣ���κ�Ѻ�
+}
+alliance = {
+	first = HNW
+	second = ZHA
+	start_date = 549.1.1
+	# κ������
+	end_date = 549.5.1
+	# ����֮�ܣ��Դ��Ѻ�
+}
+alliance = {
+	first = HNW
+	second = JJW
+	start_date = 549.6.1
+	# ���˵Ӣ������麺
+	end_date = 549.11.1
+	# �����ƾŽ���Ӣ��ֻ��Ͷ��
+}
+dependency = {
+	subject_type = "vassal"
+
+	first = HNW
+	second = ZHA
+	start_date = 549.11.1
+	# �Ŷ�Ϊ����������
+	end_date = 552.1.1
+}
+alliance = {
+	first = HNW
+	second = ZHA
+	start_date = 549.11.1
+	# �Ŷ�Ϊ����������
+	end_date = 552.1.1
+}
+alliance = {
+	first = HNW
+	second = YAN
+	start_date = 549.11.1
+	# ��ƽ�ԣ������ݱ����
+	end_date = 552.1.1
+}
+dependency = {
+	subject_type = "vassal"
+
+	first = HNW
+	second = QII
+	start_date = 550.11.1
+	# ����Ϊ����
+	end_date = 552.1.1
+}
+alliance = {
+	first = HNW
+	second = QII
+	start_date = 550.11.1
+	# ����Ϊ����
+	end_date = 552.1.1
+}
+dependency = {
+	subject_type = "vassal"
+
+	first = HNW
+	second = JJW
+	start_date = 551.6.1
+	# Ӣ��Ϊ������
+	end_date = 552.1.1
+}
+alliance = {
+	first = HNW
+	second = JJW
+	start_date = 551.6.1
+	# Ӣ��Ϊ������
+	end_date = 552.1.1
+}
+dependency = {
+	subject_type = "vassal"
+
+	first = HNW
+	second = HAN
+	start_date = 548.10.1
+	# �����Ŷ�Ϊ����
+	end_date = 552.1.1
+}
+alliance = {
+	first = HNW
+	second = HAN
+	start_date = 548.10.1
+	# �����Ŷ�Ϊ����
+	end_date = 552.1.1
+}
+dependency = {
+	subject_type = "vassal"
+
+	first = HNW
+	second = WEI
+	start_date = 550.11.1
+	# ��ԽΪ����
+	end_date = 552.1.1
+}

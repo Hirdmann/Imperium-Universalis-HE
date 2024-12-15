@@ -1,0 +1,152 @@
+#Country Name: Please see filename.
+
+graphical_culture = punicgfx
+
+color = { 156 223 149 }
+
+historical_idea_groups = {
+	caravan_trade_ideas
+	infantry_ideas
+	agraculture_ideas
+	diplomatic_ideas
+	leadership_ideas
+	financial_ideas
+	cerimonial_ideas
+	propaganda_ideas
+}
+
+historical_units = {
+	caucasian_base_inf_0
+	caucasian_base_inf_1
+	caucasian_base_inf_2
+	caucasian_base_inf_3
+	caucasian_base_inf_4
+	caucasian_base_inf_5
+	caucasian_base_inf_6
+	caucasian_base_inf_7
+	caucasian_base_inf_8
+	caucasian_base_inf_9
+	caucasian_base_inf_10
+	caucasian_base_inf_11
+	caucasian_base_inf_12
+
+	caucasian_base_cav_0
+	caucasian_base_cav_1
+	caucasian_base_cav_2
+	caucasian_base_cav_3
+	caucasian_base_cav_4
+	caucasian_base_cav_5
+	caucasian_base_cav_6
+	caucasian_base_cav_7
+	caucasian_base_cav_8
+	caucasian_base_cav_9
+	caucasian_base_cav_10
+	caucasian_base_cav_11
+	caucasian_base_cav_12
+	caucasian_base_cav_13
+	caucasian_base_cav_14
+	caucasian_base_cav_15
+	caucasian_base_cav_16
+	
+
+	caucasian_base_art_0
+	caucasian_base_art_1
+	caucasian_base_art_2
+	caucasian_base_art_3
+	caucasian_base_art_4
+	caucasian_base_art_5
+	caucasian_base_art_6
+	caucasian_base_art_7
+	caucasian_base_art_8
+	caucasian_base_art_9
+	caucasian_base_art_10
+	caucasian_base_art_11
+	caucasian_base_art_12
+	caucasian_base_art_13
+}
+
+monarch_names = {
+	"Kuzi-Tessub" = 30
+	"Pugnus-Mili #3" = 30
+	"Runtiya" = 30
+	"Arnuwanti #2" = 30
+	"Taras" = 30
+	"Crusraisa" = 30
+	"Wasuruntiya" = 30
+	"Halpasulupi" = 30
+	"Suwarimi" = 30
+	"Mariti" = 30
+	"Sahwi" = 30
+	"Satiruntiya" = 30
+	"Lalli" = 30
+	"Sahu" = 30
+	"Hilarundas" = 30
+	"Sulumal" = 30
+	"Gunzinazu" = 30
+	"Tarhunasis" = 30
+	"Muwatalli" = 30
+	"Mugallu" = 30
+	"Tunge" = 30
+	#Kings of Adana
+	"Awariku" = 10
+	"Azatiwada" = 10
+	"Kate" = 10
+	"Kilar" = 10
+	"Muksas" = 10
+	"Warikas" = 10
+	#Kings of Hilakku
+	"Sandasarme" = 10
+	"Sanduarri" = 10
+	#Kings of Tabal
+	"Ambaris" = 10
+	"Hanubuni" = 10
+	"Hartapu" = 10
+	"Hulli" = 10
+	"Iskallu" = 10
+	"Kikki" = 10
+	"Mugallu" = 10
+	"Piselmu" = 10
+	"Tuwatis" = 10
+	"Uluanda" = 10
+	"Wasusarma" = 10
+	#Kings of Tunna
+	"Askwisis" = 10
+	"Kurti" = 10
+	"Ushitti" = 10
+	#Kings of Tyana
+	"Muwaharanis" = 10
+	"Saruwanis" = 10
+	"Warpalawas" = 10
+
+	"Zenobia" = -1
+	"Adonia" = -1
+	"Ashtoreth" = -1
+	"Coryander" = -1
+	"Jesibel" = -1
+	"Tanith" = -1
+	"Tanni" = -1
+	"Tanythe" = -1
+}
+
+leader_names = {
+	Udaynathid Hairanid Maeonid Vaballathuid "of Palmyra" "of Hamath" "of Aram" "of Syria" "the Syrian" "the Aramean" "the Hittite" "the Arab" "the Amorite"
+	"of Damascus" "of Ituraea" "of Aleppo" "the Strong" "the Blessed" "the Big" "the Brave" "the Lionhearted" "the Purifier" "the Humble" "the Red" "of Amurru"
+	"the Loyal" "of Luhuti" "of Pattani" "the Lord" "the God's Servant" "the Benefactor" "the Blind" "the One-Eyed" "the Black" "the White" "of Canaan" "the Canaanite"
+	"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+ship_names = {
+	Aglibol Anat Arsay Arsu "Ashtar-Chemosh" Asherah Ashima Atargatis Attar Athirat Azizos Baalah "Ba'alat Gebal" "Ba'al Hadad" "Ba'al Hermon" "Baal Hammon" Baalshamin
+	"Baal-Zephon" Bel Bol Chemosh Dagon Dagon El Elohim Elyon Eshmun Baal Malakbel Yagribol Elkunirsa Amurru Anu "'Amm" Belili Gad Horon Bethoron Melqart Ishara
+	Ishat Kotharat "Kothar-wa-Khasis" Yagrush Aymur Liluri Lotan Yam Manuzi Milcom Misor Moloch Sydyk Mot Mawat "Nikkal-wa-Ib" Pidray Qadesthu Resheph Shadrafa Shachar
+	Shalim Salam Salem Shamamyim Eretz Shapash Shapsh Shemesh Shapshu Shamash Tallai Nahar Iarhibol Yarikh Napash Mot Malik "Yam-Qart" Ilhm Targhizizi Tharumagi
+	"El Shaddai" Shadu Amurru Luhuti Pattani Aram Hammath "Bit Adini" Gurgum Syria Canaan Phoenicia Tyre Sidon Beirot Byblos Alepo Arpad Hadad Shad Nimrod
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

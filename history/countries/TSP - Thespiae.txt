@@ -1,0 +1,18 @@
+government = republic
+add_government_reform = greek_polis_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = boeotian
+religion = greek_religion
+historical_friend = THH
+historical_friend = ORC
+historical_friend = TNG
+capital = 966
+fixed_capital = 966
+
+add_army_professionalism = 0.1
+
+425.1.1 = {
+	primary_culture = greek
+}

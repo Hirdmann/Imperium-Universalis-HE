@@ -1,0 +1,80 @@
+end_roman_monarchy = {
+	potential = {
+		has_reform = roman_kingdom_reform
+		tag = ROM
+		NOT = { started_in = 245.1.1 }
+		NOT = { has_country_flag = last_king_of_rome }
+	}
+
+	can_start = {
+		OR = {
+			has_country_flag = tarquinius_superbus
+			NOT = {
+				has_country_flag = tarquinius_priscus
+				has_country_flag = servius_tullius
+			}
+		}
+		has_any_disaster = no
+	}
+
+	can_stop = {
+		mil = 6
+		stability = 2
+		absolutism = 20
+	}
+
+	progress = {
+		modifier = {
+			factor = 0.05
+			ruler_has_personality = cruel_personality
+		}
+		modifier = {
+			factor = 0.05
+			ruler_has_personality = malevolent_personality
+		}
+		modifier = {
+			factor = 0.3
+			NOT = { mil = 4 }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { years_of_income	 = 0.25 }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { army_size_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { army_tradition = 30 }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { stability = 1 }
+		}
+	}
+
+	can_end = {
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { num_of_rebel_armies = 1 }
+		is_at_war = no
+		stability = 1
+	}
+
+	modifier = {
+		global_unrest = 3
+		all_power_cost = 0.2
+		yearly_corruption = 0.1
+	}
+
+	on_start = rome.16
+	on_end = rome.1605
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+		}
+	}
+}
+

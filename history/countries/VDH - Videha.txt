@@ -1,0 +1,69 @@
+government = tribal
+add_government_reform = vedic_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = mithilas
+religion = sramana
+religious_school = restraint_school
+historical_friend = VJJ
+capital = 2996
+
+120.1.1 = {
+	monarch = {
+		name = "Janaka"
+		dynasty = "Ikshvaku"
+		birth_date = 100.1.1
+		death_date = 180.1.1
+		dip = 5
+		adm = 6
+		mil = 5
+	}
+}
+
+140.1.1 = {
+	heir = {
+		name = "Nimi"
+		dynasty = "Ikshvaku"
+		birth_date = 140.1.1
+		death_date = 220.1.1
+		claim = 100
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+180.1.1 = {
+	monarch = {
+		name = "Nimi"
+		dynasty = "Ikshvaku"
+		birth_date = 140.1.1
+		death_date = 220.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+220.1.1 = {
+	monarch = {
+		name = "Krti"
+		dynasty = "Ikshvaku"
+		birth_date = 200.1.1
+		death_date = 254.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+300.1.1 = {
+	government = monarchy
+	add_government_reform = indian_common_monarchy
+}
+
+300.1.1 = {
+	religion = jain
+	religious_school = svetambara_school
+}

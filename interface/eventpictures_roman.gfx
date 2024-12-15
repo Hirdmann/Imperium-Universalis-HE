@@ -1,0 +1,122 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "italicgfx_cavalry"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/cavalry.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_generals"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/generals.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_battle"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/battle.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_city"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/city.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_training"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/training.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_naval_battle"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/naval_battle.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_plundering"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/plundering.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_construction"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/construction.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_construction"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/construction.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_forum_picture"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/forum_picture.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_senat"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/senat.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_senat_conflict"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/senat_conflict.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_romanization"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/romanization.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_mare_internum"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/mare_internum.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_first_punic_war"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/first_punic_war.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_first_punic_war_end"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/first_punic_war_end.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_fall_of_saguntum"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/fall_saguntum.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_second_punic_war_end"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/second_punic_war_end.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_third_punic_war"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/third_punic_war.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_third_punic_war_end"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/third_punic_war_end.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "italicgfx_socii_revolt"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/socii_revolt.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "italicgfx_hannibal"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/hannibal.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "italicgfx_celt_rome_attack"
+		texturefile = "gfx/event_pictures/event_pictures_ROMAN/celt_rome_attack.dds"
+		alwaystransparent = yes
+	}
+
+
+}

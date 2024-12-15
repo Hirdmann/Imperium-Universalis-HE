@@ -1,0 +1,480 @@
+##### Arabic Cults #####
+
+cult_dushara = {
+
+	global_unrest = -2
+	state_maintenance_modifier = -0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_dushara
+			AND = {
+				religion = arab_religion
+				capital_scope = { superregion = arabia_superregion }
+				NOT = { tag = HAT }
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_dhu_ghabat = {
+
+	caravan_power = 0.1
+	state_maintenance_modifier = -0.1
+
+	allow = {
+		OR = {
+			AND = {
+				religion = arab_religion
+				primary_culture = dadanitic
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_al_kutba = {
+
+	technology_cost = -0.05
+	idea_cost = -0.05
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_dushara
+			AND = {
+				religion = arab_religion
+				OR = {
+					primary_culture = dadanitic
+					primary_culture = nabataean
+				}
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_sin = {
+
+	tolerance_own = 1
+	state_maintenance_modifier = -0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_sin
+			AND = {
+				religion = arab_religion
+				OR = {
+					tag = HAT
+					tag = EMT
+				}
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_manat = {
+
+	discipline = 0.05
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_manat
+			AND = {
+				religion = arab_religion
+				capital_scope = { superregion = arabia_superregion }
+				NOT = { tag = HAT }
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+		modifier = {
+			factor = 3
+			is_in_important_war = yes
+		}
+	}
+}
+cult_al_lat = {
+
+	manpower_recovery_speed = 0.1
+	global_prosperity_growth = 0.03
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_manat
+			AND = {
+				religion = arab_religion
+				capital_scope = {
+					OR = {
+						region = arabia_petrea_region
+						region = arabia_deserta_region
+					}
+				}
+				NOT = { tag = HAT }
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+		modifier = {
+			factor = 3
+			is_in_important_war = yes
+		}
+	}
+}
+
+cult_al_uzza = {
+
+	morale_damage_received = -0.1
+	shock_damage = 0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_manat
+			AND = {
+				religion = arab_religion
+				capital_scope = {
+					OR = {
+						region = arabia_petrea_region
+						region = arabia_deserta_region
+					}
+				}
+				NOT = { tag = HAT }
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+		modifier = {
+			factor = 3
+			is_in_important_war = yes
+		}
+	}
+}
+cult_dt_hmym = {
+
+	discipline = 0.05
+	prestige_from_land = 0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_dt_hmym
+			AND = {
+				religion = arab_religion
+				tag = HAT
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_wadd = {
+
+	diplomatic_reputation = 1
+	relation_with_same_religion = 10
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_wadd
+			AND = {
+				religion = arab_religion
+				primary_culture = minaean
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_amm = {
+
+	tolerance_own = 1
+	state_maintenance_modifier = -0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_sin
+			AND = {
+				religion = arab_religion
+				primary_culture = qatabanian
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_nasr = {
+
+	land_attrition = -0.15
+	morale_damage = 0.1
+
+	allow = {
+		OR = {
+			AND = {
+				religion = arab_religion
+				tag = HIM
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_shamash = {
+
+	global_tax_modifier = 0.05
+	production_efficiency = 0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_shamash
+			religion = arab_religion
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_nuha_ruda_atarsamain = {
+
+	land_morale = 0.05
+	max_absolutism = 5
+	manpower_recovery_speed = 0.05
+
+	allow = {
+		AND = {
+			religion = arab_religion
+			OR = {
+				primary_culture = qedarite
+				tag = SML
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_aziz_arsu = {
+
+	cavalry_power = 0.1
+	caravan_power = 0.1
+
+	allow = {
+		AND = {
+			religion = arab_religion
+			OR = {
+				primary_culture = nabataean
+				tag = PLM
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_talab = {
+
+	naval_morale = 0.05
+	trade_efficiency = 0.05
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_talab
+			AND = {
+				religion = arab_religion
+				capital_scope = { superregion = arabia_superregion }
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_allah = {
+
+	tolerance_own = 2
+	global_heathen_missionary_strength = 0.03
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_allah
+			religion = arab_religion
+		}
+		has_country_modifier = tawheed
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+
+#East African
+
+cult_mahrem = {
+
+	discipline = 0.05
+	reinforce_cost_modifier = -0.10
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_mahrem
+			AND = {
+				religion = arab_religion
+				OR = {
+					capital_scope = { superregion = aethiopia_superregion }
+					capital_scope = { region = nubia_region }
+				}
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_beher = {
+
+	naval_morale = 0.05
+	privateer_efficiency = 0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_beher
+			AND = {
+				religion = arab_religion
+				OR = {
+					capital_scope = { superregion = aethiopia_superregion }
+					capital_scope = { region = nubia_region }
+				}
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_astar = {
+
+	tolerance_own = 1
+	warscore_cost_vs_other_religion = -0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_astar
+			AND = {
+				religion = arab_religion
+				OR = {
+					capital_scope = { superregion = aethiopia_superregion }
+					capital_scope = { region = nubia_region }
+				}
+			}
+		}
+		NOT = { has_country_modifier = tawheed }
+	}
+
+	sprite = 15
+
+	ai_will_do = {
+		factor = 1
+	}
+}

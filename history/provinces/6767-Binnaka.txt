@@ -1,0 +1,16 @@
+native_size = 30
+native_ferocity = 10
+native_hostileness = 10
+culture = palaungic
+religion = southern_mythology
+trade_goods = rice
+is_city = yes
+base_tax = 1
+base_production = 4
+base_manpower = 2
+center_of_trade = 2
+discovered_by = south_east_asian
+526.1.1 = { 
+	religion = buddhism
+}
+142.8.10 = { tribal_owner = TGG }

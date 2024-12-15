@@ -1,0 +1,445 @@
+
+alliance = {
+	first = ANH
+	second = PRS
+	start_date = 140.1.1
+	end_date = 200.1.1
+}
+
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = PSE
+	second = ARM
+	start_date = 205.1.1
+	end_date = 232.7.1
+}
+
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = PSE
+	second = SAG
+	start_date = 205.1.1
+	end_date = 232.7.1
+}
+
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = PSE
+	second = PRT
+	start_date = 205.1.1
+	end_date = 210.1.1
+}
+
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = PSE
+	second = KIL
+	start_date = 208.1.1
+	end_date = 237.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = PSE
+	second = QED
+	start_date = 208.1.1
+	end_date = 234.1.1
+}
+
+##Satrapies###
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PS1
+	start_date = 234.1.1
+	end_date = 388.1.1 #Great Satraps' Revolt
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PS1
+	start_date = 394.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PS2
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PS3
+	start_date = 234.1.1
+	end_date = 353.1.1 #Cyrus the Younger
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PS3
+	start_date = 354.1.1
+	end_date = 388.1.1 #Great Satraps' Revolt
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PS3
+	start_date = 394.1.1
+	end_date = 424.1.1
+}
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = MYS
+	start_date = 392.1.1
+	end_date = 400.1.1 #Orontes & Artabazus II revolt
+}
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = MYS
+	start_date = 401.1.1
+	end_date = 410.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PS4
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = NAB
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = THR
+	start_date = 234.1.1
+	end_date = 279.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = ARM
+	start_date = 233.1.12
+	end_date = 388.1.1 #Great Satraps' Revolt
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = ARM
+	start_date = 394.1.11
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PHR
+	start_date = 234.1.1
+	end_date = 353.1.1 #Cyrus the Younger
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PHR
+	start_date = 354.1.1
+	end_date = 388.1.1 #Great Satraps' Revolt
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PHR
+	start_date = 394.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = CRI
+	start_date = 234.1.1
+	end_date = 388.1.1 #Great Satraps' Revolt
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = CRI
+	start_date = 394.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = ION
+	start_date = 234.1.1
+	end_date = 258.1.1 #Ionian Revolt
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = ION
+	start_date = 261.1.1 #End of Ionian Revolt
+	end_date = 277.1.1 #Persian retreat from Ionia
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = ION
+	start_date = 354.1.1 #Persian takeover of Ionia
+	end_date = 388.1.1 #Great Satraps' Revolt
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = ION
+	start_date = 394.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = KPP
+	start_date = 234.1.1
+	end_date = 353.1.1 #Cyrus the Younger
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = KPP
+	start_date = 354.1.1
+	end_date = 388.1.1 #Grat Satraps' Revolt
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = KPP
+	start_date = 394.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = KIL
+	start_date = 237.1.1
+	end_date = 353.1.1 #Cyrus the Younger
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = KIL
+	start_date = 354.1.1
+	end_date = 388.1.1 #Great Satraps' Revolt
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = KIL
+	start_date = 394.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PHO
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = BAK
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = ARI
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = MRG
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = SOG
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = GED
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = ARA
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = DRN
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = GAN
+	start_date = 234.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = PS5
+	start_date = 242.1.1
+	end_date = 289.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = IBE
+	start_date = 242.1.1
+	end_date = 388.1.1 #Great Satraps' Revolt
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = IBE
+	start_date = 394.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = KHR
+	start_date = 235.1.1
+	end_date = 350.1.1
+}
+
+dependency = {
+	subject_type = "satrapy_vassal"
+	first = PSE
+	second = DAH
+	start_date = 235.1.1
+	end_date = 289.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PSE
+	second = COL
+	start_date = 242.1.1
+	end_date = 424.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PSE
+	second = SK1
+	start_date = 235.1.1
+	end_date = 289.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PSE
+	second = QED
+	start_date = 236.1.1
+	end_date = 421.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PSE
+	second = SK2
+	start_date = 235.1.1
+	end_date = 289.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = PSE
+	second = KUS
+	start_date = 235.1.1
+	end_date = 289.1.1
+}
+
+#Cyrus the Younger and allies
+
+alliance = {
+	first = PHR
+	second = PS3
+	start_date = 353.1.1
+	end_date = 354.1.1
+}
+
+alliance = {
+	first = PHR
+	second = KPP
+	start_date = 353.1.1
+	end_date = 354.1.1
+}
+
+alliance = {
+	first = PHR
+	second = KIL
+	start_date = 353.1.1
+	end_date = 354.1.1
+}

@@ -1,0 +1,320 @@
+# New personalities cannot be added to this file
+# Do not change existing personality names!
+
+human = {
+	chance = {
+		factor = 0
+	}
+
+	icon = 1
+}
+
+ai_capitalist = {
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 1.5
+			adm = 4
+		}
+		modifier = {
+			factor = 1.5
+			adm = 5
+		}
+		modifier = {
+			factor = 1.5
+			adm = 6
+		}
+		modifier = {
+			factor = 1.1
+			financial_ideas = 1
+		}
+		modifier = {
+			factor = 1.1
+			maritime_trade_ideas = 1
+		}
+		modifier = {
+			factor = 1.1
+			caravan_trade_ideas = 1
+		}
+	}
+	icon = 2
+}
+
+ai_diplomat = {
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 0.5
+			NOT = { dip = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { dip = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { dip = 3 }
+		}
+		modifier = {
+			factor = 2.0
+			religion = buddhism
+		}
+		modifier = {
+			factor = 1.5
+			tag = CAR
+		}
+		modifier = {
+			factor = 1.5
+			dip = 4
+		}
+		modifier = {
+			factor = 1.5
+			dip = 5
+		}
+		modifier = {
+			factor = 1.5
+			dip = 6
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { total_development = 30 }
+		}
+		modifier = {
+			factor = 2
+			religion = taoism
+		}
+		modifier = {
+			factor = 4
+			religion = mohism
+		}
+		modifier = {
+			factor = 4
+			tag = PSE
+			is_year = 237
+		}
+	}
+	icon = 3
+}
+
+ai_militarist = {
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 2
+			any_neighbor_country = { ai = no }
+		}
+		modifier = {
+			factor = 10
+			tag = MDI
+			NOT = { is_year = 195 }
+		}
+		modifier = {
+			factor = 5
+			tag = LYD
+			NOT = { is_year = 195 }
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				tag = PSE
+				tag = ANH
+			}
+			NOT = { is_year = 237 }
+		}
+		modifier = {
+			factor = 5
+			tag = MAC
+			is_tribal = no
+		}
+		modifier = {
+			factor = 10
+			tag = CAR
+			is_subject = no
+			exists = ROM
+		}
+		modifier = {
+			factor = 5
+			tag = ROM
+			has_reform = res_publica_reform
+		}
+		modifier = {
+			factor = 3
+			tag = CAR
+			NOT = { exists = PH2 }
+		}
+		modifier = {
+			factor = 0
+			has_regency = yes
+		}
+		modifier = {
+			factor = 0.25
+			is_heterodox_trigger = yes
+		}
+		modifier = {
+			factor = 0.5
+			is_orthodox_trigger = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				religion = germanic_religion
+				religion = sarmatian_religion
+				religion = scythian_religion
+			}
+		}
+		modifier = {
+			factor = 3
+			is_tribal = yes
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { mil = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { mil = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { mil = 3 }
+		}
+		modifier = {
+			factor = 1.5
+			mil = 4
+		}
+		modifier = {
+			factor = 1.5
+			mil = 5
+		}
+		modifier = {
+			factor = 1.5
+			mil = 6
+		}
+		modifier = {
+			factor = 1.1
+			leadership_ideas = 1
+		}
+		modifier = {
+			factor = 1.1
+			infantry_ideas = 1
+		}
+		modifier = {
+			factor = 1.1
+			skirmisher_ideas = 1
+		}
+		modifier = {
+			factor = 1.1
+			cavalry_ideas = 1
+		}
+		modifier = {
+			factor = 0.25
+			religion = mohism
+		}
+		modifier = {
+			factor = 2.5
+			is_year = 250
+			tag = ROM
+		}
+		modifier = {
+			factor = 1.25
+			any_neighbor_country = {
+				is_rival = ROOT
+			}
+		}
+		modifier = {
+			factor = 5
+			has_reform = steppe_horde_reform
+		}
+	}
+	icon = 4
+}
+
+ai_colonialist = {
+	chance = {
+		factor = 0
+	}
+	icon = 5
+}
+
+ai_balanced = {
+	chance = {
+		factor = 100
+		modifier = {
+			factor = 1.25
+			always = yes # higher base chance
+		}
+		modifier = {
+			factor = 100
+			ai = no
+		}
+		modifier = {
+			factor = 0
+			has_regency = yes
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				AND = {
+					adm = 1
+					dip = 1
+					mil = 1
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				AND = {
+					adm = 2
+					dip = 2
+					mil = 2
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				AND = {
+					adm = 3
+					dip = 3
+					mil = 3
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			adm = 4
+			dip = 4
+			mil = 4
+		}
+		modifier = {
+			factor = 1.5
+			adm = 5
+			dip = 5
+			mil = 5
+		}
+		modifier = {
+			factor = 1.5
+			adm = 6
+			dip = 6
+			mil = 6
+		}
+	}
+	icon = 6
+}

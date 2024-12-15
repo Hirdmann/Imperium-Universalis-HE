@@ -1,0 +1,151 @@
+#Country Name: Please see filename.
+
+graphical_culture = hellenicgfx
+
+color = { 216 216 216 }
+
+historical_idea_groups = {
+	financial_ideas
+	infantry_ideas
+	imperial_ideas
+	assimilation_ideas
+	fortress_ideas
+	diplomatic_ideas
+	domestic_government_ideas
+	caravan_trade_ideas
+}
+historical_units = {
+	anatolian_base_inf_0
+	anatolian_base_inf_1
+	anatolian_base_inf_2
+	anatolian_base_inf_3
+	anatolian_base_inf_4
+	anatolian_base_inf_5
+	anatolian_base_inf_6
+	anatolian_base_inf_7
+	anatolian_base_inf_8
+	anatolian_base_inf_9
+	anatolian_base_inf_10
+	anatolian_base_inf_11
+	anatolian_base_inf_12
+	anatolian_base_inf_13
+	anatolian_base_inf_14
+	anatolian_base_inf_15
+	anatolian_base_inf_16
+	anatolian_base_inf_17
+
+	anatolian_base_cav_0
+	anatolian_base_cav_1
+	anatolian_base_cav_2
+	anatolian_base_cav_3
+	anatolian_base_cav_4
+	anatolian_base_cav_5
+	anatolian_base_cav_6
+	anatolian_base_cav_7
+	anatolian_base_cav_8
+	anatolian_base_cav_9
+	anatolian_base_cav_10
+	anatolian_base_cav_11
+	anatolian_base_cav_12
+	anatolian_base_cav_13
+	anatolian_base_cav_14
+	anatolian_base_cav_15
+	anatolian_base_cav_16
+
+	anatolian_base_art_0
+	anatolian_base_art_1
+	anatolian_base_art_2
+	anatolian_base_art_3
+	anatolian_base_art_4
+	anatolian_base_art_5
+	anatolian_base_art_6
+	anatolian_base_art_7
+	anatolian_base_art_8
+	anatolian_base_art_9
+	anatolian_base_art_10
+	anatolian_base_art_11
+	anatolian_base_art_12
+	anatolian_base_art_13
+	anatolian_base_art_14
+	anatolian_base_art_15
+	anatolian_base_art_16
+}
+
+monarch_names = {
+	# Kappadokian
+	"Tuwati" = 50
+	"Kikki" = 50
+	"Wasusarma" = 50
+	"Hulli" = 50
+	"Ambaris" = 50
+	"Ishkallu" = 50
+	"Mugallu" = 50
+	"Suppiliuluma" = 50
+	"Muwattali" = 50
+	"Mursilli" = 50
+	"Hattusili" = 50
+	"Dadi-Ilu" = 50
+	"Ushitti" = 50
+	"Warpalawa" = 50
+	"Thudiya" = 50
+	"Ussi" = 50
+	"Tuhamme" = 50
+	"Kiyakiya" = 50
+	"Kurti" = 50
+	"Ashwis" = 50
+	"Saruwani" = 50
+	"Puhamme" = 50
+	"Urimme" = 50
+	"Gurdi" = 50
+	# Lydian
+	"Manes" = 20
+	"Atys" = 20
+	"Lydus" = 20
+	"Iardanus" = 20
+	"Agron" = 20
+	"Meles" = 20
+	"Myrsus" = 20
+	"Candaules" = 20
+	"Myrsilus" = 20
+	"Gyges" = 20
+	"Ardys" = 20
+	"Sadyattes" = 20
+	"Alyattes" = 20
+	"Kroisos" = 20
+	"Struthas" = 5
+	"Diphridas" = 5
+	"Tiribazus" = 5
+	"Tithraustes" = 5
+	# Carian
+	"Idrieos" = 20
+	"Lygdamis" = 20
+	"Pisindelis" = 20
+	"Hekatomnos" = 20
+	"Hidrieus" = 20
+	"Mausolus" = 20
+	"Pixodarus" = 20
+
+}
+
+leader_names = {
+	Maeoniae Heraclidae Mermnadae "the Elder" "the Younger" "the Wise" "" "" "" "" "" "" "" "" "" ""
+	"of Cappadocia" "of Cappadocia" "of Cappadocia" "of Cappadocia" "of Cappadocia" "of Cappadocia"
+}
+
+ship_names = {
+	Zeus Hera Aphrodite Apollo Ares Artemis Athena Demeter Dionysus Hades Hephaestos Hermes Hestia Poseidon
+	Achlys Aether Aion Ananke Chaos Chronos Erebus Eros Gaia Hemera Hypnos Nemesis Nyx Pontus Tartaros Thalassa
+	Thanatos Uranus Koios Kreios Kronos Hyperion Iapetós Oceanós Phoibe Rhéa Theía Thémis Astería Atlas Aúra
+	Clymene Dione Helios Eurybía Lelantos Leto Menoítios Pállas Perses Prometheus Alcyoneus Chthonius Damysus
+	Mimas Pallas Porphyrion Antaeus Agathodaemon Aegaeon Achelous Benthesikyme Ceto Graeae Delphin Aello
+	Celaeno Aphros Bythos Leucothea Achilles Heracles Aiax Jason Argo Odysseus Orpheus Theseus Aegea Antiope
+	Hippolyta Iphito Marpesia Otrera Penthesilea
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

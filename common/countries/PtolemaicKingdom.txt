@@ -1,0 +1,170 @@
+#Country Name: Please see filename.
+
+graphical_culture = hellenicgfx
+
+color = { 79 108 142 }
+
+
+historical_idea_groups = {
+	agraculture_ideas #Nile as economic base
+	infantry_ideas #phalanx is still a core
+	academy_ideas #Alexandria
+	syncretism_ideas #peaceful coexistance with egyptians
+	engineering_ideas #pharos, canal of pharaos, megaships
+	naval_ideas # naval might
+	maritime_trade_ideas #sea is trade
+	mercenary_ideas	#army is mercenary as egyptians are forbidden to serve
+	royal_court_ideas #ptolemaic court, then later - pharaonic court ideas revival
+	skirmisher_ideas #more skirmishers as opposing to seleucid cavalry focus. Syrian archers, judean slingers, arab mercs, lybians, nubians
+}
+
+historical_units = {
+	asian_base_inf_0
+	asian_base_inf_1
+	asian_base_inf_2
+	asian_base_inf_3
+	asian_base_inf_4
+	asian_base_inf_5
+	asian_base_inf_6
+	asian_base_inf_7
+	asian_base_inf_8
+	asian_base_inf_9
+	asian_base_inf_10
+	asian_base_inf_11
+	asian_base_inf_12
+	asian_base_inf_13
+	asian_base_inf_14
+	asian_base_inf_15
+	asian_base_inf_16
+
+	asian_base_cav_0
+	asian_base_cav_1
+	asian_base_cav_2
+	asian_base_cav_3
+	asian_base_cav_4
+	asian_base_cav_5
+	asian_base_cav_6
+	asian_base_cav_7
+	asian_base_cav_8
+	asian_base_cav_9
+	asian_base_cav_10
+	asian_base_cav_11
+	asian_base_cav_12
+	asian_base_cav_13
+	asian_base_cav_14
+
+	asian_base_art_0
+	asian_base_art_1
+	asian_base_art_2
+	asian_base_art_3
+	asian_base_art_4
+	asian_base_art_5
+	asian_base_art_6
+	asian_base_art_7
+	asian_base_art_8
+	asian_base_art_9
+	asian_base_art_10
+	asian_base_art_11
+	asian_base_art_12
+	asian_base_art_13
+	asian_base_art_14
+	asian_base_art_15
+	asian_base_art_16
+	asian_base_art_17
+}
+
+monarch_names = {
+	"Ptolemaios #0" = 60
+	"Ptolemaios #0 Soter" = 40
+	"Ptolemaios #0 Philadelphoi" = 40
+	"Ptolemaios #0 Euergetes" = 40
+	"Ptolemaios #0 Philopator" = 40
+	"Ptolemaios #0 Epiphanes" = 40
+	"Ptolemaios #0 Philometor" = 40
+	"Ptolemaios #0 Euergetes Tryphon" = 40
+	"Ptolemaios #0 Physkon" = 10
+	"Ptolemaios #0 Neos Philopator" = 10
+	"Ptolemaios #0 Memphites" = 10
+	"Ptolemaios #0 Apion" = 10
+	"Ptolemaios #0 Lathyros" = 10
+	"Ptolemaios #0 Philometor Soter" = 40
+	"Ptolemaios #0 Alexandros" = 40
+	"Ptolemaios #0 Neos Dionisios" = 40
+	"Ptolemaios #0 Philopator Philadelphos" = 40
+	"Ptolemaios #0 Auletes" = 10
+	"Ptolemaios #0 Theos Philopator" = 10
+
+	"Lagos" = 0
+	"Lysanios" = 0
+	"Atrometos" = 0
+	"Hippasous" = 0
+	"Dienekes" = 0
+	"Idaios" = 0
+	"Skiron" = 0
+	"Prymneous" = 0
+	"Pyris" = 0
+	"Sosimenes" = 0
+	"Stratios" = 0
+	"Maron" = 0
+	"Xanthippos" = 0
+	"Elys" = 0
+	"Thersites" = 0
+	"Ophelestes" = 0
+
+	"Kleopatra" = -40
+	"Kleopatra #0 Syra" = -10
+	"Kleopatra #0 Selene" = -10
+	"Kleopatra #0 Tryphaina" = -10
+	"Kleopatra #0 Euergetes" = -10
+	"Kleopatra #0 Philometor Soteira" = -10
+	"Kleopatra #0 Kokke" = -10
+	"Kleopatra #0 Thea Philopator" = -10
+	"Berenike" = -30
+	"Berenike #0 Euergetes" = -10
+	"Berenike #0 Kleopatra" = -10
+	"Berenike #0 Epiphaneia" = -10
+	"Arsinoe" = -30
+	"Arsinoe #0 Philadelphoi" = -10
+	"Arsinoe #0 Thea Philopator" = -10
+
+	"Eirene" = -5
+	"Philotera" = -5
+	"Ptolemais" = -5
+	"Lysandra" = -5
+	"Tryphaina" = -5
+	"Eurydike" = -5
+	"Apama" = -5
+	"Stratonice" = -5
+	"Selene" = -5
+}
+
+leader_names = {
+	"of Alexandria" "of Sais" "of Xois" "of Naukratis"
+	"of Thonis" "of Menouthis" "of Pithom" "of Busiris" "of Athribis"
+	"of Leontopolis" "of Pharbaetus" "of Sebennytos" "of Pachnamunis"
+	"of Sile" "of Heliopolis" "of Pelousion" "of Hermopolis" "of Mendes"
+	"of Diospolis" "of Bubastis" "of Tanis" "of Avaris" "of Elephantine"
+	"of Hierakonpolis" "of Latopolis" "of Thebes" "of Aphroditopolis"
+	"of Hermonthis" "of Krokodilopolis" "of Koptos" "of Abydos" "of Athribis"
+	"of Hypselis" "of Amarna" "of Kynopolis"
+	"Pedanius" "Andronicus" "Alexandrinus" "the Younger" "Scholasticus"
+	"" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+ship_names = {
+	Zeus Hera Aphrodite Apollo Ares Artemis Athena Demeter Dionysus Hades Hephaestos Hermes Hestia Poseidon
+	Achlys Aether Aion Ananke Chaos Chronos Erebus Eros Gaia Hemera Hypnos Nemesis Nyx Pontus Tartaros Thalassa
+	Thanatos Uranus Koios Kreios Kronos Hyperion Iapetós Oceanós Phoibe Rhéa Theía Thémis Astería Atlas Aúra
+	Clymene Dione Helios Eurybía Lelantos Leto Menoítios Pállas Perses Prometheus Alcyoneus Chthonius Damysus
+	Mimas Pallas Porphyrion Antaeus Agathodaemon Aegaeon Achelous Benthesikyme Ceto Graeae Delphin Aello
+	Celaeno Aphros Bythos Leucothea Achilles Heracles Aiax Jason Argo Odysseus Orpheus Theseus Aegea Antiope
+	Hippolyta Iphito Marpesia Otrera Penthesilea
+}
+
+army_names = {
+	"Ieros Lochos" "Lochos of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

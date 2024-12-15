@@ -1,0 +1,46 @@
+government = tribal
+add_government_reform = tribal_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = epirot
+religion = greek_religion
+#religious_school = hellenic_type
+capital = 1054
+
+#Fictional
+142.1.1 = {
+	monarch = {
+		name = "Derdas"
+		dynasty = "Elymeitid"
+		death_date = 172.1.1
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+}
+375.1.1 = { primary_culture = macedon }
+394.1.1 = {
+	monarch = {
+		name = "Derdas III"
+		dynasty = "Elymeitid"
+		birth_date = 364.1.1
+		death_date = 400.1.1
+		dip = 3
+		adm = 2
+		mil = 1
+	}
+	heir = {
+		name = "Machatas"
+		dynasty = "Elymeitid"
+		birth_date = 366.1.1
+		death_date = 400.1.1
+		dip = 2
+		adm = 3
+		mil = 1
+	}
+}
+453.1.1 = {
+	add_manpower = 3
+
+}

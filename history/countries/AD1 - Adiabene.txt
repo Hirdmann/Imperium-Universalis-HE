@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = assyrian
+religion = mesopotamian_religion
+capital = 2481
+#religious_school = semitic_type
+
+803.1.1 = { religion = jewish }

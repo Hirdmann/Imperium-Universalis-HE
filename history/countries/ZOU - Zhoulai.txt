@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+technology_group = dongyi1
+religion = wuism
+primary_culture = huaiyi
+capital = 4339
+1.1.1 = {
+	join_league = liyuebadao
+}
+351.1.1 = {
+	leave_league = liyuebadao
+}
+01.1.1 = {
+	monarch = {
+		name = "Feng"  # 封
+		dynasty = "Ying"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}

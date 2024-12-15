@@ -1,0 +1,3 @@
+discovered_by = celtic
+discovered_by = germanic
+discovered_by = britannic

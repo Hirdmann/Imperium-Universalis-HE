@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = sutean
+religion = mesopotamian_religion
+capital = 2357
+fixed_capital = 2357
+
+240.1.1 = {
+	primary_culture = syriac
+	religion = punic_religion
+}
+613.1.1 = {	
+	override_country_name = "HATRA"
+	technology_group = iranian
+	capital = 2480
+	fixed_capital = 2480
+	monarch = {
+		name = "Worod"
+		dynasty = "of Hatra"
+		birth_date = 560.1.1
+		death_date = 650.1.1
+		culture = nabatean
+		religion = arab_religion
+		dip = 3
+		adm = 3
+		mil = 2
+	}
+}

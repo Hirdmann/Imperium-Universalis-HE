@@ -1,0 +1,467 @@
+government = tribal
+add_government_reform = vedic_kingdom_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = magadhi
+religion = sramana
+religious_school = restraint_school
+capital = 3028
+historical_rival = AGA
+historical_rival = PUN
+
+137.1.1 = {
+	monarch = {
+		name = "Pramaganda"
+		dynasty = "Barhadratha"
+		birth_date = 125.1.1
+		death_date = 195.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+192.1.1 = {
+	monarch = {
+		name = "Bhattiya"
+		dynasty = "Haryanka"
+		birth_date = 170.1.1
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+	heir = {
+		name = "Bimbisara"
+		monarch_name = "Bimbisara"
+		dynasty = "Haryanka"
+		birth_date = 192.1.1
+		death_date = 210.1.1
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+207.1.1 = {
+	monarch = {
+		birth_date = 195.1.1
+		death_date = 260.1.1
+		name = "Bimbisara"
+		dynasty = "Haryanka"
+		dip = 5
+		adm = 6
+		mil = 6
+	}
+	add_stability = 1
+}
+
+227.1.1 = {
+	religion = buddhism
+	religious_school = mahasamghika_school
+}
+
+259.1.1 = {
+	add_army_professionalism = 0.1
+	monarch = {
+		name = "Ajatashatru"
+		dynasty = "Haryanka"
+		death_date = 294.1.1
+		dip = 5
+		adm = 5
+		mil = 6
+	}
+	add_stability = 1
+}
+
+274.1.1 = { #Conquest of Kosala
+	government_rank = 4
+}
+
+294.1.1 = {
+	monarch = {
+		name = "Udayin"
+		dynasty = "Haryanka"
+		death_date = 312.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+290.1.1 = {
+	government = monarchy
+	add_government_reform = indian_common_monarchy
+	add_government_reform = cosmopolitanism_reform
+	add_government_reform = heterodoxy_reform
+}
+
+300.1.1 = {
+	capital = 3027
+	religion = jain
+	religious_school = svetambara_school
+}
+
+312.1.1 = {
+	monarch = {
+		name = "Anuruddha"
+		dynasty = "Haryanka"
+		death_date = 315.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+	add_stability = -1
+}
+
+315.1.1 = {
+	monarch = {
+		name = "Munda"
+		dynasty = "Haryanka"
+		death_date = 319.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+	add_stability = -1
+}
+
+319.1.1 = {
+	monarch = {
+		name = "Nagadasaka"
+		dynasty = "Haryanka"
+		death_date = 338.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Shishunagas
+
+338.1.1 = {
+	monarch = {
+		name = "Shishunaga"
+		dynasty = "Shishunaga"
+		#death_date = 294.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+	add_stability = 1
+}
+356.1.1 = {
+	monarch = {
+		name = "Kakavarna Kalashoka"
+		dynasty = "Shishunaga"
+		#death_date = 294.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_stability = -1
+}
+385.1.1 = {
+	add_army_professionalism = 0.2
+	monarch = {
+		name = "Mahanandin"
+		dynasty = "Shishunaga"
+		#death_date = 294.1.1
+		dip = 1
+		adm = 3
+		mil = 3
+	}
+}
+##### Nandas #####
+406.1.1 = {
+	monarch = {
+		name = "Mahapadma"
+		dynasty = "Nanda"
+		death_date = 422.1.1
+		dip = 4
+		adm = 4
+		mil = 6
+	}
+	add_stability = 1
+}
+422.1.1 = {
+	monarch = {
+		name = "Dhana"
+		dynasty = "Nanda"
+		#death_date = 294.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+	add_stability = -1
+}
+##### Mauryans ######
+
+
+429.1.1 = {
+	government_rank = 5
+	monarch = {
+		name = "Chandragupta"
+		dynasty = "Maurya"
+		birth_date = 411.1.1
+		dip = 6
+		adm = 6
+		mil = 6
+	}
+	add_stability = 1
+	queen = {
+		country_of_origin = MAU
+		name = "Durdhara"
+		dynasty = "Nada"
+		birth_date = 427.1.1
+		death_date = 453.1.1
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	#Administrative reforms of Chanakya
+	add_government_reform = empower_kshatriya_reform
+	add_government_reform = dharmasastra_law_reform
+	add_government_reform = dharmic_divinity_reform
+	add_government_reform = senapati_reform
+	add_government_reform = multicultural_armies_reform
+	add_government_reform = unit_division_of_armies
+	add_government_reform = infantry_focus_reform
+	add_government_reform = expanded_ministeris_reform
+	add_government_reform = feudal_federalism_reform
+	add_government_reform = focus_artha_reform
+	add_government_reform = reinforce_danda_niti_reform
+}
+437.1.1 = {
+	heir = {
+		name = "Bindusara"
+		monarch_name = "Bindusara"
+		dynasty = "Maurya"
+		birth_date = 437.1.1
+		death_date = 453.1.1
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+453.1.1 = {
+	religion = ajivika
+	religious_school = samvidha_school
+	monarch = {
+		name = "Bindusara"
+		dynasty = "Maurya"
+		birth_date = 437.1.1
+		death_date = 479.1.1
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+	add_stability = 1
+}
+483.1.1 = {
+	add_ruler_personality = the_great_personality
+	add_army_professionalism = 0.4
+	monarch = {
+		name = "Ashoka"
+		dynasty = "Maurya"
+		birth_date = 447.1.1
+		death_date = 522.1.1
+		dip = 6
+		adm = 6
+		mil = 6
+	}
+	add_stability = 1
+}
+490.1.1 = {
+	religion = buddhism
+	religious_school = ekavyavaharika_school
+
+	set_country_flag = supremacy_dharma_policy_flag
+	add_country_modifier = {
+		name = supremacy_dharma_policy
+		duration = -1
+	}
+}
+522.1.1 = {
+	clear_scripted_personalities = yes
+	monarch = {
+		name = "Dasharatha"
+		dynasty = "Maurya"
+		death_date = 530.1.1
+		dip = 3
+		adm = 3
+		mil = 2
+	}
+	remove_country_modifier = supremacy_dharma_policy
+	clr_country_flag = supremacy_dharma_policy_flag
+}
+530.1.1 = {	
+	religion = jain
+	religious_school = svetambara_school
+	add_stability = -1
+	monarch = {
+		name = "Samprati"
+		dynasty = "Maurya"
+		death_date = 539.1.1
+		dip = 2
+		adm = 2
+		mil = 5
+	}
+}
+539.1.1 = {
+	monarch = {
+		name = "Shalishuka"
+		dynasty = "Maurya"
+		death_date = 552.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+552.1.1 = {
+	monarch = {
+		name = "Devavarman"
+		dynasty = "Maurya"
+		death_date = 559.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+	add_stability = -1
+}
+559.1.1 = {
+	monarch = {
+		name = "Shatadhanvan"
+		dynasty = "Maurya"
+		death_date = 567.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+	add_stability = -1
+}
+567.1.1 = {
+	monarch = {
+		name = "Brihadratha"
+		dynasty = "Maurya"
+		death_date = 569.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+	add_stability = -1
+}
+##### Shunga ####
+569.1.1 = {
+	government_rank = 4
+	add_government_reform = empower_brahmins_reform
+	add_government_reform = orthodoxy_reform
+	monarch = {
+		name = "Pushyamitra"
+		dynasty = "Shunga"
+		death_date = 605.1.1
+		dip = 2
+		adm = 4
+		mil = 6
+	}
+	add_stability = 1
+	religion = hinduism
+	religious_school = vedanta_school
+}
+605.1.1 = {
+	monarch = {
+		name = "Agnimitra"
+		dynasty = "Shunga"
+		death_date = 613.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_stability = 1
+}
+613.1.1 = {
+	monarch = {
+		name = "Vasujyeshtha"
+		dynasty = "Shunga"
+		death_date = 623.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+623.1.1 = {
+	monarch = {
+		name = "Vasumitra"
+		dynasty = "Shunga"
+		death_date = 630.1.1
+		dip = 1
+		adm = 1
+		mil = 0
+	}
+	add_stability = -1
+}
+630.1.1 = {
+	monarch = {
+		name = "Kasiputra Bhagabhadra"
+		dynasty = "Shunga"
+		death_date = 671.1.1
+		dip = 4
+		adm = 2
+		mil = 2
+	}
+}
+671.1.1 = {
+	monarch = {
+		name = "Devabhuti"
+		dynasty = "Shunga"
+		death_date = 679.1.1
+		dip = 0
+		adm = 0
+		mil = 1
+	}
+	add_stability = -1
+}
+679.1.1 = {
+	monarch = {
+		name = "Vasudeva"
+		dynasty = "Kanva"
+		death_date = 690.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_stability = 1
+}
+690.1.1 = {
+	monarch = {
+		name = "Bhumimitra"
+		dynasty = "Kanva"
+		death_date = 704.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+704.1.1 = {
+	monarch = {
+		name = "Narayana"
+		dynasty = "Kanva"
+		death_date = 716.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+716.1.1 = {
+	monarch = {
+		name = "Susarman"
+		dynasty = "Kanva"
+		death_date = 726.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}

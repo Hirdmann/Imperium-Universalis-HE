@@ -1,0 +1,50 @@
+xiongnu_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = XIO 
+		}
+	}
+}
+xiongnu_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = XIO 
+		}
+	}
+}
+xiongnu_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = XIO 
+		}
+	}
+}
+xiongnu_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = XIO 
+		}
+	}
+}
+xiongnu_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = XIO 
+		}
+	}
+}

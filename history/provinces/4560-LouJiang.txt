@@ -1,0 +1,26 @@
+culture = dian
+religion = white_tiger_religion
+base_tax = 0
+base_production = 1
+base_manpower = 3
+native_size = 30
+native_ferocity = 8
+native_hostileness = 10
+discovered_by = xinan1
+discovered_by = south_east_asian
+add_core = DIA
+owner = DIA
+controller = DIA
+645.1.1 = { 
+	controller = ICH
+	add_core = ICH
+	trade_goods = rice
+	is_city = yes
+}
+664.1.1 = { discovered_by = far_eastern }
+974.10.1 = { 
+	controller = SUH
+	add_core = SUH
+}
+discovered_by = bashu1
+is_city = no

@@ -1,0 +1,169 @@
+government = monarchy
+add_government_reform = assyrian_administration_reform
+government_rank = 4
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = assyrian
+religion = mesopotamian_religion
+#religious_school = semitic_type
+add_accepted_culture = hurrian
+capital = 2372
+fixed_capital = 2476
+
+add_army_professionalism = 0.2
+add_yearly_manpower = 1
+historical_friend = SX1
+historical_rival = BAB
+historical_rival = EIM
+historical_rival = URT
+
+1.1.1 = {
+	monarch = {
+		name = "Tukulti-apil-esarra III"
+		dynasty = "Tukultid"
+		death_date = 30.1.1
+		dip = 4
+		adm = 4
+		mil = 6
+	}
+}
+
+30.1.1 = {
+	monarch = {
+		name = "Salmanu-asaredu V"
+		dynasty = "Tukultid"
+		death_date = 35.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+35.1.1 = {
+	monarch = {
+		name = "Sarru-ukin II"
+		dynasty = "bit Riduti"
+		birth_date = 1.1.1
+		death_date = 52.1.1
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+}
+
+
+52.1.1 = {
+	monarch = {
+		name = "Sin-ahhe-eriba I"
+		dynasty = "bit Riduti"
+		birth_date = 12.1.1
+		death_date = 76.1.1
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+}
+
+
+76.1.1 = {
+	monarch = {
+		name = "Assur-aha-iddin I"
+		dynasty = "bit Riduti"
+		birth_date = 44.1.1
+		death_date = 88.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+88.1.1 = {
+	monarch = {
+		name = "Assur-bani-apli I"
+		dynasty = "bit Riduti"
+		birth_date = 72.1.1
+		death_date = 126.1.1
+		dip = 6
+		adm = 6
+		mil = 6
+	}
+}
+
+126.1.1 = {
+	monarch = {
+		name = "Assur-etil-ilani I"
+		dynasty = "bit Riduti"
+		birth_date = 120.1.1
+		death_date = 130.1.1
+		dip = 0
+		adm = 0
+		mil = 0
+	}
+
+	leader = {
+		name = "Salmu-sarri-iqbi"
+		type = general
+		death_date = 146.1.1
+		fire = 4
+		shock = 4
+		manuever = 4
+		siege = 1
+	}
+}
+
+130.1.1 = {
+	add_treasury = -125
+	add_yearly_manpower = -1.5
+	add_stability = -1
+	add_army_professionalism = 0.1
+	add_faction_influence = { faction = fac_monarch influence = 10 }
+	monarch = {
+		name = "Sin-sarru-iskun I"
+		dynasty = "bit Riduti"
+		birth_date = 105.1.1
+		death_date = 142.8.10
+		dip = 3
+		adm = 3
+		mil = 2
+	}
+
+	leader = {
+		name = "Samas-sarru-ibni"
+		type = general
+		death_date = 146.1.1
+		fire = 2
+		shock = 2
+		manuever = 2
+		siege = 0
+	}
+
+}
+142.7.10 = {
+	add_ruler_personality = craven_personality
+	add_war_exhaustion = 5
+	capital = 2372
+	monarch = {
+		name = "Assur-uballit II"
+		dynasty = "bit Riduti"
+		birth_date = 120.1.1
+		death_date = 148.1.1
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+
+	leader = {
+		name = "Nabu-mar-sarri-usur"
+		type = general
+		death_date = 146.1.1
+		fire = 3
+		shock = 3
+		manuever = 3
+		siege = 2
+	}
+}
+613.1.1 = {
+	government = republic
+	government_rank = 1
+	capital = 2479
+}

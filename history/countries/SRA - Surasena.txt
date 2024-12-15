@@ -1,0 +1,260 @@
+government = tribal
+add_government_reform = vedic_kingdom_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = vatsanite
+religion = brahmin
+religious_school = taittiriya_school
+capital = 3079
+
+135.1.1 = {
+	monarch = {
+		name = "Avantiputta"
+		dynasty = "Yadavas"
+		birth_date = 120.1.1
+		death_date = 180.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+142.1.1 = {
+	add_country_modifier = {
+		name = no_trib_vasssalisation_for_now
+		duration = 10950
+	}
+}
+#Fictional
+180.1.1 = {
+	monarch = {
+		name = "Shaurasena I"
+		dynasty = "Yadavas"
+		death_date = 220.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+220.1.1 = {
+	monarch = {
+		name = "Shaurasena II"
+		dynasty = "Yadavas"
+		death_date = 260.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+257.1.1 = {
+	religion = hinduism
+	religious_school = vedanta_school
+}
+
+#Fictional
+260.1.1 = {
+	monarch = {
+		name = "Shaurasena III"
+		dynasty = "Yadavas"
+		death_date = 300.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+300.1.1 = {
+	government = monarchy
+	add_government_reform = indian_common_monarchy
+	#Fictional
+	monarch = {
+		name = "Shaurasena IV"
+		dynasty = "Yadavas"
+		death_date = 340.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+340.1.1 = {
+	monarch = {
+		name = "Shaurasena V"
+		dynasty = "Yadavas"
+		death_date = 380.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+380.1.1 = {
+	monarch = {
+		name = "Shaurasena VI"
+		dynasty = "Yadavas"
+		death_date = 418.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+429.1.1 = {
+	religion = ajivika
+	religious_school = samvidha_school
+}
+
+605.1.1 = {
+	government = theocracy
+	add_government_reform = oligarchy_reform
+	override_country_name = "MATHURA"
+	government_rank = 2
+	religion = hinduism
+	religious_school = mimamsa_school
+	monarch = {
+		name = "Gomitra I"
+		dynasty = "of Mathura"
+		death_date = 614.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+614.1.1 = {
+	monarch = {
+		name = "Gomitra II"
+		dynasty = "of Mathura"
+		death_date = 634.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+634.1.1 = {
+	monarch = {
+		name = "Brahmamitra"
+		dynasty = "of Mathura"
+		death_date = 654.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+654.1.1 = {
+	monarch = {
+		name = "Dridhamitra"
+		dynasty = "of Mathura"
+		death_date = 674.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+674.1.1 = {
+	monarch = {
+		name = "Suryamitra"
+		dynasty = "of Mathura"
+		death_date = 684.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+684.1.1 = {
+	monarch = {
+		name = "Vishnumitra"
+		dynasty = "of Mathura"
+		death_date = 694.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+694.1.1 = {
+	monarch = {
+		name = "Satyamitra"
+		dynasty = "of Mathura"
+		death_date = 704.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+704.1.1 = {
+	monarch = {
+		name = "Seshadatta"
+		dynasty = "of Mathura"
+		death_date = 724.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+724.1.1 = {
+	monarch = {
+		name = "Ramadatta"
+		dynasty = "of Mathura"
+		death_date = 744.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+744.1.1 = {
+	monarch = {
+		name = "Sisuchandradatta"
+		dynasty = "of Mathura"
+		death_date = 764.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+764.1.1 = {
+	monarch = {
+		name = "Sivadatta"
+		dynasty = "of Mathura"
+		death_date = 784.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+784.1.1 = {
+	monarch = {
+		name = "Uttamadatta"
+		dynasty = "of Mathura"
+		death_date = 804.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+804.1.1 = {
+	monarch = {
+		name = "Purushadatta"
+		dynasty = "of Mathura"
+		death_date = 814.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}

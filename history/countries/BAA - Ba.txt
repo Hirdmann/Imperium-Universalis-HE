@@ -1,0 +1,11 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+primary_culture = ba
+religion = white_tiger_religion
+capital = 4246
+technology_group = bashu1
+
+300.1.1 = {
+	#government = despotic_monarchy
+}

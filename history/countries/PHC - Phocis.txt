@@ -1,0 +1,55 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = northwest_doric
+religion = greek_religion
+historical_friend = DAL
+historical_friend = LCO
+historical_friend = DOS
+historical_friend = AIN
+historical_rival = LCS
+historical_rival = THH
+historical_rival = BOE
+capital = 969
+
+300.1.1 = {
+	government = republic
+	add_government_reform = league_reform
+}
+395.1.1 = {
+	monarch = {
+		name = "Philomelos"
+		dynasty = "of Phocis"
+		birth_date = 360.1.1
+		death_date = 400.1.1
+		dip = 3
+		adm = 2
+		mil = 4
+	}
+}
+400.1.1 = {
+	monarch = {
+		name = "Onomarchus"
+		dynasty = "of Phocis"
+		birth_date = 360.1.1
+		death_date = 402.1.1
+		dip = 2
+		adm = 2
+		mil = 4
+	}
+}
+402.1.1 = {
+	monarch = {
+		name = "Phalaikos"
+		dynasty = "of Phocis"
+		birth_date = 360.1.1
+		death_date = 408.1.1
+		dip = 1
+		adm = 1
+		mil = 3
+	}
+}
+
+425.1.1 = { primary_culture = greek }

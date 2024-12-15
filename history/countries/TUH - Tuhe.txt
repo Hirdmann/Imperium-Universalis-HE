@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = steppe_horde_reform
+government_rank = 2
+technology_group = nomad_group
+religion = tengri
+primary_culture = donghu
+capital = 4006
+01.1.1 = {
+	monarch = {
+		name = "MengDi"  # 孟狄
+		dynasty = "Tuhe"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

@@ -1,0 +1,188 @@
+#������
+#κ
+dependency = {
+	subject_type = "ministerial_clan"
+	first = JIN
+	second = WEI
+	start_date = 93.1.1
+	end_date = 351.1.1
+}
+alliance =  {
+	first = WEI
+	second = HAN
+	start_date = 93.1.1
+	end_date = 351.1.1
+}
+alliance =  {
+	first = WEI
+	second = ZHA
+	start_date = 93.1.1
+	end_date = 351.1.1
+}
+alliance =  {
+	first = ZHA
+	second = HAN
+	start_date = 93.1.1
+	end_date = 351.1.1
+}
+#��
+dependency = {
+	subject_type = "ministerial_clan"
+	first = JIN
+	second = ZHA
+	start_date = 1.1.1
+	end_date = 351.1.1
+}
+#��
+dependency = {
+	subject_type = "ministerial_clan"
+	first = JIN
+	second = HAN
+	start_date = 93.1.1
+	end_date = 351.1.1
+}
+#��
+dependency = {
+	subject_type = "ministerial_clan"
+	first = JIN
+	second = FAN
+	start_date = 93.1.1
+	end_date = 264.1.1
+}
+#����
+dependency = {
+	subject_type = "ministerial_clan"
+	first = JIN
+	second = CZH
+	start_date = 93.1.1
+	end_date = 275.1.1
+}
+#��
+dependency = {
+	subject_type = "ministerial_clan"
+	first = JIN
+	second = ZHI
+	start_date = 93.1.1
+	end_date = 301.1.1
+}
+#��
+dependency = {
+	subject_type = "vassal"
+	first = JIN
+	second = RLA
+	start_date = 93.1.1
+	end_date = 204.1.1
+}
+#��
+dependency = {
+	subject_type = "vassal"
+	first = JIN
+	second = CXA
+	start_date = 121.1.1
+	end_date = 158.1.1
+}
+#�S
+dependency = {
+	subject_type = "vassal"
+	first = JIN
+	second = CXI
+	start_date = 103.1.1
+	end_date = 181.1.1
+}
+#���
+dependency = {
+	subject_type = "vassal"
+	first = QII
+	second = LAI
+	start_date = 187.1.1
+	end_date = 217.1.1
+}
+#�������
+#��
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = ZHA
+	start_date = 552.1.1
+	end_date = 974.10.1
+}
+#��
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = YAN
+	start_date = 552.1.1
+	end_date = 974.10.1
+}
+#��
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = QII
+	start_date = 552.1.1
+	end_date = 974.10.1
+}
+#��
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = CHU
+	start_date = 552.1.1
+	end_date = 974.10.1
+}
+#��
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = WUU
+	start_date = 552.1.1
+	end_date = 974.10.1
+}
+#κ
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = WEI
+	start_date = 552.1.1
+	end_date = 974.10.1
+}
+#��
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = HAN
+	start_date = 552.1.1
+	end_date = 974.10.1
+}
+#��
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = LNG
+	start_date = 552.1.1
+	end_date = 974.10.1
+}
+#��ɽ
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = HSW
+	start_date = 552.1.1
+	end_date = 974.10.1
+}
+#�Ž�
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = JJW
+	start_date = 552.1.1
+	end_date = 974.10.1
+}
+#�ٽ�
+dependency = {
+	subject_type = "vassal"
+	first = ICH
+	second = LJW
+	start_date = 552.1.1
+	end_date = 974.10.1
+}

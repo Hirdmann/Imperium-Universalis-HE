@@ -1,0 +1,23 @@
+government = republic
+add_government_reform = greek_polis_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = kerkyran
+religion = greek_religion
+historical_friend = TL1
+historical_friend = ATH
+historical_rival = LI1
+historical_friend = TL1
+capital = 1041
+fixed_capital = 1041
+add_army_professionalism = 0.1
+
+195.1.1 = { add_historical_rival = COR }
+
+327.1.1 = {
+	government = republic
+	add_government_reform = citizens_republic_reform
+}
+
+425.1.1 = { primary_culture = greek }

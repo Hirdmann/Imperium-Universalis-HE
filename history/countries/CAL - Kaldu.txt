@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = assyrian_administration_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = chaldean
+religion = mesopotamian_religion
+#religious_school = semitic_type
+capital = 2507
+
+590.1.1 = {
+	capital = 2507
+	government = monarchy
+	add_government_reform = aristocratic_monarchy_reform
+	override_country_name = "CHARACENE"
+	primary_culture = seleucid
+	religion = greek_religion
+}

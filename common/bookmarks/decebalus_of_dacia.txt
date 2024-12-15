@@ -1,0 +1,8 @@
+bookmark = {
+	name = "DECEBALUS_OF_DACIA_TITLE"
+	desc = "DECEBALUS_OF_DACIA_DESC"
+	date = 840.1.1
+
+	country = DAC
+	country = ROI
+}

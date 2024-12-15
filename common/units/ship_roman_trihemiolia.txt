@@ -1,0 +1,16 @@
+#Galley
+type = galley
+
+trigger = {
+	unit_type = roman
+}
+
+
+hull_size = 23
+base_cannons = 28
+sail_speed = 10
+
+sprite_level = 1
+
+blockade = 15
+sailors = 150

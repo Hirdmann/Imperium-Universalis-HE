@@ -1,0 +1,2099 @@
+
+
+migration_start_effect = {
+	if = {
+		limit = { has_country_flag = won_migration_war_flag }
+		clr_country_flag = won_migration_war_flag
+	}
+	set_country_flag = migratory_attacker_war_flag
+	FROM = { set_country_flag = migratory_defender_war_flag }
+	every_owned_province = { set_province_flag = migration_oldhome_prov_flag }
+	if = {
+		limit = { total_development = 50 }
+		add_country_modifier = {
+			name = migratory_war5_modifier
+			duration = -1
+		}
+		add_manpower = 50
+	}
+	else_if = {
+		limit = { total_development = 40 }
+		add_country_modifier = {
+			name = migratory_war4_modifier
+			duration = -1
+		}
+		add_manpower = 40
+	}
+	else_if = {
+		limit = { total_development = 30 }
+		add_country_modifier = {
+			name = migratory_war3_modifier
+			duration = -1
+		}
+		add_manpower = 30
+	}
+	else_if = {
+		limit = { total_development = 20 }
+		add_country_modifier = {
+			name = migratory_war2_modifier
+			duration = -1
+		}
+		add_manpower = 20
+	}
+	else = {
+		add_country_modifier = {
+			name = migratory_war1_modifier
+			duration = -1
+		}
+		add_manpower = 10
+	}
+	if = {
+		limit = { has_reform = steppe_horde_reform }
+		capital_scope = { build_to_forcelimit = { cavalry = 0.5 infantry = 0.25 artillery = 0.25 } }
+	}
+	else = { capital_scope = { build_to_forcelimit = { infantry = 0.75 artillery = 0.25 } } }
+}
+
+add_legitimacy_equivalent_100_effect = {
+	if = {
+		limit = { government = monarchy }
+		add_legitimacy = 100
+	}
+	else_if = {
+		limit = {
+			OR = {
+				government = republic
+				has_reform = tribal_republic_reform
+			}
+		}
+		add_republican_tradition = 100
+	}
+	else_if = {
+		limit = { government = theocracy }
+		add_devotion = 100
+	}
+	else_if = {
+		limit = {
+			government = tribal
+			NOT = { has_reform = steppe_horde_reform }
+		}
+		add_legitimacy = 100
+	}
+	else_if = {
+		limit = { government = tribal }
+		add_horde_unity = 100
+	}
+}
+
+add_legitimacy_equivalent_10_effect = {
+	if = {
+		limit = { government = monarchy }
+		add_legitimacy = 10
+	}
+	else_if = {
+		limit = {
+			OR = {
+				government = republic
+				has_reform = tribal_republic_reform
+			}
+		}
+		add_republican_tradition = 10
+	}
+	else_if = {
+		limit = { government = theocracy }
+		add_devotion = 10
+	}
+	else_if = {
+		limit = {
+			government = tribal
+			NOT = { has_reform = steppe_horde_reform }
+		}
+		add_legitimacy = 10
+	}
+	else_if = {
+		limit = { government = tribal }
+		add_horde_unity = 10
+	}
+}
+
+stabilize_country_effect = {
+	add_treasury = 180
+	add_manpower = 10
+	add_stability = 1
+	add_absolutism = 10
+	add_legitimacy_equivalent_100_effect = yes
+	capital_scope = {
+		build_to_forcelimit = {
+			infantry = 0.5
+			cavalry = 0.25
+			artillery = 0.25
+		}
+	}
+	if = {
+		limit = { num_of_ports = 1 }
+		random_owned_province = {
+			limit = { has_port = yes }
+			build_to_forcelimit = {
+				heavy_ship = 0.2
+				light_ship = 0.2
+				galley = 0.25
+				transport = 0.35
+			}
+		}
+	}
+}
+
+add_stability_or_adm = {
+	if = {
+		limit = { NOT = { stability = 3 } }
+		add_stability = 1
+	}
+	else = {
+		add_adm_power = 75
+	}
+}
+
+#from ME
+for = {
+	set_variable = {
+		which = ForLoopCounter
+		value = $amount$
+	}
+
+	while = {
+		limit = {
+			check_variable = {
+				which = ForLoopCounter
+				value = 1
+			}
+		}
+		$effect$
+		subtract_variable = {
+			which = ForLoopCounter
+			value = 1
+		}
+	}
+}
+
+increase_elephant_pop = {
+	if = {
+		limit = { has_province_modifier = elp_4 }
+		remove_province_modifier = elp_4
+		add_permanent_province_modifier = { name = elp_5 duration = -1 }
+	}
+	if = {
+		limit = { has_province_modifier = elp_3 }
+		remove_province_modifier = elp_3
+		add_permanent_province_modifier = { name = elp_4 duration = -1 }
+	}
+	if = {
+		limit = { has_province_modifier = elp_2 }
+		remove_province_modifier = elp_2
+		add_permanent_province_modifier = { name = elp_3 duration = -1 }
+	}
+	if = {
+		limit = { has_province_modifier = elp_1 }
+		remove_province_modifier = elp_1
+		add_permanent_province_modifier = { name = elp_2 duration = -1 }
+	}
+}
+
+reduce_elephant_pop = {
+	if = {
+		limit = { has_province_modifier = elp_2 }
+		remove_province_modifier = elp_2
+		add_permanent_province_modifier = { name = elp_1 duration = -1 }
+	}
+	if = {
+		limit = { has_province_modifier = elp_3 }
+		remove_province_modifier = elp_3
+		add_permanent_province_modifier = { name = elp_2 duration = -1 }
+
+	}
+	if = {
+		limit = { has_province_modifier = elp_4 }
+		remove_province_modifier = elp_4
+		add_permanent_province_modifier = { name = elp_3 duration = -1 }
+	}
+	if = {
+		limit = { has_province_modifier = elp_5 }
+		remove_province_modifier = elp_5
+		add_permanent_province_modifier = { name = elp_4 duration = -1 }
+	}
+
+}
+
+###Moved from 02_dev_increase###
+
+
+increase_manpower_dev_effect = {
+
+	if = { 		limit = { has_local_modifier_value = { which = local_build_cost value = 1.00 } } 	owner = { add_mil_power = -300 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.75 } } 	owner = { add_mil_power = -250 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.50 } } 	owner = { add_mil_power = -225 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.40 } } 	owner = { add_mil_power = -200 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.30 } } 	owner = { add_mil_power = -180 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.20 } } 	owner = { add_mil_power = -170 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.10 } } 	owner = { add_mil_power = -160 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.00 } } 	owner = { add_mil_power = -150 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.10 } } 	owner = { add_mil_power = -140 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.20 } } 	owner = { add_mil_power = -130 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.30 } } 	owner = { add_mil_power = -110 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.50 } } 	owner = { add_mil_power = -100 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.80 } } 	owner = { add_mil_power = -50 }	}
+
+	add_base_manpower = 1
+	change_variable = { PS_rur_evtu = 1 }
+}
+
+increase_production_dev_effect = {
+
+	if = { 		limit = { has_local_modifier_value = { which = local_build_cost value = 1.00 } } 	owner = { add_dip_power = -300 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.75 } } 	owner = { add_dip_power = -250 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.50 } } 	owner = { add_dip_power = -225 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.40 } } 	owner = { add_dip_power = -200 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.30 } } 	owner = { add_dip_power = -180 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.20 } } 	owner = { add_dip_power = -170 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.10 } } 	owner = { add_dip_power = -160 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.00 } } 	owner = { add_dip_power = -150 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.10 } } 	owner = { add_dip_power = -140 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.20 } } 	owner = { add_dip_power = -130 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.30 } } 	owner = { add_dip_power = -110 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.50 } } 	owner = { add_dip_power = -100 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.80 } } 	owner = { add_dip_power = -50 }	}
+
+	add_base_production = 1
+	change_variable = { PS_urb_evtu = 1 }
+}
+
+
+increase_tax_dev_effect = {
+	if = { 		limit = { has_local_modifier_value = { which = local_build_cost value = 1.00 } } 	owner = { add_adm_power = -300 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.75 } } 	owner = { add_adm_power = -250 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.50 } } 	owner = { add_adm_power = -225 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.40 } } 	owner = { add_adm_power = -200 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.30 } } 	owner = { add_adm_power = -180 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.20 } } 	owner = { add_adm_power = -170 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.10 } } 	owner = { add_adm_power = -160 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = 0.00 } } 	owner = { add_adm_power = -150 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.10 } } 	owner = { add_adm_power = -140 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.20 } } 	owner = { add_adm_power = -130 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.30 } } 	owner = { add_adm_power = -110 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.50 } } 	owner = { add_adm_power = -100 } }
+	else_if = { limit = { has_local_modifier_value = { which = local_build_cost value = -0.80 } } 	owner = { add_adm_power = -50 }	}
+
+	add_base_tax = 1
+	change_variable = { PS_upp_evtu = 1 }
+}
+
+move_capital_effect = {
+	if = {
+		limit = {
+			is_part_of_hre = yes
+			ROOT = { is_part_of_hre = no }
+		}
+		set_in_empire = no
+		emperor = {
+			add_opinion = {
+				who = ROOT
+				modifier = hre_province_left
+			}
+		}
+		add_imperial_influence = -1
+	}
+	if = {
+		limit = { is_capital = no }
+		ROOT = { set_capital = PREV }
+	}
+}
+
+correct_production_tradegood = {
+	if = {
+		limit = { water_irrigation_workshop_building_trigger = yes }
+		trigger_switch = {
+			on_trigger = has_building
+			craftsman = { 		remove_building = craftsman			add_building = small_water_irrigation }
+			small_workshop = { 	remove_building = small_workshop	add_building = big_water_irrigation }
+			artisan_district = { remove_building = artisan_district add_building = big_estate }
+
+			quarry = { 			remove_building = quarry			add_building = small_water_irrigation }
+			small_mine = { 		remove_building = small_mine		add_building = big_water_irrigation }
+			big_mine = { 		remove_building = big_mine			add_building = big_estate }
+		}
+	}
+	if = {
+		limit = { craftsman_workshop_building_trigger = yes }
+		trigger_switch = {
+			on_trigger = has_building
+			small_water_irrigation = { 	remove_building = small_water_irrigation add_building = craftsman }
+			big_water_irrigation = { remove_building = big_water_irrigation		 add_building = small_workshop }
+			big_estate = { remove_building = big_estate 						 add_building = artisan_district }
+
+			quarry = { 			remove_building = quarry			add_building = craftsman }
+			small_mine = { 		remove_building = small_mine		add_building = small_workshop }
+			big_mine = { 		remove_building = big_mine			add_building = artisan_district }
+		}
+	}
+	if = {
+		limit = { mines_workshop_building_trigger = yes }
+		trigger_switch = {
+			on_trigger = has_building
+			small_water_irrigation = { 	remove_building = small_water_irrigation add_building = quarry }
+			big_water_irrigation = { remove_building = big_water_irrigation		 add_building = small_mine }
+			big_estate = { remove_building = big_estate 						 add_building = big_mine }
+
+			craftsman = { 		remove_building = craftsman			add_building = quarry }
+			small_workshop = { 	remove_building = small_workshop	add_building = small_mine }
+			artisan_district = { remove_building = artisan_district add_building = big_mine }
+		}
+	}
+}
+initialize_media_modifiers = {
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					ai = no
+					NOT = { tag = MDI }
+				}
+				AND = {
+					ai = yes
+					tag = MDI
+				}
+			}
+			NOT = { started_in = 195.1.1 }
+		}
+		set_global_flag = allowed_rise_media_persia_flag
+		ANH = { set_country_flag = unannexable }
+	}
+}
+battle_cult_spreading_arabic_religion_effect = {
+	#Mahrem
+	if = {
+		limit = {
+			ROOT = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_mahrem }
+			}
+			FROM = {
+				OR = {
+					has_unlocked_cult = cult_mahrem
+					AND = {
+						religion = awsan_religion
+						primary_culture = afar
+					}
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.1 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_mahrem }
+			}
+			ROOT = {
+				OR = {
+					has_unlocked_cult = cult_mahrem
+					AND = {
+						religion = awsan_religion
+						primary_culture = afar
+					}
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.1 } }
+	}
+	#Beher
+	if = {
+		limit = {
+			ROOT = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_beher }
+			}
+			FROM = {
+				OR = {
+					has_unlocked_cult = cult_beher
+					AND = {
+						primary_culture = daamat
+						religion = awsan_religion
+					}
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.2 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_beher }
+			}
+			ROOT = {
+				OR = {
+					has_unlocked_cult = cult_beher
+					AND = {
+						primary_culture = daamat
+						religion = awsan_religion
+					}
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.2 } }
+	}
+	#Astar
+	if = {
+		limit = {
+			ROOT = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_astar }
+			}
+			FROM = {
+				OR = {
+					has_unlocked_cult = cult_astar
+					AND = {
+						primary_culture = axumite
+						religion = awsan_religion
+					}
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.3 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_astar }
+			}
+			ROOT = {
+				OR = {
+					has_unlocked_cult = cult_astar
+					AND = {
+						primary_culture = axumite
+						religion = awsan_religion
+					}
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.3 } }
+	}
+	#Talab
+	if = {
+		limit = {
+			ROOT = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_talab }
+			}
+			FROM = {
+				religion = arab_religion
+				has_unlocked_cult = cult_talab
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.4 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_talab }
+			}
+			ROOT = {
+				religion = arab_religion
+				has_unlocked_cult = cult_talab
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.4 } }
+	}
+	#Shamash
+	if = {
+		limit = {
+			ROOT = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_shamash }
+			}
+			FROM = {
+				religion = arab_religion
+				has_unlocked_cult = cult_shamash
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.5 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_shamash }
+			}
+			ROOT = {
+				religion = arab_religion
+				has_unlocked_cult = cult_shamash
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.5 } }
+	}
+	#Wadd
+	if = {
+		limit = {
+			ROOT = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_wadd }
+			}
+			FROM = {
+				religion = arab_religion
+				has_unlocked_cult = cult_wadd
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.6 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_wadd }
+			}
+			ROOT = {
+				religion = arab_religion
+				has_unlocked_cult = cult_wadd
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.6 } }
+	}
+	#Dt-Hmym
+	if = {
+		limit = {
+			ROOT = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_dt_hmym }
+			}
+			FROM = {
+				religion = arab_religion
+				has_unlocked_cult = cult_dt_hmym
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.7 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_dt_hmym }
+			}
+			ROOT = {
+				religion = arab_religion
+				has_unlocked_cult = cult_dt_hmym
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.7 } }
+	}
+	#Manat
+	if = {
+		limit = {
+			ROOT = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_manat }
+			}
+			FROM = {
+				religion = arab_religion
+				has_unlocked_cult = cult_manat
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.8 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_manat }
+			}
+			ROOT = {
+				religion = arab_religion
+				has_unlocked_cult = cult_manat
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.8 } }
+	}
+	#Sin
+	if = {
+		limit = {
+			ROOT = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_sin }
+			}
+			FROM = {
+				religion = arab_religion
+				has_unlocked_cult = cult_sin
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.9 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = arab_religion
+				NOT = { has_unlocked_cult = cult_sin }
+			}
+			ROOT = {
+				religion = arab_religion
+				has_unlocked_cult = cult_sin
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.9 } }
+	}
+	#Dushara
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					religion = arab_religion
+					religion = greek_religion
+					religion = atenism
+					religion = egyptian_religion
+				}
+				NOT = { has_unlocked_cult = cult_dushara }
+			}
+			FROM = {
+				religion = arab_religion
+				has_unlocked_cult = cult_dushara
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.10 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					religion = arab_religion
+					religion = greek_religion
+					religion = atenism
+					religion = egyptian_religion
+				}
+				NOT = { has_unlocked_cult = cult_dushara }
+			}
+			ROOT = {
+				religion = arab_religion
+				has_unlocked_cult = cult_dushara
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.10 } }
+	}
+}
+
+battle_cult_spreading_greek_religion_effect = {
+	#Serapis
+	if = {
+		limit = {
+			ROOT = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_serapis }
+			}
+			FROM = {
+				OR = {
+					religion = egyptian_religion
+					has_unlocked_cult = cult_serapis
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.11 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_serapis }
+			}
+			ROOT = {
+				OR = {
+					religion = egyptian_religion
+					has_unlocked_cult = cult_serapis
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.11 } }
+	}
+	#Zeus Belos
+	if = {
+		limit = {
+			ROOT = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_zeus_belos }
+			}
+			FROM = {
+				OR = {
+					religion = mesopotamian_religion
+					has_unlocked_cult = cult_zeus_belos
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.12 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_zeus_belos }
+			}
+			ROOT = {
+				OR = {
+					religion = mesopotamian_religion
+					has_unlocked_cult = cult_zeus_belos
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.12 } }
+	}
+	#Melicarthus
+	if = {
+		limit = {
+			ROOT = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_melicarthus }
+			}
+			FROM = {
+				OR = {
+					AND = {
+						religion = punic_religion
+						OR = {
+							primary_culture = phoenician
+							primary_culture = punic
+							primary_culture = sardo_phoenician
+							primary_culture = ibero_phoenician
+						}
+					}
+					has_unlocked_cult = cult_melicarthus
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.13 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_melicarthus }
+			}
+			ROOT = {
+				OR = {
+					AND = {
+						religion = punic_religion
+						OR = {
+							primary_culture = phoenician
+							primary_culture = punic
+							primary_culture = sardo_phoenician
+							primary_culture = ibero_phoenician
+						}
+					}
+					has_unlocked_cult = cult_melicarthus
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.13 } }
+	}
+	#Cybele
+	if = {
+		limit = {
+			ROOT = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_cybele }
+			}
+			FROM = {
+				OR = {
+					religion = cybele
+					has_unlocked_cult = cult_cybele
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.14 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_cybele }
+			}
+			ROOT = {
+				OR = {
+					religion = cybele
+					has_unlocked_cult = cult_cybele
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.14 } }
+	}
+	#Mithras
+	if = {
+		limit = {
+			ROOT = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_mithras }
+			}
+			FROM = {
+				OR = {
+					religion = zoroastrianism
+					religion = zurvanism
+					religion = iranian_religion
+					has_unlocked_cult = cult_mithras
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.15 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_mithras }
+			}
+			ROOT = {
+				OR = {
+					religion = zoroastrianism
+					religion = zurvanism
+					religion = iranian_religion
+					has_unlocked_cult = cult_mithras
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.15 } }
+	}
+	#Jewish Dyonisos
+	if = {
+		limit = {
+			ROOT = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_jewish_dyonisos }
+			}
+			FROM = {
+				OR = {
+					religion = samaritan_religion
+					religion = jewish
+					has_unlocked_cult = cult_jewish_dyonisos
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.16 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_jewish_dyonisos }
+			}
+			ROOT = {
+				OR = {
+					religion = samaritan_religion
+					religion = jewish
+					has_unlocked_cult = cult_jewish_dyonisos
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.16 } }
+	}
+	#Belos Kronos
+	if = {
+		limit = {
+			ROOT = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_belos_kronos }
+			}
+			FROM = {
+				OR = {
+					AND = {
+						religion = punic_religion
+						NOT = { primary_culture = phoenician }
+						NOT = { primary_culture = punic }
+						NOT = { primary_culture = ibero_phoenician }
+						NOT = { primary_culture = sardo_phoenician }
+					}
+					has_unlocked_cult = cult_belos_kronos
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.17 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				religion = greek_religion
+				NOT = { has_unlocked_cult = cult_belos_kronos }
+			}
+			ROOT = {
+				OR = {
+					AND = {
+						religion = punic_religion
+						NOT = { primary_culture = phoenician }
+						NOT = { primary_culture = punic }
+						NOT = { primary_culture = ibero_phoenician }
+						NOT = { primary_culture = sardo_phoenician }
+					}
+					has_unlocked_cult = cult_belos_kronos
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.17 } }
+	}
+	#Dyonisus
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					religion = arab_religion
+					religion = greek_religion
+				}
+				NOT = { has_unlocked_cult = cult_dionysus }
+			}
+			FROM = {
+				OR = {
+					religion = greek_religion
+					has_unlocked_cult = cult_dionysus
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.18 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					religion = arab_religion
+					religion = greek_religion
+				}
+				NOT = { has_unlocked_cult = cult_dionysus }
+			}
+			ROOT = {
+				OR = {
+					religion = greek_religion
+					has_unlocked_cult = cult_dionysus
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.18 } }
+	}
+	#Apollo
+	if = {
+		limit = {
+			ROOT = {
+				OR = {
+					religion = arab_religion
+					religion = atenism
+					religion = egyptian_religion
+				}
+				NOT = { has_unlocked_cult = cult_apollo }
+			}
+			FROM = {
+				OR = {
+					religion = greek_religion
+					has_unlocked_cult = cult_apollo
+				}
+			}
+		}
+		ROOT = { country_event = { id = cult_spreading.18 } }
+	}
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					religion = arab_religion
+					religion = atenism
+					religion = egyptian_religion
+				}
+				NOT = { has_unlocked_cult = cult_apollo }
+			}
+			ROOT = {
+				OR = {
+					religion = greek_religion
+					has_unlocked_cult = cult_apollo
+				}
+			}
+		}
+		FROM = { country_event = { id = cult_spreading.19 } }
+	}
+}
+
+add_overlord_harmonized_religions_effect = {
+	if = {
+		limit = {
+			overlord = {
+				has_country_flag = allow_latins_romanization
+			}
+		}
+		set_country_flag = allow_latins_romanization
+	}
+	if = {
+		limit = {
+			overlord = {
+				has_country_flag = allow_italic_romanization
+			}
+		}
+		set_country_flag = allow_italic_romanization
+		clr_country_flag = allow_latins_romanization
+	}
+	if = {
+		limit = {
+			overlord = {
+				has_country_flag = allow_syncreticized_romanization
+			}
+		}
+		set_country_flag = allow_syncreticized_romanization
+		clr_country_flag = allow_italic_romanization
+	}
+	if = {
+		limit = {
+			overlord = {
+				has_country_flag = allow_all_romanization
+			}
+		}
+		set_country_flag = allow_all_romanization
+		clr_country_flag = allow_syncreticized_romanization
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = etruscan_religion
+			}
+		}
+		add_harmonized_religion = etruscan_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = helleno_scythian
+			}
+		}
+		add_harmonized_religion = helleno_scythian
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = minoan_religion
+			}
+		}
+		add_harmonized_religion = minoan_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = greek_religion
+			}
+		}
+		add_harmonized_religion = greek_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = veneti_religion
+			}
+		}
+		add_harmonized_religion = veneti_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = cybele
+			}
+		}
+		add_harmonized_religion = cybele
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = illyrian_religion
+			}
+		}
+		add_harmonized_religion = illyrian_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = thracian
+			}
+		}
+		add_harmonized_religion = thracian
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = etruscan_religion
+			}
+		}
+		add_harmonized_religion = etruscan_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = dacian_religion
+			}
+		}
+		add_harmonized_religion = dacian_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = germanic_religion
+			}
+		}
+		add_harmonized_religion = germanic_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = celtic_religion
+			}
+		}
+		add_harmonized_religion = celtic_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = baltic_religion
+			}
+		}
+		add_harmonized_religion = baltic_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = slavic_religion
+			}
+		}
+		add_harmonized_religion = slavic_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = iberian_religion
+			}
+		}
+		add_harmonized_religion = iberian_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = nuragic_religion
+			}
+		}
+		add_harmonized_religion = nuragic_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = ligurian_religion
+			}
+		}
+		add_harmonized_religion = ligurian_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = numidian_religion
+			}
+		}
+		add_harmonized_religion = numidian_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = egyptian_religion
+			}
+		}
+		add_harmonized_religion = egyptian_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = atenism
+			}
+		}
+		add_harmonized_religion = atenism
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = east_african
+			}
+		}
+		add_harmonized_religion = east_african
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = awsan_religion
+			}
+		}
+		add_harmonized_religion = awsan_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = west_african
+			}
+		}
+		add_harmonized_religion = west_african
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = arab_religion
+			}
+		}
+		add_harmonized_religion = arab_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = punic_religion
+			}
+		}
+		add_harmonized_religion = punic_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = mesopotamian_religion
+			}
+		}
+		add_harmonized_religion = mesopotamian_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = luwian_religion
+			}
+		}
+		add_harmonized_religion = luwian_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = elamite_religion
+			}
+		}
+		add_harmonized_religion = elamite_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = armenian_religion
+			}
+		}
+		add_harmonized_religion = armenian_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = skneli
+			}
+		}
+		add_harmonized_religion = skneli
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = finno_ugric_religion
+			}
+		}
+		add_harmonized_religion = finno_ugric_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = getic_religion
+			}
+		}
+		add_harmonized_religion = getic_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = aquitanian_religion
+			}
+		}
+		add_harmonized_religion = aquitanian_religion
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = jewish_group
+			}
+		}
+		add_harmonized_religion = jewish_group
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = persian_group
+			}
+		}
+		add_harmonized_religion = persian_group
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = brahmin_group
+			}
+		}
+		add_harmonized_religion = brahmin_group
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = test_religion_group
+			}
+		}
+		add_harmonized_religion = test_religion_group
+	}
+	if = {
+		limit = {
+			overlord = {
+				religion = roman_religion
+				has_harmonized_with = chinese_religions
+			}
+		}
+		add_harmonized_religion = chinese_religions
+	}
+}
+
+spawn_small_scaled_rebels = {
+	#always specify type
+	#specify saved_name = <saved_name> if you want to use one of those
+	#specify leader and leader_dynasty if you want to do it that way
+	#otherwise state "no_defined_leader = yes"
+	if = {
+		limit = {
+			owner = {
+				total_development = 1000
+			}
+		}
+		[[no_defined_leader]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+		}
+		]
+		[[leader]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+			leader = $leader$
+			leader_dynasty = $leader_dynasty$
+		}
+		]
+		[[saved_name]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+			leader = $saved_name$
+		}
+		]
+	}
+	else_if = {
+		limit = {
+			owner = {
+				total_development = 500
+			}
+		}
+		[[no_defined_leader]
+		spawn_rebels = {
+			size = 2
+			type = $type$
+		}
+		]
+		[[leader]
+		spawn_rebels = {
+			size = 2
+			type = $type$
+			leader = $leader$
+			leader_dynasty = $leader_dynasty$
+		}
+		]
+		[[saved_name]
+		spawn_rebels = {
+			size = 2
+			type = $type$
+			leader = $saved_name$
+		}
+		]
+	}
+	else_if = {
+		limit = {
+			owner = {
+				total_development = 200
+			}
+		}
+		[[no_defined_leader]
+		spawn_rebels = {
+			size = 1.5
+			type = $type$
+		}
+		]
+		[[leader]
+		spawn_rebels = {
+			size = 1.5
+			type = $type$
+			leader = $leader$
+			leader_dynasty = $leader_dynasty$
+		}
+		]
+		[[saved_name]
+		spawn_rebels = {
+			size = 1.5
+			type = $type$
+			leader = $saved_name$
+		}
+		]
+	}
+	else = {
+		[[no_defined_leader]
+		spawn_rebels = {
+			size = 1
+			type = $type$
+		}
+		]
+		[[leader]
+		spawn_rebels = {
+			size = 1
+			type = $type$
+			leader = $leader$
+			leader_dynasty = $leader_dynasty$
+		}
+		]
+		[[saved_name]
+		spawn_rebels = {
+			size = 1
+			type = $type$
+			leader = $saved_name$
+		}
+		]
+	}
+}
+
+spawn_large_scaled_rebels = {
+	#always specify type
+	#specify saved_name = <saved_name> if you want to use one of those
+	#specify leader and leader_dynasty if you want to do it that way
+	#otherwise state "no_defined_leader = yes"
+	if = {
+		limit = {
+			owner = {
+				total_development = 2000
+			}
+		}
+		[[no_defined_leader]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+		}
+		spawn_rebels = {
+			size = 2
+			type = $type$
+		}
+		]
+		[[leader]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+			leader = $leader$
+			leader_dynasty = $leader_dynasty$
+		}
+		spawn_rebels = {
+			size = 2
+			type = $type$
+		}
+		]
+		[[saved_name]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+			leader = $saved_name$
+		}
+		spawn_rebels = {
+			size = 2
+			type = $type$
+		}
+		]
+	}
+	else_if = {
+		limit = {
+			owner = {
+				total_development = 1000
+			}
+		}
+		[[no_defined_leader]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+		}
+		spawn_rebels = {
+			size = 1
+			type = $type$
+		}
+		]
+		[[leader]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+			leader = $leader$
+			leader_dynasty = $leader_dynasty$
+		}
+		spawn_rebels = {
+			size = 1
+			type = $type$
+		}
+		]
+		[[saved_name]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+			leader = $saved_name$
+		}
+		spawn_rebels = {
+			size = 1
+			type = $type$
+		}
+		]
+	}
+	else_if = {
+		limit = {
+			owner = {
+				total_development = 500
+			}
+		}
+		[[no_defined_leader]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+		}
+		]
+		[[leader]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+			leader = $leader$
+			leader_dynasty = $leader_dynasty$
+		}
+		]
+		[[saved_name]
+		spawn_rebels = {
+			size = 3
+			type = $type$
+			leader = $saved_name$
+		}
+		]
+	}
+	else_if = {
+		limit = {
+			owner = {
+				total_development = 200
+			}
+		}
+		[[no_defined_leader]
+		spawn_rebels = {
+			size = 2.5
+			type = $type$
+		}
+		]
+		[[leader]
+		spawn_rebels = {
+			size = 2.5
+			type = $type$
+			leader = $leader$
+			leader_dynasty = $leader_dynasty$
+		}
+		]
+		[[saved_name]
+		spawn_rebels = {
+			size = 2.5
+			type = $type$
+			leader = $saved_name$
+		}
+		]
+	}
+	else = {
+		[[no_defined_leader]
+		spawn_rebels = {
+			size = 2
+			type = $type$
+		}
+		]
+		[[leader]
+		spawn_rebels = {
+			size = 2
+			type = $type$
+			leader = $leader$
+			leader_dynasty = $leader_dynasty$
+		}
+		]
+		[[saved_name]
+		spawn_rebels = {
+			size = 2
+			type = $type$
+			leader = $saved_name$
+		}
+		]
+	}
+}
+
+base_disable_province = {
+	decolonize = yes
+	set_base_production = 0
+	set_base_tax = 0
+	remove_all_buildings_scripted_effect = yes
+}
+
+colonizable_disable_province = {
+	base_disable_province = yes
+	set_base_manpower = 1
+}
+
+complete_disable_province = {
+	base_disable_province = yes
+	set_base_manpower = 0
+}
+
+colonizable_disable_superregion = {
+	set_global_flag = picked_disable_$superregion$_flag
+	$superregion$ = {
+		limit = {
+			NOT = { owned_by = ROOT }
+		}
+		colonizable_disable_province = yes
+	}
+}
+complete_disable_superregion = {
+	set_global_flag = picked_disable_$superregion$_flag
+	$superregion$ = {
+		complete_disable_province = yes
+	}
+}
+
+country_disable_superregion = {
+	set_global_flag = picked_disable_$superregion$_flag
+	every_country = {
+		limit = {
+			ai = yes
+			capital_scope = {
+				superregion = $superregion$
+			}
+		}
+		compromise_superregions = yes
+		every_owned_province = {
+			colonizable_disable_province = yes
+		}
+	}
+}
+
+compromise_superregion = {
+	if = {
+		limit = {
+			NOT = { has_global_flag = $superregion$_compromised_flag }
+			NOT = { has_global_flag = picked_disable_$superregion$_flag }
+			any_owned_province = { superregion = $superregion$ }
+		}
+		set_global_flag = $superregion$_compromised_flag
+	}
+}
+
+compromise_superregions = {
+	compromise_superregion = { superregion = asia_superregion }
+	compromise_superregion = { superregion = mesopotamia_superregion }
+	compromise_superregion = { superregion = iran_superregion }
+	compromise_superregion = { superregion = china_superregion }
+	compromise_superregion = { superregion = macedonia_superregion }
+	compromise_superregion = { superregion = italia_superregion }
+	compromise_superregion = { superregion = syria_superregion }
+	compromise_superregion = { superregion = eastern_africa_superregion }
+}
+
+set_administrative_stress_modifier = {
+	if = {
+		limit = {
+			OR = {
+				ai = no
+				AND = {
+					is_subject = yes
+					overlord = { ai = no }
+				}
+			}
+		}
+		add_country_modifier = {
+			name = administrative_stress_modifier_$level$
+			duration = -1
+		}
+	}
+	else {
+		add_country_modifier = {
+			name = administrative_stress_ai_modifier_$level$
+			duration = -1
+		}
+	}
+}
+
+remove_administrative_stress_modifiers = {
+	remove_country_modifier = administrative_stress_modifier_1
+	remove_country_modifier = administrative_stress_ai_modifier_1
+	remove_country_modifier = administrative_stress_modifier_2
+	remove_country_modifier = administrative_stress_ai_modifier_2
+	remove_country_modifier = administrative_stress_modifier_3
+	remove_country_modifier = administrative_stress_ai_modifier_3
+	remove_country_modifier = administrative_stress_modifier_4
+	remove_country_modifier = administrative_stress_ai_modifier_4
+	remove_country_modifier = administrative_stress_modifier_5
+	remove_country_modifier = administrative_stress_ai_modifier_5
+	remove_country_modifier = administrative_stress_modifier_6
+	remove_country_modifier = administrative_stress_ai_modifier_6
+	remove_country_modifier = administrative_stress_modifier_7
+	remove_country_modifier = administrative_stress_ai_modifier_7
+	remove_country_modifier = administrative_stress_modifier_8
+	remove_country_modifier = administrative_stress_ai_modifier_8
+	remove_country_modifier = administrative_stress_modifier_9
+	remove_country_modifier = administrative_stress_ai_modifier_9
+	remove_country_modifier = administrative_stress_modifier_10
+	remove_country_modifier = administrative_stress_ai_modifier_10
+	remove_country_modifier = administrative_stress_modifier_11
+	remove_country_modifier = administrative_stress_ai_modifier_11
+	remove_country_modifier = administrative_stress_modifier_12
+	remove_country_modifier = administrative_stress_ai_modifier_12
+}
+
+set_border_garrisons_modifier = {
+	add_army_tradition = -1
+	if = {
+		limit = { has_dlc = "Cradle of Civilization" }
+		add_army_professionalism = -0.01
+	}
+	add_country_modifier = {
+		name = border_garrisons_modifier_$level$
+		duration = -1
+	}
+}
+
+remove_border_garrisons_modifiers = {
+	remove_country_modifier = border_garrisons_modifier_1
+	remove_country_modifier = border_garrisons_modifier_2
+	remove_country_modifier = border_garrisons_modifier_3
+	remove_country_modifier = border_garrisons_modifier_4
+	remove_country_modifier = border_garrisons_modifier_5
+	remove_country_modifier = border_garrisons_modifier_6
+	remove_country_modifier = border_garrisons_modifier_7
+	remove_country_modifier = border_garrisons_modifier_8
+	remove_country_modifier = border_garrisons_modifier_9
+	remove_country_modifier = border_garrisons_modifier_10
+}
+
+set_inefficient_land_organization_modifier = {
+	add_army_tradition = -1
+	if = {
+		limit = { has_dlc = "Cradle of Civilization" }
+		add_army_professionalism = -0.01
+	}
+	add_country_modifier = {
+		name = inefficient_land_organization_modifier_$level$
+		duration = -1
+	}
+}
+
+remove_inefficient_land_organization_modifiers = {
+	remove_country_modifier = inefficient_land_organization_modifier_1
+	remove_country_modifier = inefficient_land_organization_modifier_2
+	remove_country_modifier = inefficient_land_organization_modifier_3
+	remove_country_modifier = inefficient_land_organization_modifier_4
+	remove_country_modifier = inefficient_land_organization_modifier_5
+	remove_country_modifier = inefficient_land_organization_modifier_6
+	remove_country_modifier = inefficient_land_organization_modifier_7
+	remove_country_modifier = inefficient_land_organization_modifier_8
+	remove_country_modifier = inefficient_land_organization_modifier_9
+	remove_country_modifier = inefficient_land_organization_modifier_10
+	remove_country_modifier = inefficient_land_organization_modifier_11
+	remove_country_modifier = inefficient_land_organization_modifier_12
+}
+
+color_subjects_init = {
+	set_global_flag = coloredvassals_yes
+	every_country = {
+		limit = {
+			is_subject = yes
+
+			OR = { #Coloredsubjects 2 settings
+				NOT = {
+					is_subject_of_type = carthage_colony_subject
+					is_subject_of_type = phoenician_colony_subject
+					is_subject_of_type = socii_subject
+				}
+				AND = {
+					OR = {
+						is_subject_of_type = carthage_colony_subject
+						is_subject_of_type = phoenician_colony_subject
+						is_subject_of_type = socii_subject
+					}
+					has_global_flag = coloredvassals_2
+				}
+			}
+
+
+			OR = { #Coloredsubjects 3 settings
+				NOT = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = client_march
+					is_subject_of_type = client_vassal
+				}
+				AND = {
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = client_march
+						is_subject_of_type = client_vassal
+					}
+					has_global_flag = coloredvassals_3
+				}
+			}
+		}
+		set_country_flag = color_changed_overlord
+		clr_country_flag = color_set
+		change_country_color = {
+			country = OVERLORD
+		}
+	}
+}
+
+color_subjects_yearly = {
+	every_country = {
+		if = {
+			limit = {
+				has_country_flag = color_changed_overlord
+			}
+			restore_country_color = yes
+			clr_country_flag = color_changed_overlord
+		}
+		limit = {
+			is_subject = yes
+
+			OR = { #Coloredsubjects 2 settings
+				NOT = {
+					is_subject_of_type = carthage_colony_subject
+					is_subject_of_type = phoenician_colony_subject
+					is_subject_of_type = socii_subject
+				}
+				AND = {
+					OR = {
+						is_subject_of_type = carthage_colony_subject
+						is_subject_of_type = phoenician_colony_subject
+						is_subject_of_type = socii_subject
+					}
+					has_global_flag = coloredvassals_2
+				}
+			}
+
+
+			OR = { #Coloredsubjects 3 settings
+				NOT = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = client_march
+					is_subject_of_type = client_vassal
+				}
+				AND = {
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = client_march
+						is_subject_of_type = client_vassal
+					}
+					has_global_flag = coloredvassals_3
+				}
+			}
+		}
+		set_country_flag = color_changed_overlord
+		clr_country_flag = color_set
+		change_country_color = {
+			country = OVERLORD
+		}
+	}
+}
+
+color_subjects_dep_lost = {
+	FROM = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = color_set }
+			}
+			clr_country_flag = color_changed_overlord
+			restore_country_color = yes
+		}
+	}
+}
+
+color_subjects_dep_gained = {
+	FROM = {
+		if = {
+			limit = {
+				has_global_flag = coloredvassals_yes
+				OR = { #Coloredsubjects 2 settings
+					NOT = {
+						is_subject_of_type = carthage_colony_subject
+						is_subject_of_type = phoenician_colony_subject
+						is_subject_of_type = socii_subject
+					}
+					AND = {
+						OR = {
+							is_subject_of_type = carthage_colony_subject
+							is_subject_of_type = phoenician_colony_subject
+							is_subject_of_type = socii_subject
+						}
+						has_global_flag = coloredvassals_2
+					}
+				}
+
+
+				OR = { #Coloredsubjects 3 settings
+					NOT = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = client_march
+						is_subject_of_type = client_vassal
+					}
+					AND = {
+						OR = {
+							is_subject_of_type = tributary_state
+							is_subject_of_type = client_march
+							is_subject_of_type = client_vassal
+						}
+						has_global_flag = coloredvassals_3
+					}
+				}
+			}
+			set_country_flag = color_changed_overlord
+			clr_country_flag = color_set
+			change_country_color = {
+				country = ROOT
+			}
+		}
+	}
+}
+
+color_subjects_create_sub = {
+	if = {
+		limit = {
+			has_global_flag = coloredvassals_yes
+			OR = { #Coloredsubjects 2 settings
+				NOT = {
+					is_subject_of_type = carthage_colony_subject
+					is_subject_of_type = phoenician_colony_subject
+					is_subject_of_type = socii_subject
+				}
+				AND = {
+					OR = {
+						is_subject_of_type = carthage_colony_subject
+						is_subject_of_type = phoenician_colony_subject
+						is_subject_of_type = socii_subject
+					}
+					has_global_flag = coloredvassals_2
+				}
+			}
+
+
+			OR = { #Coloredsubjects 3 settings
+				NOT = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = client_march
+					is_subject_of_type = client_vassal
+				}
+				AND = {
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = client_march
+						is_subject_of_type = client_vassal
+					}
+					has_global_flag = coloredvassals_3
+				}
+			}
+		}
+		set_country_flag = color_changed_overlord
+		clr_country_flag = color_set
+		change_country_color = {
+			country = FROM
+		}
+	}
+}
+
+annihilate_country_effect = {
+	every_owned_province = {
+		limit = { has_province_flag = annihilate_country_flag }
+		if = {
+			limit = { any_core_country = { NOT = { tag = ROOT } } }
+			random_core_country = {
+				limit = { NOT = { tag = ROOT } }
+				PREV = { cede_province = PREV }
+			}
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					is_city = yes
+					NOT = { owned_by = ROOT }
+				}
+			}
+			random_neighbor_province = {
+				limit = {
+					is_city = yes
+					NOT = { owned_by = ROOT }
+				}
+				owner = { save_event_target_as = new_owner }
+			}
+			if = {
+				limit = { has_saved_event_target = new_owner }
+				cede_province = event_target:new_owner
+			}
+		}
+		else = { decolonize = yes }
+		clr_province_flag = annihilate_country_flag
+	}
+}
+
+date_tick = {
+    export_to_variable = { which = year value = trigger_value:is_year }
+    change_variable = { which = year value = -754 }
+	if = {
+		limit = {
+			NOT = { check_variable = { which = year value = 0 } }
+		}
+		set_variable = { which = year_bc which = year }
+		multiply_variable = { which = year_bc value = -1 }
+	}
+	else = {
+		set_variable = { which = year_bc value = 0 }
+		change_variable = { which = year value = 1 }
+	}
+}

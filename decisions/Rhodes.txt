@@ -1,0 +1,29 @@
+country_decisions = {
+
+	lex_rhodia = {
+        color = { 245 160 60 }
+		potential = {
+			OR = {
+				tag = RHO
+				tag = IAL
+				tag = LIN
+				tag = KME
+			}
+			NOT = { has_country_modifier = lex_rhodia_modifier }
+		}
+		allow = {
+			dip_power = 50
+			dip_tech = 5
+		}
+		effect = {
+			add_dip_power = -50
+			add_country_modifier = {
+				name = lex_rhodia_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

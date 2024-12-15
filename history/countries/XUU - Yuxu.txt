@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = chinese_feudalism_reform
+government_rank = 3
+technology_group = dongyi1
+religion = wuism
+primary_culture = huaiyi
+capital = 4328
+1.1.1 = {
+	set_country_flag = zhuxiatouxian_Zi
+}
+140.1.1 = {
+	monarch = {
+		name = "Meng"  # 孟
+		dynasty = "Ying"  # 嬴
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+195.1.1 = {
+	add_absolutism = 20
+	monarch = {
+		name = "Yi"  # 毅
+		dynasty = "Ying"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}

@@ -1,0 +1,71 @@
+government = tribal
+add_government_reform = tribal_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = balkan
+primary_culture = ardiaei
+religion = illyrian_religion
+#religious_school = balkan_type
+capital = 1045
+
+historical_rival = MAC
+historical_friend = EPI
+historical_friend = EPM
+historical_friend = COC
+historical_rival = LI1
+394.1.1 = {
+	government = monarchy
+	add_government_reform = despotism_reform
+	government_rank = 3
+	monarch = {
+		name = "Grabus"
+		dynasty = "Grabaei"
+		birth_date = 356.1.1
+		death_date = 398.1.1
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+	heir = {
+		name = "Pleuratis I"
+		dynasty = "Grabaei"
+		birth_date = 380.1.1
+		death_date = 418.1.1
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+	add_accepted_culture = doric
+}
+398.1.1 = {
+	monarch = {
+		name = "Pleuratis I"
+		dynasty = "Grabaei"
+		birth_date = 380.1.1
+		death_date = 418.1.1
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+	heir = {
+		name = "Glaucias I"
+		dynasty = "Grabaei"
+		birth_date = 398.1.1
+		death_date = 452.1.1
+		dip = 2
+		adm = 3
+		mil = 4
+	}
+}
+418.1.1 = {
+	monarch = {
+		name = "Glaucias I"
+		dynasty = "Grabaei"
+		birth_date = 398.1.1
+		death_date = 452.1.1
+		dip = 2
+		adm = 3
+		mil = 4
+	}
+	add_accepted_culture = greek
+}

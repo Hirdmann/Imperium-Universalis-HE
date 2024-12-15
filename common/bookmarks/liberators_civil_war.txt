@@ -1,0 +1,23 @@
+bookmark = {
+
+	# Title and Description of Bookmark
+
+	name = "LIBERATORS_CIVIL_WAR_TITLE"
+	desc = "LIBERATORS_CIVIL_WAR_DESC"
+
+	# Date of Bookmark
+
+	date = 710.1.1
+
+	# Camera Center of Focus (Province ID)
+
+	center = 1076
+
+	# List of Countries (NO MORE THAN 8)
+
+	country = R1C
+	country = RRS
+
+	# Optional Effects
+
+}

@@ -1,0 +1,71 @@
+add_core = YAU
+add_core = KUR
+owner = YAU
+controller = YAU
+culture = kurunite
+religion = brahmin
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 4
+trade_goods = horses
+capital = ""
+is_city = yes
+
+247.1.1 = {
+	religion = hinduism
+}
+
+254.1.1 = {
+	base_tax = 1
+	base_production = 2
+	base_manpower = 1
+}
+
+412.1.1 = {
+	add_core = MAU
+	owner = MAU
+	controller = MAU
+}
+
+429.1.1 = { religion = jain }
+
+605.1.1 = {
+	add_core = BH4
+	owner = BH4
+	controller = BH4
+	remove_core = MAU
+	religion = hinduism
+}
+610.1.1 = {
+	add_territorial_core = IGK
+	owner = IGK
+	controller = IGK
+}
+634.1.1 = {
+	add_core = BH4
+	owner = BH4
+	controller = BH4
+}
+
+#discovered_by = roman
+#discovered_by = greek_techgroup
+#discovered_by = punic
+#discovered_by = diadochi
+#discovered_by = iranian
+#discovered_by = balkan
+#discovered_by = celtic
+#discovered_by = germanic
+#discovered_by = north_african
+#discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+#discovered_by = caucaso_anatolian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african

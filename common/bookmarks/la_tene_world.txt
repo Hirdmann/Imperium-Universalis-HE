@@ -1,0 +1,18 @@
+bookmark = {
+	name = "LA_TENE_WORLD_TITLE"
+	desc = "LA_TENE_WORLD_DESC"
+	date = 354.1.1
+
+
+	country = BIZ
+	country = BRX
+	country = AEQ
+	country = SQZ
+	country = CLQ
+	country = BOI
+	country = I17
+	country = SE2
+	country = VIN
+	country = COT
+	country = GAL
+}

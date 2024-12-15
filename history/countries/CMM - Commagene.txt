@@ -1,0 +1,139 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = syro_hittite
+religion = punic_religion
+capital = 2344
+#religious_school = semitic_type
+
+140.1.1 = { #Iron age Syro-Hittite kingdom of Kummuhu
+	override_country_name = "KUMMUHU_SYRIA"
+}
+
+494.1.1 = {
+	primary_culture = sophene
+	add_accepted_culture = syriac
+	religion = zurvanism
+	restore_country_name = yes
+}
+
+553.1.1 = { #Independent and Hellenized Kingdom of Commagene
+	change_graphical_culture = hellenicgfx
+
+	government_rank = 3
+	religion = greek_religion
+
+	monarch = {
+		name = "Ptolemaios"
+		dynasty = "Orontid"
+		death_date = "624.1.1"
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+
+	add_stability = 1
+	add_absolutism = 10
+	add_army_professionalism = 0.6
+}
+
+624.1.1 = {
+	monarch = {
+		name = "Samos II Theosebes Dikaios"
+		dynasty = "Orontid"
+		death_date = "645.1.1"
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+645.1.1 = {
+	monarch = {
+		name = "Mithridates I Kallinikos"
+		dynasty = "Orontid"
+		death_date = "684.1.1"
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+	queen = {
+		country_of_origin = SEL
+		name = "Laodike Thea Philadelphos"
+		dynasty = "Seleucid"
+		birth_date = "632.1.1"
+		death_date = "684.1.1"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+684.1.1 = {
+	monarch = {
+		name = "Antiochos I Theos Dikaios Epiphanes"
+		dynasty = "Orontid"
+		death_date = "716.1.1"
+		dip = 6
+		adm = 4
+		mil = 5
+	}
+
+	add_stability = 1
+	add_prestige = 10
+	add_absolutism = 10
+}
+
+716.1.1 = {
+	monarch = {
+		name = "Mithridates II Antiochos Epiphanes Monokrites"
+		dynasty = "Orontid"
+		death_date = "734.1.1"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+734.1.1 = {
+	monarch = {
+		name = "Mithridates III Antiochos Epiphanes"
+		dynasty = "Orontid"
+		death_date = "742.1.1"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+742.1.1 = {
+	monarch = {
+		name = "Antiochos II Epiphanes"
+		dynasty = "Orontid"
+		death_date = "770.1.1"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+
+	add_stability = -1
+	add_absolutism = -10
+	add_prestige = -10
+}
+
+770.1.1 = { #Last King of Commagene
+	monarch = {
+		name = "Gaios Ioulios Antiochos III Epiphanes"
+		dynasty = "Orontid"
+		birth_date = "770.1.1"
+		death_date = "825.1.1"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+
+	add_stability = -1
+	add_absolutism = -10
+}

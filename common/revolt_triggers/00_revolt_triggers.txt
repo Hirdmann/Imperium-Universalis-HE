@@ -1,0 +1,71 @@
+BHA = {
+	always = no
+}
+
+GOJ = {
+	always = no
+}
+
+CIN = {
+	always = no
+}
+
+SEL = {
+	always = no
+}
+
+ANE = {
+	always = no
+}
+
+EUM = {
+	always = no
+}
+
+PTO = {
+	always = no
+}
+
+ALX = {
+	always = no
+}
+
+THR = {
+	always = no
+}
+
+PSE = {
+	always = no
+}
+
+EIM = {
+	always = no
+}
+
+TAM = {
+	always = no
+}
+
+ANH = {
+	if = {
+		limit = {
+			OR = {
+				exists = PRS
+				exists = PSE
+			}
+		}
+		always = no
+	}
+}
+
+MDI = {
+	culture = medians
+}
+
+ROM = {
+	culture = latin
+}
+
+MAC = {
+	culture_group = hellenic_group
+}

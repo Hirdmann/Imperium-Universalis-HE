@@ -1,0 +1,31 @@
+culture = kra
+religion = southern_mythology
+discovered_by = south_east_asian
+discovered_by = austronesian_tech
+discovered_by = xinan1
+trade_goods = unknown
+base_tax = 0
+base_production = 0
+base_manpower = 3
+native_size = 30
+native_ferocity = 10
+native_hostileness = 10
+497.1.1 = { 
+	add_core = AUC
+	controller = AUC
+	is_city = yes
+	trade_goods = naval_supplies
+}
+574.1.1 = { 
+	add_core = NAN
+	controller = NAN
+}
+642.1.1 = { 
+	controller = ICH
+	add_core = ICH
+}
+974.10.1 = { 
+	controller = SUW
+	add_core = SUW
+}
+is_city = no

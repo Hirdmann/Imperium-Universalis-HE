@@ -1,0 +1,91 @@
+add_core = BYS
+owner = BYS
+controller = BYS
+culture = odrysian
+religion = greek_religion
+hre = no
+base_tax = 1
+base_production = 2
+base_manpower = 1
+trade_goods = cloth
+capital = ""
+is_city = yes
+
+142.8.10 = {
+	add_core = SLB
+	owner = SLB
+	controller = SLB
+	remove_core = BYS
+}
+
+discovered_by = roman
+discovered_by = greek_techgroup
+discovered_by = punic
+discovered_by = diadochi
+#discovered_by = iranian
+discovered_by = balkan
+#discovered_by = celtic
+#discovered_by = germanic
+#discovered_by = north_african
+#discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+#discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+discovered_by = caucaso_anatolian
+discovered_by = caucasian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african
+
+155.1.1 = {
+	culture = doric
+}
+237.1.1 = {
+	add_core = THR
+	discovered_by = iranian
+	owner = THR
+	controller = THR
+	discovered_by = iranian
+}
+258.1.1 = {
+	owner = SLB
+	controller = SLB
+}
+
+264.1.1 = {
+	owner = THR
+	controller = THR
+}
+276.1.1 = {
+	owner = SLB
+	controller = SLB
+	shrine = yes
+}
+425.1.1 = {
+	culture = greek
+}
+415.1.1 = {
+	add_core = BYS
+	owner = BYS
+	controller = BYS
+	border_garrison = yes
+	small_army_camp = yes
+	small_shipyard = yes
+}
+
+477.1.1 = { #outskirts by Bithynia with Celt mercenaries
+	controller = BIT
+}
+478.1.1 = { #outskirts by Bithynia with Celt mercenaries
+	controller = BYS
+}
+823.1.1 = {
+	add_core = ROI
+	owner = ROI
+	controller = ROI
+	remove_core = BYS
+}

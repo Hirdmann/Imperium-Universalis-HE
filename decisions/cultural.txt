@@ -1,0 +1,72 @@
+country_decisions = {
+	########################################
+	#
+	#		Hold a Festival
+	#
+	########################################
+
+	hold_a_festival = {
+		potential = {
+			NOT = { is_tribal = yes }
+			NOT = { government_rank = 2 }
+		}
+		allow = {
+			absolutism = 10
+			years_of_income = 0.2
+			is_month = 8
+			NOT = { is_month = 11 }
+			is_at_war = no
+			has_any_disaster = no
+			NOT = { has_country_modifier = harvest_festivals_hold_modifier }
+		}
+		effect = {
+			add_years_of_income = -0.2
+			add_absolutism = -2
+			add_splendor = 20
+			add_legitimacy = 5
+			add_republican_tradition = 3
+			add_devotion = 3
+			add_prestige = 5
+			add_country_modifier = {
+				name = harvest_festivals_hold_modifier
+				duration = 365
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 0.25 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { dip_power = 100 }
+			}
+		}
+	}
+
+	end_of_carthage_monarchy = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = CAR
+			NOT = { has_reform = carthaginian_republic_reform }
+			OR = {
+				government = monarchy
+				government = theocracy
+			}
+			owns_core_province = 612
+		}
+		allow = {
+			is_year = 240
+			is_subject = no
+			NOT = { mil = 4 }
+			NOT = { absolutism = 30 }
+		}
+		effect = {
+			country_event = {
+				id = carthage.11
+			}
+		}
+	}
+}

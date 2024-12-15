@@ -1,0 +1,22 @@
+bookmark = {
+
+	# Title and Description of Bookmark
+
+	name = "KUSHAN_EMPIRE_TITLE"
+	desc = "KUSHAN_EMPIRE_DESC"
+
+	# Date of Bookmark
+
+	date = 803.1.1
+
+	# Camera Center of Focus (Province ID)
+
+	center = 2820
+
+	# List of Countries (NO MORE THAN 8)
+
+	country = YUE
+
+	# Optional Effects
+
+}

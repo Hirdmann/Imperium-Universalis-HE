@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = afro_arabian
+primary_culture = nabataean
+religion = arab_religion
+#religious_school = semitic_type
+capital = 2530
+
+234.1.1 = {
+	government = monarchy
+	add_government_reform = satrapy_reform
+	government_rank = 3
+	capital = 2265
+}
+
+422.1.1 = {
+	government = republic
+	add_government_reform = league_reform
+}

@@ -1,0 +1,49 @@
+country_decisions = {
+
+	manage_satrapies = {
+		major = yes
+        color = { 245 160 60 }
+		potential = {
+			has_government_attribute = has_satrapy_vassals
+			government_rank = 3
+			is_subject = no
+			adm_tech = 8
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				is_any_satrapal_land_trigger = { owner = "vassal" }
+				is_any_satrapal_land_trigger = { owner = "no" }
+			}
+		}
+		allow = {
+			has_government_attribute = has_satrapy_vassals
+			is_at_war = no
+			has_any_disaster = no
+			custom_trigger_tooltip = {
+				tooltip = manage_satrapies_requirement
+				any_owned_province = {
+					# Searches owned provinces for which the possible satrapy:
+					#  - is a satrapy subject of ROOT
+					#  - does not exist
+					OR = {
+						is_any_satrapal_land_trigger = { owner = "vassal" }
+						is_any_satrapal_land_trigger = { owner = "no" }
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = { id = satrapies.1 }
+		}
+		ai_importance = 100
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { total_development = 1000 }
+				NOT = { governing_capacity_percentage = 0.95 }
+			}
+		}
+	}
+}

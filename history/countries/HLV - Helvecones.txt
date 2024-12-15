@@ -1,0 +1,15 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = germanic
+primary_culture = lugian
+religion = baltic_religion
+#religious_school = north_pagan_type
+capital = 1876
+142.1.1 = {
+	add_accepted_culture = lusatian
+}
+300.1.1 = {
+	religion = germanic_religion
+}

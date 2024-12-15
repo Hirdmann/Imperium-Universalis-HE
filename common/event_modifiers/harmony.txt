@@ -1,0 +1,189 @@
+
+##################################################
+# Harmonized Modifiers
+##################################################
+
+# Religions
+harmonized_west_african = {
+	global_colonial_growth = 10
+	religion = yes
+}
+
+harmonized_ligurian_religion = {
+	defensiveness = 0.1
+	religion = yes
+}
+
+harmonized_minoan_religion = {
+	tolerance_heretic = 1
+	religion = yes
+}
+
+harmonized_etruscan_religion = {
+	tolerance_heretic = 1
+	religion = yes
+}
+
+harmonized_roman_religion = {
+	max_absolutism = 10
+	religion = yes
+}
+
+harmonized_greek_religion = {
+	diplomatic_upkeep = 2
+	religion = yes
+}
+
+harmonized_bosp_religion = {
+	trade_efficiency = 0.1
+	religion = yes
+}
+
+harmonized_cybele = {
+	build_cost = -0.1
+	religion = yes
+}
+
+harmonized_veneti_religion = {
+	cavalry_power = 0.1
+	religion = yes
+}
+
+harmonized_illyrian_religion = {
+	naval_morale = 0.1
+	religion = yes
+}
+
+harmonized_thracian_religion = {
+	free_land_leader_pool = 1
+	religion = yes
+}
+
+harmonized_dacian_religion = {
+	war_exhaustion_cost = -0.2
+	religion = yes
+}
+harmonized_getic_religion = {
+	shock_damage = 0.1
+	religion = yes
+}
+
+harmonized_germanic_religion = {
+	general_cost = -0.15
+	religion = yes
+}
+
+harmonized_celtic_religion = {
+	same_religion_advisor_cost = -0.1
+	religion = yes
+}
+
+harmonized_baltic_religion = {
+	trade_range_modifier = 0.2
+	religion = yes
+}
+
+harmonized_slavic_religion = {
+	global_unrest = -1
+	religion = yes
+}
+
+harmonized_iberian_religion = {
+	global_regiment_cost = -0.10
+	religion = yes
+}
+
+harmonized_nuragic_religion = {
+	loot_amount = 0.33
+	religion = yes
+}
+
+harmonized_numidian_religion = {
+	land_attrition = -0.15
+	religion = yes
+}
+
+harmonized_egyptian_religion = {
+	culture_conversion_cost = -0.15
+	religion = yes
+}
+
+harmonized_east_african = {
+	religious_unity = 0.2
+	religion = yes
+}
+
+harmonized_arab_religion = {
+	cavalry_cost = -0.1
+	religion = yes
+}
+
+harmonized_punic_religion = {
+	naval_forcelimit_modifier = 0.2
+	religion = yes
+}
+
+harmonized_mesopotamian_religion = {
+	yearly_absolutism = 0.1
+	religion = yes
+}
+
+harmonized_luwian_religion = {
+	build_time = -0.1
+	religion = yes
+}
+
+harmonized_elamite_religion = {
+	female_advisor_chance = 0.33
+	religion = yes
+}
+
+harmonized_armenian_religion = {
+	tolerance_heathen = 1
+	religion = yes
+}
+
+harmonized_skneli = {
+	land_maintenance_modifier = -0.1
+	religion = yes
+}
+
+harmonized_torgom = {
+	reinforce_cost_modifier = -0.1
+	religion = yes
+}
+
+harmonized_finno_ugric_religion = {
+	global_supply_limit_modifier = 0.15
+	religion = yes
+}
+
+harmonized_aquitanian_religion = {
+	morale_damage_received = -0.05
+	religion = yes
+}
+
+harmonized_jewish_group = {
+	tolerance_own = 1
+	religion = yes
+}
+
+harmonized_persian_group = {
+	num_accepted_cultures = 2
+	religion = yes
+}
+
+harmonized_brahmin_group = {
+	embracement_cost = -0.15
+	religion = yes
+}
+
+harmonized_eastern_religions = {
+	artillery_power = 0.1
+	religion = yes
+}
+
+harmonized_chinese_religions = {
+	idea_cost = -0.1
+	religion = yes
+}

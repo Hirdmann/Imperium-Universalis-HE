@@ -1,0 +1,615 @@
+special_vassal_type_trigger = {
+	OR = {
+		is_subject_of_type = phoenician_colony_subject
+		is_subject_of_type = league_member_subject
+		is_subject_of_type = sukkal_vassal
+	}
+}
+
+immortal_ruler_trigger = {
+	OR = {
+		ruler_has_personality = immortal_personality
+		ruler_has_personality = roman_king_immortal_personality
+	}
+}
+
+prov_is_accepted_or_primary_culture = {
+	custom_trigger_tooltip = {
+		tooltip = province_is_accepted_or_primary_culture_ct
+		OR = {
+			has_owner_accepted_culture = yes
+			has_owner_culture = yes
+		}
+	}
+}
+
+greek_non_generic_missions_tag_trigger = {
+	OR = {
+		tag = ATH
+		tag = MAC
+		tag = SP1
+		tag = LB1
+		tag = THH
+	}
+}
+
+cypriot_tags_trigger = {
+	OR = {
+		tag = ZY1
+		tag = ZY3
+		tag = ZY4
+		tag = ZY5
+		tag = ZY6
+		tag = ZY7
+		tag = ZY8
+		tag = ZY9
+		tag = ZYP
+		was_tag = ZY1
+		was_tag = ZY3
+		was_tag = ZY4
+		was_tag = ZY5
+		was_tag = ZY6
+		was_tag = ZY7
+		was_tag = ZY8
+		was_tag = ZY9
+		was_tag = ZYP
+	}
+}
+
+has_townhall_building = {
+	OR = {
+		has_building = small_townhall
+		has_building = big_townhall
+		has_building = government_palace
+		has_building = government_district
+	}
+}
+
+has_temple_building = {
+	OR = {
+		has_building = shrine
+		has_building = small_temple
+		has_building = great_temple
+	}
+}
+
+has_road_building = {
+	OR = {
+		has_building = gravel_road
+		has_building = paved_road
+		has_building = imperial_road
+	}
+}
+
+has_army_building = {
+	OR = {
+		has_building = small_army_camp
+		has_building = small_military_settlement
+		has_building = big_military_settlement
+		has_building = small_conscription_center
+	}
+}
+
+has_production_building = {
+	if = {
+		limit = { water_irrigation_workshop_building_trigger = yes }
+		custom_trigger_tooltip = {
+			tooltip = production_building_trigger_ct.1
+			OR = {
+				has_building = small_water_irrigation
+				has_building = big_water_irrigation
+				has_building = big_estate
+			}
+		}
+	}
+	else_if = {
+		limit = { craftsman_workshop_building_trigger = yes }
+		custom_trigger_tooltip = {
+			tooltip = production_building_trigger_ct.2
+			OR = {
+				has_building = craftsman
+				has_building = small_workshop
+				has_building = artisan_district
+			}
+		}
+	}
+	else_if = {
+		limit = { mines_workshop_building_trigger = yes }
+		custom_trigger_tooltip = {
+			tooltip = production_building_trigger_ct.3
+			OR = {
+				has_building = quarry
+				has_building = small_mine
+				has_building = big_mine
+			}
+		}
+	}
+}
+
+has_shipyard_building = {
+	OR = {
+		has_building = small_shipyard
+		has_building = big_shipyard
+	}
+}
+
+has_harbor_building = {
+	OR = {
+		has_building = small_harbor
+		has_building = big_harbor
+		has_building = harbor_district
+	}
+}
+
+has_fort_trigger = {
+	OR = {
+		has_building = fortified_mound
+		has_building = small_city_walls
+		has_building = large_city_walls
+		has_building = fortress_building
+	}
+}
+
+is_roman_country_trigger = {
+	OR = {
+		tag = ROM
+		tag = ROI
+		tag = R1C
+		tag = R1O
+		tag = R1R
+		tag = R1A
+		tag = R1L
+		tag = RRS
+		tag = RRO
+	}
+}
+
+is_tribal_federation_trigger = {
+	OR = {
+		has_reform = tribal_federation_reform
+		has_reform = iberian_society_reform
+		has_reform = pastoral_tribe_reform
+		has_reform = anatolian_tribal_federation_reform
+		has_reform = italic_tribal_federation_reform
+		has_reform = veneti_tribal_federation_reform
+	}
+}
+
+indian_tribal_trigger = {
+	OR = {
+		has_reform = mleccha_desa_tribal_reform
+		has_reform = kirata_kingdom_reform_tribal
+		has_reform = vedic_kingdom_reform
+		has_reform = mleccha_kingdom_reform
+		has_reform = dravidian_tribe_reform
+		has_reform = indianized_dravidian_tribe_reform
+		has_reform = tamil_tribe_reform
+		has_reform = tamil_crowned_king_tribal_reform
+	}
+}
+
+is_monarchical_tribe = {
+	OR = {
+		has_reform = tribal_federation_reform
+		has_reform = tribal_kingdom_reform
+		has_reform = iberian_society_reform
+		has_reform = germanic_tribal_kingdom_reform
+		has_reform = slavic_tribe_reform
+		has_reform = iranian_tribal_coalition_reform
+		has_reform = anatolian_tribal_federation_reform
+		has_reform = italic_tribal_federation_reform
+		has_reform = veneti_tribal_federation_reform
+		has_reform = tibetan_tribe_reform
+		has_reform = korean_tribal_statelet_reform
+		has_reform = korean_samhan_confederation_reform
+		has_reform = mleccha_desa_tribal_reform
+		has_reform = kirata_kingdom_reform_tribal
+		has_reform = vedic_kingdom_reform
+		has_reform = mleccha_kingdom_reform
+		has_reform = dravidian_tribe_reform
+		has_reform = indianized_dravidian_tribe_reform
+		has_reform = tamil_tribe_reform
+		has_reform = tamil_crowned_king_tribal_reform
+	}
+}
+
+is_republican_tribe = {
+	OR = {
+		has_reform = tribal_republic_reform
+	}
+}
+
+has_land_reclamation_modifier_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = IU_has_land_reclamation_modifier_tooltip
+		OR = {
+			has_province_modifier = land_reclamation_1
+			has_province_modifier = land_reclamation_2
+			has_province_modifier = land_reclamation_3
+			has_province_modifier = land_reclamation_4
+			has_province_modifier = land_reclamation_5
+		}
+	}
+}
+
+has_elephant_modifier_trigger = {
+	OR = {
+		has_province_modifier = elp_1
+		has_province_modifier = elp_2
+		has_province_modifier = elp_3
+		has_province_modifier = elp_4
+		has_province_modifier = elp_5
+	}
+}
+
+
+elephant_region = {
+	OR = {
+		continent = africa
+		superregion = dakshinapatha_superregion
+		superregion = uttarapatha_superregion
+		superregion = syria_superregion
+		superregion = mesopotamia_superregion
+		superregion = china_superregion
+		superregion = suvarnabhumi_superregion
+		superregion = iran_superregion
+		region = parthia_region
+		region = ariana_region
+		region = baktria_region
+		region = transoxiana_region
+	}
+}
+
+is_farmland_terrain = {
+	OR = {
+		has_terrain = farmlands
+		has_terrain = floodplains
+		has_terrain = nile_plain
+		has_terrain = mesopotamian_plain
+		has_terrain = alluvial_plain
+		has_terrain = rome_t
+		has_terrain = carthage_t
+		has_terrain = athen_t
+		has_terrain = neapel_t
+		has_terrain = syracuse_t
+		has_terrain = byzantion_t
+		has_terrain = milet_t
+		has_terrain = ephesus_t
+		has_terrain = corinth_t
+		has_terrain = sardis_t
+		has_terrain = susa_t
+		has_terrain = tyros_t
+		has_terrain = babil_t
+		has_terrain = uruk_t
+		has_terrain = memphis_t
+		has_terrain = waset_t
+		has_terrain = elephantine_t
+		has_terrain = halicarnassus_t
+		has_terrain = argos_t
+	}
+}
+
+water_irrigation_workshop_building_trigger = {
+	OR = {
+		trade_goods = grain
+		trade_goods = wine
+		trade_goods = spices
+		trade_goods = fruits
+		trade_goods = olive
+		trade_goods = rice
+		trade_goods = tea_good
+		trade_goods = horses
+		trade_goods = honey
+		trade_goods = olibanum
+		trade_goods = herbs
+		trade_goods = cotton
+		trade_goods = opium
+		trade_goods = sugar
+	}
+}
+
+craftsman_workshop_building_trigger = {
+	OR = {
+		trade_goods = wool
+		trade_goods = cloth
+		trade_goods = fish
+		trade_goods = fur
+		trade_goods = naval_supplies
+		trade_goods = amber
+		trade_goods = paper
+		trade_goods = ceramic
+		trade_goods = meat_animals
+		trade_goods = dyes
+		trade_goods = silk
+		trade_goods = glas
+		trade_goods = pearls
+		trade_goods = exotic_animals
+		trade_goods = ivory
+		trade_goods = tar_good
+		trade_goods = metalware
+	}
+}
+
+mines_workshop_building_trigger = {
+	OR = {
+		trade_goods = salt
+		trade_goods = copper
+		trade_goods = iron
+		trade_goods = marble
+		trade_goods = lead
+		trade_goods = tin
+		trade_goods = gems
+		trade_goods = silver
+		trade_goods = gold
+		trade_goods = jade
+	}
+}
+
+unreformed_pagan_religious_group_trigger = {
+	OR = {
+		religion_group = pagan_group
+		religion_group = eastern_religions
+		religion = dravidian
+		religion = mleccha_religion
+		religion = sramana
+		religion = brahmin
+		religion = iranian_religion
+		religion = sarmatian_religion
+		religion = scythian_religion
+		religion = tocharian_religion
+	}
+}
+
+cretan_tags_trigger = {
+	OR = {
+		tag = PRA
+		tag = POL
+		tag = GOR
+		tag = KNO
+		tag = HIE
+		tag = RHI
+		tag = OLU
+		tag = ITS
+		tag = PR1
+	}
+}
+
+chinese_tech_groups_trigger = {
+	OR = {
+		technology_group = far_eastern
+		technology_group = dongyi1
+		technology_group = wuyue1
+		technology_group = bashu1
+		technology_group = xinan1
+		technology_group = weiguo
+		technology_group = qinguo
+		technology_group = qiguo
+		technology_group = jingchu
+		technology_group = hanguo
+		technology_group = yanguo
+		technology_group = zhaoguo
+	}
+}
+
+neither_tribal_nor_native_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_tribal_pastoral_tooltip
+		OR = {
+			government = monarchy
+			government = republic
+			government = theocracy
+		}
+	}
+}
+
+tribal_or_native_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = is_tribal_pastoral_tooltip
+		OR = {
+			government = tribal
+			government = native
+			has_reform = tribal_federation_reform
+			has_reform = pastoral_tribe_reform
+			has_reform = steppe_horde_reform
+			has_reform = scythian_clan_reform
+			has_reform = iberian_society_reform
+			has_reform = anatolian_tribal_federation_reform
+			has_reform = italic_tribal_federation_reform
+			has_reform = veneti_tribal_federation_reform
+			has_reform = tribal_republic_reform
+			has_reform = korean_tribal_statelet_reform
+		}
+	}
+}
+
+new_age_collapse_1_trigger = {
+	AND = {
+		current_age = age_of_empires
+		total_development = 800
+	}
+}
+
+new_age_collapse_2_trigger = {
+	AND = {
+		current_age = archaic_age
+		total_development = 1600
+	}
+}
+
+new_age_collapse_3_trigger = {
+	AND = {
+		current_age = classical_age
+		total_development = 2600
+	}
+}
+
+new_age_collapse_4_trigger = {
+	AND = {
+		current_age = hellenistic_age
+		total_development = 4000
+	}
+}
+
+new_age_collapse_5_trigger = {
+	AND = {
+		current_age = late_hellenistic_age
+		total_development = 6000
+	}
+}
+
+new_age_collapse_6_trigger = {
+	AND = {
+		current_age = imperial_age
+		total_development = 8000
+	}
+}
+
+new_age_collapse_7_trigger = {
+	AND = {
+		current_age = early_migration_period
+		total_development = 11000
+	}
+}
+
+generic_indian_ideas_trigger = {
+	NOT = { tag = BHA }
+	NOT = { tag = AVA }
+	NOT = { tag = MAU }
+	NOT = { tag = GAN }
+	NOT = { tag = BAH }
+	NOT = { tag = KSI }
+	NOT = { tag = SRA }
+	NOT = { tag = ABH }
+	NOT = { tag = ASH }
+	NOT = { tag = MLI }
+	NOT = { tag = MLV }
+	NOT = { tag = YAU }
+	NOT = { tag = PUN }
+	NOT = { tag = PLI }
+	NOT = { tag = SIV }
+	NOT = { tag = SIN }
+	NOT = { tag = SAU }
+	NOT = { tag = NIS }
+	NOT = { tag = VAT }
+	NOT = { tag = CHD }
+	NOT = { tag = TRG }
+	NOT = { tag = MAT }
+	NOT = { tag = NU2 }
+	NOT = { tag = PNC }
+	NOT = { tag = KOS }
+	NOT = { tag = DV6 }
+	NOT = { tag = SKA }
+	NOT = { tag = KOL }
+	NOT = { tag = DKS }
+	NOT = { tag = VJJ }
+	NOT = { tag = VDH }
+	NOT = { tag = NSH }
+	NOT = { tag = KNT }
+	NOT = { tag = DSR }
+	NOT = { tag = KAH }
+	NOT = { tag = ANU }
+	NOT = { tag = AMV }
+	NOT = { tag = DDK }
+	NOT = { tag = SAL }
+	NOT = { tag = MUL }
+	NOT = { tag = KSU }
+	NOT = { tag = UTK }
+	NOT = { tag = VID }
+	NOT = { tag = DV9 }
+	NOT = { tag = KEK }
+	NOT = { tag = KMP }
+	NOT = { tag = AGA }
+	NOT = { tag = HEH }
+	NOT = { tag = KUR }
+	NOT = { tag = KAL }
+	NOT = { primary_culture = kambojas }
+	NOT = { primary_culture = sinhala }
+	NOT = { primary_culture = saurashtranite }
+	NOT = { primary_culture = konkani }
+	NOT = { primary_culture = vanganite }
+	NOT = { primary_culture = saurashtranite }
+}
+
+media_historical_claim_trigger = {
+	capital_scope = {
+		OR = {
+			superregion = iran_superregion
+			superregion = armenia_superregion
+			superregion = mesopotamia_superregion
+			superregion = iran_superregion
+			superregion = parthia_superregion
+			region = baktria_region
+			region = transoxiana_region
+			region = cappadocia_region
+			region = cilicia_region
+		}
+	}
+}
+
+persia_historical_claim_trigger = {
+	capital_scope = {
+		OR = {
+			superregion = iran_superregion
+			superregion = armenia_superregion
+			superregion = mesopotamia_superregion
+			superregion = iran_superregion
+			superregion = parthia_superregion
+			superregion = sakastan_superregion
+			superregion = syria_superregion
+			superregion = asia_superregion
+			region = thracia_region
+			region = gandhara
+			region = sindhu_region
+			region = arabia_petrea_region
+			region = lower_egypt_region
+			region = upper_egypt_region
+		}
+	}
+}
+
+no_satrap_trigger = {
+	$tag$ = { exists = no }
+}
+
+vassal_satrap_trigger = {
+	$tag$ = {
+		exists = yes
+		is_subject_of = ROOT
+		is_subject_of_type = satrapy_vassal
+	}
+}
+
+is_satrapal_land_trigger = {
+	$owner$_satrap_trigger = { tag = $tag$ }
+	province_group = $province_group$
+}
+
+is_any_satrapal_land_trigger = {
+	OR = {
+		is_satrapal_land_trigger = { owner = $owner$ tag = PS1 province_group = athura_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = PS2 province_group = transeuphratia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = PS3 province_group = hellespontine_phrygia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = PS4 province_group = indus_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = PS5 province_group = amyrgoi_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = ION province_group = ionia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = PHO province_group = phoenicia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = DAH province_group = dahae_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = ARI province_group = ariana_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = GED province_group = gedrosia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = DRN province_group = drangiana_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = ARA province_group = arachosia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = MRG province_group = margiana_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = SOG province_group = sogdiana_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = BAK province_group = bactria_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = KHR province_group = chorasmia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = GAN province_group = gandhara_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = PHR province_group = phrygia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = CRI province_group = caria_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = KPP province_group = cappadocia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = KIL province_group = cilicia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = IBE province_group = iberia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = ARM province_group = armenia_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = NAB province_group = nabataea_province_group }
+		is_satrapal_land_trigger = { owner = $owner$ tag = THR province_group = thracia_province_group }
+	}
+}

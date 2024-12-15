@@ -1,0 +1,8 @@
+bookmark = {
+	name = "ALLIANCE_OF_FIVE_AGAINST_QIN_TITLE"
+	desc = "ALLIANCE_OF_FIVE_AGAINST_QIN_DESC"
+	date = 435.1.1
+
+
+	country = QIN
+}

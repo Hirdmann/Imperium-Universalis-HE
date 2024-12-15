@@ -1,0 +1,59 @@
+native_size = 35
+native_ferocity = 9
+native_hostileness = 7
+culture = western_hallstat
+religion = celtic_religion
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 4
+trade_goods = unknown
+capital = ""
+center_of_trade = 2
+142.8.10 = {
+	owner = VGI
+	controller = VGI
+	add_core = VGI
+	trade_goods = ceramic
+	is_city = yes
+}
+323.1.1 = {
+	culture = vindelici
+}
+524.1.1 = {
+	culture = irminonic
+	religion = germanic_religion
+}
+696.1.1 = {
+	owner = NRS
+	controller = NRS
+	add_core = NRS
+}
+748.1.1 = {
+	owner = HEM
+	controller = HEM
+	add_core = HEM
+	culture = irminonic
+	religion = germanic_religion
+}
+#discovered_by = roman
+#discovered_by = greek_techgroup
+#discovered_by = punic
+#discovered_by = diadochi
+#discovered_by = iranian
+#discovered_by = balkan
+discovered_by = celtic
+discovered_by = germanic
+#discovered_by = north_african
+#discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+#discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+#discovered_by = caucaso_anatolian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african

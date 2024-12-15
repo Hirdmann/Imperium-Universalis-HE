@@ -1,0 +1,30 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = celtic
+primary_culture = western_hallstat
+religion = celtic_religion
+#religious_school = north_pagan_type
+capital = 8664
+#151.1.1 = { set_global_flag = trade_with_etruscans_started }
+#192.1.1 = { set_global_flag = iron_plow_celtic }
+200.1.1 = { set_global_flag = gauls_settled }
+#205.1.1 = { set_global_flag = hallstat_expansion }
+270.1.1 = {
+	set_global_flag = la_tene_start
+	primary_culture = la_tene_celtic
+}
+300.1.1 = {
+	set_global_flag = hallstat_end
+}
+323.1.1 = {
+	set_global_flag = la_tene_invasions_start
+	set_global_flag = la_tene_expansion_core
+	set_global_flag = la_tene_expansion_south
+	primary_culture = belgae
+}
+352.1.1 = {
+	set_global_flag = la_tene_expansion_newtags_gaul
+	set_global_flag = la_tene_expansion_armorica
+}

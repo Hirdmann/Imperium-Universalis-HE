@@ -1,0 +1,44 @@
+#Adds the Invasion cb against target
+justify_invasion = {
+	category = covert
+	alert_index = 11
+	alert_tooltip = justify_invasion_alert_tooltip.1
+
+	require_acceptance = no
+	is_visible = {
+		NOT = { FROM = { is_subject_of = ROOT } }
+	}
+	is_allowed = {
+		has_spy_network_in = {
+			who = FROM
+			value = 90
+		}
+		is_subject = no
+		is_at_war = no
+		NOT = { government_rank = 4 }
+		NOT = { total_development = 800 }
+		NOT = { total_development = FROM }
+		FROM = {
+			is_subject = no
+			is_neighbor_of = ROOT
+			total_development = 400
+			government_rank = 3
+		}
+	}
+	on_accept = {
+		add_casus_belli = {
+			type = cb_invasion
+			target = FROM
+		}
+		add_spy_network_in = {
+            who = FROM
+            value = -90
+        }
+	}
+
+	ai_will_do = {
+		is_neighbor_of = FROM
+		NOT = { alliance_with = FROM }
+		NOT = { marriage_with = FROM }
+	}
+}

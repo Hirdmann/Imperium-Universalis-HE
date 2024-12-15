@@ -1,0 +1,40 @@
+culture = yangyue
+religion = wuism
+owner = YYG
+controller = YYG
+add_core = YYG
+trade_goods = rice
+is_city = yes
+base_production = 1
+base_manpower = 4
+discovered_by = south_east_asian
+436.1.1 = { 
+	discovered_by = CHU
+}
+536.1.1 = { 
+	controller = QIN
+	trade_goods = rice
+	is_city = yes
+}
+545.10.1 = { 
+	controller = REB
+}
+546.6.1 = { 
+	controller = CHU
+}
+548.2.1 = { 
+	controller = JJW
+	add_core = JJW
+}
+549.11.1 = { 
+	controller = XCW
+	add_core = XCW
+}
+551.6.1 = { 
+	controller = JJW
+}
+974.10.1 = { 
+	controller = SUW
+	add_core = SUW
+}
+discovered_by = xinan1

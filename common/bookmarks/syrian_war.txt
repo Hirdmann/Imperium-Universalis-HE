@@ -1,0 +1,12 @@
+bookmark = {
+	name = "SYRIAN_WAR_TITLE"
+	desc = "SYRIAN_WAR_DESC"
+	date = 563.1.1
+
+	country = ROM
+	country = SEL
+	country = ACH
+	country = PER
+	country = AET
+	country = MAC
+}

@@ -1,0 +1,44 @@
+owner = YEE
+controller = YEE
+add_core = YEE
+culture = ye
+religion = muism
+capital = ""
+trade_goods = fish
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 3
+is_city = yes
+
+discovered_by = korean
+discovered_by = dongyi1
+
+354.1.1 = {
+	add_core = GOJ
+	owner = GOJ
+	controller = GOJ
+}
+459.1.1 = { religion = legalism }
+
+646.1.1 = {
+	add_core = YAN
+	owner = YAN
+	controller = YAN
+	remove_core = GOJ
+}
+
+
+974.10.1 = {
+	owner = CAO
+	controller = CAO
+	add_core = CAO
+}
+
+1066.1.1 = {
+	add_core = GOG
+	owner = GOG
+	controller = GOG
+	culture =  goguryeo
+	remove_core = YAN
+}

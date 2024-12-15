@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = hispano_celtic
+primary_culture = vettones
+religion = celtic_religion
+#religious_school = north_pagan_type
+capital = 187
+
+
+
+521.1.1 = {
+	override_country_name = "Vettones"
+	historical_friend = LUS
+}
+615.1.1 = {
+	restore_country_name = yes
+}

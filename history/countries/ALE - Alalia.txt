@@ -1,0 +1,20 @@
+government = theocracy
+add_government_reform = etruscan_city_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = ionic
+religion = greek_religion
+#religious_school = hellenic_type
+historical_friend = KYM
+capital = 121
+fixed_capital = 121
+
+205.1.1 = {
+	historical_friend = ETR
+	technology_group = roman
+	change_unit_type = roman
+	primary_culture = etruscan
+	religion = etruscan_religion
+	change_graphical_culture = italicgfx
+}

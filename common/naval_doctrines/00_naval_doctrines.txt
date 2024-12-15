@@ -1,0 +1,110 @@
+pirate_fleet = {
+	can_select = {
+		is_primitive = no
+	}
+
+	country_modifier = {
+		privateer_efficiency = 0.25
+	}
+	effect = {}
+	removed_effect = {}
+
+	button_gfx = 1
+}
+
+private_financing = {
+
+	can_select = {
+		is_primitive = no
+	}
+
+	country_modifier = {
+		global_ship_cost = -0.1
+	}
+	effect = {}
+	removed_effect = {}
+
+	button_gfx = 2
+}
+
+merchant_fleet = {
+
+	can_select = {
+		is_primitive = no
+	}
+
+	country_modifier = {
+		global_ship_trade_power = 0.15
+	}
+	effect = {}
+	removed_effect = {}
+
+	button_gfx = 3
+}
+
+boarding_devices = {
+
+	can_select = {
+		is_primitive = no
+	}
+
+	country_modifier = {
+		capture_ship_chance = 0.15
+	}
+	effect = {}
+	removed_effect = {}
+
+	button_gfx = 4
+}
+
+hellenic_sailors = {
+	can_select = {
+		culture_group = hellenic_group
+	}
+	country_modifier = {
+		global_naval_engagement_modifier = 0.1
+	}
+	effect = {}
+	removed_effect = {}
+
+	button_gfx = 5
+}
+
+phoenician_navigation = {
+	can_select = {
+		OR = {
+			primary_culture = phoenician
+			primary_culture = punic
+		}
+	}
+	country_modifier = {
+		naval_attrition = -0.3
+		sailor_maintenance_modifer = -0.3
+	}
+	effect = {}
+	removed_effect = {}
+
+	button_gfx = 6
+}
+
+egyptian_river_fleet = {
+	can_select = {
+		OR = {
+			culture_group = egyptian_group
+			capital_scope = {
+				superregion = eastern_africa_superregion
+			}
+		}
+	}
+	country_modifier = {
+		galley_cost = -0.2
+		galley_power = -0.1
+		transport_cost = -0.33
+		transport_power = -0.1
+		movement_speed_onto_off_boat_modifier = 0.15
+	}
+	effect = {}
+	removed_effect = {}
+
+	button_gfx = 4
+}

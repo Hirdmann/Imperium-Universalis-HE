@@ -1,0 +1,8 @@
+bookmark = {
+	name = "NANDA_EMPIRE_TITLE"
+	desc = "NANDA_EMPIRE_DESC"
+	date = 409.1.1
+
+
+	country = MAU
+}

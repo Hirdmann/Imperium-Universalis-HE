@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = steppe_horde_reform
+government_rank = 1
+technology_group = dongyi1
+religion = wuism
+primary_culture = laiyi
+capital = 4282
+1.1.1 = {
+	set_country_flag = zhuxiatouxian_Zi
+}
+140.1.1 = {
+	monarch = {
+		name = "GeLu"  # 葛�?�
+		dynasty = "Ying"  # ¿嬴
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

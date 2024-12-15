@@ -1,0 +1,116 @@
+add_core = BOV
+owner = BOV
+controller = BOV
+culture = latin
+religion = roman_religion
+hre = no
+base_tax = 1
+base_production = 3
+base_manpower = 2
+trade_goods = tar_good
+capital = ""
+is_city = yes
+
+small_city_walls = yes
+small_temple = yes
+small_harbor = yes
+add_permanent_province_modifier = {
+	name = lavinium_shine_venus
+	duration = -1
+}
+
+discovered_by = roman
+discovered_by = greek_techgroup
+discovered_by = punic
+#discovered_by = diadochi
+#discovered_by = iranian
+#discovered_by = balkan
+discovered_by = celtic
+#discovered_by = germanic
+#discovered_by = north_african
+#discovered_by = scythian_tech
+#discovered_by = central_asian
+discovered_by = iberian
+#discovered_by = afro_arabian
+#discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+#discovered_by = caucaso_anatolian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african
+
+142.8.10 = {
+	add_core = LAV
+	owner = LAV
+	controller = LAV
+	remove_core = BOV
+}
+
+175.1.1 = { #peak of growth
+	base_production = 3
+}
+
+266.1.1 = { #volscians conquer lavinium
+	add_core = VOL
+	owner = VOL
+	controller = VOL
+}
+
+361.1.1 = { #romans conquer lavinium, 3 years before the sacking of rome (probably same time as circeii?)
+	add_core = ROM
+	owner = ROM
+	controller = ROM
+}
+
+404.1.1 = { #probably earthquake
+	base_production = 2
+	small_city_walls = no
+}
+
+590.1.1 = { #decline of Lavinium as religious center of Latium
+	small_temple = no
+	shrine = yes
+}
+
+667.1.1 = {
+	add_territorial_core = RRO
+	owner = RRO
+	controller = RRO
+}
+
+668.1.1 = {
+	owner = ROM
+	controller = ROM
+}
+
+671.1.1 = {
+	add_territorial_core = R1C
+	owner = R1C
+	controller = R1C
+}
+
+674.1.1 = {
+	owner = ROM
+	controller = ROM
+}
+
+680.1.1 = { #roman rich people villas around
+	base_production = 1
+	base_tax = 1
+}
+
+724.8.1 = {
+	add_core = ROI
+	owner = ROI
+	controller = ROI
+	remove_core = ROM
+}
+
+780.1.1 = { #merge with Laurentum
+	change_province_name = "Laurolavinium"
+	rename_capital = "Laurolavinium"
+	base_production = 3
+	base_tax = 2
+}

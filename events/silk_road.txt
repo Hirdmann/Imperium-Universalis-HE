@@ -1,0 +1,1251 @@
+namespace = silkroad
+
+########################################################################################
+# main silkroad
+########################################################################################
+country_event = {
+	id = silkroad.1
+	title = "silkroad.1.t"
+	desc = "silkroad.1.d"
+	picture = trade
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = silk_road_start
+		}
+		OR = {
+			AND = {
+				has_discovered = 3314
+				has_discovered = 3437
+				has_discovered = 3320
+				has_discovered = 2864
+				has_discovered = 2866
+				has_discovered = 4349
+				has_discovered = 4178
+				has_discovered = 4576
+				has_discovered = 4180
+				has_discovered = 2500
+				has_discovered = 2706
+			}
+			current_age = late_hellenistic_age
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	option = {
+		name = "silkroad.1.a"
+		set_global_flag = silk_road_start
+		hidden_effect = {
+			4349 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			4195 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			4178 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			4168 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			4180 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			4573 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			4570 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			4578 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			4576 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3314 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3325 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3323 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3322 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3321 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3320 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3318 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3303 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			7435 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3437 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3302 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3304 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3305 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3308 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3309 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3312 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3315 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3368 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3316 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			7472 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			7447 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			7477 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			5276 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2895 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			5252 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2893 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2832 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2835 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			5244 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2891 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2864 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2866 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2862 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			3354 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			4990 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2857 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2824 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2828 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2765 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2725 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2706 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2704 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2688 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2500 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2354 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2313 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2299 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2322 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2334 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2302 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2279 = {
+				add_province_modifier = {
+					name = silk_route_tradecenter
+					duration = -1
+				}
+			}
+			2652= {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+		}
+		change_price = {
+			trade_goods = silk
+			key = SILK_ROAD
+			value = 0.12
+			duration = -1
+		}
+	}
+}
+########################################################################################
+# smaller traderoutes
+########################################################################################
+country_event = {
+	id = silkroad.2
+	title = "silkroad.2.t"
+	desc = "silkroad.2.d"
+	picture = trade
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		has_global_flag = silk_road_start
+		NOT = {
+			has_global_flag = silk_road_minor_start
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	option = {
+		name = "silkroad.2.a"
+		set_global_flag = silk_road_minor_start
+		hidden_effect = {
+			4138 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4380 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4217 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4230 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4464 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4491 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4501 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4363 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4383 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4428 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4432 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4359 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4267 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4322 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4300 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4359 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4030 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4092 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2820 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2819 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2783 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2766 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2764 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2931 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2930 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			3566 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			3484 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2792 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			3079 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			3007 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2979 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			3027 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			3021 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			3485 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2927= {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			3486 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2682 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2686 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2727 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2782 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2666 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2398 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2413 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2232 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2672 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			5263 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			5265 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2900= {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			7416 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2903 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2265 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2335 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2106 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2905 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2064 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2013 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4709 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4667 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			5063 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2876 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2410 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+						duration = -1
+				}
+			}
+			2481 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2432 = {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2481= {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2471= {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			2370= {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			4326= {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+			3357= {
+				add_province_modifier = {
+					name = silk_route_minor_route_tradecenter
+					duration = -1
+				}
+			}
+		}
+	}
+}
+########################################################################################
+# maritime silk route
+#######################################################################################
+
+country_event = {
+	id = silkroad.3
+	title = "silkroad.3.t"
+	desc = "silkroad.3.d"
+	picture = trade
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		has_global_flag = silk_road_minor_start
+		NOT = {
+			has_global_flag = silk_road_maritime_start
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "silkroad.3.a"
+		set_global_flag = silk_road_maritime_start
+		hidden_effect = {
+			4431 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			4445 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			4403 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			4265 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			4264 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			4527 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			1669 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7560 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7561 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7671 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7847 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7856 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7851 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7962 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7861 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7945 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7865 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7637 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7641 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			7653 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			6826 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3685 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3021 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3044 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3138 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			6297 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			6316 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3202 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3205 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3193 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3163 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			6377 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3167 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			6390 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3176 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3177 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3573 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2920 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2921 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2921 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2793 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2711 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2710 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2648 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			8706 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			3981 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2585 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2583 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2518 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			4846 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2601 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			8651 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2597 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			876= {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			871 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			872 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			839 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			778 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			2262 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			4808 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+			4436 = {
+				add_province_modifier = {
+					name = silk_route_maritime_route_tradecenter
+					duration = -1
+				}
+			}
+		}
+	}
+}

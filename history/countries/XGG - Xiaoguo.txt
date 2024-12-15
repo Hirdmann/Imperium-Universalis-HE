@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = chinese_feudalism_reform
+government_rank = 1
+technology_group = nomad_group
+religion = tengri
+primary_culture = guanzhong
+capital = 4191
+01.1.1 = {
+	monarch = {
+		name = "Qing"  # 庆
+		dynasty = "Ji"  # 姬
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}

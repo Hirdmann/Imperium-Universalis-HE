@@ -1,0 +1,16 @@
+name = "Siege of Veii"
+war_goal = {
+	type = take_border
+	casus_belli = cb_border_war
+	province = 66
+}
+
+348.1.1 = {
+	add_attacker = ROM
+	add_defender = ZVE
+}
+358.1.1 = {
+	rem_attacker = ROM
+	rem_defender = ZVE
+}
+

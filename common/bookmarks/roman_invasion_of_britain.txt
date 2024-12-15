@@ -1,0 +1,12 @@
+bookmark = {
+	name = "ROMAN_INVASION_OF_BRITAIN_TITLE"
+	desc = "ROMAN_INVASION_OF_BRITAIN_DESC"
+	date = 796.1.1
+
+	country = ROI
+	country = ORX
+	country = ATZ
+	country = ICX
+	country = CRX
+	country = BRX
+}

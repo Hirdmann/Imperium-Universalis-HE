@@ -1,0 +1,21 @@
+trigger = {
+	OR = {
+		tag = MAC
+		tag = ND2
+		tag = FD9
+		tag = ND1
+		tag = ND7
+		tag = ND3
+	}
+}
+
+type = cavalry
+unit_type = greek_techgroup
+
+maneuver = 2
+offensive_morale = 5
+defensive_morale = 2
+offensive_fire = 0
+defensive_fire = 1
+offensive_shock = 5
+defensive_shock = 2

@@ -1,0 +1,11 @@
+bookmark = {
+	name = "CORYNTHIAN_WAR_TITLE"
+	desc = "CORYNTHIAN_WAR_DESC"
+	date = 359.1.1
+
+
+	country = ATH
+	country = SP1
+	country = THH
+	country = PSE
+}

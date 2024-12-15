@@ -1,0 +1,16 @@
+#Barque
+type = transport
+
+trigger = {
+	unit_type = balkan
+}
+
+
+hull_size = 20
+base_cannons = 32
+sail_speed = 11
+
+sprite_level = 1
+
+blockade = 15
+sailors = 140

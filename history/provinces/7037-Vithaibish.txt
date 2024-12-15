@@ -1,0 +1,22 @@
+native_size = 50
+native_ferocity = 10
+native_hostileness = 10
+trade_goods = unknown
+culture = finno_ugric
+religion = finno_ugric_religion
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 4
+capital = ""
+
+discovered_by = scythian_tech
+
+
+142.8.10 = {
+	add_core = ROX
+	owner = ROX
+	controller = ROX
+	is_city = yes
+}
+395.1.1 = { religion = sarmatian_religion }

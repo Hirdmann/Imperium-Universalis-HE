@@ -1,0 +1,66 @@
+add_core = I15
+owner = I15
+controller = I15
+culture = samnitic
+religion = roman_religion
+hre = no
+base_tax = 0
+base_production = 1
+base_manpower = 3
+trade_goods = olive
+capital = "Cluviae"
+is_city = yes
+
+discovered_by = roman
+discovered_by = greek_techgroup
+discovered_by = punic
+#discovered_by = diadochi
+#discovered_by = iranian
+discovered_by = balkan
+discovered_by = celtic
+#discovered_by = germanic
+#discovered_by = north_african
+#discovered_by = scythian_tech
+#discovered_by = central_asian
+#discovered_by = iberian
+#discovered_by = afro_arabian
+#discovered_by = indian
+#discovered_by = far_eastern
+#discovered_by = central_asian
+#discovered_by = caucaso_anatolian
+#discovered_by = south_east_asian
+#discovered_by = britannic
+#discovered_by = korean
+#discovered_by = african
+
+444.1.1 = {
+	add_core = ROM
+	owner = ROM
+	controller = ROM
+}
+667.1.1 = {
+	add_territorial_core = R1C
+	owner = R1C
+	controller = R1C
+	culture = latin
+	religion = roman_religion
+}
+668.1.1 = {
+	owner = ROM
+	controller = ROM
+}
+671.1.1 = {
+	add_territorial_core = RRO
+	owner = RRO
+	controller = RRO
+}
+674.1.1 = {
+	owner = ROM
+	controller = ROM
+}
+724.8.1 = {
+	add_core = ROI
+	owner = ROI
+	controller = ROI
+	remove_core = ROM
+}

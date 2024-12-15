@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = steppe_horde_reform
+government_rank = 2
+technology_group = nomad_group
+religion = tengri
+primary_culture = chidi
+capital = 4118
+140.1.1 = {
+	monarch = {
+		name = "YeGui"  # 野鬼
+		dynasty = "Kui"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

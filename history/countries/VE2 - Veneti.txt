@@ -1,0 +1,14 @@
+government = tribal
+add_government_reform = veneti_tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = roman
+primary_culture = veneti
+religion = veneti_religion
+#religious_school = north_pagan_type
+capital = 109
+
+historical_friend = LI2
+historical_friend = CA2
+historical_friend = ROM
+historical_rival = I19

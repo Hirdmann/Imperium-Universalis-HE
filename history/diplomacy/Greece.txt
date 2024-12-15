@@ -1,0 +1,629 @@
+
+alliance = {
+	first = SP1
+	second = TAR
+	start_date = 142.1.1
+	end_date = 300.1.1
+}
+alliance = { #Old Theagenes alliances
+	first = MEG
+	second = MLT
+	start_date = 142.1.1
+	end_date = 155.1.1
+}
+alliance = { #Old Theagenes alliances
+	first = MEG
+	second = AEG
+	start_date = 142.1.1
+	end_date = 155.1.1
+}
+
+alliance = {
+	first = LOK
+	second = SYB
+	start_date = 142.1.1
+	end_date = 300.1.1
+}
+alliance = {
+	first = LOK
+	second = MET
+	start_date = 142.1.1
+	end_date = 300.1.1
+}
+alliance = {
+	first = CRO
+	second = KLU
+	start_date = 142.1.1
+	end_date = 300.1.1
+}
+alliance = {
+	first = LCO
+	second = LCS
+	start_date = 1.1.1
+	end_date = 999.1.1
+}
+
+alliance = {
+	first = TNG
+	second = ATH
+	start_date = 142.1.1
+	end_date = 436.1.1
+}
+
+guarantee = {
+	first = ATH
+	second = TNG
+	start_date = 142.1.1
+	end_date = 436.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = COR
+	second = KEP
+	start_date = 142.1.1
+	end_date = 225.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = COR
+	second = AMC
+	start_date = 142.1.1
+	end_date = 200.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = COR
+	second = ANK
+	start_date = 142.1.1
+	end_date = 322.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = ELI
+	second = LPR
+	start_date = 41.1.1
+	end_date = 322.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = COR
+	second = AMC
+	start_date = 200.1.1
+	end_date = 240.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = COR
+	second = COC
+	start_date = 142.1.1
+	end_date = 195.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = ATH
+	second = AMF
+	start_date = 316.1.1
+	end_date = 322.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = ATH
+	second = SIE
+	start_date = 142.1.1
+	end_date = 214.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = PHC
+	second = DPH
+	start_date = 169.1.1
+	end_date = 305.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = PHC
+	second = DPH
+	start_date = 307.1.1
+	end_date = 398.1.1
+}
+
+############ Doric Hexapolis ####
+
+alliance = {
+	first = KSS
+	second = HAL
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KSS
+	second = MOO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KSS
+	second = KNI
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KSS
+	second = IAL
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KSS
+	second = LIN
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KSS
+	second = KME
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+
+alliance = {
+	first = HAL
+	second = KNI
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = HAL
+	second = MOO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = HAL
+	second = IAL
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = HAL
+	second = LIN
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = HAL
+	second = KME
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+
+alliance = {
+	first = KNI
+	second = IAL
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KNI
+	second = MOO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KNI
+	second = LIN
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KNI
+	second = KME
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+
+alliance = {
+	first = IAL
+	second = LIN
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = IAL
+	second = MOO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = IAL
+	second = KME
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+
+alliance = {
+	first = LIN
+	second = KME
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = LIN
+	second = MOO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KME
+	second = MOO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+############ Ionian League ####
+
+alliance = {
+	first = KLA
+	second = EPH
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KLA
+	second = TEO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KLA
+	second = PR2
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KLA
+	second = KYM
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KLA
+	second = ERR
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KLA
+	second = SAM
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KLA
+	second = MLT
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KLA
+	second = CHS
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = EPH
+	second = KYM
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = EPH
+	second = TEO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = EPH
+	second = PR2
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = EPH
+	second = ERR
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = EPH
+	second = SAM
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = EPH
+	second = MLT
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = EPH
+	second = CHS
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KYM
+	second = ERR
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KYM
+	second = TEO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KYM
+	second = PR2
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KYM
+	second = SAM
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KYM
+	second = MLT
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = KYM
+	second = CHS
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = ERR
+	second = SAM
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = ERR
+	second = MLT
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = ERR
+	second = CHS
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = ERR
+	second = TEO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = ERR
+	second = PR2
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+
+alliance = {
+	first = SAM
+	second = CHS
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = SAM
+	second = PR2
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = SAM
+	second = TEO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = MLT
+	second = CHS
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = MLT
+	second = TEO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = MLT
+	second = PR2
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = PR2
+	second = CHS
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = PR2
+	second = TEO
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = TEO
+	second = CHS
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+alliance = {
+	first = TEO
+	second = PR2
+	start_date = 142.1.1
+	end_date = 208.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ODR
+	second = GET
+	start_date = 295.1.1
+	end_date = 349.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ODR
+	second = TT7
+	start_date = 295.1.1
+	end_date = 349.1.1
+}
+alliance = {
+	first = ATH
+	second = ODR
+	start_date = 323.1.1
+	end_date = 385.1.1
+}
+
+#epirus-italy
+
+
+guarantee = {
+	first = EPI
+	second = TAR
+	start_date = 453.1.1
+	end_date = 474.1.1
+}
+guarantee = {
+	first = EPI
+	second = MET
+	start_date = 453.1.1
+	end_date = 474.1.1
+}
+guarantee = {
+	first = EPI
+	second = HRC
+	start_date = 453.1.1
+	end_date = 474.1.1
+}
+guarantee = {
+	first = EPI
+	second = CRO
+	start_date = 453.1.1
+	end_date = 474.1.1
+}
+guarantee = {
+	first = EPI
+	second = SYB
+	start_date = 453.1.1
+	end_date = 474.1.1
+}
+
+
+#boeotian_league_start
+
+alliance = {
+	first = THH
+	second = ORC
+	start_date = 195.1.1
+	end_date = 225.1.1
+}
+alliance = {
+	first = THH
+	second = TSP
+	start_date = 195.1.1
+	end_date = 225.1.1
+}
+alliance = {
+	first = THH
+	second = TGR
+	start_date = 195.1.1
+	end_date = 225.1.1
+}
+alliance = {
+	first = THH
+	second = DAL
+	start_date = 195.1.1
+	end_date = 225.1.1
+}
+
+
+
+################### Nesiotic_league
+
+
+
+dependency = {
+	subject_type = "vassal"
+	first = ANE
+	second = CYC
+	start_date = 440.1.1
+	end_date = 467.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = PTO
+	second = CYC
+	start_date = 467.1.1
+	end_date = 474.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = RHO
+	second = CYC
+	start_date = 474.1.1
+	end_date = 554.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = PTO
+	second = KSS
+	start_date = 453.1.1
+	end_date = 569.1.1
+}
+
+dependency = {
+	subject_type = "vassal"
+	first = RHO
+	second = CYC
+	start_date = 554.1.1
+	end_date = 587.1.1
+}
+alliance = {
+	first = PTO
+	second = RHO
+	start_date = 432.1.1
+	end_date = 666.1.1
+}
+
+alliance = {
+	first = SP1
+	second = MTH
+	start_date = 392.1.1
+	end_date = 999.1.1
+}
+
+alliance = {
+	first = MEG
+	second = ARG
+	start_date = 142.1.1
+	end_date = 200.1.1
+}

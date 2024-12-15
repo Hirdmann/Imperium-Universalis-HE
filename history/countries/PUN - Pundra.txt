@@ -1,0 +1,30 @@
+government = tribal
+add_government_reform = mleccha_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = mithilas
+religion = mleccha_religion
+religious_school = fatalism_school
+capital = 3354
+
+#Fictional
+140.1.1 = {
+	monarch = {
+		name = "Puli I"
+		dynasty = "Puli"
+		death_date = 179.1.1
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+}
+
+290.1.1 = {
+	government = monarchy
+	add_government_reform = indian_common_monarchy
+}
+495.1.1 = {
+	religion = buddhism
+	religious_school = lokottaravada_school
+}

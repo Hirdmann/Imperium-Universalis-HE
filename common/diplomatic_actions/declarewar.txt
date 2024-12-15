@@ -1,0 +1,42 @@
+
+declarewar = {
+	condition = {
+		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
+		potential = {
+			ai = yes
+		}
+		allow = {
+			ai = yes
+			if = {
+				limit = {
+					AND = {
+						tag = PSE
+						ai = yes
+						has_country_flag = historical_expansion_ai_flag
+						NOT = {
+							is_year = 290
+						}
+					}
+				}
+				FROM = { persia_historical_claim_trigger = yes }
+			}
+			NOT = {
+				has_global_modifier_value = {
+					which = stability_cost_to_declare_war
+					value = 1
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					casus_belli = cb_migratory_war
+				}
+			}
+			migration_start_effect = yes
+		}
+	}
+}

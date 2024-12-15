@@ -1,0 +1,444 @@
+celticgfx_sprite_pack = {
+
+
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			culture_group = germanic_group
+			culture_group = gaulish_group
+			culture_group = eastern_celtic
+		}
+		NOT = {
+			OR = {
+				tag = ARZ
+				primary_culture = eastern_hallstat
+				primary_culture = western_hallstat
+				primary_culture = preceltic_gaul
+			}
+		}
+	}
+
+	sprite_infantry = {
+		0 = celticgfx_INFANTRY_1
+		1 = celticgfx_INFANTRY_2
+		2 = celticgfx_INFANTRY_3
+		3 = celticgfx_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = celticgfx_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = celticgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = celticgfx_ARTILLERY_1
+		1 = celticgfx_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = celticgfx_ARTILLERY_4
+	}
+}
+
+celto_ligurian_sprite_pack = {
+
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = preceltic_gaul
+		}
+		NOT = {
+			OR = {
+				tag = ARZ
+				primary_culture = eastern_hallstat
+				primary_culture = western_hallstat
+			}
+		}
+	}
+
+	sprite_infantry = {
+		0 = wild_celticgfx_INFANTRY_1
+		1 = celticgfx_INFANTRY_2
+		2 = celticgfx_INFANTRY_3
+		3 = celticgfx_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = celticgfx_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = celticgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = wild_celticgfx_ARTILLERY_1
+		1 = celticgfx_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = celticgfx_ARTILLERY_4
+	}
+}
+hallstat_west_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = western_hallstat
+			primary_culture = lepontic
+		}
+		NOT = {
+			tag = ARZ
+		}
+	}
+
+	sprite_infantry = {
+		0 = hallstat_west_INFANTRY_1
+		1 = celticgfx_INFANTRY_2
+		2 = celticgfx_INFANTRY_3
+		3 = celticgfx_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = hallstat_west_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = celticgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = celticgfx_ARTILLERY_1
+		1 = celticgfx_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = celticgfx_ARTILLERY_4
+	}
+}
+hallstat_east_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = eastern_hallstat
+		}
+		NOT = {
+			tag = ARZ
+		}
+	}
+
+	sprite_infantry = {
+		0 = hallstat_east_INFANTRY_1
+		1 = celticgfx_INFANTRY_2
+		2 = celticgfx_INFANTRY_3
+		3 = celticgfx_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = hallstat_east_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = celticgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = celticgfx_ARTILLERY_1
+		1 = celticgfx_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = celticgfx_ARTILLERY_4
+	}
+}
+rhaeti_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = raeti
+		}
+	}
+
+	sprite_infantry = {
+		0 = raeti_INFANTRY_1
+		1 = celticgfx_INFANTRY_2
+		2 = celticgfx_INFANTRY_3
+		3 = celticgfx_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = raeti_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = celticgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = celticgfx_ARTILLERY_1
+		1 = celticgfx_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = celticgfx_ARTILLERY_4
+	}
+}
+arverni_sprite_pack = {
+
+
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = ARZ
+		}
+	}
+
+	sprite_infantry = {
+		0 = celticgfx_INFANTRY_1
+		1 = celticgfx_INFANTRY_2
+		2 = celticgfx_INFANTRY_3
+		3 = ARZ_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = celticgfx_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = ARZ_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = celticgfx_ARTILLERY_1
+		1 = celticgfx_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = ARZ_ARTILLERY_4
+	}
+}
+british_units_model_pack = {
+
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			culture_group = britannic_group
+		}
+	}
+
+	sprite_infantry = {
+		0 = british_special_INFANTRY_1
+		1 = british_special_INFANTRY_2
+		2 = british_special_INFANTRY_3
+		3 = british_special_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = british_special_CAVALRY_1
+		1 = british_special_CAVALRY_2
+		2 = british_special_CAVALRY_3
+		3 = british_special_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = british_special_ARTILLERY_1
+		1 = british_special_ARTILLERY_2
+		2 = british_special_ARTILLERY_3
+		3 = british_special_ARTILLERY_4
+	}
+}
+
+german_units_model_pack = {
+
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			culture_group = germanic_group
+		}
+	}
+
+	sprite_infantry = {
+		0 = germanic_special_INFANTRY_1
+		1 = germanic_special_INFANTRY_1
+		2 = germanic_special_INFANTRY_1
+		3 = germanic_special_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = germanic_special_CAVALRY_1
+		1 = germanic_special_CAVALRY_2
+		2 = germanic_special_CAVALRY_3
+		3 = germanic_special_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = germanic_special_ARTILLERY_1
+		1 = germanic_special_ARTILLERY_2
+		2 = germanic_special_ARTILLERY_3
+		3 = germanic_special_ARTILLERY_4
+	}
+}
+
+aquitani_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = aquitani
+		}
+	}
+
+	sprite_infantry = {
+		0 = aquitani_INFANTRY_1
+		1 = aquitani_INFANTRY_2
+		2 = aquitani_INFANTRY_3
+		3 = aquitani_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = aquitani_CAVALRY_1
+		1 = aquitani_CAVALRY_2
+		2 = aquitani_CAVALRY_2
+		3 = aquitani_CAVALRY_2
+	}
+
+	sprite_artillery = {
+		0 = aquitani_ARTILLERY_1
+		1 = aquitani_ARTILLERY_2
+		2 = aquitani_ARTILLERY_2
+		3 = aquitani_ARTILLERY_2
+	}
+}
+armorican_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = old_armorican
+			primary_culture = armorican
+		}
+	}
+
+	sprite_infantry = {
+		0 = armorican_special_INFANTRY_1
+		1 = armorican_special_INFANTRY_2
+		2 = armorican_special_INFANTRY_3
+		3 = armorican_special_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = celticgfx_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = celticgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = wild_celticgfx_ARTILLERY_1
+		1 = celticgfx_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = celticgfx_ARTILLERY_4
+	}
+}
+belgae_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = hilversum
+			primary_culture = belgae
+		}
+	}
+
+	sprite_infantry = {
+		0 = belgae_special_INFANTRY_1
+		1 = belgae_special_INFANTRY_2
+		2 = celticgfx_INFANTRY_3
+		3 = celticgfx_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = celticgfx_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = celticgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = germanic_special_ARTILLERY_1
+		1 = germanic_special_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = celticgfx_ARTILLERY_4
+	}
+}
+
+frisian_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = elp
+		}
+	}
+
+	sprite_infantry = {
+		0 = frisian_special_INFANTRY_1
+		1 = germanic_special_INFANTRY_1
+		2 = germanic_special_INFANTRY_1
+		3 = germanic_special_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = germanic_special_CAVALRY_1
+		1 = germanic_special_CAVALRY_2
+		2 = germanic_special_CAVALRY_3
+		3 = germanic_special_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = germanic_special_ARTILLERY_1
+		1 = germanic_special_ARTILLERY_2
+		2 = germanic_special_ARTILLERY_3
+		3 = germanic_special_ARTILLERY_4
+	}
+}
+Haedui_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = HAZ
+		}
+	}
+
+	sprite_infantry = {
+		0 = HAZ_special_INFANTRY_1
+		1 = HAZ_special_INFANTRY_2
+		2 = HAZ_special_INFANTRY_3
+		3 = HAZ_special_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = celticgfx_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = celticgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = celticgfx_ARTILLERY_1
+		1 = celticgfx_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = celticgfx_ARTILLERY_4
+	}
+}
+pictones_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = PIZ
+			tag = SAZ
+		}
+	}
+
+	sprite_infantry = {
+		0 = pictones_special_INFANTRY_1
+		1 = pictones_special_INFANTRY_1
+		2 = pictones_special_INFANTRY_1
+		3 = celticgfx_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = celticgfx_CAVALRY_1
+		1 = celticgfx_CAVALRY_2
+		2 = celticgfx_CAVALRY_3
+		3 = celticgfx_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = celticgfx_ARTILLERY_1
+		1 = celticgfx_ARTILLERY_2
+		2 = celticgfx_ARTILLERY_3
+		3 = celticgfx_ARTILLERY_4
+	}
+}

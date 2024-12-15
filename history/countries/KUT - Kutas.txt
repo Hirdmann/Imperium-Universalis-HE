@@ -1,0 +1,13 @@
+government = tribal
+add_government_reform = dravidian_tribe_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = kolami
+religion = dravidian
+capital = 3742
+
+417.1.1 = {
+	religion = hinduism
+	religious_school = nyaya_school
+}

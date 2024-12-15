@@ -1,0 +1,21 @@
+native_size = 50
+native_ferocity = 10
+native_hostileness = 10
+trade_goods = unknown
+culture = liuqiuan
+religion = liuqiuan_religion
+capital = "Chuzan"
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+discovered_by = korean
+
+142.8.10 = {
+	owner = RYU
+	controller = RYU
+	add_core = RYU
+	trade_goods = spices
+	is_city = yes
+}

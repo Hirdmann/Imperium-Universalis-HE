@@ -1,0 +1,402 @@
+odrysia_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = ODR 
+		}
+	}
+
+	thracian_horsemanship = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	foundation_of_uscudama = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	building_the_thyrseis = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {
+			controlling_the_evros_banks
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	fort_of_doriskos = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	seuthopolis = {
+		icon = mission_unite_home_region
+		position = 9
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+odrysia_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = ODR 
+		}
+	}
+
+	thracian_mercenaries = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	controlling_the_evros_banks = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {
+			start_of_odrysian_expansionism
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	expand_into_rhodopes = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {
+			controlling_the_evros_banks
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	dominate_southern_thrace = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			expand_into_rhodopes
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	conquer_haemusian_mountaneers = {
+		icon = mission_unite_home_region
+		position = 6
+		required_missions = {
+			dominate_southern_thrace
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	attack_eastern_thracia = {
+		icon = mission_unite_home_region
+		position = 7
+		required_missions = {
+			conquer_haemusian_mountaneers
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	dominate_the_paeonians = {
+		icon = mission_unite_home_region
+		position = 9
+		required_missions = {
+			thracian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	triballian_war = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			dominate_the_paeonians
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	subjugation_of_macedon = {
+		icon = mission_unite_home_region
+		position = 11
+		required_missions = {
+			triballian_war
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+odrysia_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = ODR 
+		}
+	}
+
+	elite_rophaiaphoroi = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	start_of_odrysian_expansionism = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	reliance_on_tribal_aristocracy = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {
+			start_of_odrysian_expansionism
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	decentralized_state = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			tribute_based_economy
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	foundation_of_new_nobility = {
+		icon = mission_unite_home_region
+		position = 7
+		required_missions = {
+			reforming_the_odrysia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	thracian_kingdom = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = {
+			attack_eastern_thracia foundation_of_new_nobility
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	black_sea_colonies = {
+		icon = mission_unite_home_region
+		position = 9
+		required_missions = {
+			thracian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	attack_on_getae = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			black_sea_colonies
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	thracian_empire = {
+		icon = mission_unite_home_region
+		position = 12
+		required_missions = {
+			attack_on_getae siege_of_byzantium subjugation_of_macedon
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+odrysia_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = ODR 
+		}
+	}
+
+	greek_colonists_for_phalanx = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	tribute_based_economy = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {
+			reliance_on_tribal_aristocracy
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	reforming_the_odrysia = {
+		icon = mission_unite_home_region
+		position = 6
+		required_missions = {
+			decentralized_state adopting_greek_for_administration
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	war_for_thracian_chersonessus = {
+		icon = mission_unite_home_region
+		position = 9
+		required_missions = {
+			thracian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	control_of_thracian_coast = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			war_for_thracian_chersonessus
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	siege_of_byzantium = {
+		icon = mission_unite_home_region
+		position = 11
+		required_missions = {
+			control_of_thracian_coast
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+odrysia_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = ODR 
+		}
+	}
+
+	most_numerous_of_races = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	contacts_with_greeks_and_asians = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	adopting_greek_for_administration = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			contacts_with_greeks_and_asians
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	thracian_coinage = {
+		icon = mission_unite_home_region
+		position = 7
+		required_missions = {
+			adopting_greek_for_administration
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	thracian_cloth_production = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}

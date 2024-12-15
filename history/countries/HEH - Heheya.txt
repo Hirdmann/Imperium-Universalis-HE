@@ -1,0 +1,52 @@
+government = tribal
+add_government_reform = vedic_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = avantis
+religion = brahmin
+religious_school = madhyandina_school
+capital = 3100
+
+140.1.1 = {
+	monarch = {
+		name = "Ananta"
+		dynasty = "Vitihotra"
+		death_date = 170.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+170.1.1 = {
+	monarch = {
+		name = "Arjuna"
+		dynasty = "Vitihotra"
+		death_date = 200.1.1
+		dip = 1
+		adm = 1
+		mil = 0
+	}
+}
+
+200.1.1 = {
+	monarch = {
+		name = "Yadu"
+		dynasty = "Vitihotra"
+		death_date = 229.1.1
+		dip = 0
+		adm = 0
+		mil = 0
+	}
+}
+
+300.1.1 = {
+	government = monarchy
+	add_government_reform = indian_common_monarchy
+}
+
+312.1.1 = {
+	religion = hinduism
+	religious_school = nyaya_school
+}

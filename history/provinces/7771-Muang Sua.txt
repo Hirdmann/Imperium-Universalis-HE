@@ -1,0 +1,18 @@
+culture = mangic
+religion = southern_mythology
+capital = ""
+trade_goods = rice
+hre = no
+
+base_tax = 0
+base_production = 0
+base_manpower = 4
+
+center_of_trade = 1
+
+add_core = BKT
+owner = BKT
+controller = BKT
+
+discovered_by = south_east_asian
+discovered_by = austronesian_tech

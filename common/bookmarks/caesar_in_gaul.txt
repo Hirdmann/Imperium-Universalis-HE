@@ -1,0 +1,22 @@
+bookmark = {
+
+	# Title and Description of Bookmark
+
+	name = "CAESAR_IN_GAUL_TITLE"
+	desc = "CAESAR_IN_GAUL_DESC"
+
+	# Date of Bookmark
+
+	date = 696.1.1
+
+	# Camera Center of Focus (Province ID)
+
+	center = 219
+
+	# List of Countries (NO MORE THAN 8)
+
+	country = R1C
+
+	# Optional Effects
+
+}

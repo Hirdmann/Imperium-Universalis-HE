@@ -1,0 +1,11 @@
+government = republic
+add_government_reform = league_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = rhodian
+religion = greek_religion
+capital = 995
+
+425.1.1 = { primary_culture = greek }
+

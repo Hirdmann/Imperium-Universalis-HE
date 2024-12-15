@@ -1,0 +1,144 @@
+#Country Name: Please see filename.
+
+graphical_culture = punicgfx
+
+color = { 164 77 78 }
+
+historical_idea_groups = {
+	caravan_trade_ideas
+	infantry_ideas
+	agraculture_ideas
+	diplomatic_ideas
+	leadership_ideas
+	financial_ideas
+	cerimonial_ideas
+	propaganda_ideas
+}
+
+historical_units = {
+	asian_base_inf_0
+	asian_base_inf_1
+	asian_base_inf_2
+	asian_base_inf_3
+	asian_base_inf_4
+	asian_base_inf_5
+	asian_base_inf_6
+	asian_base_inf_7
+	asian_base_inf_8
+	asian_base_inf_9
+	asian_base_inf_10
+	asian_base_inf_11
+	asian_base_inf_12
+	asian_base_inf_13
+	asian_base_inf_14
+	asian_base_inf_15
+	asian_base_inf_16
+
+	asian_base_cav_0
+	asian_base_cav_1
+	asian_base_cav_2
+	asian_base_cav_3
+	asian_base_cav_4
+	asian_base_cav_5
+	asian_base_cav_6
+	asian_base_cav_7
+	asian_base_cav_8
+	asian_base_cav_9
+	asian_base_cav_10
+	asian_base_cav_11
+	asian_base_cav_12
+	asian_base_cav_13
+	asian_base_cav_14
+
+	asian_base_art_0
+	asian_base_art_1
+	asian_base_art_2
+	asian_base_art_3
+	asian_base_art_4
+	asian_base_art_5
+	asian_base_art_6
+	asian_base_art_7
+	asian_base_art_8
+	asian_base_art_9
+	asian_base_art_10
+	asian_base_art_11
+	asian_base_art_12
+	asian_base_art_13
+	asian_base_art_14
+	asian_base_art_15
+	asian_base_art_16
+	asian_base_art_17
+}
+monarch_names = {
+	"Tukulti-mer #1" = 30
+	"Nergal-erish #1" = 30
+	"Samas-risa-usur #1" = 30
+	"Ninurta-kudurri-usur #1" = 30
+	"Akhiyababa #1" = 30
+	"Ilu-Hadad #1" = 30
+	"Katnu #1" = 30
+	"Sulman-khaman-ilani #1" = 30
+	"Suru #1" = 30
+	"Azilu #1" = 30
+	"Ilubani #1" = 30
+
+	"Udaynath" = 10
+	"Hairan" = 10
+	"Maeonius" = 10
+	"Vaballathus" = 10
+	"Abdalonymus" = 10
+	"Achololim" = 10
+	"Baalhaan" = 10
+	"Carthalo" = 10
+	"Fuabal" = 10
+	"Hamiscora" = 10
+	"Luli" = 10
+	"Mathos" = 10
+	"Merbal" = 10
+	"Tendao" = 10
+	"Salicar" = 10
+	"Zaracas" = 10
+	"Shipitbaal" = 10
+
+	"Adad-guppi" = -1
+	"Amat-mamu" = -1
+	"Ba'u-asitu" = -1
+	"Bel-salti-nanna" = -1
+	"En-nigaldi-nanna" = -1
+	"Esarra-hammat" = -1
+	"Gigitu" = -1
+	"Kassaya" = -1
+	"Iltani" = -1
+	"Iltehr-idri" = -1
+	"Inin-etirat" = -1
+	"Libbali-hammat" = -1
+	"Libbali-sarrat" = -1
+	"Mannu-ki-ilahi" = -1
+	"Naqi'a" = -1
+	"Qudasu" = -1
+	"Same-ramat" = -1
+	"Seru'a-etirat" = -1
+	"Zakutu" = -1
+}
+
+leader_names = {
+	Akiltu Ardia Aplaya Aqru Asaredu Asu Babilaya Bania Banunu Barsipaya Batulu Cuthaya Dadia Dilbataya Eribaya Eshnunnaya Gallabu Girsaya Habasiru Harranaya Iddia
+	Iddinaya Inbaya Iqisaya Issinnaya Kallabuttu Kinunaya Kissaya Liblut Lidanu Lagasaya Misatu Nibburaya Nidintu Nurea Pursu Qallu Sasiru Selepputu Sipparaya Sirku
+	Suharruru Sukkuku Suqaitu Tabia Tabnea Tabihu Tubbutu Ubartu Ubbudu Ululaya Uraya Urukaya Zikaru
+}
+
+ship_names = {
+	Aglibol Anat Arsay Arsu "Ashtar-Chemosh" Asherah Ashima Atargatis Attar Athirat Azizos Baalah "Ba'alat Gebal" "Ba'al Hadad" "Ba'al Hermon" "Baal Hammon" Baalshamin
+	"Baal-Zephon" Bel Bol Chemosh Dagon Dagon El Elohim Elyon Eshmun Baal Malakbel Yagribol Elkunirsa Amurru Anu "'Amm" Belili Gad Horon Bethoron Melqart Ishara
+	Ishat Kotharat "Kothar-wa-Khasis" Yagrush Aymur Liluri Lotan Yam Manuzi Milcom Misor Moloch Sydyk Mot Mawat "Nikkal-wa-Ib" Pidray Qadesthu Resheph Shadrafa Shachar
+	Shalim Salam Salem Shamamyim Eretz Shapash Shapsh Shemesh Shapshu Shamash Tallai Nahar Iarhibol Yarikh Napash Mot Malik "Yam-Qart" Ilhm Targhizizi Tharumagi
+	"El Shaddai" Shadu Amurru Luhuti Pattani Aram Hammath "Bit Adini" Gurgum Syria Canaan Phoenicia Tyre Sidon Beirot Byblos Alepo Arpad Hadad Shad Nimrod
+}
+
+army_names = {
+	"Ummanatiya $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

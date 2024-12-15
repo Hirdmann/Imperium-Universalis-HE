@@ -1,0 +1,462 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+# Armies get a insufficient support penalty when the ratio cav / (inf+cav) is _higher_ than "cav_to_inf_ratio". This applies for the "unit_type" of a country.
+
+# Groups must be defined BEFORE tables.
+
+#######################
+#Listing
+#######################
+
+#roman
+#greek_techgroup
+#punic
+#diadochi
+#iranian
+#balkan
+#celtic
+#germanic
+#north_african
+#scythian
+#iberian
+#afro_arabian
+#indian
+#far_eastern
+#central_asian
+#caucaso_anatolian
+#south_east_asian
+#britannic
+#korean
+#african
+#caucasian
+#hispano_celtic
+#dongyi1
+#wuyue1
+#bashu1
+#nomad_group
+#xinan1
+#weiguo
+#qinguo
+#qiguo
+#jingchu
+#hanguo
+#yanguo
+#zhaoguo
+#tibetan_tech
+#austronesian_tech
+
+groups = {
+	#roman
+	roman = {
+		start_level = 1
+		#cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	greek_techgroup = {
+		start_level = 1
+		#cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	punic = {
+		start_level = 2
+		#cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	diadochi = {
+		start_level = 2
+		#cav_to_inf_ratio = 0.8
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	iranian = {
+		start_level = 1
+		#cav_to_inf_ratio = 1.0
+		start_cost_modifier = 0.1
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	balkan = {
+		start_level = 0
+		#cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.3
+		#is_primitive = yes
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	celtic = {
+		start_level = 0
+		#cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.4
+		#is_primitive = yes
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	germanic = {
+		start_level = 0
+		#cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.5
+		#is_primitive = yes
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	north_african = {
+		start_level = 0
+		#cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.3
+		#is_primitive = yes
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	scythian_tech = {
+		start_level = 1
+		#cav_to_inf_ratio = 1.0
+		start_cost_modifier = 0.35
+		#is_primitive = yes
+
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	iberian = {
+		start_level = 0
+		#cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.3
+		#is_primitive = yes
+
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	afro_arabian = {
+		start_level = 1
+		#cav_to_inf_ratio = 0.75
+		start_cost_modifier = 0.15
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	indian = {
+		start_level = 1
+		#cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	far_eastern = {
+		start_level = 1
+		#cav_to_inf_ratio = 0.5
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	central_asian = {
+		start_level = 0
+		#cav_to_inf_ratio = 1.0
+		start_cost_modifier = 0.5
+		#is_primitive = yes
+
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	caucaso_anatolian = {
+		start_level = 1
+		#cav_to_inf_ratio = 1.0
+		start_cost_modifier = 0.1
+
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	south_east_asian = {
+		start_level = 0
+		start_cost_modifier = 0.6
+		#cav_to_inf_ratio = 1.0
+
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	britannic = {
+		start_level = 0
+		start_cost_modifier = 0.5
+		#cav_to_inf_ratio = 1.0
+
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	korean = {
+		start_level = 0
+		start_cost_modifier = 0.7
+		#cav_to_inf_ratio = 1.0
+
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	african = {
+		start_level = 0
+		start_cost_modifier = 0.5
+		#cav_to_inf_ratio = 1.0
+
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	caucasian = {
+		start_level = 1
+		start_cost_modifier = 0.0
+		#cav_to_inf_ratio = 1.0
+
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	hispano_celtic = {
+		start_level = 0
+		start_cost_modifier = 0.4
+		#cav_to_inf_ratio = 1.0
+
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 25
+		}
+	}
+	dongyi1 = {
+		start_level = 0
+		#cav_to_inf_ratio = 1.0
+		start_cost_modifier = 0.4
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	wuyue1 = {
+		start_level = 0
+		#cav_to_inf_ratio = 1.0
+		start_cost_modifier = 0.1
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	bashu1 = {
+		start_level = 0
+		#cav_to_inf_ratio = 1.0
+		start_cost_modifier = 0.25
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	nomad_group = {
+		start_level = 0
+		#cav_to_inf_ratio = 1.0
+		start_cost_modifier = 0.5
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	xinan1 = {
+		start_level = 0
+		#cav_to_inf_ratio = 1.0
+		start_cost_modifier = 0.6
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	weiguo = {
+		start_level = 1
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	qinguo = {
+		start_level = 1
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	qiguo = {
+		start_level = 1
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	jingchu = {
+		start_level = 1
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	hanguo = {
+		start_level = 1
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	yanguo = {
+		start_level = 1
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	zhaoguo = {
+		start_level = 1
+		start_cost_modifier = 0.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	tibetan_tech = {
+		start_level = 0
+		start_cost_modifier = 1.0
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+	austronesian_tech = {
+		start_level = 0
+		start_cost_modifier = 0.75
+		nation_designer_cost = {
+			trigger = {
+				always = yes
+			}
+			value = 75
+		}
+	}
+}
+
+
+tables = {
+	adm_tech = "technologies/adm.txt"
+	dip_tech = "technologies/dip.txt"
+	mil_tech = "technologies/mil.txt"
+}

@@ -1,0 +1,15 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = greco_bactrian
+religion = greek_religion
+#religious_school = hellenic_type
+capital = 2891
+
+431.1.1 = {
+	add_stability = 1
+	add_army_professionalism = 0.5
+	add_absolutism = 10
+}

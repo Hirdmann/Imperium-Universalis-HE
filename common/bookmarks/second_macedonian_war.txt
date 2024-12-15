@@ -1,0 +1,10 @@
+bookmark = {
+	name = "SECOND_MACEDONIAN_WAR_TITLE"
+	desc = "SECOND_MACEDONIAN_WAR_DESC"
+	date = 554.1.1
+
+	country = ROM
+	country = MAC
+	country = RHO
+	country = PER
+}

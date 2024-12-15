@@ -1,0 +1,67 @@
+#Country Name: Please see filename.
+
+graphical_culture = berbergfx
+
+color = { 87 124 87 }
+
+historical_idea_groups = {
+	cavalry_ideas
+	caravan_trade_ideas
+	agraculture_ideas
+	raider_ideas
+	imperial_ideas
+	domestic_government_ideas
+	logistic_ideas
+	expansion_ideas
+}
+historical_units = {}
+
+monarch_names = {
+	"Buyuwawa" = 1
+	"Mawasun" = 1
+	"Nebneshi" = 1
+	"Paihuty" = 1
+	"Shoshenq" = 1
+	"Nimlot" = 1
+	"Osorkon" = 1
+	"Takelot" = 1
+	"Tefnakht" = 1
+	"Nesbanebdjed" = 1
+	"Hedjkheperre" = 1
+	"Usermaatre" = 1
+	"Menkheperre" = 1
+	"Iuput" = 1
+	"Shepsesre" = 1
+	"Bakanranef" = 1
+	"Gemnefsutkapu" = 1
+	"Nekauba" = 1
+	"Perdu" = 1
+	"Pami" = 1
+	"Pedubast" = 1
+
+	"Tentamun" = -1
+	"Maatkare" = -1
+	"Patareshnes" = -1
+	"Tashedkhonsu" = -1
+	"Kapes" = -1
+}
+
+leader_names = {
+	Gala Massinissa Micipsa Adherbal Hiempsal Jugurtha Gauda Masteabar Arabion Juba Gaya
+	Awzal Aylal Azenkwed Cicungh Ikken Cucunq Mass Izri Zacfin Tacfin Ugwistan Usadden Uzza
+	Yuba Zaidren Tagwizult
+}
+
+ship_names = {
+	Astarte Baal "Baalat Gebal" El Eshmun Ibussim Melqart Thammuz Abdalonim Abdeshmun "Abdi-Milki" Abdmelqart Abdosir Aderbaal Adonibaal Ahiram Akbar Aqhat Ashtartyaton
+	Ashtzaph Azemilk Baalhanno Baalshillek Bodashtart Bodeshmun Bodinelqart Bodmelqart Danel Elulaios Eshmunamash Germelqart Kanmi Khilletzbaal Maharbaal Melqartpilles
+	Milkherem Milkpilles Milkyaton Philosir Poumyathon "Rib-Addi" Sakarbaal Tabnit Yehawwielon Yutpan Zimrida
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

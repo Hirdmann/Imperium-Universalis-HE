@@ -1,0 +1,297 @@
+
+requestpeace = {
+	condition = {
+		tooltip = BAB_ASY_AI
+		potential = {
+			tag = BAB
+			FROM = { tag = ASY }
+			OR = {
+				has_global_flag = nineveh_fall_flag
+				start_date = 142.7.10
+				NOT = { start_date = 146.1.1 }
+			}
+		}
+		allow = {
+			if = {
+				limit = { ai = yes }
+				OR = {
+					war_score_against = {
+						who = ASY
+						value = 80
+					}
+					NOT = {
+						war_score_against = {
+							who = ASY
+							value = -60
+						}
+					}
+				}
+			}
+			else = {
+				OR = {
+					war_score_against = {
+						who = ASY
+						value = 70
+					}
+					NOT = {
+						war_score_against = {
+							who = ASY
+							value = -50
+						}
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = BAB_ASY_AI
+		potential = {
+			tag = ASY
+			FROM = { tag = BAB }
+			OR = {
+				has_global_flag = nineveh_fall_flag
+				start_date = 142.7.10
+				NOT = { start_date = 146.1.1 }
+			}
+		}
+		allow = {
+			if = {
+				limit = { ai = yes }
+				OR = {
+					war_score_against = {
+						who = BAB
+						value = 80
+					}
+					NOT = {
+						war_score_against = {
+							who = BAB
+							value = -60
+						}
+					}
+				}
+			}
+			else = {
+				OR = {
+					war_score_against = {
+						who = BAB
+						value = 70
+					}
+					NOT = {
+						war_score_against = {
+							who = BAB
+							value = -50
+						}
+					}
+				}
+			}
+		}
+	}
+
+	condition = {
+		tooltip = PSE_LIAR_KINGS_DIPLO
+		potential = {
+			tag = PSE
+			FROM = {
+				tag = MDI
+			}
+			start_date = 232.7.1
+			has_global_flag = liar_kings_revolt_flag
+		}
+		allow = {
+			OR = {
+				war_score_against = {
+					who = MDI
+					value = 60
+				}
+				NOT = {
+					war_score_against = {
+						who = MDI
+						value = -10
+					}
+				}
+			}
+		}
+	}
+
+	condition = {
+		tooltip = PSE_LIAR_KINGS_DIPLO
+		potential = {
+			tag = PSE
+			FROM = {
+				tag = PRS
+			}
+			start_date = 232.7.1
+			has_global_flag = liar_kings_revolt_flag
+		}
+		allow = {
+			OR = {
+				war_score_against = {
+					who = PRS
+					value = 60
+				}
+				NOT = {
+					war_score_against = {
+						who = PRS
+						value = -10
+					}
+				}
+			}
+		}
+	}
+
+	condition = {
+		tooltip = PSE_LIAR_KINGS_DIPLO
+		potential = {
+			tag = PSE
+			FROM = {
+				tag = CMA
+			}
+			start_date = 232.7.1
+			has_global_flag = liar_kings_revolt_flag
+		}
+		allow = {
+			OR = {
+				war_score_against = {
+					who = CMA
+					value = 60
+				}
+				NOT = {
+					war_score_against = {
+						who = CMA
+						value = -10
+					}
+				}
+			}
+		}
+	}
+
+	condition = {
+		tooltip = PSE_LIAR_KINGS_DIPLO
+		potential = {
+			tag = PSE
+			FROM = {
+				tag = SU6
+			}
+			start_date = 232.7.1
+			has_global_flag = liar_kings_revolt_flag
+		}
+		allow = {
+			OR = {
+				war_score_against = {
+					who = SU6
+					value = 60
+				}
+				NOT = {
+					war_score_against = {
+						who = SU6
+						value = -10
+					}
+				}
+			}
+		}
+	}
+
+	condition = {
+		tooltip = PSE_LIAR_KINGS_DIPLO
+		potential = {
+			tag = PSE
+			FROM = {
+				tag = BAB
+			}
+			start_date = 232.7.1
+			has_global_flag = liar_kings_revolt_flag
+		}
+		allow = {
+			OR = {
+				war_score_against = {
+					who = BAB
+					value = 60
+				}
+				NOT = {
+					war_score_against = {
+						who = BAB
+						value = -10
+					}
+				}
+			}
+		}
+	}
+
+	condition = {
+		tooltip = PSE_LIAR_KINGS_DIPLO
+		potential = {
+			tag = PSE
+			FROM = {
+				tag = SAG
+			}
+			start_date = 232.7.1
+			has_global_flag = liar_kings_revolt_flag
+		}
+		allow = {
+			OR = {
+				war_score_against = {
+					who = SAG
+					value = 60
+				}
+				NOT = {
+					war_score_against = {
+						who = SAG
+						value = -10
+					}
+				}
+			}
+		}
+	}
+
+	condition = {
+		tooltip = PSE_LIAR_KINGS_DIPLO
+		potential = {
+			tag = PSE
+			FROM = {
+				tag = ARM
+			}
+			start_date = 232.7.1
+			has_global_flag = liar_kings_revolt_flag
+		}
+		allow = {
+			OR = {
+				war_score_against = {
+					who = ARM
+					value = 60
+				}
+				NOT = {
+					war_score_against = {
+						who = ARM
+						value = -10
+					}
+				}
+			}
+		}
+	}
+
+	condition = {
+		tooltip = PSE_LIAR_KINGS_DIPLO
+		potential = {
+			tag = PSE
+			FROM = {
+				tag = MEM
+			}
+			start_date = 232.7.1
+			has_global_flag = liar_kings_revolt_flag
+		}
+		allow = {
+			OR = {
+				war_score_against = {
+					who = MEM
+					value = 60
+				}
+				NOT = {
+					war_score_against = {
+						who = MEM
+						value = -10
+					}
+				}
+			}
+		}
+	}
+}

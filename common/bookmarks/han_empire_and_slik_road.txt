@@ -1,0 +1,8 @@
+bookmark = {
+	name = "HAN_EMPIRE_AND_SILK_ROAD_TITLE"
+	desc = "HAN_EMPIRE_AND_SILK_ROAD_DESC"
+	date = 555.1.1
+
+	country = HNW
+	country = XIO
+}

@@ -1,0 +1,16 @@
+bookmark = {
+	name = "VEDIC_AGE_TITLE"
+	desc = "VEDIC_AGE_DESC"
+	date = 142.8.10
+
+	center = 2979
+
+	country = PNC
+	country = KOS
+	country = MAU
+	country = AVA
+	country = ASH
+	country = AGA
+	country = KAL
+	country = GAN
+}

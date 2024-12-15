@@ -1,0 +1,59 @@
+# Province Triggered modifiers are here.
+# These are added to provinces through the add_province_triggered_modifier effect
+#
+# Effects are fully scriptable here.
+
+philistia_cities = {
+	picture = "phi_pentapolis"
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			tag = PHI
+		}
+	}
+
+	allowed_num_of_buildings = 1
+	local_tax_modifier = 0.2
+	local_manpower_modifier = 0.2
+	land_forcelimit = 1
+	min_local_autonomy = -20
+	#Province scope
+	on_activation = {
+
+	}
+	on_deactivation = {
+
+	}
+}
+
+crete_fire_temple = {
+
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		religion = zoroastrianism
+	}
+
+	missionaries = 1
+	prestige = 1
+	allowed_num_of_buildings = 1
+}
+
+lemnos_fire_temple = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		religion = zoroastrianism
+	}
+
+	missionaries = 1
+	prestige = 1
+	allowed_num_of_buildings = 1
+}

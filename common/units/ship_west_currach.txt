@@ -1,0 +1,19 @@
+#Galley
+type = transport
+trigger = {
+	OR = {
+		unit_type = hispano_celtic
+		unit_type = celtic
+		unit_type = britannic
+	}
+}
+
+
+hull_size = 20
+base_cannons = 20
+sail_speed = 9
+
+sprite_level = 1
+
+blockade = 8
+sailors = 80

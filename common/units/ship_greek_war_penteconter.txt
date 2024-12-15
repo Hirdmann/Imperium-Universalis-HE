@@ -1,0 +1,17 @@
+#Galley
+type = heavy_ship
+
+trigger = {
+	OR = {
+		unit_type = greek_techgroup
+	}
+}
+
+hull_size = 20
+base_cannons = 25
+sail_speed = 10
+
+sprite_level = 1
+
+blockade = 10
+sailors = 80

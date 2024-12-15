@@ -1,0 +1,123 @@
+#Country Name: Please see filename.
+
+graphical_culture = thraciangfx
+
+color = { 86 99 49 }
+
+historical_idea_groups = {
+	tribal_government_ideas
+	skirmisher_ideas
+	agraculture_ideas
+	cavalry_ideas
+	diplomatic_ideas
+	infantry_ideas
+	caravan_trade_ideas
+	cerimonial_ideas
+	financial_ideas
+	raider_ideas
+}
+
+historical_units = {
+	thracian_base_inf_0
+	thracian_base_cav_0
+	thracian_base_art_0
+	thracian_base_art_1
+
+	thracian_base_inf_1
+	thracian_base_cav_1
+
+	thracian_base_inf_2
+	thracian_base_art_2
+	thracian_base_art_3
+
+	thracian_base_inf_3
+	thracian_base_cav_2
+
+	thracian_base_inf_4
+	thracian_base_cav_3
+
+	thracian_base_inf_5
+	thracian_base_art_4
+
+	thracian_base_inf_6
+	thracian_base_cav_4
+	thracian_base_art_5
+	thracian_base_inf_7
+
+	thracian_base_inf_8
+	thracian_base_cav_6
+
+	thracian_base_inf_9
+	thracian_base_inf_10
+	thracian_base_cav_6
+	thracian_base_art_6
+	thracian_base_cav_7
+
+	thracian_base_inf_11
+	thracian_base_cav_8
+	thracian_base_art_7
+
+	thracian_base_art_8
+
+	thracian_base_inf_12
+	thracian_base_inf_13
+	thracian_base_cav_9
+	thracian_base_art_9
+
+	thracian_base_inf_14
+	thracian_base_cav_10
+
+	thracian_base_art_10
+	thracian_base_art_11
+
+	thracian_base_inf_15
+	thracian_base_cav_11
+	thracian_base_inf_16
+	thracian_base_cav_12
+	thracian_base_art_12
+
+	thracian_base_inf_17
+	thracian_base_cav_13
+	thracian_base_cav_14
+	thracian_base_art_13
+}
+
+monarch_names = {
+	"Teres " = 20
+	"Sparatocos" = 20
+	"Sitalces" = 20
+	"Seuthes " = 20
+	"Amadocus" = 20
+	"Cotys" = 20
+	"Berisades" = 20
+	"Cetriporis" = 20
+	"Raizdos" = 20
+	"Pleuratus" = 20
+	"Beithys" = 20
+	"Rhoemetalces" = 10
+	"Rhescuporis" = 20
+
+}
+
+leader_names = {
+	Rhaskuporis Orpheus Emolpos Maron Spartacus Sosias Thukydides Antisthenes Rhoimetlkes
+	Rhaskos Kotys Rhaskuporis Sadales Teres Amatokos Zibelmios Barsabas Diedylis Charaspes
+	Lysimachos Arsinoe Kavaros Skostokos Seuthes Syrmos Patraios Theres Kersebleptes Berisades
+	Maisades Medokos Sitalkes Sparadokos Oloros
+}
+
+ship_names = {
+	Agessos Altas Arzas Asamus Bebrus Belsourdos Beos Beras Berzas Bolinthos Bredai Brentas Bruzas Buzas Carpatis Dakina Daphas Darsas
+	Datos Dobiros Drenis Dumas Eitiosaros Ermas Esvas Gaidrus Gesa Ieter Kandaon Kasibounon Kella Kenthas Kersas Kogaionon Krisos Mezena
+	Pautas Putras Raimas Ramus Raskus Rhomphaia Rudas Sabazias Saldas Sara Sartas Satras Serma Skalme Skaplis Skaras Skilas Stene Stra
+	Suchis Suras Taru Titha Udra Udrenas Ukas Zburul Zilas Zvakas
+	"Heros Karabazmos" Sabazios Zibelthiurdos Kotys Pleistoros Bendis Zemela Zalmoxis Derzelas "Zulmo-Drenos" Darzalas Manimiazoi Perkunei Kogaionon Tasagai
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

@@ -1,0 +1,29 @@
+name = "Fourth War of the Diadochi"
+
+#last war of the diadochi in which Antigonus finally dies
+
+war_goal = {
+	type = take_capital_invasion
+	casus_belli = cb_invasion
+	tag = ANE
+}
+
+446.1.1 = {
+	#Anti-Antigonid Coalition
+	add_attacker = SEL
+	add_attacker = FD9
+	add_attacker = PTO
+	add_attacker = MAC
+
+	#Antigonus
+	add_defender = ANE
+}
+
+453.9.1 = {
+	rem_attacker = SEL
+	rem_attacker = FD9
+	rem_attacker = PTO
+	rem_attacker = MAC
+
+	rem_defender = ANE
+}

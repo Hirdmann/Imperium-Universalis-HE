@@ -1,0 +1,80 @@
+ai_civilwar = {
+	potential = {
+		num_of_cities = 5
+		NOT = { has_any_disaster = yes }
+		is_subject = no
+		is_tribal = no
+		is_bankrupt = no
+		NOT = { government = native }
+		government_rank = 2
+		ai = yes
+	}
+
+	can_start = {
+		NOT = { stability = -2 }
+		NOT = { manpower_percentage = 0.2 }
+		has_any_disaster = no
+	}
+
+	can_stop = {
+		stability = 0
+		manpower_percentage = 0.5
+	}
+
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { manpower_percentage = 0.50 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { manpower_percentage = 0.30 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { manpower_percentage = 0.10 }
+		}
+	}
+
+	can_end = {
+		stability = 1
+		manpower_percentage = 0.50
+	}
+
+	modifier = {
+		stability_cost_modifier = 0.5
+		legitimacy = -1
+		republican_tradition = -0.5
+		devotion = -0.5
+		global_unrest = 5
+	}
+
+	on_start = iucivilwar.1
+	on_end = iucivilwar.2
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			1000 = 0
+			100 = iucivilwar.3
+			100 = iucivilwar.4
+			100 = iucivilwar.5
+			100 = iucivilwar.6
+			100 = iucivilwar.7
+			100 = iucivilwar.8
+		}
+	}
+}

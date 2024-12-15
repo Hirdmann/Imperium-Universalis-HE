@@ -1,0 +1,8 @@
+bookmark = {
+	name = "DEMETRIOUS_ANIKETES_TITLE"
+	desc = "DEMETRIOUS_ANIKETES_DESC"
+	date = 573.1.1
+
+	country = GBK
+	country = MAU
+}

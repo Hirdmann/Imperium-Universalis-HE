@@ -1,0 +1,8 @@
+bookmark = {
+	name = "TIGRANES_THE_GREAT_TITLE"
+	desc = "TIGRANES_THE_GREAT_DESC"
+	date = 671.1.1
+
+	country = ROM
+	country = ARM
+}

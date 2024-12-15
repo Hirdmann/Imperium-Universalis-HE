@@ -1,0 +1,123 @@
+#Religion modifiers
+religion_syncretistic_modifier = {
+	potential = {
+		NOT = { has_reform = theocratic_kingdom }
+		NOT = { has_reform = puritanism_reform }
+		NOT = { religion_group = jewish_group }
+		NOT = {
+			tag = SX2
+			has_country_flag = ishkuza_missions_tabitis_people_flag
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_global_modifier_value = {
+				which = global_missionary_strength
+				value = 0.06
+			}
+		}
+	}
+
+	religious_unity	= 0.25
+	tolerance_heathen = 1
+	tolerance_heretic = 1
+	num_accepted_cultures = 1
+}
+
+religion_missionary_modifier = {
+	potential = {
+		OR = {
+			religion = christian
+			religion = ajivika
+			religion = buddhism
+			religion = hinduism
+			religion = jain
+		}
+	}
+
+	trigger = {
+		has_reform = proselytism_reform
+		has_global_modifier_value = {
+			which = global_missionary_strength
+			value = 0.06
+		}
+	}
+	missionaries = 1
+	missionary_maintenance_cost = -0.1
+	global_missionary_strength = 0.02
+}
+
+###########################################
+# reb
+###########################################
+
+rebel_buff = {
+	potential = {
+		tag = REB
+	}
+
+	trigger = {
+		tag = REB
+	}
+	cav_to_inf_ratio = 0.7
+	recover_army_morale_speed = 0.2
+}
+
+###########################################
+# Pagan Religion
+###########################################
+
+unorganized_religion = {
+	potential = {
+		unreformed_pagan_religious_group_trigger = yes
+		NOT = { has_reform = mleccha_desa_tribal_reform }
+		NOT = { has_reform = mleccha_desa_monarchy_reform }
+		NOT = { has_reform = mleccha_desa_republic_reform }
+		NOT = { has_reform = mleccha_desa_oligarchy_reform }
+		NOT = { religion = atenism }
+		NOT = { religion = dacian_religion }
+		NOT = {
+			tag = SX2
+			has_country_flag = ishkuza_missions_tabitis_people_flag
+		}
+	}
+
+	trigger = {
+		NOT = {
+			has_global_modifier_value = {
+				which = global_missionary_strength
+				value = 0.06
+			}
+		}
+	}
+
+	global_missionary_strength = -0.01
+	autonomy_change_time = 0.2
+	stability_cost_modifier = 0.33
+}
+
+######################################
+# Robot parts
+######################################
+
+synthetic_remnants = {
+	potential = {
+		has_global_flag = synthetics_defeated
+	}
+	trigger = {
+		has_global_flag = synthetics_defeated
+	}
+	technology_cost = -0.25
+}
+
+#DON'T FUCKING TOUCH, VITAL
+submission_to_emperor = {
+	potential = {
+		always = no
+	}
+
+	trigger = {
+		always = no
+	}
+}

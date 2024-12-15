@@ -1,0 +1,10 @@
+bookmark = {
+	name = "MITHRIDATIC_WARS_TITLE"
+	desc = "MITHRIDATIC_WARS_DESC"
+	date = 666.1.1
+
+	country = ROM
+	country = PON
+	country = ARM
+	country = BOS
+}

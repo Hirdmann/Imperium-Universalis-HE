@@ -1,0 +1,16 @@
+name = "Odryso-Thracian War"
+war_goal = {
+	type = take_capital_invasion
+	casus_belli = cb_invasion
+	tag = ODR
+}
+
+431.1.1 = {
+	add_attacker = FD9
+	add_defender = ODR
+}
+
+433.1.1 = {
+	rem_attacker = FD9
+	rem_defender = ODR
+}

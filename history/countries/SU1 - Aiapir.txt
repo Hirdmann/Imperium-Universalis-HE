@@ -1,0 +1,61 @@
+
+government = monarchy
+add_government_reform = minor_elamite_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = anshanian
+religion = elamite_religion
+capital = 3471
+fixed_capital = 3471
+
+140.1.1 = {
+	add_army_professionalism = 0.15
+	monarch = {
+		name = "Tahhi-hi"
+		dynasty = "Aiapirid"
+		birth_date = 120.1.1
+		death_date = 170.1.1
+		dip = 2
+		adm = 5
+		mil = 3
+	}
+	heir = {
+		name = "Hanne"
+		monarch_name = "Hanne I"
+		dynasty = "Aiapirid"
+		birth_date = 130.1.1
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+	add_country_modifier = {
+		name = elam_plunder_humilliate
+		duration = -1
+	}
+}
+
+170.1.1 = {
+	monarch = {
+		name = "Hanne"
+		dynasty = "Aiapirid"
+		birth_date = 130.1.1
+		death_date = 190.1.1
+		dip = 2
+		adm = 4
+		mil = 3
+	}
+}
+
+190.1.1 = {
+	monarch = {
+		name = "Zashehshi"
+		dynasty = "Aiapirid"
+		birth_date = 170.1.1
+		death_date = 205.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}

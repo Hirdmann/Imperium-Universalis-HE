@@ -1,0 +1,21 @@
+#Galley
+type = galley
+
+trigger = {
+	OR = {
+		unit_type = greek_techgroup
+		unit_type = roman
+		unit_type = iranian
+		unit_type = punic
+		unit_type = diadochi
+		unit_type = caucaso_anatolian
+	}
+}
+hull_size = 18
+base_cannons = 16
+sail_speed = 11
+
+sprite_level = 1
+
+blockade = 9
+sailors = 70

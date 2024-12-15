@@ -1,0 +1,61 @@
+government = monarchy
+add_government_reform = minor_elamite_kingdom
+government_rank = 2
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = anshanian
+religion = elamite_religion
+capital = 2672
+fixed_capital = 2672
+
+historical_rival = ANH
+
+140.1.1 = {
+	add_army_professionalism = 0.15
+	monarch = {
+		name = "Kurlush"
+		dynasty = "Tahrid"
+		birth_date = 125.1.1
+		death_date = 170.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+	heir = {
+		name = "Kidin-Hutran"
+		monarch_name = "Kidin-Hutran"
+		dynasty = "Tahrid"
+		birth_date = 140.1.1
+		death_date = 186.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+170.1.1 = {
+	monarch = {
+		name = "Kidin-Hutran"
+		dynasty = "Tahrid"
+		birth_date = 140.1.1
+		death_date = 190.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+#Fictional
+190.1.1 = {
+	monarch = {
+		name = "Unzikilik"
+		dynasty = "Tahrid"
+		birth_date = 170.1.1
+		death_date = 205.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+

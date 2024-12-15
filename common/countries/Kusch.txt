@@ -1,0 +1,188 @@
+#Country Name: Please see filename.
+
+graphical_culture = egyptgfx
+
+color = { 145 55 70 }
+
+historical_idea_groups = {
+	administrative_ideas
+	financial_ideas
+	agraculture_ideas
+	syncretism_ideas
+	caravan_trade_ideas
+	infantry_ideas
+	logistic_ideas
+	fortress_ideas
+}
+
+historical_units = {
+	1_sabean_tribesmen
+	1_sabean_horsemen
+	1_sabean_skirmishers
+
+	0_beduin_tribesmen
+	0_tribal_arab_cavalry
+	0_beduin_slingers
+
+	5_early_nubian_warriors
+	5_nubian_cavalry
+	5_axumite_skirmishers
+
+	10_adv_nubian_warriors
+	10_camel_archers
+	10_early_axumite_archers
+
+	15_adv_nubian_spearmen
+	15_adv_nubian_cavalry
+	15_adv_beduin_slingers
+
+	20_late_beduin_warriors
+	20_arab_cavalry
+	20_arab_skirmishers
+
+	25_late_arab_warriors
+	25_arab_noble_horsearchers
+	25_veteran_african_bowmen
+}
+
+monarch_names = {
+	"Alara" = 1
+	"Kashta" = 1
+	"Piankhi" = 1
+	"Shabaka" = 1
+	"Shebiktu" = 1
+	"Taharqa" = 1
+	"Tantamani" = 1
+	"Atlanersa" = 1
+	"Senkamanisken" = 1
+	"Anlamani" = 1
+	"Aspelta" = 1
+	"Aramatle-qo" = 1
+	"Malonaqen" = 1
+	"Analmaye" = 1
+	"Amaninatakilebte" = 1
+	"Siaspiqa" = 1
+	"Nasakhma" = 1
+	"Malewiebamani" = 1
+	"Talakhamani" = 1
+	"Amanineteyerike" = 1
+	"Baskakaren" = 1
+	"Harsiotef" = 1
+	"Akhraten" = 1
+	"Amanibakhi" = 1
+	"Nastasen" = 1
+	"Piankhi-yerike-qa" = 1
+	"Arakamani" = 1
+	"Sheshep-ankh-Amun Setenpere" = 1
+	"Arnekhalamani" = 1
+	"Naqyrinsan" = 1
+	"Pisakar" = 1
+	"Amanitenmemide" = 1
+	"Teritnede" = 1
+	"Teqerideamani" = 1
+	"Tamalerdeamani" = 1
+	"Adeqatli" = 1
+	"Takideamani" = 1
+	"Tarekeniwal" = 1
+	"Amanikhalika" = 1
+	"Aritenyesbokhe" = 1
+	"Amanikhareqerem" = 1
+	"Teritedakhatey" = 1
+	"Aryesbokhe" = 1
+	"Yesbokheamani" = 1
+	"Karkamani" = 1
+	"Amaniastabarqa" = 1
+	"Kash" = 1
+	"Arnekhamani" = 1
+	"Arqamani" = 1
+	"Adikhalamani" = 1
+	"Arikhankharer" = 1
+	"Arikakahtani" = 1
+	"Aktisanes" = 1
+	"Aryamani" = 1
+	"Sabrakamani" = 1
+	"Amanislo" = 1
+	"Amantekha" = 1
+	"Tanyidamani" = 1
+	"Aqrakamani" = 1
+	"Teriteqas" = 1
+	"Amanikhabale" = 1
+	"Natakamani" = 1
+	"Shorkaror" = 1
+	"Teritnide" = 1
+	"Tamelerdeamani" = 1
+	"Adeqatali" = 1
+	"Teqorideamani" = 1
+
+	"Lakhideamani" = -1
+	"Maleqorobar" = -1
+	"Amanikhatashan" = -1
+	"Amanitaraqide" = -1
+	"Amanitore" = -1
+	"Nawidemak" = -1
+	"Amanirenas" = -1
+	"Amanishakheto" = -1
+	"Shanakdakhete" = -1
+	"Ayana" = -1
+	"Aiyana" = -1
+	"Feven" = -1
+	"Senait" = -1
+	"Kasaqa" = -1
+	"Pebatjma" = -1
+	"Tabiry" = -1
+	"Abar" = -1
+	"Khensa" = -1
+	"Peksater" = -1
+	"Nefrukekashta" = -1
+	"Qalhata" = -1
+	"Mesbat" = -1
+	"Tabekenamun" = -1
+	"Arty" = -1
+	"Takahatenamun" = -1
+	"Atakhebasken" = -1
+	"Napareye" = -1
+	"Piankharty" = -1
+	"Malaqaye" = -1
+	"Nasalsa" = -1
+	"Amanimalel" = -1
+	"Taba" = -1
+	"Peltasen" = -1
+	"Yeturow" = -1
+	"Malotaral" = -1
+	"Khaliset" = -1
+	"Henuttakhebit" = -1
+	"Makeda" = -1
+	"Asata" = -1
+	"Artaha" = -1
+	"Atmataka" = -1
+	"Piankh-her" = -1
+	"Maletasen" = -1
+	"Tagtal" = -1
+}
+
+leader_names = {
+	Kaa Teriahi Awawa Utatrerses Nedjeh Kandake Makeda Aserkamani Seb Alara Kashta Piye Shabaka Taharqa Tantamani Atlanersa Senkamanisken
+	Anlamani Aspelta Malonaqen Analmaye Karkamani Amaniastabarqa Siaspiqa Nasakhma Talakhamani Baskakeren Akhraten Amanibakhi Nastasen
+	Tamelerdeamani Adeqatali Takideamani Aritenyesbokhe
+}
+
+ship_names = {
+	Qore Qandake
+	Ashtar Behr Medr "Zat-Badar" Mahram Yeha Ammon Aso Almaqah Ilmuqah Atete Baira Bairo Bamballe Waq Amar Kokke Banna Konso Beher "D'mt" Aksum Damot Adulis
+	Mandulis Kush Meroe Sannar Memnon Benthesicyme Fogatza Robboqua Gumuz Hao Janjero Gibe Illalei Magano Mahrem
+	"Al-Uzza" "Al-'Ula" Dhu Dhat Amm Ammianas Athtar Aim Ara Abgal Abirillu Almaqah Anbay Aranyada Arsu Ashar Asira Atarquruma Atarsamain Athirat "Athtar Shariqan"
+	Bajir Balaw Basamun Dai Datin "Dhat-Anwat" "Dhat-Badan" "Dhat-Sanat" "Dhat-Zahran" "Dhu-Ghabat" "Dhu al-Kaffayn" "Dhul Khalasa" "Dhu-Samawi" Dushara Fils Gad
+	Ghayyan "Al-Harish" Haubas Haukim Hawl Hilal Hubal Isaf "Na-'ila" "Al-Jalsad" Jihar Kahl "Al-Kutbay" "Al-Lat" "Ma'n" Malik Manaf Manat Manawat "Al-Muharriq"
+	"Mun'im" "Nab'al" Nasr Nikrah Nuha Nuhm "Al-Qayn" Qaynan Qaysha Quzah Ruda Sad "Al-Sa'ida" Sakhr Salm Shams Shamsum Shamash Shapash "Shay al-Qawm" Shingala
+	"Su'ayr" "Suwa'" Syn Sin "Ta'lab" Theandrios "Al-Uqaysir" "Al-'Uzza" Wadd Kalb "Al-Ya'bub" "Ya'uq" Yaguth Yatha Tayma Yathrib Saba Qataban Hadramaut Himjar Thamud
+	Qedar Lihyan Dedan Nabataea Mikan Gerrha Hegra "Mada'in Salih" Kindah Tayy Aglibol Astarte Atargatis Baalshamin Allat Alilat Bel Bes El Ilah Ishtar Malakbel Nabu
+	Nergal Yarhibol Nsb Masgida Duwar Sanam Wathan Hima Mahram Afkal Kahin Shaykh Kumra Rsw Fkl Qyn Mrtd Arafat Msl Hryhw Wadi Inzak Meskilak
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

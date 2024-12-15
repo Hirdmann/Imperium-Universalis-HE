@@ -1,0 +1,66 @@
+
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = LYD
+	second = BIT
+	start_date = 157.1.1
+	end_date = 190.1.1
+}
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = LYD
+	second = PPH
+	start_date = 164.1.1
+	end_date = 190.1.1
+}
+
+dependency = {
+	subject_type = "non_autonomous_vassal"
+	first = LYD
+	second = LYA
+	start_date = 165.1.1
+	end_date = 190.1.1
+}
+dependency = {
+	subject_type = "vassal"
+	first = LYD
+	second = EPH
+	start_date = 142.8.10
+	end_date = 195.1.1
+}
+royal_marriage = {
+	first = LYD
+	second = EPH
+	start_date = 120.1.1
+	end_date = 195.1.1
+}
+alliance = {
+	first = LYD
+	second = MLT
+	start_date = 142.8.10
+	end_date = 195.1.1
+}
+alliance = {
+	first = LYD
+	second = CRI
+	start_date = 142.8.10
+	end_date = 195.1.1
+}
+alliance = {
+	first = LYD
+	second = SP1
+	start_date = 204.1.1
+	end_date = 208.1.1
+}
+royal_marriage = {
+	first = LYD
+	second = EPH
+	start_date = 142.1.1
+	end_date = 185.1.1
+}
+alliance = {
+	first = LYD
+	second = SX1
+	start_date = 127.1.1
+	end_date = 160.1.1
+}

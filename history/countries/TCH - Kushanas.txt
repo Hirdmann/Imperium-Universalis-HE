@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = indian_common_monarchy
+government_rank = 4
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = yuezhi
+religion = tocharian_religion
+capital = 2820

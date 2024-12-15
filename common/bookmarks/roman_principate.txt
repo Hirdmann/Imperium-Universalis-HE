@@ -1,0 +1,22 @@
+bookmark = {
+
+	# Title and Description of Bookmark
+
+	name = "ROMAN_PRINCIPATE_TITLE"
+	desc = "ROMAN_PRINCIPATE_DESC"
+
+	# Date of Bookmark
+
+	date = 724.8.1
+
+	# Camera Center of Focus (Province ID)
+
+	center = 53
+
+	# List of Countries (NO MORE THAN 8)
+
+	country = ROI
+
+	# Optional Effects
+
+}

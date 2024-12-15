@@ -1,0 +1,10 @@
+bookmark = {
+	name = "CHEN_SHENG_WU_GUANG_TITLE"
+	desc = "CHEN_SHENG_WU_GUANG_DESC"
+	date = 546.1.1
+
+	country = CHU
+	country = WEI
+	country = ZHA
+	country = QIN
+}

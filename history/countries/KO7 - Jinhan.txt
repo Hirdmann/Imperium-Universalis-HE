@@ -1,0 +1,10 @@
+government = tribal
+add_government_reform = korean_samhan_confederation_reform
+government_rank = 3
+#mercantilism = 0.25
+primary_culture = jinhan
+religion = muism
+capital = 6027
+technology_group = korean
+
+646.1.1 = { religion = legalism }

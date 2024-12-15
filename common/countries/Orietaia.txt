@@ -1,0 +1,118 @@
+#Country Name: Please see filename.
+
+graphical_culture = indiangfx
+
+color = { 132 158 41 }
+
+preferred_religion = zoroastrianism
+
+historical_idea_groups = {
+	fortress_ideas
+	caravan_trade_ideas
+	financial_ideas
+	domestic_government_ideas
+	syncretism_ideas
+	infantry_ideas
+	diplomatic_ideas
+	agraculture_ideas
+}
+
+historical_units = {
+	0_indian_levys
+	0_early_archers
+	0_chariots
+
+	5_early_indian_spearmen
+	5_early_bamboo_archers
+	5_light_indian_cavalry
+
+	10_indian_kshatriyas
+	10_adv_archers
+	10_adv_indian_cavalry
+
+	15_late_indian_spearmen
+	15_armored_skirmishers
+	15_indian_elephants
+
+	20_adv_indian_kshatriyas
+	20_late_archers
+	20_heavy_indian_cavalry
+
+	25_indian_pikemen
+	25_indian_noble_archers
+	25_indian_war_elephants
+}
+
+monarch_names = {
+	"Bizanjar" = 1
+	"Haruni" = 1
+	"Hasni" = 1
+	"Mengal" = 1
+	"Nichari" = 1
+	"Pandrani" = 1
+	"Sajdi" = 1
+	"Zahri" = 1
+	"Bangul" = 1
+	"Kurd" = 1
+	"Lahri" = 1
+	"Langav" = 1
+	"Raisan" = 1
+	"Rustam" = 1
+	"Sarpor" = 1
+	"Satakzai" = 1
+	"Zagar" = 1
+	"Mengal" = 1
+
+	"Akkadevi" = -1
+	"Bhavanaga" = -1
+	"Bijjabbe" = -1
+	"Chandaladevi" = -1
+	"Chandrabbalabbe" = -1
+	"Gangambika" = -1
+	"Hoysaladevi" = -1
+	"Kundakadevi" = -1
+	"Lakshmi" = -1
+	"Mahadevi" = -1
+	"Mailaladevi" = -1
+	"Obayamma" = -1
+	"Pertal" = -1
+	"Revakanimmadi" = -1
+	"Shantaladevi" = -1
+	"Vijamba" = -1
+	"Chinnambike" = -1
+	"Thirumalambike" = -1
+	"Anitalli" = -1
+	"Chamekamba" = -1
+	"Chandena" = -1
+	"Chellava" = -1
+	"Gamakamba" = -1
+	"Hariharamba" = -1
+	"Nagipoti" = -1
+	"Pammava" = -1
+	"Rudramba" = -1
+	"Rudramadevi" = -1
+	"Srimahadevi" = -1
+	"Tundaka" = -1
+}
+
+leader_names = {
+	Achmadzai Gurguari Iltazai Kalandari Kambrani Mirwari Rodeni Sumalari Jhalawan Bizanjars Harunis Hasnis Mengals Nicharis Pandranis
+	Sajdis Zahris Sarawan Bangulzais Kurds Lahris Langavs Shahis Raisanis Rustamzais Sarpora Satakzais Shahwanis Zagars
+}
+
+ship_names = {
+	Sogdyana Kambujiya Tsishpish Athurpat Bagabukhsha Marduniya Ariyobarzan Vindapana Utana
+	Vishtaspa Vakauka Ardumanish Gaubaruva Vidarna Ariyaramna Arshama Bardiya Mehrdad Ardavan
+	Farrukh Shahrwaraz Vistahm Spandiyadh Vistahm Spandiyadh Sokhrab Rodstahm Jamasp Kawad Balash
+	Yazdekert Narse Hormizd Khosrau "Baga-data" Mani
+	Shirin Azarmigdukht Boran Shahendukht Denag Amastri Apama Artastuna Atossa Jamaspi Raoxshna Sisygambis
+	"Amesha Spenta" Yazata Ahura Daeva Ahriman Ohrmazd Parsa
+}
+
+army_names = {
+	"Gond-i $PROVINCE$"
+}
+
+fleet_names = {
+	"Yellow Fleet" "Black Fleet" "Red Fleet" "Ships of $PROVINCE$"
+}

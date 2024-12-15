@@ -1,0 +1,233 @@
+government = theocracy
+add_government_reform = spartan_monarchy_reform
+government_rank = 2
+technology_group = greek_techgroup
+primary_culture = doric
+add_accepted_culture = elean
+religion = greek_religion
+historical_friend = TAR
+capital = 933
+fixed_capital = 933
+
+historical_rival = ARG
+add_army_professionalism = 0.2
+set_country_flag = formed_greek_minor
+425.1.1 = {
+	primary_culture = greek
+}
+
+142.1.1 = {
+	monarch = {
+		name = "Eurycratides"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+195.1.1 = {
+	monarch = {
+		birth_date = 155.1.1
+		name = "Anaxandridas II"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 4
+		mil = 4
+	}
+}
+233.1.1 = {
+	monarch = {
+		birth_date = 193.1.1
+		name = "Cleomenes I"
+		dynasty = "Agiad"
+		dip = 4
+		adm = 2
+		mil = 3
+	}
+}
+# 'THIS IS SPARTA !!!'
+265.1.1 = {
+	monarch = {
+		birth_date = 214.1.1
+		name = "Leonidas I"
+		dynasty = "Agiad"
+		dip = 2
+		adm = 5
+		mil = 5
+	}
+}
+273.1.1 = {
+	monarch = {
+		name = "Pleistarchus"
+		dynasty = "Agiad"
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+
+	leader = {
+		name = "Archidamus II"
+		type = general
+		fire = 2
+		shock = 4
+		manuever = 5
+		siege = 2
+	}
+}
+294.1.1 = {
+	monarch = {
+		name = "Pleistoanax"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+	leader = {
+		name = "Nicomedes Agiad"
+		type = general
+		fire = 3
+		shock = 3
+		manuever = 3
+		siege = 2
+		death_date = 297.1.1
+	}
+	add_army_professionalism = 0.1
+}
+344.1.1 = {
+	monarch = {
+		name = "Pausanias"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_army_professionalism = 0.1
+}
+323.1.1 = {
+	leader = {
+		name = "Bracidas Agiad"
+		type = general
+		fire = 5
+		shock = 5
+		manuever = 5
+		siege = 2
+		death_date = 332.1.1
+	}
+}
+347.1.1 = { #victor of Aegospotamos naval battle, and demolisher of Athens walls
+	leader = {
+		name = "Lysander of Sparta"
+		type = admiral
+		fire = 8
+		shock = 8
+		manuever = 6
+		siege = 2
+		death_date = 359.1.1
+	}
+}
+358.1.1 = {
+	monarch = {
+		name = "Agesipolis I"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+373.1.1 = {
+	monarch = {
+		name = "Cleombrotus I"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_army_professionalism = -0.1
+}
+382.1.1 = {
+	monarch = {
+		name = "Agesipolis II"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+384.1.1 = {
+	monarch = {
+		name = "Cleomenes II"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_army_professionalism = -0.1
+}
+444.1.1 = {
+	monarch = {
+		name = "Areus I"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+488.1.1 = {
+	monarch = {
+		name = "Acrotatus II"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_army_professionalism = -0.1
+}
+491.1.1 = {
+	monarch = {
+		name = "Areus II"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+499.1.1 = {
+	monarch = {
+		name = "Leonidas II"
+		dynasty = "Agiad"
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+}
+511.1.1 = {
+	monarch = {
+		name = "Cleombrotus II"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	add_army_professionalism = -0.1
+}
+512.1.1 = {
+	monarch = {
+		name = "Leonidas II"
+		dynasty = "Agiad"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+518.1.1 = { #last try of Sparta
+	monarch = {
+		name = "Cleomenes III"
+		dynasty = "Agiad"
+		death_date = 531.1.1
+		dip = 3
+		adm = 4
+		mil = 5
+	}
+	add_army_professionalism = 0.4
+}
+

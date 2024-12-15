@@ -1,0 +1,127 @@
+#Country Name: Please see filename.
+
+graphical_culture = iberiangfx
+
+color = { 200 211 78 }
+
+historical_idea_groups = {
+	caravan_trade_ideas
+	cavalry_ideas
+	financial_ideas
+	expansion_ideas
+	mercenary_ideas
+	domestic_government_ideas
+	infantry_ideas
+	diplomatic_ideas
+}
+
+historical_units = {
+	iberian_base_inf_0
+	iberian_base_cav_0
+	iberian_base_art_0
+	iberian_base_art_1
+
+	iberian_base_inf_1
+	iberian_base_cav_1
+	iberian_base_art_2
+
+	iberian_base_inf_2
+	iberian_base_cav_2
+
+	iberian_base_inf_3
+	iberian_base_art_3
+
+	iberian_base_inf_4
+	iberian_base_cav_3
+	iberian_base_art_4
+	iberian_base_inf_5
+
+	iberian_base_cav_4
+	iberian_base_inf_6
+	iberian_base_inf_7
+	iberian_base_art_5
+
+	iberian_base_cav_5
+	iberian_base_art_6
+
+	iberian_base_inf_8
+	iberian_base_cav_6
+
+	iberian_base_cav_7
+	iberian_base_art_7
+	iberian_base_art_8
+
+	iberian_base_inf_9
+	iberian_base_inf_10
+	iberian_base_art_9
+	iberian_base_cav_8
+
+	iberian_base_inf_11
+	iberian_base_inf_12
+	iberian_base_art_10
+	iberian_base_cav_9
+
+	iberian_base_inf_13
+	iberian_base_inf_14
+	iberian_base_art_11
+
+	iberian_base_cav_10
+	iberian_base_cav_11
+
+	iberian_base_inf_15
+	iberian_base_cav_12
+}
+
+monarch_names = {
+	"Abadutiker" = 25
+	"Abararban" = 25
+	"Alucio" = 25
+	"Andobales" = 25
+	"Armitalsko" = 25
+	"Bailar" = 25
+	"Bartar" = 25
+	"Bilinos" = 25
+	"Biurtibes" = 25
+	"Budar" = 25
+	"Cerdubeles" = 25
+	"Edecon" = 25
+	"Eterindu" = 25
+	"Iceatin" = 25
+	"Isbataris" = 25
+	"Katulatin" = 25
+	"Korbis" = 25
+	"Lagunas" = 25
+	"Mandonio" = 25
+	"Seihar" = 25
+	"Selgiterar" = 25
+	"Sosian" = 25
+	"Talskubilos" = 25
+	"Teitebas" = 25
+	"Tibaste" = 25
+	"Turibas" = 25
+	"Unibetin" = 25
+
+	"Ana" = -1
+	"Auruningica" = -1
+	"Himilce" = -1
+	"Sicounin" = -1
+	"Stena" = -1
+}
+
+ship_names = {
+	Astarte Baal "Baalat Gebal" El Eshmun Ibussim Melqart Thammuz Abdalonim Abdeshmun "Abdi-Milki" Abdmelqart Abdosir Aderbaal Adonibaal Ahiram Akbar Aqhat Ashtartyaton
+	Ashtzaph Azemilk Baalhanno Baalshillek Bodashtart Bodeshmun Bodinelqart Bodmelqart Danel Elulaios Eshmunamash Germelqart Kanmi Khilletzbaal Maharbaal Melqartpilles
+	Milkherem Milkpilles Milkyaton Philosir Poumyathon "Rib-Addi" Sakarbaal Tabnit Yehawwielon Yutpan Zimrida
+}
+
+leader_names = {
+	"the Contestanian" "the Iberian" "the Strong" "the Wise" "the Old" "the Black" "the One-Eyed" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Fleet of $PROVINCE$"
+}

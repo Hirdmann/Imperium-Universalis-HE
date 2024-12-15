@@ -1,0 +1,14 @@
+government = tribal
+add_government_reform = tribal_kingdom_reform
+government_rank = 3
+#mercantilism = 0.25
+capital = 1110
+technology_group = balkan
+primary_culture = odrysian
+religion = thracian
+
+237.1.1 = {
+	government = monarchy
+	add_government_reform = satrapy_reform
+	capital = 1088
+}

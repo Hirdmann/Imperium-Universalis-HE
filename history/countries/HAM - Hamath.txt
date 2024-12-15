@@ -1,0 +1,28 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = syriac
+religion = punic_religion
+#religious_school = semitic_type
+capital = 2310
+fixed_capital = 2310
+
+708.1.1 = {
+	government = monarchy
+	add_government_reform = theocratic_kingdom
+	add_accepted_culture = syriac
+	primary_culture = greco_semitic
+	religion = greek_religion
+	override_country_name = "EMESA"
+	monarch = {
+		name = "Sampsigeramus I"
+		dynasty = "Sampsigeramid"
+		birth_date = 680.1.1
+		culture = nabataean
+		dip = 4
+		adm = 3
+		mil = 1
+	}
+}

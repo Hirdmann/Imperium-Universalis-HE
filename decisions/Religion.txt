@@ -1,0 +1,197 @@
+country_decisions = {
+
+	disrespect_other_gods = {
+		potential = {
+			NOT = { religion_group = brahmin_group }
+			NOT = { religion_group = jewish_group }
+			NOT = { has_country_modifier = disrespect_other_gods_modifier }
+		}
+		allow = {
+			advisor = priest_adv
+			stability = 1
+			NOT = { has_idea_group = syncretism_ideas }
+			NOT = { religious_unity = 0.8 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = disrespect_other_gods_modifier
+				duration = 7300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_the_high_priest = {
+		potential = {
+			NOT = { religion = chinese_religion }
+			NOT = { religion_group = brahmin_group }
+			NOT = { has_country_modifier = high_priest_modifier }
+		}
+		allow = {
+			stability = 1
+			adm_power = 250
+			capital_scope = {
+				OR = {
+					has_building = small_temple
+					has_building = great_temple
+					has_building = religious_grounds
+				}
+			}
+		}
+		effect = {
+			add_adm_power = -250
+			if = {
+				limit = { uses_patriarch_authority = yes }
+				add_patriarch_authority = 0.25
+			}
+			add_country_modifier = {
+				name = high_priest_modifier
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	adopt_christianity = {
+		potential = {
+			has_global_flag = christ_beginn
+			NOT = { religion_group = jewish_group }
+			any_owned_province = { religion = christian }
+		}
+		allow = {
+			stability = 1
+			any_owned_province = {
+				culture_group = ROOT
+				religion = christian
+			}
+		}
+		effect = {
+			change_religion = christian
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				religious_unity = 0.6
+			}
+			modifier = {
+				factor = 0.5
+				religious_unity = 0.3
+			}
+		}
+	}
+	ban_human_sacrifices = {
+		potential = {
+			NOT = { religion_group = jewish_group }
+			NOT = { religion = buddhism }
+			NOT = { religion = jain }
+			NOT = { has_country_modifier = human_sacrifices_banned }
+		}
+		allow = {
+			adm_tech = 24
+		}
+		effect = {
+			add_country_modifier = {
+				name = human_sacrifices_banned
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				religious_unity = 0.85
+			}
+			modifier = {
+				factor = 3.0
+				full_idea_group = syncretism_ideas
+			}
+		}
+	}
+	change_to_dominant_religion = {
+        color = { 0 190 0 }
+		potential = {
+			OR = {
+				capital_scope = { NOT = { religion = ROOT } }
+				NOT = { religious_unity = 0.9 }
+			}
+			NOT = { tag = ZHO }
+		}
+		allow = {
+			NOT = { dominant_religion = ROOT }
+			custom_trigger_tooltip = {
+				tooltip = tooltip_dominant_religion_in_capital
+				dominant_religion = capital
+				is_free_or_tributary_trigger = yes
+			}
+			stability = 1
+		}
+		effect = {
+			if = {
+				limit = {
+					dominant_religion = capital
+				}
+				custom_tooltip = change_to_dominant_religion_tt
+				set_ruler_religion = capital
+				set_heir_religion = capital
+			}
+			change_religion = new_variable:dominant_religion
+			add_stability = -1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				religious_unity = 0.5
+			}
+			modifier = {
+				factor = 2
+				full_idea_group = syncretism_ideas
+			}
+		}
+	}
+
+	###Moved from new_religious_decisions###
+
+	make_punic_sacrifice = {
+		potential = {
+			religion = punic_religion
+			NOT = { has_country_modifier = moloch_sacrifice }
+			NOT = { has_country_modifier = moloch_sacrifice_1 }
+			NOT = { has_country_modifier = moloch_sacrifice_2 }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = { id = custom_religion.1 }
+		}
+		ai_importance = 500
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	invite_a_scholar = {
+		potential = {
+			ai = no
+			OR = {
+				religion = brahmin
+				religion = sramana
+				religion = buddhism
+				religion = ajivika
+				religion = jain
+				religion = hinduism
+			}
+		}
+		allow = {
+			ai = no
+			adm_power_cost = 250
+		}
+		effect = {
+			country_event = { id = indian.4406 }
+		}
+	}
+}

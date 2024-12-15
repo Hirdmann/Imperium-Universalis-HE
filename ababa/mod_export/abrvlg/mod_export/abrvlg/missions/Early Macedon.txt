@@ -1,0 +1,1336 @@
+early_macedon_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = MAC 
+		}
+	}
+
+	greek_allies = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = {
+			question_of_methone
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	macedonian_tar_revenues = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {
+			question_of_methone
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	expand_macedonian_timber_exports = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {
+			macedonian_tar_revenues
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	king_archelaus_reforms_and_building_program = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	palace_of_aegai = {
+		icon = mission_unite_home_region
+		position = 7
+		required_missions = {
+			king_archelaus_reforms_and_building_program expand_macedonian_timber_exports formation_of_macedonian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	create_aeginote_colony_in_damastion = {
+		icon = mission_unite_home_region
+		position = 9
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	subjugation_of_paeonia = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			philhellenes
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	defeat_of_dardanias = {
+		icon = mission_unite_home_region
+		position = 11
+		required_missions = {
+			subjugation_of_paeonia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	adriaei_campaign = {
+		icon = mission_unite_home_region
+		position = 13
+		required_missions = {
+			siege_of_pelion
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	garrison_ambracia = {
+		icon = mission_unite_home_region
+		position = 14
+		required_missions = {
+			fate_of_epirus
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	control_the_islands = {
+		icon = mission_unite_home_region
+		position = 17
+		required_missions = {
+			dominate_the_euboean_cities
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	surrender_of_attica = {
+		icon = mission_unite_home_region
+		position = 18
+		required_missions = {
+			battle_of_chaeronea
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 23
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 24
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 25
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 26
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 27
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 28
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 29
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 30
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 31
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 32
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 33
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	conquest_of_italia = {
+		icon = mission_unite_home_region
+		position = 34
+		required_missions = {
+			the_end?_(diadochi_wars_or_world_painting)
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	mediterranean_lake = {
+		icon = mission_unite_home_region
+		position = 35
+		required_missions = {
+			conquest_of_italia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	illyrian_conquest = {
+		icon = mission_unite_home_region
+		position = 36
+		required_missions = {
+			mediterranean_lake
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	discover_the_wild_north-east = {
+		icon = mission_unite_home_region
+		position = 37
+		required_missions = {
+			illyrian_conquest
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	scytho-sarmatian_conquest = {
+		icon = mission_unite_home_region
+		position = 38
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	revenge_for_jaxarthes = {
+		icon = mission_unite_home_region
+		position = 39
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+early_macedon_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = MAC 
+		}
+	}
+
+	question_of_methone = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = {
+			gather_the_levies greek_allies
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	fate_of_orestia = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {
+			expel_paionians_from_eordaia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	revenge_on_encheleans = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {
+			fate_of_orestia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	lyncestian_conflicts = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			revenge_on_encheleans
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	lords_of_upper_macedon = {
+		icon = mission_unite_home_region
+		position = 6
+		required_missions = {
+			subdue_mountaneers_of_tymphaia lyncestian_conflicts formation_of_macedonian_kingdom lords_of_upper_macedon
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	new_capital = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = {
+			palace_of_aegai formation_of_macedonian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	establish_ties_with_epirus = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			philhellenes
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	siege_of_pelion = {
+		icon = mission_unite_home_region
+		position = 12
+		required_missions = {
+			establish_ties_with_epirus defeat_of_dardanias
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	fate_of_epirus = {
+		icon = mission_unite_home_region
+		position = 13
+		required_missions = {
+			siege_of_pelion
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	dominate_the_euboean_cities = {
+		icon = mission_unite_home_region
+		position = 16
+		required_missions = {
+			new_greek_hegemon
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	battle_of_chaeronea = {
+		icon = mission_unite_home_region
+		position = 17
+		required_missions = {
+			dominate_the_euboean_cities intervention_in_phocis
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	start_great_war_preparations = {
+		icon = mission_unite_home_region
+		position = 20
+		required_missions = {
+			league_of_corinth
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+early_macedon_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = MAC 
+		}
+	}
+
+	gather_the_levies = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	expel_paionians_from_eordaia = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = {
+			gather_the_levies
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	fate_of_elimeian_kingdom = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {
+			expel_paionians_from_eordaia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	subdue_mountaneers_of_tymphaia = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			fate_of_elimeian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	formation_of_macedonian_kingdom = {
+		icon = mission_unite_home_region
+		position = 7
+		required_missions = {
+			lords_of_upper_macedon conquest_of_mygdonia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	philhellenes = {
+		icon = mission_unite_home_region
+		position = 9
+		required_missions = {
+			formation_of_macedonian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	establish_ties_with_larissa_dynasty = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			philhellenes
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	uniting_the_thessalians = {
+		icon = mission_unite_home_region
+		position = 11
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	tagus_of_all_thessaly = {
+		icon = mission_unite_home_region
+		position = 12
+		required_missions = {
+			uniting_the_thessalians establish_ties_with_larissa_dynasty
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	negotiate_a_place_in_amphyctionic_league = {
+		icon = mission_unite_home_region
+		position = 13
+		required_missions = {
+			tagus_of_all_thessaly
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	new_greek_hegemon = {
+		icon = mission_unite_home_region
+		position = 15
+		required_missions = {
+			negotiate_a_place_in_amphyctionic_league attack_on_peloponnessus
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	intervention_in_phocis = {
+		icon = mission_unite_home_region
+		position = 16
+		required_missions = {
+			new_greek_hegemon
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	attack_on_peloponnessus = {
+		icon = mission_unite_home_region
+		position = 18
+		required_missions = {
+			battle_of_chaeronea
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	league_of_corinth = {
+		icon = mission_unite_home_region
+		position = 19
+		required_missions = {
+			attack_on_peloponnessus surrender_of_attica
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	start_of_alexander_conquests = {
+		icon = mission_unite_home_region
+		position = 21
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	landing_in_asia_minor = {
+		icon = mission_unite_home_region
+		position = 22
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	battle_of_granicus = {
+		icon = mission_unite_home_region
+		position = 23
+		required_missions = {
+			landing_in_asia_minor
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	siege_of_halicarnassus = {
+		icon = mission_unite_home_region
+		position = 24
+		required_missions = {
+			battle_of_granicus
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	battle_of_ipsus = {
+		icon = mission_unite_home_region
+		position = 25
+		required_missions = {
+			siege_of_halicarnassus
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	siege_of_tyre = {
+		icon = mission_unite_home_region
+		position = 26
+		required_missions = {
+			battle_of_ipsus
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	ruler_of_egypt = {
+		icon = mission_unite_home_region
+		position = 27
+		required_missions = {
+			siege_of_tyre
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	battle_of_gaugamela = {
+		icon = mission_unite_home_region
+		position = 28
+		required_missions = {
+			ruler_of_egypt
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	battle_of_persian_gates = {
+		icon = mission_unite_home_region
+		position = 29
+		required_missions = {
+			battle_of_gaugamela
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	sogdian_rebellion = {
+		icon = mission_unite_home_region
+		position = 30
+		required_missions = {
+			battle_of_persian_gates
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	to_the_indus_river = {
+		icon = mission_unite_home_region
+		position = 31
+		required_missions = {
+			sogdian_rebellion
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	empire_of_alexander = {
+		icon = mission_unite_home_region
+		position = 32
+		required_missions = {
+			to_the_indus_river
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	the_end?_(diadochi_wars_or_world_painting) = {
+		icon = mission_unite_home_region
+		position = 33
+		required_missions = {
+			empire_of_alexander
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	arabian_invasion = {
+		icon = mission_unite_home_region
+		position = 34
+		required_missions = {
+			the_end?_(diadochi_wars_or_world_painting)
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	nubian_expedition = {
+		icon = mission_unite_home_region
+		position = 35
+		required_missions = {
+			arabian_invasion
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	greatest_empire = {
+		icon = mission_unite_home_region
+		position = 36
+		required_missions = {
+			mediterranean_lake nubian_expedition iberian_campaigns
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	tarim_expedition = {
+		icon = mission_unite_home_region
+		position = 37
+		required_missions = {
+			greatest_empire
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	invasion_of_serica = {
+		icon = mission_unite_home_region
+		position = 38
+		required_missions = {
+			tarim_expedition
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	emperor_of_serica = {
+		icon = mission_unite_home_region
+		position = 39
+		required_missions = {
+			invasion_of_serica
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	emperor_of_the_world = {
+		icon = mission_unite_home_region
+		position = 40
+		required_missions = {
+			revenge_for_jaxarthes emperor_of_serica emperor_of_india landing_in_prytania
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+early_macedon_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = MAC 
+		}
+	}
+
+	claim_all_of_emathia_and_bottiea = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = {
+			gather_the_levies
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	pella_revolts_supressed = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {
+			claim_all_of_emathia_and_bottiea
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	expel_the_krestonians = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {
+			pella_revolts_supressed
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	conquest_of_mygdonia = {
+		icon = mission_unite_home_region
+		position = 6
+		required_missions = {
+			expel_the_krestonians
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	copy_persian_administration_practices = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = {
+			formation_of_macedonian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	claiming_amphiopolis_and_bisaltia = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			philhellenes
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	fate_of_chalkidean_league = {
+		icon = mission_unite_home_region
+		position = 11
+		required_missions = {
+			claiming_amphiopolis_and_bisaltia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	control_of_crenides_gold = {
+		icon = mission_unite_home_region
+		position = 13
+		required_missions = {
+			fate_of_chalkidean_league
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	attack_thracian_colonies = {
+		icon = mission_unite_home_region
+		position = 14
+		required_missions = {
+			control_of_crenides_gold
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	into_thrace = {
+		icon = mission_unite_home_region
+		position = 15
+		required_missions = {
+			attack_thracian_colonies
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	decline_of_odrysia = {
+		icon = mission_unite_home_region
+		position = 16
+		required_missions = {
+			into_thrace
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	attack_on_triballians = {
+		icon = mission_unite_home_region
+		position = 17
+		required_missions = {
+			decline_of_odrysia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	creation_of_macedonian_fleet = {
+		icon = mission_unite_home_region
+		position = 20
+		required_missions = {
+			start_great_war_preparations league_of_corinth
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	indian_invasion = {
+		icon = mission_unite_home_region
+		position = 37
+		required_missions = {
+			greatest_empire
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	emperor_of_india = {
+		icon = mission_unite_home_region
+		position = 39
+		required_missions = {
+			indian_invasion
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+early_macedon_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = MAC 
+		}
+	}
+
+	trace_genealogy_from_argos = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	accept_gifts_of_macedonian_tribal_nobility = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {
+			trace_genealogy_from_argos
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	focus_on_noble_cavalry = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			accept_gifts_of_macedonian_tribal_nobility
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	macedonian_horses = {
+		icon = mission_unite_home_region
+		position = 6
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	first_hetairoi = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = {
+			focus_on_noble_cavalry formation_of_macedonian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	hetairoi_as_judges_and_administrators = {
+		icon = mission_unite_home_region
+		position = 9
+		required_missions = {
+			copy_persian_administration_practices
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	royal_pages = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			first_hetairoi
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	royal_hypaspistes = {
+		icon = mission_unite_home_region
+		position = 11
+		required_missions = {
+			royal_pages
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	learn_theban_and_iphicratian_tactics = {
+		icon = mission_unite_home_region
+		position = 12
+		required_missions = {
+			royal_hypaspistes
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			mil_tech = 16
+		}
+		effect = {
+			add_mil_power = 150
+		}
+	}
+
+	establishing_macedonian_phalanx = {
+		icon = mission_unite_home_region
+		position = 13
+		required_missions = {
+			learn_theban_and_iphicratian_tactics
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			mil_tech = 18
+		}
+		effect = { }
+	}
+
+	hetairoi_and_pedzetairoi = {
+		icon = mission_unite_home_region
+		position = 14
+		required_missions = {
+			establishing_macedonian_phalanx control_of_crenides_gold
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			mil_tech = 20
+		}
+		effect = { }
+	}
+
+	thracian_allies = {
+		icon = mission_unite_home_region
+		position = 15
+		required_missions = {
+			attack_thracian_colonies
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	agrianian_light_infantry = {
+		icon = mission_unite_home_region
+		position = 16
+		required_missions = {
+			thracian_allies
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	march_to_danube = {
+		icon = mission_unite_home_region
+		position = 17
+		required_missions = {
+			decline_of_odrysia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	macedono-scythian_war = {
+		icon = mission_unite_home_region
+		position = 18
+		required_missions = {
+			march_to_danube
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	siege_of_perinthus = {
+		icon = mission_unite_home_region
+		position = 19
+		required_missions = {
+			macedono-scythian_war
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	attack_on_byzantium = {
+		icon = mission_unite_home_region
+		position = 20
+		required_missions = {
+			siege_of_perinthus
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 23
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 24
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 25
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 26
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 27
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 28
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 29
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 30
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 31
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 32
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	alexandrias = {
+		icon = mission_unite_home_region
+		position = 33
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	conquer_carthage = {
+		icon = mission_unite_home_region
+		position = 34
+		required_missions = {
+			the_end?_(diadochi_wars_or_world_painting)
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	iberian_campaigns = {
+		icon = mission_unite_home_region
+		position = 35
+		required_missions = {
+			conquer_carthage
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	conquest_of_gauls = {
+		icon = mission_unite_home_region
+		position = 37
+		required_missions = {
+			iberian_campaigns
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	landing_in_prytania = {
+		icon = mission_unite_home_region
+		position = 39
+		required_missions = {
+			conquest_of_gauls
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}

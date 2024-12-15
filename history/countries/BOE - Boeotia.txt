@@ -1,0 +1,30 @@
+government = republic
+add_government_reform = league_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = boeotian
+religion = greek_religion
+capital = 963
+historical_rival = MAC
+historical_rival = ATH
+historical_rival = SP1
+
+387.1.1 = {
+	monarch = {
+		name = "Pammenes"
+		dynasty = "of Thebes" #Probable founder of Sacred Band of Thebes, known homopedophile and abuser of little Philip xD
+		birth_date = 345.1.1
+		death_date = 410.1.1 #assumption
+		dip = 2
+		adm = 2
+		mil = 4
+	}
+}
+
+425.1.1 = {
+	primary_culture = greek
+}
+431.1.1 = {
+	remove_historical_rival = MAC
+}

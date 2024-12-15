@@ -1,0 +1,12 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = hispano_celtic
+primary_culture = turdetani
+religion = iberian_religion
+#religious_school = north_pagan_type
+capital = 170
+254.1.1 = {
+	religion = celtic_religion
+}

@@ -1,0 +1,10 @@
+bookmark = {
+	name = "CIMBRO_TEUTONIC_INVASION_TITLE"
+	desc = "CIMBRO_TEUTONIC_INVASION_DESC"
+	date = 641.1.1
+
+	country = ROM
+	country = CIM
+	country = TEU
+	country = AMB
+}

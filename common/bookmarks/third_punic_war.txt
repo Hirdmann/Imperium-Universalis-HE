@@ -1,0 +1,8 @@
+bookmark = {
+	name = "THIRD_PUNIC_WAR_TITLE"
+	desc = "THIRD_PUNIC_WAR_DESC"
+	date = 605.1.1
+
+	country = ROM
+	country = CAR
+}

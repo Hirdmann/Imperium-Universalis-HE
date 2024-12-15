@@ -1,0 +1,178 @@
+# base_price = X			base price in $. (default is 1.0 if not specified
+# goldtype = yes/no			This resource works like 'gold' if yes, using prices from mine-value in province instead of supply/demand and baseprice. Also creates gold-inflation
+
+
+# Base resources
+grain = {
+	base_price = 1.25
+}
+
+wine = {
+	base_price = 3.0
+}
+
+wool = {
+	base_price = 2.0
+}
+
+cloth = {
+	base_price = 3.0
+}
+
+fish = {
+	base_price = 1.5
+}
+
+fur = {
+	base_price = 2.5
+}
+
+salt = {
+	base_price = 3.0
+}
+
+naval_supplies = {
+	base_price = 2.0
+}
+
+copper = {
+	base_price = 4.0
+}
+
+gold = {
+	base_price = 0
+	goldtype = yes
+}
+
+iron = {
+	base_price = 3.5
+}
+
+horses = {
+	base_price = 2.5
+}
+
+spices = {
+	base_price = 3.5
+}
+
+fruits = {
+	base_price = 2.0
+}
+
+amber = {
+	base_price = 4.0
+}
+
+silver = {
+	base_price = 0
+	goldtype = yes
+}
+
+marble = {
+	base_price = 4.0
+}
+
+olive = {
+	base_price = 2.5
+}
+
+paper = { #As papyrus it's the only source of 'paper' at start date, it's price should be high
+	base_price = 5.0
+}
+
+ceramic = {
+	base_price = 2.0
+}
+
+meat_animals = {
+	base_price = 2.0
+}
+
+dyes = {
+	base_price = 4.0
+}
+
+honey = { #Actually not that rare of a product, apiculture introduced in Mesopotamia by the 8th century
+	base_price = 2.0
+}
+
+lead = {
+	base_price = 2.0
+}
+
+glas = {
+	base_price = 4.0
+}
+
+silk = {
+	base_price = 4.5
+}
+
+olibanum = {
+	base_price = 4.0
+}
+
+pearls = {
+	base_price = 4.0
+}
+
+exotic_animals = {
+	base_price = 3.5
+}
+
+herbs = {
+	base_price = 2.0
+}
+
+ivory = {
+	base_price = 3.5
+}
+
+jade = {
+	base_price = 5.0
+}
+
+tin = {
+	base_price = 4.0
+}
+
+rice = {
+	base_price = 1.0
+}
+
+gems = {
+	base_price = 5
+}
+
+cotton = {
+	base_price = 3.0
+}
+
+tar_good = {
+	base_price = 2.5
+}
+
+tea_good = {
+	base_price = 2.5
+}
+
+opium = {
+	base_price = 3.0
+}
+
+metalware = {
+	base_price = 5.50
+}
+
+sugar = {
+	base_price = 3.0
+}
+
+tropical_wood = {
+	base_price = 2.5
+}
+
+unknown = {
+	base_price = 0
+}

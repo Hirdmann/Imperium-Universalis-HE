@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = afro_arabian
+primary_culture = qatabanian
+religion = arab_religion
+#religious_school = semitic_type
+capital = 2613
+historical_rival = ASA
+historical_rival = AWS
+historical_rival = HIM
+historical_friend = MIN
+add_treasury = 100
+142.1.1 = {
+	monarch = {
+		name = "Yad'ab Damar'ali"
+		dynasty = "of Qataban"
+		birth_date = 120.1.1
+		death_date = 160.1.1
+		dip = 2
+		adm = 2
+		mil = 4
+	}
+}
+
+454.1.1 = {
+	government_rank = 3
+}

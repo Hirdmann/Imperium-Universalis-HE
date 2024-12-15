@@ -1,0 +1,8 @@
+bookmark = {
+	name = "SPARTACUS_REBELLION_TITLE"
+	desc = "SPARTACUS_REBELLION_DESC"
+	date = 681.1.1
+
+	country = SRO
+	country = ROM
+}

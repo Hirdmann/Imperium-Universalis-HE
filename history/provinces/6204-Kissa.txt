@@ -1,0 +1,53 @@
+add_core = SX1
+add_core = GC6
+owner = SX1
+controller = SX1
+culture = lazi
+religion = skneli
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 3
+trade_goods = olive
+capital = ""
+is_city = yes
+
+discovered_by = caucaso_anatolian
+discovered_by = caucasian
+discovered_by = iranian
+discovered_by = scythian_tech
+discovered_by = diadochi
+discovered_by = greek_techgroup
+discovered_by = punic
+#discovered_by = central_asian
+
+165.1.1 = {
+	add_core = GC6
+	owner = GC6
+	controller = GC6
+	remove_core = SX1
+}
+271.1.1 = {
+	base_tax = 0
+	base_production = 1
+	base_manpower = 3
+}
+
+245.1.1 = {
+	add_core = KPP
+	owner = KPP
+	controller = KPP
+}
+
+424.1.1 = {
+	add_core = COL
+	owner = COL
+	controller = COL
+	remove_core = KPP
+}
+
+654.1.1 = {
+	add_core = PON
+	owner = PON
+	controller = PON
+}

@@ -1,0 +1,447 @@
+government = tribal
+add_government_reform = tamil_crowned_king_tribal_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = tamil
+religion = dravidian
+capital = 6316
+
+139.1.1 = {
+	monarch = {
+		name = "Peelan Jembiyach Chozhiyan"
+		dynasty = "Chola"
+		death_date = 167.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+164.1.1 = {
+	monarch = {
+		name = "Maeyan Gadungo"
+		dynasty = "Chola"
+		death_date = 187.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+184.1.1 = {
+	monarch = {
+		name = "Thiththan"
+		dynasty = "Chola"
+		death_date = 242.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+239.1.1 = {
+	monarch = {
+		name = "Perunar Killi Porvaiko"
+		dynasty = "Chola"
+		death_date = 261.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+258.1.1 = {
+	monarch = {
+		name = "Kadu Mundruvan"
+		dynasty = "Chola"
+		death_date = 262.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+259.1.1 = {
+	monarch = {
+		name = "Kopperunjozhan"
+		dynasty = "Chola"
+		death_date = 277.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+274.1.1 = {
+	monarch = {
+		name = "Narkilli Mudiththalai"
+		dynasty = "Chola"
+		death_date = 292.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+289.1.1 = {
+	monarch = {
+		name = "Thevvan go Chozhan"
+		dynasty = "Chola"
+		death_date = 302.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+299.1.1 = {
+	monarch = {
+		name = "Naran Jembiyan"
+		dynasty = "Chola"
+		death_date = 317.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+300.1.1 = {
+	government = monarchy
+	add_government_reform = tamil_crowned_king_reform
+}
+
+314.1.1 = {
+	monarch = {
+		name = "Nakkam Peela Valavan"
+		dynasty = "Chola"
+		death_date = 347.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+344.1.1 = {
+	monarch = {
+		name = "Iniyan Thevvan Jenni"
+		dynasty = "Chola"
+		death_date = 362.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+359.1.1 = {
+	monarch = {
+		name = "Varcembiyan"
+		dynasty = "Chola"
+		death_date = 371.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+368.1.1 = {
+	monarch = {
+		name = "Nedun Jembiyan"
+		dynasty = "Chola"
+		death_date = 412.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+409.1.1 = {
+	monarch = {
+		name = "Nakkan Aran Jozhan"
+		dynasty = "Chola"
+		death_date = 427.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+424.1.1 = {
+	monarch = {
+		name = "Ambalathu Irungoch Chenni"
+		dynasty = "Chola"
+		death_date = 441.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+438.1.1 = {
+	monarch = {
+		name = "Perunar Killi"
+		dynasty = "Chola"
+		death_date = 471.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+468.1.1 = {
+	monarch = {
+		name = "Kochaet Cenni"
+		dynasty = "Chola"
+		death_date = 482.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+479.1.1 = {
+	monarch = {
+		name = "Cerupazhi Erinda Ilanjaetcenni"
+		dynasty = "Chola"
+		death_date = 537.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+514.1.1 = {
+	religion = buddhism
+	religious_school = vibhajyavada_school
+}
+
+534.1.1 = {
+	monarch = {
+		name = "Nedungop Perunkilli"
+		dynasty = "Chola"
+		death_date = 552.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+549.1.1 = {
+	monarch = {
+		name = "Cenni Ellagan"
+		dynasty = "Chola"
+		death_date = 592.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+589.1.1 = {
+	monarch = {
+		name = "Perun Gilli"
+		dynasty = "Chola"
+		death_date = 617.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+614.1.1 = {
+	monarch = {
+		name = "Kopperun Jozhiyav Ilanjaetcenn"
+		dynasty = "Chola"
+		death_date = 637.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+634.1.1 = {
+	monarch = {
+		name = "Perunar Killi Mudiththalai ko"
+		dynasty = "Chola"
+		death_date = 657.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+654.1.1 = {
+	monarch = {
+		name = "Perumpoot Cenni"
+		dynasty = "Chola"
+		death_date = 658.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+655.1.1 = {
+	monarch = {
+		name = "Ilam Perunjenn"
+		dynasty = "Chola"
+		death_date = 687.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+684.1.1 = {
+	monarch = {
+		name = "Perungilli Vendhi aka Karikaalan"
+		dynasty = "Chola"
+		death_date = 722.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+719.1.1 = {
+	monarch = {
+		name = "Nedumudi Killi"
+		dynasty = "Chola"
+		death_date = 737.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+734.1.1 = {
+	monarch = {
+		name = "Ilavanthigaipalli Thunjiya Maei Nalangilli Caet Cenni"
+		dynasty = "Chola"
+		death_date = 742.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+739.1.1 = {
+	monarch = {
+		name = "Aai Vaenalangilli"
+		dynasty = "Chola"
+		death_date = 766.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+763.1.1 = {
+	monarch = {
+		name = "Uruvapakraer Ilanjaetcenni"
+		dynasty = "Chola"
+		death_date = 786.1.1
+		dip = 4
+		adm = 4
+		mil = 5
+	}
+}
+
+783.1.1 = {
+	monarch = {
+		name = "Karikaalan Peruvalaththaan"
+		dynasty = "Chola"
+		death_date = 855.1.1
+		dip = 6
+		adm = 6
+		mil = 6
+	}
+}
+
+852.1.1 = {
+	monarch = {
+		name = "Perun Thiru Mavalavan"
+		dynasty = "Chola"
+		death_date = 861.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+858.1.1 = {
+	monarch = {
+		name = "Kuraapalli Thunjiya"
+		dynasty = "Chola"
+		death_date = 867.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+864.1.1 = {
+	monarch = {
+		name = "Nalangilli"
+		dynasty = "Chola"
+		death_date = 876.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+873.1.1 = {
+	monarch = {
+		name = "Kula Mutrtraththu Thunjiya"
+		dynasty = "Chola"
+		death_date = 899.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+896.1.1 = {
+	monarch = {
+		name = "Irasasuya Vaetta"
+		dynasty = "Chola"
+		death_date = 948.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+945.1.1 = {
+	monarch = {
+		name = "Vael Kadunkilli"
+		dynasty = "Chola"
+		death_date = 976.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+973.1.1 = {
+	monarch = {
+		name = "Kochenganaan"
+		dynasty = "Chola"
+		death_date = 1001.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+998.1.1 = {
+	monarch = {
+		name = "Nalluruththiran"
+		dynasty = "Chola"
+		death_date = 1021.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}

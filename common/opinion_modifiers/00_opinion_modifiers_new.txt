@@ -1,0 +1,596 @@
+is_clan_subject = {
+	opinion = 25
+}
+
+opinion_nagongtianzi_papacy = {
+	opinion = 100
+	yearly_decay = 1
+}
+
+opinion_country_released_zhou = {
+	opinion = 150
+	yearly_decay = 1
+}
+
+opinion_didnt_go_against = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+opinion_anti_liyuebadao = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+opinion_used_our_rites = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+opinion_didnt_use_our_rites = {
+	opinion = -50
+	yearly_decay = 3
+}
+
+opinion_new_alliance = {
+	opinion = 50
+	yearly_decay = 4
+}
+
+opinion_zho_invited_big = {
+	opinion = 75
+	yearly_decay = 4
+}
+
+opinion_zho_invited_small = {
+	opinion = 20
+	yearly_decay = 4
+}
+
+opinion_rong_civilizing = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+opinion_rd_didnt_goto_court = {
+	opinion = -25
+	yearly_decay = 3
+}
+
+opinion_wey_broke_promise = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+opinion_caught_stealing_dafu = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+opinion_wey_broke_promise_all_else = {
+	opinion = -25
+	yearly_decay = 1
+}
+
+opinion_wey_kept_promise = {
+	opinion = 75
+	yearly_decay = 2
+}
+
+opinion_looted_chengzhou = {
+	opinion = -75
+	yearly_decay = 2
+}
+
+opinion_not_looted_chengzhou = {
+	opinion = 30
+	yearly_decay = 2
+}
+
+opinion_zhou_gave_aid = {
+	opinion = 75
+	yearly_decay = 1
+}
+
+opinion_zhou_embezzled_aid = {
+	opinion = -75
+	yearly_decay = 1
+}
+
+abandoned_league_opinion = {
+	opinion = -75
+	yearly_decay = 1
+}
+
+seized_league_member_overlord_opinion = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+forced_league_member_opinion = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+invasion_scythian_destroyed_tushpa = {
+	opinion = -200
+	yearly_decay = 2
+}
+
+invasion_scythian_overlord_media_opinion = {
+	opinion = 50
+}
+
+invasion_scythian_extorted_babylonia = {
+	opinion = -200
+	yearly_decay = 3
+}
+
+thebes_lost_oracle_favor_opinion = {
+	opinion = -200
+	yearly_decay = 10
+}
+
+mytilene_insult_refuse_from_opinion = {
+	opinion = -150
+	yearly_decay = 1
+}
+
+mytilene_insult_refuse_opinion = {
+	opinion = -150
+	yearly_decay = 1
+}
+
+mytilene_polite_refuse_from_opinion = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+mytilene_polite_refuse_opinion = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+kition_gave_us_euboea_secondary_opinion = {
+	opinion = 100
+	yearly_decay = 5
+}
+
+kition_gave_us_euboea_opinion = {
+	opinion = 100
+	yearly_decay = 1
+}
+
+kition_refused_euboea_opinion = {
+	opinion = -150
+	yearly_decay = 2
+}
+
+kition_refused_euboea_secondary_opinion = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+kition_patronize_opinion = {
+	opinion = 50
+	yearly_decay = 0.5
+}
+
+lucania_denied_help_opinion = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+lucania_military_help_opinion = {
+	opinion = 60
+	yearly_decay = 1
+}
+
+lucania_monetary_help_opinion = {
+	opinion = 30
+	yearly_decay = 1
+}
+
+direct_control_alalia_opinion = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+is_phoenician_colony = {
+	opinion = 50
+}
+
+is_carthage_colony = {
+	opinion = 35
+}
+
+enforced_direct_rule_opinion = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+colonial_ties_cut_opinion = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+recently_settled_clerurch_opinion = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+recently_settled_clerurch_other_opinion = {
+	opinion = -20
+	yearly_decay = 2
+}
+
+scythian_greek_relationship = {
+	opinion = 30
+	yearly_decay = 1
+}
+
+scythian_greek_relationship = {
+	opinion = 30
+	yearly_decay = 1
+}
+
+banned_from_league_opinion = {
+	opinion = -100
+	yearly_decay = 3
+}
+
+kiririsha_radicalized_condemned_opinion = {
+	opinion = -60
+	yearly_decay = 2
+}
+
+kiririsha_radicalized_condemned_opinion_2 = {
+	opinion = -25
+	yearly_decay = 3
+}
+
+greek_colonisation_allowed_colony = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+greek_colonisation_allowed_native = {
+	opinion = 25
+	yearly_decay = 1
+}
+
+broke_velir_status_opinion = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+is_overlord_velir = {
+	opinion = 25
+}
+
+is_subject_velir = {
+	opinion = 25
+}
+
+is_overlord_leaguemember = {
+	opinion = 20
+}
+
+is_subject_leaguemember = {
+	opinion = 10
+}
+
+is_overlord_socii = {
+	opinion = 30
+}
+
+is_subject_socii = {
+	opinion = 5
+}
+
+declared_mleccha_desa = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+dharmaraja_opinion = {
+	opinion = 25
+}
+
+mlecchas_rise_up_opinion = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+mleccha_nation_opinion = {
+	opinion = -50
+}
+
+sarmatians_different_from_scythians_opinion = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+jud_rekindling_subject_relations_opinion = {
+	opinion = 75
+	yearly_decay = 1
+}
+
+jud_ambitions_in_phoenicia = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+destroyed_solomons_temple_opinion = {
+	opinion = -200
+	yearly_decay = 1
+}
+
+used_visha_kanya_against_us_opinion = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+opinion_declined_autonomy_level = {
+	opinion = -25
+	yearly_decay = 5
+}
+
+opinion_gift_sent = {
+	opinion = 50
+	yearly_decay = 10
+}
+
+opinion_advisor_in_exile = {
+	opinion = -25
+	yearly_decay = 20
+}
+
+opinion_food_trade = {
+	opinion = 25
+	yearly_decay = 5
+}
+
+caravan_raids = {
+	opinion = -50
+	yearly_decay = 5
+}
+
+sent_food_opinion = {
+	opinion = 10
+	yearly_decay = 1
+}
+
+traders_insulted = {
+	opinion = -25
+	yearly_decay = 10
+}
+
+decreased_autonomy_opinion = {
+	opinion = -100
+	yearly_decay = 2.5
+}
+
+food_not_sold = {
+	opinion = -25
+	yearly_decay = 2.5
+}
+
+opinion_plundering = {
+	opinion = -50
+	yearly_decay = 2.5
+}
+
+opinion_agressive_market_stategy = {
+	opinion = -30
+	yearly_decay = 1.5
+}
+
+opinion_subject_broke_away = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+opinion_given_shelter_to_traitor = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+opinion_send_traitor_back = {
+	opinion = 25
+	yearly_decay = 2.5
+}
+
+illyrian_confederacy_opinion = {
+	opinion = 100
+	yearly_decay = 2.5
+}
+
+opinion_destroyed_nineveh = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+sacked_city_opinion = {
+	opinion = -50
+	yearly_decay = 2.5
+}
+
+opinion_refused_to_give_land = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+###Moved from 00_opinion_modifiers_elam###
+
+opinion_bab_refused_arbela = {
+	opinion = -200
+	yearly_decay = 5
+}
+opinion_destroy_hammurabi_code = {
+	opinion = -50
+	yearly_decay = 1
+}
+opinion_increased_unity_elam_1 = {
+	opinion = -30
+	yearly_decay = 2
+}
+opinion_increased_unity_elam_2 = {
+	opinion = -60
+	yearly_decay = 2
+}
+
+opinion_increased_unity_elam_3 = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+opinion_not_ceded_capital_1 = {
+	opinion = -20
+	yearly_decay = 1
+}
+
+opinion_not_ceded_capital_2 = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+zari_not_allowed_migration = {
+	opinion = -30
+	yearly_decay = 1
+}
+
+zari_allowed_migration = {
+	opinion = 20
+	yearly_decay = 1
+}
+
+elam_sukkal_complain = {
+	opinion = -20
+	yearly_decay = 1
+}
+
+gave_back_gods = {
+	opinion = 60
+	yearly_decay = 2
+}
+
+destroyed_kingdom_elam = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+abandoned_high_kingdom_elam_opinion = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+annexed_us_as_satrapy_opinion = {
+	opinion = -75
+	yearly_decay = 3
+}
+
+new_loyal_satrap_opinion = {
+	opinion = 100
+	yearly_decay = 5
+}
+
+new_loyal_satrap_opinion = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+grant_us_dynast_rank_opinion = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+revoked_our_dynast_rank_opinion = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+goj_equal_to_china = {
+	opinion = -25
+	yearly_decay = 1
+}
+
+armenia_broke_promise_opinion = {
+	opinion = -100
+	yearly_decay = 1
+}
+
+armenia_rejects_our_offer = {
+	opinion = -35
+	yearly_decay = 2
+}
+
+KNO_POL_didnt_defend_us = {
+	opinion = -50
+	yearly_decay = 1.5
+}
+
+KNO_POL_defended_us = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+KNO_POL_knossos_asserted = {
+	opinion = -20
+	yearly_decay = 0.25
+}
+
+KNO_POL_knossos_eased = {
+	opinion = 20
+	yearly_decay = 0.25
+}
+
+KNO_POL_embargoed_us = {
+	opinion = -150
+	yearly_decay = 3
+}
+
+KNO_POL_promoted_our_olives = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+KNO_POL_cultural_differences = {
+	opinion  = 50
+	yearly_decay = 2
+}
+
+KNO_POL_cultural_kin = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+KNO_POL_cultural_union = {
+	opinion = 50
+	yearly_decay = 1.5
+}
+
+KNO_POL_defector_returned = {
+	opinion = 100
+	yearly_decay = 3
+}
+
+KNO_POL_defector_executed = {
+	opinion = 50
+	yearly_decay = 1.5
+}
+
+KNO_POL_defector_harbored = {
+	opinion = -50
+	yearly_decay = 1.5
+}
+
+KNO_POL_defector_employed = {
+	opinion = -100
+	yearly_decay = 3
+}
+
+china_rejected_rank_opinion = {
+	opinion = -30
+	yearly_decay = 3
+}

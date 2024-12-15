@@ -1,0 +1,224 @@
+#Country Name: Please see filename.
+
+graphical_culture = iraniangfx
+
+color = { 26 94 136 }
+
+historical_idea_groups = {
+	financial_ideas
+	infantry_ideas
+	imperial_ideas
+	assimilation_ideas
+	fortress_ideas
+	diplomatic_ideas
+	domestic_government_ideas
+	caravan_trade_ideas
+}
+historical_units = {
+	anatolian_base_inf_0
+	anatolian_base_inf_1
+	anatolian_base_inf_2
+	anatolian_base_inf_3
+	anatolian_base_inf_4
+	anatolian_base_inf_5
+	anatolian_base_inf_6
+	anatolian_base_inf_7
+	anatolian_base_inf_8
+	anatolian_base_inf_9
+	anatolian_base_inf_10
+	anatolian_base_inf_11
+	anatolian_base_inf_12
+	anatolian_base_inf_13
+	anatolian_base_inf_14
+	anatolian_base_inf_15
+	anatolian_base_inf_16
+	anatolian_base_inf_17
+
+	anatolian_base_cav_0
+	anatolian_base_cav_1
+	anatolian_base_cav_2
+	anatolian_base_cav_3
+	anatolian_base_cav_4
+	anatolian_base_cav_5
+	anatolian_base_cav_6
+	anatolian_base_cav_7
+	anatolian_base_cav_8
+	anatolian_base_cav_9
+	anatolian_base_cav_10
+	anatolian_base_cav_11
+	anatolian_base_cav_12
+	anatolian_base_cav_13
+	anatolian_base_cav_14
+	anatolian_base_cav_15
+	anatolian_base_cav_16
+
+	anatolian_base_art_0
+	anatolian_base_art_1
+	anatolian_base_art_2
+	anatolian_base_art_3
+	anatolian_base_art_4
+	anatolian_base_art_5
+	anatolian_base_art_6
+	anatolian_base_art_7
+	anatolian_base_art_8
+	anatolian_base_art_9
+	anatolian_base_art_10
+	anatolian_base_art_11
+	anatolian_base_art_12
+	anatolian_base_art_13
+	anatolian_base_art_14
+	anatolian_base_art_15
+	anatolian_base_art_16
+}
+
+monarch_names = {
+	# Kings
+	"Labarna" = 20
+	"Hattusili" = 20
+	"Mursili" = 20
+	"Hantili" = 20
+	"Zidanta" = 20
+	"Ammuna" = 20
+	"Huzziya" = 20
+	"Telipinu" = 20
+	"Alluwamna" = 20
+	"Tahurwaili" = 20
+	"Muwatalli" = 20
+	"Arnuwanda" = 20
+	"Suppiluliuma" = 20
+	"Urhi-Teshub" = 20
+	"Kurunta" = 20
+	"Nerikkaili" = 10
+	"Halpasulupi" = 10
+	"Piyassili" = 10
+	"Hartapu" = 10
+	"Sahurunuwa" = 10
+	"Ini-Teshshub" = 10
+	"Talmi-Teshshub" = 10
+	"Kuzi-Teshshub" = 10
+	"Mazakarhuha" = 10
+	"Ir-Teshshub" = 10
+	"Sapaziti" = 10
+	"Uratarhunza" = 10
+	"Suhi" = 10
+	"Katuwa" = 10
+	"Astuwalamanza" = 10
+	"Sangara" = 10
+	"Astiruwa" = 10
+	"Yariri" = 10
+	"Kamani" = 10
+	"Sastura" = 10
+	"Pisiri" = 10
+	"Pugnus-Mili" = 10
+	"Runtiya" = 10
+	"Arnuwanti" = 10
+	"Taras" = 10
+	"Wasuruntiya" = 10
+	"Hilaruada" = 10
+	"Satiruntiya" = 10
+	"Lalli" = 10
+	"Sahu" = 10
+	"Sahwi" = 10
+	"Helaruada" = 10
+	"Sulumal" = 10
+	"Gunzinanu" = 10
+	"Tarhunazi" = 10
+	"Mugallu" = 10
+	"Kundashpu" = 10
+	"Kushtashpi" = 10
+	"Hapatila" = 10
+	"Ariyahina" = 10
+	"Hamiyata" = 10
+	"Larama" = 10
+	"Muwizi" = 10
+	"Halparuntiya" = 10
+	"Tarhulara" = 10
+	"Taita" = 10
+	"Manana" = 10
+	"Surri" = 10
+	"Sasi" = 10
+	"Tutammu" = 10
+	"Toi" = 10
+	"Parita" = 10
+	"Urahilina" = 10
+	"Zakur" = 10
+	"Eni-Ilu" = 10
+	"Yau-Bidi" = 10
+	"Tuwati" = 10
+	"Kikki" = 10
+	"Wasusarma" = 10
+	"Hulli" = 10
+	"Ambaris" = 10
+	"Ishkallu" = 10
+	"Ushhitti" = 10
+	"Ashwisi" = 10
+	"Kurti" = 10
+	"Tuhamme" = 10
+	"Kiyakiya" = 10
+	"Warpalawa" = 10
+	"Saruwani" = 10
+	"Muwaharani" = 10
+	"Puhamme" = 10
+	"Urimme" = 10
+	"Gurdi" = 10
+	"Dadi-Ilu" = 10
+	"Kate" = 10
+	"Kirri" = 10
+	"Awariku" = 10
+	"Azatiwata" = 10
+	"Warika" = 10
+	"Pihirim" = 10
+	"Sandasarme" = 10
+	"Tulli" = 10
+	"Kirua" = 10
+	"Sanduarri" = 10
+	"Appuashu" = 10
+	"Attar-Shumki" = 10
+	"Mati-Ilu" = 10
+	"Sha-Il" = 10
+	"Kilamuwa" = 10
+	"Panamuwa" = 10
+
+	# Queens
+	"Puduhepa" = -1
+	"Gassulawiya" = -1
+	"Tanu-Hepa" = -1
+	"Nikal-Mati" = -1
+	"Ashmu-Nikal" = -1
+	"Walanni" = -1
+	"Shummiri" = -1
+	"Yaya" = -1
+	"Harapsheki" = -1
+	"Ishtapariya" = -1
+	"Harapshili" = -1
+	"Kali" = -1
+	"Hashtayara" = -1
+	"Tawannanna" = -1
+	"Massanauzzi" = -1
+	"Matanaza" = -1
+}
+
+leader_names = {
+	Hakhamanish Ashkanian Sasani Suren Surena Mihran Chosroid
+	Karen Ispahbudhan Varaz Zik Otanid Ardumanish Hydarnid
+
+}
+
+ship_names = {
+	Sogdyana Kambujiya Tsishpish Athurpat Bagabukhsha Marduniya Ariyobarzan Vindapana Utana
+	Vishtaspa Vakauka Ardumanish Gaubaruva Vidarna Ariyaramna Arshama Bardiya Mehrdad Ardavan
+	Farrukh Shahrwaraz Vistahm Spandiyadh Vistahm Spandiyadh Sokhrab Rodstahm Jamasp Kawad Balash
+	Yazdekert Narse Hormizd Khosrau "Baga-data" Mani
+
+	Shirin Azarmigdukht Boran Shahendukht Denag Amastri Apama Artastuna Atossa Jamaspi Raoxshna Sisygambis
+
+	"Amesha Spenta" Yazata Ahura Daeva Ahriman Ohrmazd Parsa
+}
+
+army_names = {
+	"Gond-i $PROVINCE$"
+}
+
+fleet_names = {
+	"Yellow Fleet" "Black Fleet" "Red Fleet" "Ships of $PROVINCE$"
+}

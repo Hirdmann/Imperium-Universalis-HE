@@ -1,0 +1,8 @@
+bookmark = {
+	name = "RISE_OF_DACIA_TITLE"
+	desc = "RISE_OF_DACIA_DESC"
+	date = 680.1.1
+
+	country = DAC
+	country = ROM
+}

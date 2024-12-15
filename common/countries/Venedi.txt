@@ -1,0 +1,145 @@
+#Country Name: Please see filename.
+
+graphical_culture = celticgfx
+
+color = { 21  96  178 }
+
+historical_idea_groups = {
+	tribal_government_ideas
+	expansion_ideas
+	raider_ideas
+	agraculture_ideas
+	caravan_trade_ideas
+	leadership_ideas
+	financial_ideas
+	fortress_ideas
+}
+
+historical_units = {
+	1_conquered_tribes_warriors
+	1_cimmerian_raiders
+	1_ancient_steppe_skirmishers
+
+	0_early_steppe_axemen
+	0_steppe_scouts
+	0_forest_steppe_hunters
+
+	5_adv_steppe_warriors
+	5_steppe_horsearchers
+	5_early_steppe_skirmishers
+
+	10_steppe_axemen
+	10_steppe_cavalry
+	10_early_steppe_archers
+
+	15_steppe_armored_spearmen
+	15_adv_steppe_cavalry
+	15_steppe_foot_archers
+
+	20_steppe_armored_swordsmen
+	20_adv_steppe_horsearchers
+	20_steppe_foot_bowmen
+
+	25_late_steppe_armored_swordsmen
+	25_scythian_chariots
+	25_late_steppe_bowmen
+}
+
+monarch_names = {
+	"Blahoslav" = 20
+	"Bohumil" = 20
+	"Boguslav" = 20
+	"Bohdan" = 20
+	"Bozydar" = 20
+	"Boleslav" = 20
+	"Bolemir" = 20
+	"Boryslav" = 20
+	"Dalibor" = 20
+	"Lutobor" = 20
+	"Bratislav" = 20
+	"Branislav" = 20
+	"Bronimir" = 20
+	"Hvalimir" = 20
+	"Tesimir" = 20
+	"Dobieslav" = 20
+	"Ceslav" = 20
+	"Castimir" = 20
+	"Dobroslav" = 20
+	"Dobromir" = 20
+	"Dragomir" = 20
+	"Radogost" = 20
+	"Hostimil" = 20
+	"Gostislav" = 20
+	"Yaroslav" = 20
+	"Jaromir" = 20
+	"Kresimir" = 20
+	"Milomir" = 20
+	"Miroslav" = 20
+	"Voldimir" = 20
+	"Vitomir" = 20
+	"Rastimir" = 20
+	"Ratimir" = 20
+	"Zvonimir" = 20
+	"Mstislav" = 20
+	"Ostromir" = 20
+	"Siemovit" = 20
+	"Stanislav" = 20
+	"Rostislav" = 20
+	"Vladislav" = 20
+	"Sviatoslav" = 20
+	"Stanimir" = 20
+	"Sulibor" = 20
+	"Velimir" = 20
+	"Vsevolod" = 20
+	"Berislav" = 20
+	"Dragan" = 20
+	"Krasimir" = 20
+	"Lubomir" = 20
+	"Radomir" = 20
+	"Radoslav" = 20
+	"Tomislav" = 20
+	"Velibor" = 20
+	"Vratislav" = 20
+	"Casimir" = 20
+	"Lech" = 20
+	"Czech" = 20
+	"Kiy" = 20
+	"Radek" = 20
+	"Sobieslav" = 20
+	"Budivoj" = 20
+	"Dalimir" = 20
+	"Letoslav" = 20
+	"Milota" = 20
+	"Nemoj" = 20
+	"Slavibor" = 20
+	"Svatobor" = 20
+	"Svatopluk" = 20
+	"Svatoslav" = 20
+
+	"Radmila" = -1
+	"Zlatomira" = -1
+	"Bojana" = -1
+	"Mila" = -1
+	"Rostimira" = -1
+	"Radana" = -1
+	"Stanislava" = -1
+
+}
+
+leader_names = {
+	"Gajsky" "Bosko" "Dubnek" "Gorsky" "Kravar" "Kravets" "Boskovic"
+	"Kovach" "Putevy" "Rybar" "Skalny" "Smolak" "Ojnic" "Nemich"
+	"Hrabry" "Slavny" "Polyan" "Roduslav" "Smialy" "Hodich" "Bondar"
+}
+
+ship_names = {
+	Ladia Perun Veles Dazhbog Yarilo Yarovit Svarozhich Rod Dola Zaria Danica Svetovit Triglav Zhiva Chernobog Belobog Chernoglav Devana Morana Stribog Khors Mokosh Simargl Svarog
+}
+
+army_names = {
+	"Warband of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

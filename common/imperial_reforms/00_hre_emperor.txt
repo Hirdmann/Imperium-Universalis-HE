@@ -1,0 +1,481 @@
+emperor_reichsreform = { #兴灭继绝
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	province = {
+
+	}
+	on_effect = {
+		imperial_ban_allowed = yes
+	}
+	off_effect = {
+		imperial_ban_allowed = no
+	}
+	gui_container = mainline
+}
+
+emperor_reichsregiment = { #征收贡赋
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	province = {
+
+	}
+	emperor = {
+
+	}
+	required_reform = emperor_reichsreform
+	gui_container = mainline
+}
+
+emperor_reichsstabilitaet = { #以战行教
+	empire = hre
+	required_reform = emperor_reichsregiment
+	gui_container = mainline
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	province = {
+
+	}
+	on_effect = {
+		custom_tooltip = "EXPAND_EMPIRE_CB"
+	}
+}
+
+emperor_perpetual_diet = { #盟约之城
+	empire = hre
+	required_reform = emperor_reichsstabilitaet
+	gui_container = mainline
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+
+	emperor = {
+		free_city_imperial_authority = 0.5
+	}
+	on_effect = {
+		custom_tooltip = "PERPETUAL_DIET_ESTABLISHED"
+		add_reform_desire = 0.1
+		hidden_effect = {
+			random_province = {
+				limit = {
+					is_part_of_hre = yes
+					is_capital = yes
+					OR = {
+						AND = {
+							has_dlc = "Art of War"
+							owner = { has_reform = free_city }
+						}
+						AND = {
+							owner = { is_elector = yes }
+							development = 20
+						}
+						development = 30
+						province_id = 4349 # Regensburg
+						#province_id = 1868 # Augsburg
+						#province_id = 1872 # Ulm
+					}
+				}
+				province_event = {
+					id = hre_event.6
+				}
+				add_province_triggered_modifier = perpetual_diet
+			}
+		}
+	}
+	off_effect = {
+
+	}
+}
+
+emperor_landfriede = { #永禁仇杀
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	all = {
+		#amount_of_banners = 0.5
+		has_banners = yes
+	}
+	province = {
+		local_has_banners = yes
+		local_amount_of_banners = 0.1	#当地可征召八旗数量
+	}
+	on_effect = {
+		custom_tooltip = "ZHUXIAWUSHI"
+		add_reform_desire = 0.15
+		#诸夏成员受到攻击时可请求所有成员的帮助
+	}
+	required_reform = emperor_perpetual_diet
+	gui_container = mainline
+}
+
+emperor_landsknechtswesen = { #诸夏武士
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	emperor = {
+
+	}
+	on_effect = {
+		if = {
+			limit = {
+				hre_religion_locked = no
+				hre_religion_treaty = no
+			}
+			set_hre_religion_treaty = yes
+		}
+		hre_inheritable = yes
+		add_reform_desire = 0.2
+	}
+	off_effect = {
+		hre_inheritable = no
+	}
+	required_reform = emperor_landfriede
+	gui_container = mainline
+}
+
+emperor_erbkaisertum = { #霸位永传
+	empire = hre
+	required_reform = emperor_landsknechtswesen
+	gui_container = mainline
+	potential = {
+		has_dlc = "Emperor"
+	}
+	all = {
+
+	}
+	emperor = {
+
+	}
+	province = {
+
+	}
+	on_effect = {
+		add_reform_desire = 0.25
+		internal_hre_cb = no
+	}
+	off_effect = {
+		internal_hre_cb = yes
+	}
+}
+
+emperor_reichstag_collegia = { #诸夏九军
+	empire = hre
+	required_reform = emperor_landfriede
+	disabled_by = emperor_gemeinerpfennig
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	elector_per_prince = {
+
+	}
+	province = {
+
+	}
+	emperor_per_prince = {
+		imperial_authority = 0.01
+	}
+	emperor = {
+		max_free_cities = 999
+	}
+}
+
+emperor_expand_gemeiner_pfennig = { #诸夏互保
+	empire = hre
+	required_reform = emperor_reichstag_collegia
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	emperor_per_prince = {
+
+	}
+	elector_per_prince = {
+
+	}
+	province = {
+
+	}
+	on_effect = {
+		custom_tooltip = "ZHUXIAHUBAO_QIYONG"
+		#诸夏成员受到攻击时可请求所有成员的帮助
+	}
+}
+
+emperor_rechenschaft = { #播散声化
+	empire = hre
+	required_reform = emperor_expand_gemeiner_pfennig
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	emperor_per_prince = {
+
+	}
+	emperor = {
+
+	}
+	on_effect = {
+		custom_tooltip = "YAOQINGJIARUZHUXIA"#诸夏成员可邀请高关系国家加入诸夏
+	}
+}
+
+emperor_geteilte_macht = { #八方之伯
+	empire = hre
+	required_reform = emperor_rechenschaft
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	elector_per_prince = {
+
+	}
+	province = {
+
+	}
+	emperor_per_prince = {
+		imperial_authority = 0.01
+	}
+	emperor = {
+		max_electors = 1
+	}
+}
+
+emperor_hepingzhiyue = { #和平之约
+	empire = hre
+	required_reform = emperor_geteilte_macht
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	on_effect = {
+		enable_imperial_realm_war = yes
+		custom_tooltip = REICHSKRIEG_DEFENSE_OF_REALM_MODIFIER
+	}
+
+	off_effect = {
+		enable_imperial_realm_war = no
+	}
+}
+
+emperor_reichskrieg = { #肆伐九夷
+	empire = hre
+	required_reform = emperor_hepingzhiyue
+	gui_container = left_branch
+	ai_acceptance_decentralize = yes
+
+	potential = {
+		has_dlc = "Emperor"
+	}
+	on_effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						exists = ZHO
+					}
+				}
+				4349 = {
+					cede_province = ZHO
+					add_core = ZHO
+				}
+				4351 = {
+					cede_province = ZHO
+					add_core = ZHO
+				}
+			}
+			4193 = {
+				cede_province = ZHO
+				add_core = ZHO
+			}
+			4189 = {
+				cede_province = ZHO
+				add_core = ZHO
+			}
+			4208 = {
+				cede_province = ZHO
+				add_core = ZHO
+			}
+			4195 = {
+				cede_province = ZHO
+				add_core = ZHO
+			}
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					is_emperor = no
+					num_of_cities = 1
+					NOT = { tag = ZHO }
+				}
+				country_event = { id = china.89 }
+			}
+		}
+		custom_tooltip = BAZHU_FINAL_DECENTRALIZE
+	}
+
+	off_effect = {
+		
+	}
+}
+
+emperor_gemeinerpfennig = { #定期贡赋
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	all = {
+
+	}
+	emperor_per_prince = {
+		global_tax_income = 0.5
+		global_manpower = 0.1
+	}
+
+	elector_per_prince = {
+		global_manpower = 0.05
+		global_manpower = 0.01
+	}
+
+	on_effect = {
+		add_reform_desire = 0.35
+	}
+
+	emperor = {
+
+	}
+
+	required_reform = emperor_erbkaisertum
+	disabled_by = emperor_reichstag_collegia
+	gui_container = right_branch
+}
+
+emperor_hofgericht = { #定期朝见
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	emperor = {
+
+	}
+
+	on_effect = {
+		#custom_tooltip = "Dingqi_Tribute"
+		add_reform_desire = 0.6
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				NOT = { tag = ROOT }
+			}
+			#country_event = { id = ShiJian.34 }
+			country_event = { id = china.97 }
+		}
+	}
+
+	required_reform = emperor_gemeinerpfennig
+	gui_container = right_branch
+}
+
+emperor_imperial_estates = { #遣送质子
+	empire = hre
+	required_reform = emperor_hofgericht
+	gui_container = right_branch
+	potential = {
+		has_dlc = "Emperor"
+	}
+	emperor = {
+
+	}
+	on_effect = {
+		add_reform_desire = 0.85
+		#所有诸夏国家变为选王制
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				NOT = { tag = ROOT }
+			}
+			country_event = { id = ShiJian.42 days = 2 }
+
+		}
+	}
+
+}
+
+emperor_privilegia_de_non_appelando = { #释兵权
+	empire = hre
+	war = yes			#this may cause a war, so special AI check needed, to not lose many.
+	potential = {
+		has_dlc = "Emperor"
+	}
+	member = {
+		land_forcelimit_modifier = -0.75
+	}
+
+	emperor = {
+
+	}
+	on_effect = {
+		custom_tooltip = JUEDUIBAOHU#霸主对小弟有绝对保护要求
+	}
+	required_reform = emperor_imperial_estates
+	gui_container = right_branch
+}
+
+emperor_renovatio = { #主持封建
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	on_effect = {
+		custom_tooltip = ZHUCHIFENGJIAN#可改变诸侯统治家族为指定家族
+	}
+	required_reform = emperor_privilegia_de_non_appelando
+	gui_container = right_branch
+}
+
+emperor_natuguiyi = { #纳土归一
+	empire = hre
+	potential = {
+		has_dlc = "Emperor"
+	}
+	on_effect = {
+		emperor = {
+			country_event = { id = 9073 tooltip = natuguiyi_empire2 }
+			set_emperor_of_china = ROOT
+			ZHO = { set_papacy_active = no }
+			country_event = { 
+    				id = china.55
+    				days = 10
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+					is_emperor = no
+					num_of_cities = 1
+				}
+				country_event = { id = 9074 } #所有诸夏国家选择投降、保留首都成为附庸或反抗
+			}
+		}
+	}
+	required_reform = emperor_renovatio
+	gui_container = right_branch
+}

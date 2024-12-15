@@ -1,0 +1,123 @@
+#Country Name: Please see filename.
+
+graphical_culture = egyptgfx
+
+color = { 94 133 104 }
+
+historical_idea_groups = {
+	agraculture_ideas
+	mercenary_ideas
+	maritime_trade_ideas
+	caravan_trade_ideas
+	fortress_ideas
+	cerimonial_ideas
+	imperial_ideas
+	engineering_ideas
+}
+
+historical_units = {
+	egypt_uniq_inf_0
+	egypt_uniq_inf_1
+	egypt_uniq_inf_2
+	egypt_uniq_inf_3
+	egypt_uniq_inf_4
+	egypt_uniq_inf_5
+	egypt_uniq_inf_6
+	egypt_uniq_inf_7
+	egypt_uniq_inf_8
+	egypt_uniq_inf_9
+	egypt_uniq_inf_10
+	egypt_uniq_inf_11
+	egypt_uniq_inf_12
+	egypt_uniq_inf_13
+	egypt_uniq_inf_14
+	egypt_uniq_inf_15
+
+	egypt_uniq_cav_0
+	egypt_uniq_cav_1
+	egypt_uniq_cav_2
+	egypt_uniq_cav_3
+	egypt_uniq_cav_4
+	egypt_uniq_cav_5
+	egypt_uniq_cav_6
+	egypt_uniq_cav_7
+	egypt_uniq_cav_8
+	egypt_uniq_cav_9
+	egypt_uniq_cav_10
+
+	egypt_uniq_art_0
+	egypt_uniq_art_1
+	egypt_uniq_art_2
+	egypt_uniq_art_3
+	egypt_uniq_art_4
+	egypt_uniq_art_5
+	egypt_uniq_art_6
+	egypt_uniq_art_7
+	egypt_uniq_art_8
+	egypt_uniq_art_9
+	egypt_uniq_art_10
+	egypt_uniq_art_11
+	egypt_uniq_art_12
+	egypt_uniq_art_13
+	egypt_uniq_art_14
+	egypt_uniq_art_15
+}
+monarch_names = {
+	"Nesbanebdjed #1" = 20
+	"Hedjkheperre #3" = 40
+	"Usermaatre #5" = 30
+	"Menkheperre #1" = 30
+	"Iuput #1" = 20
+	"Shepsesre #2" = 20
+	"Bakanranef #1" = 20
+	"Gemnefsutkapu #4" = 20
+	"Nimlot #1" = 20
+	"Nekauba #1" = 20
+	"Perdu #1" = 20
+	"Shoshenq #5" = 20
+	"Pami #1" = 20
+	"Takelot #1" = 20
+	"Pedubast #2" = 20
+	"Buyuwawa" = 20
+	"Mawasun" = 20
+	"Nebneshi" = 20
+	"Paihuty" = 20
+
+	"Tentamun" = -1
+	"Maatkare" = -1
+	"Patareshnes" = -1
+	"Tashedkhonsu" = -1
+	"Kapes" = -1
+}
+
+leader_names = {
+	Khaemwaset Amenhirkhepeshef Itamun Ammeris Stephinates Nechepsos Necho Wahibre Wehemibre
+	Neferibre Haaibre Khnemibre Ankhkaenre Apries Psamtik Takhuit Khedebneithirbinet Mehytenweskhet Tentkheta Nakhtubasterau Manetho
+}
+
+ship_names = {
+	Aker Amun Anhur Aten Ennead Bennu Geb Hapi Horus Khepri Khnum Khonsu Maahes Montu Nefertum Nemty Neper Osiris Ptah Ra Set Shu Sobek Faiyum Sopdu Thoth Wadjwer
+	Amunet Anuket Bastet Bat Hathor Heqet Hesat Imentet Isis Maat Mut Neith Nekhbet	Nephthys Nepit Nut Pakhet Renenutet Satet Sekhmet Tefnut Wadjet Wosret Anput
+	Heh Kek Nu Nun Re Tatenen Migdol Kauket Aani Aati Abu Amheh Amenhotep "Amu-Aa" Anaf Anhetepf Anmutf Antcherf Andjety Ani Anti Apedemak Apep Apesh Apis Ka
+	Arensnuphis Asclepius Ash Astennu Ba "Ba-Ra" Baal Babi Banebdjedet "Ba-Pef" Bes Buchis Dedun Denwen Djebuty Djefa "Dionisos-Osiris" Dua Fa Fetket "Gengen Wer"
+	Ha Hapy "Hapy-Wet" Hardedef Djedefhor Harmachis Harsomthus Haurun Heka Heneb Henkhisesui "Heru-Khu" "Hery-Sha-Duat" Duat Heryshaf Horon Hu Iah Ihy Imhotep
+	"Dios-Amun" Kagemni "Khenti-Amentiu" "Khenti-Qerer" Khesfu Khentekhtai Kherty Kneph Mandulis Mehen Mesta Min Mnevis "Nefer Hor" Neferhotep Nefertum "Nehebu-Kau"
+	Nun Panebtawy Petbe Peteese Pihor "Ptah-Hotep" Qebehsenuf Qebui "Ra-Ateni" "Ra-Herakhty" Reshep Sah Sebeg Sebiumeker Sed Seker Sekhemus Sepa Sepes Septu Serapis
+	"Seta-Ta" Setcheh Setem Shed Shehbui Shezmu Sia Sopd Sopdet Tuamutef Tutu Uneg Wenenu Wepwawet Yam Ahti Amathaunta Ammit Amn Anat Anhefta Anit Anuke Apet Astarte
+	"Baalat Gebal" Besna Esna Hatmehit Hedetet Heptet "Heret-Kau" "Hert-Ketits" "Hert-Nemmat-Set" "Hert-Sefus"  "Heru-Pa-Kaut" Heset "Hetepes-Sekhus" Horea Iat
+	Iabet Ipy Ishtar Iusaaset Iw Kebehut Ken Khefthernebes Mafdet Mehit Matit "Mehet-Weret" Menhit Meretseger Merit Meskhenet Nakith Naunet Nebethetepet "Nebt-Ankhiu"
+	"Nebt-Khu" Nebtmat Nebtsetau Nebtshat "Nebt-Shefshefet" Nefertari Nehmetawy Pelican Perit Pesi Qererti Qerhet Qetesh "Raet-Tawy" Rekhit Renenet Renpet Sait
+	"Sefkhet-Abwy" Sehith "Sekhat-Hor" "Sekhet-Metu" Seret Serket "Sesenet-Khu" Seshat "Shemat-Khu" Shentayet Shenty Shesmetet Sopdet Swenet "Ta-Bitjet" "Ta-Sent-Nefert"
+	Tafner Taweret Tayt Temet Temtith Tenenet Themath Thermuthis Thmei Tjenenyet Tjenmyt Unut Usit Wepset Werethekau Hedjhotep Shai Semi Aai Hemsut "Her-Hequi"
+	Nenit Hu "Ra Emnu" Asheshpikha Nesbit Agrit Ahait Nekait Khensu Kheprit Netenhernechther Astemnebtankh Urithekau "Hekau-ur" Amanh "Nebt Tehen" "Nebt Heru"
+	Hep Saritnebs Mknebset Aatshefit Uritshefit Heruheriuatchf Herittchatchaah Bepefi Ankhemnesert Meritnesert Anmutf Nebtsent Amset "Neb Neteru" Mknebset Ubaemtuf
+	"Khesef-Khemit" Mkheskhemuit Khepera Maaneferutra Khnemiu Ogdoad Renniu "Setheniu-Tep" Pe Nekhen Thoueris Amduat Khat "Sekhet Aaru" Ren Ahemait
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

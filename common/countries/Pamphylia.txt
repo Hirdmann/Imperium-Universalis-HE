@@ -1,0 +1,150 @@
+#Country Name: Please see filename.
+
+graphical_culture = hellenicgfx
+
+color = { 122 89 144 }
+
+historical_idea_groups = {
+	syncretism_ideas
+	fortress_ideas
+	diplomatic_ideas
+	caravan_trade_ideas
+	domestic_government_ideas
+	skirmisher_ideas
+	financial_ideas
+	propaganda_ideas
+}
+historical_units = {
+	anatolian_base_inf_0
+	anatolian_base_inf_1
+	anatolian_base_inf_2
+	anatolian_base_inf_3
+	anatolian_base_inf_4
+	anatolian_base_inf_5
+	anatolian_base_inf_6
+	anatolian_base_inf_7
+	anatolian_base_inf_8
+	anatolian_base_inf_9
+	anatolian_base_inf_10
+	anatolian_base_inf_11
+	anatolian_base_inf_12
+	anatolian_base_inf_13
+	anatolian_base_inf_14
+	anatolian_base_inf_15
+	anatolian_base_inf_16
+	anatolian_base_inf_17
+
+	anatolian_base_cav_0
+	anatolian_base_cav_1
+	anatolian_base_cav_2
+	anatolian_base_cav_3
+	anatolian_base_cav_4
+	anatolian_base_cav_5
+	anatolian_base_cav_6
+	anatolian_base_cav_7
+	anatolian_base_cav_8
+	anatolian_base_cav_9
+	anatolian_base_cav_10
+	anatolian_base_cav_11
+	anatolian_base_cav_12
+	anatolian_base_cav_13
+	anatolian_base_cav_14
+	anatolian_base_cav_15
+	anatolian_base_cav_16
+
+	anatolian_base_art_0
+	anatolian_base_art_1
+	anatolian_base_art_2
+	anatolian_base_art_3
+	anatolian_base_art_4
+	anatolian_base_art_5
+	anatolian_base_art_6
+	anatolian_base_art_7
+	anatolian_base_art_8
+	anatolian_base_art_9
+	anatolian_base_art_10
+	anatolian_base_art_11
+	anatolian_base_art_12
+	anatolian_base_art_13
+	anatolian_base_art_14
+	anatolian_base_art_15
+	anatolian_base_art_16
+}
+
+monarch_names = {
+	"Athimiwus" = 1
+	"Apelavruvis" = 1
+	"Aphastus" = 1
+	"Aphordisiius" = 1
+	"Balus" = 1
+	"Bobas" = 1
+	"Goukalis" = 1
+	"Dexiwus" = 1
+	"Dibotus" = 1
+	"Diwidorus" = 1
+	"Diwonousius" = 1
+	"Ellothemis" = 1
+	"Estlegiius" = 1
+	"Zowamus" = 1
+	"Zoweitous" = 1
+	"Wanaxadrus" = 1
+	"Warnitous" = 1
+	"Wechidamus" = 1
+	"Wechitous" = 1
+	"Wouko" = 1
+	"Thanadorus" = 1
+	"Kedaiwis" = 1
+	"Keskeus" = 1
+	"Keskiwous" = 1
+	"Korragus" = 1
+	"Aspediius" = 1
+	"Kourasio" = 1
+	"Kudromolis" = 1
+	"Mourixous" = 1
+	"Mourmako" = 1
+	"Newocharis" = 1
+	"Orumniwus" = 1
+	"Peddatos" = 1
+	"Pellauruis" = 1
+	"Periwergus" = 1
+	"Ponameldos" = 1
+	"Preiwus" = 1
+	"Swardias" = 1
+	"Iswardias" = 1
+	"Vanaxionus" = 1
+
+	"Warnopa" = -1
+	"Artimina" = -1
+	"Echwalia" = -1
+	"Koperina" = -1
+	"Korwalina" = -1
+	"Laudika" = -1
+	"Mialina" = -1
+	"Meialina" = -1
+	"Porsopa" = -1
+	"Phordisia" = -1
+	"Xoreina" = -1
+}
+
+leader_names = {
+	Maeoniae Heraclidae Mermnadae "the Elder" "the Younger" "the Wise" "" "" "" "" "" "" "" "" "" ""
+	"of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia"
+}
+
+ship_names = {
+	Zeus Hera Aphrodite Apollo Ares Artemis Athena Demeter Dionysus Hades Hephaestos Hermes Hestia Poseidon
+	Achlys Aether Aion Ananke Chaos Chronos Erebus Eros Gaia Hemera Hypnos Nemesis Nyx Pontus Tartaros Thalassa
+	Thanatos Uranus Koios Kreios Kronos Hyperion Iapet�s Ocean�s Phoibe Rh�a The�a Th�mis Aster�a Atlas A�ra
+	Clymene Dione Helios Euryb�a Lelantos Leto Meno�tios P�llas Perses Prometheus Alcyoneus Chthonius Damysus
+	Mimas Pallas Porphyrion Antaeus Agathodaemon Aegaeon Achelous Benthesikyme Ceto Graeae Delphin Aello
+	Celaeno Aphros Bythos Leucothea Achilles Heracles Aiax Jason Argo Odysseus Orpheus Theseus Aegea Antiope
+	Hippolyta Iphito Marpesia Otrera Penthesilea
+}
+
+army_names = {
+	"Hulogos pro $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

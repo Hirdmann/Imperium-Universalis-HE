@@ -1,0 +1,50 @@
+become_shi_huang = {
+	empire = celestial_empire
+	trigger = {}
+	member = {}
+	emperor = {
+		max_absolutism = 25
+	}
+}
+
+abolish_feudalism = {
+	empire = celestial_empire
+	trigger = {}
+	member = {}
+	emperor = {
+		global_autonomy = -0.25
+	}
+	required_reform = become_shi_huang
+}
+
+standardized_currency = {
+	empire = celestial_empire
+	trigger = {}
+	member = {}
+	emperor = {
+		trade_efficiency = 0.05
+		global_tax_modifier = 0.05
+	}
+	required_reform = abolish_feudalism
+}
+
+establish_border_garrisons = {
+	empire = celestial_empire
+	trigger = {}
+	member = {}
+	emperor = {
+		fort_maintenance_modifier = -0.1
+		garrison_size = 0.1
+	}
+	required_reform = standardized_currency
+}
+
+imperial_library = {
+	empire = celestial_empire
+	trigger = {}
+	member = {}
+	emperor = {
+		technology_cost = -0.05
+	}
+	required_reform = establish_border_garrisons
+}

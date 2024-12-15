@@ -1,0 +1,7 @@
+bookmark = {
+	name = "MACCABEAN_REVOLT_TITLE"
+	desc = "MACCABEAN_REVOLT_DESC"
+	date = 587.1.1
+
+	country = JUD
+}

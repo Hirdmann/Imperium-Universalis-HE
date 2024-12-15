@@ -1,0 +1,15 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = afro_arabian
+primary_culture = dadanitic
+religion = arab_religion
+#religious_school = semitic_type
+capital = 2550
+
+202.1.1 = {
+	government_rank = 3
+	government = monarchy
+	add_government_reform = despotism_reform
+}

@@ -1,0 +1,2167 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+# ai_will do is only used to determine which idea group is picked if AI_USES_HISTORICAL_IDEA_GROUPS define is 0, OR start is custom/random
+# ai never picks an idea that resolves to ai_will_do = 0, even if AI_USES_HISTORICAL_IDEA_GROUPS = 1
+# ROOT = country picking the idea
+# groups set to colonial = yes will be higher prioritized by the AI when spending power
+
+
+# administrative_ideas
+# academy_ideas
+# royal_court_ideas
+# republican_government_ideas
+# oligarchic_ideas
+# tribal_government_ideas
+# engineering_ideas
+# cerimonial_ideas
+# domestic_government_ideas
+# financial_ideas
+# agraculture_ideas
+# assimilation_ideas
+
+# maritime_trade_ideas
+# caravan_trade_ideas
+# expansion_ideas
+# diplomatic_ideas
+# maritime_ideas
+# shipbuilding_ideas
+# imperial_ideas
+# syncretism_ideas
+# propaganda_ideas
+
+# infantry_ideas
+# cavalry_ideas
+# naval_ideas
+# raider_ideas
+# mercenary_ideas
+# leadership_ideas
+# fortress_ideas
+# logistic_ideas
+# skirmisher_ideas
+
+###################################################
+#
+#		ADM IDEAS
+#
+###################################################
+
+administrative_ideas = {
+	category = ADM
+
+	bonus = {
+		governing_capacity_modifier = 0.2
+	}
+	trigger = {
+
+	}
+
+	expanded_bureaucracy = {
+		state_maintenance_modifier = -0.1
+	}
+	skilled_governors = {
+		administrative_efficiency = 0.05
+	}
+	cursus_honorum = {
+		yearly_corruption = -0.05
+	}
+	provincial_division_idea = {
+		state_governing_cost = -0.1
+	}
+	planned_annexation = {
+		overextension_impact_modifier = -0.15
+	}
+	centralization_efforts_idea = {
+		autonomy_change_time = -0.25
+	}
+	reorganization_of_provinces_idea = {
+		expand_administration_cost = -0.25
+	}
+
+	ai_will_do = {
+		factor = 1.0
+		modifier = {
+			factor = 0
+			government = native
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_cities = 8 }
+		}
+		modifier = {
+			factor = 2.0
+			num_of_cities = 65
+		}
+		modifier = {
+			factor = 1.5
+			government_rank = 4
+		}
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+	}
+}
+
+academy_ideas = {
+	category = ADM
+
+	bonus = {
+		embracement_cost = -0.2
+	}
+	trigger = {
+
+	}
+
+	open_minded_idea = {
+		innovativeness_gain = 0.2
+		yearly_innovativeness = 0.03
+	}
+	beacon_of_knowledge_idea = {
+		idea_cost = -0.1
+	}
+	national_schools_idea = {
+		global_institution_spread = 0.1
+	}
+	military_academies_idea = {
+		leader_cost = -0.1
+		army_tradition_decay = -0.01
+	}
+	collecting_of_books_idea = {
+		technology_cost = -0.05
+	}
+	promote_pedagogy_idea = {
+		all_power_cost = -0.025
+	}
+	civic_society_ideas = {
+		free_policy = 1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			government = native
+		}
+		modifier = {
+			factor = 0.25
+			government = tribal
+		}
+		modifier = {
+			factor = 1.5
+			culture_group = hellenic_group
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {  had_recent_war = 15  }
+		}
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+	}
+}
+royal_court_ideas = {
+	category = ADM
+
+	bonus = {
+		legitimacy = 1
+		fac_monarch_influence = 0.05
+		monthly_heir_claim_increase = 0.25
+	}
+	trigger = {
+		government = monarchy
+	}
+
+	royal_ceremonies_idea = {
+		diplomatic_reputation = 0.5
+		prestige  = 0.5
+	}
+	monarch_general_idea = {
+		monarch_military_power = 1
+	}
+	royal_library_idea = {
+		embracement_cost = -0.2
+		monthly_splendor = 0.5
+	}
+	royal_household_idea = {
+		advisor_pool = 1
+	}
+	personal_teachers_idea = {
+		advisor_cost = -0.1
+		all_power_cost = -0.025
+	}
+	personal_doctors_idea = {
+		monarch_lifespan = 0.2
+	}
+	royal_harems_idea = {
+		heir_chance = 0.25
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 4
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				tag = EGY
+				tag = MAC
+				tag = ARZ
+				tag = PSE
+				tag = MAU
+				government_rank = 4
+			}
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				government_rank = 5
+			}
+		}
+	}
+}
+republican_government_ideas = {
+	category = ADM
+
+	bonus = {
+		reelection_cost = -0.2
+	}
+	trigger = {
+		government = republic
+	}
+
+	public_meetings = {
+		republican_tradition = 0.5
+	}
+	servants_of_the_state_idea = {
+		candidate_random_bonus = 1
+	}
+	legislative_assembly = {
+		state_governing_cost = -0.1
+	}
+	citizen_obligations = {
+		amount_of_banners = 0.2
+		discipline = 0.05
+		yearly_army_professionalism = 0.025
+	}
+	concilium_plebis_idea = {
+		country_diplomatic_power = 1
+	}
+	citizenship_grantures_idea = {
+		num_accepted_cultures = 1
+	}
+	right_participation_idea = {
+		min_autonomy_in_territories = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			culture_group = hellenic_group
+			culture_group = italic_group
+		}
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+	}
+}
+
+oligarchic_ideas = {
+	category = ADM
+
+	bonus = {
+		max_absolutism_effect = 0.15
+	}
+	trigger = {
+		government = theocracy
+	}
+
+	strict_hierarchy_idea = {
+		devotion = 1
+		discipline = 0.025
+	}
+	aristocratic_service_idea = {
+		free_land_leader_pool = 1
+		yearly_army_professionalism = 0.02
+	}
+	decentralize_power_ideas = {
+		country_admin_power = 1
+	}
+	division_of_executive_functions_idea = {
+		stability_cost_modifier = -0.1
+	}
+	landowner_extension_idea = {
+		governing_capacity_modifier = 0.15
+	}
+	the_noblest_aristocracy_idea = {
+		prestige_decay = -0.01
+		diplomatic_reputation = 0.5
+	}
+	special_taxation_idea = {
+		global_unrest = -1
+		global_tax_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			NOT = { devotion = 80 }
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				culture_group = ibero_celtic_group
+				culture_group = etruscan_culture_group
+				culture_group = semitic
+				culture_group = iberian_group
+				culture_group = hellenic_group
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+	}
+}
+
+tribal_government_ideas = {
+	category = ADM
+
+	bonus = {
+		min_autonomy = -10
+	}
+	trigger = {
+		OR = {
+			government = tribal
+			government = native
+		}
+	}
+
+	customary_law_idea = {
+		years_of_nationalism = -3
+	}
+	clan_assemblies_idea = {
+		max_absolutism = 5
+		horde_unity = 0.25
+		legitimacy = 0.25
+	}
+	animal_sacrifices_idea = {
+		tolerance_own = 1
+	}
+	tribal_banners_idea = {
+		land_morale = 0.1
+	}
+	martial_society_idea = {
+		land_forcelimit_modifier = 0.2
+		army_tradition = 0.5
+	}
+	native_agriculture_idea = {
+		production_efficiency = 0.1
+	}
+	tribal_duties_idea = {
+		global_tax_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 2
+			NOT = { manpower_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 2.0
+			OR = {
+				culture_group = gaulish_group
+				culture_group = germanic_group
+				culture_group = eastern_celtic
+				culture_group = britannic_group
+				culture_group = dacothracian_group
+				culture_group = zargos_group
+				culture_group = central_african_group
+				culture_group = nuragic_group
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 2
+			NOT = { manpower_percentage = 0.5 }
+		}
+	}
+}
+
+engineering_ideas = {
+	category = ADM
+
+	bonus = {
+		global_allowed_num_of_buildings = 1
+		leader_siege = 1
+	}
+	trigger = {
+
+	}
+
+	advanced_architecture_idea = {
+		build_cost = -0.1
+	}
+	hydraulic_mining = {
+		production_efficiency = 0.1
+	}
+	enhanced_shipbuilding = {
+		ship_durability = 0.1
+		allowed_man_of_war_fraction = 0.1
+	}
+	siege_tower_construction_idea = {
+		assault_fort_ability = 0.2
+		assault_fort_cost_modifier = -0.1
+	}
+	improved_defenses_idea = {
+		defensiveness = 0.15
+	}
+	road_infraestructure_idea = {
+		build_time = -0.1
+	}
+	building_monuments_idea = {
+		prestige = 0.25
+		great_project_upgrade_cost = -0.25
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			culture_group = hellenic_group
+		}
+		modifier = {
+			factor = 2.0
+			is_roman_country_trigger = yes
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				tag = ASY
+				tag = BAB
+				tag = EGY
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+	}
+}
+cerimonial_ideas = {
+	category = ADM
+
+	bonus = {
+		monthly_splendor = 0.5
+	}
+	trigger = {
+
+	}
+
+	religious_festivals_idea = {
+		tolerance_own = 2
+	}
+	superior_culture_idea = {
+		global_heretic_missionary_strength = 0.01
+		yearly_patriarch_authority = 0.003
+		monthly_church_power = 0.05
+		monthly_fervor_increase = 1
+	}
+	horn_blowers_and_flags_idea = {
+		land_morale = 0.1
+		yearly_army_professionalism = 0.015
+	}
+	respected_heritage_idea = {
+		diplomatic_reputation = 1
+	}
+	new_religious_customs_idea = {
+		global_missionary_strength = 0.01
+	}
+	promotion_priests_ideas = {
+		missionary_maintenance_cost = -0.2
+	}
+	national_legends_idea = {
+		prestige_decay = -0.01
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			NOT = {  has_idea_group = syncretism_ideas  }
+		}
+		modifier = {
+			factor = 0.25
+			government = republic
+		}
+		modifier = {
+			factor = 1.25
+			num_of_cities = 16
+		}
+		modifier = {
+			factor = 2.0
+			OR = {
+				tag = ASY
+				tag = BAB
+				tag = EGY
+				tag = LYD
+			}
+		}
+		modifier = {
+			factor = 2
+			culture_group = dacothracian_group
+			culture_group = anatolian_group
+			culture_group = steppe_people
+		}
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+	}
+}
+
+domestic_government_ideas = {
+	category = ADM
+
+	bonus = {
+		yearly_absolutism = 0.75
+		max_absolutism_effect = 0.1
+	}
+	trigger = {
+
+	}
+
+	new_politica_reforms_idea = {
+		reform_progress_growth = 0.2
+	}
+	staff_of_counsellors_idea = {
+		advisor_pool = 1
+	}
+	nationwide_courts = {
+		global_unrest = -1
+		all_power_cost = -0.02
+	}
+	eyes_and_ears_idea = {
+		global_spy_defence = 0.2
+		spy_offence = 0.2
+	}
+	advanced_government_idea = {
+		max_absolutism = 5
+		centralize_state_cost = -0.15
+	}
+	local_police = {
+		global_autonomy = -0.05
+		harsh_treatment_cost = -0.25
+	}
+	balance_court_ideas = {
+		national_focus_years = -5
+		all_estate_loyalty_equilibrium = 0.05
+		all_estate_influence_modifier = -0.05
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			NOT = { num_of_cities = 16 }
+		}
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+	}
+}
+
+financial_ideas = {
+	category = ADM
+
+	bonus = {
+		inflation_action_cost = -0.1
+	}
+	trigger = {
+
+	}
+
+	reformed_tax_system_idea = {
+		global_tax_modifier = 0.15
+	}
+	standardized_salary_idea = {
+		land_maintenance_modifier = -0.1
+	}
+	privilege_of_minting_idea = {
+		inflation_reduction = 0.1
+	}
+	reduction_of_interest_idea = {
+		interest = -1.5
+	}
+	trade_tariffs_idea = {
+		trade_efficiency = 0.1
+	}
+	taxation_property_idea = {
+		global_tax_modifier = 0.15
+	}
+	control_prices_idea = {
+		yearly_absolutism = 0.5
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 0.5
+			NOT = {  tax_income_percentage = 0.15  }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = {  tax_income_percentage = 0.3  }
+		}
+		modifier = {
+			factor = 1.5
+			gold_income_percentage = 0.04
+		}
+		modifier = {
+			factor = 1.5
+			inflation = 10
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				primary_culture = hebrew
+				primary_culture = samaritan
+				tag = LYD
+			}
+		}
+		modifier = {
+			factor = 2.0
+			has_idea_group = caravan_trade_ideas
+		}
+		modifier = {
+			factor = 2.0
+			has_idea_group = maritime_trade_ideas
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+	}
+}
+
+agraculture_ideas = {
+	category = ADM
+
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}
+	trigger = {
+
+	}
+
+	advanced_ploughs_idea = {
+		production_efficiency = 0.1
+	}
+	increased_food_production_idea = {
+		development_cost = 0.1
+	}
+	food_reserves_idea = {
+		defensiveness = 0.1
+		fort_maintenance_modifier = -0.1
+	}
+	supply_trains_idea = {
+		land_attrition = -0.15
+		global_supply_limit_modifier = 0.15
+	}
+	food_for_the_army_idea = {
+		land_forcelimit_modifier = 0.2
+	}
+	public_granaries_idea = {
+		global_unrest = -1
+	}
+	advanced_irrigation_idea = {
+		global_trade_goods_size_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 0.5
+			NOT = {  tax_income_percentage = 0.15  }
+		}
+		modifier = {
+			factor = 2.0
+			NOT = {  tax_income_percentage = 0.3  }
+		}
+		modifier = {
+			factor = 1.5
+			gold_income_percentage = 0.04
+		}
+		modifier = {
+			factor = 2.5
+			culture_group = arabic_group
+			culture_group = eastern_iranian_group
+			culture_group = indian_group
+			culture_group = gaulish_group
+			culture_group = iberian_group
+			culture_group = italic_group
+			culture_group = etruscan_culture_group
+			culture_group = egyptian_group
+			culture_group = chinese_group
+		}
+		modifier = {
+			factor = 2
+			culture_group = malay_group
+			culture_group = viet_group
+			culture_group = tai_group
+		}
+		modifier = {
+			factor = 10
+			capital_scope = { superregion = syria_superregion }
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+	}
+}
+
+assimilation_ideas = {
+	category = ADM
+
+	bonus = {
+		core_decay_on_your_own = -0.25
+	}
+	trigger = {
+		NOT = { has_idea_group = syncretism_ideas }
+	}
+
+	promote_nobles_own_idea = {
+		same_culture_advisor_cost = -0.1
+	}
+	military_service_citizens_idea = {
+		manpower_in_own_culture_provinces = 0.2
+	}
+	only_languague_administration_idea = {
+		max_absolutism = 10
+	}
+	special_rights_citizen_idea = {
+		institution_spread_from_true_faith = 0.15
+	}
+	forced_marriages_idea = {
+		culture_conversion_time = -0.15
+	}
+	suppression_native_idea = {
+		global_missionary_strength = 0.01
+	}
+	script_standardization_idea = {
+		adm_tech_cost_modifier = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			num_of_cities = 24
+		}
+		modifier = {
+			factor = 2.0
+			absolutism = 45
+		}
+		modifier = {
+			factor = 0.0
+			OR = {
+				has_idea_group = syncretism_ideas
+				has_reform = cosmopolitanism_reform
+			}
+		}
+		modifier = {
+			factor = 0.0
+			OR = {
+				culture_group = western_iranian
+				culture_group = eastern_iranian_group
+				culture_group = steppe_people
+				culture_group = xiongnu_group
+				culture_group = turkic_group
+				culture_group = mongolic_group
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				culture_group = akkadian_group
+				culture_group = egyptian_group
+				culture_group = elamite_group
+				culture_group = chinese_group
+				tag = SP1
+				tag = ANE
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+###################################################
+#
+#		DIP IDEAS
+#
+###################################################
+
+maritime_trade_ideas = {
+	category = DIP
+
+	bonus = {
+		mercantilism_cost = -0.25
+	}
+	trigger = {
+
+	}
+
+	more_cargo_space_idea = {
+		global_ship_trade_power = 0.15
+		ship_durability = -0.05
+	}
+	trading_branches_idea = {
+		reduced_trade_penalty_on_non_main_tradenode = 0.5
+	}
+	long_range_traderoutes_idea = {
+		trade_range_modifier = 0.35
+	}
+	profitable_trade_lanes_idea = {
+		ship_power_propagation = 0.15
+	}
+	great_merchant_fleet_idea = {
+		naval_forcelimit_modifier = 0.2
+	}
+	expand_trade_fleet_idea = {
+		light_ship_cost = -0.15
+	}
+	finance_merchants_idea = {
+		merchants = 1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 0.25
+			tag = SP1
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_ports = 4
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {  trade_income_percentage = 0.15  }
+		}
+		modifier = {
+			factor = 3.0
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 2.0
+			num_of_light_ship = 15
+		}
+		modifier = {
+			factor = 1.5
+			capital_scope = {
+				region = mare_aegaeum_islands_region
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+	}
+}
+
+caravan_trade_ideas = {
+	category = DIP
+
+	bonus = {
+		embargo_efficiency = 0.25
+	}
+	trigger = {
+
+	}
+
+	extension_of_trade_routes = {
+		trade_steering = 0.15
+	}
+	organized_caravan_routes = {
+		caravan_power = 0.25
+	}
+	customs_stations_idea = {
+		global_prov_trade_power_modifier = 0.1
+	}
+	trading_nation_idea = {
+		trade_efficiency = 0.1
+	}
+	trading_rights_idea = {
+		placed_merchant_power_modifier = 0.2
+	}
+	special_trading_towns_idea = {
+		center_of_trade_upgrade_cost = -0.25
+	}
+	securing_trade_routes_idea = {
+		global_foreign_trade_power = 0.1
+		merchants = 1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 0.5
+			tag = SP1
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {  trade_income_percentage = 0.15  }
+		}
+		modifier = {
+			factor = 2.0
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { num_of_light_ship = 15 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 24
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_cities = 5 }
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				culture_group = arabic_group
+				culture_group = steppe_people
+				culture_group = western_iranian
+				culture_group = xiongnu_group
+				culture_group = turkic_group
+				culture_group = mongolic_group
+				culture_group = gaulish_group
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+	}
+}
+
+expansion_ideas = {
+	category = DIP
+
+	bonus = {
+		core_creation = -0.1
+	}
+	trigger = {
+
+	}
+
+	explorers_and_cartographers_idea = {
+		auto_explore_adjacent_to_colony = yes
+		may_explore = yes
+	}
+	unstopable_empire_idea = {
+		province_warscore_cost = -0.2
+	}
+	additional_governors_idea = {
+		governing_capacity_modifier = 0.15
+	}
+	colonies_idea = {
+		colonists = 1
+		build_time = -0.1
+	}
+	unforgotten_claims_idea = {
+		claim_duration = 0.5
+		ae_impact = -0.1
+	}
+	military_colonies_ideas = {
+		global_colonial_growth = 25
+		manpower_in_own_culture_provinces = 0.1
+	}
+	oratory_barbarians_idea = {
+		years_of_nationalism = -2
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 3.0
+			any_owned_province = {
+				any_neighbor_province = { is_empty = yes }
+			}
+		}
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_roman_country_trigger = yes
+				tag = MAC
+				tag = ASY
+				tag = PSE
+			}
+		}
+		modifier = {
+			factor = 2.0
+			num_of_cities = 32
+		}
+		modifier = {
+			factor = 2.0
+			culture_group = steppe_people
+			culture_group = gaulish_group
+			culture_group = malay_group
+			culture_group = viet_group
+			culture_group = tibetan_group
+			culture_group = germanic_group
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { num_of_cities = 16 }
+		}
+		#modifier = {
+		#	factor = 0
+		#	OR = {
+		#		tag = AGF
+		#		tag = RCT
+		#	}
+		#}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+diplomatic_ideas = {
+	category = DIP
+
+	bonus = {
+		diplomatic_reputation = 2
+	}
+	trigger = {
+
+	}
+
+	packs_of_friendship_idea = {
+		improve_relation_modifier = 0.25
+	}
+	spies_and_agents_idea = {
+		spy_action_cost_modifier = -0.15
+	}
+	additional_ambassadors_idea = {
+		diplomats = 1
+	}
+	written_contracts_idea = {
+		diplomatic_upkeep = 1
+	}
+	fast_changing_enemies_idea = {
+		rival_change_cost = -0.5
+	}
+	justification_rhetoric_idea = {
+		discovered_relations_impact = -0.25
+	}
+	permanent_embassies_idea = {
+		diplomats = 1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			NOT = { num_of_cities = 4 }
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				government = native
+			}
+		}
+		modifier = {
+			factor = 0.5
+			government = tribal
+			NOT = { num_of_allies = 4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { had_recent_war = 10 }
+		}
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+	}
+}
+
+maritime_ideas = {
+	category = DIP
+
+	bonus = {
+		sailors_recovery_speed = 0.25
+		allowed_marine_fraction = 0.1
+	}
+	trigger = {
+
+	}
+
+	seaborn_captains_idea = {
+		leader_naval_fire = 1
+		leader_naval_shock = 1
+	}
+	nation_of_sailors = {
+		sailor_maintenance_modifer = -0.2
+	}
+	usage_of_the_coastline_idea = {
+		own_coast_naval_combat_bonus = 1
+	}
+	grand_navy_idea = {
+		naval_forcelimit_modifier = 0.25
+	}
+	proud_oarsmen_idea = {
+		navy_tradition = 0.5
+	}
+	naval_academy_idea = {
+		admiral_cost = -0.15
+	}
+	increased_sailor_recruitment_idea = {
+		global_sailors_modifier = 0.2
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 4 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_ports = 8
+		}
+		modifier = {
+			factor = 1.5
+			navy_size_percentage = 0.9
+		}
+		modifier = {
+			factor = 1.25
+			culture_group = hellenic_group
+			culture_group = illyrian_group
+
+		}
+		modifier = {
+			factor = 1.5
+			capital_scope = {
+				region = mare_aegaeum_islands_region
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+shipbuilding_ideas = {
+	category = DIP
+
+	bonus = {
+		sea_repair = yes
+	}
+	trigger = {
+
+	}
+
+	advanced_shipyards_idea = {
+		global_ship_recruit_speed = -0.2
+	}
+	only_the_finest_wood_idea = {
+		ship_durability = 0.1
+	}
+	improved_shipbuilding_idea = {
+		global_ship_cost = -0.1
+		hull_size_modifier = 0.1
+		max_flagships = 1
+	}
+	routine_maintenance_idea = {
+		global_ship_repair = 0.15
+	}
+	on_board_siege_weapons_idea = {
+		siege_blockade_progress = 1
+		heavy_ship_power = 0.05
+		number_of_cannons_modifier = 0.1
+		allowed_galleon_fraction = 0.05
+	}
+	expansion_harbors_idea = {
+		naval_maintenance_modifier = -0.1
+	}
+	ship_supplies_idea = {
+		naval_attrition = -0.15
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 6 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_ports = 16
+		}
+		modifier = {
+			factor = 2.0
+			tag = CAR
+			tag = PTO
+		}
+		modifier = {
+			factor = 2
+			has_idea_group = maritime_ideas
+			culture_group = hellenic_group
+			culture_group = illyrian_group
+		}
+		modifier = {
+			factor = 1.25
+			culture_group = hellenic_group
+			culture_group = illyrian_group
+			culture_group = semitic
+		}
+		modifier = {
+			factor = 1.5
+			capital_scope = {
+				region = mare_aegaeum_islands_region
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+imperial_ideas = {
+	category = DIP
+
+	bonus = {
+		can_transfer_vassal_wargoal = yes
+	}
+	trigger = {
+
+	}
+
+	tribute_payments_idea = {
+		vassal_forcelimit_bonus = 0.25
+		vassal_income = 0.25
+	}
+	loyal_subjects_idea = {
+		reduced_liberty_desire = 10
+	}
+	imperial_conquests_idea = {
+		core_creation = -0.2
+	}
+	glorious_army_idea = {
+		prestige_from_land = 0.5
+		prestige_from_naval = 0.5
+		army_tradition = 0.25
+	}
+	hard_suppression_idea = {
+		harsh_treatment_cost = -0.25
+	}
+	imperial_sanction_idea = {
+		unjustified_demands = -0.15
+	}
+	expanded_diplomacy_idea = {
+		diplomats = 1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			NOT = { num_of_cities = 16 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 32
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 64
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 2
+		}
+		modifier = {
+			factor = 2.0
+			num_of_states = 10
+		}
+		modifier = {
+			factor = 3.0
+			government_rank = 5
+		}
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+	}
+}
+
+syncretism_ideas = {
+	category = DIP
+
+	bonus = {
+		religious_unity = 0.25
+		harmonization_speed = 0.1
+	}
+	trigger = {
+		NOT = { has_idea_group = assimilation_ideas }
+	}
+
+	integration_of_gods_idea = {
+		tolerance_heretic = 2
+	}
+	multi_ethnic_country = {
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.2
+	}
+	knowledge_of_foreign_cultures_idea = {
+		improve_relation_modifier = 0.25
+		yearly_harmony = 1
+	}
+	peaceful_coexistens_idea = {
+		tolerance_heathen = 3
+	}
+	contract_foreign_agents_idea = {
+		spy_offence = 0.25
+	}
+	foreign_knowledge_idea = {
+		embracement_cost = -0.15
+		yearly_innovativeness = 0.02
+	}
+	culture_tolerance_idea = {
+		tolerance_own = 1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 3.0
+			OR = {
+				tag = SEL
+				tag = PTO
+				tag = PSE
+				tag = ALI
+				tag = ROI
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_reform = syncretism_reform
+		}
+		modifier = {
+			factor = 1.5
+			is_roman_country_trigger = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_cities = 16 }
+		}
+		modifier = {
+			factor = 0
+			has_idea_group = cerimonial_ideas
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				calc_true_if = {
+					all_owned_province = {
+						has_owner_culture = no
+					}
+					amount = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+	}
+}
+
+propaganda_ideas = {
+	category = DIP
+
+	bonus = {
+		stability_cost_to_declare_war = -1
+		army_tradition = 0.5
+	}
+	trigger = {
+
+	}
+
+	control_population_idea = {
+		stability_cost_modifier = -0.1
+		global_unrest = -1
+	}
+	civilian_propaganda_idea = {
+		monthly_favor_modifier = 0.2
+		unjustified_demands = -0.2
+	}
+	sway_subjects_idea = {
+		accept_vassalization_reasons = 8
+		transfer_trade_power_reasons = 12
+	}
+	present_as_liberators_idea = {
+		years_of_nationalism = -5
+	}
+	propaganda_war_machine_idea = {
+		power_projection_from_insults = 0.5
+		warscore_cost_vs_other_religion = -0.1
+	}
+	alter_history_idea = {
+		prestige_decay = -0.01
+		legitimacy = 0.5
+		republican_tradition = 0.25
+		devotion = 0.5
+		meritocracy = 0.25
+		horde_unity = 0.25
+	}
+	monumental_justification_idea = {
+		diplomatic_reputation = 1
+		great_project_upgrade_cost = -0.15
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 2.0
+			OR = {
+				is_roman_country_trigger = yes
+				tag = PSE
+				tag = ASY
+				tag = BAB
+			}
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 50
+		}
+		modifier = {
+			factor = 2
+			num_of_allies = 4
+		}
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+	}
+}
+
+
+###################################################
+#
+#		MIL IDEAS
+#
+###################################################
+
+infantry_ideas = {
+	category = MIL
+
+	bonus = {
+		infantry_power = 0.15
+		yearly_army_professionalism = 0.05
+	}
+	trigger = {
+
+	}
+
+	cohort_system_idea = {
+		discipline = 0.025
+	}
+	special_infantry_weapons_idea = {
+		infantry_power = 0.1
+	}
+	mobile_reserves_idea = {
+		reserves_organisation = 0.1
+	}
+	standardized_armour_weapons_idea = {
+		infantry_cost = -0.1
+	}
+	shieldwall_tactics_idea = {
+		fire_damage_received = -0.1
+	}
+	expand_levies_idea = {
+		manpower_in_own_culture_provinces = 0.2
+	}
+	close_combat_training_idea = {
+		drill_gain_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 3.0
+			OR = {
+				is_roman_country_trigger = yes
+				tag = SP1
+				tag = EPI
+				culture_group = germanic_group
+				culture_group = eastern_celtic
+				culture_group = chinese_group
+				culture_group = dacothracian_group
+				culture_group = etruscan_culture_group
+				culture_group = gaulish_group
+				culture_group = italic_group
+				culture_group = hellenic_group
+				primary_culture = wuyue
+				primary_culture = ouyue
+				primary_culture = shanyue
+				primary_culture = yangyue
+				primary_culture = minyue
+				primary_culture = ganyue
+			}
+		}
+		modifier = {
+			factor = 1.5
+			infantry_fraction = 0.65
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+cavalry_ideas = {
+	category = MIL
+
+	bonus = {
+		shock_damage = 0.1
+		yearly_army_professionalism = 0.05
+	}
+	trigger = {
+
+	}
+
+	horse_breeding_idea = {
+		cavalry_cost = -0.1
+	}
+	armoured_horses_idea = {
+		cavalry_power = 0.1
+		shock_damage_received = -0.1
+	}
+	nation_of_riders_idea = {
+		cav_to_inf_ratio = 0.25
+	}
+	unexpected_cavalry_maneuvers_idea = {
+		cavalry_flanking = 0.5
+	}
+	horsedrawn_wagons_idea = {
+		movement_speed = 0.1
+	}
+	glorious_horses_idea = {
+		army_tradition = 0.5
+		prestige_from_land = 0.1
+	}
+	good_breeds_idea = {
+		cavalry_power = 0.15
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 4.0
+			OR = {
+				tag = MAC
+				culture_group = indian_group
+				culture_group = armenian_group
+				culture_group = western_iranian
+				culture_group = steppe_people
+				culture_group = xiongnu_group
+				culture_group = turkic_group
+				culture_group = mongolic_group
+				culture_group = gaulish_group
+				culture_group = iberian_group
+				culture_group = ibero_celtic_group
+				culture_group = north_african_group
+				culture_group = dacothracian_group
+				primary_culture = paphlagonian
+				primary_culture = thessalian
+				culture_group = arabic_group
+			}
+		}
+		modifier = {
+			factor = 2
+			cavalry_fraction = 0.3
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+naval_ideas = {
+	category = MIL
+
+	bonus = {
+		max_flagships = 1
+		allowed_man_of_war_fraction = 0.1
+	}
+	trigger = {
+
+	}
+
+	naval_ram_ideas = {
+		heavy_ship_power = 0.1
+		galley_power = 0.1
+	}
+	boarding_bridges_idea = {
+		capture_ship_chance = 0.25
+	}
+	trained_oarsmen_idea = {
+		disengagement_chance = 0.1
+	}
+	trained_for_naval_warfare_idea = {
+		naval_morale = 0.15
+		allowed_marine_fraction = 0.1
+	}
+	naval_battle_tactics_idea = {
+		global_naval_engagement_modifier = 0.1
+		leader_naval_manuever = 1
+	}
+	expand_admirals_idea = {
+		free_navy_leader_pool = 1
+		leader_naval_fire = 1
+	}
+	naval_stoicism_idea = {
+		sunk_ship_morale_hit_recieved = -0.15
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 2.5
+			OR = {
+				tag = ATH
+				tag = CAR
+				primary_culture = wuyue
+				primary_culture = ouyue
+				primary_culture = shanyue
+				primary_culture = yangyue
+				primary_culture = minyue
+				primary_culture = ganyue
+				culture_group = viet_group
+				culture_group = illyrian_group
+				primary_culture = punic
+				primary_culture = phoenician
+				primary_culture = ligures
+			}
+		}
+		modifier = {
+			factor = 1.5
+			num_of_ports = 12
+		}
+		modifier = {
+			factor = 2.5
+			capital_scope = {
+				region = mare_aegaeum_islands_region
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+raider_ideas = {
+	category = MIL
+
+	bonus = {
+		can_bypass_forts = yes
+		unjustified_demands = -0.1
+	}
+	trigger = {
+
+	}
+
+	sea_pirates_idea = {
+		privateer_efficiency = 0.3
+	}
+	feared_marauders_idea = {
+		morale_damage = 0.1
+	}
+	known_scavengers_idea = {
+		loot_amount = 0.5
+		available_province_loot = 0.5
+	}
+	fast_boarding_ships_idea = {
+		galley_power = 0.1
+	}
+	coastal_pillagers_idea = {
+		may_perform_slave_raid_on_same_religion = yes
+		regiment_disembark_speed = 0.15
+	}
+	monopoly_sea_idea = {
+		blockade_efficiency = 0.25
+		landing_penalty = -1
+	}
+	focus_manuever_idea = {
+		leader_land_manuever = 1
+		leader_naval_manuever = 1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			OR = {
+				tag = KIL
+				primary_culture = wuyue
+				primary_culture = ouyue
+				primary_culture = shanyue
+				primary_culture = yangyue
+				primary_culture = minyue
+				primary_culture = ganyue
+				culture_group = illyrian_group
+				culture_group = ibero_celtic_group
+				culture_group = britannic_group
+				primary_culture = ligures
+				primary_culture = etruscan
+				culture_group = north_east_caucasian_group
+				culture_group = north_west_caucasian_group
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { num_of_cities = 3 }
+			num_of_ports = 2
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { num_of_cities = 4 }
+		}
+		modifier = {
+			factor = 0.5
+			num_of_cities = 8
+		}
+		modifier = {
+			factor = 2.0
+			capital_scope = {
+				OR = {
+					region = mare_aegaeum_islands_region
+					region = sardinia_corsica_region
+					area = baleares_area
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+mercenary_ideas = {
+	category = MIL
+
+	bonus = {
+		allow_mercenary_drill = yes
+	}
+	trigger = {
+
+	}
+
+	mercenary_army_idea = {
+		merc_independent_from_trade_range = yes
+	}
+	spare_our_blood_idea = {
+		war_exhaustion = -0.02
+	}
+	long_term_contracts_idea = {
+		merc_maintenance_modifier = -0.1
+	}
+	experienced_mercenary_leaders_idea = {
+		mercenary_discipline = 0.05
+	}
+	mass_recruitment_idea = {
+		mercenary_manpower = 0.5
+	}
+	own_forces_reserves_idea = {
+		recover_army_morale_speed = 0.15
+	}
+	auxiliares_in_army_idea = {
+		global_manpower_modifier = 0.1
+		num_accepted_cultures = 1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 3.0
+			OR = {
+				tag = CAR
+				tag = TTQ
+				tag = EGY
+				tag = PTO
+				tag = PHC
+				primary_culture = punic
+				primary_culture = sicelian_punic
+				primary_culture = lybo_punic
+				primary_culture = ibero_phoenician
+				primary_culture = ibero_phoenician
+				primary_culture = sardo_phoenician
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {  manpower_percentage = 0.3 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_mercenaries = 6
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {   num_of_mercenaries = 1  }
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = satrap_diadochi_reform
+				has_reform = diadochi_kingdom_reform
+			}
+		}
+		modifier = {
+			factor = 4
+			culture_group = hellenic_group
+			NOT = { primary_culture = macedon }
+			has_idea_group = infantry_ideas
+			mil_tech = 12
+		}
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+	}
+}
+
+leadership_ideas = {
+	category = MIL
+
+	bonus = {
+		force_march_free = yes
+		yearly_army_professionalism = 0.05
+	}
+	trigger = {
+
+	}
+
+	meritocratic_recruitment_idea = {
+		discipline = 0.05
+		leader_cost = -0.1
+	}
+	experienced_generals_idea = {
+		leader_land_fire = 1
+		leader_land_shock = 1
+	}
+	regular_trainings_idea = {
+		reserves_organisation = 0.1
+		drill_decay_modifier = -0.1
+	}
+	expanded_officercorps_idea = {
+		free_leader_pool = 2
+	}
+	recovery_after_the_battle_idea = {
+		recover_army_morale_speed = 0.1
+	}
+	military_science_idea = {
+		army_tradition_from_battle = 0.25
+		naval_tradition_from_battle = 0.25
+		army_tradition = 0.25
+	}
+	new_army_tactics_idea = {
+		mil_tech_cost_modifier = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 2.0
+			OR = {
+				tag = SP1
+				tag = MAC
+				tag = BOE
+				tag = ACH
+				tag = PON
+				tag = CAR
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				culture_group = hellenic_group
+				culture_group = chinese_group
+				culture_group = italic_group
+				is_roman_country_trigger = yes
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+fortress_ideas = {
+	category = MIL
+
+	bonus = {
+		war_taxes_cost_modifier = -0.5
+		yearly_army_professionalism = 0.05
+	}
+	trigger = {
+
+	}
+
+	double_walls_idea = {
+		defensiveness = 0.2
+	}
+	additional_garrisons_idea = {
+		garrison_size = 0.25
+	}
+	selfsupplying_garrisons_idea = {
+		fort_maintenance_modifier = -0.25
+		global_garrison_growth = 0.5
+	}
+	always_vigilant_idea = {
+		rival_border_fort_maintenance = -0.5
+	}
+	traps_and_ambushes_idea = {
+		hostile_attrition = 1
+		max_hostile_attrition = 1
+	}
+	forward_defence_idea = {
+		morale_damage_received = -0.1
+	}
+	defense_depth_idea = {
+		war_exhaustion_cost = -0.1
+		own_territory_dice_roll_bonus = 1
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			num_of_cities = 24
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 48
+		}
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				culture_group = armenian_group
+				culture_group = caucasian_group
+				culture_group = north_east_caucasian_group
+				culture_group = ibero_celtic_group
+				primary_culture = assyrian
+				primary_culture = pisidian
+				tag = YAN
+			}
+		}
+	}
+}
+
+logistic_ideas = {
+	category = MIL
+
+	bonus = {
+		reinforce_cost_modifier = -0.2
+		yearly_army_professionalism = 0.075
+	}
+	trigger = {
+
+	}
+
+	efficient_logistics_idea = {
+		land_maintenance_modifier = -0.15
+	}
+	efficient_supply_depots_idea = {
+		global_supply_limit_modifier = 0.2
+	}
+	fast_reinforcements_idea = {
+		reinforce_speed = 0.15
+	}
+	rapid_provisioning_idea = {
+		land_attrition = -0.25
+		supply_limit = 5
+	}
+	fast_supply_wagons_idea = {
+		movement_speed = 0.1
+	}
+	military_infrastructure_idea = {
+		land_forcelimit_modifier = 0.2
+	}
+	military_settlement_connectivity_idea = {
+		global_regiment_recruit_speed = -0.2
+		global_manpower_modifier = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.25
+		modifier = {
+			factor = 1.5
+			army_size = 50
+		}
+		modifier = {
+			factor = 1
+			num_of_cities = 36
+		}
+		modifier = {
+			factor = 1.5
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 2
+			culture_group = chinese_group
+		}
+		modifier = {
+			factor = 1.5
+			has_idea_group = infantry_ideas
+		}
+		modifier = {
+			factor = 3
+			army_size = 150
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				tag = PSE
+				tag = ASY
+				tag = BAB
+				tag = ROI
+				tag = QIN
+			}
+		}
+	}
+}
+
+skirmisher_ideas = {
+	category = MIL
+
+	bonus = {
+		artillery_power = 0.15
+		yearly_army_professionalism = 0.05
+	}
+	trigger = {
+
+	}
+
+	standard_skirmisher_training_idea = {
+		artillery_cost = -0.1
+	}
+	archery_tradition_ideas = {
+		artillery_power = 0.1
+	}
+	composite_bow_idea = {
+		fire_damage = 0.1
+	}
+	leather_armor_archer_idea = {
+		fire_damage_received = -0.1
+	}
+	hit_and_run_tactics_idea = {
+		movement_speed = 0.05
+		cavalry_flanking = 0.25
+	}
+	protection_of_skirmishers_idea = {
+		backrow_artillery_damage = 0.2
+	}
+	guerrilla_warfare_idea = {
+		hostile_attrition = 0.5
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 2.0
+			artillery_fraction = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			num_of_artillery = 10
+		}
+		modifier = {
+			factor = 3.0
+			OR = {
+				culture_group = elamite_group
+				culture_group = zargos_group
+				culture_group = gaulish_group
+				culture_group = steppe_people
+				culture_group = xiongnu_group
+				culture_group = turkic_group
+				culture_group = mongolic_group
+				culture_group = indian_group
+				culture_group = britannic_group
+				culture_group = nuragic_group
+				culture_group = north_african_group
+				culture_group = western_african_group
+				culture_group = central_african_group
+				culture_group = nubian_group
+				primary_culture = ligures
+				primary_culture = rhodian
+			}
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}

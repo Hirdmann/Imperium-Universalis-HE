@@ -1,0 +1,828 @@
+#Country Name: Please see filename.
+
+graphical_culture = italicgfx
+
+color = { 107 14 16 }
+
+
+historical_idea_groups = {
+	royal_court_ideas
+	infantry_ideas
+	expansion_ideas
+	administrative_ideas
+	logistic_ideas
+	imperial_ideas
+	engineering_ideas
+	syncretism_ideas
+	cerimonial_ideas
+	propaganda_ideas
+}
+
+historical_units = {
+	rome_base_inf_0
+	rome_base_cav_0
+	rome_base_art_0
+
+	rome_base_inf_1
+	rome_base_cav_1
+	rome_base_art_1
+
+	rome_base_inf_2
+	rome_base_cav_2
+	rome_base_art_2
+
+	rome_base_cav_3
+	rome_base_art_3
+
+	rome_base_inf_3
+	rome_base_art_19
+
+	rome_base_cav_4
+	rome_base_art_4
+
+	rome_base_inf_4
+	rome_base_cav_5
+	rome_base_art_5
+
+	rome_base_inf_5
+	rome_base_cav_6
+	rome_base_art_6
+
+	rome_base_cav_7
+	rome_base_art_7
+
+	rome_base_inf_6
+	rome_base_cav_8
+	rome_base_art_9
+
+	rome_base_cav_9
+	rome_base_art_11
+
+	rome_base_cav_10
+	rome_base_art_12
+
+	rome_base_inf_8
+	rome_base_cav_11
+	rome_base_art_13
+
+	rome_base_inf_9
+	rome_base_cav_13
+	rome_base_art_14
+}
+
+
+monarch_names = {
+	"Tiberius #1 Claudius" = 50
+	"Tiberius #1 Ulpius" = 10
+	"Claudius #2 Nero" = 60
+	"Claudius #2 Vespasianus" = 50
+	"Nerva #0 Traianus" = 50
+	"Nerva #0 Antoninus" = 50
+	"Marcus #3 Aurelius" = 55
+	"Marcus #3 Cassius" = 50
+	"Flavius #4 Constantinus" = 20
+	"Flavius #4 Claudius" = 10
+	"Flavius #4 Iulius" = 10
+	"Flavius #4 Valentinianus" = 10
+	"Flavius #4 Placidius" = 10
+	"Octavianus #5 Augustus" = 15
+	"Octavianus #5 Aemilius" = 15
+	"Octavianus #5 Caesar" = 15
+	"Octavianus #5 Italicus" = 15
+	"Octavianus #5 Germanicus" = 15
+	"Scribonianus #6 Augustus" = 15
+	"Scribonianus #6 Drusus" = 15
+	"Clodius #7 Macer" = 15
+	"Clodius #7 Lucianus" = 15
+	"Sulpicius #8 Galba" = 15
+	"Sulpicius #8 Caesar" = 15
+	"Sulpicius #8 Augustus" = 15
+	"Sulpicius #8 Graecus" = 15
+	"Claudius #2 Vitellius" = 15
+	"Claudius #2 Sabinus" = 15
+	"Claudius #2 Domitianus" = 15
+	"Claudius #2 Antoninus" = 15
+	"Tiberius #1 Augustus" = 15
+	"Tiberius #1 Germanicus" = 15
+	"Tiberius #1 Aurelianus" = 15
+	"Flavius #4 Albinus" = 10
+	"Flavius #4 Dalmatius" = 10
+	"Flavius #4 Hannibalianus" = 10
+	"Flavius #4 Magnentius" = 10
+	"Flavius #4 Nepotianus" = 10
+	"Flavius #4 Valentinianus" = 10
+	"Flavius #4 Serpentinus" = 10
+
+	"Appius" = 10
+	"Aulus" = 10
+	"Gaius" = 10
+	"Gnaeus" = 10
+	"Decius" = 10
+	"Kaeso" = 10
+	"Lucius" = 10
+	"Marcus" = 10
+	"Manius" = 10
+	"Mamercus" = 10
+	"Numerius" = 5
+	"Publius" = 10
+	"Quintus" = 10
+	"Servius" = 5
+	"Sextus" = 5
+	"Spurius" = 10
+	"Titus" = 10
+	"Tiberius" = 10
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Kaeso" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Numerius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Kaeso" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Numerius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Kaeso" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Numerius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Kaeso" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Numerius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Kaeso" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Numerius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Kaeso" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Numerius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Kaeso" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Numerius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Kaeso" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Numerius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Kaeso" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Numerius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Kaeso" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Numerius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Spurius" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Appius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Mamercus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Servius" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Aulus" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Manius" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+	"Gaius" = 0
+	"Gnaeus" = 0
+	"Decius" = 0
+	"Lucius" = 0
+	"Marcus" = 0
+	"Publius" = 0
+	"Quintus" = 0
+	"Sextus" = 0
+	"Titus" = 0
+	"Tiberius" = 0
+
+	"Aemilia" = -1
+	"Cornelia" = -1
+	"Sempronia" = -1
+	"Claudia" = -1
+	"Scribonia" = -1
+	"Agrippina" = -1
+	"Julia" = -1
+}
+
+leader_names = {
+	"Menenius Agrippa" "Menenius Lanatus" "Servilius Ahala" "Servilius Caepio" "Servilius Gemellus" "Servilius Priscus" "Servilius Structus" "Servilius Axila"
+	"Domitius Ahenobarbus" "Domitius Calvinus" "Postumius Tubertus" "Postumius Albinus" "Postumius Albus"
+	"Fabius Ambustus" "Fabius Buteo" "Fabius Dorsuo" "Fabius Gurges" "Fabius Labeo" "Fabius Pictor"
+	"Villius Annalis" "Cornelius Arvina" "Cornelius Asina" "Cornelius Balbus" "Cornelius Barbatus" "Cornelius Cethegus" "Cornelius Cinna" "Cornelius Cossus"
+	"Corneius Dolabella" "Cornelius Lentulus" "Cornelius Merenda" "Cornelius Merula" "Cornelius Sulla" "Cornelius Verres"
+	"Sempronius Asellio" "Sempronius Blaesus" "Sempronius Gracchus" "Sempronius Longus" "Sempronius Musca" "Sempronius Nasica" "Sempronius Tuditanus"
+	"Acilius Balbus" "Acilius Caninus" "Acilius Crassus" "Acilius Glabrio"
+	"Lucilius Balbus" "Naevius Balbus" "Octavius Balbus" Octavius "Horatius Barbatus" "Horatius Pulvillus"
+	"Quinctius Scapula" "Quinctius Varus" "Quinctius Barbatus" "Quinctius Cincinnatus"
+	"Calpurnius Bestia" "Calpurnius Bibulus" "Calpurnius Piso" "Furius Bibaculus" "Furius Camillus" "Furius Crassipes" "Furius Fusus" "Furius Pacilus"
+	Sextius "Sextius Bibaculus" "Publicius Bibulus" "Publicius Malleolus" "Furius Purpureo"
+	"Iunius Scaeva" "Iunius Silanus" "Iunius Bubulcus" "Iunius Brutus" "Iunius Pera" "Iunius Pullus" "Iunius Pennus"
+	"Atilius Bulbus" "Atilius Regulus" "Atilius Varus" "Atilius Serranus"
+	"Claudius Caecus" "Claudius Crassus" "Claudius Marcellus" "Claudius Nero" "Claudius Pulcher" "Claudius Russus" "Claudius Caudex"
+	"Servilius Rullus" "Servilius Structus" "Servilius Vatia" Iulius "Iulius Tubero" "Iulius Caesar" "Iulius Iullus"
+	"Coelius Calidus" "Veturius Gemellus" "Veturius Calvinus" "Veturius Cicurinus" "Veturius Crassus" "Veturius"
+	"Ateius Capito" "Papirius Carbo" "Papirius Cursor" "Papirius Turdus"
+	"Sergius Catilina" "Sergius Silo" "Sergius Silus" Hostilius "Hostilius Tubulus" "Hostilius Cato"
+	"Porcius Cato" "Porcius Licinus" "Lutatius Catulus" "Lutatius Cerco"
+	"Papius Celsus" "Papius Mutilus" Tullius "Tullius Cicero" "Tullius Cerialis" "Tullius Varro" "Tullius Maximus" "Tullius Marsus"
+	"Flaminius Cilo" Caecilius "Caecilius Cornutus" "Caecilius Denter" "Caecilius Metellus" "Caecilius Nepos"
+	"Sulpicius Paterculus" "Sulpicius Praetextatus" "Sulpicius Cornutus" "Sulpicius Longus"
+	"Valerius Corvinus" "Valerius Corvus" "Valerius Flaccus" "Valerius Lactuca"
+	"Valerius Messalla" "Valerius Publicola" "Valerius Potitus" "Valerius Triarius" "Valerius Volusus"
+	"Pedanius Costa" Aurelius "Aurelius Costa" "Aurelius Scaurus"
+	"Licinius Stolo" "Licinius Varus" "Licinius Crassus" "Licinius Dives" "Licinius Lucullus" "Licinius Macer" "Licinius Murena" "Licinius Nerva"
+	Vibius "Vibius Crispus" "Vibius Pansa" Sallustius "Sallustius Crispus"
+	"Scribonius Curio" "Scribonius Libo" Livius "Livius Drusus" "Livius Ocella" "Livius Salinator"
+	Flavius "Flavius Fimbria" "Flavius Sabinus" "Flavius Vespasianus" "Flavius Libo" "Flavius Clemens" "Flavius Tertullus"
+	"Aquilius Florus" "Aquilius Aquilinus" "Cluentius Habitus"
+	"Aebutius Helva" Manlius "Manlius Imperiosus" Atinius "Atinius Labeo" Iuventius "Iuventius Laterensis"
+	"Marcius Libo" "Marcius Ralla" "Marcius Scaeva" Scribonius "Scribonius Libo" "Scribonius Curio"
+	"Rutilius Lupus" Vergilius "Vergilius Maro" Antonius "Antonius Merenda" Ovidius "Ovidius Naso"
+	"Pinarius Natta" "Cocceius Nerva" Aelius "Aelius Tubero" "Aelius Paetus" "Aelius Ligus" "Aelius Catus"
+	"Munatius Plautus" "Curtius Postumus" "Tremelius Scrofa" "Annaeus Seneca"
+	"Lucretius Trio" "Lucretius Vespillo" "Volcatius Tullus" Terentius "Terentius Varro" "Terrentius Culleo" "Terentius Gentianus"
+}
+
+ship_names = {
+	"Acqui Terme" Aemilia Albintimilium Alsium "Ante Amnem" Apollo Ardelica Arilica Ariolica Asti
+	"Aquae Labrodes" "Augusta Bagiennorum"
+	Bovillae Bruttium
+	Capitium "Carreum Potentia" Catina Cephaloedium Ceres Clavenna Corfinium Cremona
+	Daedalium Derthona Diana
+	Ebovium Entella Eporedia Eryx Etruria
+	"Falerii Novi" Fortuna "Forum Novum"
+	Genua
+	Helorus Himerenses Hispellum "Hybla Gereatis" "Hybla Heraea"
+	Imachara "Iulia Concordia"
+	Juno Jupiter
+	Lares Latium "Ligures Baebiani" Longaricum Lorium Luna "Lucus Feroniae"
+	Mantua Mars Mercurius Minerva Mytistratus
+	Neptunus Netum "Novum Comum"
+	Placentia Pluto Pollentia
+	Quirinus
+	Saepinum Selinuntiae Sentinum Sol Soluntum
+	Thermae Tauromenium Taurinorum Tusculum
+	"Vado Sabatia" Vardacate Venus Vercelum Vesta Vulcan
+	Abundantia "Acca Larentia" Acis Aerecura Aequitas Aesculapius Aeternitas Aeon "Aius Locutius"
+	Alernus Angerona Angitia "Anna Perenna" Annona Antevorta Apollo Arimanius Aura Aurora Averruncus
+	Bacchus Bellona "Bona Dea" "Bonus Eventus" Bubona Caca Cacus Camenae Cardea Carmenta Carmentes
+	Carna Ceres Clementia Cloacina Concordia Consus Cupidus Cura Cybele "Dea Dia" "Dea Tacita"
+	Decima Devera Diana "Diana Nemorensis" "Dius Fidius" Disciplina "Dis Pater" Egeria Empanda
+	Epona Falacer Fama Fascinus Fauna Faunus Faustitas Februus Febris Fecunditas Felicitas Ferentina
+	Feronia Fides Flora Fornax Fontus Fortuna Fulgora Furrina Genius Gratiae Hercules Hermaphroditus
+	Hilaritas Honos Hora Indiges Intercidona Inuus Invidia Isis Iris Janus Juno Jupiter Justitia
+	Juturna Juventas Lares Laverna Levana Letum Liber Libera Liberalitas Libertas Libitina Lua
+	Lucina Luna Lupercus Lympha "Mana Genita" Manes Mania Mantus Mars "Mater Matuta" Meditrina
+	Mephitis Mellonia Minerva Mithras Molae Moneta Mors Morta Murcia "Mutunus Tutunus"
+	Naenia Nascio Necessitas Nemesis Neptune Nerio Neverita Nixi Nona Nox Opis Orcus Palatua
+	Pales Parcae Pax Penates Picumnus Picus Pietas Pilumnus Pluto Poena Pomona Porrima Portunes
+	Postverta Priapus Proserpina Providentia Pudicitia Querquetulanae Quirinus Quiritis Robigus
+	Roma Rumina Salacia Salus Sancus Saturnus Securitas Silvanus "Sol Invictus" Somnus Soranus
+	Sors Spes Stata Mater Sterquilinus Suadela Summanus "Sulis Minerva" Tellurus Tempestas
+	"Terra Mater" Terminus Tiberinus Tibertus Tranquillitas Trivia Ubertas Unxia Uranus Vacuna
+	Vediovus Venilia Venti Venus Veritas Verminus Vertumnus Vesta "Vica Pota" Victoria Virbius
+	Virtus Volturnus Voluptas Vulcanus
+}
+
+army_names = {
+	#Imperial
+	"Legio I Adiutrix" "Legio I Germanica" "Legio I Italica" "Legio I Macriana" "Legio I Minervia" "Legio I Parthica" "Legio II Adiutrix" "Legio II Augusta"
+	"Legio II Italica" "Legio II Parthica" "Legio II Traiana" "Legio III Augusta" Legio III Cyrenaica" Legio III Gallica" "Legio III Italica" "Legio III Parthica"
+	"Legio IV Flavia Felix" "Legio IV Macedonica" "Legio IV Scythica" "Legio V Alaudae" "Legio V Macedonica" "Legio VI Ferrata" "Legio VI Hispana" "Legio VI Victrix"
+	"Legio VII Claudia" "Legio VII Gemina" "Legio VIII Augusta" "Legio IX Hispana" "Legio X Fretensis" "Legio X Gemina" "Legio XI Claudia" "Legio XII Fulminata"
+	"Legio XIII Gemina" "Legio XIV Gemina" "Legio XV Apollinaris" "Legio XV Primigenia" "Legio XVI Flavia Firma" "Legio XVI Gallica" "Legio XVII" "Legio XVIII"
+	"Legio XIX" "Legio XX Valeria Victrix" "Legio XXI Rapax" "Legio XXII Deiotariana" "Legio XXII Primigenia" "Legio XXX Ulpia Victrix"
+	#Different name for some of the previous ones
+	"Legio I Liberatrix" "Legio II Fortis" "Legio X Equestris"
+	#Republican
+	"Legio II Sabina" "Legio VII Claudia Pia Fidelis" "Legio IX Hispana Triumphalis" "Legio XVII Classica" "Legio XVIII Libyca" "Legio XX Siciliana" "Legio XXVIII"
+	"Legio XXIX" "Legio XXX Classica"
+}
+
+fleet_names = {
+	"Classis Misenensis" "Classis Praetoria Misenesis Pia Vindex" "Classis Ravennas" "Classis Praetoria Ravennatis Pia Vindex"
+	"Classis Africana Commodiana Herculea" "Classis Alexandrina" "Classis Britannica" "Classis Germanica" "Classis Augusta Pia Fidelix"
+	"Classis Nova Libyca" "Classis Mauretanica" "Classis Moesica" "Classis Pannonica" "Classis Perinthia" "Classis Pontica"
+	"Classis Pontica" "Classis Syriaca" "Classis Seleucena" "Legio XXII Primigenia" "Legio X Fretensis" "Classis Histrica"
+	"Classis Arlapensis et Maginensis" "Classis Lauriacensis" "Classis Stradensis et Germensis" "Classis Ratianensis"
+	"Legio IX Gemina" "Legio X Gemina" "Legio II Italica" "I Flavia Augusta" "II Flavia" "Milites Liburnarii" "Milites Nauclarii"
+	"Milites Muscularii" "Legio II Herculia" "Classis Anderetianorum" "Classis Ararica" "Classis Barcariorum" "Classis Comensis"
+	"Classis Misenatis" "Classis Ravennatis" "Classis Fluminis Rhodani" "Classis Sambrica" "Classis Venetum" "Classis Carpathia"
+}

@@ -1,0 +1,121 @@
+#Country Name: Please see filename.
+
+graphical_culture = punicgfx
+
+color = { 173 110 148 }
+
+historical_idea_groups = {
+	cerimonial_ideas
+	fortress_ideas
+	diplomatic_ideas
+	financial_ideas
+	caravan_trade_ideas
+	infantry_ideas
+	leadership_ideas
+	domestic_government_ideas
+}
+
+historical_units = {
+	asian_base_inf_0
+	asian_base_inf_1
+	asian_base_inf_2
+	asian_base_inf_3
+	asian_base_inf_4
+	asian_base_inf_5
+	asian_base_inf_6
+	asian_base_inf_7
+	asian_base_inf_8
+	asian_base_inf_9
+	asian_base_inf_10
+	asian_base_inf_11
+	asian_base_inf_12
+	asian_base_inf_13
+	asian_base_inf_14
+	asian_base_inf_15
+	asian_base_inf_16
+
+	asian_base_cav_0
+	asian_base_cav_1
+	asian_base_cav_2
+	asian_base_cav_3
+	asian_base_cav_4
+	asian_base_cav_5
+	asian_base_cav_6
+	asian_base_cav_7
+	asian_base_cav_8
+	asian_base_cav_9
+	asian_base_cav_10
+	asian_base_cav_11
+	asian_base_cav_12
+	asian_base_cav_13
+	asian_base_cav_14
+
+	asian_base_art_0
+	asian_base_art_1
+	asian_base_art_2
+	asian_base_art_3
+	asian_base_art_4
+	asian_base_art_5
+	asian_base_art_6
+	asian_base_art_7
+	asian_base_art_8
+	asian_base_art_9
+	asian_base_art_10
+	asian_base_art_11
+	asian_base_art_12
+	asian_base_art_13
+	asian_base_art_14
+	asian_base_art_15
+	asian_base_art_16
+	asian_base_art_17
+}
+monarch_names = {
+	"Mesha #1" = 20
+	"Chemosh-Gad #1" = 20
+	"Chemosh-Nadab #1" = 20
+	"Salmanu #1" = 20
+	"Muzuri #1" = 20
+	"Kamamashalta #1" = 20
+
+	#Biblical
+
+	"Sihon #1" = 15
+	"Maccabeus #1" = 15
+	"Zippor #1" = 15
+	"Balaq #1" = 15
+	"Eglon #1" = 15
+
+	"Naamah" = -10
+	"Ruth" = -10
+	"Leah" = -1
+	"Rachel" = -1
+	"Bilhah" = -1
+	"Zilpah" = -1
+	"Sarah" = -1
+	"Rebekah" = -1
+
+}
+
+leader_names = {
+	Reuben Simeon Levi Judah Issachar Zebulun Joseph Benjamin Dan Naphtali Gad Asher David
+	Jacob Jethro Moses Aaron Noah Shem Ham Japheth Terah Abram Nahor Haran Ishmeal Zimran
+	Jokshan Medan Midian Ishbak Kesed Hazo Jidlaph Bethuel Buz Uz Kesed Kemuel Milcah
+	Lot Moab Isaac Esau Eliphaz Amalek Amnon Chileab Absalom Shephatiah Itheam Shobab Nathan
+	Ibhar Nepheg Japhia Eliada Saul Solomon Jesse
+}
+
+ship_names = {
+	Aglibol Anat Arsay Arsu "Ashtar-Chemosh" Asherah Ashima Atargatis Attar Athirat Azizos Baalah "Ba'alat Gebal" "Ba'al Hadad" "Ba'al Hermon" "Baal Hammon" Baalshamin
+	"Baal-Zephon" Bel Bol Chemosh Dagon Dagon El Elohim Elyon Eshmun Baal Malakbel Yagribol Elkunirsa Amurru Anu "'Amm" Belili Gad Horon Bethoron Melqart Ishara
+	Ishat Kotharat "Kothar-wa-Khasis" Yagrush Aymur Liluri Lotan Yam Manuzi Milcom Misor Moloch Sydyk Mot Mawat "Nikkal-wa-Ib" Pidray Qadesthu Resheph Shadrafa Shachar
+	Shalim Salam Salem Shamamyim Eretz Shapash Shapsh Shemesh Shapshu Shamash Tallai Nahar Iarhibol Yarikh Napash Mot Malik "Yam-Qart" Ilhm Targhizizi Tharumagi
+	"El Shaddai" Shadu Amurru Luhuti Pattani Aram Hammath "Bit Adini" Gurgum Syria Canaan Phoenicia Tyre Sidon Beirot Byblos Alepo Arpad Hadad Shad Nimrod Ammon Moab
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

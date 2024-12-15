@@ -1,0 +1,131 @@
+government = tribal
+add_government_reform = vedic_kingdom_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = indian
+primary_culture = gandharan
+religion = brahmin
+religious_school = kapishthala_school
+capital = 3558
+
+#Fictional
+140.1.1 = {
+	monarch = {
+		name = "Puru I"
+		dynasty = "Pauravas"
+		death_date = 180.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+180.1.1 = {
+	monarch = {
+		name = "Puru II"
+		dynasty = "Pauravas"
+		death_date = 220.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+220.1.1 = {
+	monarch = {
+		name = "Puru III"
+		dynasty = "Pauravas"
+		death_date = 260.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+260.1.1 = {
+	monarch = {
+		name = "Puru IV"
+		dynasty = "Pauravas"
+		death_date = 300.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+300.1.1 = {
+	government = monarchy
+	add_government_reform = indian_common_monarchy
+	#Fictional
+	monarch = {
+		name = "Puru V"
+		dynasty = "Pauravas"
+		death_date = 340.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+#Fictional
+340.1.1 = {
+	monarch = {
+		name = "Puru VI"
+		dynasty = "Pauravas"
+		death_date = 380.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+354.1.1 = {
+	religion = buddhism
+	religious_school = sthavira_school
+}
+
+#Fictional
+380.1.1 = {
+	monarch = {
+		name = "Puru VII"
+		dynasty = "Pauravas"
+		death_date = 407.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+407.1.1 = {
+	government_rank = 3
+	monarch = {
+		name = "Puru VIII"
+		dynasty = "Pauravas"
+		death_date = 432.1.1
+		dip = 3
+		adm = 3
+		mil = 5
+	}
+	leader = {
+		name = "King Porus the Paurava"
+		type = general
+		fire = 6
+		shock = 10
+		manuever = 4
+		siege = 0
+	}
+}
+
+424.1.1 = {
+	add_government_reform = indian_common_monarchy
+}
+
+605.1.1 = {
+	capital = 2973
+	primary_culture = kurunite
+	religion = hinduism
+	religious_school = nyaya_school
+}

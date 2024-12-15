@@ -1,0 +1,95 @@
+country_decisions = {
+
+	utility_decisions_enable = {
+		major = yes
+		color = { 195 170 0 }
+		potential = {
+			ai = no
+			NOT = {
+				has_country_flag = utility_decisions_yes
+			}
+		}
+
+		allow = {
+			NOT = {
+				has_country_flag = utility_decisions_yes
+			}
+		}
+
+		effect = {
+			ROOT = {
+				set_country_flag = utility_decisions_yes
+			}
+		}
+	}
+
+	utility_decisions_disable = {
+		major = yes
+		color = { 195 170 0 }
+		potential = {
+			ai = no
+			has_country_flag = utility_decisions_yes
+		}
+
+		allow = {
+			has_country_flag = utility_decisions_yes
+		}
+
+		effect = {
+			ROOT = {
+				clr_country_flag = utility_decisions_yes
+			}
+		}
+	}
+
+	building_tool_enable = {
+		color = { 195 170 0 }
+		major = yes
+		potential = {
+			ai = no
+			has_country_flag = utility_decisions_yes
+			NOT = {
+				has_country_flag = building_tool_yes
+			}
+		}
+
+		allow = {
+			hidden_trigger = { ai = no }
+			NOT = {
+				has_country_flag = building_tool_yes
+			}
+		}
+
+		effect = {
+			ROOT = {
+				set_country_flag = building_tool_yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	building_tool_disable = {
+		color = { 195 170 0 }
+		major = yes
+		potential = {
+			has_country_flag = building_tool_yes
+		}
+
+		allow = {
+			has_country_flag = building_tool_yes
+		}
+
+		effect = {
+			ROOT = {
+				clr_country_flag = building_tool_yes
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

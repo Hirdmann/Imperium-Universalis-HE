@@ -1,0 +1,8 @@
+bookmark = {
+	name = "LUSITANIAN_WARS_TITLE"
+	desc = "LUSITANIAN_WARS_DESC"
+	date = 599.1.1
+
+	country = ROM
+	country = LUS
+}

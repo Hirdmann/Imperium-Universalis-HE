@@ -1,0 +1,229 @@
+shangdi_cult = {
+	legitimacy = 1
+	stability_cost_modifier = -0.25
+	land_morale = 0.1
+
+	allow = {
+		religion = wuism
+		OR = {
+			tag = YSG
+			dynasty = "Zi"
+		}
+	}
+	sprite = 24
+
+	ai_will_do = {
+		factor = 500
+	}
+}
+dayu_cult = {
+	global_unrest = -2
+	development_cost = 0.1
+	global_monthly_devastation = -0.25
+
+	allow = {
+		religion = wuism
+		OR = {
+			tag = XIA
+			dynasty = "Si"
+		}
+	}
+	sprite = 25
+
+	ai_will_do = {
+		factor = 500
+	}
+}
+shaohao_cult = {
+	tolerance_heathen = 2
+	monthly_splendor = 1
+
+	allow = {
+		OR = {
+			religion = wuism
+			religion = liyuebadao
+		}
+		OR = {
+			culture_group = dongyi_group
+			primary_culture = dongyi
+		}
+	}
+	sprite = 26
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 4
+			primary_culture = laiyi
+		}
+		modifier = {
+			factor = 12
+			tag = TAG
+		}
+		modifier = {
+			factor = 12
+			tag = JUU
+		}
+	}
+}
+nuwa_cult = {
+	stability_cost_modifier = -0.1
+	war_exhaustion = -0.03
+
+	allow = {
+		OR = {
+			religion = wuism
+			religion = liyuebadao
+		}
+	}
+	sprite = 19
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			average_unrest = 3
+		}
+		modifier = {
+			factor = 5
+			average_unrest = 6
+		}
+		modifier = {
+			factor = 5
+			personality = ai_diplomat
+		}
+	}
+}
+yudi_cult = {
+	idea_cost = -0.1
+	global_institution_spread = 0.1
+
+	allow = {
+		OR = {
+			religion = wuism
+			religion = liyuebadao
+		}
+	}
+	sprite = 20
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 20
+			ruler_has_personality = free_thinker_personality
+		}
+		modifier = {
+			factor = 20
+			ruler_has_personality = scholar_personality
+		}
+		modifier = {
+			factor = 10
+			advisor = innovator_advisor
+		}
+		modifier = {
+			factor = 6
+			advisor = scholar_advisor
+		}
+		modifier = {
+			factor = 6
+			advisor = philosopher_adv
+		}
+		modifier = {
+			factor = 4
+			advisor = mathematician
+		}
+	}
+}
+chiyou_cult = {
+	discipline = 0.025
+	morale_damage = 0.1
+
+	allow = {
+		OR = {
+			religion = wuism
+			religion = liyuebadao
+		}
+	}
+	sprite = 21
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 6
+			OR = {
+				primary_culture = jingman
+				primary_culture = li
+			}
+		}
+		modifier = {
+			factor = 11
+			personality = ai_militarist
+		}
+	}
+}
+shennong_cult = {
+	production_efficiency = 0.1
+	global_trade_goods_size_modifier = 0.05
+
+	allow = {
+		OR = {
+			religion = wuism
+			religion = liyuebadao
+		}
+	}
+	sprite = 22
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 14
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 12
+			advisor = farmer
+		}
+	}
+}
+longshen_cult = {
+	ship_durability = 0.05
+	recover_navy_morale_speed = 0.1
+
+	allow = {
+		OR = {
+			religion = wuism
+			religion = liyuebadao
+		}
+	}
+	sprite = 23
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 15
+			advisor = naval_veteran
+		}
+		modifier = {
+			factor = 15
+			ruler_has_personality = navigator_personality
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				num_of_ports = 1
+			}
+		}
+	}
+}

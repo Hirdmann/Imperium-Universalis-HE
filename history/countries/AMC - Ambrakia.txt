@@ -1,0 +1,26 @@
+government = republic
+add_government_reform = greek_polis_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = kerkyran
+religion = greek_religion
+historical_friend = COR
+capital = 1035
+fixed_capital = 1035
+
+add_army_professionalism = 0.1
+
+127.1.1 = {
+	add_faction_influence = { faction = fac_monarchists influence = 45 }
+	monarch = {
+		name = "Gorgos"
+		dynasty = "Kypselid"
+		birth_date = 100.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+425.1.1 = { primary_culture = greek }

@@ -1,0 +1,860 @@
+
+#######Regional Cults#######
+
+cult_aphrodite = {
+
+	manpower_recovery_speed = 0.1
+	tolerance_heathen = 2
+
+	allow = {
+		OR = {
+			any_owned_province = { area = cyprus_west }
+			any_owned_province = { area = cyprus_east }
+			any_owned_province = { area = cyprus_center_area }
+		}
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_helios = {
+
+	global_trade_goods_size_modifier = 0.1
+	trade_steering = 0.1
+
+	allow = {
+		OR = {
+			any_owned_province = { area = rhodiorum_area }
+		}
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_minos = {
+
+	yearly_absolutism = 0.12
+	global_autonomy = -0.05
+
+	allow = {
+		OR = {
+			capital_scope = { area = knossos_area }
+			capital_scope = { area = hierapytna_area }
+			capital_scope = { area = gortyn_area }
+			capital_scope = { area = polyrrenia_area }
+		}
+		religion = greek_religion
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_leto = {
+
+	global_spy_defence = 0.15
+	land_morale = 0.05
+
+	allow = {
+		OR = {
+			capital_scope = { area = knossos_area }
+			capital_scope = { area = hierapytna_area }
+			capital_scope = { area = gortyn_area }
+			capital_scope = { area = polyrrenia_area }
+		}
+		religion = greek_religion
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_dictian_zeus = {
+
+	spy_offence = 0.15
+	shock_damage_received = -0.1
+
+	allow = {
+		OR = {
+			capital_scope = { area = knossos_area }
+			capital_scope = { area = hierapytna_area }
+			capital_scope = { area = gortyn_area }
+			capital_scope = { area = polyrrenia_area }
+		}
+		religion = greek_religion
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_rhea = {
+
+	global_trade_goods_size_modifier = 0.1
+	stability_cost_modifier = -0.1
+
+	allow = {
+		OR = {
+			capital_scope = { area = knossos_area }
+			capital_scope = { area = hierapytna_area }
+			capital_scope = { area = gortyn_area }
+			capital_scope = { area = polyrrenia_area }
+		}
+		religion = greek_religion
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_eileithyia = {
+
+	manpower_recovery_speed = 0.1
+	female_advisor_chance = 0.1
+
+	allow = {
+		OR = {
+			capital_scope = { area = knossos_area }
+			capital_scope = { area = hierapytna_area }
+			capital_scope = { area = gortyn_area }
+			capital_scope = { area = polyrrenia_area }
+			tag = TEG
+			tag = PSO
+		}
+		religion = greek_religion
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_asclepius = {
+
+	manpower_recovery_speed = 0.1
+	recover_army_morale_speed = 0.1
+
+	allow = {
+		OR = {
+			capital_scope = { area = perrhaebia_area }
+			capital_scope = { area = pergamos_area }
+			tag = EPD
+			tag = HES
+			tag = KSS
+		}
+		religion = greek_religion
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_ariadne = {
+
+	spy_offence = 0.15
+	own_coast_naval_combat_bonus = 1
+
+	allow = {
+		OR = {
+			capital_scope = { area = knossos_area }
+			capital_scope = { area = hierapytna_area }
+			capital_scope = { area = gortyn_area }
+			capital_scope = { area = polyrrenia_area }
+			tag = NXS
+			any_owned_province = { area = cyprus_west }
+			any_owned_province = { area = cyprus_east }
+			any_owned_province = { area = cyprus_center_area }
+		}
+		religion = greek_religion
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+####Tag Specific Cults#####
+
+cult_artemis_orthia = {
+
+	discipline = 0.05
+	army_tradition = 0.25
+
+	allow = {
+		religion = greek_religion
+		OR = {
+			tag = SP1
+			was_tag = SP1
+		}
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_eros = {
+
+	diplomatic_reputation = 1
+	discipline = 0.05
+
+	allow = {
+		religion = greek_religion
+		OR = {
+			tag = TSP
+			was_tag = TSP
+		}
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_old_macedon = {
+
+	reinforce_cost_modifier = -0.15
+
+	allow = {
+		religion = greek_religion
+		primary_culture = old_macedon
+		NOT = { primary_culture = macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_pan = {
+
+	land_attrition = -0.15
+	morale_damage = 0.05
+
+	allow = {
+		religion = greek_religion
+		OR = {
+			primary_culture = old_macedon
+			primary_culture = arcadian
+		}
+		NOT = { primary_culture = macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_selene = {
+
+	diplomatic_reputation = 1
+	tolerance_heathen = 2
+
+	allow = {
+		religion = greek_religion
+		OR = {
+			primary_culture = old_macedon
+			tag = SLN
+		}
+		NOT = { primary_culture = macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_dion = {
+
+	shock_damage = 0.1
+	max_absolutism = 5
+
+	allow = {
+		religion = greek_religion
+		primary_culture = old_macedon
+		NOT = { primary_culture = macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_hecate = {
+
+	diplomatic_reputation = -1
+	global_unrest = -1
+	tolerance_heretic = 2
+
+	allow = {
+		religion = greek_religion
+		OR = {
+			primary_culture = old_macedon
+			tag = SLN
+			tag = AEG
+			tag = MLT
+			tag = SMT
+			tag = BYS
+			primary_culture = thessalian
+			primary_culture = carian
+		}
+		NOT = { primary_culture = macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_ares = {
+
+	morale_damage = 0.1
+	land_morale = 0.1
+	shock_damage_received = 0.1
+
+	allow = {
+		religion = greek_religion
+		OR = {
+			primary_culture = old_macedon
+			tag = THH
+			tag = BOE
+		}
+		NOT = { primary_culture = macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_cabeiri = {
+
+	tolerance_heretic = 1
+	global_spy_defence = 0.1
+
+	allow = {
+		religion = greek_religion
+		OR = {
+			primary_culture = old_macedon
+			tag = SMT
+		}
+		NOT = { primary_culture = macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_heracles = {
+	legitimacy = 0.5
+	discipline = 0.025
+
+	allow = {
+		religion = greek_religion
+		primary_culture = macedon
+		NOT = { primary_culture = old_macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_aphrodite_porne = {
+
+	manpower_recovery_speed = 0.1
+	global_unrest = -2
+
+	allow = {
+		OR = {
+			tag = COR
+			tag = EPH
+		}
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_aphrodite_urania = {
+
+	legitimacy = 0.5
+	morale_damage_received = -0.1
+
+	allow = {
+		OR = {
+			tag = SN1
+			tag = ARG
+		}
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+#####Base Cults######
+cult_zeus = {
+
+	shock_damage = 0.1
+	max_absolutism = 5
+
+	allow = {
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_poseidon = {
+
+	naval_morale = 0.1
+	cavalry_power = 0.1
+
+	allow = {
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_hades = {
+	harsh_treatment_cost = -0.25
+	global_tax_modifier = 0.1
+
+	allow = {
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_athena = {
+
+	technology_cost = -0.05
+	discipline = 0.025
+
+	allow = {
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+
+}
+cult_apollo = {
+	yearly_corruption = -0.1
+	land_morale = 0.1
+
+	allow = {
+		OR = {
+			has_unlocked_cult = cult_apollo
+			AND = {
+				religion = greek_religion
+				NOT = { primary_culture = old_macedon }
+			}
+		}
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_artemis = {
+
+	fire_damage = 0.1
+	hostile_attrition = 1
+
+	allow = {
+		religion = greek_religion
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+
+}
+cult_dionysus = {
+
+	idea_cost = -0.05
+	global_unrest = -2
+
+	allow = {
+		religion = greek_religion
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_demeter = {
+	global_trade_goods_size_modifier = 0.1
+
+	allow = {
+		religion = greek_religion
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+
+}
+cult_hephaistos = {
+
+	global_regiment_cost = -0.1
+	production_efficiency = 0.1
+
+	allow = {
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_hestia = {
+
+	diplomatic_reputation = 1
+	global_tax_modifier = 0.1
+
+	allow = {
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_hera = {
+
+	ae_impact = -0.1
+	prestige = 1
+
+	allow = {
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+
+}
+cult_hermes = {
+
+	trade_efficiency = 0.1
+	movement_speed = 0.1
+
+	allow = {
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_orphic = {
+	idea_cost = -0.1
+	tolerance_heathen = 2
+	diplomatic_reputation = -1
+
+	allow = {
+		religion = greek_religion
+		DIP = 3
+		NOT = { primary_culture = old_macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_local_hero_cult = {
+	army_tradition_decay = -0.01
+	prestige_from_land = 0.25
+
+	allow = {
+		religion = greek_religion
+		NOT = { primary_culture = old_macedon }
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+#Unlockable
+cult_zarathustra = {
+	global_missionary_strength = 0.01
+	trade_efficiency = 0.1
+
+	allow = {
+		has_unlocked_cult = cult_zarathustra
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+cult_serapis = {
+	prestige = 1
+	religious_unity = 0.10
+
+	allow  = {
+		OR = {
+			has_unlocked_cult = cult_serapis
+			AND = {
+				religion = greek_religion
+				OR = {
+					any_owned_province = { religion = egyptian_religion }
+					primary_culture = ptolemaic
+				}
+			}
+		}
+	}
+
+	sprite = 14
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_zeus_belos = {
+	build_time = -0.1
+	religious_unity = 0.10
+
+	allow  = {
+		OR = {
+			has_unlocked_cult = cult_zeus_belos
+			AND = {
+				religion = greek_religion
+				OR = {
+					any_owned_province = { religion = mesopotamian_religion }
+					primary_culture = seleucid
+				}
+			}
+		}
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_melicarthus = {
+	defensiveness = 0.15
+	religious_unity = 0.10
+
+	allow  = {
+		OR = {
+			has_unlocked_cult = cult_melicarthus
+			AND = {
+				religion = greek_religion
+				OR = {
+					any_owned_province = {
+						OR = {
+							culture = phoenician
+							culture = punic
+							culture = ibero_phoenician
+							culture = sardo_phoenician
+						}
+						religion = punic_religion
+					}
+					primary_culture = greco_semitic
+				}
+			}
+		}
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_cybele = {
+	global_spy_defence = 0.2
+	religious_unity = 0.10
+
+	allow  = {
+		OR = {
+			has_unlocked_cult = cult_cybele
+			AND = {
+				religion = greek_religion
+				any_owned_province = { religion = cybele }
+			}
+		}
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_mithras = {
+	spy_offence = 0.2
+	religious_unity = 0.10
+
+	allow  = {
+		OR = {
+			has_unlocked_cult = cult_mithras
+			AND = {
+				religion = greek_religion
+				any_owned_province = {
+					OR = {
+						religion = zurvanism
+						religion = zoroastrianism
+						religion = iranian_religion
+					}
+				}
+			}
+		}
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_jewish_dyonisos = {
+	tolerance_own = 2
+	religious_unity = 0.10
+
+	allow  = {
+		OR = {
+			has_unlocked_cult = cult_jewish_dyonisos
+			AND = {
+				religion = greek_religion
+				any_owned_province = {
+					OR = {
+						religion = jewish
+						religion = samaritan_religion
+					}
+				}
+			}
+		}
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cult_belos_kronos = {
+	tolerance_heretic = 1
+	religious_unity = 0.10
+
+	allow  = {
+		OR = {
+			has_unlocked_cult = cult_belos_kronos
+			AND = {
+				religion = greek_religion
+				OR = {
+					any_owned_province = {
+						NOT = { culture = phoenician }
+						NOT = { culture = punic }
+						NOT = { culture = ibero_phoenician }
+						NOT = { culture = sardo_phoenician }
+						religion = punic_religion
+					}
+					primary_culture = greco_semitic
+				}
+			}
+		}
+	}
+
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+	}
+}

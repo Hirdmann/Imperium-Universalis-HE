@@ -1,0 +1,63 @@
+country_decisions = {
+
+	new_coinage_dec = {
+		color = { 245 160 60 }
+		potential = {
+			tag = EPI
+			NOT = { has_country_modifier = new_coinage }
+		}
+		allow = {
+			NOT = { average_autonomy = 20 }
+			adm_tech = 16
+		}
+		effect = {
+			add_country_modifier = {
+				name = new_coinage
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	move_capital_to_ambracia = {
+		color = { 245 160 60 }
+		potential = {
+			tag = EPI
+			NOT = { has_country_flag = move_capital_to_ambracia_flag }
+			NOT = { capital = 1035 }
+		}
+		provinces_to_highlight = {
+			province_id = 1035
+		}
+		allow = {
+			is_state_core = 1035
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					base_production = 2
+					NOT = { province_id = 1035 }
+				}
+				add_base_production = -1
+			}
+			random_owned_province = {
+				limit = {
+					base_manpower = 2
+					NOT = { province_id = 1035 }
+				}
+				add_base_manpower = -1
+			}
+			1035 = {
+				add_base_tax = 1
+				add_base_production = 1
+				change_culture = epirot
+			}
+			set_capital = 1035
+			set_country_flag = move_capital_to_ambracia_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

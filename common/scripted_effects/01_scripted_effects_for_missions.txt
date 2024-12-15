@@ -1,0 +1,427 @@
+
+#from vanilla
+#
+country_event_with_insight = {
+	country_event = {
+		id = $id$
+		[[days] days = $days$]
+		[[random] random = $random$]
+		[[tooltip] tooltip = $tooltip$]
+	}
+	custom_tooltip = EVENT_INSIGHT_INTRO
+	custom_tooltip = $insight_tooltip$
+	[[effect_tooltip] tooltip = { $effect_tooltip$ }]
+}
+
+#from ME
+## adds prestige until 100 is reached and then adds the rest as a random monarch power
+### add_prestige_or_monarch_power = { amount = <number> }
+add_prestige_or_monarch_power = {
+	[[amount]
+	tooltip = {
+		add_prestige = $amount$
+	}
+	custom_tooltip = ME_ADD_PRESTIGE_OR_MONARCHPOWER
+	hidden_effect = {
+		for = {
+			amount = $amount$
+			effect = "
+			if = {
+				limit = {
+					NOT = { prestige = 100 }
+				}
+				add_prestige = 1
+			}
+			else = {
+				add_adm_power = 1
+				add_dip_power = 1
+				add_mil_power = 1
+			}
+			"
+		}
+	}
+	]
+	[[value]
+	tooltip = {
+		add_prestige = $value$
+	}
+	hidden_effect = {
+		for = {
+			amount = $value$
+			effect = "
+			if = {
+				limit = {
+					NOT = { prestige = 100 }
+				}
+				add_prestige = 1
+			}
+			else = {
+				add_adm_power = 1
+				add_dip_power = 1
+				add_mil_power = 1
+			}
+			"
+		}
+	}
+	]
+}
+
+#from KOK
+
+country_event_with_effect_insight = {
+	country_event = {
+		id = $id$
+		[[days] days = $days$]
+		[[random] random = $random$]
+		[[tooltip] tooltip = $tooltip$]
+	}
+	custom_tooltip = EVENT_INSIGHT_INTRO
+	tooltip = {
+		$effect$
+	}
+}
+
+country_event_with_option_insight = {
+	country_event = {
+		id = $id$
+		[[days] days = $days$]
+		[[random] random = $random$]
+		[[tooltip] tooltip = $tooltip$]
+	}
+	custom_tooltip = EVENT_INSIGHT_INTRO
+	custom_tooltip = EVENT_INSIGHT_OPT_1
+	tooltip = {
+		$option_1$
+	}
+	[[option_2]
+		custom_tooltip = EVENT_INSIGHT_OPT_2
+		tooltip = {
+			$option_2$
+		}
+	]
+	[[option_3]
+		custom_tooltip = EVENT_INSIGHT_OPT_3
+		tooltip = {
+			$option_3$
+		}
+	]
+	[[option_4]
+		custom_tooltip = EVENT_INSIGHT_OPT_4
+		tooltip = {
+			$option_4$
+		}
+	]
+	[[option_5]
+		custom_tooltip = EVENT_INSIGHT_OPT_5
+		tooltip = {
+			$option_5$
+		}
+	]
+}
+
+#from ME
+## adds army tradition until 100 is reached and then adds the rest as mil power
+### add_army_tradition_or_mil_power = { amount = <number> }
+add_army_tradition_or_mil_power = {
+	[[amount]
+	tooltip = {
+		add_army_tradition = $amount$
+	}
+	custom_tooltip = ME_ADD_ARMY_TRADITION_OR_MIL_POWER
+	hidden_effect = {
+		for = {
+			amount = $amount$
+			effect = "
+			if = {
+				limit = {
+					NOT = { army_tradition = 99.9 }
+				}
+				add_army_tradition = 1
+			}
+			else = {
+				add_mil_power = 3
+			}
+			"
+		}
+	}
+	]
+
+	[[value]
+	tooltip = {
+		add_army_tradition = $value$
+	}
+	custom_tooltip = ME_ADD_ARMY_TRADITION_OR_MIL_POWER
+	hidden_effect = {
+		for = {
+			amount = $value$
+			effect = "
+			if = {
+				limit = {
+					NOT = { army_tradition = 99.9 }
+				}
+				add_army_tradition = 1
+			}
+			else = {
+				add_mil_power = 3
+			}
+			"
+		}
+	}
+	]
+}
+
+#from ME
+## adds navy tradition until 100 is reached and then adds the rest as dip power
+### add_navy_tradition_or_dip_power = { amount = <number> }
+add_navy_tradition_or_dip_power = {
+	[[amount]
+	tooltip = {
+		add_navy_tradition = $amount$
+	}
+	custom_tooltip = ME_ADD_NAVY_TRADITION_OR_DIP_POWER
+	hidden_effect = {
+		for = {
+			amount = $amount$
+			effect = "
+			if = {
+				limit = {
+					NOT = { army_tradition = 99.9 }
+				}
+				add_navy_tradition = 1
+			}
+			else = {
+				add_dip_power = 3
+			}
+			"
+		}
+	}
+	]
+
+	[[value]
+	tooltip = {
+		add_navy_tradition = $value$
+	}
+	custom_tooltip = ME_ADD_NAVY_TRADITION_OR_DIP_POWER
+	hidden_effect = {
+		for = {
+			amount = $value$
+			effect = "
+			if = {
+				limit = {
+					NOT = { army_tradition = 99.9 }
+				}
+				add_navy_tradition = 1
+			}
+			else = {
+				add_dip_power = 3
+			}
+			"
+		}
+	}
+	]
+}
+
+#just made
+## adds mercantilism until 100 is reached and then adds the rest as dip power
+### add_mercantilism_or_dip_power = { amount = <number> }
+add_mercantilism_or_dip_power = {
+	[[amount]
+	tooltip = {
+		add_mercantilism = $amount$
+	}
+	custom_tooltip = ME_ADD_MERCANTILISM_OR_DIP_POWER
+	hidden_effect = {
+		for = {
+			amount = $amount$
+			effect = "
+			if = {
+				limit = {
+					NOT = { mercantilism = 99 }
+				}
+				add_mercantilism = 1
+			}
+			else = {
+				add_dip_power = 5
+			}
+			"
+		}
+	}
+	]
+
+	[[value]
+	tooltip = {
+		add_mercantilism = $value$
+	}
+	custom_tooltip = ME_ADD_MERCANTILISM_OR_DIP_POWER
+	hidden_effect = {
+		for = {
+			amount = $value$
+			effect = "
+			if = {
+				limit = {
+					NOT = { mercantilism = 99 }
+				}
+				add_mercantilism = 1
+			}
+			else = {
+				add_dip_power = 5
+			}
+			"
+		}
+	}
+	]
+}
+
+add_or_upgrade_theater_building = {
+	custom_tooltip = add_or_upgrade_theater_building_tt
+	hidden_effect = {
+		if = {
+			limit = { has_building = small_theater }
+			add_building = big_theater
+		}
+		else_if = {
+			limit = { has_building = big_theater }
+			add_building = great_theater
+		}
+		else_if = {
+			limit = { has_building = great_theater }
+			add_building = huge_theater
+		}
+		else_if = {
+			limit = { has_building = huge_theater }
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		else = { add_building = small_theater }
+	}
+}
+
+triumph_5_pp_incrimental = {
+	if = { #1
+		limit = {
+			NOT = { has_country_flag = triumph_1_flag }
+			NOT = { has_country_flag = triumph_2_flag }
+			NOT = { has_country_flag = triumph_3_flag }
+			NOT = { has_country_flag = triumph_4_flag }
+			NOT = { has_country_flag = triumph_5_flag }
+			NOT = { has_country_flag = triumph_6_flag }
+			NOT = { has_country_flag = triumph_7_flag }
+			NOT = { has_country_flag = triumph_8_flag }
+			NOT = { has_country_flag = immediate_triumph_flag }
+		}
+		set_country_flag = triumph_1_flag
+		set_country_flag = immediate_triumph_flag
+		custom_tooltip = next_triumph_pp.tt
+	}
+	#2
+	if = {
+		limit = {
+			has_country_flag = triumph_1_flag
+			NOT = { has_country_flag = immediate_triumph_flag }
+		}
+		clr_country_flag = triumph_1_flag
+		set_country_flag = triumph_2_flag
+		set_country_flag = immediate_triumph_flag
+		add_permanent_power_projection = {
+			type = triumph_1_pp
+			amount = 5
+		}
+	}
+	#3
+	if = {
+		limit = {
+			NOT = { has_country_flag = triumph_1_flag }
+			has_country_flag = triumph_2_flag
+			NOT = { has_country_flag = triumph_3_flag }
+			NOT = { has_country_flag = triumph_4_flag }
+			NOT = { has_country_flag = triumph_5_flag }
+			NOT = { has_country_flag = triumph_6_flag }
+			NOT = { has_country_flag = triumph_7_flag }
+			NOT = { has_country_flag = triumph_8_flag }
+			NOT = { has_country_flag = immediate_triumph_flag }
+		}
+		clr_country_flag = triumph_2_flag
+		set_country_flag = triumph_3_flag
+		set_country_flag = immediate_triumph_flag
+		custom_tooltip = next_triumph_pp.tt
+	}
+	#4
+	if = {
+		limit = {
+			has_country_flag = triumph_3_flag
+			NOT = { has_country_flag = immediate_triumph_flag }
+		}
+		clr_country_flag = triumph_3_flag
+		set_country_flag = triumph_4_flag
+		set_country_flag = immediate_triumph_flag
+		add_permanent_power_projection = {
+			type = triumph_2_pp
+			amount = 5
+		}
+	}
+	#5
+	if = {
+		limit = {
+			NOT = { has_country_flag = triumph_1_flag }
+			NOT = { has_country_flag = triumph_2_flag }
+			NOT = { has_country_flag = triumph_3_flag }
+			has_country_flag = triumph_4_flag
+			NOT = { has_country_flag = triumph_5_flag }
+			NOT = { has_country_flag = triumph_6_flag }
+			NOT = { has_country_flag = triumph_7_flag }
+			NOT = { has_country_flag = triumph_8_flag }
+			NOT = { has_country_flag = immediate_triumph_flag }
+		}
+		clr_country_flag = triumph_4_flag
+		set_country_flag = triumph_5_flag
+		set_country_flag = immediate_triumph_flag
+		custom_tooltip = next_triumph_pp.tt
+	}
+	#6
+	if = {
+		limit = {
+			has_country_flag = triumph_5_flag
+			NOT = { has_country_flag = immediate_triumph_flag }
+		}
+		clr_country_flag = triumph_5_flag
+		set_country_flag = triumph_6_flag
+		set_country_flag = immediate_triumph_flag
+		add_permanent_power_projection = {
+			type = triumph_3_pp
+			amount = 5
+		}
+	}
+	#7
+	if = {
+		limit = {
+			NOT = { has_country_flag = triumph_1_flag }
+			NOT = { has_country_flag = triumph_2_flag }
+			NOT = { has_country_flag = triumph_3_flag }
+			NOT = { has_country_flag = triumph_4_flag }
+			NOT = { has_country_flag = triumph_5_flag }
+			has_country_flag = triumph_6_flag
+			NOT = { has_country_flag = triumph_7_flag }
+			NOT = { has_country_flag = triumph_8_flag }
+			NOT = { has_country_flag = immediate_triumph_flag }
+		}
+		clr_country_flag = triumph_6_flag
+		set_country_flag = triumph_7_flag
+		set_country_flag = immediate_triumph_flag
+		custom_tooltip = next_triumph_pp.tt
+	}
+	#8
+	if = {
+		limit = {
+			has_country_flag = triumph_7_flag
+			NOT = { has_country_flag = immediate_triumph_flag }
+		}
+		clr_country_flag = triumph_7_flag
+		set_country_flag = triumph_8_flag
+		set_country_flag = immediate_triumph_flag
+		add_permanent_power_projection = {
+			type = triumph_4_pp
+			amount = 5
+		}
+	}
+	clr_country_flag = immediate_triumph_flag
+}

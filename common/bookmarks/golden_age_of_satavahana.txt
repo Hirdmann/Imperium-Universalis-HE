@@ -1,0 +1,9 @@
+bookmark = {
+	name = "GOLDEN_AGE_OF_SATAVAHANA_TITLE"
+	desc = "GOLDEN_AGE_OF_SATAVAHANA_DESC"
+	date = 654.1.1
+
+	country = SAT
+	country = KAL
+	country = MAU
+}

@@ -1,0 +1,163 @@
+#Country Name: Please see filename.
+
+graphical_culture = italicgfx
+
+color = { 120 93 160 }
+
+historical_idea_groups = {
+	infantry_ideas
+	royal_court_ideas
+	diplomatic_ideas
+	mercenary_ideas
+	agraculture_ideas
+	cavalry_ideas
+	administrative_ideas
+	syncretism_ideas
+}
+
+historical_units = {
+	italic_base_inf_0
+	italic_base_cav_0
+	italic_base_art_0
+	italic_base_art_1
+
+	italic_base_inf_1
+
+	italic_base_inf_2
+	italic_base_art_2
+	italic_base_inf_3
+	italic_base_cav_1
+
+	italic_base_inf_4
+	italic_base_art_3
+
+	italic_base_inf_5
+	italic_base_cav_2
+	italic_base_art_4
+
+	italic_base_inf_6
+	italic_base_art_5
+
+	italic_base_inf_7
+	italic_base_inf_8
+	italic_base_cav_3
+
+	italic_base_inf_9
+	italic_base_cav_4
+	italic_base_art_6
+
+	italic_base_inf_10
+	italic_base_inf_11
+	italic_base_cav_5
+	italic_base_art_7
+
+	italic_base_inf_12
+	italic_base_cav_6
+	italic_base_art_8
+
+	italic_base_inf_13
+	italic_base_cav_7
+	italic_base_art_9
+
+	italic_base_inf_14
+	italic_base_cav_8
+	italic_base_art_10
+
+	italic_base_inf_15
+	italic_base_cav_9
+	italic_base_art_11
+}
+
+monarch_names = {
+	"Aziv" = 1
+	"Bauso" = 1
+	"Esimne" = 1
+	"Hela" = 1
+	"Kaziave" = 1
+	"Kanish" = 1
+	"Kapashu" = 1
+	"Kari" = 1
+	"Karapash" = 1
+	"Klevie" = 1
+	"Knusu" = 1
+	"Lavise" = 1
+	"Lazuru" = 1
+	"Lauste" = 1
+	"Lumene" = 1
+	"Lup" = 1
+	"Meti" = 1
+	"Nuth" = 1
+	"Ossurie" = 1
+	"Pashu" = 1
+	"Pizamnne" = 1
+	"Piziave" = 1
+	"Pizie" = 1
+	"Piri" = 1
+	"Pitale" = 1
+	"Phelvi" = 1
+	"Phutixi" = 1
+	"Reize" = 1
+	"Reizush" = 1
+	"Remi" = 1
+	"Rushie" = 1
+	"Susi" = 1
+	"Taranis" = 1
+	"Tash" = 1
+	"Tiprux" = 1
+	"Tite" = 1
+	"Vaizi" = 1
+	"Valze" = 1
+	"Valziki" = 1
+	"Velxe" = 1
+	"Velzie" = 1
+	"Vetelie" = 1
+	"Vizam" = 1
+	"Vistexa" = 1
+	"Vinuzali" = 1
+	"Xari" = 1
+	"Xeli" = 1
+	"Xed" = 1
+	"Zaziv" = 1
+	"Ziuzi" = 1
+
+	"Eszua" = -1
+	"Kara" = -1
+	"Keta" = -1
+	"Kuni" = -1
+	"Lasha" = -1
+	"Lasta" = -1
+	"Phelna" = -1
+	"Phrima" = -1
+	"Valza" = -1
+	"Vaza" = -1
+	"Zia" = -1
+}
+
+leader_names = {
+	Avashuerasi Enthus Enikes Klunzurus Kusenkus Metlainile Phelturiesi Phelzuries Pitaunesi Pitis Ritauiesi Sphuras Spirkuva Sletile Tianusa Terunies
+	Xaisurus
+}
+
+ship_names = {
+	Aita Alpan Aplu Aritimi Athrpa Atune Calu Cavtha Cel Charu Culsans Culsu Fufluns Hercle Laran Lares Lasa Menrva Nethuns Nortia
+	Novensilis Selvans Sethlans Tages Thanr Thesan "Tinas Clenar" Tin Tivr Turan Turms Turnu Uni Usil Vanth Veltha Achlae Achvizr
+	Aminth Ani Apru Aril Crapsti Enie Eris Erus Esplece Ethausva Eth Euturpa Feronia Horta Ilithiia "Fufluns Pachie" "Fufluns Pacha"
+	"Lasa Vecuvia" Begoe Leinth Letham Letun Malavisch Mania Mantus Marish "Marish Turans" "Marish Husurnana" "Marish Menitla"
+	"Marish Halna" "Marish Isminthians" Mean Meanpe Munthukh Orcus Pacha Pempethru Phersipnai Proserpnai Phersu Phersuna Prumathe
+	Rath Satre Summanus Svutaf Tecum Thalna Thetlvmth Thulfltha Tinia Tluscv "Mar Tlusc" Vea Veiove Velthume Vesuna Zerene Calanice
+	Castur Catmite Hercle Pultuce Rathmtr "Tinas Cliniar" Aulunthe Calaina Celscan Chaluchasu Charun Chelphun Evan Hathna Iynx
+	Mani Metus Pecse Pakste Puanea Sime Thevrumines Tuchulcha Tusna Vecui Hipece Achrum Achile Achmemrun "Aivas Tlamunus" "Aivas Vilates"
+	Alchumena Alcstei Alichsantre Elchsntre Althaia Amuche Areatha Ataiun Atlnta Atmite Atunis Aturmica Capne Cashntra Cerca Cilens
+	Cluthumustha Clutsmsta Crisitha Easun Ecapa Ectur Elinei Epeur Ermania Etule Evthucle Hamphiare Latva Lunc Lnche Meleacr Memnum
+	Menle Metvia Mlacuch Nestur Palmithe Pantasila Patrucle "Pava Tarchies" Pele Perse Phaun Phuinis Phulsphna Prisis Priumne Semla Sispe
+	Tages Taitle Tarchies Tarchon Techrs Telmun Teriasals These Thethis Tuntle Tute Tyrrhenus Urphe Urusthe Uthste Velparun Vikare
+	Vile
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Fleet of $PROVINCE$"
+}

@@ -1,0 +1,3361 @@
+namespace = celt
+
+########################################################################################
+# trade with etruscans started
+########################################################################################
+country_event = {
+	id = celt.1
+	title = "celt.1.t"
+	desc = "celt.1.d"
+	picture = tradecity
+
+	fire_only_once = yes
+
+	trigger = {
+		culture = western_hallstat
+		is_year = 150
+		NOT = { started_in = 151.1.1 }
+		capital_scope = {
+			OR = {
+				area = moenus_area
+				area = rhenus_area
+				area = treverorum_area
+				area = mogontiacum_area
+				area = helvetica_area
+			}
+		}
+		#NOT = { has_global_flag = trade_with_etruscans_started }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "celt.1.a"
+		ai_chance = { factor = 100 }
+		add_country_modifier = {
+			name = celtoetrurian_trade
+			duration = 40525
+		}
+		#set_global_flag = trade_with_etruscans_started
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture = etruscan
+					primary_culture = umbri
+					primary_culture = lepontic
+					primary_culture = raeti
+					AND = {
+						primary_culture = ligures
+						capital_scope = {
+							OR = {
+								area = massalia_area
+								area = alpes_maritimae
+								region = gallia_cisalpina
+								area = alpes_graiae
+								area = rhodanus_area
+							}
+						}
+					}
+				}
+			}
+			country_event = { id = celt.2 }
+		}
+		every_province = {
+			limit = {
+				OR = {
+					culture = western_hallstat
+					culture = eastern_hallstat
+				}
+			}
+			add_province_modifier = {
+				name = trade_with_etruscans
+				duration = 40525
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture = western_hallstat
+					primary_culture = eastern_hallstat
+				}
+			}
+			country_event = { id = celt.3 }
+		}
+	}
+}
+#etruscans and neighbours receive bonus for transit
+country_event = {
+	id = celt.2
+	title = "celt.2.t"
+	desc = "celt.2.d"
+	picture = city
+
+	is_triggered_only = yes
+
+	option = {
+		name = "celt.2.a"
+		ai_chance = { factor = 100 }
+		add_country_modifier = {
+			name = trade_with_halstatt_celts_established
+			duration = 40525
+		}
+	}
+}
+#halstatt celts receive bonus
+country_event = {
+	id = celt.3
+	title = "celt.3.t"
+	desc = "celt.3.d"
+	picture = tradecity
+
+	is_triggered_only = yes
+
+	option = {
+		name = "celt.3.a"
+		ai_chance = { factor = 100 }
+		add_country_modifier = {
+			name = celtoetrurian_trade
+			duration = 40525
+		}
+		every_province = {
+			limit = {
+				OR = {
+					culture = western_hallstat
+					culture = eastern_hallstat
+				}
+			}
+			add_province_modifier = {
+				name = trade_with_etruscans
+				duration = 40525
+			}
+		}
+	}
+}
+
+#################################################
+# invention of iron plow
+#################################################
+country_event = {
+	id = celt.4
+	title = "celt.4.t"
+	desc = "celt.4.d"
+	picture = peasant_woman
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			culture = western_hallstat
+			culture = eastern_hallstat
+		}
+		is_year = 190
+		NOT = { started_in = 192.1.1 }
+		capital_scope = {
+			OR = {
+				area = deserta_boiorum
+				area = germania_superior
+				area = mogontiacum_area
+				area = helvetica_area
+				area = alpes_noricae
+				area = noricum_area
+				area = alpes_raetae
+			}
+		}
+		#NOT = { has_global_flag = iron_plow_celtic }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "celt.4.a"
+		ai_chance = { factor = 100 }
+		add_country_modifier = {
+			name = iron_plow_celt
+			duration = 36525
+		}
+		#set_global_flag = iron_plow_celtic
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture = western_hallstat
+					primary_culture = eastern_hallstat
+					primary_culture = lepontic
+				}
+			}
+			country_event = { id = celt.5 }
+		}
+	}
+}
+
+#halstatt celts receive iron_plow
+country_event = {
+	id = celt.5
+	title = "celt.5.t"
+	desc = "celt.5.d"
+	picture = peasant_woman
+
+	is_triggered_only = yes
+
+	option = {
+		name = "celt.5.a"
+		ai_chance = { factor = 100 }
+		add_country_modifier = {
+			name = iron_plow_celt
+			duration = 36525
+		}
+	}
+}
+
+#################################################
+# hallstat influence spreads
+#################################################
+country_event = {
+	id = celt.6
+	title = "celt.6.t"
+	desc = "celt.6.d"
+	picture = rich_woman
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			culture = western_hallstat
+			culture = eastern_hallstat
+		}
+		is_year = 204
+		NOT = { started_in = 205.1.1 }
+		capital_scope = {
+			OR = {
+				area = deserta_boiorum
+				area = germania_superior
+				area = mogontiacum_area
+				area = helvetica_area
+				area = alpes_noricae
+				area = noricum_area
+				area = alpes_raetae
+			}
+		}
+		#NOT = { has_global_flag = hallstat_expansion }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "celt.6.a"
+		ai_chance = { factor = 100 }
+		#set_global_flag = hallstat_expansion
+
+		every_province = {
+			limit = {
+				OR = {
+					region = belgica_region
+					area = batavorum_area
+					area = frisia_area
+					area = moenus_area
+					area = rhenus_area
+					area = sequania_area
+					area = icenorum_area
+					area = cantiacorum_area
+					area = reginorum_area
+				}
+			}
+			change_culture = western_hallstat
+		}
+		every_province = {
+			limit = {
+				OR = {
+					area = asciburgius_mons
+				}
+			}
+			change_culture = eastern_hallstat
+			change_religion = celtic_religion
+		}
+		every_province = {
+			limit = {
+				OR = {
+					area = sarmatici_mons
+				}
+			}
+			change_religion = celtic_religion
+		}
+		every_country = {
+			limit = {
+				AND = {
+					capital_scope = {
+						superregion = celtica_superregion
+					}
+					has_reform = pastoral_tribe_reform
+				}
+			}
+			country_event = { id = celt.10 }
+		}
+	}
+}
+#################################################
+# birth_of_latene
+#################################################
+country_event = {
+	id = celt.7
+	title = "celt.7.t"
+	desc = "celt.7.d"
+	picture = military_parade
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			culture = western_hallstat
+			culture = eastern_hallstat
+		}
+		is_year = 270
+		NOT = { started_in = 254.1.1 }
+		capital_scope = {
+			OR = {
+				area = deserta_boiorum
+				area = germania_superior
+				area = mogontiacum_area
+				area = helvetica_area
+				area = alpes_noricae
+				area = noricum_area
+				area = alpes_raetae
+			}
+		}
+		NOT = {
+			has_global_flag = la_tene_start
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "celt.7.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = la_tene_start
+
+		every_province = {
+			limit = {
+				OR = {
+					area = treverorum_area
+					area = germania_inferior
+					area = boiohemum_area
+					area = rhenus_area
+				}
+			}
+			change_culture = la_tene_celtic
+		}
+		every_country = {
+			limit = {
+				any_owned_province = {
+					OR = {
+						area = treverorum_area
+						area = germania_inferior
+						area = boiohemum_area
+						area = rhenus_area
+					}
+				}
+				capital_scope = {
+					OR = {
+						region = hercynia_region
+						region = germani_cisrhenani
+					}
+				}
+			}
+			change_primary_culture = la_tene_celtic
+			add_accepted_culture = western_hallstat
+			add_accepted_culture = eastern_hallstat
+			add_country_modifier = {
+				name = la_tene_boost
+				duration = 19525
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				swap_free_idea_group = yes
+			}
+			else = {
+				country_event = { id = new_ideas.1 }
+			}
+		}
+	}
+}
+#################################################
+# end_of_hallstat
+#################################################
+country_event = {
+	id = celt.8
+	title = "celt.8.t"
+	desc = "celt.8.d"
+	picture = cavalry
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		culture = la_tene_celtic
+		NOT = { started_in = 254.1.1 }
+		capital_scope = {
+			OR = {
+				area = treverorum_area
+				area = germania_inferior
+				area = boiohemum_area
+				area = rhenus_area
+			}
+		}
+		is_year = 300
+		NOT = {
+			has_global_flag = hallstat_end
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "celt.8.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = hallstat_end
+
+		every_province = {
+			limit = {
+				OR = {
+					culture = western_hallstat
+					culture = eastern_hallstat
+				}
+			}
+			change_culture = la_tene_celtic
+			add_base_manpower = -1
+			add_devastation = 5
+		}
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture =  western_hallstat
+					primary_culture =  eastern_hallstat
+				}
+				capital_scope = {
+					OR = {
+						region = hercynia_region
+						region = germani_cisrhenani
+						region = raetia_et_noricum
+						region = belgica_region
+						region = germania_region
+						region = celtica_area
+					}
+				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				change_primary_culture = la_tene_celtic
+				swap_free_idea_group = yes
+			}
+			else = {
+				country_event = { id = celt.9 }
+			}
+		}
+	}
+}
+#################################################
+#halstatt player chooses to surrender and join la tene guys or receive tons of raiders
+#################################################
+country_event = {
+	id = celt.9
+	title = "celt.9.t"
+	desc = "celt.9.d"
+	picture = city
+
+	is_triggered_only = yes
+
+	option = {
+		name = "celt.9.a"
+		change_primary_culture = la_tene_celtic
+		swap_free_idea_group = yes
+		kill_ruler = yes
+		add_stability = -1
+	}
+	option = {
+		name = "celt.9.b"
+		every_owned_province = {
+			spawn_rebels = {
+				size = 3
+				type = nomad_raiders
+			}
+		}
+		add_stability = -2
+	}
+}
+#################################################
+#event for south/central celtic primitives to settle receiving hallstatt and greeko-etrurian influence
+#################################################
+country_event = {
+	id = celt.10
+	title = "celt.10.t"
+	desc = "celt.10.d"
+	picture = city
+
+	is_triggered_only = yes
+
+	option = {
+		name = "celt.10.a"
+		ai_chance = { factor = 100 }
+		every_tribal_land_province = {
+			limit = { NOT = { owner = { exists = yes } } }
+			settle_province = ROOT
+		}
+		change_government = tribal
+		add_government_reform = tribal_federation_reform
+		set_global_flag = gauls_settled
+	}
+}
+
+#other celts in gaul receive bonus
+country_event = {
+	id = celt.110
+	title = "celt.110.t"
+	desc = "celt.110.d"
+	picture = tradecity
+
+	trigger = {
+		capital_scope = {
+			superregion = celtica_superregion
+		}
+		government = tribal
+		is_year = 206
+		NOT = { has_country_flag = gaul_trade_with_medit }
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "celt.110.a"
+		ai_chance = { factor = 100 }
+		set_country_flag = gaul_trade_with_medit
+		add_country_modifier = {
+			name = celtoetrurian_trade
+			duration = 30525
+		}
+		every_owned_province = {
+			add_province_modifier = {
+				name = trade_with_etruscans
+				duration = 30525
+			}
+		}
+	}
+}
+#event just in case there is gap in provs in gaul
+country_event = {
+	id = celt.111
+	title = "celt.111.t"
+	desc = "celt.111.d"
+	picture = city
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = gauls_settled
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "celt.111.a"
+		ai_chance = { factor = 100 }
+		cebenna_mons = {
+			limit = {
+				is_empty = yes
+			}
+			cede_province = RUZ
+		}
+		arecomicia_area = {
+			limit = {
+				is_empty = yes
+			}
+			cede_province = RUZ
+		}
+		massalia_area = {
+			limit = {
+				is_empty = yes
+			}
+			cede_province = SL9
+		}
+		alpes_maritimae = {
+			limit = {
+				is_empty = yes
+			}
+			cede_province = SL9
+		}
+		arelate_area = {
+			limit = {
+				is_empty = yes
+			}
+			cede_province = DB8
+		}
+		vocontiorum_area = {
+			limit = {
+				is_empty = yes
+			}
+			cede_province = ALZ
+		}
+		belgica_region = {
+			limit = {
+				is_empty = yes
+			}
+			cede_province = SUZ
+		}
+		celtica_area = {
+			limit = {
+				is_empty = yes
+			}
+			cede_province = ARZ
+		}
+		aquitania_region = {
+			limit = {
+				is_empty = yes
+			}
+			cede_province = LEZ
+		}
+	}
+}
+#################################################
+#start of La Tene expansion
+#################################################
+country_event = {
+	id = celt.11
+	title = "celt.11.t"
+	desc = "celt.11.d"
+	picture = tribemen
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { is_year = 400 }
+		is_year = 323
+		capital_scope = {
+			OR = {
+				area = remorum_area
+				area = germania_inferior
+				area = boiohemum_area
+				area = rhenus_area
+			}
+		}
+		has_global_flag = la_tene_start
+		has_global_flag = hallstat_end
+		NOT = { has_global_flag = la_tene_invasions_start }
+		NOT = { started_in = 323.1.1 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		set_global_flag = la_tene_invasions_start
+	}
+
+	option = {
+		name = "celt.11.a"
+		add_prestige = 1
+	}
+}
+#################################################
+#La Tene expansion: 323 core celt lands
+#################################################
+country_event = {
+	id = celt.12
+	title = "celt.12.t"
+	desc = "celt.12.d"
+	picture = military_parade
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		culture = la_tene_celtic
+		is_year = 323
+		NOT = { started_in = 323.1.1 }
+		capital_scope = {
+			OR = {
+				area = deserta_boiorum
+				area = germania_superior
+				area = mogontiacum_area
+				area = helvetica_area
+				area = alpes_noricae
+				area = noricum_area
+				area = alpes_raetae
+			}
+		}
+		has_global_flag = la_tene_invasions_start
+		NOT = {
+			has_global_flag = la_tene_expansion_core
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "celt.12.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = la_tene_expansion_core
+		#provs
+		every_province = { #helvetian culture
+			limit = {
+				OR = {
+					area = agri_decumates
+					area = moenus_area
+					area = germania_superior
+				}
+			}
+			change_culture = helvetii
+			add_base_manpower = -1
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						area = agri_decumates
+						area = moenus_area
+						area = germania_superior
+					}
+				}
+			}
+			change_primary_culture = helvetii
+			add_accepted_culture = la_tene_celtic
+		}
+
+		every_province = { #vindelici culture
+			limit = {
+				AND = {
+					OR = {
+						area = nariscia_area
+						area = deserta_boiorum
+						area = raetia_secunda
+						area = raetia_prima
+						area = alpes_raetae
+					}
+					NOT = {
+						OR = {
+							culture = raeti
+							culture = lepontic
+						}
+					}
+				}
+			}
+			change_culture = vindelici
+			add_base_manpower = -1
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						area = nariscia_area
+						area = deserta_boiorum
+						area = raetia_secunda
+						area = germania_superior
+					}
+				}
+			}
+			change_primary_culture = vindelici
+			add_accepted_culture = la_tene_celtic
+		}
+		every_province = { #noric
+			limit = {
+				AND = {
+					OR = {
+						region = raetia_et_noricum
+						area = suebia_transdanuvia
+						region = pannonia_region
+					}
+					NOT = {
+						OR = {
+							culture = vindelici
+							culture = lepontic
+							culture = raeti
+						}
+					}
+					OR = {
+						culture = la_tene_celtic
+						culture = eastern_hallstat
+						culture = western_hallstat
+					}
+				}
+			}
+			change_culture = noric
+			add_base_manpower = -1
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					culture = noric
+				}
+				NOT = {
+					OR = {
+						primary_culture = vindelici
+						primary_culture = lepontic
+						primary_culture = raeti
+					}
+				}
+			}
+			change_primary_culture = noric
+			add_accepted_culture = la_tene_celtic
+		}
+		every_province = { #boiian culture
+			limit = {
+				OR = {
+					area = boiohemum_area
+					area = gabreta_hyle
+					area = medoslanum_area
+					area = sudeti_montes
+					area = asciburgius_mons
+				}
+			}
+			change_culture = boiian
+			add_base_manpower = -1
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						area = boiohemum_area
+						area = gabreta_hyle
+						area = medoslanum_area
+						area = sudeti_montes
+						area = asciburgius_mons
+					}
+				}
+			}
+			change_primary_culture = boiian
+			add_accepted_culture = la_tene_celtic
+			change_religion = celtic_religion
+		}
+		VL8 = {	 #volci (late to override boiian and vindelican as it is between areas
+			change_primary_culture = volci
+			add_accepted_culture = la_tene_celtic
+			every_owned_province = {
+				change_culture = volci
+				add_base_manpower = -1
+			}
+		}
+		1801 = {
+			change_culture = volci
+		}
+		1803 = {
+			change_culture = volci
+		}
+		1807 = {
+			change_culture = volci
+		}
+		1798 = {
+			change_culture = volci
+		}
+		1797 = {
+			change_culture = volci
+		}
+		every_country = {
+			limit = {
+				AND = {
+					OR = {
+						primary_culture = volci
+						primary_culture = boiian
+						primary_culture = noric
+						primary_culture = vindelici
+						primary_culture = helvetian
+					}
+					capital_scope = {
+						OR = {
+							region = raetia_et_noricum
+							region = germani_cisrhenani
+							region = germania_region
+							region = hercynia_region
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				swap_free_idea_group = yes
+			}
+			else = {
+				country_event = { id = new_ideas.1 }
+			}
+		}
+	}
+}
+
+#################################################
+#La Tene expansion: 323 gaul culture change
+#################################################
+country_event = {
+	id = celt.13
+	title = "celt.13.t"
+	desc = "celt.13.d"
+	picture = military_parade
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		culture = la_tene_celtic
+		is_year = 323
+		NOT = { started_in = 323.1.1 }
+		capital_scope = {
+			OR = {
+				area = deserta_boiorum
+				area = germania_superior
+				area = mogontiacum_area
+				area = helvetica_area
+				area = alpes_noricae
+				area = noricum_area
+				area = alpes_raetae
+			}
+		}
+		has_global_flag = la_tene_expansion_core
+		NOT = {
+			has_global_flag = la_tene_expansion_gaul
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "celt.13.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = la_tene_expansion_gaul
+		#provs
+		every_province = { #belgae culture
+			limit = {
+				OR = {
+					region = belgica_region
+					area = mogontiacum_area
+					area = germania_inferior
+					area = batavorum_area
+					area = frisia_area
+					area = rhenus_area
+				}
+				NOT = {
+					area = lingonum_area
+				}
+			}
+			change_culture = belgae
+			add_base_production = 1
+			add_base_tax = 1
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						region = belgica_region
+						area = mogontiacum_area
+						area = germania_inferior
+						area = batavorum_area
+						area = frisia_area
+						area = rhenus_area
+					}
+					NOT = {
+						area = lingonum_area
+					}
+				}
+			}
+			change_primary_culture = belgae
+			add_accepted_culture = gaul
+		}
+
+		every_province = { #clear idle lands to slowly incoming germans?
+			limit = {
+				OR = {
+					area = caucia_minor
+					area = cattica_area
+					area = nertereansis_area
+				}
+			}
+			change_culture = istvaeonic
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						area = caucia_minor
+						area = cattica_area
+						area = nertereansis_area
+					}
+				}
+			}
+			change_primary_culture = istvaeonic
+		}
+
+		every_province = { #central gaul culture
+			limit = {
+				OR = {
+					area = lutetia_area
+					area = senonia_area
+					area = lingonum_area
+					area = sequania_area
+					area = helvetica_area
+					area = haeduica_area
+					area = avaricum_area
+					area = arvernica_area
+					area = santonica_area
+					area = pictonica_area
+				}
+			}
+			change_culture = gaul
+			add_base_production = 1
+			add_base_tax = 1
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						area = lutetia_area
+						area = senonia_area
+						area = lingonum_area
+						area = sequania_area
+						area = helvetica_area
+						area = haeduica_area
+						area = avaricum_area
+						area = arvernica_area
+						area = santonica_area
+						area = pictonica_area
+					}
+				}
+			}
+			change_primary_culture = gaul
+		}
+		AIZ = {
+			change_primary_culture = gaul
+		}
+		381 = {
+			change_culture = gaul
+			add_base_production = 1
+			add_base_tax = 1
+		}
+		401 = {
+			change_culture = gaul
+			add_base_production = 1
+			add_base_tax = 1
+		}
+		406 = {
+			change_culture = gaul
+		}
+
+		every_province = { #remove hallstatt from britain coast
+			limit = {
+				superregion = britannia_superregion
+				OR = {
+					culture = western_hallstat
+					culture = la_tene_celtic
+				}
+			}
+			change_culture = britannic
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					superregion = britannia_superregion
+				}
+				OR = {
+					culture = western_hallstat
+					culture = la_tene_celtic
+				}
+			}
+			change_primary_culture = britannic
+		}
+
+		every_country = {
+			limit = {
+				OR = {
+					primary_culture = gaul
+					primary_culture = belgae
+				}
+				capital_scope = {
+					OR = {
+						superregion = celtica_superregion
+						superregion = germania_superregion
+					}
+				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				swap_free_idea_group = yes
+			}
+			else = {
+				country_event = { id = new_ideas.1 }
+			}
+		}
+	}
+}
+#################################################
+#La Tene expansion: 323 south gaul
+####
+#################################################
+country_event = {
+	id = celt.14
+	title = "celt.14.t"
+	desc = "celt.14.d"
+	picture = military_parade
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				area = cebenna_mons
+				area = rhodanus_area
+			}
+		}
+		NOT = { started_in = 352.1.1 }
+		is_year = 323
+		has_global_flag = la_tene_expansion_gaul
+		NOT = {
+			has_global_flag = la_tene_expansion_south
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "celt.14.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = la_tene_expansion_south
+		#provs
+		every_province = { #southgaul_culture
+			limit = {
+				OR = {
+					area = cebenna_mons
+					AND = {
+						area = rhodanus_area
+						culture = preceltic_gaul
+					}
+					AND = {
+						area = arecomicia_area
+						culture = preceltic_gaul
+					}
+					AND = {
+						area = arelate_area
+						culture = preceltic_gaul
+					}
+				}
+			}
+			change_culture = southern_gaul
+			change_religion = celtic_religion
+			add_base_production = 1
+			add_base_tax = 1
+		}
+		RUZ = {
+			change_primary_culture = southern_gaul
+			add_accepted_culture = gaul
+		}
+		GBZ = {
+			change_primary_culture = southern_gaul
+			add_accepted_culture = gaul
+		}
+		HEZ = {
+			change_primary_culture = southern_gaul
+			add_accepted_culture = gaul
+		}
+		DB8 = {
+			change_primary_culture = southern_gaul
+			add_accepted_culture = preceltic_gaul
+		}
+		LEZ = {
+			add_accepted_culture = southern_gaul
+		}
+		SL9 = {
+			add_accepted_culture = southern_gaul
+			change_religion = celtic_religion
+		}
+		every_province = {
+			limit = {
+				AND = {
+					area = massalia_area
+					religion = ligurian_religion
+				}
+			}
+			change_religion = celtic_religion
+		}
+		#don't forget allobroges
+		ALZ = {
+			change_religion = celtic_religion
+		}
+		every_province = {
+			limit = {
+				OR = {
+					area = alpes_graiae
+				}
+			}
+			change_religion = celtic_religion
+		}
+		470 = {
+			change_culture = lepontic
+		}
+		every_country = {
+			limit = {
+				AND = {
+					OR = {
+						primary_culture = gaul
+						primary_culture = southern_gaul
+					}
+					capital_scope = {
+						OR = {
+							superregion = celtica_superregion
+							superregion = germania_superregion
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				swap_free_idea_group = yes
+			}
+			else = {
+				country_event = { id = new_ideas.1 }
+			}
+		}
+	}
+}
+
+#La Tene expansion: 323 gaul new tags appearing/changing borders/bituriges supremacy
+#################################################
+country_event = {
+	id = celt.15
+	title = "celt.15.t"
+	desc = "celt.15.d"
+	picture = military_parade
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				area = cebenna_mons
+				area = rhodanus_area
+			}
+		}
+		NOT = { started_in = 352.1.1 }
+		is_year = 323
+		has_global_flag = la_tene_expansion_south
+		NOT = {
+			has_global_flag = la_tene_expansion_newtags_gaul
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "celt.15.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = la_tene_expansion_newtags_gaul
+		#Cadurci
+		422 = {
+			cede_province = CDZ
+			change_culture = southern_gaul
+			change_religion = celtic_religion
+		}
+		404 = {
+			cede_province = CDZ
+			change_culture = southern_gaul
+			change_religion = celtic_religion
+		}
+		419 = {
+			cede_province = LEZ
+			change_culture = gaul
+			change_religion = celtic_religion
+		}
+		421 = {
+			cede_province = LEZ
+			change_culture = gaul
+			change_religion = celtic_religion
+		}
+		LEZ = {
+			add_accepted_culture = southern_gaul
+		}
+		CDZ = {
+			change_primary_culture = southern_gaul
+			add_accepted_culture = gaul
+		}
+		#Vocontii
+		8669 = {
+			cede_province = VTZ
+			change_culture = southern_gaul
+			change_religion = celtic_religion
+		}
+		8673 = {
+			cede_province = VTZ
+			change_culture = southern_gaul
+			change_religion = celtic_religion
+		}
+		8670 = {
+			cede_province = VTZ
+			change_culture = southern_gaul
+			change_religion = celtic_religion
+		}
+		372 = {
+			cede_province = VTZ
+			change_culture = southern_gaul
+			change_religion = celtic_religion
+		}
+		8679 = {
+			cede_province = VTZ
+			change_culture = southern_gaul
+			change_religion = celtic_religion
+		}
+		VTZ = {
+			change_primary_culture = southern_gaul
+			add_accepted_culture = gaul
+			add_accepted_culture = preceltic_gaul
+		}
+		#celtic invaders in massalia
+		369 = {
+			add_core = SL9
+			spawn_rebels = {
+				size = 5
+				type = nationalist_rebels
+			}
+		}
+		8689 = {
+			add_core = SL9
+			spawn_rebels = {
+				size = 5
+				type = nationalist_rebels
+			}
+		}
+		every_country = {
+			limit = {
+				AND = {
+					OR = {
+						primary_culture = gaul
+						primary_culture = southern_gaul
+					}
+					capital_scope = {
+						OR = {
+							superregion = celtica_superregion
+							superregion = germania_superregion
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				swap_free_idea_group = yes
+			}
+			else = {
+				country_event = { id = new_ideas.1 }
+			}
+		}
+	}
+}
+#################################################
+#La Tene expansion: 323-352 brigantii spawn in Britain
+#################################################
+
+country_event = {
+	id = celt.16
+	title = "celt.16.t"
+	desc = "celt.16.d"
+	picture = military_parade
+
+	fire_only_once = yes
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				region = britannia_inferior
+				region = britannia_superior
+			}
+		}
+		NOT = { started_in = 352.1.1 }
+		is_year = 323
+		has_global_flag = la_tene_expansion_gaul
+		NOT = {
+			has_global_flag = la_tene_expansion_britain
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 25
+	}
+
+	option = {
+		name = "celt.16.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = la_tene_expansion_britain
+		hidden_effect = {
+			320 = {
+				add_core = BRX
+				cede_province = BRX
+				add_base_tax = 1
+				infantry = BRX
+				cavalry = BRX
+			}
+			322 = {
+				add_core = BRX
+				cede_province = BRX
+			}
+			318 = {
+				add_core = BRX
+				cede_province = BRX
+			}
+			317 = {
+				add_core = BRX
+				cede_province = BRX
+			}
+			BRX = {
+				add_treasury = 300
+				change_government = tribal
+				add_government_reform = tribal_federation_reform
+				create_subject = {
+					who = CCX
+					subject_type = celt_confederation_member
+				}
+				create_subject = {
+					who = CTX
+					subject_type = celt_confederation_member
+				}
+				create_subject = {
+					who = STX
+					subject_type = celt_confederation_member
+				}
+				create_subject = {
+					who = GHX
+					subject_type = celt_confederation_member
+				}
+				create_subject = {
+					who = SEX
+					subject_type = celt_confederation_member
+				}
+				add_mil_tech = 1
+				add_prestige = 50
+			}
+		}
+		every_country = {
+			limit = {
+				AND = {
+					capital_scope = {
+						OR = {
+							region = britannia_inferior
+							region = britannia_superior
+						}
+					}
+					has_reform = pastoral_tribe_reform
+				}
+			}
+			country_event = { id = celt.160 }
+		}
+	}
+}
+
+#################################################
+#event for british celtic primitives to settle contacting the la tene
+#################################################
+country_event = {
+	id = celt.160
+	title = "celt.160.t"
+	desc = "celt.160.d"
+	picture = city
+
+	is_triggered_only = yes
+
+	option = {
+		name = "celt.160.a"
+		ai_chance = { factor = 100 }
+		every_tribal_land_province = {
+			limit = { NOT = { owner = { exists = yes } } }
+			settle_province = ROOT
+		}
+		change_government = tribal
+		add_government_reform = tribal_federation_reform
+		set_global_flag = brits_settled
+	}
+}
+
+#event just in case there is gap in provs in britain
+country_event = {
+	id = celt.161
+	title = "celt.161.t"
+	desc = "celt.161.d"
+	picture = city
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = brits_settled
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "celt.161.a"
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				exists = BRT
+			}
+			britannia_inferior = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = BRT
+			}
+			britannia_superior= {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = BRT
+			}
+		}
+		else = {
+			icenorum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ICX
+			}
+			londinium_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = CRX
+			}
+			cantiacorum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = CAX
+			}
+			reginorum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = CAX
+			}
+			corieltauvorum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = CRX
+			}
+			durotrigum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = DUX
+			}
+			dummoniorum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = DUX
+			}
+			dubunnorum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = DOX
+			}
+			silurum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = SIX
+			}
+			ordovicum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = ORX
+			}
+			cornoviorum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = COX
+			}
+			britannia_maxima_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = BRX
+			}
+			brigantum_area = {
+				limit = {
+					is_empty = yes
+				}
+				cede_province = BRX
+			}
+		}
+	}
+}
+
+#################################################
+#La Tene expansion: 352 old armorica becomes new armorican
+#################################################
+country_event = {
+	id = celt.17
+	title = "celt.17.t"
+	desc = "celt.17.d"
+	picture = military_parade
+
+	fire_only_once = yes
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				area = armorica_area
+				area = liger_area
+				area = venellica_area
+			}
+		}
+		NOT = { started_in = 352.1.1 }
+		is_year = 323
+		has_global_flag = la_tene_expansion_gaul
+		NOT = {
+			has_global_flag = la_tene_expansion_armorica
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 15
+	}
+
+	option = {
+		name = "celt.15.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = la_tene_expansion_armorica
+		every_province = { #belgae culture
+			limit = {
+				OR = {
+					area = armorica_area
+					area = liger_area
+					area = venellica_area
+				}
+			}
+			change_culture = armorican
+			add_base_production = 1
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						area = armorica_area
+						area = liger_area
+					}
+				}
+			}
+			change_primary_culture = armorican
+		}
+		every_country = {
+			limit = {
+				AND = {
+					OR = {
+						primary_culture = armorican
+					}
+					capital_scope = {
+						OR = {
+							superregion = celtica_superregion
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					ai = yes
+				}
+				swap_free_idea_group = yes
+			}
+			else = {
+				country_event = { id = new_ideas.1 }
+			}
+		}
+	}
+}
+#################################################
+#La Tene expansion: 352 lusatians becoming half celts (south, religion change to celt) or half-germans (lugian culture, religion change to german)
+#################################################
+
+#################################################
+#La Tene expansion: 352 spain wave (+pop to central celtiberians)
+#################################################
+
+#################################################
+#La Tene expansion: 352 start of north italian one - bellovesus invasion (gauls)
+#################################################
+
+country_event = {
+	id = celt.20
+	title = "celt.20.t"
+	desc = "celt.20.d"
+	picture = celt_rome_attack
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { started_in = 352.1.1 }
+		is_year = 323
+		has_global_flag = la_tene_expansion_gaul
+		NOT = {
+			has_global_flag = la_tene_expansion_italy
+		}
+		capital_scope = {
+			OR = {
+				region = gallia_cisalpina
+				region = italian_region
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 25
+	}
+
+	option = {
+		name = "celt.20.a" # informs invaders are incoming
+		ai_chance = { factor = 100 }
+		set_global_flag = la_tene_expansion_italy
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = IN2
+					NOT = {
+						any_country = {
+							overlord_of = IN2
+						}
+					}
+				}
+				103 = {
+					add_core = IN2
+					cede_province = IN2
+					change_culture = cisalpine_gaul
+					change_religion = celtic_religion
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					artillery = IN2
+					artillery = IN2
+					artillery = IN2
+					add_province_modifier = {
+						name = cisalpine_invaders_citadel
+						duration = 7300
+					}
+				}
+				IN2 = {
+					grant_independence = yes
+				}
+				101 = {
+					add_core = IN2
+				}
+				102 = {
+					add_core = IN2
+				}
+				105 = {
+					add_core = IN2
+				}
+				6875 = {
+					add_core = IN2
+				}
+			}
+			else_if = {
+				limit = {
+					exists = IN2
+				}
+				103 = {
+					add_core = IN2
+					cede_province = IN2
+					change_culture = cisalpine_gaul
+					change_religion = celtic_religion
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					artillery = IN2
+					artillery = IN2
+					artillery = IN2
+					add_province_modifier = {
+						name = cisalpine_invaders_citadel
+						duration = 7300
+					}
+				}
+				101 = {
+					add_core = IN2
+				}
+				102 = {
+					add_core = IN2
+				}
+				105 = {
+					add_core = IN2
+				}
+				6875 = {
+					add_core = IN2
+				}
+			}
+			else = {
+				103 = {
+					add_core = IN2
+					cede_province = IN2
+					change_culture = cisalpine_gaul
+					change_religion = celtic_religion
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					infantry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					cavalry = IN2
+					artillery = IN2
+					artillery = IN2
+					artillery = IN2
+					add_province_modifier = {
+						name = cisalpine_invaders_citadel
+						duration = 7300
+					}
+				}
+				101 = {
+					add_core = IN2
+				}
+				102 = {
+					add_core = IN2
+				}
+				105 = {
+					add_core = IN2
+				}
+				6875 = {
+					add_core = IN2
+				}
+			}
+			IN2 = {
+				add_country_modifier = {
+					name = cisalpine_boost
+					duration = 7300
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = celt.202
+	title = "celt.202.t"
+	desc = "celt.202.d"
+	picture = celt_rome_attack
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = la_tene_expansion_italy
+		NOT = {
+			has_global_flag = la_tene_expansion_bellovesus_spawn
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = "celt.202.a" # spawn celtic migrants tags, add them cores, migration cbs on everyone who have their cores, declare migration wars and spawn additional troops if needed, so every tag will have 20-25k troops. add +1 mil tech and add la tene invader buff
+		ai_chance = { factor = 100 }
+		set_global_flag = la_tene_expansion_italy
+		hidden_effect = {
+			every_country = { #insubri attack
+				limit = {
+					core_claim = IN2
+					capital_scope = {
+						OR = {
+							region = gallia_cisalpina
+							region = italian_region
+							region = raetia_et_noricum
+						}
+					}
+				}
+				reverse_add_casus_belli = {
+					target = IN2
+					type = cb_migratory_war
+					months = 360
+				}
+			}
+			every_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							is_core = IN2
+							is_claim = IN2
+						}
+					}
+				}
+				capital_scope = {
+					OR = {
+						region = gallia_cisalpina
+						region = italian_region
+						region = raetia_et_noricum
+					}
+				}
+				NOT = {
+					tag = IN2
+					tag = CE2
+					tag = I17
+					tag = SE2
+					tag = LI2
+				}
+				declare_war = IN2
+			}
+
+			107 = { #Cenomani
+				add_core = CE2
+				cede_province = CE2
+				change_culture = cisalpine_gaul
+				change_religion = celtic_religion
+				infantry = CE2
+				infantry = CE2
+				infantry = CE2
+				infantry = CE2
+				infantry = CE2
+				infantry = CE2
+				infantry = CE2
+				infantry = CE2
+				infantry = CE2
+				infantry = CE2
+				infantry = CE2
+				infantry = CE2
+				cavalry = CE2
+				cavalry = CE2
+				cavalry = CE2
+				cavalry = CE2
+				cavalry = CE2
+				artillery = CE2
+				artillery = CE2
+				artillery = CE2
+					add_province_modifier = {
+						name = cisalpine_invaders_citadel
+						duration = 7300
+					}
+			}
+			108 = {
+				add_core = CE2
+			}
+			6867 = {
+				add_core = CE2
+			}
+			6884 = {
+				add_core = CE2
+			}
+			104 = {
+				add_core = CE2
+			}
+			106 = {
+				add_core = CE2
+			}
+			CE2 = {
+				add_country_modifier = {
+					name = cisalpine_boost
+					duration = 7300
+				}
+			}
+			every_country = {
+				limit = {
+					core_claim = CE2
+					NOT = {
+						war_with =CE2
+					}
+					capital_scope = {
+						OR = {
+							region = gallia_cisalpina
+							region = italian_region
+							region = raetia_et_noricum
+						}
+					}
+				}
+				reverse_add_casus_belli = {
+					target = CE2
+					type = cb_migratory_war
+					months = 360
+				}
+			}
+			every_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							is_core = CE2
+							is_claim = CE2
+						}
+					}
+				}
+				capital_scope = {
+					OR = {
+						region = gallia_cisalpina
+						region = italian_region
+						region = raetia_et_noricum
+					}
+				}
+				NOT = {
+					tag = IN2
+					tag = CE2
+					tag = I17
+					tag = SE2
+					tag = LI2
+				}
+				declare_war = CE2
+			}
+			83 = { #Cisalpine Boii
+				add_core = I17
+				cede_province = I17
+				change_culture = cisalpine_gaul
+				change_religion = celtic_religion
+				infantry =I17
+				infantry = I17
+				infantry = I17
+				infantry = I17
+				infantry = I17
+				infantry = I17
+				infantry = I17
+				infantry = I17
+				infantry = I17
+				infantry = I17
+				infantry = I17
+				infantry = I17
+				cavalry = I17
+				cavalry = I17
+				cavalry = I17
+				cavalry = I17
+				cavalry = I17
+				artillery = I17
+				artillery = I17
+				artillery = I17
+					add_province_modifier = {
+						name = cisalpine_invaders_citadel
+						duration = 7300
+					}
+			}
+			81 = {
+				add_core = I17
+			}
+			6870 = {
+				add_core = I17
+			}
+			86 = {
+				add_core = I17
+			}
+			84 = {
+				add_core = I17
+			}
+			87 = {
+				add_core = I17
+			}
+			88 = {
+				add_core = I17
+			}
+			89 = {
+				add_core = I17
+			}
+			I17 = {
+				add_country_modifier = {
+					name = cisalpine_boost
+					duration = 7300
+				}
+			}
+			every_country = {
+				limit = {
+					core_claim = I17
+					NOT = {
+						war_with = I17
+					}
+					capital_scope = {
+						OR = {
+							region = gallia_cisalpina
+							region = italian_region
+							region = raetia_et_noricum
+						}
+					}
+				}
+				reverse_add_casus_belli = {
+					target = I17
+					type = cb_migratory_war
+					months = 360
+				}
+			}
+			every_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							is_core = I17
+							is_claim = I17
+						}
+					}
+				}
+				capital_scope = {
+					OR = {
+						region = gallia_cisalpina
+						region = italian_region
+						region = raetia_et_noricum
+					}
+				}
+				NOT = {
+					tag = IN2
+					tag = CE2
+					tag = I17
+					tag = SE2
+					tag = LI2
+				}
+				declare_war = I17
+			}
+			5678 = { #Senoni
+				add_core = SE2
+				cede_province = SE2
+				change_culture = cisalpine_gaul
+				change_religion = celtic_religion
+				infantry = SE2
+				infantry = SE2
+				infantry = SE2
+				infantry = SE2
+				infantry = SE2
+				infantry = SE2
+				infantry = SE2
+				infantry = SE2
+				infantry = SE2
+				infantry = SE2
+				infantry = SE2
+				infantry = SE2
+				cavalry = SE2
+				cavalry = SE2
+				cavalry = SE2
+				cavalry = SE2
+				cavalry = SE2
+				artillery = SE2
+				artillery = SE2
+				artillery = SE2
+					add_province_modifier = {
+						name = cisalpine_invaders_citadel
+						duration = 7300
+					}
+			}
+			60 = {
+				add_core = SE2
+			}
+			5679 = {
+				add_core = SE2
+			}
+			78 = {
+				add_core = SE2
+			}
+			77 = {
+				add_core = SE2
+			}
+			82 = {
+				add_core = SE2
+			}
+			6869 = {
+				add_core = SE2
+			}
+			SE2 = {
+				add_country_modifier = {
+					name = cisalpine_boost
+					duration = 7300
+				}
+			}
+			every_country = {
+				limit = {
+					core_claim = SE2
+					NOT = {
+						war_with = SE2
+					}
+					capital_scope = {
+						OR = {
+							region = gallia_cisalpina
+							region = italian_region
+							region = raetia_et_noricum
+						}
+					}
+				}
+				reverse_add_casus_belli = {
+					target = SE2
+					type = cb_migratory_war
+					months = 360
+				}
+			}
+			every_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							is_core = SE2
+							is_claim = SE2
+						}
+					}
+				}
+				capital_scope = {
+					OR = {
+						region = gallia_cisalpina
+						region = italian_region
+						region = raetia_et_noricum
+					}
+				}
+				NOT = {
+					tag = IN2
+					tag = CE2
+					tag = I17
+					tag = SE2
+					tag = LI2
+				}
+				declare_war = SE2
+			}
+			6889 = { #Lingoni
+				add_core = LI2
+				cede_province = LI2
+				change_culture = cisalpine_gaul
+				change_religion = celtic_religion
+				infantry = LI2
+				infantry =LI2
+				infantry = LI2
+				infantry = LI2
+				infantry = LI2
+				infantry = LI2
+				infantry = LI2
+				infantry = LI2
+				infantry = LI2
+				infantry = LI2
+				infantry = LI2
+				infantry = LI2
+				cavalry = LI2
+				cavalry =LI2
+				cavalry = LI2
+				cavalry = LI2
+				cavalry = LI2
+				artillery = LI2
+				artillery = LI2
+				artillery = LI2
+					add_province_modifier = {
+						name = cisalpine_invaders_citadel
+						duration = 7300
+					}
+			}
+			6887 = {
+				add_core = LI2
+			}
+			6886 = {
+				add_core = LI2
+			}
+			6866 = {
+				add_core = LI2
+			}
+			85 = {
+				add_core = LI2
+			}
+			LI2 = {
+				add_country_modifier = {
+					name = cisalpine_boost
+					duration = 7300
+				}
+			}
+			every_country = {
+				limit = {
+					core_claim = LI2
+					NOT = {
+						war_with = LI2
+					}
+					capital_scope = {
+						OR = {
+							region = gallia_cisalpina
+							region = italian_region
+							region = raetia_et_noricum
+						}
+					}
+				}
+				reverse_add_casus_belli = {
+					target = LI2
+					type = cb_migratory_war
+					months = 360
+				}
+			}
+			every_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							is_core = LI2
+							is_claim = LI2
+						}
+					}
+				}
+				capital_scope = {
+					OR = {
+						region = gallia_cisalpina
+						region = italian_region
+						region = raetia_et_noricum
+					}
+				}
+				NOT = {
+					tag = IN2
+					tag = CE2
+					tag = I17
+					tag = SE2
+					tag = LI2
+				}
+				declare_war = LI2
+			}
+		}
+	}
+}
+#################################################
+#La Tene expansion: 352-395 pannonia - costoboci, galatians expanding, bastarni moving, agathyrsi shrinks, dacians appear
+#################################################
+
+#END OF AGATHYRSI  - celt spawn
+country_event = {
+	id = celt.22
+	title = "celt.22.t"
+	desc = "celt.22.d"
+	picture = cavalry
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		capital_scope = {
+			OR = {
+				area = medoslanum_area
+				area = boiohemum_area
+			}
+		}
+		NOT = { started_in = 352.1.1 }
+		OR = {
+			AGF = {
+				NOT = { is_at_war = yes }
+			}
+			DAC = {
+				NOT = { is_at_war = yes }
+			}
+		}
+		is_year = 323
+		has_global_flag = la_tene_expansion_gaul
+		NOT = {
+			has_global_flag = la_tene_expansion_pannonia
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	immediate = {
+		hidden_effect = {
+			pannonia_transdanubia = {
+				add_core = GAL
+				cede_province = GAL
+				change_culture = boiian
+				change_religion = celtic_religion
+				add_base_manpower = 1
+			}
+			AGF = {
+				release_all_subjects = yes
+			}
+			DAC = {
+				release_all_subjects = yes
+			}
+			GAL = {
+				change_government = tribal
+				add_government_reform = tribal_federation_reform
+				add_government_reform = agriculturalist_tribe_reform
+				add_government_reform = common_ethnic_origin_reform
+				add_government_reform = martial_origin_of_power_reform
+				add_country_modifier = {
+					name = migratory_war5_modifier
+					duration = 7300
+				}
+				add_country_modifier = {
+					name = ti_elite_troops_8
+					duration = 7300
+				}
+
+				add_country_modifier = {
+					name = la_tene_boost
+					duration = 7300
+				}
+				add_casus_belli = {
+					target = AGF
+					type = cb_mission_invasion
+					months = 60
+				}
+				add_casus_belli = {
+					target = DAC
+					type = cb_mission_invasion
+					months = 60
+				}
+				add_treasury = 800
+				add_prestige = 80
+				add_manpower = 100
+				add_army_tradition = 50
+				add_army_professionalism = 0.25
+				add_mil_tech = 1
+				haemusia_superregion = {
+					discover_country = GAL
+				}
+				germania_superregion = {
+					discover_country = GAL
+				}
+				italia_superregion = {
+					discover_country = GAL
+				}
+				celtica_superregion = {
+					discover_country = GAL
+				}
+				define_ruler = {
+					name = "Brennos I"
+					dynasty = "Galatoi"
+					ADM = 3
+					DIP = 3
+					MIL = 5
+				}
+				define_general = {
+					name = "Bolgios"
+					fire = 4
+					shock = 5
+					manuever = 5
+					siege = 2
+				}
+				define_general = {
+					name = "Combutis"
+					fire = 5
+					shock = 4
+					manuever = 4
+					siege = 2
+				}
+			}
+			1913 = {
+				samurai_infantry = GAL
+				samurai_infantry = GAL
+				samurai_infantry = GAL
+				samurai_infantry = GAL
+				samurai_infantry = GAL
+				samurai_infantry = GAL
+				samurai_infantry = GAL
+				0_unarmed_migrants = GAL
+				0_unarmed_migrants = GAL
+				0_unarmed_migrants = GAL
+				0_unarmed_migrants = GAL
+				0_unarmed_migrants = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				cavalry = GAL
+				cavalry = GAL
+				cavalry = GAL
+				cavalry = GAL
+				cavalry = GAL
+				artillery = GAL
+				artillery = GAL
+				artillery = GAL
+				artillery = GAL
+				artillery = GAL
+				artillery = GAL
+			}
+			1914 = {
+				samurai_infantry = GAL
+				samurai_infantry = GAL
+				samurai_infantry = GAL
+				0_unarmed_migrants = GAL
+				0_unarmed_migrants = GAL
+				0_unarmed_migrants = GAL
+				0_unarmed_migrants = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				infantry = GAL
+				cavalry = GAL
+				cavalry = GAL
+				cavalry = GAL
+				cavalry = GAL
+				cavalry = GAL
+				artillery = GAL
+				artillery = GAL
+				artillery = GAL
+				artillery = GAL
+			}
+		}
+	}
+
+	option = {
+		name = "celt.22.a"
+		set_global_flag = la_tene_expansion_pannonia
+		GAL = {
+			declare_war_with_cb = {
+				who = AGF
+				casus_belli = cb_mission_invasion
+			}
+		}
+		GAL = {
+			declare_war_with_cb = {
+				who = DAC
+				casus_belli = cb_mission_invasion
+			}
+		}
+		GAL = {
+			declare_war = RCT
+		}
+	}
+}
+
+country_event = {
+	id = celt.220
+	title = "celt.220.t"
+	desc = "celt.220.d"
+	picture = celebration_priestess
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = AGF
+			was_tag = AGF
+		}
+		ai = yes
+		is_year = 200
+		NOT = { has_country_flag = agathyrsi_decadence_flag_1}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+	option = {
+		name = "celt.220.a"
+		set_country_flag = agathyrsi_decadence_flag_1
+		add_country_modifier = {
+			name = agathyrsi_decadence_modifier_1
+			duration = 18250
+		}
+	}
+}
+country_event = {
+	id = celt.221
+	title = "celt.221.t"
+	desc = "celt.220.d"
+	picture = celebration_priestess
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = AGF
+			was_tag = AGF
+		}
+		ai = yes
+		is_year = 250
+		NOT = { has_country_flag = agathyrsi_decadence_flag_2 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = "celt.220.a"
+		set_country_flag = agathyrsi_decadence_flag_2
+		add_country_modifier = {
+			name = agathyrsi_decadence_modifier_2
+			duration = 54750
+		}
+		remove_country_modifier = agathyrsi_decadence_modifier_1
+	}
+}
+country_event = {
+	id = celt.23
+	title = "celt.23.t"
+	desc = "celt.23.d"
+	picture = cavalry
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GAL
+		NOT = { started_in = 352.1.1 }
+		is_year = 323
+		NOT = {
+			is_year = 3
+		}
+		has_global_flag = la_tene_expansion_pannonia
+		NOT = {
+			has_global_flag = la_tene_expansion_agathyrsi_death
+		}
+		OR = {
+			war_with = DAC
+			war_with = AGF
+		}
+		OR = {
+			war_score_against = {
+				who = AGF
+				value = 30
+			}
+			war_score_against = {
+				who = DAC
+				value = 30
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "celt.23.a"
+		set_global_flag = la_tene_expansion_agathyrsi_death
+		GAL = {
+			white_peace = AGF
+			white_peace = DAC
+		}
+		hercynia_region = { 	#west
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = COT
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = COT
+			change_culture = noric
+			change_religion = celtic_religion
+		}
+		belgica_region = { 	#west
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = DAC
+					is_core = RCT
+				}
+			}
+			add_core = NEZ
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = NEZ
+			change_culture = belgae
+			change_religion = celtic_religion
+		}
+		raetia_et_noricum = { 	#west
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = NOR
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = NOR
+			change_culture = noric
+			change_religion = celtic_religion
+		}
+		germani_cisrhenani = { 	#west
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = HEV
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = HEV
+			change_culture = helvetii
+			change_religion = celtic_religion
+		}
+		germania_region = { 	#west
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = CHT
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = CHT
+			change_culture = istvaeonic
+			change_religion = germanic_religion
+		}
+		tisia_area = { 	#west
+			add_core = GAL
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = GAL
+			change_culture = boiian
+			change_religion = celtic_religion
+		}
+		pannonia_prima = { 	#west
+			add_core = AR2
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = AR2
+			change_culture = boiian
+			change_religion = celtic_religion
+		}
+		pannonia_inferior = { 	#west
+			add_core = ERA
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = ERA
+			change_culture = pannonian
+			change_religion = celtic_religion
+		}
+		pannonia_superior = { 	#west
+			add_core = SE3
+			remove_core = AGF
+			cede_province = SE3
+			change_culture = pannonian
+			change_religion = celtic_religion
+		}
+		pannonia_region = { 	#west
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+				NOT = {
+					is_core = GAL
+				}
+			}
+			add_core = BR1
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = BR1
+			change_culture = pannonian
+			change_religion = celtic_religion
+		}
+		illyria_region = { 	#west
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = DAC
+					is_core = RCT
+				}
+			}
+			add_core = AR1
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = AR1
+			change_culture = ardiaei
+		}
+		sarmatici_mons = { #north
+			add_core = ANR
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = ANR
+			change_culture = lusatian
+			change_religion = celtic_religion
+		}
+		aestia_region = {#north
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = DAC
+					is_core = RCT
+				}
+			}
+			add_core = BOR
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = BOR
+			change_culture = baltic
+			change_religion = baltic_religion
+		}
+		suebia_east = { 	#north-west
+			add_core = VAN
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = VAN
+			change_culture = lugian
+			change_religion = germanic_religion
+		}
+		vistula_area = { 	#north
+			add_core = BAS
+			remove_core = AGF
+			remove_core = DAC
+			change_culture = lugian
+			change_religion = germanic_religion
+			cede_province = BAS
+		}
+		germano_sarmatia = { 	#north-east
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = V4N
+			remove_core = AGF
+			remove_core = DAC
+			change_culture = slavic
+			change_religion = baltic_religion
+			cede_province = V4N
+		}
+		suebia_region = { 	#north-west
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = SEM
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = SEM
+			change_religion = germanic_religion
+		}
+		lugia_region = { 	#north
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+				}
+			}
+			add_core = LGI
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = LGI
+		}
+		1911 = { 	#north
+			add_core = BUI
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = BUI
+		}
+		8180 = { 	#north
+			add_core = BUI
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = BUI
+		}
+		1969 = { 	#north
+			add_core = BUI
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = BUI
+		}
+		sarmatia_region = { 	#east
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = BAS
+			remove_core = AGF
+			remove_core = DAC
+			change_culture = lugian
+			change_religion = germanic_religion
+			cede_province = BAS
+		}
+		alpes_bastarnicae = { 	#south
+			add_core = TGI
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = TGI
+			change_culture = getean
+			change_religion = getic_religion
+		}
+		propontis_region = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = ODR
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = ODR
+		}
+		carpatae_area = { 	#south
+			add_core = GET
+			remove_core = AGF
+			remove_core = DAC
+			change_culture = getean
+			change_religion = getic_religion
+			cede_province = GET
+		}
+		dacia_maluensis = { 	#south
+			add_core = GET
+			remove_core = AGF
+			remove_core = DAC
+			change_culture = getean
+			change_religion = getic_religion
+			cede_province = GET
+		}
+		montes_serrorum = { 	#south
+			add_core = GET
+			remove_core = AGF
+			remove_core = DAC
+			change_culture = getean
+			change_religion = getic_religion
+			cede_province = GET
+		}
+		dacia_inferior = { 	#south
+			add_core = PTU
+			remove_core = AGF
+			remove_core = DAC
+			change_culture = getean
+			change_religion = getic_religion
+			cede_province = PTU
+		}
+		moesia_superior = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = DT1
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = DT1
+		}
+		dardania_area = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = DT1
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = DT1
+		}
+		paeonia_area = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = POE
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = POE
+		}
+		dacia_ripensis = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = TRL
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = TRL
+		}
+		dacia_mediterranea = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = TRL
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = TRL
+		}
+		ister_area = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = TRL
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = TRL
+		}
+		haemus_mons = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = TRL
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = TRL
+		}
+		moesia_inferior = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = TRL
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = TRL
+		}
+		peucinitis_area = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = GET
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = GET
+		}
+		scythia_minor = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = GET
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = GET
+		}
+		thracia_region = { 	#south
+			limit = {
+				OR = {
+					is_core = AGF
+					is_core = RCT
+					is_core = DAC
+				}
+			}
+			add_core = ODR
+			remove_core = AGF
+			remove_core = DAC
+			cede_province = ODR
+		}
+	}
+}
+country_event = { #celts in transylvania and birth of dacian culture
+	id = celt.24
+	title = "celt.24.t"
+	desc = "celt.24.d"
+	picture = cavalry
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			primary_culture = getean
+			primary_culture = noric
+		}
+		NOT = { started_in = 395.1.1 }
+		is_year = 390
+		NOT = {
+			is_year = 395
+		}
+		has_global_flag = la_tene_expansion_pannonia
+		NOT = {
+			has_global_flag = la_tene_expansion_dacia
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			dacia_porolissensis = {
+				add_core = CS2
+				remove_core = AGF
+				cede_province = CS2
+				change_culture = noric
+				change_religion = celtic_religion
+			}
+			1968 = {
+				add_core = CS2
+				remove_core = AGF
+				cede_province = CS2
+				change_culture = noric
+				change_religion = celtic_religion
+			}
+			7322 = {
+				add_core = CS2
+				remove_core = AGF
+				cede_province = CS2
+				change_culture = noric
+				change_religion = celtic_religion
+			}
+			1917 = {
+				add_core = CS2
+				remove_core = AGF
+				cede_province = CS2
+				change_culture = noric
+				change_religion = celtic_religion
+			}
+			8183 = {
+				add_core = CS2
+				remove_core = AGF
+				cede_province = CS2
+				change_culture = noric
+				change_religion = celtic_religion
+			}
+			dacia_alutensis_area = {
+				add_core = ALC
+				remove_core = AGF
+				cede_province = ALC
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			dacia_apulensis = {
+				add_core = GET
+				remove_core = AGF
+				cede_province = GET
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			dacia_superior = {
+				add_core = GET
+				remove_core = AGF
+				cede_province = GET
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			1923 = {
+				add_core = BPH
+				remove_core = AGF
+				cede_province = BPH
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			8108 = {
+				add_core = BPH
+				remove_core = AGF
+				cede_province = BPH
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			1952 = {
+				add_core = BPH
+				remove_core = AGF
+				cede_province = BPH
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			8103 = {
+				add_core = BPH
+				remove_core = AGF
+				cede_province = BPH
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			8592 = {
+				add_core = RTA
+				remove_core = AGF
+				cede_province = RTA
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			1954 = {
+				add_core = RTA
+				remove_core = AGF
+				cede_province = RTA
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			1953 = {
+				add_core = RTA
+				remove_core = AGF
+				cede_province = RTA
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			1959 = {
+				add_core = CAC
+				remove_core = AGF
+				cede_province = CAC
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			1960 = {
+				add_core = CAC
+				remove_core = AGF
+				cede_province = CAC
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			1961 = {
+				add_core = CAC
+				remove_core = AGF
+				cede_province = CAC
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			1962 = {
+				add_core = CAC
+				remove_core = AGF
+				cede_province = CAC
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			1932 = {
+				add_core = BRD
+				remove_core = AGF
+				cede_province = BRD
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			1934 = {
+				add_core = BRD
+				remove_core = AGF
+				cede_province = BRD
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+			8109 = {
+				add_core = CS2
+				remove_core = AGF
+				cede_province = CS2
+				change_culture = noric
+				change_religion = celtic_religion
+			}
+		}
+	}
+	option = {
+		name = "celt.24.a"
+		set_global_flag = la_tene_expansion_dacia
+		AGF = {
+			every_owned_province = {
+				change_culture = dacian
+				change_religion = getic_religion
+			}
+		}
+		GET = {
+			inherit = AGF
+			inherit = DAC
+		}
+		GET = {
+			change_tag = DAC
+		}
+	}
+}
+#################################################
+#La Tene expansion: 395-421 pannonia - costoboci divides on teurisci, pannonian boii appears? galatians shift to scordisci positions
+#################################################
+
+
+#################################################
+#La Tene expansion: 477 balkans - all galatian lands become cores of scordisci, dindari and celegeri appear as its vassals. Spawn opm galatia as migratory band, that attacks any nation wit ha capital on macedon, thessaly, aetolia and delphi.
+#################################################
+
+#################################################
+#La Tene expansion: 477 balkans - spawn opm tylis that gots cores on its future kingdom, in same time as migratory band attacks all nations in tribalian lands with huge force.
+#################################################
+
+
+#################################################
+#La Tene expansion: 479 balkans - if galatians are defeated they mvoe to asia minor in invasion. local tag in bythinia region with not owned cores receives events to hire them as mercs. And starts war with biggest tag in region, calling galatians in war.
+#################################################
+
+#################################################
+#La Tene expansion: 479 gaul - volcae-tectosages and arecomici settles in south gaul.
+#################################################

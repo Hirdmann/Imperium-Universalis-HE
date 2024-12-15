@@ -1,0 +1,22 @@
+name = "Second Punic War"
+war_goal = {
+	type = take_border
+	casus_belli = cb_border_war
+	province = 6510 #Saguntum
+}
+
+536.3.1 = {
+	add_attacker = ROM
+	add_defender = CAR
+	add_defender = MAC
+}
+548.1.1 = {
+	add_attacker = MYL
+}
+553.7.21 = {
+	rem_attacker = ROM
+	rem_attacker = MYL
+	rem_defender = CAR
+	rem_defender = MAC
+}
+

@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = jin_confederation_reform
+government_rank = 3
+#mercantilism = 0.25
+primary_culture = jinhan
+religion = muism
+capital = 5975 #Capital of Jin?
+technology_group = korean
+add_historical_rival = GOJ
+
+254.1.1 = {
+	add_accepted_culture = mahan
+	add_accepted_culture = tamna
+	add_accepted_culture = byeonhan
+	add_accepted_culture = dongye
+}
+
+454.1.1 = {
+	remove_accepted_culture = tamna
+}

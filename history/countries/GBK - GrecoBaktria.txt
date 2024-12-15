@@ -1,0 +1,174 @@
+government = monarchy
+add_government_reform = aristocratic_monarchy_reform
+government_rank = 3
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = greco_bactrian
+religion = greek_religion
+capital = 2828
+add_army_professionalism = 0.3
+#religious_school = hellenic_type
+
+428.1.1 = {
+	add_stability = 1
+	add_army_professionalism = 0.5
+	add_absolutism = 10
+	add_army_tradition = 10
+}
+
+431.1.1 = {
+	add_government_reform = satrap_diadochi_reform
+	add_government_reform = syncretism_reform
+	add_government_reform = aristocratic_land_reform
+	add_government_reform = standing_army_reform
+	add_government_reform = limited_conscription_reform
+	monarch = {
+		name = "Philippos"
+		dynasty = "Philippid"
+		death_date = 439.1.1
+		dip = 3
+		adm = 3
+		mil = 1
+		leader = {
+			name = "Philippos"
+			type = general
+			fire = 2
+			shock = 2
+			manuever = 0
+			siege = 0
+		}
+	}
+}
+
+433.1.1 = {
+	monarch = {
+		name = "Stasanor"
+		dynasty = "Solois"
+		death_date = 452.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+		leader = {
+			name = "Stasanor"
+			type = general
+			fire = 3
+			shock = 3
+			manuever = 2
+			siege = 1
+		}
+	}
+}
+
+499.1.1 = { #Greco-Bactrian Kingdom becomes fully independent for the first time
+	add_government_reform = diadochi_kingdom_reform
+	monarch = {
+		name = "Diodotos I Soter"
+		dynasty = "Diodotid"
+		death_date = 519.1.1
+		dip = 4
+		adm = 4
+		mil = 4
+		leader = {
+			name = "Diodotos I"
+			type = general
+			fire = 4
+			shock = 4
+			manuever = 1
+			siege = 1
+		}
+	}
+	heir = {
+		name = "Diodotos II Theos"
+		dynasty = "Diodotid"
+		monarch_name = "Diodotos II"
+		birth_date = 485.1.1
+		death_date = 529.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+519.1.1 = {
+	monarch = {
+		name = "Diodotos II Theos"
+		dynasty = "Diodotid"
+		death_date = 529.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+524.1.1 = {
+	monarch = {
+		name = "Euthydemus I"
+		dynasty = "Diodotid"
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+
+554.1.1 = {
+	government_rank = 4
+	monarch = {
+		name = "Demetrius I Anicetus"
+		dynasty = "Diodotid"
+		death_date = 574.1.1
+		dip = 4
+		adm = 4
+		mil = 6
+	}
+}
+
+564.1.1 = {
+	religion = buddhism
+	religious_school = mahasamghika_school
+}
+
+574.1.1 = {
+	monarch = {
+		name = "Euthydemus II"
+		dynasty = "Diodotid"
+		death_date = 583.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+583.1.1 = {
+	monarch = {
+		name = "Eucratides I"
+		dynasty = "Helioclid"
+		death_date = 609.1.1
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+}
+
+609.1.1 = {
+	government_rank = 3
+	monarch = {
+		name = "Eucratides II"
+		dynasty = "Helioclid"
+		death_date = 614.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+614.1.1 = {
+	monarch = { #Last king of Greco-Bactrian kingdom
+		name = "Heliocles I Dikaiou"
+		dynasty = "Helioclid"
+		death_date = 624.1.1
+		dip = 3
+		adm = 5
+		mil = 0
+	}
+}

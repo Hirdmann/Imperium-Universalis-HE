@@ -1,0 +1,36 @@
+government = tribal
+add_government_reform = iranian_tribal_coalition_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = iranian
+primary_culture = margianan
+religion = iranian_religion
+capital = 2835
+
+155.1.1 = {
+	religion = zoroastrianism
+}
+
+232.7.1 = {
+	clear_scripted_personalities = yes
+	government = monarchy
+	add_government_reform = despotism_reform
+	capital = 2835
+
+	monarch = { #Liar Kings
+		name = "Frada"
+		dynasty = "of Margiana"
+		death_date = 236.12.20
+		dip = 3
+		adm = 3
+		mil = 6
+		leader = {
+			name = "Frada of Margiana"
+			type = general
+			fire = 6
+			shock = 6
+			manuever = 3
+			siege = 1
+		}
+	}
+}

@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = anatolian_tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = caucaso_anatolian
+primary_culture = pamphylian
+religion = greek_religion
+#religious_school = hellenic_type
+capital = 6193
+
+554.1.1 = {
+	primary_culture = greek
+	religion = greek_religion
+}
+625.1.1 = { #Piracy in Pamphylia
+	government = republic
+	add_government_reform = pirate_republic_reform
+	capital = 2201
+}

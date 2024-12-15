@@ -1,0 +1,606 @@
+bithynia_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = BIT 
+		}
+	}
+
+	kin_across_the_strait = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	attack_on_astakos = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = {
+			kin_across_the_strait
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	foundation_of_nicomedia = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {
+			attack_on_astakos
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	nicomedia:_water_supply = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			foundation_of_nicomedia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	nicomedia:_shipyards_and_armories = {
+		icon = mission_unite_home_region
+		position = 6
+		required_missions = {
+			nicomedia:_water_supply
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	nicomedia:_shipyards_and_armories = {
+		icon = mission_unite_home_region
+		position = 7
+		required_missions = {
+			nicomedia:_shipyards_and_armories
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	nicomedia:_local_silk = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = {
+			nicomedia:_shipyards_and_armories
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	foundation_of_nicaea = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			mysian_conquest
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	nicaea:_hippodamian_plan = {
+		icon = mission_unite_home_region
+		position = 11
+		required_missions = {
+			foundation_of_nicaea
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	nicaea:_rival_the_nicomedia = {
+		icon = mission_unite_home_region
+		position = 12
+		required_missions = {
+			nicaea:_hippodamian_plan
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	nicaea:_rival_them_in_silk_too! = {
+		icon = mission_unite_home_region
+		position = 13
+		required_missions = {
+			nicaea:_rival_the_nicomedia
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	rebuilding_prusias = {
+		icon = mission_unite_home_region
+		position = 15
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	prusias_ad_hypium = {
+		icon = mission_unite_home_region
+		position = 16
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+bithynia_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = BIT 
+		}
+	}
+
+	sangaros_valley_fruits = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = {
+			resettling_to_asia_minor
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			OR = {
+	farming_settlement = 2
+	small_water_irrigation = 3
+}
+fruits = 2
+		}
+		effect = { }
+	}
+
+	raid_on_chalcedon = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {
+			tribal_army
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			2151 = {	 
+   country_or_non_sovereign_subject_holds = ROOT
+}
+		}
+		effect = { }
+	}
+
+	sangaros_valley = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {
+			raid_on_chalcedon
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	down_the_river = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			sangaros_valley
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	claiming_kios = {
+		icon = mission_unite_home_region
+		position = 7
+		required_missions = {
+			down_the_river
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	mysian_conquest = {
+		icon = mission_unite_home_region
+		position = 9
+		required_missions = {
+			claiming_kios mysian_conquest
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	preserving_thracian_traditions = {
+		icon = mission_unite_home_region
+		position = 12
+		required_missions = {
+			bithynian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	attack_on_byzantium = {
+		icon = mission_unite_home_region
+		position = 13
+		required_missions = {
+			preserving_thracian_traditions
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	uniting_with_brothers = {
+		icon = mission_unite_home_region
+		position = 14
+		required_missions = {
+			attack_on_byzantium
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	bythinian_thracian_state = {
+		icon = mission_unite_home_region
+		position = 15
+		required_missions = {
+			uniting_with_brothers
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	byzantium:_byzantine_thrace = {
+		icon = mission_unite_home_region
+		position = 16
+		required_missions = {
+			bythinian_thracian_state
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+bithynia_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = BIT 
+		}
+	}
+
+	resettling_to_asia_minor = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = {
+			sangaros_valley_fruits resettling_to_asia_minor
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = { }
+	}
+
+	tribal_army = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = {
+			resettling_to_asia_minor
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			army_size_percentage = 1
+manpower_percentage = 0.50
+num_of_generals = 1
+		}
+		effect = {
+			add_army_tradition = 10
+add_army_professionalism = 0.1
+capital_scope = { region = { add_permanent_claim = ROOT } }
+		}
+	}
+
+	resisting_lydians = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {
+			tribal_army
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	resisting_persians = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = {
+			resisting_lydians
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	bithynian_independence = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			resisting_persians
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	strenghtening_the_dynasty = {
+		icon = mission_unite_home_region
+		position = 6
+		required_missions = {
+			bithynian_independence
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	crossing_the___mountains = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = {
+			strenghtening_the_dynasty
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	capture_northern_phrygia = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			crossing_the___mountains
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	bithynian_kingdom = {
+		icon = mission_unite_home_region
+		position = 11
+		required_missions = {
+			capture_northern_phrygia securing_sinope foundation_of_nicaea
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+bithynia_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = BIT 
+		}
+	}
+
+	subdue_the_mariandini = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = {
+			tribal_army
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	siege_of_heraclea_pontica = {
+		icon = mission_unite_home_region
+		position = 5
+		required_missions = {
+			subdue_the_mariandini
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	claiming_pontic_coastline = {
+		icon = mission_unite_home_region
+		position = 7
+		required_missions = {
+			siege_of_heraclea_pontica
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	attack_on_paphlagonian_princes = {
+		icon = mission_unite_home_region
+		position = 9
+		required_missions = {
+			claiming_pontic_coastline
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	securing_sinope = {
+		icon = mission_unite_home_region
+		position = 10
+		required_missions = {
+			attack_on_paphlagonian_princes
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	hellenisation = {
+		icon = mission_unite_home_region
+		position = 12
+		required_missions = {
+			bithynian_kingdom
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	accepting_pontic_identity = {
+		icon = mission_unite_home_region
+		position = 13
+		required_missions = {
+			hellenisation
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	invasion_of_colkhis = {
+		icon = mission_unite_home_region
+		position = 14
+		required_missions = {
+			accepting_pontic_identity
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	bythinian_pontic_state = {
+		icon = mission_unite_home_region
+		position = 15
+		required_missions = {
+			invasion_of_colkhis
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	heraclea:_nicomedia_pontika = {
+		icon = mission_unite_home_region
+		position = 16
+		required_missions = {
+			bythinian_pontic_state
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}
+bithynia_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = { 
+			TAG = BIT 
+		}
+	}
+
+	city_founders = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	mercenary_usage = {
+		icon = mission_unite_home_region
+		position = 2
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	vibrant_court = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	finding_new_allies = {
+		icon = mission_unite_home_region
+		position = 4
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	controlling_grain_trade = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = {
+			claiming_pontic_coastline
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	bythinian_fleet = {
+		icon = mission_unite_home_region
+		position = 11
+		required_missions = {
+			securing_sinope
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+
+	bythinian_phalanx = {
+		icon = mission_unite_home_region
+		position = 13
+		required_missions = {
+			hellenisation
+		}
+		provinces_to_highlight = { }
+		trigger = { }
+		effect = { }
+	}
+}

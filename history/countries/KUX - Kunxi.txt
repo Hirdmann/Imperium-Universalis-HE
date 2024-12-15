@@ -1,0 +1,8 @@
+government = native
+add_government_reform = pastoral_tribe_reform
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = kunxi
+religion = white_tiger_religion
+capital = 4545
+technology_group = xinan1

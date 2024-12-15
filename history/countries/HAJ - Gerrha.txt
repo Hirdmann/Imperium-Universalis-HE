@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = tribal_kingdom_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = afro_arabian
+primary_culture = gerrhan
+religion = mesopotamian_religion
+#religious_school = semitic_type
+capital = 2583
+add_treasury = 100
+
+431.1.1 = {
+	government = theocracy
+	add_government_reform = oligarchy_reform
+
+	add_mercantilism = 25
+	add_stability = 2
+	add_absolutism = 10
+	add_devotion = 100
+	add_prestige = 25
+	add_splendor = 100
+}

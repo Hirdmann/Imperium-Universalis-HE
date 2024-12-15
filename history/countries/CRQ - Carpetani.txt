@@ -1,0 +1,15 @@
+government = tribal
+add_government_reform = tribal_federation_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group = hispano_celtic
+primary_culture = celtiberian
+religion = celtic_religion
+#religious_school = north_pagan_type
+capital = 167
+
+historical_rival = AEQ
+historical_rival = VC8
+142.1.1 = {
+	add_government_reform = transhumancy_tribe_reform
+}

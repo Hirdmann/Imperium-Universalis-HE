@@ -1,0 +1,18 @@
+government = native
+add_government_reform = pastoral_tribe_reform
+government_rank = 2
+#mercantilism = 0.25
+primary_culture = pyu
+religion = burmese_religion
+capital = 6786
+technology_group = south_east_asian
+
+526.1.1 = {
+	religion = buddhism
+	religious_school = sthavira_school
+}
+
+554.1.1 = {
+	government = monarchy
+	add_government_reform = despotism_reform
+}

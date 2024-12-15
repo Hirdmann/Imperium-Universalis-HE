@@ -1,0 +1,222 @@
+berber_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			culture_group = arabic_group
+			primary_culture = mauretanian
+			primary_culture = salathian
+		}
+	}
+
+	sprite_infantry = {
+		0 = berbergfx_INFANTRY_1
+		1 = berbergfx_INFANTRY_1
+		2 = berbergfx_INFANTRY_2
+		3 = berbergfx_INFANTRY_2
+	}
+
+	sprite_cavalry = {
+		0 = berbergfx_CAVALRY_1
+		1 = berbergfx_CAVALRY_1
+		2 = berbergfx_CAVALRY_2
+		3 = berbergfx_CAVALRY_2
+	}
+
+	sprite_artillery = {
+		0 = berbergfx_ARTILLERY_1
+		1 = berbergfx_ARTILLERY_1
+		2 = berbergfx_ARTILLERY_1
+		3 = berbergfx_ARTILLERY_1
+	}
+}
+
+numidian_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = numidian
+			primary_culture = gaetuli
+		}
+
+	}
+
+	sprite_infantry = {
+		0 = unit_numidian_INFANTRY_1
+		1 = unit_numidian_INFANTRY_2
+		2 = unit_numidian_INFANTRY_3
+		3 = unit_numidian_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = unit_numidian_CAVALRY_1
+		1 = unit_numidian_CAVALRY_2
+		2 = unit_numidian_CAVALRY_3
+		3 = unit_numidian_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = unit_numidian_ARTILLERY_1
+		1 = unit_numidian_ARTILLERY_2
+		2 = unit_numidian_ARTILLERY_3
+		3 = unit_numidian_ARTILLERY_4
+	}
+}
+
+african_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			culture_group = western_african_group
+			culture_group = central_african_group
+			culture_group = cushitic_group
+			culture_group = nubian_group
+		}
+	}
+
+	sprite_infantry = {
+		0 = KUS_INFANTRY_1
+		1 = KUS_INFANTRY_1
+		2 = KUS_INFANTRY_1
+		3 = KUS_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = KUS_CAVALRY_1
+		1 = KUS_CAVALRY_1
+		2 = KUS_CAVALRY_1
+		3 = KUS_CAVALRY_1
+	}
+
+	sprite_artillery = {
+		0 = KUS_ARTILLERY_1
+		1 = KUS_ARTILLERY_1
+		2 = KUS_ARTILLERY_1
+		3 = KUS_ARTILLERY_1
+	}
+}
+
+axumite_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = DAA
+			tag = AXU
+			tag = ETH
+			tag = BLE
+		}
+	}
+
+	sprite_infantry = {
+		0 = KUS_INFANTRY_1
+		1 = KUS_INFANTRY_1
+		2 = KUS_INFANTRY_1
+		3 = KUS_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = KUS_CAVALRY_1
+		1 = KUS_CAVALRY_1
+		2 = KUS_CAVALRY_1
+		3 = KUS_CAVALRY_1
+	}
+
+	sprite_artillery = {
+		0 = KUS_ARTILLERY_1
+		1 = KUS_ARTILLERY_1
+		2 = KUS_ARTILLERY_1
+		3 = KUS_ARTILLERY_1
+	}
+}
+
+nabataean_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = NAB
+		}
+	}
+
+	sprite_infantry = {
+		0 = berbergfx_INFANTRY_1
+		1 = punicgfx_INFANTRY_1
+		2 = punicgfx_INFANTRY_1
+		3 = hellenicgfx_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = berbergfx_CAVALRY_1
+		1 = berbergfx_CAVALRY_1
+		2 = berbergfx_CAVALRY_1
+		3 = berbergfx_CAVALRY_1
+	}
+
+	sprite_artillery = {
+		0 = berbergfx_ARTILLERY_1
+		1 = berbergfx_ARTILLERY_1
+		2 = berbergfx_ARTILLERY_1
+		3 = berbergfx_ARTILLERY_1
+	}
+}
+lybian_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = lybian
+			primary_culture = garamantes
+			primary_culture = nasamones
+		}
+	}
+
+	sprite_infantry = {
+		0 = LYB_INFANTRY_1
+		1 = LYB_INFANTRY_1
+		2 = LYB_INFANTRY_1
+		3 = LYB_INFANTRY_1
+	}
+
+	sprite_cavalry = {
+		0 = LYB_CAVALRY_1
+		1 = LYB_CAVALRY_1
+		2 = LYB_CAVALRY_1
+		3 = LYB_CAVALRY_1
+	}
+
+	sprite_artillery = {
+		0 = LYB_ARTILLERY_1
+		1 = LYB_ARTILLERY_1
+		2 = LYB_ARTILLERY_1
+		3 = LYB_ARTILLERY_1
+	}
+}
+saba_units_model_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = sabaean
+			tag = MIN
+			primary_culture = qatabanian
+			primary_culture = hadramitic
+		}
+	}
+
+	sprite_infantry = {
+		0 = ASA_INFANTRY_1
+		1 = ASA_INFANTRY_1
+		2 = berbergfx_INFANTRY_2
+		3 = berbergfx_INFANTRY_2
+	}
+
+	sprite_cavalry = {
+		0 = ASA_CAVALRY_1
+		1 = ASA_CAVALRY_1
+		2 = berbergfx_CAVALRY_2
+		3 = berbergfx_CAVALRY_2
+	}
+
+	sprite_artillery = {
+		0 = ASA_ARTILLERY_1
+		1 = ASA_ARTILLERY_1
+		2 = berbergfx_ARTILLERY_1
+		3 = berbergfx_ARTILLERY_1
+	}
+}

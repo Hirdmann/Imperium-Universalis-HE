@@ -1,0 +1,20 @@
+government = theocracy
+add_government_reform = etruscan_city_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = roman
+primary_culture = oscan
+religion = roman_religion
+capital = 34
+fixed_capital = 34
+
+209.1.1 = {
+	religion = etruscan_religion
+	primary_culture = etruscan
+	add_accepted_culture = oscan
+}
+280.1.1 = {
+	religion = roman_religion
+	primary_culture = oscan
+}
+

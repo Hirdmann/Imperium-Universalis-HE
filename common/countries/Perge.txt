@@ -1,0 +1,167 @@
+#Country Name: Please see filename.
+
+graphical_culture = hellenicgfx
+
+color = { 153 76 32 }
+
+historical_idea_groups = {
+	infantry_ideas
+	maritime_trade_ideas
+	academy_ideas
+	leadership_ideas
+	diplomatic_ideas
+	domestic_government_ideas
+	mercenary_ideas
+	financial_ideas
+}
+
+historical_units = {
+	greek_base_inf_0
+	greek_base_cav_0
+	greek_base_art_0
+
+	greek_base_art_1
+	greek_base_cav_1
+
+	greek_base_inf_1
+	greek_base_art_2
+	greek_base_art_3
+
+	greek_base_cav_2
+
+	greek_base_inf_2
+	greek_base_cav_3
+	greek_base_art_4
+
+	greek_base_inf_3
+	greek_base_cav_4
+	greek_base_art_5
+	greek_base_art_6
+
+	greek_base_inf_4
+	greek_base_cav_5
+	greek_base_art_7
+	greek_base_art_8
+
+	greek_base_inf_5
+
+	greek_base_cav_6
+	greek_base_inf_6
+	greek_base_art_9
+
+	greek_base_art_10
+	greek_base_inf_7
+	greek_base_cav_7
+
+	greek_base_inf_8
+	greek_base_art_11
+
+	greek_base_inf_9
+	greek_base_cav_8
+
+	greek_base_inf_10
+	greek_base_inf_11
+	greek_base_cav_9
+	greek_base_art_12
+
+	greek_base_inf_12
+	greek_base_inf_13
+	greek_base_cav_10
+	greek_base_art_13
+
+	greek_base_cav_11
+	greek_base_art_14
+	greek_base_art_15
+
+	greek_base_inf_14
+	greek_base_cav_12
+
+	greek_base_art_16
+	greek_base_cav_13
+
+	greek_base_inf_15
+	greek_base_cav_14
+	greek_base_art_17
+	greek_base_art_18
+
+	greek_base_inf_16
+	greek_base_cav_15
+}
+
+monarch_names = {
+	"Athimiwus" = 1
+	"Apelavruvis" = 1
+	"Aphastus" = 1
+	"Aphordisiius" = 1
+	"Balus" = 1
+	"Bobas" = 1
+	"Goukalis" = 1
+	"Dexiwus" = 1
+	"Dibotus" = 1
+	"Diwidorus" = 1
+	"Diwonousius" = 1
+	"Ellothemis" = 1
+	"Estlegiius" = 1
+	"Zowamus" = 1
+	"Zoweitous" = 1
+	"Wanaxadrus" = 1
+	"Warnitous" = 1
+	"Wechidamus" = 1
+	"Wechitous" = 1
+	"Wouko" = 1
+	"Thanadorus" = 1
+	"Kedaiwis" = 1
+	"Keskeus" = 1
+	"Keskiwous" = 1
+	"Korragus" = 1
+	"Aspediius" = 1
+	"Kourasio" = 1
+	"Kudromolis" = 1
+	"Mourixous" = 1
+	"Mourmako" = 1
+	"Newocharis" = 1
+	"Orumniwus" = 1
+	"Peddatos" = 1
+	"Pellauruis" = 1
+	"Periwergus" = 1
+	"Ponameldos" = 1
+	"Preiwus" = 1
+	"Swardias" = 1
+	"Iswardias" = 1
+	"Vanaxionus" = 1
+
+	"Warnopa" = -1
+	"Artimina" = -1
+	"Echwalia" = -1
+	"Koperina" = -1
+	"Korwalina" = -1
+	"Laudika" = -1
+	"Mialina" = -1
+	"Meialina" = -1
+	"Porsopa" = -1
+	"Phordisia" = -1
+	"Xoreina" = -1
+}
+
+leader_names = {
+	Maeoniae Heraclidae Mermnadae "the Elder" "the Younger" "the Wise" "" "" "" "" "" "" "" "" "" ""
+	"of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia" "of Pamphylia"
+}
+
+ship_names = {
+	Zeus Hera Aphrodite Apollo Ares Artemis Athena Demeter Dionysus Hades Hephaestos Hermes Hestia Poseidon
+	Achlys Aether Aion Ananke Chaos Chronos Erebus Eros Gaia Hemera Hypnos Nemesis Nyx Pontus Tartaros Thalassa
+	Thanatos Uranus Koios Kreios Kronos Hyperion Iapetós Oceanós Phoibe Rhéa Theía Thémis Astería Atlas Aúra
+	Clymene Dione Helios Eurybía Lelantos Leto Menoítios Pállas Perses Prometheus Alcyoneus Chthonius Damysus
+	Mimas Pallas Porphyrion Antaeus Agathodaemon Aegaeon Achelous Benthesikyme Ceto Graeae Delphin Aello
+	Celaeno Aphros Bythos Leucothea Achilles Heracles Aiax Jason Argo Odysseus Orpheus Theseus Aegea Antiope
+	Hippolyta Iphito Marpesia Otrera Penthesilea
+}
+
+army_names = {
+	"Hulogos pro $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

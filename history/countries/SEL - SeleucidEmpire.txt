@@ -1,0 +1,302 @@
+government = monarchy
+add_government_reform = despotism_reform
+government_rank = 4
+#mercantilism = 0.25
+technology_group = diadochi
+primary_culture = seleucid
+religion = greek_religion
+#religious_school = hellenic_type
+capital = 2500
+
+historical_rival = ANE
+
+434.1.1 = {
+	#add_ruler_personality = diadochi_leader_personality
+	add_army_professionalism = 0.5
+	add_government_reform = satrap_diadochi_reform
+	government_rank = 3
+	queen = {
+		country_of_origin = BAK
+		name = "Apame"
+		dynasty = "Spitamenea"
+		birth_date = 418.1.1
+		death_date = 459.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	monarch = {
+		name = "Seleukos I Nikator"
+		dynasty = "Seleucid"
+		birth_date = 396.1.1
+		death_date = 473.9.1
+		dip = 4
+		adm = 4
+		mil = 5
+		leader = {
+			name = "Seleukos Nikator"
+			type = general
+			fire = 7
+			shock = 9
+			manuever = 4
+			siege = 2
+			death_date = 473.9.1
+		}
+	}
+	heir = {
+		name = "Antiochus"
+		monarch_name = "Antiochus I Soter"
+		dynasty = "Seleucid"
+		birth_date = 430.1.1
+		death_date = 455.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+448.1.1 = {
+	add_government_reform = diadochi_kingdom_reform
+}
+449.1.1 = { #Seleucia it's founded
+	capital = 6277
+}
+
+451.1.1 = {
+	add_absolutism = 15
+	add_army_tradition = 50
+	add_prestige = 25
+	add_stability = 2
+	government_rank = 4
+}
+
+453.1.1 = {
+	remove_accepted_culture = persian
+	remove_accepted_culture = babylonian
+	remove_accepted_culture = elymaite
+}
+
+454.1.1 = {
+	remove_historical_rival = ANE
+	historical_rival = PTO
+}
+
+473.9.1 = {
+	monarch = {
+		name = "Antiochus I Soter"
+		dynasty = "Seleucid"
+		birth_date = 430.1.1
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+496.1.1 = {
+	monarch = {
+		name = "Antiochus II Theos"
+		dynasty = "Seleucid"
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+511.1.1 = {
+	monarch = {
+		name = "Seleucus II Callinicus"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+514.1.1 = { #Seleucid capital it's moved to Antioch
+	capital = 2322
+}
+
+532.1.1 = {
+	monarch = {
+		name = "Seleucus III Callinicus"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+534.1.1 = {
+	government_rank = 5
+	monarch = {
+		name = "Antiochus III the Great"
+		dynasty = "Seleucid"
+		dip = 5
+		adm = 5
+		mil = 6
+	}
+}
+570.1.1 = {
+	government_rank = 4
+	monarch = {
+		name = "Seleucus IV Philopator"
+		dynasty = "Seleucid"
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+}
+582.1.1 = {
+	monarch = {
+		name = "Antiochus IV Epiphanes"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+594.1.1 = {
+	monarch = {
+		name = "Antiochus V Eupator"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+597.1.1 = {
+	monarch = {
+		name = "Demetrius I Soter"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+607.1.1 = {
+	monarch = {
+		name = "Alexander I Balas"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+612.1.1 = {
+	monarch = {
+		name = "Demetrius II Nicator"
+		dynasty = "Seleucid"
+		birth_date = 594.1.1
+		dip = 3
+		adm = 4
+		mil = 4
+	}
+}
+619.1.1 = {
+	monarch = {
+		name = "Antiochus VI Dionysus"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+624.1.1 = {
+	monarch = {
+		name = "Diodotus Tryphon"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+626.1.1 = {
+	monarch = {
+		name = "Antiochus VII Sidetes"
+		dynasty = "Seleucid"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+628.1.1 = {
+	monarch = {
+		name = "Demetrius II Nicator"
+		dynasty = "Seleucid"
+		birth_date = 594.1.1
+		dip = 3
+		adm = 4
+		mil = 4
+	}
+}
+631.1.1 = {
+	monarch = {
+		name = "Alexander II Zabinas"
+		dynasty = "Seleucid"
+		dip = 4
+		adm = 4
+		mil = 4
+	}
+}
+634.1.1 = {
+	monarch = {
+		name = "Seleucus V Philometor"
+		dynasty = "Seleucid"
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+}
+635.1.1 = {
+	monarch = {
+		name = "Antiochus VIII Grypus"
+		dynasty = "Seleucid"
+		dip = 4
+		adm = 3
+		mil = 3
+	}
+}
+661.1.1 = {
+	monarch = {
+		name = "Antiochus IX Cyzicenus"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+662.1.1 = {
+	monarch = {
+		name = "Seleucus VI Epiphanes"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+670.1.1 = {
+	monarch = {
+		name = "Antiochus XII Dionysus"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+674.1.1 = {
+	monarch = {
+		name = "Seleucus VII Kybiosaktes"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 4
+		mil = 2
+	}
+}
+679.1.1 = {
+	monarch = {
+		name = "Antiochus XIII Asiaticus"
+		dynasty = "Seleucid"
+		dip = 3
+		adm = 3
+		mil = 2
+	}
+}

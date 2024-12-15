@@ -1,0 +1,8 @@
+bookmark = {
+	name = "SULLA_CIVIL_WAR_TITLE"
+	desc = "SULLA_CIVIL_WAR_DESC"
+	date = 671.1.1
+
+	country = RRO
+	country = R1C
+}

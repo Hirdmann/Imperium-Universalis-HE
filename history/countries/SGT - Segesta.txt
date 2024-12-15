@@ -1,0 +1,13 @@
+government = republic
+add_government_reform = league_reform
+government_rank = 2
+#mercantilism = 0.25
+technology_group =  roman
+primary_culture = elymi
+religion = roman_religion
+capital = 6479
+
+historical_rival = SLN
+historical_friend = LYL
+
+add_army_professionalism = 0.1

@@ -1,0 +1,14 @@
+
+culture = tsushiman
+religion = shinto
+capital = ""
+trade_goods = unknown
+hre = no
+base_tax = 0
+base_production = 0
+base_manpower = 2
+center_of_trade = 1
+native_size = 30
+native_ferocity = 10
+native_hostileness = 10
+discovered_by = korean

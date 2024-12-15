@@ -1,0 +1,39 @@
+government = republic
+add_government_reform = greek_polis_reform
+government_rank = 1
+#mercantilism = 0.25
+technology_group = greek_techgroup
+primary_culture = doric
+religion = greek_religion
+capital = 3
+fixed_capital = 3
+
+historical_rival = SGT
+historical_rival = AKR
+
+add_army_professionalism = 0.1
+
+244.1.1 = {
+	government = monarchy
+	add_government_reform = aristocratic_monarchy_reform
+	monarch = {
+		name = "Peithagoras"
+		dynasty = "of Selinous"
+		death_date = 254.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+254.1.1 = {
+	monarch = {
+		name = "Euryleon"
+		dynasty = "of Sparta"
+		death_date = 257.1.1
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+425.1.1 = { primary_culture = italiote }

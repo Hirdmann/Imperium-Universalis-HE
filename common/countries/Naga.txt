@@ -1,0 +1,245 @@
+#Country Name: Please see filename.
+
+graphical_culture = indiangfx
+
+color = { 82 48 91 }
+
+preferred_religion = buddhism
+
+historical_idea_groups = {
+	fortress_ideas
+	syncretism_ideas
+	maritime_trade_ideas
+	skirmisher_ideas
+	agraculture_ideas
+	raider_ideas
+	domestic_government_ideas
+	naval_ideas
+}
+
+historical_units = {
+	0_indian_levys
+	0_early_archers
+	0_chariots
+
+	5_early_indian_spearmen
+	5_early_bamboo_archers
+	5_light_indian_cavalry
+
+	10_indian_kshatriyas
+	10_adv_archers
+	10_adv_indian_cavalry
+
+	15_late_indian_spearmen
+	15_armored_skirmishers
+	15_indian_elephants
+
+	20_adv_indian_kshatriyas
+	20_late_archers
+	20_heavy_indian_cavalry
+
+	25_indian_pikemen
+	25_indian_noble_archers
+	25_indian_war_elephants
+}
+
+monarch_names = {
+	#Naga
+	"Vasuki" = 10
+	"Padma" = 10
+	"Ahiraja" = 10
+	"Shesha" = 10
+	"Karkotaka" = 10
+	"Takshaka" = 10
+	"Mahapadma" = 10
+	"Shankhapala" = 10
+	"Kulika" = 10
+	"Suparnadhyaya" = 10
+	"Ananta" = 10
+	"Adisesha" = 10
+	"Bhutanandi" = 10
+	"Shishunandi" = 10
+	"Yashanandi" = 10
+	"Purushadata" = 10
+	"Usabhadata" = 10
+	"Kamadata" = 10
+	"Bhavadata" = 10
+	"Shivanandi" = 10
+	"Rakshasa" = 10
+
+	#Solar Dynasty
+	"Shaivya" = -1
+	"Taramati" = -1
+	"Kausalya" = -1
+	"Manthara" = -1
+	#Lunar Dynasty
+	"Aditi" = -1
+	"Anasuya" = -1
+	"Ila" = -1
+	"Urjasvati" = -1
+	"Tara" = -1
+	"Urvashi" = -1
+	"Ashoka Sundari" = -1
+	"Sharmishtha" = -1
+	"Menaka" = -1
+	"Gadhi" = -1
+	"Satyavati" = -1
+	"Renuka" = -1
+	"Sakuntala" = -1
+	"Rathandari" = -1
+	"Sunanda" = -1
+	"Suvarna" = -1
+	"Jayanti" = -1
+	"Yasodara" = -1
+	"Chhaya" = -1
+	"Tapti" = -1
+	"Shubangi" = -1
+	"Amruta" = -1
+	"Arundhati" = -1
+	"Satyavati" = -1
+	"Ganga" = -1
+	"Adrusanti" = -1
+	"Ambalika" = -1
+	"Ambika" = -1
+	"Vysa" = -1
+	"Gandhari" = -1
+	"Dushala" = -1
+	"Bhanumati" = -1
+	"Madri" = -1
+	"Kunti" = -1
+	"Draupadi" = -1
+	"Hidimbi" = -1
+	"Draupati" = -1
+	"Subhadra" = -1
+	"Ulupi" = -1
+	"Chitrangada" = -1
+	"Vijaya" = -1
+	"Baladhara" = -1
+	"Ahilavati" = -1
+	"Madravati" = -1
+	"Uttara" = -1
+	"Sudeshna" = -1
+
+	"Amrapali" = -1
+	"Chandana" = -1
+	"Kumaradevi" = -1
+	"Kurangi" = -1
+	"Malavika" = -1
+	"Maya" = -1
+	"Nagadevi" = -1
+	"Nagamunda" = -1
+	"Prajapati" = -1
+	"Sanghamitta" = -1
+	"Shakata" = -1
+	"Subandhu" = -1
+	"Gopala-Mata" = -1
+	"Magandiya" = -1
+	"Samavati" = -1
+	"Ratnavali" = -1
+	"Vasavadatta" = -1
+	"Prajapati" = -1
+	"Sundari Nanda" = -1
+	"Maya" = -1
+	"Mahajapati Gotami" = -1
+	"Amita" = -1
+	"Pamita" = -1
+	"Anjana" = -1
+	"Kaccana	" = -1
+	"Yashodhara" = -1
+	"Mallika" = -1
+	"Kanakamalika" = -1
+	"Sudakshina" = -1
+	"Indumati" = -1
+	"Sumitra" = -1
+	"Kaikeyi" = -1
+	"Amritaprabha" = -1
+	"Shanta" = -1
+	"Kaushalya" = -1
+	"Mrigavati" = -1
+	"Shrutakirti" = -1
+	"Mandavi" = -1
+	"Chandrabhaga" = -1
+	"Sunayana" = -1
+	"Sita" = -1
+	"Urmila" = -1
+	"Kosala Devi" = -1
+	"Chellana" = -1
+	"Kshema" = -1
+	"Khema" = -1
+	"Nanda" = -1
+	"Padumavati" = -1
+	"Ambapali" = -1
+	"Vajira" = -1
+	"Subadhra" = -1
+	"Devi" = -1
+	"Karuvaki" = -1
+	"Padmavati" = -1
+	"Asandhimitra" = -1
+	"Tishyaraksha" = -1
+	"Charumati" = -1
+	"Sanghamitra" = -1
+	"Subhadrangi" = -1
+	"Kalyani" = -1
+	"Dharma" = -1
+	"Charumitra" = -1
+	"Durdhara" = -1
+	"Amitanita" = -1
+	"Kanchanamala" = -1
+	"Dharini" = -1
+	"Abha" = -1
+	"Ghazi" = -1
+	"Kamil" = -1
+	"Nabil" = -1
+	"Nuri" = -1
+	"Oorja" = -1
+}
+
+leader_names = {
+	Abhyasi Acharya Archaka Ayya Baba Babu Bhagavan Bhagavata Bhai Chettiar Caturdhara Chela Desamukhi Dvija Goswami Guru Jagadguru
+	Kumara Mahantam Mahatma Mantrik Melshanti Muni Nayaka Pandita Paramahamsa Parampara Rajarishi Rajaguru Rishi Sadhaka Samanta
+	Satguru Savai Shaunaka Shishya Sri Thakur Lambardar Patvari Ghatwal Pradhan Tal "Desa-Ratna" "Desa-Bandhu" "Desa-Priya" Mahamana
+	Sardar
+}
+
+ship_names = {
+	Arjuna Brahma Bharata Bhisma Kshatriya Yudhishthira Kunti Vanu Viraja Shakuntala Dusyanta Sahadeva Pandu Karna Nakula Kunti
+	Matsya Madra Purus Bharatas Yadavas Barbaras Mleccha Dharmaraja Gandharva Naga Yakksha Pandavas Kauravas
+	Duryodhana Dushana Vikarna Yuyutsu Dussala Kiratas Gandhari Kaikeyas Dhritarashtra Sudas Kikata Nishadas Jambudvipa Bharatavarsha
+	Cedis Yadus Paravatas Bhalanas Vricivantas Turvashas Srinjayas Krivis Druhyus Vaikarnas Anus Pakthas Indra Agni Varuna Parjanya
+	Vayu Vishnu Rama Shiva Saraswati Parvati Sati Ganga Sindhu Pulindas Brahmaputra Malaya Narmada Mahanadi Coleyas Gada Parashu
+	Brahmana Yamuna Sutudri Vipas Parusni Vitasta Krumu Gomati Asikni Kubha Kusava Vitasta Sukracharya Dronacharya "Sapta Sindhavah"
+	Saptarishi Manu Kratu Pulaha Pulastya Atri Angiras Vasistha Marichi "Veda Vyasa" Vidura Patala Sakadvipa Maharishi Satyavati Shantanu
+	Jayadratha Veda Saka Prithvi Prithu Rudra Soma Yama Sarasvati Aditi Mitra Ushas Surya Himavan Hemakuta Nisadha Vyndhia Meru Nila
+	Ghandamadana Malyavan Uttarakuru Ramya Hairanvata Bhadrasva Ketumala Ilavrita Harivarsha Kimpurusha Saptadvipas Krauncadvipa Puskaradvipa
+	Naval Makanda Katambu Banyan Deva Mahadeva Asura Nandana Caitaratha Vaibhraja Madhyadesa Aruna Jambu Sumeru Artha Kama Dharma Ramadharma
+	Lakshmi Buddhi Kirti Dhriti Hri Sri Lanka Hanuman Ramasethu Sita Shakti Bhakti Moksha Vanara Ravana Vibhisana Dharmachakra "Danda Niti"
+	Danda "Matsya Nyaya" Trivarga Asvamedha Purohita Vaishyas Senapati Dharmasastra Rajasuya Raja Chakravartin Maharaja Janapada Rajadesa
+	Visvakarman Brihaspati Manyu Vastospasti Dadhikras Purusha Devi Yajna Aranyani Ishvara Yaska Panini Chanakya Kautilya Samhita Avatar
+	Nagaraja "Balarama-Samsakarshana" Audumbara Arya Kalki Parashurama Bhishma Jamadagni Vichitravirya Narada Krishna Pashupati	Kartikeya
+	Homa Samsara Bhrigu Kutsa Vishvamitra Kanva Rishaba Vamadeva Kashyapa "Gautama Maharishi" Bharadvaja Atharvan Yajnavalkya Subhadra
+	Draupadi Prativindhya Shatanika Sutasoma Shrutasena Shrutakarma Drupada Svayamvara Dushasana "Akshay Patra" Durvasa Kamyaka Vriddhakshatra
+	Virata Sudeshna Kichaka Shalya Shikhandi Shishupala Vasudeva Ekalavya Ghatotkacha Vrishasena Vrishaketu Uttaraa Uttara Upapandavas Kauravya
+	Ulupi Shakuni Savitri Sanjaya Pururavas Ikshvaku Candravamsa Somavamsa Puru Yadu Urvashi Partha Dhananjaya Nala Nahusha Madri Kritavarma
+	Kripa Jarasandha Hidimbi Hidimba Drona Dhrishtadyumna Damayanti Balarama Abhimanyu Amba Ambika Ambalika "Samudra Manthana" Amrita
+	Apsaras Varuni Kamadhenu Airavata "Abhra-Matanga" Bali Uchhaishravas Kaustubha  Ratnam Indraloka Sharanga "Sudarshana Chakra" Narayanastra
+	Vaishnavastra Kaumodaki Nandaka Kodanda Kodandapani Kodandadhari "Shiva Danush" Pinaka Pralaya Gandiva Vijaya Chandra Dhanvantari Vaidya
+	Halahala Shankha Kalpavriksha Rahu Ketu Svarbhanu Rahuketu Shukra Garuda Hiranyagarbha Devaloka Amaravati Svarga Trimurti Trideva Budha
+	Mangala Shani Sanaischara Mahi Chambal Banas Shipra Sabarmati Bhadar Tapi Kasai Gandak Son Damodar Kosi Baghmati Gomati Ghaghra Sarda
+	Betwa Subarnarekha Indravati Sabari Godavari Tungabhadra Manjra Penganga Wardha Wainganga Shetrunjaya Luni Yajnasena Tapati Akshauhini
+	Vasishtha Parama Prabhadrakas Darsanika Aruni Uddalaka Svetaketu Ashvathama Upasana Shudra
+
+	Panchala Kuru Gandhara Kosala Kamboja Sivis Sindhusauviras Kashi Magadha Vanga Samatata Avanti Assaka Ashamaka Konkana Surasena
+	Vatsa Trigarta Kasmira Nepa Vajji Vriji Mithila Videha Kamarupa Pundra Anga Suhma Prasuhma Chedi Kalinga Utkala Anupa Dandaka Deccan
+	Shurparaka Saurashtra Dvaraka Anarta Abhira Gomanta Karanataka Sinhala Kuntala Andhra Dasarna "Dakshina Kosala" Koliyas Sakyas Sabara
+	Heheya Ksudraka Yaudheya Salwa Salva Ayodhya Mathura Kurukshetra Hastinapura Kausambi Malla Pava Pataliputra Girivraja Rajapura Taxila
+	Tamralipta Radha Odra Audra Telinga Vidharba Pragjyotisha Aparanta Mulaka Kaccha Sravasti Vaishali Rajagriha Chola Pandya Kerala Anuradhapura
+	Tamraparni Bahlika
+}
+
+army_names = {
+	"Army of $PROVINCE$"
+}
+
+fleet_names = {
+	"Ships of $PROVINCE$"
+}

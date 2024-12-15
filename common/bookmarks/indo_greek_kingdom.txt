@@ -1,0 +1,8 @@
+bookmark = {
+	name = "INDO_GREEK_KINGDOM_TITLE"
+	desc = "INDO_GREEK_KINGDOM_DESC"
+	date = 578.1.1
+
+	country = IGK
+	country = GBK
+}

@@ -1,0 +1,122 @@
+government = tribal
+add_government_reform = steppe_horde_reform
+government_rank = 4
+#mercantilism = 0.25
+technology_group = scythian_tech
+primary_culture = scythian
+religion = scythian_religion
+#religious_school = nomad_type
+capital = 7345
+
+142.1.1 = {
+	monarch = {
+		name = "Spargapaitha"
+		dynasty = "Paralatae"
+		death_date = 164.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}	
+	add_yearly_manpower = -3
+}
+
+164.1.1 = {
+	monarch = {
+		name = "Lykos"
+		dynasty = "Paralatae"
+		death_date = 184.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+184.1.1 = {
+	monarch = {
+		name = "Gnouros"
+		dynasty = "Paralatae"
+		death_date = 204.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+204.1.1 = {
+	monarch = {
+		name = "Sauaios"
+		dynasty = "Paralatae"
+		death_date = 224.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+	capital = 1978
+}
+
+224.1.1 = {
+	monarch = {
+		name = "Hithamthrush"
+		dynasty = "Paralatae"
+		death_date = 264.1.1
+		dip = 4
+		adm = 3
+		mil = 6
+	}
+}
+
+264.1.1 = {
+	monarch = {
+		name = "Aryapaitha"
+		dynasty = "Paralatae"
+		death_date = 314.1.1
+		dip = 4
+		adm = 2
+		mil = 4
+	}
+}
+
+314.1.1 = {
+	monarch = {
+		name = "Skula"
+		dynasty = "Paralatae"
+		death_date = 324.1.1
+		dip = 1
+		adm = 4
+		mil = 1
+	}
+}
+
+324.1.1 = {
+	monarch = {
+		name = "Oktamasades"
+		dynasty = "Paralatae"
+		death_date = 334.1.1
+		dip = 3
+		adm = 2
+		mil = 4
+	}
+}
+
+334.1.1 = {
+	monarch = {
+		name = "Ateas"
+		dynasty = "Paralatae"
+		death_date = 415.1.1
+		dip = 4
+		adm = 3
+		mil = 5
+	}
+}
+
+415.1.1 = {
+	monarch = {
+		name = "Agaros"
+		dynasty = "Paralatae"
+		death_date = 454.1.1
+		dip = 3
+		adm = 1
+		mil = 2
+	}
+}
+

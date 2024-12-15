@@ -1,0 +1,162 @@
+# Fallback defaults
+# Will pick the first valid one it finds in list
+
+default_monarchy = {
+	rank = {
+		1 = DESPOTIC_CITY
+		2 = DESPOTISM
+		3 = KINGDOM
+		4 = GREAT_KINGDOM
+		5 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DESPOT
+		2 = DESPOT
+		3 = KING
+		4 = KING
+		5 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = FEMALE_DESPOT
+		2 = FEMALE_DESPOT
+		3 = QUEEN
+		4 = QUEEN
+		5 = EMPRESS
+	}
+
+	government_reform = monarchy_mechanic
+
+	trigger = {
+		government = monarchy
+	}
+}
+
+default_tribe = {
+	rank = {
+		1 = CLAN
+		2 = TRIBE_FEDERATION
+		3 = TRIBE_FEDERATION
+		4 = GREAT_TRIBE
+		4 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = CHIEF
+		2 = CHIEF
+		3 = CHIEF
+		4 = GREAT_CHIEF
+		5 = GREAT_CHIEF
+	}
+
+	ruler_female = {
+		1 = CHIEFNESS
+		2 = CHIEFNESS
+		3 = CHIEFNESS
+		4 = GREAT_CHIEFNESS
+		5 = GREAT_CHIEFNESS
+	}
+
+	government_reform = tribe_mechanic
+
+	trigger = {
+		government = tribal
+	}
+}
+
+default_native = {
+	rank = {
+		1 = CLAN
+		2 = TRIBE_FEDERATION
+		3 = TRIBE_FEDERATION
+		4 = GREAT_TRIBE
+		4 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = CHIEF
+		2 = CHIEF
+		3 = CHIEF
+		4 = GREAT_CHIEF
+		5 = GREAT_CHIEF
+	}
+
+	ruler_female = {
+		1 = CHIEFNESS
+		2 = CHIEFNESS
+		3 = CHIEFNESS
+		4 = GREAT_CHIEFNESS
+		5 = GREAT_CHIEFNESS
+	}
+
+	government_reform = native_basic_reform
+
+	trigger = {
+		government = native
+	}
+}
+
+default_oligarchy = {
+	rank = {
+		1 = CITY
+		2 = OLIGARCHY
+		3 = OLIGARCHY
+		4 = GREAT_OLIGARCHY
+		4 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = CONSUL
+		2 = CONSUL
+		3 = CONSUL
+		4 = GRAND_CONSUL
+		5 = GREAT_CONSUL
+	}
+
+	ruler_female = {
+		1 = CONSULESS
+		2 = CONSULESS
+		3 = CONSULESS
+		4 = GRAND_CONSULESS
+		5 = GREAT_CONSULESS
+	}
+
+	government_reform = theocracy_mechanic
+
+	trigger = {
+		government = theocracy
+	}
+}
+
+default_republic = {
+	rank = {
+		1 = CITY
+		2 = MINOR_REPUBLIC
+		3 = REPUBLIC
+		4 = GREAT_REPUBLIC
+		5 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = CONSUL
+		2 = CONSUL
+		3 = CONSUL
+		4 = GRAND_CONSUL
+		5 = GREAT_CONSUL
+	}
+
+	ruler_female = {
+		1 = CONSULESS
+		2 = CONSULESS
+		3 = CONSULESS
+		4 = GRAND_CONSULESS
+		5 = GREAT_CONSULESS
+	}
+
+	government_reform = republic_mechanic
+
+	trigger = {
+		government = republic
+	}
+}

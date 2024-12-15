@@ -1,0 +1,95 @@
+country_decisions = {
+
+	# greek_colonization_alert = {
+    #     color = { 195 170 0 }
+	# 	major = yes
+	# 	potential = {
+	# 		ai = no
+	# 		has_country_flag = utility_decisions_yes
+	# 		NOT = { has_country_flag = read_greek_colonisation_alert_flag }
+	# 		capital_scope = {
+	# 			OR = {
+	# 				superregion = scythia_superregion
+	# 				superregion = armenia_superregion
+	# 				superregion = asia_superregion
+	# 				superregion = italia_superregion
+	# 				superregion = haemusia_superregion
+	# 				superregion = hispania_superregion
+	# 			}
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		always = yes
+	# 	}
+	# 	effect = {
+	# 		set_country_flag = read_greek_colonisation_alert_flag
+	# 	}
+	# }
+
+	adopt_greek_culture = {
+        color = { 245 160 60 }
+		potential = {
+			primary_culture = old_macedon
+		}
+		allow = {
+			is_at_war =  no
+			is_tribal = no
+			dip_tech = 8
+			any_owned_province = { culture_group = hellenic_group }
+		}
+		effect = {
+			custom_tooltip = adopt_greek_culture_tooltip
+			add_adm_power = 250
+			add_dip_power = 250
+			add_mil_power = 250
+			hidden_effect = {
+				change_primary_culture = macedon
+				country_event = {
+					id = new_ideas.1
+				}
+				every_province = {
+					limit = {
+						culture = old_macedon
+					}
+					change_culture = macedon
+				}
+				every_country = {
+					limit = {
+						primary_culture = old_macedon
+					}
+					change_primary_culture = macedon
+					country_event = {
+						id = new_ideas.1
+					}
+				}
+			}
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	royal_pages = {
+        color = { 245 160 60 }
+		potential = {
+			tag = MAC
+			NOT = { has_country_modifier = royal_pages_modifier }
+		}
+		allow = {
+			is_at_war =  no
+			mil_tech = 8
+		}
+		effect = {
+			add_mil_power = -50
+			add_country_modifier = {
+				name = royal_pages_modifier
+				duration = -1
+			}
+		}
+		ai_importance = 50
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
