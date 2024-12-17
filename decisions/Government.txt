@@ -504,6 +504,7 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			NOT = { corruption = 20 }
+			NOT = { crown_land_share = 25 }
 		}
 		effect = {
 			add_absolutism = -10

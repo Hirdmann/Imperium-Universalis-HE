@@ -20,7 +20,7 @@ country_event = {
 			country_event = {  id = new_ideas.1 }
 		}
 		7430 = {
-			cede = VEN
+			cede_province = VEN
 			add_colonysize = 1000
 			move_capital_effect = yes
 			add_core = VEN

@@ -56,13 +56,13 @@ kition_missions_1 = {
 		required_missions = { ZY2_patronize_rhodians }
 		provinces_to_highlight = { area = rhodiorum_area }
 		trigger = {
-			all_country = {
+			all_known_country = {
 				limit = {
 					capital_scope = { area = rhodiorum_area }
 				}
 				has_opinion = {
 					who = ROOT
-					value = 175
+					value = 150
 				}
 				guaranteed_by = ROOT
 			}

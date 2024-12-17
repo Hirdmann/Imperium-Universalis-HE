@@ -10,7 +10,7 @@ base_manpower = 4
 trade_goods = ceramic
 capital = ""
 is_city = yes
-enter_of_trade = 1
+center_of_trade = 1
 #discovered_by = roman
 #discovered_by = greek_techgroup
 discovered_by = punic
@@ -99,17 +99,17 @@ discovered_by = caucasian
 459.1.1 = {
 	add_core = PRS
 	controller = PRS
-	owner = PRS	
+	owner = PRS
 	remove_core = SEL
 }
-535.1.1 = {	
+535.1.1 = {
 	add_core = SEL
 	owner = SEL
 	controller = SEL
 }
 578.1.1 = {
 	owner = PRS
-	controller = PRS	
+	controller = PRS
 	remove_core = SEL
 	culture = persian
 }

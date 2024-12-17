@@ -8,7 +8,7 @@ country_event = {
 	title = "SEA_events.1.t"
 	desc = "SEA_events.1.d"
 	picture = tradecity
-	
+
 	trigger = {
 		primary_culture = pyu
 		any_province = {
@@ -21,14 +21,14 @@ country_event = {
 				region = burma_region
 				region = upper_burma_region
 				region = airavati_region
-			}	
+			}
 		}
 	}
 
 	mean_time_to_happen = {
 		months = 40
 	}
-	
+
 	option = {
 		name = "SEA_events.1.a"
 		random_province = {
@@ -53,7 +53,7 @@ province_event = {
 	title = "SEA_events.1.t"
 	desc = "SEA_events.1.d"
 	picture = tradecity
-	
+
 	trigger = {
 		OR = {
 			culture = palaungic
@@ -69,15 +69,15 @@ province_event = {
 
 	mean_time_to_happen = {
 		months = 80
-		modifer = {
-			factor = 3
-			OR = {
-				area = bassein_area
-				area = zhanli_area
+			modifier = {
+				factor = 3
+				OR = {
+					area = bassein_area
+					area = zhanli_area
+				}
 			}
-		}
 	}
-	
+
 	option = {
 		name = "SEA_events.1.a"
 		change_culture = owner

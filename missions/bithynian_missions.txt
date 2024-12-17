@@ -64,7 +64,7 @@ bithynia_1 = {
 			add_splendor = 100
 			2150 = {
 				change_province_name = "Nicomedia"
-				capital = "Nicomedia"
+				rename_capital = "Nicomedia"
 			}
 		}
 	}
@@ -179,7 +179,7 @@ bithynia_1 = {
 		effect = {
 			add_prestige = 10
 			add_splendor = 100
-			2154 = { change_province_name = "Nicaea" capital = "Nicaea" }
+			2154 = { change_province_name = "Nicaea" rename_capital = "Nicaea" }
 		}
 	}
 
@@ -233,7 +233,7 @@ bithynia_1 = {
 		effect = {
 			add_prestige = 10
 			add_splendor = 100
-			2153 = { change_province_name = "Prusias" capital = "Prusias" }
+			2153 = { change_province_name = "Prusias" rename_capital = "Prusias" }
 		}
 	}
 
@@ -250,7 +250,7 @@ bithynia_1 = {
 		effect = {
 			add_prestige = 10
 			add_splendor = 100
-			2187 = { change_province_name = "Prusias ad Hypium" capital = "Prusias ad Hypium" }
+			2187 = { change_province_name = "Prusias ad Hypium" rename_capital = "Prusias ad Hypium" }
 		}
 	}
 }
@@ -1076,7 +1076,7 @@ bithynia_4 = {
 		}
 		effect = {
 			2180 = {
-				capital = "Nicomedia Pontika"
+				rename_capital = "Nicomedia Pontika"
 				change_province_name = "Nicomedia Pontika"
 				add_base_tax = 1
 				add_base_production = 2

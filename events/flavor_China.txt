@@ -1266,7 +1266,7 @@ country_event = {
 	desc = "china.31.d"
 	picture = archemedis
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = ZHO
 		exists = CHU
@@ -1525,7 +1525,7 @@ country_event = {
 		event_target:zho_small_nation_pick = {
 			country_event = { id = china.35 }
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 15
 			modifier = {
 				factor = 4
@@ -1541,7 +1541,7 @@ country_event = {
 	}
 	option = {
 		name = "china.33.c"
-		ai_chance = { 
+		ai_chance = {
 			factor = 10
 			modifier = {
 				factor = 2
@@ -2443,9 +2443,9 @@ country_event = {
 	option = {
 		name = "china.49.b"
 		add_prestige = 10
-		add_country_modifier = { 
-			name = bao_took_concubine 
-			duration = 3650 
+		add_country_modifier = {
+			name = bao_took_concubine
+			duration = 3650
 		}
 		add_historical_friend = BAO
 		ai_chance = {
@@ -2557,7 +2557,7 @@ country_event = {
 		create_alliance = LIO
 		set_country_flag = wey_promised_liberate_li
 		custom_tooltip = wey_li_tooltip_three
-		ai_chance = { 
+		ai_chance = {
 			factor = 40
 		}
 	}
@@ -2568,7 +2568,7 @@ country_event = {
 		LIO = {
 			add_historical_rival = WEY
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 60
 		}
 	}
@@ -2908,7 +2908,7 @@ country_event = {
 			grant_independence = yes
 			form_coalition_against = CHU
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 70
 		}
 	}
@@ -2945,7 +2945,7 @@ country_event = {
 		4415 = {
 			remove_core = CHU
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 30
 		}
 	}
@@ -2991,7 +2991,7 @@ country_event = {
 		name = "china.60.b"
 		trigger = { employed_advisor = { name = "Wangsun Man" } }
 		add_prestige = 5
-		ai_chance = { 
+		ai_chance = {
 			factor = 99
 		}
 	}
@@ -4353,7 +4353,7 @@ country_event = {
 	title = "china.85.t"
 	desc = "china.85.d"
 	picture = trade
-	
+
 	trigger = {
 		is_papal_controller = yes
 		curia_treasury_size = 1500
@@ -4776,7 +4776,7 @@ country_event = {
 	title = "china.90.t"
 	desc = "china.90.d"
 	picture = deligation
-	
+
 	trigger = {
 		religion = chinese_religion
 		is_at_war = no
@@ -4888,7 +4888,7 @@ province_event = {
 	title = "china.92.t"
 	desc = "china.92.d"
 	picture = caravan
-	
+
 	trigger = {
 		culture = yinyi
 		owner = {
@@ -4908,7 +4908,7 @@ province_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -4933,13 +4933,8 @@ province_event = {
 			factor = 0.8
 			is_prosperous = yes
 		}
-		modifier = {
-			factor = 0.9
-			stability = 3
-		}
 	}
-	
-	
+
 	option = {
 		name = "china.92.a"
 		if = {
@@ -4976,7 +4971,7 @@ province_event = {
 	title = "china.93.t"
 	desc = "china.93.d"
 	picture = caravan
-	
+
 	trigger = {
 		culture = dongyi
 		owner = {
@@ -4988,7 +4983,7 @@ province_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -5009,10 +5004,6 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.9
-			stability = 3
-		}
-		modifier = {
-			factor = 0.9
 			is_year = 254
 		}
 		modifier = {
@@ -5028,8 +5019,8 @@ province_event = {
 			}
 		}
 	}
-	
-	
+
+
 	option = {
 		name = "china.92.a"
 		change_culture = owner
@@ -5045,14 +5036,14 @@ country_event = {
 	desc = "china.94.d"
 	picture = deligation
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		name = "china.94.a"
 		change_religion = chinese_religion
 		add_stability = -1
 		country_event = { id = chinese_school_events.1 }
-		ai_chance = { 
+		ai_chance = {
 			factor = 95
 		}
 	}
@@ -5071,7 +5062,7 @@ country_event = {
 		custom_tooltip = qin_relig_tooltip_one
 		hidden_effect = {
 			every_known_country = {
-				limit = { 
+				limit = {
 					religion = chinese_religion
 				}
 				add_opinion = {
@@ -5081,7 +5072,7 @@ country_event = {
 				}
 			}
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 5
 		}
 	}
@@ -5099,7 +5090,7 @@ country_event = {
 	title = "china.95.t"
 	desc = "china.95.d"
 	picture = deligation
-	
+
 	trigger = {
 		has_country_flag = zhuxiatouxian_wang
 		religion = chinese_religion
@@ -5107,11 +5098,11 @@ country_event = {
 			has_global_flag = zhanguokaishi
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = "china.92.a"
 		clr_country_flag = zhuxiatouxian_wang
@@ -5120,7 +5111,7 @@ country_event = {
 }
 
 ########################################################################################
-# zhou gives mandate to ying to attack chu 
+# zhou gives mandate to ying to attack chu
 ########################################################################################
 country_event = {
 	id = china.96
@@ -5128,7 +5119,7 @@ country_event = {
 	desc = "china.96.d"
 	picture = deligation
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = YIN
 		religion = chinese_religion
@@ -5141,11 +5132,11 @@ country_event = {
 			owns = 4385
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 25
 	}
-	
+
 	option = {
 		name = "china.96.a"
 		if = {
@@ -5172,7 +5163,7 @@ country_event = {
 }
 
 ########################################################################################
-# bazhu tribute fix - choose what to give to bazhu 
+# bazhu tribute fix - choose what to give to bazhu
 ########################################################################################
 country_event = {
 	id = china.97
@@ -5180,8 +5171,8 @@ country_event = {
 	desc = "china.97.d"
 	picture = deligation
 	is_triggered_only = yes
-	
-	
+
+
 	option = {
 		name = "china.97.a"
 		add_years_of_income = -0.09
@@ -5217,7 +5208,7 @@ country_event = {
 	title = "china.97.t"
 	desc = "china.97.d"
 	picture = deligation
-	
+
 	trigger = {
 		is_part_of_hre = yes
 		hre_reform_passed = emperor_hofgericht
@@ -5226,11 +5217,11 @@ country_event = {
 			days = 1825
 		}
 	}
-	
+
 	immediate = {
 		clr_country_flag = china_chose_tribute_tosend
 	}
-	
+
 	option = {
 		name = "china.97.a"
 		add_years_of_income = -0.09
@@ -5268,7 +5259,7 @@ country_event = {
 	picture = deligation
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	option = {
 		name = "china.99.a"
 		add_years_of_income = 0.05
@@ -5285,7 +5276,7 @@ country_event = {
 	picture = deligation
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	option = {
 		name = "china.100.a"
 		add_yearly_manpower = 0.1
@@ -5302,7 +5293,7 @@ country_event = {
 	picture = deligation
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	option = {
 		name = "china.101.a"
 		add_prestige = 2
@@ -5318,13 +5309,13 @@ country_event = {
 	desc = "china.102.d"
 	picture = city
 	major = yes
-	
+
 	trigger = {
 		tag = ZHO
 		has_reform = free_city_zhou
 		total_development = 160
 	}
-	
+
 	option = {
 		name = "china.102.a"
 		add_government_reform = chinese_feudalism_reform
@@ -5339,14 +5330,14 @@ country_event = {
 	title = "china.103.t"
 	desc = "china.103.d"
 	picture = HRE_eventPicture
-	
+
 	trigger = {
 		has_country_flag = zhuxiatouxian_YuFang
 		NOT = {
 			religion = chinese_religion
 		}
 	}
-	
+
 	option = {
 		name = "china.92.a"
 		remove_country_modifier = xnc_yufang_mod
@@ -5364,7 +5355,7 @@ country_event = {
 	desc = "china.104.d"
 	picture = guard
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = YON
 		CHU = {
@@ -5400,11 +5391,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = "china.104.a"
 		create_alliance = BII
@@ -5413,7 +5404,7 @@ country_event = {
 			add_manpower = 2
 			add_war_exhaustion = -2
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 	}
@@ -5436,7 +5427,7 @@ country_event = {
 	desc = "china.105.d"
 	picture = guard
 	fire_only_once = yes
-	
+
 	trigger = {
 		is_year = 145
 		NOT = {
@@ -5450,11 +5441,11 @@ country_event = {
 			has_country_flag = chu_began_bii_war
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 6
 	}
-	
+
 	option = {
 		name = "china.105.a"
 		set_country_flag = chu_began_bii_war
@@ -5482,7 +5473,7 @@ country_event = {
 			who = BII
 			casus_belli = cb_insult
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 95
 		}
 	}
@@ -5543,7 +5534,7 @@ country_event = {
 			who = BII
 			modifier = opinion_didnt_go_against
 		}
-		ai_chance = { 
+		ai_chance = {
 			factor = 5
 		}
 	}
@@ -5558,7 +5549,7 @@ country_event = {
 	desc = "china.106.d"
 	picture = guard
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = CHU
 		has_country_flag = chu_began_bii_war
@@ -5575,11 +5566,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = "china.106.a"
 		add_prestige = 5
@@ -5612,7 +5603,7 @@ country_event = {
 	picture = guard
 	fire_only_once = yes
 	major = yes
-	
+
 	trigger = {
 		tag = BII
 		CHU = {
@@ -5632,11 +5623,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = "china.107.a"
 		add_prestige = 50
