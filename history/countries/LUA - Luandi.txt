@@ -12,9 +12,12 @@ historical_friend = QIU
 historical_friend = SUB
 historical_friend = LNN
 
-521.1.1 = {
+490.1.1 = {
 	government = tribal
 	add_government_reform = steppe_horde_reform
+	capital = 6341
+}
+521.1.1 = {
 	monarch = {
 		name = "Touman"
 		dynasty = "Luandi"

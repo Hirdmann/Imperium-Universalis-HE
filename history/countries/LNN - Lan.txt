@@ -11,3 +11,8 @@ historical_friend = HUY
 historical_friend = QIU
 historical_friend = SUB
 historical_friend = LUA
+
+490.1.1 = {
+	government = tribal
+	add_government_reform = steppe_horde_reform
+}

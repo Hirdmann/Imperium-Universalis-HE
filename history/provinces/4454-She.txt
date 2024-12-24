@@ -18,6 +18,12 @@ discovered_by = dongyi1
 }
 146.1.1 = { discovered_by = QII }
 281.1.1 = { religion = liyuebadao }
+303.1.1 = {
+	owner = YUE
+	controller = YUE
+	add_core = YUE
+	remove_core = MIO
+}
 448.1.1 = {
 	owner = CHU
 	controller = CHU

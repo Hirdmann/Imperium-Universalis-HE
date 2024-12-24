@@ -19,3 +19,15 @@ fixed_capital = 2342
 		mil = 3
 	}
 }
+354.1.1 = {
+	override_country_name = "Cataonia"
+	monarch = {
+		name = "Aspis"
+		dynasty = "of Cataonia"
+		death_date = 374.1.1 
+		culture =luwian
+		dip = 2
+		adm = 3
+		mil = 2
+	}
+}

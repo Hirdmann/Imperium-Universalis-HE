@@ -35,3 +35,18 @@ discovered_by = central_asian
 #discovered_by = britannic
 #discovered_by = korean
 #discovered_by = african
+
+490.1.1 = {
+	owner = P13
+	controller = P13
+	add_core = P13
+	trade_goods = gold
+	is_city = yes
+}
+539.1.1 = {
+	owner = P10
+	controller = P10
+	add_core = P10
+	trade_goods = gold
+	is_city = yes
+}

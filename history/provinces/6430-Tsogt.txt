@@ -11,7 +11,14 @@ base_manpower = 3
 capital = ""
 
 142.8.10 = { tribal_owner = LUA }
-539.1.1 = {
+490.1.1 = {
+	owner = LUA
+	controller = LUA
+	add_core = LUA
+	trade_goods = lead
+	is_city = yes
+}
+521.1.1 = {
 	owner = XIO
 	controller = XIO
 	add_core = XIO

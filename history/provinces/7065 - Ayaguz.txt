@@ -41,6 +41,12 @@ discovered_by = central_asian
 #discovered_by = korean
 #discovered_by = african
 
+539.1.1 = {
+	owner = P10
+	controller = P10
+	add_core = P10
+	is_city = yes
+}
 551.1.1 = {
 	owner = XIO
 	controller = XIO

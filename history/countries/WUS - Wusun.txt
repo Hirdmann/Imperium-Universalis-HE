@@ -8,8 +8,10 @@ capital = 4573
 technology_group = central_asian
 add_historical_rival = YUZ
 add_historical_friend = XIO
-
-534.1.1 = {
+453.1.1 = {	
 	government = tribal
 	add_government_reform = steppe_horde_reform
+}
+490.1.1 = {	
+	capital = 4576
 }

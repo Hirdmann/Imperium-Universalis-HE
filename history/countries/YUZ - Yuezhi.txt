@@ -15,6 +15,13 @@ capital = 4578
 		mil = 3
 	}
 }
+453.1.1 = {
+	government = tribal
+	add_government_reform = steppe_horde_reform
+}
+490.1.1 = {
+	religion = tengri
+}
 534.1.1 = {
 	government = tribal
 	add_government_reform = steppe_horde_reform

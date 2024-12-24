@@ -11,9 +11,9 @@ base_manpower = 4
 capital = ""
 
 539.1.1 = {
-	owner = XIO
-	controller = XIO
-	add_core = XIO
+	owner = PT6
+	controller = PT6
+	add_core = PT6
 	trade_goods = grain
 	is_city = yes
 }

@@ -57,6 +57,24 @@ discovered_by = caucasian
 	religion = punic_religion
 }
 
+346.1.1 = { #Kyros the Younger as main satrap of Lydia, Phrygia, and Cappadocia
+	add_core = PHR
+	owner = PHR
+	controller = PHR
+	remove_core = PSE
+}
+354.1.1 = { #end of Cyros Revolt, Cataonia revolt 
+	add_core = SI2
+	owner = SI2
+	controller = SI2
+	remove_core = PSE
+} 
+374.1.1 = { #ended by Datames
+	add_core = KPP 
+	owner = KPP
+	controller = KPP
+	remove_core = SI2
+}
 422.1.1 = {
 	add_core = MAC
 	owner = MAC

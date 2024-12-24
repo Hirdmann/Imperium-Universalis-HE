@@ -67,6 +67,24 @@ discovered_by = caucasian
 	culture = sophene
 	religion = armenian_religion
 }
+346.1.1 = { #Kyros the Younger as main satrap of Lydia, Phrygia, and Cappadocia
+	add_core = PHR
+	owner = PHR
+	controller = PHR
+	remove_core = PSE
+}
+346.1.1 = { #Kyros the Younger as main satrap of Lydia, Phrygia, and Cappadocia
+	add_core = PHR
+	owner = PHR
+	controller = PHR
+	remove_core = PSE
+}
+354.1.1 = { #end of Cyros Revolt
+	add_core = ARM
+	owner = ARM
+	controller = ARM
+	remove_core = PHR
+} 
 424.1.1 = {
 	add_core = ARM
 	add_core = CRD

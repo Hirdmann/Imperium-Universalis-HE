@@ -14,7 +14,14 @@ base_manpower = 4
 500.1.1 = {
 	discovered_by = far_eastern
 }
-534.1.1 = {
+453.1.1 = {
+	owner = WUS
+	controller = WUS
+	add_core = WUS
+	trade_goods = fruits
+	is_city = yes
+}
+490.1.1 = {
 	owner = YUZ
 	controller = YUZ
 	add_core = YUZ

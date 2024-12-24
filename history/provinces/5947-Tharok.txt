@@ -17,11 +17,18 @@ base_manpower = 5
 	trade_goods = naval_supplies
 	is_city = yes
 }
+453.1.1 = {	
+	owner = PT7
+	controller = PT7
+	add_core = PT7
+	trade_goods = naval_supplies
+	is_city = yes
+}
 539.1.1 = {
-	owner = XIO
-	controller = XIO
-	add_core = XIO
-	trade_goods = gold
+	owner = PT7
+	controller = PT7
+	add_core = PT7
+	trade_goods = naval_supplies
 	is_city = yes
 }
 

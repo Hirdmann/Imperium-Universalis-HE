@@ -7,3 +7,8 @@ religion = tengri
 capital = 3371
 technology_group = central_asian
 
+453.1.1 = {
+	government = tribal
+	add_government_reform = steppe_horde_reform
+	capital = 3364
+}

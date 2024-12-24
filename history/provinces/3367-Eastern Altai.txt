@@ -32,8 +32,18 @@ discovered_by = central_asian
 #discovered_by = britannic
 #discovered_by = korean
 #discovered_by = african
+453.1.1 = {
+	owner = P10
+	controller = P10
+	add_core = P10
+}
+490.1.1 = {
+	owner = YUZ
+	controller = YUZ
+	add_core = YUZ
+}
 539.1.1 = {
-	owner = XIO
-	controller = XIO
-	add_core = XIO
+	owner = WUS
+	controller = WUS
+	add_core = WUS
 }

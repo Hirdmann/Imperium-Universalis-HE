@@ -66,6 +66,18 @@ discovered_by = caucasian
 271.1.1 = {
 	culture = kappadokian
 }
+346.1.1 = { #Kyros the Younger as main satrap of Lydia, Phrygia, and Cappadocia
+	add_core = PHR
+	owner = PHR
+	controller = PHR
+	remove_core = PSE
+}
+354.1.1 = { #end of Cyros Revolt
+	add_core = KPP
+	owner = KPP
+	controller = KPP
+	remove_core = PSE
+}
 422.1.1 = { #Capital of Pontus
 	add_core = PON
 	owner = PON

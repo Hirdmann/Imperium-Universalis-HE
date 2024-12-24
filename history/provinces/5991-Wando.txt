@@ -14,6 +14,13 @@ base_manpower = 4
 capital = ""
 is_city = yes
 
+453.1.1 = {
+	owner = P11
+	controller = P11
+	add_core = P11
+	trade_goods = grain
+	is_city = yes
+}
 #discovered_by = roman
 #discovered_by = greek_techgroup
 #discovered_by = punic

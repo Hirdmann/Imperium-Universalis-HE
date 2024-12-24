@@ -41,7 +41,22 @@ discovered_by = punic
 	base_production = 1
 	base_manpower = 2
 }
-
+346.1.1 = { #Kyros the Younger as main satrap of Lydia, Phrygia, and Cappadocia
+	add_core = PHR
+	owner = PHR
+	controller = PHR
+	remove_core = PSE
+}
+354.1.1 = { #end of Cyros Revolt, temporary freedom of local tribes, that fight each otehr and greek colonies immediately
+	add_core = GC4
+	owner = GC4
+	controller = GC4
+}
+379.1.1 = {#returns to persian protectorate under Datames
+	add_core = KPP
+	owner = KPP
+	controller = KPP
+}
 422.1.1 = {
 	add_core = GC4
 	owner = GC4

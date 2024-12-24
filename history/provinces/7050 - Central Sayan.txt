@@ -16,6 +16,20 @@ is_city = yes
 
 center_of_trade = 2
 
+453.1.1 = {
+	owner = P13
+	controller = P13
+	add_core = P13
+	trade_goods = cloth
+	is_city = yes
+}
+490.1.1 = {
+	owner = PT3
+	controller = PT3
+	add_core = PT3
+	trade_goods = cloth
+	is_city = yes
+}
 551.1.1 = {
 	owner = XIO
 	controller = XIO

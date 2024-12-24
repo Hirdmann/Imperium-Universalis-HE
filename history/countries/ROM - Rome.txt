@@ -1833,8 +1833,6 @@ add_treasury = 50
 	set_global_flag = prepare_punic_wars
 }
 490.1.1 = {
-	clr_global_flag = prepare_punic_wars
-	set_global_flag = first_punic_war_start
 	add_country_modifier = {
 		name = gladiator_games_modifier
 		duration = -1
@@ -1867,6 +1865,10 @@ add_treasury = 50
 		siege = 0
 		death_date = 495.1.1
 	}
+}
+490.4.1 = {
+	clr_global_flag = prepare_punic_wars
+	set_global_flag = first_punic_war_start
 }
 513.1.1 = {
 	clr_global_flag = first_punic_war_start

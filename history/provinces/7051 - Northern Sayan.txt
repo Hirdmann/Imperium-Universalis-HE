@@ -9,6 +9,13 @@ base_tax = 0
 base_production = 0
 base_manpower = 4
 
+453.1.1 = {
+	owner = PT3
+	controller = PT3
+	add_core = PT3
+	trade_goods = fur
+	is_city = yes
+}
 547.1.1 = {
 	owner = XIO
 	controller = XIO

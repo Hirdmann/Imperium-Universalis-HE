@@ -11,3 +11,11 @@ historical_friend = HUY
 historical_friend = QIU
 historical_friend = LNN
 historical_friend = LUA
+
+578.1.1 = { #Yuezhi expelled from the Hexi Corridor
+	capital = 4577 # Qilian mountains refuge for lesser yuezhi	
+	override_country_name = "Lesser Yuezhi"
+	government = tribal
+	add_government_reform = steppe_horde_reform
+	primary_culture = yuezhi
+}

@@ -11,7 +11,7 @@ base_manpower = 3
 capital = ""
 
 142.8.10 = { tribal_owner = SUB }
-539.1.1 = {
+490.1.1 = {
 	owner = XIO
 	controller = XIO
 	add_core = XIO

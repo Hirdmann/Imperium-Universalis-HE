@@ -64,6 +64,18 @@ is_city = yes
 	owner = PS3
 	controller = PS3
 }
+346.1.1 = { #Kyros the Younger as main satrap of Lydia, Phrygia, and Cappadocia
+	add_core = PHR
+	owner = PHR
+	controller = PHR
+	remove_core = PSE
+}
+354.1.1 = { #end of Cyros Revolt
+	add_core = PS3
+	owner = PS3
+	controller = PS3
+	remove_core = PHR
+}
 367.1.1 = {
 	add_core = ION
 	owner = ION

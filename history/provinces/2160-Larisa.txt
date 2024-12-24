@@ -57,6 +57,18 @@ discovered_by = caucasian
 	remove_core = PSE
 }
 
+346.1.1 = { #Kyros the Younger as main satrap of Lydia, Phrygia, and Cappadocia
+	add_core = PHR
+	owner = PHR
+	controller = PHR
+	remove_core = PSE
+}
+354.1.1 = { #end of Cyros Revolt
+	add_core = CRI
+	owner = CRI
+	controller = CRI
+	remove_core = PHR
+}
 421.1.1 = {
 	add_core = MAC
 	owner = MAC

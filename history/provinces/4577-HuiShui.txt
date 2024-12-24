@@ -24,6 +24,11 @@ add_core = QIA
 	controller = XIO
 	add_core = XIO
 }
+578.1.1 = {	
+	owner = SUB
+	controller = SUB
+	add_core = SUB
+}
 627.1.1 = {
 	owner = ICH
 	controller = ICH

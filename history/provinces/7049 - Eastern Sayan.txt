@@ -10,6 +10,13 @@ base_production = 0
 base_manpower = 3
 capital = ""
 
+453.1.1 = {
+	owner = PT3
+	controller = PT3
+	add_core = PT3
+	trade_goods = iron
+	is_city = yes
+}
 547.1.1 = {
 	owner = XIO
 	controller = XIO

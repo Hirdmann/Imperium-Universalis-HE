@@ -10,10 +10,10 @@ base_production = 0
 base_manpower = 4
 
 142.8.10 = { tribal_owner = PT7 }
-539.1.1 = {
-	owner = XIO
-	controller = XIO
-	add_core = XIO
+453.1.1 = {	
+	owner = PT7
+	controller = PT7
+	add_core = PT7
 	trade_goods = wool
 	is_city = yes
 }

@@ -55,6 +55,11 @@ discovered_by = caucasian
 	owner = AET
 	controller = AET
 }
+567.1.1 = {
+	add_core = ACH
+	owner = ACH
+	controller = ACH
+}
 606.1.1 = {
 	add_core = ROM
 	owner = ROM

@@ -17,10 +17,10 @@ capital = ""
 	trade_goods = iron
 	is_city = yes
 }
-547.1.1 = {
-	owner = HUN
-	controller = HUN
-	add_core = HUN
+453.1.1 = {
+	owner = P11
+	controller = P11
+	add_core = P11
 	trade_goods = iron
 	is_city = yes
 }

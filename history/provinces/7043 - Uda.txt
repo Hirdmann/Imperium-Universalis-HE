@@ -40,7 +40,7 @@ discovered_by = central_asian
 #discovered_by = korean
 #discovered_by = african
 539.1.1 = {
-	owner = XIO
-	controller = XIO
-	add_core = XIO
+	owner = PT6
+	controller = PT6
+	add_core = PT6
 }

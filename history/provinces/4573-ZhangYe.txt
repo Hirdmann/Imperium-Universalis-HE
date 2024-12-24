@@ -18,6 +18,11 @@ base_manpower = 4
 	is_city = yes
 }
 
+490.1.1 = {
+	owner = YUZ
+	controller = YUZ
+	add_core = YUZ
+}
 500.1.1 = {
 	discovered_by = far_eastern
 }

@@ -25,6 +25,7 @@ discovered_by = nomad_group
 	add_core = YAN
 	religion = chinese_religion
 }
+500.1.1 = { discovered_by = far_eastern }
 510.1.1 = {
 	owner = ZHA
 	controller = ZHA
@@ -34,16 +35,11 @@ discovered_by = nomad_group
 	controller = QIN
 	add_territorial_core = QIN
 }
-545.10.1 = {
-	add_core = DON
-	owner = DON
-	controller = DON
-}
-500.1.1 = { discovered_by = far_eastern }
-551.1.1 = {
+539.1.1 = {
 	owner = XIO
 	controller = XIO
 	add_core = XIO
+	is_city = yes
 }
 627.1.1 = {
 	owner = ICH

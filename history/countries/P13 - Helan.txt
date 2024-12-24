@@ -7,3 +7,16 @@ religion = tengri
 capital = 7054
 technology_group = central_asian
 
+
+453.1.1 = {
+	capital = 5984
+	government = tribal
+	add_government_reform = steppe_horde_reform
+}
+490.1.1 = {
+	capital = 7482
+}
+539.1.1 = {	
+	override_country_name = "Jian-kun"
+	capital = 7482
+}

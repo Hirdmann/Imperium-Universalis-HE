@@ -91,7 +91,6 @@ discovered_by = SX2
 	controller = MAC
 	remove_core = PSE
 }
-
 431.1.1 = {
 	add_core = ND9
 	owner = ND9
@@ -99,23 +98,11 @@ discovered_by = SX2
 	remove_core = MAC
 }
 
-436.1.1 = {
-	controller = ND9
-}
-436.9.1 = {
-	controller = PRT
-}
-437.1.1 = {
-	add_core = EUM
-	owner = EUM
-	controller = EUM
-}
-
-439.1.1 = {
+438.1.1 = {
 	add_core = ANE
 	owner = ANE
 	controller = ANE
-	remove_core = EUM
+	remove_core = ND9
 }
 
 443.1.1 = {
@@ -124,25 +111,29 @@ discovered_by = SX2
 	controller = SEL
 	remove_core = ANE
 }
+
 459.1.1 = {
-	add_core = PRT
-	owner = PRT
-	controller = PRT
+	add_core = ND9
+	owner = ND9
+	controller = ND9
 	remove_core = SEL
+
 }
-508.1.1 = {
-	controller = PAI
-}
-509.1.1 = {
-	controller = PRT
-}
-545.1.1 = {
+535.1.1 = {
 	add_core = SEL
 	owner = SEL
 	controller = SEL
 }
-569.1.1 = {
+578.1.1 = {
+	add_core = ND9
+	owner = ND9
+	controller = ND9
+	remove_core = SEL
+}
+
+606.1.1 = {
+	add_core = PRT
 	owner = PRT
 	controller = PRT
-	remove_core = SEL
+	remove_core = ND9
 }

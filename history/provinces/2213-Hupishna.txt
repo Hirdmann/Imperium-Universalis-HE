@@ -85,6 +85,18 @@ discovered_by = SX2
 	culture = kappadokian
 }
 350.1.1 = { religion = zurvanism }
+346.1.1 = { #Kyros the Younger as main satrap of Lydia, Phrygia, and Cappadocia
+	add_core = PHR
+	owner = PHR
+	controller = PHR
+	remove_core = PSE
+}
+354.1.1 = { #end of Cyros Revolt
+	add_core = KPP
+	owner = KPP
+	controller = KPP
+	remove_core = PSE
+}
 422.1.1 = {
 	add_core = MAC
 	owner = MAC

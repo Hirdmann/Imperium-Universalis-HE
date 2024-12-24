@@ -12,7 +12,7 @@ capital = ""
 
 discovered_by = scythian_tech
 142.8.10 = { tribal_owner = AGP }
-571.1.1 = {
+539.1.1 = {
 	owner = AGP
 	controller = AGP
 	add_core = AGP

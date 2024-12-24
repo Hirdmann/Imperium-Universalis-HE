@@ -21,6 +21,17 @@ is_city = yes
 	controller = ALL
 	add_core = ALL
 }
+453.1.1 = {
+	owner = P11
+	controller = P11
+	add_core = P11
+}
+539.1.1 = {
+	owner = P13
+	controller = P13
+	add_core = P13
+	is_city = yes
+}
 #discovered_by = roman
 #discovered_by = greek_techgroup
 #discovered_by = punic

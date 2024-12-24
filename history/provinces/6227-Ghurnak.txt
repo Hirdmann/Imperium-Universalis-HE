@@ -44,6 +44,15 @@ capital = ""
 	culture = cadusian
 	religion = zurvanism
 }
+369.1.1 = { #Cadusian revolt
+	add_core = CDS
+	owner = CDS
+	controller = CDS
+}
+370.1.1 = {
+	owner = PSE
+	controller = PSE
+}
 
 424.1.1 = {
 	add_core = ATR

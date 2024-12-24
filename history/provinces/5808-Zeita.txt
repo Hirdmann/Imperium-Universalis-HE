@@ -30,7 +30,22 @@ is_city = yes
 	controller = KPP
 	remove_core = PSE
 }
-
+346.1.1 = { #Kyros the Younger as main satrap of Lydia, Phrygia, and Cappadocia
+	add_core = PHR
+	owner = PHR
+	controller = PHR
+	remove_core = PSE
+}
+354.1.1 = { #end of Cyros Revolt, Paphlagonia rebelled
+	add_core = PPH
+	owner = PPH
+	controller = PPH
+}
+380.1.1 = { #Datames ends rebellion of Thyus (approx)
+	add_core = KPP
+	owner = KPP
+	controller = KPP
+}
 422.1.1 = {
 	add_core = PPH
 	owner = PPH

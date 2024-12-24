@@ -19,6 +19,11 @@ is_city = yes
 314.1.1 = {
 	religion = greek_religion
 }
+349.1.1 = {
+	add_core = SYR
+	owner = SYR
+	controller = SYR
+}
 357.1.1 = {
 	add_core = CAR
 	owner = CAR

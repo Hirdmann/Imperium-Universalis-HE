@@ -12,10 +12,10 @@ capital = ""
 
 discovered_by = scythian_tech
 
-547.1.1 = {
-	owner = HUN
-	controller = HUN
-	add_core = HUN
+453.1.1 = {
+	owner = P11
+	controller = P11
+	add_core = P11
 	trade_goods = naval_supplies
 	is_city = yes
 }

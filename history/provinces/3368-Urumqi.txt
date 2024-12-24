@@ -23,7 +23,7 @@ center_of_trade = 1
 	trade_goods = fruits
 	is_city = yes
 }
-534.1.1 = {
+490.1.1 = {
 	owner = YUZ
 	controller = YUZ
 	add_core = YUZ

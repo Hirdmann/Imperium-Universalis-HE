@@ -17,6 +17,13 @@ capital = ""
 	trade_goods = iron
 	is_city = yes
 }
+490.1.1 = {
+	owner = YUZ
+	controller = YUZ
+	add_core = YUZ
+	trade_goods = exotic_animals
+	is_city = yes
+}
 
 #discovered_by = roman
 #discovered_by = greek_techgroup
@@ -40,7 +47,7 @@ discovered_by = central_asian
 #discovered_by = korean
 #discovered_by = african
 539.1.1 = {
-	owner = XIO
-	controller = XIO
-	add_core = XIO
+	owner = WUS
+	controller = WUS
+	add_core = WUS
 }

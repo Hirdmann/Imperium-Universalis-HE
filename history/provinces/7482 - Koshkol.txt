@@ -14,6 +14,19 @@ base_manpower = 3
 capital = ""
 is_city = yes
 
+490.1.1 = {
+	owner = P13
+	controller = P13
+	add_core = P13
+	trade_goods = cloth
+	is_city = yes
+}
+539.1.1 = {
+	owner = P10
+	controller = P10
+	add_core = P10
+	is_city = yes
+}
 551.1.1 = {
 	owner = XIO
 	controller = XIO

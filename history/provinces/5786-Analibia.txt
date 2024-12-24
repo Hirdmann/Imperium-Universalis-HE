@@ -67,6 +67,18 @@ discovered_by = caucasian
 
 350.1.1 = { religion = zurvanism }
 
+346.1.1 = { #Kyros the Younger as main satrap of Lydia, Phrygia, and Cappadocia
+	add_core = PHR
+	owner = PHR
+	controller = PHR
+	remove_core = PSE
+}
+354.1.1 = { #end of Cyros Revolt
+	add_core = ARM
+	owner = ARM
+	controller = ARM
+	remove_core = PHR
+}
 424.1.1 = {
 	add_core = KPP
 	owner = KPP

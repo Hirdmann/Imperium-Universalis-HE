@@ -95,7 +95,7 @@ discovered_by = caucasian
 	controller = BOE
 	remove_core = KSD
 }
-608.1.1 = {
+583.1.1 = {
 	add_core = ROM
 	owner = ROM
 	controller = ROM
