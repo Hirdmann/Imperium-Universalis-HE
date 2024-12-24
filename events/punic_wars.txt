@@ -427,6 +427,8 @@ country_event = {
 				name = punic_wars_rome_fleet_buff
 				duration = -1
 			}
+			add_sailors = 5000
+			add_manpower = -3
 		}
 	}
 
