@@ -185,3 +185,17 @@ historical_friend = CAR
 	government = theocracy
 	add_government_reform = oligarchy_reform
 }
+624.1.1 = {
+	government = monarchy
+	add_government_reform = despotism_reform
+	government_rank = 2
+	primary_culture = greco_semitic
+	monarch = {
+		name = "Zoilus"
+		dynasty = "of Phoenicia"
+		death_date = 658.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}

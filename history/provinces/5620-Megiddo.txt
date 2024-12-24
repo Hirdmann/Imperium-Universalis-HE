@@ -116,7 +116,13 @@ discovered_by = KUS
 	remove_core = PTO
 }
 
-650.1.1 = {
+624.1.1 = {#Partial defragmentatiom of seleucid rule in region
+	add_core = ISR
+	owner = ISR
+	controller = ISR
+	remove_core = SEL
+}
+644.1.1 = {
 	add_core = JUD
 	owner = JUD
 	controller = JUD

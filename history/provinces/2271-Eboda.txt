@@ -70,7 +70,7 @@ discovered_by = KUS
 	add_core = NAB
 	owner = NAB
 	controller = NAB
-	remove_core = PSE
+	remove_core = PS2
 }
 556.1.1 = {
 	add_core = SEL
@@ -79,18 +79,15 @@ discovered_by = KUS
 	remove_core = PTO
 }
 
-644.1.1 = {
-	add_core = JUD
-	owner = JUD
-	controller = JUD
-	remove_core = SEL
-
-	religion = jewish
-}
-664.1.1 = {
+624.1.1 = {#Partial defragmentatiom of seleucid rule in region
 	add_core = NAB
 	owner = NAB
 	controller = NAB
-	remove_core = JUD
+	remove_core = SEL
 }
-
+644.1.1 = {
+	add_core = NAB
+	owner = NAB
+	controller = NAB
+	remove_core = EDM
+}

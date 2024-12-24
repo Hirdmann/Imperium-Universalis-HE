@@ -109,7 +109,7 @@ discovered_by = KUS
 	remove_core = PTO
 }
 
-604.1.1 = {
+590.1.1 = {
 	add_core = JUD
 	owner = JUD
 	controller = JUD

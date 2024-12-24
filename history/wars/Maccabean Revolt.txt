@@ -1,0 +1,16 @@
+name = "Maccabean Revolt"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = JUD
+}
+
+587.7.1 = {
+	add_attacker = JUD
+	add_defender = SEL
+}
+
+614.12.4 = {
+	rem_attacker = JUD
+	rem_defender = SEL
+}

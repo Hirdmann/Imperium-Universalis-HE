@@ -108,6 +108,12 @@ discovered_by = KUS
 	remove_core = PTO
 }
 
+624.1.1 = {#Partial defragmentatiom of seleucid rule in region
+	add_core = AMM
+	owner = AMM
+	controller = AMM
+	remove_core = SEL
+}
 664.1.1 = {
 	add_core = NAB
 	owner = NAB

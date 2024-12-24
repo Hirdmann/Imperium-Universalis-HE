@@ -119,7 +119,6 @@
 2265 = "Petra"
 2269 = "Kadesh Barnea"
 2273 = "Sykomazon"
-2274 = "Mampsis"
 2277 = "Hierosolyma"
 2278 = "Marisa"
 2282 = "Philadelpheia"

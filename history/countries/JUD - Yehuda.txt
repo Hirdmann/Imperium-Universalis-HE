@@ -239,7 +239,38 @@ historical_rival = ISR
 422.1.1 = {
 	add_government_reform = theocratic_kingdom
 }
-
+587.1.1 = {
+	capital = 2277
+	government_rank = 1
+	monarch = {
+		name = "Matityahu"
+		dynasty = "Hasmonid"
+		dip = 4
+		adm = 3
+		mil = 2
+	}
+}
+588.1.1 = {
+	monarch = {
+		name = "Judas Maccabeus"
+		dynasty = "Hasmonid"
+		dip = 2
+		adm = 3
+		mil = 5
+	}
+}
+593.1.1 = {
+	monarch = {
+		name = "Yonatan Apphus Maccabeus"
+		dynasty = "Hasmonid"
+		dip = 5
+		adm = 5
+		mil = 2
+	}
+}
+602.1.1 = {	
+	government_rank = 2 #first authonomy under seleucids
+}
 612.1.1 = {
 	monarch = {
 		name = "Shimon Maccabeus"
@@ -248,6 +279,9 @@ historical_rival = ISR
 		adm = 4
 		mil = 3
 	}
+}
+614.1.1 = {	
+	government_rank = 3 #kingdom
 }
 619.1.1 = {
 	monarch = {

@@ -111,12 +111,13 @@ discovered_by = KUS
 	remove_core = PTO
 }
 
-604.1.1 = {
+595.1.1 = {
 	add_core = JUD
 	owner = JUD
 	controller = JUD
 	remove_core = SEL
 }
+
 691.1.1 = {
 	add_territorial_core = ROM
 	owner = ROM

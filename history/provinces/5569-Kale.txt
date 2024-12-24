@@ -37,11 +37,14 @@ capital = ""
 }
 
 358.1.1 = {
+	controller = CAR
+}
+
+368.1.1 = { #City given to Carthage in truce
 	add_core = CAR
 	owner = CAR
 	controller = CAR
 }
-
 362.1.1 = {
 	add_core = SYR
 	owner = SYR

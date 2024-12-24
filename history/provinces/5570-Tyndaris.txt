@@ -38,6 +38,9 @@ capital = ""
 	controller = CAR
 }
 
+490.1.1 = {
+	controller = ROM
+}
 500.1.1 = {
 	controller = ROM
 }

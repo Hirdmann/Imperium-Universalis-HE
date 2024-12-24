@@ -60,8 +60,28 @@ small_townhall = yes
 	rename_capital = "Thermai Himeraiai"
 }
 
+357.1.1 = {
+	add_core = SYR
+	owner = SYR
+	controller = SYR
+	small_harbor = yes
+	shrine = yes
+}
+
+358.1.1 = {
+	controller = CAR
+}
+
+368.1.1 = { #City given to Carthage in truce
+	add_core = CAR
+	owner = CAR
+	controller = CAR
+}
 425.1.1 = {
 	culture = italiote
+}
+490.1.1 = {
+	controller = ROM
 }
 513.1.1 = {
 	add_core = ROM

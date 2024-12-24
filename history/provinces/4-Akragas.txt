@@ -61,6 +61,17 @@ center_of_trade = 1
 	remove_province_modifier = land_reclamation_2
 }
 
+357.1.1 = { #Taken by Syracuse
+	add_core = SYR
+	owner = SYR
+	controller = SYR
+	remove_core = CAR
+}
+371.1.1 = { #City given to Carthage in truce
+	add_core = CAR
+	owner = CAR
+	controller = CAR
+}
 414.1.1 = { #Captured by Timoleon of Corinth and repopulated
 	add_core = AKR
 	owner = AKR

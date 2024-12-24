@@ -1,0 +1,16 @@
+###############################################
+#Maccabean Hasmonean and etc
+###############################################
+dependency = {
+	subject_type = "vassal"
+	first = SEL
+	second = JUD
+	start_date = 602.1.1
+	end_date = 614.1.1
+}
+alliance = { #Askalon-Hasmonean friendship
+	first = JUD
+	second = PHI
+	start_date = 624.1.1
+	end_date = 691.1.1
+}

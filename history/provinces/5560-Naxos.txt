@@ -29,10 +29,7 @@ is_city = yes
 }
 
 351.1.1 = { #Population sold in to slavery by Syracuse and given to the Sicels
-	add_core = SCC
-	owner = SCC
-	controller = SCC
-
+	
 	culture = sicels
 	religion = roman_religion
 
@@ -44,8 +41,6 @@ is_city = yes
 }
 
 358.1.1 = { #Foundation of Tauromenion by Carthage
-	add_core = CAR
-	owner = CAR
 	controller = CAR
 	remove_core = SCC
 

@@ -17,12 +17,12 @@ is_city = yes
 	controller = CAR
 }
 
-362.1.1 = {
+357.1.1 = { #Taken by Syracuse
 	add_core = SYR
 	owner = SYR
 	controller = SYR
+	remove_core = CAR
 }
-
 368.1.1 = { #City given to Carthage in truce
 	add_core = CAR
 	owner = CAR
