@@ -46,6 +46,7 @@ on_startup = {
 		athenai.101
 		china.65
 		diadochiwars.1 #432 bookmark setup additions
+		punic_wars.10 #490 bookmark punic war chain event start
 	}
 }
 

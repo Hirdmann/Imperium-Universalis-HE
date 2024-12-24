@@ -1,0 +1,12 @@
+bookmark = {
+	name = "BOOKMARK_EXPLANATION_TITLE"
+	desc = "BOOKMARK_EXPLANATION_DESC"
+	date = 142.8.10
+
+	center = 2476
+
+	country = BAB
+	country = ASY
+	country = EGY
+	country = MDI
+}

@@ -20,6 +20,13 @@ country_event = {
 			home_trade_node = {
 				is_strongest_trade_power = CAR
 			}
+			NOT = {
+				OR = {
+					has_global_flag = first_punic_war_end
+					has_global_flag = first_punic_war_start
+					has_global_flag = prepare_punic_wars
+				}
+			}
 		}
 	}
 
@@ -81,6 +88,13 @@ country_event = {
 			owns_or_non_sovereign_subject_of = 5653
 			owns_or_non_sovereign_subject_of = 17
 		}
+		NOT = {
+			OR = {
+				has_global_flag = first_punic_war_end
+				has_global_flag = first_punic_war_start
+				has_global_flag = prepare_punic_wars
+			}
+		}
 	}
 
 	immediate = {
@@ -123,6 +137,13 @@ country_event = {
 		OR = {
 			ROM = { owns_or_non_sovereign_subject_of = 14 }
 			CAR = { owns_or_non_sovereign_subject_of = 7 }
+		}
+		NOT = {
+			OR = {
+				has_global_flag = first_punic_war_end
+				has_global_flag = first_punic_war_start
+				has_global_flag = prepare_punic_wars
+			}
 		}
 	}
 
@@ -251,6 +272,13 @@ country_event = {
 		tag = ROM
 		has_country_flag = had_punic_wars.1_rival
 		owns_or_non_sovereign_subject_of = 5653
+		NOT = {
+			OR = {
+				has_global_flag = first_punic_war_end
+				has_global_flag = first_punic_war_start
+				has_global_flag = prepare_punic_wars
+			}
+		}
 	}
 
 	immediate = {
@@ -291,6 +319,13 @@ country_event = {
 		OR = {
 			ROM = { owns_or_non_sovereign_subject_of = 14 }
 			CAR = { owns_or_non_sovereign_subject_of = 7 }
+		}
+		NOT = {
+			OR = {
+				has_global_flag = first_punic_war_end
+				has_global_flag = first_punic_war_start
+				has_global_flag = prepare_punic_wars
+			}
 		}
 	}
 

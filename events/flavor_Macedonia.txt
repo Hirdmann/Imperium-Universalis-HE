@@ -1714,3 +1714,72 @@ country_event = {
 		set_country_flag = birth_of_alexander_flag
 	}
 }
+
+
+# grekification of old macedonians
+country_event = {
+	id = macedon.36
+	title = macedon.36.t
+	desc = macedon.36.d
+	picture = philip
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAC
+		NOT = {
+			started_in = 395.1.1
+		}
+		primary_culture = macedon
+		capital_scope = {
+			culture = macedon
+		}
+		any_owned_province = {
+			OR = {
+				area = macedonia_secunda
+				area = macedonia_prima
+				area = macedonia_interior_area
+			}
+			OR = {
+				culture = old_macedon
+				culture = epirot
+				culture = mygdonian
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 15
+	}
+
+	option = {
+		name = "macedon.36.a"
+		ai_chance = {
+			factor = 100
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = macedonia_secunda
+					area = macedonia_interior_area
+					area = macedonia_prima
+				}
+				OR = {
+					culture = old_macedon
+					culture = epirot
+					culture = mygdonian
+				}
+			}
+			change_culture = macedon
+			change_religion = greek_religion
+		}
+		add_mil_power = -100
+	}
+
+	option = {
+		name = "macedon.17.b" # I am very strange rare macedon who does not want macedon culture to expand
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -10
+	}
+}

@@ -7,7 +7,7 @@ bookmark = {
 
 	# Date of Bookmark
 
-	date = 710.1.1
+	date = 712.10.23
 
 	# Camera Center of Focus (Province ID)
 

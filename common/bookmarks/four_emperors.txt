@@ -1,0 +1,7 @@
+bookmark = {
+	name = "FOUR_EMPERORS_TITLE"
+	desc = "FOUR_EMPERORS_DESC_DESC"
+	date = 822.1.1
+
+	country = ROI
+}
