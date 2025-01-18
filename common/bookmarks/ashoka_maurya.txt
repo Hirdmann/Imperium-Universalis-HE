@@ -1,8 +1,0 @@
-bookmark = {
-	name = "ASHOKA_MAURYA_TITLE"
-	desc = "ASHOKA_MAURYA_DESC"
-	date = 483.1.1
-
-
-	country = MAU
-}

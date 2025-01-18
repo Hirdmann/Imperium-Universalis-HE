@@ -1,7 +1,0 @@
-bookmark = {
-	name = "RISE_OF_AXUM_TITLE"
-	desc = "RISE_OF_AXUM_DESC"
-	date = 555.1.1
-
-	country = AXU
-}

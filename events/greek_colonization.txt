@@ -78,7 +78,7 @@ country_event = {
 	trigger = {
 		owns_core_province = 959
 		culture_group = hellenic_group
-		is_year = 275
+		is_year = 277
 		has_discovered = 1074
 		NOT = {	exists = AMF }
 		NOT = { started_in = 316.1.1 }
@@ -107,6 +107,12 @@ country_event = {
 				change_variable = { PS_rur_evtd = 1 }	change_variable = { PS_urb_evtu = 2 }	change_variable = { PS_upp_evtu = 1 }
 				save_event_target_as = greek_colony_province
 				owner = { country_event = { id = grk_col.0 } }
+			}
+			ATH = {
+				create_subject = {
+					subject_type = league_member_subject
+					subject = AMF
+				}
 			}
 		}
 	}

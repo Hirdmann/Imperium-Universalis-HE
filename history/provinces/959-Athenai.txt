@@ -77,7 +77,7 @@ discovered_by = caucasian
 
 274.1.1 = { #Athens it's evacuated to Troizen and the city it's destroyed by the persians
 	base_tax = 0
-	base_production = 0
+	base_production = 1
 
 	small_city_walls = no
 	small_market = no

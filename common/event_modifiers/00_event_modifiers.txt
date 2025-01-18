@@ -11668,6 +11668,10 @@ jin_keep_bazhu_atstart = {
 	diplomatic_upkeep = 3
 }
 
+ai_yu_debuff_surpriseattack = {
+	land_morale = -0.1
+	discipline = -0.025
+}
 qin_declared_king = {
 	land_morale = 0.1
 	core_creation = -0.1
@@ -11998,7 +12002,7 @@ zhe_adopt_confucian = {
 }
 
 zhe_remember_wu_mod = {
-	tolerance_own = 1
+	tolerance_own = 2
 	papal_influence_from_cardinals = 0.5
 }
 
@@ -12122,6 +12126,12 @@ baipu_boost = {
 	land_forcelimit = 10
 }
 
+quwo_boost = {
+	land_morale = 0.1
+	defensiveness = 0.1
+	global_garrison_growth = 1
+	land_forcelimit = 10
+}
 baipu_victory = {
 	land_morale = 0.2
 	land_maintenance_modifier = -0.1

@@ -369,7 +369,14 @@ historical_friend = ARM
 	add_government_reform = elamite_bureaucracy
 	add_government_reform = district_divisions_reform
 }
-
+264.1.1 = {
+	set_global_flag = ionian_revolt_asian_victory
+	set_global_flag = helleno_asian_war_1_start
+}
+265.1.1 = {
+	set_global_flag = helleno_asian_war_1_marathon_start
+	set_global_flag = helleno_asian_war_1_end
+}
 269.1.1 = {
 
 	clear_scripted_personalities = yes

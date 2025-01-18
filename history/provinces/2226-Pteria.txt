@@ -22,6 +22,10 @@ small_townhall = yes
 craftsman = yes
 
 add_permanent_province_modifier = {
+	name = old_tradecenter
+	duration = -1
+}
+add_permanent_province_modifier = {
 	name = land_reclamation_3
 	duration = -1
 }
@@ -58,6 +62,7 @@ discovered_by = caucasian
 	add_core = MDI
 	owner = MDI
 	controller = MDI
+	remove_province_modifier = old_tradecenter
 }
 
 204.1.1 = {

@@ -520,43 +520,12 @@ country_decisions = {
 		ai_importance = 500
 	}
 
-	jig_retake_linqu = {
-		major = yes
-		color = { 245 160 60 }
-		potential = {
-			tag = JIG
-			NOT = {
-				has_country_flag = jig_tookback_linqu
-			}
-		}
-		provinces_to_highlight = {
-
-		}
-		allow = {
-			is_subject = no
-			is_at_war = no
-			owns = 4270
-		}
-		effect = {
-			set_country_flag = jig_tookback_linqu
-			add_prestige = 10
-			4270 = {
-				add_core = JIG
-				remove_core = QII
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		ai_importance = 500
-	}
-
 	jig_qi_revenge = {
 		major = yes
 		color = { 245 160 60 }
 		potential = {
 			tag = JIG
-			has_country_flag = jig_tookback_linqu
+			owns_core_province = 4270
 			NOT = {
 				has_country_flag = jig_revenged_qi
 			}
@@ -592,6 +561,62 @@ country_decisions = {
 				every_owned_province = {
 					add_claim = JIG
 				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+	
+	kua_restore_state = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			tag = KUA
+			NOT = {
+				has_country_flag = kua_restored_state_flag
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4354
+				province_id = 4355
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns = 4354
+			owns = 4355
+		}
+		effect = {
+			set_country_flag = kua_restored_state_flag
+			add_prestige = 20
+			4354 = {
+				add_core = ROOT
+			}
+			4355 = {
+				add_core = ROOT
+			}
+			4353 = {
+				add_permanent_claim = KUA
+			}
+			4367 = {
+				add_permanent_claim = KUA
+			}
+			4366 = {
+				add_permanent_claim = KUA
+			}
+			4363 = {
+				add_permanent_claim = KUA
+			}
+			any_owned_province = {
+				limit = {
+					is_core = ZHE
+				}
+				remove_core = ZHE
 			}
 		}
 		ai_will_do = {
@@ -809,12 +834,9 @@ country_decisions = {
 				province_id = 4105
 				province_id = 4106
 				province_id = 4272
-				province_id = 4260
-				province_id = 4261
-				province_id = 4256
-				province_id = 4255
 				province_id = 4120
 				province_id = 4105
+				province_id = 4109
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -828,25 +850,16 @@ country_decisions = {
 			4272 = {
 				owned_by = CAD
 			}
-			4260 = {
-				owned_by = CAD
-			}
-			4261 = {
-				owned_by = CAD
-			}
-			4256 = {
-				owned_by = CAD
-			}
 			4105 = {
-				owned_by = CAD
-			}
-			4255 = {
 				owned_by = CAD
 			}
 			4120 = {
 				owned_by = CAD
 			}
 			4105 = {
+				owned_by = CAD
+			}
+			4109 = {
 				owned_by = CAD
 			}
 			is_at_war = no
@@ -871,22 +884,6 @@ country_decisions = {
 				change_culture = changdi
 				change_religion = tengri
 			}
-			4260 = {
-				change_culture = changdi
-				change_religion = tengri
-			}
-			4261 = {
-				change_culture = changdi
-				change_religion = tengri
-			}
-			4256 = {
-				change_culture = changdi
-				change_religion = tengri
-			}
-			4255 = {
-				change_culture = changdi
-				change_religion = tengri
-			}
 			4120 = {
 				change_culture = changdi
 				change_religion = tengri
@@ -894,6 +891,15 @@ country_decisions = {
 			4105 = {
 				change_culture = changdi
 				change_religion = tengri
+			}
+			4261 = {
+				add_core = CAD
+			}
+			4256 = {
+				add_core = CAD
+			}
+			4255 = {
+				add_core = CAD
 			}
 		}
 		ai_importance = 500
@@ -1677,7 +1683,6 @@ country_decisions = {
 				province_id = 4464
 				province_id = 5923
 				province_id = 5952
-				province_id = 5955
 				province_id = 4482
 				province_id = 4484
 				province_id = 4490
@@ -1704,9 +1709,6 @@ country_decisions = {
 				add_core = BII
 			}
 			4464 = {
-				add_core = BII
-			}
-			5955 = {
 				add_core = BII
 			}
 			4482 = {

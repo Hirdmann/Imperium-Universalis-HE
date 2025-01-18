@@ -80,6 +80,8 @@ gravel_road = yes
 		duration = -1
 	}
 	add_core = PER
+	culture = aeolic
+	religion = greek_religion
 }
 
 367.1.1 = {

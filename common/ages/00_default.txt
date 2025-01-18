@@ -51,6 +51,8 @@ age_of_empires = {
 				NOT = { capital_scope = { superregion = iran_superregion } }
 				NOT = { capital_scope = { continent = india } }
 				NOT = { capital_scope = { superregion = arabia_superregion } }
+				NOT = { capital_scope = { superregion = suvarnabhumi_superregion } }
+				NOT = { capital_scope = { continent = china } }
 			}
 			has_discovered = 1337
 			has_discovered = 612
@@ -59,6 +61,21 @@ age_of_empires = {
 			has_discovered = 745
 			has_discovered = 2476
 			has_discovered = 2500
+		}
+
+		obj_exploration_of_the_world_far_east = {
+			allow = {
+				OR = {
+					capital_scope = { superregion = suvarnabhumi_superregion }
+					capital_scope = { continent = china }
+				}
+			}
+			has_discovered = 4349
+			has_discovered = 4263
+			has_discovered = 4464
+			has_discovered = 4233
+			has_discovered = 4003
+			has_discovered = 4436
 		}
 
 		obj_exploration_of_the_world_east = {
@@ -1131,7 +1148,7 @@ classical_age = {
 				always = yes
 			}
 			modifier = {
-				embracement_cost = -0.25
+				embracement_cost = -0.2
 			}
 			effect = {
 				add_adm_power = 100

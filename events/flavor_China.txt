@@ -4396,6 +4396,7 @@ country_event = {
 					tag = NYA
 					tag = XNC
 					tag = WEO
+					tag = JOG #this could be Qi (descended from Yao) or Jii (descended from Huangdi)
 				}
 			}
 			set_dynasty = "Jii"
@@ -4448,7 +4449,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				tag = JIW
+				OR = {
+					tag = JIW
+					tag = JIC
+				}
 			}
 			set_dynasty = "Qi"
 		}
@@ -4466,6 +4470,7 @@ country_event = {
 				OR = {
 					tag = XUE
 					tag = SHI
+					tag = PRM
 				}
 			}
 			set_dynasty = "Ren"
@@ -5296,9 +5301,6 @@ country_event = {
 		4490 = {
 			change_controller = BII
 		}
-		5955 = {
-			change_controller = BII
-		}
 		BII = {
 			add_country_modifier = {
 				name = baipu_boost
@@ -5333,9 +5335,6 @@ country_event = {
 		set_country_flag = chu_began_bii_war
 		release = BII
 		4490 = {
-			change_controller = BII
-		}
-		5955 = {
 			change_controller = BII
 		}
 		BII = {
@@ -5494,10 +5493,6 @@ country_event = {
 		change_dip = 2
 		change_mil = 2
 		4490 = {
-			cede_province = BII
-			add_core = BII
-		}
-		5955 = {
 			cede_province = BII
 			add_core = BII
 		}
@@ -5772,31 +5767,6 @@ country_event = {
 			add_manpower = -5
 			add_treasury = -150
 			4484 = {
-				remove_province_modifier = yunmeng_marsh_mod
-				add_permanent_province_modifier = { 
-					name = tamed_yunmeng_marsh_mod
-					duration = -1  
-				}
-			}
-		}
-		clr_country_flag = yunmeng_deciding_decision
-	}
-	option = {
-		name = "china.113.ad"
-		trigger = { 
-			5955 = {
-				has_province_modifier = yunmeng_marsh_mod
-				owned_by = ROOT
-			}
-		}
-		if = {
-			limit = {
-				manpower = 5
-				treasury = 150
-			}
-			add_manpower = -5
-			add_treasury = -150
-			5955 = {
 				remove_province_modifier = yunmeng_marsh_mod
 				add_permanent_province_modifier = { 
 					name = tamed_yunmeng_marsh_mod
@@ -6325,79 +6295,116 @@ country_event = {
 					leader_dynasty = "Mi"
 				}
 			}
-			4382 = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 1
-					win = yes
-					religion = liyuebadao
-					culture = nanchu
-					#leader = "Jiao"
-					#leader_dynasty = "Mi"
+			if = {
+				limit = {
+					owns = 4382
+				}
+				4382 = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 2
+						win = yes
+						religion = liyuebadao
+						culture = nanchu
+						#leader = "Jiao"
+						#leader_dynasty = "Mi"
+					}
 				}
 			}
-			4380 = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 1
-					win = yes
-					#leader = "Jiao"
-					#leader_dynasty = "Mi"
+			if = {
+				limit = {
+					owns = 4380
+				}
+				4380 = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 2
+						win = yes
+						religion = liyuebadao
+						culture = nanchu
+						#leader = "Jiao"
+						#leader_dynasty = "Mi"
+					}
 				}
 			}
-			8116 = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 1
-					win = yes
-					religion = liyuebadao
-					culture = nanchu
-					#leader = "Jiao"
-					#leader_dynasty = "Mi"
+			if = {
+				limit = {
+					owns = 8116
+				}
+				8116 = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 1
+						win = yes
+						religion = liyuebadao
+						culture = nanchu
+						#leader = "Jiao"
+						#leader_dynasty = "Mi"
+					}
 				}
 			}
-			4385 = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 1
-					win = yes
-					religion = liyuebadao
-					culture = nanchu
-					#leader = "Jiao"
-					#leader_dynasty = "Mi"
+			if = {
+				limit = {
+					owns = 4385
+				}
+				4385 = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 1
+						win = yes
+						religion = liyuebadao
+						culture = nanchu
+						#leader = "Jiao"
+						#leader_dynasty = "Mi"
+					}
 				}
 			}
-			4388 = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 0.5
-					win = yes
-					religion = liyuebadao
-					culture = nanchu
-					#leader = "Jiao"
-					#leader_dynasty = "Mi"
+			if = {
+				limit = {
+					owns = 4388
+				}
+				4388 = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 1
+						win = yes
+						religion = liyuebadao
+						culture = nanchu
+						#leader = "Jiao"
+						#leader_dynasty = "Mi"
+					}
 				}
 			}
-			4373 = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 0.5
-					win = yes
-					religion = liyuebadao
-					culture = nanchu
-					#leader = "Jiao"
-					#leader_dynasty = "Mi"
+			if = {
+				limit = {
+					owns = 4373
+				}
+				4373 = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 0.5
+						win = yes
+						religion = liyuebadao
+						culture = nanchu
+						#leader = "Jiao"
+						#leader_dynasty = "Mi"
+					}
 				}
 			}
-			4372 = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 0.5
-					win = yes
-					religion = liyuebadao
-					culture = nanchu
-					#leader = "Jiao"
-					#leader_dynasty = "Mi"
+			if = {
+				limit = {
+					owns = 4372
+				}
+				4372 = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 0.5
+						win = yes
+						religion = liyuebadao
+						culture = nanchu
+						#leader = "Jiao"
+						#leader_dynasty = "Mi"
+					}
 				}
 			}
 		}
@@ -6512,5 +6519,643 @@ country_event = {
 	
 	option = {
 		name = "china.125.a"
+	}
+}
+
+########################################################################################
+# zheng curia mission if zhou is player
+########################################################################################
+country_event = {
+	id = china.127
+	title = "china.127.t"
+	desc = "china.127.d"
+	picture = cloudy_manor
+	is_triggered_only = yes
+	
+	option = {
+		name = "china.127.a"
+		transfer_papal_controller = ZHE
+		add_treasury = 50
+		add_prestige = -5
+	}
+	option = {
+		name = "china.127.b"
+		break_alliance = ZHE
+		reverse_add_opinion = {
+			who = ZHE
+			modifier = insulted
+		}
+	}
+}
+
+########################################################################################
+# ba may seize Yu when chu is at war with the baipu
+########################################################################################
+country_event = {
+	id = china.128
+	title = "china.128.t"
+	desc = "china.128.d"
+	picture = cloudy_manor
+	fire_only_once = yes
+	trigger = {
+		tag = BAA
+		CHU = {
+			has_country_flag = chu_began_bii_war
+			is_at_war = yes
+			NOT = {
+				has_country_flag = chu_end_bii_war
+			}
+		}
+		HNG = {
+			exists = yes
+			OR = {
+				is_subject = no
+				is_subject_of_type = tributary_state
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 11
+	}
+	
+	option = {
+		name = "china.128.a"
+		if = {
+			limit = {
+				HNG = {
+					alliance_with = CHU
+				}
+			}
+			HNG = {
+				break_alliance = CHU
+			}
+		}
+		if = {
+			limit = {
+				alliance_with = HNG
+			}
+			HNG = {
+				break_alliance = HNG
+			}
+		}
+		if = {
+			limit = {
+				HNG = {
+					is_subject_of = CHU
+					is_subject_of_type = tributary_state
+				}
+			}
+			HNG = {
+				grant_independence = yes
+			}
+		}
+		if = {
+			limit = {
+				ai = yes
+				HNG = {
+					ai = yes
+				}
+			}
+			HNG = {
+				add_country_modifier = { 
+					name = ai_yu_debuff_surpriseattack 
+					duration = 730
+				}
+			}
+		}
+		declare_war_with_cb = {
+			who = HNG
+			casus_belli = cb_annex
+		}
+		ai_chance = { 
+			factor = 95
+		}
+	}
+	option = {
+		name = "china.128.b"
+		add_prestige = -5
+		add_historical_friend = HNG
+		HNG = {
+			add_historical_friend = BAA
+		}
+		ai_chance = { 
+			factor = 5
+			modifier = {
+				factor = 4
+				alliance_with = HNG
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = HNG
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 10
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 6
+				has_opinion = {
+					who = HNG
+					value = 180
+				}
+			}
+		}
+	}
+}
+
+########################################################################################
+# Quwo rebellion (semi alt hist if jin beats the ministers)
+########################################################################################
+country_event = {
+	id = china.129
+	title = "china.129.t"
+	desc = "china.129.d"
+	picture = cloudy_manor
+	fire_only_once = yes
+	trigger = {
+		tag = JIN
+		is_year = 150
+		NOT = {
+			has_global_flag = jin_partition_started
+		}
+		owns = 4073
+		controls = 4073
+	}
+	
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				stability = -2
+			}
+		}
+	}
+	
+	option = {
+		name = "china.129.a"
+		set_country_flag = got_new_quwo_rebellion
+		4073 = {
+			add_core = QUW 
+		}
+		if = {
+			limit = {
+				owns = 4077
+				controls = 4077
+			}
+			4077 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 5936
+				controls = 5936
+			}
+			5936 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 4076
+				controls = 4076
+			}
+			4076 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 6049
+				controls = 6049
+			}
+			6049 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 4078
+				controls = 4078
+			}
+			4078 = {
+				add_core = QUW
+			}
+		}
+		release = QUW
+		QUW = {
+			set_capital = 4073
+			add_country_modifier = { 
+				name = quwo_boost 
+				duration = 1825
+			}
+			define_ruler = {
+				name = "Xiaomin"
+				dynasty = "Ji"
+				adm = 4
+				dip = 5
+				mil = 3
+				age = 24
+				claim = 95
+			}
+			4073 = {
+				build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.1
+					artillery = 0.2
+				}
+			}
+			define_general = {
+				name = "Gongzi You"
+				shock = 2
+				fire = 2
+				manuever = 2
+				siege = 1
+			}
+		}
+		declare_war_with_cb = {
+			who = QUW
+			casus_belli = cb_annex
+		}
+		set_country_flag = quwo_rebelled_immediately
+		ai_chance = { 
+			factor = 95
+		}
+	}
+	option = {
+		name = "china.129.b"
+		trigger = { ai = no }
+		set_country_flag = got_new_quwo_rebellion
+		4073 = {
+			add_core = QUW 
+		}
+		if = {
+			limit = {
+				owns = 4077
+				controls = 4077
+			}
+			4077 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 5936
+				controls = 5936
+			}
+			5936 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 4076
+				controls = 4076
+			}
+			4076 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 6049
+				controls = 6049
+			}
+			6049 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 4078
+				controls = 4078
+			}
+			4078 = {
+				add_core = QUW
+			}
+		}
+		release = QUW
+		QUW = {
+			set_capital = 4073
+			add_country_modifier = { 
+				name = quwo_boost 
+				duration = 1825
+			}
+			define_ruler = {
+				name = "Xiaomin"
+				dynasty = "Ji"
+				adm = 4
+				dip = 5
+				mil = 3
+				age = 24
+				claim = 95
+			}
+			4073 = {
+				build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.1
+					artillery = 0.2
+				}
+			}
+			define_general = {
+				name = "Gongzi You"
+				shock = 2
+				fire = 2
+				manuever = 2
+				siege = 1
+			}
+		}
+		declare_war_with_cb = {
+			who = QUW
+			casus_belli = cb_annex
+		}
+		switch_tag = QUW
+		set_country_flag = quwo_rebelled_immediately
+		custom_tooltip = quwo_extra_tooltip_2
+	}
+	option = {
+		name = "china.129.c"
+		4073 = {
+			add_core = QUW 
+		}
+		if = {
+			limit = {
+				owns = 4077
+				controls = 4077
+			}
+			4077 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 5936
+				controls = 5936
+			}
+			5936 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 4076
+				controls = 4076
+			}
+			4076 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 6049
+				controls = 6049
+			}
+			6049 = {
+				add_core = QUW
+			}
+		}
+		if = {
+			limit = {
+				owns = 4078
+				controls = 4078
+			}
+			4078 = {
+				add_core = QUW
+			}
+		}
+		release = QUW
+		QUW = {
+			set_capital = 4073
+			define_ruler = {
+				name = "Xiaomin"
+				dynasty = "Ji"
+				adm = 4
+				dip = 5
+				mil = 3
+				age = 24
+				claim = 95
+			}
+			4073 = {
+				build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.1
+					artillery = 0.2
+				}
+			}
+			define_general = {
+				name = "Gongzi You"
+				shock = 2
+				fire = 2
+				manuever = 2
+				siege = 1
+			}
+			add_casus_belli = {
+				target = JIN
+				type = cb_claim_throne
+				months = 240
+			}
+			add_historical_rival = JIN
+		}
+		add_historical_rival = QUW
+		add_truce_with = QUW
+		every_rival_country = {
+			create_alliance = QUW
+		}
+		ai_chance = { 
+			factor = 5
+			modifier = {
+				factor = 1.5
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					stability = -1
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					stability = -2
+				}
+			}
+			modifier = {
+				factor = 3
+				NOT = {
+					stability = -3
+				}
+			}
+		}
+	}
+}
+
+########################################################################################
+# Jin beats quwo
+########################################################################################
+country_event = {
+	id = china.130
+	title = "china.130.t"
+	desc = "china.130.d"
+	picture = military_parade
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JIN
+		has_won_war_against = {
+			who = QUW
+			max_years_since = 2
+		}
+		has_country_flag = got_new_quwo_rebellion
+	}
+	
+	option = {
+		name = "china.130.a"
+		if = {
+			limit = {
+				exists = QUW
+			}
+			inherit = QUW
+		}
+		every_owned_province = {
+			limit = {
+				is_core = QUW
+			}
+			remove_core = QUW
+		}
+		add_prestige = 10
+	}
+}
+
+########################################################################################
+# Quwo beats jin
+########################################################################################
+country_event = {
+	id = china.131
+	title = "china.131.t"
+	desc = "china.131.d"
+	picture = military_parade
+	fire_only_once = yes
+	
+	trigger = {
+		tag = QUW
+		has_country_flag = quwo_rebelled_immediately
+		has_won_war_against = {
+			who = JIN
+			max_years_since = 2
+		}
+	}
+	
+	option = {
+		name = "china.131.a"
+		if = {
+			limit = {
+				exists = JIN
+				is_emperor = JIN
+			}
+			set_emperor = yes
+		}
+		if = {
+			limit = {
+				exists = JIN
+			}
+			inherit = JIN
+		}
+		change_tag = JIN
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = QUW
+				}
+				remove_core = QUW
+			}
+		}
+		swap_free_idea_group = yes
+		set_capital = 4071
+		add_prestige = 20
+	}
+	option = {
+		name = "china.131.b"
+		trigger = { ai = no }
+		if = {
+			limit = {
+				exists = JIN
+				is_emperor = JIN
+			}
+			set_emperor = yes
+		}
+		if = {
+			limit = {
+				exists = JIN
+			}
+			inherit = JIN
+		}
+		change_tag = JIN
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = QUW
+				}
+				remove_core = QUW
+			}
+		}
+		swap_free_idea_group = yes
+		custom_tooltip = quwo_extra_tooltip_1
+		set_country_flag = quwo_jin_rename_tang
+	}
+}
+
+########################################################################################
+# become Tang
+########################################################################################
+country_event = {
+	id = china.132
+	title = "china.132.t"
+	desc = "china.132.d"
+	picture = religious
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_flag = quwo_jin_rename_tang
+	}
+	
+	option = {
+		name = "china.132.a"
+		change_tag = JIN
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = QUW
+				}
+				remove_core = QUW
+			}
+		}
+		set_country_flag = jin_became_tang
+		set_capital = 4070
+		4070 = {
+			change_province_name = "Tang"
+		}
+		override_country_name = JINTANG
+		add_dip_power = -100
+		swap_free_idea_group = yes
+		change_country_color = { 
+			color = { 179 142 21 }
+		}
 	}
 }
