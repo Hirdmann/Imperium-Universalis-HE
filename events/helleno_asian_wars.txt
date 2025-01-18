@@ -1812,6 +1812,9 @@ country_event = {
 	trigger = {
 		has_global_flag = helleno_asian_war_1_start
 		has_global_flag = helleno_asian_war_1_marathon_start
+		NOT = {
+			has_global_flag = helleno_asian_war_1_end
+		}
 		is_at_war = yes
 		961 = {
 			owned_by = ROOT
@@ -1837,6 +1840,242 @@ country_event = {
 			white_peace = CST
 			white_peace = NXS
 			white_peace = TNG
+			set_global_flag = helleno_asian_war_1_end
 		}
 	}
 }
+
+country_event = {
+	id = hellenoasian.9 # Prepare for second persian invasion - only for Persia
+	title = "hellenoasian.9.t"
+	desc = "hellenoasian.9.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = PSE
+		is_year = 274
+		NOT = {
+			is_year = 280
+		}
+		has_global_flag = helleno_asian_war_1_end
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_start
+				has_global_flag = helleno_asian_war_2_start_soon
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 5
+	}
+	immediate = {
+		hidden_effect = {
+			959 = {
+				cede_province = ATH
+			}
+			every_country = {
+				limit = {
+					capital_scope = {
+						OR = {
+							region = greek_region
+							region = mare_aegaeum_islands_region
+						}
+						NOT = {
+							OR = {
+								area = polyrrenia_area
+								area = gortyn_area
+								area = hierapytna_area
+								area = knossos_area
+							}
+						}
+					}
+					NOT = {
+						OR = {
+							tag = HEL
+							tag = ATH
+							tag = HEL
+							tag = SP1
+							tag = ARG
+							tag = BOE
+						}
+					}
+				}
+				country_event = {
+					id = hellenoasian.900 #let greeks choose the side
+				}
+			}
+		}
+	}
+
+	option =  {
+		name = "hellenoasian.9.a"
+		ATH = {
+			country_event = {
+				id = hellenoasian.901 #inform persians are incoming
+			}
+		}
+		SP1 = {
+			country_event = {
+				id = hellenoasian.901 #inform persians are incoming
+			}
+		}
+		HEL = {
+			country_event = {
+				id = hellenoasian.901 #inform persians are incoming
+			}
+		}
+		set_global_flag = helleno_asian_war_2_start_soon
+		add_country_modifier = {
+			name = pse_2ndinvasion_rally
+			duration = 60
+		}
+	}
+}
+country_event = {
+	id = hellenoasian.900 # #let greeks choose the side
+	title = "hellenoasian.900.t"
+	desc = "hellenoasian.900.d"
+	picture = battle
+	is_triggered_only = yes
+
+	option =  {
+		name = "hellenoasian.900.a" # Choose to fight
+		ai_chance = { factor = 70 }
+		set_country_flag = hellenic_side_2ndpersian
+		add_prestige = 5
+		add_trust = { who = ATH value = 30 mutual = yes }
+		add_country_modifier = {
+			name = greek_greko_persian_buff
+			duration = 7300
+		}
+	}
+	option =  {
+		name = "hellenoasian.900.b" # neutral (propersian)
+		ai_chance = { factor = 30 }
+		set_country_flag = neutral_side_2ndpersian
+		add_prestige = -5
+		add_trust = { who = ATH value = -10 mutual = yes }
+	}
+}
+
+country_event = {
+	id = hellenoasian.901 #
+	title = "hellenoasian.901.t"
+	desc = "hellenoasian.901.d"
+	picture = battle
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option =  {
+		name = "hellenoasian.901.a" # Ready to fight!
+		add_manpower = 5
+		add_country_modifier = {
+			name = greek_greko_persian_buff
+			duration = 7300
+		}
+	}
+}
+
+country_event = {
+	id = hellenoasian.902 # invasion starts
+	title = "hellenoasian.902.t"
+	desc = "hellenoasian.902.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = PSE
+		is_year = 275
+		NOT = {
+			is_year = 280
+		}
+		has_global_flag = helleno_asian_war_2_start_soon
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+	}
+
+	immediate = {
+		ATH = {
+			add_country_modifier = {
+				name = athens_relations_greko_persian_buff
+				duration = 7300
+			}
+		}
+		SP1 = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			create_alliance = ATH
+		}
+		HEL = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			create_alliance = ATH
+		}
+		every_country = {
+			limit = {
+				has_country_flag = hellenic_side_2ndpersian
+			}
+			create_alliance = ATH
+		}
+		PSE = {
+			add_casus_belli = {
+				target = ATH
+				type = cb_vassalize_mission
+				months = 120
+			}
+		}
+	}
+	after = {
+		every_ally = {
+			join_all_defensive_wars_of = ATH
+		}
+	}
+	mean_time_to_happen = {
+		months = 5
+	}
+	option =  {
+		name = "hellenoasian.902.a" # PSE declares war
+		set_global_flag = helleno_asian_war_2_start
+		clr_global_flag = helleno_asian_war_2_start_soon
+		add_manpower = 5
+		PSE = {
+			declare_war_with_cb = {
+				who = ATH
+				casus_belli = cb_vassalize_mission
+			}
+		}
+		add_country_modifier = {
+			name = pse_2ndinvasion_sudden_regiment_change
+			duration = 1825
+		}
+		ATH = {
+			add_country_modifier = {
+				name = ath_2ndinvasion_dip_help
+				duration = 1825
+			}
+		}
+	}
+}
+
+#on ocupation of 1 prov in macedon - Macedonia changes sides (becomes independent and gives access to Athens)
+#events for chalkiddican league
+#events for amthipolis, abdera, maronea
+#event for persians to dissolve thracia on occupation of Cardia and Doriscos
+#event for cedeing sestos to athens
+#event for Perinthos to join Delians immediately if any soldier is present on its soil
+#event for Bysantion to join Delians immediately if any soldier is present on its soil
+#greek victory +navy traditions army traditions and prestige to anyone who has a truce with persia
+#persian victory
+#delian league founded officially
+#event for War of Delian League if Athens want to continue.
+
+#Liberations of asia minor polises
+#liberations on Rhodes, Cyprus
+#Alliance with egypt and Cyprus as they become independent
+#"Cultural Phase" event for Persia
+#Event for Peloponnesian League
+#event for Peloponnesian war start
+#event for Persians to have Satraps revolt - maybe create separate type of satrapy that can have independence wars and flip all satrapies to it.
