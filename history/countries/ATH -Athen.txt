@@ -464,6 +464,7 @@ add_army_professionalism = 0.1
 		siege = 0
 		death_date = 282.1.1 #Ostracized
 	}
+	set_global_flag = helleno_asian_war_1_start
 }
 
 262.1.1 = {
@@ -501,6 +502,8 @@ add_army_professionalism = 0.1
 		adm = 3
 		mil = 3
 	}
+	set_global_flag = helleno_asian_war_1_marathon_start
+	set_global_flag = helleno_asian_war_1_end
 }
 
 265.1.1 = {
@@ -610,6 +613,7 @@ add_army_professionalism = 0.1
 		adm = 4
 		mil = 5
 	}
+	set_global_flag = helleno_asian_war_2_start
 }
 
 276.1.1 = {
@@ -627,6 +631,7 @@ add_army_professionalism = 0.1
 	add_government_reform = league_reform
 	government_rank = 3
 	add_army_professionalism = 0.1
+	set_global_flag = helleno_asian_war_2_ended
 }
 
 277.1.1 = {

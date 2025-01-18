@@ -8,6 +8,11 @@ emperor_reichsreform = { #兴灭继绝
 	}
 	on_effect = {
 		imperial_ban_allowed = yes
+		add_reform_desire = 0.1
+		add_country_modifier = {
+			name = recently_passed_zhuxia_reform
+			duration = 730
+		}
 	}
 	off_effect = {
 		imperial_ban_allowed = no
@@ -22,6 +27,13 @@ emperor_reichsregiment = { #征收贡赋
 	}
 	province = {
 
+	}
+	on_effect = {
+		add_reform_desire = 0.2
+		add_country_modifier = {
+			name = recently_passed_zhuxia_reform
+			duration = 1460
+		}
 	}
 	emperor = {
 
@@ -42,6 +54,11 @@ emperor_reichsstabilitaet = { #以战行教
 
 	}
 	on_effect = {
+		add_reform_desire = 0.4
+		add_country_modifier = {
+			name = recently_passed_zhuxia_reform
+			duration = 2190
+		}
 		custom_tooltip = "EXPAND_EMPIRE_CB"
 	}
 }
@@ -60,7 +77,11 @@ emperor_perpetual_diet = { #盟约之城
 	}
 	on_effect = {
 		custom_tooltip = "PERPETUAL_DIET_ESTABLISHED"
-		add_reform_desire = 0.1
+		add_reform_desire = 0.6
+		add_country_modifier = {
+			name = recently_passed_zhuxia_reform
+			duration = 2920
+		}
 		hidden_effect = {
 			random_province = {
 				limit = {
@@ -108,7 +129,10 @@ emperor_landfriede = { #永禁仇杀
 	}
 	on_effect = {
 		custom_tooltip = "ZHUXIAWUSHI"
-		add_reform_desire = 0.15
+		add_reform_desire = 0.7add_country_modifier = {
+			name = recently_passed_zhuxia_reform
+			duration = 3650
+		}
 		#诸夏成员受到攻击时可请求所有成员的帮助
 	}
 	required_reform = emperor_perpetual_diet
@@ -132,7 +156,7 @@ emperor_landsknechtswesen = { #诸夏武士
 			set_hre_religion_treaty = yes
 		}
 		hre_inheritable = yes
-		add_reform_desire = 0.2
+		add_reform_desire = 0.8
 	}
 	off_effect = {
 		hre_inheritable = no
@@ -158,7 +182,7 @@ emperor_erbkaisertum = { #霸位永传
 
 	}
 	on_effect = {
-		add_reform_desire = 0.25
+		custom_tooltip = "CHINA_BEGIN_TRENT"
 		internal_hre_cb = no
 	}
 	off_effect = {
@@ -332,7 +356,7 @@ emperor_reichskrieg = { #肆伐九夷
 	}
 
 	off_effect = {
-		
+
 	}
 }
 
@@ -352,10 +376,6 @@ emperor_gemeinerpfennig = { #定期贡赋
 	elector_per_prince = {
 		global_manpower = 0.05
 		global_manpower = 0.01
-	}
-
-	on_effect = {
-		add_reform_desire = 0.35
 	}
 
 	emperor = {
@@ -378,7 +398,6 @@ emperor_hofgericht = { #定期朝见
 
 	on_effect = {
 		#custom_tooltip = "Dingqi_Tribute"
-		add_reform_desire = 0.6
 		every_country = {
 			limit = {
 				is_part_of_hre = yes
@@ -404,7 +423,6 @@ emperor_imperial_estates = { #遣送质子
 
 	}
 	on_effect = {
-		add_reform_desire = 0.85
 		#所有诸夏国家变为选王制
 		every_country = {
 			limit = {
@@ -460,7 +478,7 @@ emperor_natuguiyi = { #纳土归一
 			country_event = { id = 9073 tooltip = natuguiyi_empire2 }
 			set_emperor_of_china = ROOT
 			ZHO = { set_papacy_active = no }
-			country_event = { 
+			country_event = {
     				id = china.55
     				days = 10
 			}

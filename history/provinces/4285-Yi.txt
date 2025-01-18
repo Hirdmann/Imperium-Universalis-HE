@@ -5,7 +5,7 @@ religion = wuism
 capital = ""
 trade_goods = fish
 hre = no
-base_tax = 0
+base_tax = 1
 base_production = 2
 base_manpower = 5
 is_city = yes
@@ -29,7 +29,7 @@ discovered_by = nomad_group
 	controller = YIG
 	add_core = YIG
 }
-144.1.1 = {
+94.1.1 = {
 	add_core = QII
 	controller = QII
 	owner = QII

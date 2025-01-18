@@ -846,6 +846,10 @@ on_yearly_pulse = {
 		if = {
 			limit = {
 				has_global_flag = coloredvassals_yes
+			   had_global_flag = {
+				   flag = coloredvassals_refresh
+				   days = 360
+			   }
 			}
 			color_subjects_yearly = yes
 		}

@@ -95,6 +95,13 @@ dependency = {
 dependency = {
 	subject_type = "league_member_subject"
 	first = SP1
+	second = MNT
+	start_date = 304.1.1
+	end_date = 375.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
 	second = STF
 	start_date = 304.1.1
 	end_date = 375.1.1
@@ -140,19 +147,207 @@ dependency = {
 	first = SP1
 	second = EPD
 	start_date = 304.1.1
-	end_date = 375.1.1
+	end_date = 385.1.1
 }
 dependency = {
 	subject_type = "league_member_subject"
 	first = SP1
 	second = TRS
 	start_date = 304.1.1
-	end_date = 375.1.1
+	end_date = 388.1.1
 }
 dependency = {
 	subject_type = "league_member_subject"
 	first = SP1
 	second = SN1
 	start_date = 304.1.1
-	end_date = 375.1.1
+	end_date = 385.1.1
+}
+
+#phokis
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = PHC
+	start_date = 314.1.1
+	end_date = 376.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = LCO
+	start_date = 314.1.1
+	end_date = 376.1.1
+}
+#thebes and boeotians
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = THH
+	start_date = 321.1.1
+	end_date = 356.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = THH
+	start_date = 367.1.1
+	end_date = 376.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = TGR
+	start_date = 321.1.1
+	end_date = 356.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = TGR
+	start_date = 367.1.1
+	end_date = 376.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = ORC
+	start_date = 321.1.1
+	end_date = 356.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = ORC
+	start_date = 367.1.1
+	end_date = 376.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = TSP
+	start_date = 321.1.1
+	end_date = 356.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = TSP
+	start_date = 367.1.1
+	end_date = 376.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = DAL
+	start_date = 321.1.1
+	end_date = 356.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = DAL
+	start_date = 367.1.1
+	end_date = 376.1.1
+}
+ #league after peloponnesian and until corynthian
+
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = PAT
+	start_date = 351.1.1
+	end_date = 387.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = AIG
+	start_date = 351.1.1
+	end_date = 388.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = PA2
+	start_date = 351.1.1
+	end_date = 388.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = DYM
+	start_date = 351.1.1
+	end_date = 388.1.1
+}
+
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = MEG
+	start_date = 306.1.1
+	end_date = 388.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = COR
+	start_date = 306.1.1
+	end_date = 358.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = COR
+	start_date = 367.1.1
+	end_date = 388.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = ELI
+	start_date = 354.1.1
+	end_date = 384.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = LPR
+	start_date = 354.1.1
+	end_date = 384.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = AEG
+	start_date = 350.1.1
+	end_date = 384.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = AMC
+	start_date = 354.1.1
+	end_date = 384.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = ANK
+	start_date = 354.1.1
+	end_date = 384.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = KEP
+	start_date = 354.1.1
+	end_date = 384.1.1
+}
+dependency = {
+	subject_type = "league_member_subject"
+	first = SP1
+	second = CHL
+	start_date = 376.1.1
+	end_date = 384.1.1
 }
