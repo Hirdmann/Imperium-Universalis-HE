@@ -329,6 +329,7 @@ country_event = {
 	}
 }
 #Asian power empowers Macedon and makes it tributary - can just trigger macedon event for that, and not mess this file
+
 #Ionian rebellion
 
 country_event = {
@@ -1987,7 +1988,7 @@ country_event = {
 
 	trigger = {
 		tag = PSE
-		is_year = 275
+		is_year = 274
 		NOT = {
 			is_year = 280
 		}
@@ -2061,7 +2062,212 @@ country_event = {
 }
 
 #on ocupation of 1 prov in macedon - Macedonia changes sides (becomes independent and gives access to Athens)
+
+country_event = {
+	id = hellenoasian.10 #
+	title = "hellenoasian.10.t"
+	desc = "hellenoasian.10.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAC
+		is_year = 274
+		NOT = {
+			is_year = 280
+		}
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		any_owned_province = {
+			owned_by = ROOT
+			NOT = {
+				controlled_by = ROOT
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.10.a" # switch the sides quick, yes-yes
+		add_prestige = 5
+		grant_independence = yes
+		PSE = {
+			release = MAC
+		}
+		white_peace = ATH
+		white_peace = HEL
+		white_peace = SP1
+		1065 = {
+			add_cire = MAC
+			cede_province = MAC
+		}
+	}
+}
 #events for chalkiddican league
+
+country_event = {
+	id = hellenoasian.11 #
+	title = "hellenoasian.11.t"
+	desc = "hellenoasian.11.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 274
+		NOT = {
+			is_year = 280
+		}
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		1067 = {
+			NOT = {
+				controlled_by = THR
+			}
+		}
+		1068 = {
+			NOT = {
+				controlled_by = THR
+			}
+		}
+		1070 = {
+			NOT = {
+				controlled_by = THR
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.11.a" # release chalkidians
+		add_prestige = 5
+		1066 = { #bottike
+			add_core = BTT
+			remove_core = THR
+			cede_province = BTT
+		}
+		create_subject = {
+			subject_type = league_member_subject
+			subject = BTT
+		}
+		BTT = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			add_opinion = { who = ATH modifier = released_us_freely }
+		}
+		1068 = { #Potidaea - becomes athenian colony
+			add_core = ATH
+			remove_core = COR
+			remove_core = THR
+			cede_province = ATH
+		}
+
+		5527 = { #Mende
+			add_core = MDE
+			remove_core = THR
+			cede_province = MDE
+		}
+		create_subject = {
+			subject_type = league_member_subject
+			subject = MDE
+		}
+		MDE = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			add_opinion = { who = ATH modifier = released_us_freely }
+		}
+		1067 = { #olynthos
+			add_core = OLN
+			remove_core = THR
+			cede_province = OLN
+		}
+		1072 = {
+			add_core = OLN
+			remove_core = THR
+			cede_province = OLN
+		}
+		5526 = {
+			add_core = OLN
+			remove_core = THR
+			cede_province = OLN
+		}
+		create_subject = {
+			subject_type = league_member_subject
+			subject = OLN
+		}
+		OLN = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			add_opinion = { who = ATH modifier = released_us_freely }
+		}
+		1069 = { #Torone
+			add_core = TRN
+			remove_core = THR
+			cede_province = TRN
+		}
+		create_subject = {
+			subject_type = league_member_subject
+			subject = TRN
+		}
+		TRN = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			add_opinion = { who = ATH modifier = released_us_freely }
+		}
+		1070 = { #Akanthos
+			add_core = ATS
+			remove_core = THR
+			cede_province = ATS
+		}
+		5524 = { #Akanthos
+			add_core = ATS
+			remove_core = THR
+			cede_province = ATS
+		}
+		create_subject = {
+			subject_type = league_member_subject
+			subject = ATS
+		}
+		ATS = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			add_opinion = { who = ATH modifier = released_us_freely }
+		}
+		1071 = { #Stagira
+			add_core = STG
+			remove_core = THR
+			cede_province = STG
+		}
+		create_subject = {
+			subject_type = league_member_subject
+			subject = STG
+		}
+		STG = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			add_opinion = { who = ATH modifier = released_us_freely }
+		}
+		55911 = { #Argilos
+			add_core = ARU
+			remove_core = THR
+			cede_province = ARU
+		}
+		create_subject = {
+			subject_type = league_member_subject
+			subject = ARU
+		}
+		ARU = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			add_opinion = { who = ATH modifier = released_us_freely }
+		}
+	}
+}
+
 #events for amthipolis, abdera, maronea
 #event for persians to dissolve thracia on occupation of Cardia and Doriscos
 #event for cedeing sestos to athens
