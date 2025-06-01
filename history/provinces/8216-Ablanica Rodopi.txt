@@ -53,6 +53,7 @@ discovered_by = balkan
 275.1.1 = {
 	owner = TT8
 	controller = TT8
+	remove_core = THR
 }
 
 295.1.1 = {

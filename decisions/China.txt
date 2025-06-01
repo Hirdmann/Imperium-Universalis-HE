@@ -208,6 +208,7 @@ country_decisions = {
 	zhou_free_guo = {
 		potential = {
 			tag = ZHO
+			is_year = 9999
 			NOT = {
 				start_date = 87.1.1
 			}
@@ -569,6 +570,104 @@ country_decisions = {
 		ai_importance = 500
 	}
 	
+	xirong_hre_state_rename = {
+		major = yes
+		color = { 245 160 60 }
+		potential = {
+			OR = {
+				tag = LSS
+				tag = BOG
+				tag = PXS
+			}
+			NOT = {
+				has_country_flag = xirong_took_sino_guanzhong
+			}
+			OR = {
+				is_part_of_hre = no
+				religion = tengri
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			OR = {
+				primary_culture = guanzhong
+				AND = {
+					ai = yes
+					accepted_culture = guanzhong
+					dip_power = 200
+				}
+			}
+			OR = {
+				emperor = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				ZHO = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+			treasury = 100
+		}
+		effect = {
+			add_treasury = -100
+			if = {
+				limit = {
+					tag = BOG
+				}
+				override_country_name = XIRONG_GUANZHONG_BO
+			}
+			else_if = {
+				limit = {
+					tag = LSS
+				}
+				override_country_name = XIRONG_GUANZHONG_TONG
+			}
+			else_if = {
+				limit = {
+					tag = PXS
+				}
+				override_country_name = XIRONG_GUANZHONG_PENG
+			}
+			change_technology_group = far_eastern
+			change_unit_type = far_eastern
+			change_government = monarchy
+			add_government_reform = chinese_feudalism_reform
+			change_religion = chinese_religion
+			change_primary_culture = guanzhong
+			capital_scope = {
+				change_religion = chinese_religion
+			}
+			set_in_empire = yes
+			swap_non_generic_missions = yes
+			swap_free_idea_group = yes
+			country_event = {
+				id = chinese_school_events.1
+				days = 2
+			}
+			set_country_flag = xirong_took_sino_guanzhong
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				personality = ai_militarist
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					treasury = 150
+				}
+			}
+		}
+		ai_importance = 350
+	}
+	
 	kua_restore_state = {
 		major = yes
 		color = { 245 160 60 }
@@ -612,7 +711,7 @@ country_decisions = {
 			4363 = {
 				add_permanent_claim = KUA
 			}
-			any_owned_province = {
+			every_owned_province = {
 				limit = {
 					is_core = ZHE
 				}
@@ -989,6 +1088,7 @@ country_decisions = {
 		potential = {
 			is_part_of_hre = yes
 			religion = chinese_religion
+			NOT = { has_global_flag = zhanguokaishi }
 			OR = {
 				is_subject = no
 				is_subject_of_type = tributary_state
@@ -1254,13 +1354,6 @@ country_decisions = {
 			NOT = {
 				has_country_flag = zhuxiatouxian_wang
 			}
-			NOT = {
-				has_global_flag = zhanguokaishi
-			}
-			OR = {
-				hre_leagues_enabled = yes
-				hre_religion = liyuebadao
-			}
 		}
 		allow = {
 			stability = 3
@@ -1268,6 +1361,7 @@ country_decisions = {
 			army_size_percentage = 1
 			hre_religion = liyuebadao
 			is_at_war = no
+			has_global_flag = zhanguokaishi
 		}
 		effect = {
 			set_country_flag = zhuxiatouxian_wang
@@ -1341,6 +1435,7 @@ country_decisions = {
 	zhou_free_yuan = {
 		potential = {
 			tag = ZHO
+			is_year = 9999
 			NOT = {
 				exists = YUA
 			}
@@ -1436,8 +1531,8 @@ country_decisions = {
 			}
 		}
 		allow = {
-			years_of_income = 5
-			total_development = 200
+			years_of_income = 1
+			total_development = 250
 			prestige = ZHO
 			is_subject = no
 			emperor = {
@@ -1462,7 +1557,7 @@ country_decisions = {
 					NOT = {
 						war_score_against = {
 							who = ROOT
-							value = -25
+							value = -10
 						}
 					}
 				}
@@ -1470,15 +1565,17 @@ country_decisions = {
 		}
 		effect = {
 			change_religion = liyuebadao
+			capital_scope = {
+				change_religion = liyuebadao
+			}
 			country_event = {
 				id = chinese_school_events.1
 				days = 2
 			}
 			add_legitimacy = -20
-			add_prestige = -20
 		}
 
-		ai_importance = 200
+		ai_importance = 400
 
 		ai_will_do = {
 			factor = 1
@@ -2116,11 +2213,11 @@ country_decisions = {
 			}
 			change_technology_group = far_eastern
 			change_unit_type = far_eastern
-			set_in_empire = yes
 			capital_scope = {
 				change_culture = nanchu
 				change_religion = chinese_religion
 			}
+			set_in_empire = yes
 		}
 
 		ai_importance = 500
@@ -2216,6 +2313,39 @@ country_decisions = {
 		}
 
 		ai_importance = 500
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	gujiao_restore_culture = {
+		potential = {
+			OR = {
+				tag = GUW
+				tag = JIO
+			}
+			NOT = {
+				has_country_flag = guwjio_did_culture
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			dip_power = 100
+		}
+		effect = {
+			change_primary_culture = jingman
+			change_religion = wuism
+			capital_scope = {
+				change_culture = jingman
+				change_religion = wuism
+			}
+			add_prestige = 5
+			set_country_flag = guwjio_did_culture
+		}
+
+		ai_importance = 400
 
 		ai_will_do = {
 			factor = 1

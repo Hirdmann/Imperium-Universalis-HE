@@ -51,27 +51,17 @@ discovered_by = caucasian
 237.1.1 = {	
 	discovered_by = iranian
 }
-247.1.1 = {
-	culture = ionic
-}
 
-258.1.1 = {
-	add_core = ATH
-	owner = ATH
-	controller = ATH
-}
-
-264.1.1 = {
-	owner = ION
-	controller = ION
-}
-
-275.1.1 = {
+244.1.1 = {
 	add_core = ATH
 	owner = ATH
 	controller = ATH
 	remove_core = ION
 }
+247.1.1 = {
+	culture = ionic
+}
+
 304.1.1 = {
 	base_production = 2
 	culture = ionic

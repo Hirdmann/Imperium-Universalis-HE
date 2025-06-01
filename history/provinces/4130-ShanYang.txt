@@ -9,7 +9,6 @@ base_tax = 2
 base_production = 4
 base_manpower = 5
 is_city = yes
-add_core = ZHO
 add_core = YOG
 
 discovered_by = far_eastern

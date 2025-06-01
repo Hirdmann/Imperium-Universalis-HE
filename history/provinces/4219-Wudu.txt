@@ -1,10 +1,10 @@
 add_core = HUR
 owner = HUR
 controller = HUR
-culture = north_qiang
+culture = xirong
 religion = tengri
 capital = ""
-trade_goods = lead
+trade_goods = tar_good
 hre = no
 base_tax = 0
 base_production = 1

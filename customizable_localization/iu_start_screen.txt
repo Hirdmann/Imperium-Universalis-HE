@@ -863,7 +863,7 @@ defined_text = {
 			tag = LSI
 		}
 	}
-	
+
 	text = { #BaiYue
 		localisation_key = string_start_KAD
 		trigger = {
@@ -3130,17 +3130,4 @@ defined_text = {
 			tag = CHU
 		}
 	}
-}
-
-defined_text = {
-    name = StartScreenUpRightDesc
-	random = no
-	
-	#LiYueJiaoHua
-	text = {
-        localisation_key = string_start_religion_chinese_religion
-        trigger = {
-			religion = chinese_religion
-        }
-    }
 }

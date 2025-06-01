@@ -34,6 +34,7 @@ capital = ""
 	add_core = NUM
 	owner = NUM
 	controller = NUM
+	remove_core = PTO
 	is_city = yes
 	trade_goods = fish
 }

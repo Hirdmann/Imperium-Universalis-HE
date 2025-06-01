@@ -522,6 +522,9 @@ country_event = {
 
 	trigger = {
 		is_year = 200
+		NOT = {
+			started_in = 201.1.1
+		}
 		culture_group = chinese_group
 		religion_group = chinese_religions
 	}
@@ -561,6 +564,7 @@ country_event = {
 		government = monarchy
 		tag = ZHO
 		is_emperor_of_china = yes
+		is_year = 9999
 	}
 
 	option = {
@@ -867,22 +871,6 @@ country_event = {
 		TGA = {
 			grant_independence = yes
 		}
-		if = {
-			limit = {
-				owns = 4324
-			}
-			4324 = {
-				cede_province = CHN
-			}
-		}
-		if = {
-			limit = {
-				owns = 4342
-			}
-			4342 = {
-				cede_province = CHN
-			}
-		}
 		ZHO = {
 			country_event = {
 				id = china.22
@@ -913,6 +901,7 @@ country_event = {
 		has_dlc = "Emperor"
 		has_reform = free_city_zhou
 		adm_tech = 2
+		is_council_enabled = no
 		any_owned_province = {
 			num_free_building_slots = 1
 			NOT = { has_construction = building }
@@ -1069,6 +1058,7 @@ country_event = {
 	
 	trigger = {
 		tag = ZHO
+		NOT = { total_development = 95 }
 		religion = chinese_religion
 		curia_treasury_size = 1250
 		has_dlc = "Emperor"
@@ -1235,6 +1225,7 @@ country_event = {
 		}
 		religion = chinese_religion
 		curia_treasury_size = 750
+		NOT = { total_development = 125 }
 		has_dlc = "Emperor"
 		calc_true_if = {
 			all_known_country = {
@@ -1369,6 +1360,8 @@ country_event = {
 		religion = chinese_religion
 		curia_treasury_size = 500
 		has_dlc = "Emperor"
+		NOT = { total_development = 150 }
+		is_council_enabled = no
 		calc_true_if = {
 			all_known_country = {
 				religion = chinese_religion
@@ -1521,7 +1514,9 @@ country_event = {
 		tag = ZHO
 		religion = chinese_religion
 		curia_treasury_size = 400
+		NOT = { total_development = 95 }
 		has_dlc = "Emperor"
+		is_council_enabled = no
 		NOT = {
 			num_of_cities = 7
 		}
@@ -1769,6 +1764,7 @@ country_event = {
 		}
 		owns = 4349
 		religion = chinese_religion
+		is_emperor_of_china = no
 	}
 	
 
@@ -1781,7 +1777,6 @@ country_event = {
 		4349 = {
 			cede_province = ZHO
 		}
-		vassalize = ZHO
 		reverse_add_opinion = {
 			who = ZHO
 			modifier = opinion_country_released_zhou
@@ -1794,18 +1789,18 @@ country_event = {
 			factor = 100
 		}
 	}
-	option = {
-		name = "china.38.b"
-		trigger = {
-			ai = no
-			NOT = {
-				hre_reform_passed = emperor_reichstag_collegia
-			}
-		}
-		add_legitimacy = -100
-		add_prestige = -100
-		add_stability = -6
-	}
+	#option = {
+	#	name = "china.38.b"
+	#	trigger = {
+	#		ai = no
+	#		NOT = {
+	#			hre_reform_passed = emperor_reichstag_collegia
+	#		}
+	#	}
+	#	add_legitimacy = -100
+	#	add_prestige = -100
+	#	add_stability = -6
+	#}
 
 }
 
@@ -1875,7 +1870,7 @@ country_event = {
 	
 	trigger = {
 		tag = ZHO
-		total_development = 400
+		total_development = 200
 		has_global_flag = zhanguokaishi
 		is_religion_enabled = confucianism
 		is_part_of_hre = no
@@ -2545,7 +2540,7 @@ country_event = {
 		tag = WEY
 		had_country_flag = {
 			flag = wey_promised_liberate_li
-			days = 1825
+			days = 3650
 		}
 		LIO = {
 			NOT = {
@@ -2629,14 +2624,19 @@ country_event = {
 
 	option = {
 		name = "china.54.a"
-		add_prestige = 50
-		add_papal_influence = 50
+		add_prestige = 25
+		add_papal_influence = 100
 		add_treasury = 75
 		clr_country_flag = wey_promised_liberate_li
 		LIO = {
 			add_historical_friend = WEY
 		}
 		add_historical_friend = LIO
+		add_trust = {
+			who = LIO
+			value = 100
+			mutual = yes
+		}
 		custom_tooltip = wey_li_tooltip_two
 		hidden_effect = {
 			every_known_country = {
@@ -2824,7 +2824,7 @@ country_event = {
 			start_date = 87.1.1
 		}
 		NOT = {
-			is_year = 160
+			started_in = 145.1.1
 		}
 		exists = SLG
 		exists = SYG
@@ -3080,7 +3080,7 @@ country_event = {
 
 	option = {
 		name = "china.64.a"
-		add_adm_power = 100
+		add_adm_power = 50
 		define_advisor = {
 			type = engineer
 			name = "Sun Shuao"
@@ -3319,33 +3319,6 @@ country_event = {
 }
 
 ########################################################################################
-# Reform desire - BaZhu's position is questioned
-########################################################################################
-country_event = {
-	id = china.69
-	title = "china.69.t"
-	desc = "china.69.d"
-	picture = civilwar
-	
-	trigger = {
-		is_emperor = yes
-		religion = chinese_religion
-		NOT = {
-			legitimacy = 70
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 60
-	}
-
-	option = {
-		name = "china.69.a"
-		add_reform_desire = 0.05
-	}
-}
-
-########################################################################################
 # remove reform desire effects if religion change
 ########################################################################################
 country_event = {
@@ -3443,6 +3416,9 @@ country_event = {
 	option = {
 		name = "china.74.c"
 		change_religion = wuism
+		capital_scope = {
+			change_religion = wuism
+		}
 		add_country_modifier = {
 			name = shangxia_didnt_force
 			duration = 1825
@@ -3561,7 +3537,7 @@ country_event = {
 		ai_chance = { 
 			factor = 60
 			modifier = {
-				factor = 2
+				factor = 3
 				years_of_income = 2
 			}
 		}
@@ -3704,10 +3680,6 @@ country_event = {
 	fire_only_once = yes
 	major = yes
 	
-	mean_time_to_happen = {
-		months = 4
-	}
-	
 	trigger = {
 		has_dlc = "Emperor"
 		OR = {
@@ -3720,8 +3692,22 @@ country_event = {
 			}
 		}
 		OR = {
-			reform_desire = 1
-			hre_reform_passed = emperor_erbkaisertum
+			AND = {
+				reform_desire = 1
+				ZHO = {
+					is_emperor = no
+				}
+				is_council_enabled = no
+				is_all_concessions_in_council_taken = no
+			}
+			AND = {
+				hre_reform_passed = emperor_erbkaisertum
+				ZHO = {
+					is_emperor = no
+				}
+				is_council_enabled = no
+				is_all_concessions_in_council_taken = no
+			}
 		}
 	}
 	
@@ -3729,6 +3715,7 @@ country_event = {
 		name = "china.78.a"
 		enable_council = yes
 		custom_tooltip = zhouli_tooltip_one
+		set_global_flag = zhouli_conference_flag_done
 		hidden_effect = {
 			if = {
 				limit = {
@@ -3896,6 +3883,12 @@ country_event = {
 				add_curia_treasury = -9950
 			}
 		}
+		emperor = {
+			add_country_modifier = { 
+				name = no_IA_while_trent
+				duration = -1 
+			}
+		}
 	}
 }
 
@@ -3911,7 +3904,7 @@ country_event = {
 	major = yes
 	
 	mean_time_to_happen = {
-		months = 4
+		months = 2
 	}
 	
 	trigger = {
@@ -3929,56 +3922,11 @@ country_event = {
 	
 	option = {
 		name = "china.79.a"
-		add_reform_desire_scale = -1
-		add_reform_desire = -1
-	}
-}
-
-########################################################################################
-# conservative state causes backlash #REWORK
-########################################################################################
-country_event = {
-	id = china.80
-	title = "china.80.t"
-	desc = "china.80.d"
-	picture = HRE_eventPicture
-	
-	mean_time_to_happen = {
-		months = 24
-	}
-	
-	trigger = {
-		council_position = harsh
-		is_all_concessions_in_council_taken = no
-	}
-	
-	option = {
-		name = "china.80.a"
-		add_reform_desire = 0.03
-	}
-}
-
-########################################################################################
-# reformative state eases tension #REWORK
-########################################################################################
-country_event = {
-	id = china.81
-	title = "china.81.t"
-	desc = "china.81.d"
-	picture = HRE_eventPicture
-	
-	mean_time_to_happen = {
-		months = 48
-	}
-	
-	trigger = {
-		council_position = concilatory
-		is_all_concessions_in_council_taken = no
-	}
-	
-	option = {
-		name = "china.81.a"
-		add_reform_desire = -0.01
+		#add_reform_desire_scale = -1
+		add_reform_desire = -2
+		emperor = {
+			remove_country_modifier = no_IA_while_trent
+		}
 	}
 }
 
@@ -4064,6 +4012,9 @@ country_event = {
 		is_year = 130
 		tag = QIG
 		exists = LUU
+		NOT = {
+			is_year = 260
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -4139,18 +4090,20 @@ country_event = {
 	
 	trigger = {
 		is_papal_controller = yes
-		curia_treasury_size = 1500
+		curia_treasury_size = 1550
+		is_council_enabled = no
+		is_all_concessions_in_council_taken = no
 	}
 	
 	mean_time_to_happen = {
 		months = 216
 		modifier = {
 			factor = 0.9
-			curia_treasury_size = 1800
+			curia_treasury_size = 1900
 		}
 		modifier = {
 			factor = 0.9
-			curia_treasury_size = 2400
+			curia_treasury_size = 2500
 		}
 		modifier = {
 			factor = 0.8
@@ -4167,6 +4120,10 @@ country_event = {
 		modifier = {
 			factor = 0.5
 			curia_treasury_size = 10000
+		}
+		modifier = {
+			factor = 0.25
+			curia_treasury_size = 12000
 		}
 		modifier = {
 			factor = 0.9
@@ -4186,7 +4143,7 @@ country_event = {
 					curia_treasury_size = 1700
 				}
 			}
-			add_curia_treasury = -100
+			add_curia_treasury = -250
 		}
 		else_if = {
 			limit = {
@@ -4195,7 +4152,7 @@ country_event = {
 					curia_treasury_size = 2500
 				}
 			}
-			add_curia_treasury = -250
+			add_curia_treasury = -500
 		}
 		else_if = {
 			limit = {
@@ -4204,7 +4161,7 @@ country_event = {
 					curia_treasury_size = 4000
 				}
 			}
-			add_curia_treasury = -500
+			add_curia_treasury = -750
 		}
 		else_if = {
 			limit = {
@@ -4213,13 +4170,13 @@ country_event = {
 					curia_treasury_size = 9000
 				}
 			}
-			add_curia_treasury = -1000
+			add_curia_treasury = -2000
 		}
 		else_if = {
 			limit = {
 				curia_treasury_size = 9000
 			}
-			add_curia_treasury = -3000
+			add_curia_treasury = -4000
 		}
 	}
 }
@@ -4330,6 +4287,8 @@ country_event = {
 					tag = HUO
 					tag = XUN
 					tag = XGG
+					tag = ZHG
+					tag = ZHO
 				}
 			}
 			set_dynasty = "Ji"
@@ -4408,6 +4367,7 @@ country_event = {
 					tag = FGO
 					tag = TAG
 					tag = WEN
+					tag = QIC
 				}
 			}
 			set_dynasty = "Jih"
@@ -4498,6 +4458,7 @@ country_event = {
 					tag = BIY
 					tag = KUA
 					tag = RUO
+					tag = SHN
 				}
 			}
 			set_dynasty = "Yun"
@@ -4524,6 +4485,8 @@ country_event = {
 			change_primary_culture = jingman
 			set_ruler_culture = jingman
 			set_dynasty = "Yan"
+			swap_non_generic_missions = yes
+			swap_free_idea_group = yes
 		}
 		if = {
 			limit = {
@@ -4549,7 +4512,9 @@ country_event = {
 			change_primary_culture = xirong
 			set_ruler_culture = xirong
 			change_government = tribal
-			set_dynasty = "Kui"
+			set_dynasty = "Jiang"
+			swap_non_generic_missions = yes
+			swap_free_idea_group = yes
 		}
 		if = {
 			limit = {
@@ -4558,9 +4523,12 @@ country_event = {
 					tag = JIR
 				}
 			}
-			change_primary_culture = north_qiang
-			set_ruler_culture = north_qiang
+			change_primary_culture = xirong
+			set_ruler_culture = xirong
 			change_government = tribal
+			set_dynasty = "Jiang"
+			swap_non_generic_missions = yes
+			swap_free_idea_group = yes
 		}
 	}
 	
@@ -4603,6 +4571,7 @@ country_event = {
 		religion = chinese_religion
 		is_at_war = no
 		exists = ZHO
+		NOT = { has_global_flag = zhanguokaishi }
 		NOT = {
 			tag = ZHO
 		}
@@ -4714,19 +4683,17 @@ province_event = {
 	trigger = {
 		culture = yinyi
 		owner = {
-			AND = {
-				NOT = {
-					primary_culture = yinyi
-				}
-				NOT = {
-					tag = GUZ
-				}
-				NOT = {
-					tag = QUG
-				}
-				NOT = {
-					tag = BEI
-				}
+			NOT = {
+				primary_culture = yinyi
+			}
+			NOT = {
+				tag = GUZ
+			}
+			NOT = {
+				tag = QUG
+			}
+			NOT = {
+				tag = BEI
 			}
 		}
 	}
@@ -4757,7 +4724,9 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.9
-			stability = 3
+			owner = {
+				stability = 3
+			}
 		}
 	}
 	
@@ -4767,20 +4736,9 @@ province_event = {
 		if = {
 			limit = {
 				OR = {
-					province_id = 4373
-					province_id = 4368
-					province_id = 4378
-					province_id = 4359
-					province_id = 4128
-					province_id = 4129
-					province_id = 4116
+					province_id = 4081
+					province_id = 4114
 				}
-			}
-			change_culture = zhongyuan
-		}
-		else_if = {
-			limit = {
-				province_id = 4081
 			}
 			change_culture = shanxi
 		}
@@ -4802,12 +4760,10 @@ province_event = {
 	trigger = {
 		culture = dongyi
 		owner = {
-			AND = {
-				NOT = {
-					primary_culture = dongyi
-				}
-				culture_group = chinese_group
+			NOT = {
+				primary_culture = dongyi
 			}
+			culture_group = chinese_group
 		}
 	}
 	
@@ -4831,7 +4787,9 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.9
-			stability = 3
+			owner = {
+				stability = 3
+			}
 		}
 		modifier = {
 			factor = 0.9
@@ -4843,10 +4801,12 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.8
-			religion = chinese_religion
-			religious_school = {
-				group = chinese_religion
-				school = liyue_school
+			owner = {
+				religion = chinese_religion
+				religious_school = {
+					group = chinese_religion
+					school = liyue_school
+				}
 			}
 		}
 	}
@@ -5154,7 +5114,7 @@ country_event = {
 }
 
 ########################################################################################
-# zhou lose shenshou reform if theyre too big
+# zhou lose shenshou reform if theyre too big (rework)
 ########################################################################################
 country_event = {
 	id = china.102
@@ -5225,7 +5185,7 @@ country_event = {
 			CHU = {
 				had_country_flag = {
 						flag = chu_began_bii_war
-						days = 183
+						days = 185
 				}
 			}
 			AND = {
@@ -5277,12 +5237,12 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		NOT = {
+			started_in = 145.1.1
+		}
 		is_year = 145
 		NOT = {
 			exists = BII
-		}
-		NOT = {
-			is_year = 165
 		}
 		tag = CHU
 		NOT = {
@@ -5971,6 +5931,9 @@ country_event = {
 	trigger = {
 		tag = SON
 		is_year = 143
+		NOT = {
+			started_in = 144.1.1
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -6271,9 +6234,6 @@ country_event = {
 		is_year = 150
 		NOT = {
 			started_in = 151.1.1
-		}
-		NOT = {
-			is_year = 160
 		}
 		owns = 4381 #maybe make it fire in the south instead of not happening at all
 	}
@@ -6684,6 +6644,9 @@ country_event = {
 		}
 		owns = 4073
 		controls = 4073
+		NOT = {
+			started_in = 300.1.1
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -7157,5 +7120,1038 @@ country_event = {
 		change_country_color = { 
 			color = { 179 142 21 }
 		}
+	}
+}
+
+########################################################################################
+# bazhu can intervene in war after reform passed
+########################################################################################
+country_event = {
+	id = china.133
+	title = "china.133.t"
+	desc = "china.133.d"
+	picture = religious
+	
+	trigger = {
+		is_emperor = yes
+		OR = {
+			AND = {
+				has_dlc = "Emperor"
+				hre_reform_passed = emperor_erbkaisertum
+			}
+			hre_reform_passed = erbkaisertum
+		}
+		any_known_country = {
+			is_part_of_hre = yes
+			is_in_war = {
+				defender_leader = THIS
+			}
+			emperor = {
+				NOT = {
+					is_in_war = {
+						participants = PREV
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_known_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_in_war = {
+					defender_leader = THIS
+				}
+				emperor = {
+					NOT = {
+						is_in_war = {
+							participants = PREV
+						}
+					}
+				}
+			}
+			save_global_event_target_as = bazhu_defend_target
+		}
+	}
+	
+	option = {
+		name = "china.133.a"
+		random_known_country = {
+			limit = {
+				offensive_war_with = event_target:bazhu_defend_target
+			}
+			country_event = { id = china.134 }
+		}
+	}
+	option = {
+		name = "china.133.a"
+		trigger = { ai = no }
+		add_prestige = -5
+		add_imperial_influence = -2
+	}
+}
+
+########################################################################################
+# offender receive
+########################################################################################
+country_event = {
+	id = china.134
+	title = "china.134.t"
+	desc = "china.134.d"
+	picture = religious
+	is_triggered_only = yes
+	
+	option = {
+		name = "china.134.a"
+		white_peace = event_target:bazhu_defend_target
+		add_truce_with = event_target:bazhu_defend_target
+		ai_chance = { 
+			factor = 90
+			modifier = {
+				factor = 2
+				NOT = {
+					total_development = 75
+				}
+			}
+			modifier = {
+				factor = 5
+				NOT = {
+					total_development = 30
+				}
+			}
+		}
+	}
+	option = {
+		name = "china.134.a"
+		emperor = {
+			join_all_defensive_wars_of = event_target:bazhu_defend_target
+		}
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 1.5
+				total_development = 250
+			}
+			modifier = {
+				factor = 2
+				total_development = 450
+			}
+			modifier = {
+				factor = 2
+				emperor = {
+					NOT = {
+						total_development = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 4
+				emperor = {
+					NOT = {
+						army_size = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				emperor = {
+					NOT = {
+						land_forcelimit = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+
+
+########################################################################################
+# badao penalty calculation
+########################################################################################
+country_event = {
+	id = china.135
+	title = "china.133.t"
+	desc = "china.133.d"
+	picture = religious
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		is_emperor = yes
+		religion = chinese_religion
+		OR = {
+			is_all_concessions_in_council_taken = yes
+			is_council_enabled = yes
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				calc_true_if = {
+					all_country = {
+						religion = liyuebadao
+						is_part_of_hre = yes
+						total_development = 100
+					}
+					amount = 5
+				}
+			}
+			add_country_modifier = { 
+				name = bazhu_badao_penalty_five
+				duration = -1  
+			}
+			remove_country_modifier = bazhu_badao_penalty_four
+			remove_country_modifier = bazhu_badao_penalty_three
+			remove_country_modifier = bazhu_badao_penalty_two
+			remove_country_modifier = bazhu_badao_penalty_one
+		}
+		else_if = {
+			limit = {
+				calc_true_if = {
+					all_country = {
+						religion = liyuebadao
+						is_part_of_hre = yes
+						total_development = 100
+					}
+					amount = 4
+				}
+			}
+			add_country_modifier = { 
+				name = bazhu_badao_penalty_four
+				duration = -1  
+			}
+			remove_country_modifier = bazhu_badao_penalty_five
+			remove_country_modifier = bazhu_badao_penalty_three
+			remove_country_modifier = bazhu_badao_penalty_two
+			remove_country_modifier = bazhu_badao_penalty_one
+		}
+		else_if = {
+			limit = {
+				calc_true_if = {
+					all_country = {
+						religion = liyuebadao
+						is_part_of_hre = yes
+						total_development = 100
+					}
+					amount = 3
+				}
+			}
+			add_country_modifier = { 
+				name = bazhu_badao_penalty_three
+				duration = -1  
+			}
+			remove_country_modifier = bazhu_badao_penalty_four
+			remove_country_modifier = bazhu_badao_penalty_five
+			remove_country_modifier = bazhu_badao_penalty_two
+			remove_country_modifier = bazhu_badao_penalty_one
+		}
+		else_if = {
+			limit = {
+				calc_true_if = {
+					all_country = {
+						religion = liyuebadao
+						is_part_of_hre = yes
+						total_development = 100
+					}
+					amount = 2
+				}
+			}
+			add_country_modifier = { 
+				name = bazhu_badao_penalty_two
+				duration = -1  
+			}
+			remove_country_modifier = bazhu_badao_penalty_four
+			remove_country_modifier = bazhu_badao_penalty_three
+			remove_country_modifier = bazhu_badao_penalty_five
+			remove_country_modifier = bazhu_badao_penalty_one
+		}
+		else_if = {
+			limit = {
+				calc_true_if = {
+					all_country = {
+						religion = liyuebadao
+						is_part_of_hre = yes
+						total_development = 100
+					}
+					amount = 1
+				}
+			}
+			add_country_modifier = { 
+				name = bazhu_badao_penalty_one
+				duration = -1  
+			}
+			remove_country_modifier = bazhu_badao_penalty_four
+			remove_country_modifier = bazhu_badao_penalty_three
+			remove_country_modifier = bazhu_badao_penalty_two
+			remove_country_modifier = bazhu_badao_penalty_five
+		}
+		else = {
+			remove_country_modifier = bazhu_badao_penalty_four
+			remove_country_modifier = bazhu_badao_penalty_three
+			remove_country_modifier = bazhu_badao_penalty_two
+			remove_country_modifier = bazhu_badao_penalty_five
+			remove_country_modifier = bazhu_badao_penalty_one
+		}
+	}
+	
+	option = {
+		name = "china.133.a"
+		
+	}
+}
+
+########################################################################################
+# badao nations arent affected by forcelimit debuff
+########################################################################################
+country_event = {
+	id = china.139
+	title = "china.139.t"
+	desc = "china.139.d"
+	picture = army_construction
+	hidden = yes
+	
+	trigger = {
+		hre_reform_passed = emperor_privilegia_de_non_appelando
+		religion = liyuebadao
+		is_part_of_hre = yes
+		NOT = {
+			has_country_modifier = no_badao_forcelimit_debuff
+		}
+	}
+	
+	immediate = {
+		add_country_modifier = { 
+			name = no_badao_forcelimit_debuff
+			duration = -1  
+		}
+	}
+
+	option = {
+		name = "china.139.a"
+	
+	}
+}
+
+########################################################################################
+# remove previous thing if not badao or left hre
+########################################################################################
+country_event = {
+	id = china.140
+	title = "china.140.t"
+	desc = "china.140.d"
+	picture = army_construction
+	hidden = yes
+	
+	trigger = {
+		hre_reform_passed = emperor_privilegia_de_non_appelando
+		OR = {
+			NOT = { religion = liyuebadao }
+			is_part_of_hre = no
+		}
+		has_country_modifier = no_badao_forcelimit_debuff
+	}
+	
+	immediate = {
+		remove_country_modifier = no_badao_forcelimit_debuff
+	}
+
+	option = {
+		name = "china.140.a"
+		
+	}
+}
+
+########################################################################################
+# after league war - bazhu will have to choose one new elector if qin chose badao
+########################################################################################
+country_event = {
+	id = china.141
+	title = "china.141.t"
+	desc = "china.141.d"
+	picture = cloudy_manor
+	is_triggered_only = yes
+	
+	trigger = { 
+		NOT = {
+			num_of_electors = 7
+		}
+	}
+
+	option = {
+		name = "china.141.a"
+		trigger = { exists = WEY }
+		WEY = {
+			elector = yes
+		}
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 3
+				WEY = {
+					owns = 4122
+				}
+			}
+			modifier = {
+				factor = 4
+				alliance_with = WEY
+			}
+		}
+	}
+	option = {
+		name = "china.141.b"
+		trigger = { exists = YAN }
+		YAN = {
+			elector = yes
+		}
+		ai_chance = { 
+			factor = 45
+			modifier = {
+				factor = 2
+				YAN = {
+					total_development = 165
+				}
+			}
+			modifier = {
+				factor = 5
+				YAN = {
+					total_development = 200
+				}
+			}
+			modifier = {
+				factor = 4
+				alliance_with = YAN
+			}
+		}
+	}
+	option = {
+		name = "china.141.c"
+		trigger = {
+			NOT = {
+				exists = WEY
+			}
+			NOT = {
+				exists = YAN
+			}
+		}
+	}
+}
+
+########################################################################################
+# chu wins league (emperor notif)
+########################################################################################
+country_event = {
+	id = china.142
+	title = "china.142.t"
+	desc = "china.142.d"
+	picture = plundering
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "china.142.a"
+		custom_tooltip = BADAO_LEAGUE_VICTORY_NEW
+	}
+}
+
+########################################################################################
+# zhouli flavor - extra donation to curia
+########################################################################################
+country_event = {
+	id = china.143
+	title = "china.143.t"
+	desc = "china.143.d"
+	picture = plundering
+	
+	trigger = {
+		religion = chinese_religion
+		is_part_of_hre = yes
+		is_council_enabled = yes
+		is_all_concessions_in_council_taken = no
+		treasury = 25
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.9
+			had_global_flag = {
+				flag = zhouli_conference_flag_done
+				days = 1095
+			}
+		}
+		modifier = {
+			factor = 0.9
+			had_global_flag = {
+				flag = zhouli_conference_flag_done
+				days = 1460
+			}
+		}
+		modifier = {
+			factor = 0.9
+			had_global_flag = {
+				flag = zhouli_conference_flag_done
+				days = 1825
+			}
+		}
+		modifier = {
+			factor = 0.8
+			had_global_flag = {
+				flag = zhouli_conference_flag_done
+				days = 2190
+			}
+		}
+		modifier = {
+			factor = 0.8
+			had_global_flag = {
+				flag = zhouli_conference_flag_done
+				days = 2555
+			}
+		}
+		modifier = {
+			factor = 0.75
+			had_global_flag = {
+				flag = zhouli_conference_flag_done
+				days = 2920
+			}
+		}
+		modifier = {
+			factor = 0.75
+			had_global_flag = {
+				flag = zhouli_conference_flag_done
+				days = 3285
+			}
+		}
+		modifier = {
+			factor = 0.5
+			had_global_flag = {
+				flag = zhouli_conference_flag_done
+				days = 3650
+			}
+		}
+	}
+	
+	option = {
+		name = "china.143.a"
+		add_curia_treasury = 10
+		add_treasury = -10
+		ai_chance = { 
+			factor = 60
+		}
+	}
+	option = {
+		name = "china.143.b"
+		add_curia_treasury = 25
+		add_treasury = -25
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				had_global_flag = {
+					flag = zhouli_conference_flag_done
+					days = 2190
+				}
+			}
+			modifier = {
+				factor = 4
+				had_global_flag = {
+					flag = zhouli_conference_flag_done
+					days = 3285
+				}
+			}
+			modifier = {
+				factor = 1.5
+				years_of_income = 1
+				treasury = 25
+			}
+			modifier = {
+				factor = 2
+				years_of_income = 1.75
+				treasury = 25
+			}
+		}
+	}
+	option = {
+		name = "china.143.c"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 4
+				had_global_flag = {
+					flag = zhouli_conference_flag_done
+					days = 3285
+				}
+			}
+		}
+	}
+}
+
+########################################################################################
+# wey to kang event - part 1
+########################################################################################
+country_event = {
+	id = china.144
+	title = "china.144.t"
+	desc = "china.144.d"
+	picture = cloudy_manor
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WEY
+		ai = no
+		religion = chinese_religion
+		is_at_war = no
+		is_subject = no
+		has_regency = no
+		capital = 4122
+		owns = 4132
+		owns = 4129
+		owns = 4128
+		owns = 4116
+		owns = 4115
+		owns = 4110
+		has_country_modifier = querenzuyuan_papacy
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			reverse_has_opinion = {
+				who = ZHO
+				value = 175
+			}
+		}
+		modifier = {
+			factor = 0.5
+			reverse_has_opinion = {
+				who = ZHO
+				value = 199
+			}
+		}
+	}
+	
+	option = {
+		name = "china.144.a"
+		
+	}
+	option = {
+		name = "china.144.b"
+		add_years_of_income = -0.25
+		set_country_flag = wey_went_to_kang
+		custom_tooltip = wey_kang_tooltip_one
+		hidden_effect = {
+			country_event = {
+				id = china.145
+				days = 60
+			}
+		}
+	}
+}
+
+########################################################################################
+# wey to kang event - part 2
+########################################################################################
+country_event = {
+	id = china.145
+	title = "china.145.t"
+	desc = "china.145.d"
+	picture = cloudy_manor
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "china.145.a"
+		set_country_flag = wey_became_kang
+		4122 = {
+			change_province_name = "Kang"
+		}
+		override_country_name = WEYKANG
+		swap_free_idea_group = yes
+		change_country_color = { 
+			color = { 44 131 158 }
+		}
+	}
+}
+
+########################################################################################
+# stupid bordergore in chen remedy
+########################################################################################
+country_event = {
+	id = china.146
+	title = "china.146.t"
+	desc = "china.146.d"
+	picture = cloudy_manor
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			owns = 4399
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				owns = 4324
+			}
+			4324 = {
+				cede_province = CHN
+				remove_core = CHU
+			}
+		}
+		if = {
+			limit = {
+				owns = 4342
+			}
+			4342 = {
+				cede_province = CHN
+				remove_core = CHU
+			}
+		}
+		if = {
+			limit = {
+				owns = 4395
+			}
+			4395 = {
+				cede_province = CHN
+				remove_core = CHU
+			}
+		}
+	}
+	
+	option = {
+		name = "china.145.a"
+		
+	}
+}
+
+########################################################################################
+# jin-zhou mission return - first (success)
+########################################################################################
+country_event = {
+	id = china.147
+	title = "china.147.t"
+	desc = "china.147.d"
+	picture = deligation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "china.147.a"
+	}
+}
+
+########################################################################################
+# jin-zhou mission return - first (fail)
+########################################################################################
+country_event = {
+	id = china.148
+	title = "china.148.t"
+	desc = "china.148.d"
+	picture = cloudy_manor
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "china.148.a"
+	}
+}
+
+########################################################################################
+# jin-zhou mission return - second (success)
+########################################################################################
+country_event = {
+	id = china.149
+	title = "china.149.t"
+	desc = "china.149.d"
+	picture = deligation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "china.149.a"
+	}
+}
+
+########################################################################################
+# jin-zhou mission return - second (fail)
+########################################################################################
+country_event = {
+	id = china.150
+	title = "china.150.t"
+	desc = "china.150.d"
+	picture = cloudy_manor
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "china.150.a"
+	}
+}
+
+########################################################################################
+# jin-zhou mission return - third (success)
+########################################################################################
+country_event = {
+	id = china.151
+	title = "china.151.t"
+	desc = "china.151.d"
+	picture = deligation
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "china.151.a"
+	}
+}
+
+########################################################################################
+# jin-zhou mission return - third (fail)
+########################################################################################
+country_event = {
+	id = china.152
+	title = "china.152.t"
+	desc = "china.152.d"
+	picture = cloudy_manor
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "china.152.a"
+	}
+}
+
+########################################################################################
+# zhou cant be vassal
+########################################################################################
+country_event = {
+	id = china.153
+	title = "china.153.t"
+	desc = "china.153.d"
+	picture = ruler
+	
+	trigger = {
+		overlord_of = ZHO
+		religion = chinese_religion
+	}
+	
+	option = {
+		name = "china.153.a"
+		add_papal_influence = 50
+		ZHO = {
+			grant_independence = yes
+		}
+	}
+}
+
+########################################################################################
+# end zhouli conference if zhou is bazhu
+########################################################################################
+country_event = {
+	id = china.154
+	title = "china.154.t"
+	desc = "china.154.d"
+	picture = ruler
+	
+	trigger = {
+		is_council_enabled = yes
+		tag = ZHO
+		is_emperor = yes
+	}
+	
+	option = {
+		name = "china.149.a"
+		finish_council = yes
+	}
+}
+
+########################################################################################
+# ai does decentral (HOPEFULLY)
+########################################################################################
+country_event = {
+	id = china.155
+	title = "china.155.t"
+	desc = "china.155.d"
+	picture = ruler
+	hidden = yes
+	
+	trigger = {
+		is_emperor = yes
+		ai = yes
+		hre_reform_passed = emperor_gemeinerpfennig
+		ZHO = {
+			has_reform = free_city_zhou
+			has_reform = zho_reform_align_big
+			has_reform = zho_reform_no_hegemony_bid
+		}
+	}
+	
+	immediate = {
+		revoke_reform = emperor_gemeinerpfennig #this comes up in error log, make sure to test
+		add_imperial_influence = 55
+	}
+	
+	option = {
+		name = "china.149.a"
+	}
+}
+
+########################################################################################
+# possible revival of qig
+########################################################################################
+country_event = {
+	id = china.156
+	title = "china.156.t"
+	desc = "china.156.d"
+	picture = ruler
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = {
+			exists = QIG
+		}
+		NOT = {
+			has_global_flag = zhanguokaishi
+		}
+		owns = 4343
+		religion = chinese_religion
+		num_of_cities = 2
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.2
+			is_emperor = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				num_of_cities = 3
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				num_of_cities = 5
+			}
+		}
+		modifier = {
+			factor = 1.25
+			NOT = {
+				num_of_cities = 7
+			}
+		}
+	}
+	
+	option = {
+		name = "china.156.a"
+		add_papal_influence = 50
+		4343 = {
+			remove_core = ROOT
+			cede_province = QIG
+			add_core = QIG
+		}
+		hidden_effect = {
+			QIG = {
+				define_ruler = {
+					dynasty = "Si"
+					culture = zhongyuan
+					adm = 3
+					dip = 4
+					mil = 2
+					age = 26
+					claim = 90
+				}
+				change_primary_culture = zhongyuan
+				add_stability = 3
+			}
+		}
+		create_alliance = QIG
+		add_trust = {
+			who = QIG
+			value = 100
+			mutual = yes
+		}
+		ai_chance = {
+			factor = 55
+			modifier = {
+				factor = 0.4
+				NOT = {
+					num_of_cities = 4
+				}
+			}
+			modifier = {
+				factor = 0.75
+				NOT = {
+					total_development = 25
+				}
+			}
+			modifier = {
+				factor = 2
+				religious_school = {
+					group = chinese_religion
+					school = liyue_school
+				}
+			}
+			modifier = {
+				factor = 10
+				is_emperor = yes
+			}
+			modifier = {
+				factor = 1.4
+				personality = ai_diplomat
+			}
+		}
+	}
+	option = {
+		name = "china.156.b"
+		add_papal_influence = -25
+		ai_chance = {
+			factor = 45
+			modifier = {
+				factor = 2
+				ruler_has_personality = greedy_personality
+			}
+			modifier = {
+				factor = 1.25
+				ruler_has_personality = sinner_personality
+			}
+			modifier = {
+				factor = 1.5
+				personality = ai_militarist
+			}
+		}
+	}
+	option = {
+		name = "china.156.c"
+		trigger = { ai = no }
+		add_papal_influence = -10
+		4343 = {
+			remove_core = ROOT
+			cede_province = QIG
+			add_core = QIG
+		}
+		hidden_effect = {
+			QIG = {
+				define_ruler = {
+					dynasty = "Si"
+					culture = zhongyuan
+					adm = 3
+					dip = 4
+					mil = 2
+					age = 26
+					claim = 90
+				}
+				change_primary_culture = zhongyuan
+				add_stability = 3
+			}
+		}
+		vassalize = QIG
 	}
 }

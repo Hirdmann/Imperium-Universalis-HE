@@ -5,13 +5,10 @@ country_decisions = {
 		color = { 245 160 60 }
 		potential = {
 			tag = ROM
-			total_development = 6000
-			OR = {
-				has_reform = res_publica_reform
-				has_reform = late_res_publica_reform
-			}
+			has_reform = late_res_publica_reform
 		}
 		allow = {
+			total_development = 6000
 			absolutism = 50
 			army_size_percentage = 0.8
 			adm = 4
@@ -340,27 +337,6 @@ country_decisions = {
 						is_at_war = yes
 					}
 				}
-			}
-		}
-	}
-
-	################################################
-	# Rome Info Decision			 	############
-	################################################
-
-	rome_info_decision = {
-		color = { 245 160 60 }
-		potential = {
-			ai = no
-			OR = {
-				tag = ROM
-				tag = ROI
-			}
-		}
-		allow = {}
-		effect = {
-			country_event = {
-				id = rome.56
 			}
 		}
 	}

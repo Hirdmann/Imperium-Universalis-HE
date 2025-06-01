@@ -754,6 +754,14 @@ country_event = {
 			add_core = LYD
 			cede_province = LYD
 		}
+		chammanene_area = {
+			add_core = MDI
+			cede_province = MDI
+		}
+		sacoene_area = {
+			add_core = MDI
+			cede_province = MDI
+		}
 		LYD = {
 			inherit = PHR
 		}

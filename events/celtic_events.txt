@@ -15,6 +15,9 @@ country_event = {
 		culture = western_hallstat
 		is_year = 150
 		NOT = { started_in = 151.1.1 }
+		NOT = {
+			has_global_flag = trade_with_etruscans_started
+		}
 		capital_scope = {
 			OR = {
 				area = moenus_area
@@ -38,7 +41,7 @@ country_event = {
 			name = celtoetrurian_trade
 			duration = 40525
 		}
-		#set_global_flag = trade_with_etruscans_started
+		set_global_flag = trade_with_etruscans_started
 		every_country = {
 			limit = {
 				OR = {
@@ -163,7 +166,7 @@ country_event = {
 				area = alpes_raetae
 			}
 		}
-		#NOT = { has_global_flag = iron_plow_celtic }
+		NOT = { has_global_flag = iron_plow_celtic }
 	}
 
 	mean_time_to_happen = {
@@ -177,7 +180,7 @@ country_event = {
 			name = iron_plow_celt
 			duration = 36525
 		}
-		#set_global_flag = iron_plow_celtic
+		set_global_flag = iron_plow_celtic
 		every_country = {
 			limit = {
 				OR = {
@@ -239,7 +242,7 @@ country_event = {
 				area = alpes_raetae
 			}
 		}
-		#NOT = { has_global_flag = hallstat_expansion }
+		NOT = { has_global_flag = hallstat_expansion }
 	}
 
 	mean_time_to_happen = {
@@ -249,7 +252,7 @@ country_event = {
 	option = {
 		name = "celt.6.a"
 		ai_chance = { factor = 100 }
-		#set_global_flag = hallstat_expansion
+		set_global_flag = hallstat_expansion
 
 		every_province = {
 			limit = {

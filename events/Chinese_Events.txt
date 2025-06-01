@@ -342,17 +342,24 @@ country_event = {
 			set_hre_heretic_religion = liyuebadao
 			set_hre_religion = chinese_religion
 			set_hre_religion_locked = yes
+			emperor = {
+				country_event = {
+					id = china.141
+					days = 1
+				}
+			}
+			CHU = {
+				country_event = {
+					id = china.146
+					days = 1
+				}
+			}
 		}
 		clr_global_flag = wendingzhongyuan_union_happened
 	}
 
 	option = {
 		name = "ShiJian.12.a"
-		tooltip = {
-			set_hre_heretic_religion = liyuebadao
-			set_hre_religion = chinese_religion
-			set_hre_religion_locked = yes
-		}
 	}
 }
 #?????? ShiJian.11
@@ -373,9 +380,14 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_hre_heretic_religion = chinese_religion
-			set_hre_religion = liyuebadao
-			set_hre_religion_locked = yes
+			emperor = {
+				country_event = {
+					id = china.142
+				}
+			}
+			#set_hre_heretic_religion = chinese_religion
+			#set_hre_religion = liyuebadao
+			#set_hre_religion_locked = yes
 			every_country = {
 				limit = {
 					religion = chinese_religion
@@ -384,17 +396,22 @@ country_event = {
 				change_religion = liyuebadao
 				clr_country_flag = was_in_badao_league
 			}
+			set_global_flag = zhanguokaishi
+			dismantle_hre = yes
+			4363 = {
+				remove_province_modifier = fields_of_xu
+			}
 		}
 		clr_global_flag = wendingzhongyuan_union_happened
 	}
 
 	option = {
 		name = "ShiJian.11.a"
-		tooltip = {
-			set_hre_heretic_religion = chinese_religion
-			set_hre_religion = liyuebadao
-			set_hre_religion_locked = yes
-		}
+		#tooltip = {
+		#	set_hre_heretic_religion = chinese_religion
+		#	set_hre_religion = liyuebadao
+		#	set_hre_religion_locked = yes
+		#}
 	}
 }
 #??????? ShiJian.12
@@ -418,6 +435,18 @@ country_event = {
 			set_hre_heretic_religion = liyuebadao
 			set_hre_religion = chinese_religion
 			set_hre_religion_locked = yes
+			emperor = {
+				country_event = {
+					id = china.141
+					days = 1
+				}
+			}
+			CHU = {
+				country_event = {
+					id = china.146
+					days = 1
+				}
+			}
 		}
 		clr_global_flag = wendingzhongyuan_union_happened
 	}
@@ -1255,6 +1284,12 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_hre_religion_locked = yes
+			emperor = {
+				country_event = {
+					id = china.141
+					days = 1
+				}
+			}
 		}
 		clr_global_flag = wendingzhongyuan_union_happened
 	}
@@ -2275,24 +2310,6 @@ country_event = {
 
 	option = {
 		name = "ShiJian.46.a" #???????????????????????????????????
-		add_stability = -1
-		add_country_modifier = {
-			name = zhou_zhengtongcunyi #????????��?????????-1
-			duration = 3650
-		}
-		JIN = {
-			add_opinion = {
-				who = ROOT
-				modifier = insulted
-			}
-		}
-		ai_chance = {
-			factor = 5
-		}
-	}
-
-	option = {
-		name = "ShiJian.46.b" #????????????????????????? ??AI????
 		add_stability = 1
 		add_country_modifier = {
 			name = zhou_zhengtongzhouwang #?????????????????+1??????10??
@@ -2304,25 +2321,34 @@ country_event = {
 				duration = 7300
 			}
 			add_historical_friend = ZHO
+			country_event = { id = china.147 }
 		}
 		4350 = {
 			add_core = ZHO
 		}
-		every_province = {
-			limit = {
-				NOT = {
-					owned_by = ROOT
-				}
-				is_core = ROOT
-				OR = {
-					owned_by = JIN
-					region = sili_china
-				}
-			}
-			remove_core = ROOT
-		}
 		ai_chance = {
 			factor = 95
+		}
+	}
+
+	option = {
+		name = "ShiJian.46.b" #????????????????????????? ??AI????
+		add_country_modifier = {
+			name = zhou_zhengtongcunyi #????????��?????????-1
+			duration = 3650
+		}
+		4127 = {
+			add_core = ZHO
+		}
+		JIN = {
+			add_opinion = {
+				who = ROOT
+				modifier = insulted
+			}
+			country_event = { id = china.148 }
+		}
+		ai_chance = {
+			factor = 5
 		}
 	}
 }
@@ -2337,35 +2363,67 @@ country_event = {
 
 	option = {
 		name = "ShiJian.47.a" #?????????????????
-		add_stability = -1
-		add_country_modifier = {
-			name = zhou_zhengtongweiji #?????��????????????-2
-			duration = 7300
-		}
-		JIN = {
-			add_opinion = {
-				who = ROOT
-				modifier = insulted
-			}
-		}
-		ai_chance = {
-			factor = 10
-		}
-		#??????????debuff??????70?????????????????????????????????????????????��??????
-	}
-
-	option = {
-		name = "ShiJian.47.b" #????????
 		add_stability = 1
 		add_country_modifier = {
 			name = zhou_zhengtongzhouwang #?????????
 			duration = 3650
 		}
 		JIN = {
-			vassalize = ZHO
+			country_event = { id = china.149 }
 		}
 		ai_chance = {
-			factor = 90
+			factor = 95
+			modifier = {
+				factor = 10
+				has_opinion = {
+					who = JIN
+					value = 190
+				}
+			}
+		}
+		#??????????debuff??????70?????????????????????????????????????????????��??????
+	}
+
+	option = {
+		name = "ShiJian.47.b" #????????
+		add_country_modifier = {
+			name = zhou_zhengtongweiji #?????��????????????-2
+			duration = 7300
+		}
+		JIN = {
+			country_event = { id = china.150 }
+			add_opinion = {
+				who = ROOT
+				modifier = insulted
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						is_core = GUO
+						is_core = YUA
+						is_core = WEN
+						is_core = YOG
+						is_core = YUG
+					}
+				}
+				add_province_modifier = { 
+					name = zho_jin_ji_unrest
+					duration = 3650
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 5
+				NOT = {
+					has_opinion = {
+						who = JIN
+						value = 1
+					}
+				}
+			}
 		}
 	}
 }
@@ -2379,6 +2437,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		trigger = { is_year = 9999 }
 		name = "ShiJian.48.a" #??????????????????????
 		trigger = { ai = no }
 		declare_war_with_cb = {
@@ -2396,9 +2455,14 @@ country_event = {
 	option = {
 		name = "ShiJian.48.b" #?????????
 		ai_chance = { factor = 100 }
+		JIN = {
+			country_event = { id = china.151 }
+		}
 		add_stability = 3
-		every_owned_province = {
-			clear_rebels = yes
+		hidden_effect = {
+			every_owned_province = {
+				clear_rebels = yes
+			}
 		}
 		if = {
 			limit = {
@@ -2406,12 +2470,13 @@ country_event = {
 			}
 			JIN = {
 				join_all_offensive_wars_of = ZHO
+				add_papal_influence = 100
 			}
 		}
-		add_country_modifier = {
-			name = zhou_zhengtongzhouwang #?????????????????+2??????10??
-			duration = 3650
-		}
+		#add_country_modifier = {
+		#	name = zhou_zhengtongzhouwang #?????????????????+2??????10??
+		#	duration = 3650
+		#}
 	}
 }
 #X??????????

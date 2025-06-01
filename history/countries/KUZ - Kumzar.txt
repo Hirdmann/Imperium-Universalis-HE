@@ -6,7 +6,7 @@ technology_group = afro_arabian
 primary_culture = mykians
 religion = arab_religion
 #religious_school = semitic_type
-capital = 2640
+capital = 2645
 
 424.1.1 = {
 	government = monarchy

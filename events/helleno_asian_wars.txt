@@ -1701,6 +1701,51 @@ country_event = {
 			name = greek_greko_persian_buff
 			duration = 7300
 		}
+		add_country_modifier = {
+			name = athens_navy_focus
+			duration = -1
+		}
+		capital_scope = {
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+		}
 		country_event = {
 			id = hellenoasian.801
 			days = 200
@@ -2057,6 +2102,16 @@ country_event = {
 				name = ath_2ndinvasion_dip_help
 				duration = 1825
 			}
+			add_country_modifier = {
+				name = ath_2ndinvasion_army_size
+				duration = 1825
+			}
+		}
+		SP1 = {
+			add_country_modifier = {
+				name = ath_2ndinvasion_army_size
+				duration = 1825
+			}
 		}
 	}
 }
@@ -2152,136 +2207,1958 @@ country_event = {
 	option =  {
 		name = "hellenoasian.11.a" # release chalkidians
 		add_prestige = 5
-		1066 = { #bottike
-			add_core = BTT
-			remove_core = THR
-			cede_province = BTT
+		add_manpower = 5
+		add_treasury = 100
+		ATH = {
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			galley = 959
+			galley = 959
+			galley = 959
 		}
-		create_subject = {
-			subject_type = league_member_subject
-			subject = BTT
-		}
-		BTT = {
-			add_trust = { who = ATH value = 30 mutual = yes }
-			add_opinion = { who = ATH modifier = released_us_freely }
-		}
-		1068 = { #Potidaea - becomes athenian colony
-			add_core = ATH
-			remove_core = COR
-			remove_core = THR
-			cede_province = ATH
-		}
-
-		5527 = { #Mende
-			add_core = MDE
-			remove_core = THR
-			cede_province = MDE
-		}
-		create_subject = {
-			subject_type = league_member_subject
-			subject = MDE
-		}
-		MDE = {
-			add_trust = { who = ATH value = 30 mutual = yes }
-			add_opinion = { who = ATH modifier = released_us_freely }
-		}
-		1067 = { #olynthos
-			add_core = OLN
-			remove_core = THR
-			cede_province = OLN
-		}
-		1072 = {
-			add_core = OLN
-			remove_core = THR
-			cede_province = OLN
-		}
-		5526 = {
-			add_core = OLN
-			remove_core = THR
-			cede_province = OLN
-		}
-		create_subject = {
-			subject_type = league_member_subject
-			subject = OLN
-		}
-		OLN = {
-			add_trust = { who = ATH value = 30 mutual = yes }
-			add_opinion = { who = ATH modifier = released_us_freely }
-		}
-		1069 = { #Torone
-			add_core = TRN
-			remove_core = THR
-			cede_province = TRN
-		}
-		create_subject = {
-			subject_type = league_member_subject
-			subject = TRN
-		}
-		TRN = {
-			add_trust = { who = ATH value = 30 mutual = yes }
-			add_opinion = { who = ATH modifier = released_us_freely }
-		}
-		1070 = { #Akanthos
-			add_core = ATS
-			remove_core = THR
-			cede_province = ATS
-		}
-		5524 = { #Akanthos
-			add_core = ATS
-			remove_core = THR
-			cede_province = ATS
-		}
-		create_subject = {
-			subject_type = league_member_subject
-			subject = ATS
-		}
-		ATS = {
-			add_trust = { who = ATH value = 30 mutual = yes }
-			add_opinion = { who = ATH modifier = released_us_freely }
-		}
-		1071 = { #Stagira
-			add_core = STG
-			remove_core = THR
-			cede_province = STG
-		}
-		create_subject = {
-			subject_type = league_member_subject
-			subject = STG
-		}
-		STG = {
-			add_trust = { who = ATH value = 30 mutual = yes }
-			add_opinion = { who = ATH modifier = released_us_freely }
-		}
-		55911 = { #Argilos
-			add_core = ARU
-			remove_core = THR
-			cede_province = ARU
-		}
-		create_subject = {
-			subject_type = league_member_subject
-			subject = ARU
-		}
-		ARU = {
-			add_trust = { who = ATH value = 30 mutual = yes }
-			add_opinion = { who = ATH modifier = released_us_freely }
+		hidden_effect = {
+			1066 = { #bottike
+				add_core = BTT
+				remove_core = THR
+				cede_province = BTT
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = BTT
+			}
+			BTT = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			1068 = { #Potidaea - becomes athenian colony
+				add_core = ATH
+				remove_core = COR
+				remove_core = THR
+				cede_province = ATH
+			}
+			5527 = { #Mende
+				add_core = MDE
+				remove_core = THR
+				cede_province = MDE
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = MDE
+			}
+			MDE = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			1067 = { #olynthos
+				add_core = OLN
+				remove_core = THR
+				cede_province = OLN
+			}
+			1072 = {
+				add_core = OLN
+				remove_core = THR
+				cede_province = OLN
+			}
+			5526 = {
+				add_core = OLN
+				remove_core = THR
+				cede_province = OLN
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = OLN
+			}
+			OLN = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			1069 = { #Torone
+				add_core = TRN
+				remove_core = THR
+				cede_province = TRN
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = TRN
+			}
+			TRN = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			1070 = { #Akanthos
+				add_core = ATS
+				remove_core = THR
+				cede_province = ATS
+			}
+			5524 = { #Akanthos
+				add_core = ATS
+				remove_core = THR
+				cede_province = ATS
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = ATS
+			}
+			ATS = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			1071 = { #Stagira
+				add_core = STG
+				remove_core = THR
+				cede_province = STG
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = STG
+			}
+			STG = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			5591 = { #Argilos
+				add_core = ARU
+				remove_core = THR
+				cede_province = ARU
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = ARU
+			}
+			ARU = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
 		}
 	}
 }
 
 #events for amthipolis, abdera, maronea
-#event for persians to dissolve thracia on occupation of Cardia and Doriscos
-#event for cedeing sestos to athens
-#event for Perinthos to join Delians immediately if any soldier is present on its soil
-#event for Bysantion to join Delians immediately if any soldier is present on its soil
-#greek victory +navy traditions army traditions and prestige to anyone who has a truce with persia
-#persian victory
-#delian league founded officially
-#event for War of Delian League if Athens want to continue.
+#amphipolis part
+country_event = {
+	id = hellenoasian.12 #
+	title = "hellenoasian.12.t"
+	desc = "hellenoasian.12.d"
+	picture = battle
+	fire_only_once = yes
 
-#Liberations of asia minor polises
-#liberations on Rhodes, Cyprus
-#Alliance with egypt and Cyprus as they become independent
+	trigger = {
+		tag = ATH
+		is_year = 274
+		NOT = {
+			is_year = 280
+		}
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		1074 = {
+			NOT = {
+				controlled_by = THR
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.12.a" # release
+		add_prestige = 5
+		add_manpower = 2
+		add_treasury = 50
+		set_global_flag = grecopersian_thracia_1
+		hidden_effect = {
+			1074 = { #amphipolis
+				add_core = ATH
+				remove_core = THR
+				cede_province = ATH
+			}
+			5522 = { #Free the paeonians
+				add_core = BSL
+				remove_core = THR
+				cede_province = BSL
+			}
+
+			1075 = { #odomanti
+				add_core = ODO
+				remove_core = THR
+				cede_province = MDE
+			}
+			5520 = { #odomanti
+				add_core = BSL
+				remove_core = THR
+				cede_province = BSL
+			}
+			5521 = { #odomanti
+				add_core = BSL
+				remove_core = THR
+				cede_province = BSL
+			}
+
+			1076 = { #krenides
+				add_core = EDO
+				remove_core = THR
+				cede_province = EDO
+			}
+			5857 = { #doberes
+				add_core = DOB
+				remove_core = THR
+				cede_province = DOB
+			}
+			1129 = { #doberes
+				add_core = DOB
+				remove_core = THR
+				cede_province = DOB
+			}
+
+			1116 = { #maedi
+				add_core = TT8
+				remove_core = THR
+				cede_province = TT8
+			}
+			8216 = { #maedi
+				add_core = TT8
+				remove_core = THR
+				cede_province = TT8
+			}
+
+			5826 = { #thasos
+				add_core = THS
+				remove_core = THR
+				cede_province = THS
+				change_culture = chalcidian
+				change_religion = greek_religion
+			}
+			8606 = { #thasos
+				add_core = THS
+				remove_core = THR
+				cede_province = THS
+				change_culture = chalcidian
+				change_religion = greek_religion
+			}
+			999 = { #thasos
+				add_core = THS
+				remove_core = THR
+				cede_province = THS
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = THS
+			}
+			THS = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+		}
+	}
+}
+#Abdera part
+country_event = {
+	id = hellenoasian.13 #
+	title = "hellenoasian.13.t"
+	desc = "hellenoasian.13.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 274
+		NOT = {
+			is_year = 280
+		}
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		1077 = {
+			NOT = {
+				controlled_by = THR
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.13.a" # release
+		add_prestige = 5
+		add_manpower = 2
+		add_treasury = 50
+		set_global_flag = grecopersian_thracia_2
+		ATH = {
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			galley = 959
+			galley = 959
+			galley = 959
+		}
+		hidden_effect = {
+			1077 = { #abdera
+				add_core = ABD
+				remove_core = THR
+				cede_province = ABD
+			}
+			5827 = { #abdera
+				add_core = ABD
+				remove_core = THR
+				cede_province = ABD
+				change_culture = greco_thracian
+				change_religion = greek_religion
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = ABD
+			}
+			ABD = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			1117 = { #bessi gift
+				add_core = BSS
+				remove_core = THR
+				cede_province = BSS
+			}
+			5825 = { #sapaeoi
+				add_core = TT3
+				remove_core = THR
+				cede_province = TT3
+			}
+			1114 = { #sapaeoi
+				add_core = TT3
+				remove_core = THR
+				cede_province = TT3
+			}
+			1115 = { #edonoi
+			add_core = EDO
+				remove_core = THR
+				cede_province = EDO
+			}
+			5857 = { #doberes
+				add_core = DOB
+				remove_core = THR
+				cede_province = DOB
+			}
+			1129 = { #doberes
+				add_core = DOB
+				remove_core = THR
+				cede_province = DOB
+			}
+		}
+	}
+}
+#Maroneia part
+
+country_event = {
+	id = hellenoasian.14 #
+	title = "hellenoasian.14.t"
+	desc = "hellenoasian.14.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 274
+		NOT = {
+			is_year = 280
+		}
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		1077 = {
+			NOT = {
+				controlled_by = THR
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.14.a" # release
+		add_prestige = 5
+		set_global_flag = grecopersian_thracia_3
+		add_manpower = 2
+		add_treasury = 50
+		ATH = {
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			galley = 959
+			galley = 959
+			galley = 959
+		}
+		hidden_effect = {
+			1078 = { #Maroneia
+				add_core = MRN
+				remove_core = THR
+				cede_province = MRN
+			}
+			1079 = { #Maroneia
+				add_core = MRN
+				remove_core = THR
+				cede_province = MRN
+				change_culture = greco_thracian
+				change_religion = greek_religion
+			}
+
+			create_subject = {
+				subject_type = league_member_subject
+				subject = MRN
+			}
+			MRN = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			5582 = { #more free thracians
+				add_core = TT3
+				remove_core = THR
+				cede_province = TT3
+			}
+			5583 = { #more free thracians
+				add_core = TT3
+				remove_core = THR
+				cede_province = TT3
+			}
+		}
+	}
+}
+#event for persians to dissolve thracia on occupation of Cardia and Doriscos
+
+country_event = {
+	id = hellenoasian.15 #
+	title = "hellenoasian.15.t"
+	desc = "hellenoasian.15.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 274
+		NOT = {
+			is_year = 285
+		}
+		has_global_flag = helleno_asian_war_2_start
+		has_global_flag = grecopersian_thracia_1
+		has_global_flag = grecopersian_thracia_2
+		has_global_flag = grecopersian_thracia_3
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		1083 = {
+			NOT = {
+				controlled_by = THR
+			}
+		}
+		1081 = {
+			NOT = {
+				controlled_by = THR
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.15.a" # persians abandon most of scudra
+		add_prestige = 5
+		add_manpower = 2
+		add_treasury = 50
+		set_global_flag = grecopersian_thracia_3
+		hidden_effect = {
+			THR = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = haemus_mons
+							area = odryssia_area
+							area = thracia_area
+							area = thracia_east_area
+							area = rhodope_mons_area
+						}
+					}
+					add_core = ODR
+					remove_core = THR
+					cede_province = ODR
+				}
+				every_owned_province = {
+					limit = {
+						area = paeonia_area
+					}
+					add_core = POE
+					remove_core = THR
+					cede_province = POE
+				}
+				every_owned_province = {
+					limit = {
+						area = dacia_mediterranea
+					}
+					add_core = AGR
+					remove_core = THR
+					cede_province = AGR
+				}
+				every_owned_province = {
+					limit = {
+						area = dardania_area
+					}
+					add_core = DT1
+					remove_core = THR
+					cede_province = DT1
+				}
+				1080 = {
+					add_core = CN2
+					remove_core = THR
+					cede_province = CN2
+				}
+				1084 = {
+					add_core = CN2
+					remove_core = THR
+					cede_province = CN2
+				}
+				1087 = {
+					add_core = THY
+					remove_core = THR
+					cede_province = THY
+				}
+				5837 = {
+					add_core = THY
+					remove_core = THR
+					cede_province = THY
+				}
+				1090 = {
+					add_core = BCA
+					remove_core = THR
+					cede_province = BCA
+				}
+				5839 = {
+					add_core = BCA
+					remove_core = THR
+					cede_province = BCA
+				}
+				1093 = {
+					add_core = BCM
+					remove_core = THR
+					cede_province = BCM
+				}
+				5840 = {
+					add_core = TT6
+					remove_core = THR
+					cede_province = TT6
+				}
+				5838 = {
+					add_core = TT6
+					remove_core = THR
+					cede_province = TT6
+				}
+				1094 = {
+					add_core = ORD
+					remove_core = THR
+					cede_province = ORD
+				}
+				5841 = {
+					add_core = BCR
+					remove_core = THR
+					cede_province = BCR
+				}
+				1104 = {
+					add_core = NIP
+					remove_core = THR
+					cede_province = NIP
+				}
+				1103 = {
+					add_core = NIP
+					remove_core = THR
+					cede_province = NIP
+				}
+				5842 = {
+					add_core = TT7
+					remove_core = THR
+					cede_province = TT7
+				}
+				1101 = {
+					add_core = TT7
+					remove_core = THR
+					cede_province = TT7
+				}
+				1095 = {
+					add_core = BCC
+					remove_core = THR
+					cede_province = BCC
+				}
+				1095 = {
+					add_core = TOM
+					remove_core = THR
+					cede_province = TOM
+				}
+				1095 = {
+					add_core = IST
+					remove_core = THR
+					cede_province = IST
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = peucinitis_area
+							area = scythia_minor
+						}
+					}
+					add_core = GET
+					remove_core = THR
+					cede_province = GET
+				}
+				#add all greek colonies on black sea and bosporus, paeonia area cede, dardania area cede, thyni, crobyzoi, getae cede all thr/pse provs in dacia region, adriae in illyrian one
+				#send the rest to odrysians and tribali and getae and tyragetae. then repeat same for persia.
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = ister
+							area = moesia_inferior
+							area = dacia_ripensis
+							area = moesia_superior
+						}
+					}
+					add_core = TRL
+					remove_core = THR
+					cede_province = TRL
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = thracia_region
+						}
+						NOT = {
+							area = europa_area
+						}
+					}
+					add_core = ODR
+					remove_core = THR
+					cede_province = ODR
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = sarmatia_region
+						}
+					}
+					add_core = TYG
+					remove_core = THR
+					cede_province = TYG
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = dacia_region
+						}
+					}
+					add_core = GET
+					remove_core = THR
+					cede_province = GET
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = macedonia_region
+						}
+					}
+					add_core = MAC
+					remove_core = THR
+					cede_province = MAC
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = illyria_region
+						}
+					}
+					add_core = AR1
+					remove_core = THR
+					cede_province = AR1
+				}
+			}
+			PSE = { #double for Persia in case they havent gave to satrapy
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = ister
+							area = moesia_inferior
+							area = dacia_ripensis
+							area = moesia_superior
+						}
+					}
+					add_core = TRL
+					remove_core = THR
+					cede_province = TRL
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = thracia_region
+						}
+					}
+					add_core = ODR
+					remove_core = THR
+					cede_province = ODR
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = sarmatia_region
+						}
+					}
+					add_core = TYG
+					remove_core = THR
+					cede_province = TYG
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = dacia_region
+						}
+					}
+					add_core = GET
+					remove_core = THR
+					cede_province = GET
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = macedonia_region
+						}
+					}
+					add_core = MAC
+					remove_core = THR
+					cede_province = MAC
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = illyria_region
+						}
+					}
+					add_core = AR1
+					remove_core = THR
+					cede_province = AR1
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = illyria_region
+						}
+					}
+					add_core = AR1
+					remove_core = THR
+					cede_province = AR1
+				}
+			}
+		}
+	}
+}
+#event for cedeing sestos to athens
+country_event = {
+	id = hellenoasian.16 #
+	title = "hellenoasian.16.t"
+	desc = "hellenoasian.16.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 274
+		NOT = {
+			is_year = 285
+		}
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		1082 = {
+			num_of_units_in_province = {
+				who = enemy
+				amount = 1
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	option =  {
+		name = "hellenoasian.16.a" # # sestos athenian now due to miltiades old claim
+		add_prestige = 5
+		add_manpower = 2
+		add_treasury = 50
+		set_global_flag = grecopersian_thracia_4
+		ATH = {
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			galley = 959
+			galley = 959
+			galley = 959
+		}
+		1082 = { #sestos
+			add_core = ATH
+			remove_core = THR
+			cede_province = ATH
+		}
+		5584 = { #thracian chersonessus
+			add_core = ATH
+			remove_core = THR
+			cede_province = ATH
+		}
+	}
+}
+#event for cedeing lemnos and imbros and samothrace to athens
+
+country_event = {
+	id = hellenoasian.17 #
+	title = "hellenoasian.17.t"
+	desc = "hellenoasian.17.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 274
+		NOT = {
+			is_year = 285
+		}
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		NOT = {
+			AND = {
+				owns = 991
+				owns = 989
+				owns = 990
+			}
+		}
+		OR = {
+			1424 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 1
+				}
+			}
+			1427 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 1
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	option =  {
+		name = "hellenoasian.17.a" # islands athenian now due to miltiades old claim
+		add_prestige = 5
+		add_manpower = 2
+		add_treasury = 50
+		set_global_flag = grecopersian_islands_1
+		ATH = {
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			galley = 959
+			galley = 959
+			galley = 959
+		}
+		989 = { #
+			add_core = ATH
+			remove_core = THR
+			remove_core = ION
+			cede_province = ATH
+		}
+		990 = { #
+			add_core = ATH
+			remove_core = THR
+			remove_core = ION
+			cede_province = ATH
+		}
+		991 = { #
+			add_core = ATH
+			remove_core = THR
+			remove_core = ION
+			cede_province = ATH
+		}
+	}
+}
+#event for Perinthos to join Delians immediately if any soldier is present on its soil
+
+country_event = {
+	id = hellenoasian.18 #
+	title = "hellenoasian.18.t"
+	desc = "hellenoasian.18.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 274
+		NOT = {
+			is_year = 285
+		}
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		1085 = {
+			num_of_units_in_province = {
+				who = enemy
+				amount = 1
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	option =  {
+		name = "hellenoasian.18.a" # perinthos joins league and fight
+		add_prestige = 5
+		add_manpower = 2
+		add_treasury = 50
+		set_global_flag = grecopersian_thracia_4
+		ATH = {
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			galley = 959
+			galley = 959
+			galley = 959
+		}
+		1085 = { #
+			add_core = PRI
+			remove_core = THR
+			remove_core = ION
+			cede_province = PRI
+		}
+		5585 = { #
+			add_core = PRI
+			remove_core = THR
+			remove_core = ION
+			cede_province = PRI
+		}
+		5586 = = { #selymbria too
+			add_core = SLB
+			remove_core = THR
+			remove_core = ION
+			cede_province = SLB
+		}
+		create_subject = {
+			subject_type = league_member_subject
+			subject = PRI
+		}
+		PRI = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			add_opinion = { who = ATH modifier = released_us_freely }
+		}
+		create_subject = {
+			subject_type = league_member_subject
+			subject = SLB
+		}
+		SLB = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			add_opinion = { who = ATH modifier = released_us_freely }
+		}
+	}
+}
+#event for Bysantion to join Delians immediately if any soldier is present on its soil
+
+country_event = {
+	id = hellenoasian.19 #
+	title = "hellenoasian.19.t"
+	desc = "hellenoasian.19.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 274
+		NOT = {
+			is_year = 285
+		}
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		1086 = {
+			num_of_units_in_province = {
+				who = enemy
+				amount = 1
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	option =  {
+		name = "hellenoasian.19.a" #
+		add_prestige = 5
+		add_manpower = 2
+		add_treasury = 50
+		set_global_flag = grecopersian_thracia_5
+		ATH = {
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			galley = 959
+			galley = 959
+			galley = 959
+		}
+		1086 = { #
+			add_core = BYS
+			remove_core = THR
+			remove_core = ION
+			cede_province = BYS
+		}
+		5587 = { #
+			add_core = BYS
+			remove_core = THR
+			remove_core = ION
+			cede_province = BYS
+		}
+		create_subject = {
+			subject_type = league_member_subject
+			subject = BYS
+		}
+		BYS = {
+			add_trust = { who = ATH value = 30 mutual = yes }
+			add_opinion = { who = ATH modifier = released_us_freely }
+		}
+		ODR = { # no more thracian satrapy
+			inherit = THR
+		}
+	}
+}
+
+#samos and miletos join athens (at mycale, but we may not have it there, let it be after 275 and no persian troops in greece.)
+
+country_event = {
+	id = hellenoasian.20 #
+	title = "hellenoasian.20.t"
+	desc = "hellenoasian.20.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 275
+		NOT = {
+			is_year = 285
+		}
+		has_global_flag = helleno_asian_war_2_start
+		has_global_flag = grecopersian_islands_1
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.20.a" #
+		add_prestige = 5
+		add_manpower = 3
+		add_treasury = 80
+		set_global_flag = grecopersian_asia_1
+		ATH = {
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+		}
+		hidden_effect = {
+			993 = { #
+				add_core = SAM
+				remove_core = THR
+				remove_core = ION
+				cede_province = SAM
+			}
+			992 = { #
+				add_core = SAM
+				remove_core = THR
+				remove_core = ION
+				cede_province = SAM
+			}
+			5508 = { #
+				add_core = SAM
+				remove_core = THR
+				remove_core = ION
+				cede_province = SAM
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = SAM
+			}
+			SAM = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			2129 = { #
+				add_core = MLT
+				remove_core = THR
+				remove_core = ION
+				cede_province = MLT
+			}
+			5606 = { #
+				add_core = MLT
+				remove_core = THR
+				remove_core = ION
+				cede_province = MLT
+			}
+			5607 = { #
+				add_core = MLT
+				remove_core = THR
+				remove_core = ION
+				cede_province = MLT
+			}
+			create_subject = { #no trust between those two, history of rebellions
+				subject_type = league_member_subject
+				subject = MLT
+			}
+		}
+	}
+}
+#asia minor minors rebel/join athens in league after no sea prov contains persian fleet.
+
+country_event = {
+	id = hellenoasian.20 #
+	title = "hellenoasian.20.t"
+	desc = "hellenoasian.20.d"
+	picture = battle
+	fire_only_once = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 276
+		NOT = {
+			is_year = 285
+		}
+		has_global_flag = helleno_asian_war_2_start
+		has_global_flag = grecopersian_asia_1
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		mare_graecum = {
+			num_of_units_in_province = {
+				who = enemy
+				amount = 0
+			}
+		}
+		mare_icarium = {
+			num_of_units_in_province = {
+				who = enemy
+				amount = 0
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.20.a" #
+		add_prestige = 5
+		add_manpower = 3
+		add_treasury = 80
+		set_global_flag = grecopersian_asia_2
+		ATH = {
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			heavy_ship = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+			galley = 959
+		}
+		hidden_effect = {
+			2151 = { # Chalkedon
+				add_core = KHA
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KHA
+			}
+			5866 = { #
+				add_core = KHA
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KHA
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = KHA
+			}
+			KHA = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			2150 = { # Astakos
+				add_core = AS3
+				remove_core = PS3
+				remove_core = ION
+				cede_province = AS3
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = AS3
+			}
+			AS3 = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			5589 = { # Kios
+				add_core = KIO
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KIO
+			}
+			5708 = { # Kios
+				add_core = KIO
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KIO
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject =KIO
+			}
+			KIO = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			5589 = { # Kizikos
+				add_core = KYZ
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KYZ
+			}
+			2116 = { # Kizikos
+				add_core = KYZ
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KYZ
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = KYZ
+			}
+			KYZ = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			5593 = { # Lampsakos
+				add_core = LAM
+				remove_core = PS3
+				remove_core = ION
+				cede_province = LAM
+			}
+			2117 = { # Lampsakos
+				add_core = LAM
+				remove_core = PS3
+				remove_core = ION
+				cede_province = LAM
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = LAM
+			}
+			LAM = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			#abydos etc etc south
+			5594 = { # abydos
+				add_core = ABY
+				remove_core = PS3
+				remove_core = ION
+				cede_province = ABY
+			}
+			5705 = { #abydos
+				add_core = ABY
+				remove_core = PS3
+				remove_core = ION
+				cede_province = ABY
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = ABY
+			}
+			ABY = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			2118 = { # sigeion
+				add_core = SIE
+				remove_core = PS3
+				remove_core = ION
+				cede_province = SIE
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = SIE
+			}
+			SIE = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			2119 = { # assos
+				add_core = ANT
+				remove_core = PS3
+				remove_core = ION
+				cede_province = ANT
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = ANT
+			}
+			ANT = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			988 = { # methymna
+				add_core = LB4
+				remove_core = PS3
+				remove_core = ION
+				cede_province = LB4
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = LB4
+			}
+			LB4 = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			987 = { # mytilene
+				add_core = LB1
+				remove_core = PS3
+				remove_core = ION
+				cede_province = LB1
+			}
+			5596 = { # mytilene
+				add_core = LB1
+				remove_core = PS3
+				remove_core = ION
+				cede_province = LB1
+			}
+			5597 = { # mytilene
+				add_core = LB1
+				remove_core = PS3
+				remove_core = ION
+				cede_province = LB1
+			}
+			create_subject = { #no love among those 2, long timed rivalry and rebellion history
+				subject_type = league_member_subject
+				subject = LB1
+			}
+			2123 = { # phokaia/cyme
+				add_core = KYM
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KYM
+			}
+			5598 = { # # phokaia/cyme
+				add_core = KYM
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KYM
+			}
+			2121 = { # # phokaia/cyme
+				add_core = KYM
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KYM
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = KYM
+			}
+			KYM = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			2124 = { # # klazomenai
+				add_core = KLA
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KLA
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = KLA
+			}
+			KLA = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			2125 = { # erythrai
+				add_core = ERR
+				remove_core = PS3
+				remove_core = ION
+				cede_province = ERR
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = ERR
+			}
+			ERR = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			2126 = { # teos
+				add_core = TEO
+				remove_core = PS3
+				remove_core = ION
+				cede_province = TEO
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = TEO
+			}
+			TEO = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			2127 = { # Ephesos
+				add_core = EPH
+				remove_core = PS3
+				remove_core = ION
+				cede_province = EPH
+			}
+			5604 = { # Ephesos
+				add_core = EPH
+				remove_core = PS3
+				remove_core = ION
+				cede_province = EPH
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = EPH
+			}
+			EPH = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			2128 = { # priene
+				add_core = PR2
+				remove_core = PS3
+				remove_core = ION
+				cede_province = PR2
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = PR2
+			}
+			PR2 = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			994 = { # kos
+				add_core = KSS
+				remove_core = CRI
+				remove_core = ION
+				cede_province = KSS
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = KSS
+			}
+			KSS = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			2132 = { # knidos
+				add_core = KNI
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KNI
+			}
+			5609 = { #  knidos
+				add_core = KNI
+				remove_core = PS3
+				remove_core = ION
+				cede_province = KNI
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = KNI
+			}
+			KNI = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+
+			998 = { # karpathos
+				add_core = KAR
+				remove_core = CRI
+				remove_core = ION
+				cede_province = KAR
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = KAR
+			}
+			KAR = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			998 = { # rhodos 1
+				add_core = IAL
+				remove_core = CRI
+				remove_core = ION
+				cede_province = IAL
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = IAL
+			}
+			IAL = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			997 = { # rhodos 2
+				add_core = LIN
+				remove_core = CRI
+				remove_core = ION
+				cede_province = LIN
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = LIN
+			}
+			LIN = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			996 = { # rhodos 3
+				add_core = KME
+				remove_core = CRI
+				remove_core = ION
+				cede_province = KME
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = KME
+			}
+			KME = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+			5504 = { # rhodos 4
+				add_core = MOO
+				remove_core = CRI
+				remove_core = ION
+				cede_province = MOO
+			}
+			create_subject = {
+				subject_type = league_member_subject
+				subject = MOO
+			}
+			MOO = {
+				add_trust = { who = ATH value = 30 mutual = yes }
+				add_opinion = { who = ATH modifier = released_us_freely }
+			}
+		}
+	}
+}
+#greek victory +navy traditions army traditions and prestige to anyone who has a truce with persia
+
+country_event = {
+	id = hellenoasian.21 #
+	title = "hellenoasian.21.t"
+	desc = "hellenoasian.21.d"
+	picture = battle
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 276
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			is_year = 290
+		}
+		OR = {
+			war_with = PSE
+			truce_with = PSE
+		}
+		has_global_flag = grecopersian_asia_1
+		has_global_flag = grecopersian_asia_2
+		has_global_flag = grecopersian_thracia_1
+		has_global_flag = grecopersian_thracia_2
+		has_global_flag = grecopersian_thracia_3
+		has_global_flag = grecopersian_thracia_4
+		NOT = {
+			959 = {
+				controlled_by = PSE
+			}
+		}
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.21.a" #
+		add_prestige = 10
+		add_army_tradition = 15
+		add_navy_tradition = 15
+		set_global_flag = helleno_asian_war_2_ended
+		set_global_flag = helleno_asian_war_2_end_gre
+		SP1 = {
+			white_peace = PSE
+			add_prestige = 5
+			add_army_tradition = 15
+			add_navy_tradition = 15
+		}
+		HEL = {
+			white_peace = PSE
+			add_prestige = 5
+			add_army_tradition = 15
+			add_navy_tradition = 15
+		}
+		ATH = {
+			white_peace = PSE
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					region = greek_region
+				}
+				war_with = PSE
+			}
+			white_peace = PSE
+			add_prestige = 10
+			add_army_tradition = 15
+			add_navy_tradition = 15
+		}
+	}
+}
+#persian victory
+
+country_event = {
+	id = hellenoasian.22 #
+	title = "hellenoasian.22.t"
+	desc = "hellenoasian.22.d"
+	picture = battle
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = PSE
+		is_year = 276
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			is_year = 290
+		}
+		OR = {
+			war_with = PSE
+			truce_with = PSE
+		}
+		NOT = {
+			has_global_flag = grecopersian_asia_1
+			has_global_flag = grecopersian_asia_2
+			has_global_flag = grecopersian_thracia_1
+			has_global_flag = grecopersian_thracia_2
+			has_global_flag = grecopersian_thracia_3
+			has_global_flag = grecopersian_thracia_4
+		}
+		959 = {
+			controlled_by = PSE
+		}
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.22.a" #
+		add_prestige = 10
+		add_army_tradition = 15
+		add_navy_tradition = 15
+		set_global_flag = helleno_asian_war_2_ended
+		set_global_flag = helleno_asian_war_2_end_pse
+		every_country = {
+			limit = {
+				capital_scope = {
+					region = greek_region
+				}
+			}
+			white_peace = PSE
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						region = greek_region
+						region = macedonia_region
+						region = mare_aegaeum_islands_region
+					}
+				}
+			}
+			country_event = {
+				id = hellenoasian.220
+				days = 15
+			}
+		}
+		PSE = {
+			vassalize = ATH
+			vassalize = HEL
+			vassalize = SP1
+		}
+	}
+}
+
+
+country_event = {
+	id = hellenoasian.220
+    title = hellenoasian.220.t
+	desc = hellenoasian.220.d
+	picture = victory
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = { set_country_flag = persian_future_slave_flag }
+	}
+
+	option = {
+		name = hellenoasian.220.a
+		ai_chance = { factor = 100 }
+		PSE = {
+			create_subject = {
+				subject_type = tributary_state
+				subject = ROOT
+			}
+		}
+	}
+}
+
+# draw! when both sides not manage to wrestle enough
+country_event = {
+	id = hellenoasian.23 #
+	title = "hellenoasian.23.t"
+	desc = "hellenoasian.23.d"
+	picture = battle
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 276
+		has_global_flag = helleno_asian_war_2_start
+		NOT = {
+			is_year = 290
+		}
+		NOT = {
+			OR = {
+				has_global_flag = helleno_asian_war_2_ended
+			}
+		}
+		OR = {
+			war_with = PSE
+			truce_with = PSE
+		}
+		NOT = { has_global_flag = grecopersian_asia_1 }
+		NOT = { has_global_flag = grecopersian_asia_2 }
+		NOT = {
+			959 = {
+				controlled_by = PSE
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.23.a" #
+		set_global_flag = helleno_asian_war_2_ended
+		set_global_flag = 	helleno_asian_war_2_end_draw
+		SP1 = {
+			white_peace = PSE
+		}
+		HEL = {
+			white_peace = PSE
+		}
+		ATH = {
+			white_peace = PSE
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					region = greek_region
+				}
+				war_with = PSE
+			}
+			white_peace = PSE
+		}
+	}
+}
+
+#delian league founded officially (all island except melos becme league members, adds 1 stab to athens, add mana points, cede Delos to them?)
+country_event = {
+	id = hellenoasian.24 #
+	title = "hellenoasian.24.t"
+	desc = "hellenoasian.24.d"
+	picture = battle
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = ATH
+		is_year = 277
+	 	OR = {
+			has_global_flag = helleno_asian_war_2_end_gre
+			has_global_flag = helleno_asian_war_2_end_draw
+		}
+		NOT = {
+			is_year = 290
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option =  {
+		name = "hellenoasian.24.a" #
+		set_global_flag = delian_league_formed
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						region = greek_region
+						region = macedonia_region
+						region = mare_aegaeum_islands_region
+					}
+				}
+				culture_group = hellenic_group
+			}
+			country_event = {
+				id = hellenoasian.240
+				days = 3
+			}
+		}
+	}
+}
+#event for War of Delian League if Athens want to continue oir not - asking the Athens.startup one for delian league bookmark
+
+#Cimon spawn.Attack on scyros by Cimon.Karystos forced ito league if exists
+
+#Liberations of asia minor polises in Caria, Lycia, Pamphylia.
+#liberations on Cyprus if occupied provs there. Harder this time.
+#support egypt rebellion?
+#Alliance with egypt and Cyprus if they become independent and at peace
+
 #"Cultural Phase" event for Persia
+
+#forgotten event - war of Athens with Aegina.
+#this  probably goes to other file?
+
 #Event for Peloponnesian League
-#event for Peloponnesian war start
+#event for Peloponnesian war start. startup one for peloponnesian war
 #event for Persians to have Satraps revolt - maybe create separate type of satrapy that can have independence wars and flip all satrapies to it.
